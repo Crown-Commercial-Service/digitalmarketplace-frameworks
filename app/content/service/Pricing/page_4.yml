@@ -1,0 +1,6 @@
+Does the price include VAT?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

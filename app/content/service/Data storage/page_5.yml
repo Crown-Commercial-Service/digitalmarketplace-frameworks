@@ -1,0 +1,6 @@
+Backup and disaster recovery in place?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

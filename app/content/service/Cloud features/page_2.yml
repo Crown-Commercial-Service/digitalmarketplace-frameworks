@@ -1,0 +1,6 @@
+Are guaranteed resources defined?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

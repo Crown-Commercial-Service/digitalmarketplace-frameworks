@@ -1,0 +1,6 @@
+Data extraction/removal plan in place?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

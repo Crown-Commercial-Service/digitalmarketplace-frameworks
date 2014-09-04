@@ -1,0 +1,8 @@
+Rate Card (SFIA):
+  mockAnswer: Rate Card Umbraco 102014.odf
+  hint: Please upload your SFIA rate card if you have one. Should be in an open document format.
+  fields:
+    - type: upload
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

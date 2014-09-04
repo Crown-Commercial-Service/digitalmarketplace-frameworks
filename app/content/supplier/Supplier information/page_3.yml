@@ -1,0 +1,7 @@
+hint: "If you would prefer an alternative address to be included on your service listing, please provide details here."
+mockAnswer: ""
+fields:
+  - type: textarea
+    validation: notBlank
+    errorMessage: ""
+    errorSummaryMessage: ""

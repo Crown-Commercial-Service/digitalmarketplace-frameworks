@@ -1,0 +1,22 @@
+Which devices are supported?:
+  fields:
+    - type: checkbox
+      label: PC
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
+    - type: checkbox
+      label: Mac
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
+    - type: checkbox
+      label: Smartphone
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
+    - type: checkbox
+      label: Tablet
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

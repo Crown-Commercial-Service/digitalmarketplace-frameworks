@@ -1,0 +1,6 @@
+mockAnswer: "9876543210"
+fields:
+  - type: text
+    validation: notBlank
+    errorMessage: ""
+    errorSummaryMessage: ""

@@ -1,0 +1,52 @@
+Which categories best describe your service?:
+  hint: Choose all that apply
+  mockAnswer: Content Management Systems
+  fields:
+    - type: checkbox
+      label: "Un-listed "
+    - type: checkbox
+      label: "Forms "
+    - type: checkbox
+      label: "Analytics "
+    - type: checkbox
+      label: "Search "
+    - type: checkbox
+      label: "User Alerts "
+    - type: checkbox
+      label: "EDRM / Collaboration "
+    - type: checkbox
+      label: "Content Management Systems (CMS) "
+    - type: checkbox
+      label: "Customer Relationship Management (CRM) "
+    - type: checkbox
+      label: "Service Monitoring "
+    - type: checkbox
+      label: "Data Visualisation "
+    - type: checkbox
+      label: "Email "
+    - type: checkbox
+      label: "Enterprise Resource Planning "
+    - type: checkbox
+      label: "Office Productivity "
+    - type: checkbox
+      label: "Polls/Surveys "
+    - type: checkbox
+      label: "Agile Tools "
+    - type: checkbox
+      label: "Asset Management "
+    - type: checkbox
+      label: "Identity "
+    - type: checkbox
+      label: "Accessibility "
+    - type: checkbox
+      label: "Geographic Search "
+    - type: checkbox
+      label: "Gamification "
+    - type: checkbox
+      label: "Learning Management Systems (LMS) "
+    - type: checkbox
+      label: "End User Device (EUD) "
+    - type: checkbox
+      label: "Simulation & Training "
+    - type: checkbox
+      label: "Antispam / CAPTCHA "

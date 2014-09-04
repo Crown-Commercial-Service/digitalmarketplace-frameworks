@@ -1,0 +1,7 @@
+What is the unit price of your service?:
+  hint: "Eg 1.50, 999"
+  fields:
+    - type: text
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

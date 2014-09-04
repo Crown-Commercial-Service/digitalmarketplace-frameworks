@@ -1,0 +1,8 @@
+What is the name of your service?:
+  hint: Include your product name only. Using additional keywords may impact your acceptance on to the Digital Marketplace.
+  mockAnswer: Umbraco CMS
+  fields:
+    - type: text
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

@@ -1,0 +1,6 @@
+Can the data location option can be defined by the user?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

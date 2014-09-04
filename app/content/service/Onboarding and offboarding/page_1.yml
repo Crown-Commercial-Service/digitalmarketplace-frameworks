@@ -1,0 +1,6 @@
+Is an off-boarding process included?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

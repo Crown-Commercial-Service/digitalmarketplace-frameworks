@@ -1,0 +1,6 @@
+mockAnswer: "me@example.com"
+fields:
+  - type: text
+    validation: notBlank
+    errorMessage: ""
+    errorSummaryMessage: ""

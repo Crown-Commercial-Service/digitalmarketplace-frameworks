@@ -1,0 +1,6 @@
+Do you offer education pricing?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

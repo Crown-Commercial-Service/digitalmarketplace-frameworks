@@ -1,0 +1,6 @@
+Is offline working and synching supported?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

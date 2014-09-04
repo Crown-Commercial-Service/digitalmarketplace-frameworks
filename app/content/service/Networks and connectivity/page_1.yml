@@ -1,0 +1,38 @@
+What networks is the service directly connected to?:
+  mockAnswer: Internet
+  fields:
+    - type: checkbox
+      label: Internet
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
+    - type: checkbox
+      label: Public Services Network (PSN)
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
+    - type: checkbox
+      label: Government Secure intranet (GSi)
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
+    - type: checkbox
+      label: Police National Network (PNN)
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
+    - type: checkbox
+      label: New NHS Network (N3)
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
+    - type: checkbox
+      label: Joint Academic Network (JANET)
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
+    - type: checkbox
+      label: Other
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

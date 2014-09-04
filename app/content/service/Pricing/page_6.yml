@@ -1,0 +1,6 @@
+Do you offer a trial option?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

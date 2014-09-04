@@ -1,0 +1,6 @@
+mockAnswer: "http://umbraco.com"
+fields:
+  - type: text
+    validation: notBlank
+    errorMessage: ""
+    errorSummaryMessage: ""

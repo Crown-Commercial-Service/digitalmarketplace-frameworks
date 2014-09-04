@@ -1,0 +1,6 @@
+Is API access available and supported?:
+  fields:
+    - type: boolean
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

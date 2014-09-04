@@ -1,0 +1,7 @@
+What is the type of API?:
+  hint: "Eg RESTful, SOAP"
+  fields:
+    - type: text
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""

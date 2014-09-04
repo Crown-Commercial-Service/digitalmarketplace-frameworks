@@ -1,0 +1,7 @@
+When is support available?:
+  hint: "Eg 24/7, 9 to 5"
+  fields:
+    - type: text
+      validation: notBlank
+      errorMessage: ""
+      errorSummaryMessage: ""
