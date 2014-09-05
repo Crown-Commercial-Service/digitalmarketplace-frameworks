@@ -1,0 +1,7 @@
+Legal:
+  Is eDiscovery supported?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

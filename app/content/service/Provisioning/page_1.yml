@@ -1,6 +1,0 @@
-Is self service provisioning supported?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

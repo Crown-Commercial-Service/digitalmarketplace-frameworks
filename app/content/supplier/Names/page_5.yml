@@ -1,6 +1,0 @@
-mockAnswer: "125 West Street, City of Town, CT1 1AA"
-fields:
-  - type: textarea
-    validation: notBlank
-    errorMessage: ""
-    errorSummaryMessage: ""

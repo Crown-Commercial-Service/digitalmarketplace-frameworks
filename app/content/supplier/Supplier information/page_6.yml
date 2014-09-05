@@ -1,8 +1,0 @@
-hint: These will be visible on your supplier page so please make sure you have approval.
-mockAnswer: "DEFRA, Ministry of Justice, GDS"
-fields:
-  - type: list
-    addthing: Add another client
-    validation: notBlank
-    errorMessage: ""
-    errorSummaryMessage: ""

@@ -1,0 +1,15 @@
+Provisioning:
+  Is self service provisioning supported?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Provisioning time(s):
+    hint: "Add as many as 4, with labels. Label (8 words max); Days, Hours:Minutes:Seconds"
+    fields:
+      - type: list
+        addthing: Add another provisioning time
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

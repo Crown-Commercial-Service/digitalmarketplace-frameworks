@@ -1,6 +1,0 @@
-mockAnswer: 0123456789
-fields:
-  - type: text
-    validation: notBlank
-    errorMessage: ""
-    errorSummaryMessage: ""

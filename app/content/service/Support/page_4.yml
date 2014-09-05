@@ -1,7 +1,0 @@
-What are the response times for support?:
-  hint: Maximum of 20 words
-  fields:
-    - type: text
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

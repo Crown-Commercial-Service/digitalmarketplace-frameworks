@@ -1,0 +1,56 @@
+Access:
+  Which web browsers are support?:
+    fields:
+      - type: checkbox
+        label: Internet Explorer
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: checkbox
+        label: Firefox
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: checkbox
+        label: Chrome
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: checkbox
+        label: Safari
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: checkbox
+        label: Opera
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Is offline working and synching supported?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Which devices are supported?:
+    fields:
+      - type: checkbox
+        label: PC
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: checkbox
+        label: Mac
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: checkbox
+        label: Smartphone
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: checkbox
+        label: Tablet
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

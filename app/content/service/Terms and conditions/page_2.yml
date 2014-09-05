@@ -1,6 +1,0 @@
-Does your service have a minimum contract period?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

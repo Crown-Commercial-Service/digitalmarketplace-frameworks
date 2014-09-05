@@ -1,9 +1,0 @@
-What are the features of your service?:
-  hint: "Include the technical features of your product, eg graphical workflow, remote access."
-  mockAnswer: "Graphical workflow, Remote access, Revision control"
-  fields:
-    - type: list
-      validation: notBlank
-      errorMessage: ""
-      addthing: Add another feature
-      errorSummaryMessage: ""

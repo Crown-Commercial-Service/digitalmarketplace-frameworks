@@ -1,6 +1,0 @@
-Do you offer a free option?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

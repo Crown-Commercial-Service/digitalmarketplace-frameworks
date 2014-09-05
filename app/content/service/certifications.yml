@@ -1,0 +1,8 @@
+Certifications:
+  Vendor certification(s):
+    fields:
+      - type: list
+        addthing: Add another certification
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

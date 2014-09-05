@@ -1,0 +1,54 @@
+Pricing:
+  What is the unit price of your service?:
+    hint: "Eg 1.50, 999"
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  In what unit is your service priced?:
+    hint: "Optional. Eg User, unit, MbPS, GB, TB"
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  What is the pricing interval of your service?:
+    hint: "Optional. Eg Minute, hour, day, week, month, annum"
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Does the price include VAT?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Do you offer education pricing?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Do you offer a trial option?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Do you offer a free option?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Rate Card (SFIA):
+    mockAnswer: Rate Card Umbraco 102014.odf
+    hint: Please upload your SFIA rate card if you have one. Should be in an open document format.
+    fields:
+      - type: upload
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

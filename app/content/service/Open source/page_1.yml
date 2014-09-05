@@ -1,6 +1,0 @@
-Is open source software used and supported?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

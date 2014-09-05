@@ -1,0 +1,39 @@
+Supplier information:
+  mockAnswer: Joséphine Bloggs
+  Contact name:
+    fields:
+      - type: textarea
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Contact address:
+    hint: "If you would prefer an alternative address to be included on your service listing, please provide details here."
+    mockAnswer: ""
+    fields:
+      - type: textarea
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Contact email:
+    mockAnswer: "me@example.com"
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Contact phone:
+    mockAnswer: 01234 567890
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Client list:
+    hint: These will be visible on your supplier page so please make sure you have approval.
+    mockAnswer: "DEFRA, Ministry of Justice, GDS"
+    fields:
+      - type: list
+        addthing: Add another client
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

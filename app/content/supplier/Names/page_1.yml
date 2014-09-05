@@ -1,6 +1,0 @@
-mockAnswer: Umbraco
-fields:
-  - type: text
-    validation: notBlank
-    errorMessage: ""
-    errorSummaryMessage: ""

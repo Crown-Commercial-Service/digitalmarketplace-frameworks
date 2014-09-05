@@ -1,6 +1,0 @@
-Do you support and document open standards?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

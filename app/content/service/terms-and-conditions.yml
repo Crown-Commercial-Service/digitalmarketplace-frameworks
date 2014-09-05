@@ -1,0 +1,13 @@
+Terms and conditions:
+  Does your service charge a termination cost?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Does your service have a minimum contract period?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

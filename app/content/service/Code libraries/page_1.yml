@@ -1,7 +1,0 @@
-What languages are your code libraries written in?:
-  fields:
-    - type: list
-      addthing: Add another code library
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

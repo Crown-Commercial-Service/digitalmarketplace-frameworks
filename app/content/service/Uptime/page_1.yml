@@ -1,8 +1,0 @@
-"What level of uptime is offered? (%)":
-  hint: Eg 99.99
-  mockAnswer: "99.99%"
-  fields:
-    - type: text
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

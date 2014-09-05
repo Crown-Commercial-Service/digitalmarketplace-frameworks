@@ -1,7 +1,0 @@
-In what unit is your service priced?:
-  hint: "Optional. Eg User, unit, MbPS, GB, TB"
-  fields:
-    - type: text
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""
