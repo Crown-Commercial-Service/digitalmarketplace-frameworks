@@ -1,16 +1,22 @@
 Supplier information:
-  mockAnswer: Joséphine Bloggs
-  Contact name:
+  Supplier description:
+    mockAnswer: "With over than 200.000 installations, Umbraco is one of the most deployed Web Content Management Systems on the Microsoft stack. It's in the top five most popular server applications and among the ten most popular open source tools in general."
     fields:
       - type: textarea
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Contact address:
-    hint: "If you would prefer an alternative address to be included on your service listing, please provide details here."
-    mockAnswer: ""
+  Website:
+    mockAnswer: "http://umbraco.com"
     fields:
-      - type: textarea
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Contact name:
+    mockAnswer: Joséphine Bloggs
+    fields:
+      - type: text
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""

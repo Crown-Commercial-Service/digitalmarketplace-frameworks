@@ -1,26 +1,47 @@
 Pricing:
-  What is the unit price of your service?:
-    hint: "Eg 1.50, 999"
+  What pricing levels do you offer?:
+    hint: "If the units and intervals you offer are not provided, tough"
+    mockAnswer: "Gold, Silver, Bronze"
     fields:
-      - type: text
-        validation: notBlank
+      - type: matrix
+        validation: ":("
+        columns:
+          - label: Label
+            hint: "Eg Gold, medium, 10–999 Users"
+            field:
+              type: text
+          - label: Unit price
+            hint: "Eg 1.50, 75"
+            field:
+              type: price
+          - label: Pricing unit
+            hint: "Eg GB, Mb/s"
+            field:
+              type: dropdown
+              options:
+                - ""
+                - n/a
+                - User
+                - Unit
+                - MbPS
+                - GB
+                - TB
+          - label: Pricing interval
+            hint: "Eg month, parsec"
+            field:
+              type: dropdown
+              options:
+                - ""
+                - Minute
+                - Hour
+                - Day
+                - Week
+                - Month
+                - Annum
         errorMessage: ""
         errorSummaryMessage: ""
-  In what unit is your service priced?:
-    hint: "Optional. Eg User, unit, MbPS, GB, TB"
-    fields:
-      - type: text
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
-  What is the pricing interval of your service?:
-    hint: "Optional. Eg Minute, hour, day, week, month, annum"
-    fields:
-      - type: text
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
-  Does the price include VAT?:
+        addThing: Add another pricing level
+  Do the price(s) include VAT?:
     fields:
       - type: boolean
         validation: notBlank

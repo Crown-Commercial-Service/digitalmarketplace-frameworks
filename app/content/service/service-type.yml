@@ -4,50 +4,46 @@ Service type:
     mockAnswer: Content Management Systems
     fields:
       - type: checkbox
-        label: "Un-listed "
+        label: Accounting and finance
       - type: checkbox
-        label: "Forms "
+        label: Business intelligence and analytics
       - type: checkbox
-        label: "Analytics "
+        label: Collaboration
       - type: checkbox
-        label: "Search "
+        label: Telecoms
       - type: checkbox
-        label: "User Alerts "
+        label: Customer relationship management (CRM)
       - type: checkbox
-        label: "EDRM / Collaboration "
+        label: Creative and design
       - type: checkbox
-        label: "Content Management Systems (CMS) "
+        label: Data management
       - type: checkbox
-        label: "Customer Relationship Management (CRM) "
+        label: Sales
       - type: checkbox
-        label: "Service Monitoring "
+        label: Software development tools
       - type: checkbox
-        label: "Data Visualisation "
+        label: Electronic document and records management (EDRM)
       - type: checkbox
-        label: "Email "
+        label: Human resources and employee management
       - type: checkbox
-        label: "Enterprise Resource Planning "
+        label: IT management
       - type: checkbox
-        label: "Office Productivity "
+        label: Marketing
       - type: checkbox
-        label: "Polls/Surveys "
+        label: Operations management
       - type: checkbox
-        label: "Agile Tools "
+        label: Project management and planning
       - type: checkbox
-        label: "Asset Management "
+        label: Security
       - type: checkbox
-        label: "Identity "
+        label: Libraries
       - type: checkbox
-        label: "Accessibility "
+        label: Schools and education
       - type: checkbox
-        label: "Geographic Search "
+        label: Energy and environment
       - type: checkbox
-        label: "Gamification "
+        label: Healthcare
       - type: checkbox
-        label: "Learning Management Systems (LMS) "
+        label: Legal
       - type: checkbox
-        label: "End User Device (EUD) "
-      - type: checkbox
-        label: "Simulation & Training "
-      - type: checkbox
-        label: "Antispam / CAPTCHA "
+        label: Transport and logistics
