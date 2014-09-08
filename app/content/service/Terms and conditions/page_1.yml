@@ -1,6 +1,0 @@
-Does your service charge a termination cost?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

@@ -1,5 +1,0 @@
-fields:
-  - type: textarea
-    validation: notBlank
-    errorMessage: ""
-    errorSummaryMessage: ""

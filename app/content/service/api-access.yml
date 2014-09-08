@@ -1,0 +1,14 @@
+API access:
+  Is API access available and supported?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  What is the type of API?:
+    hint: "Eg RESTful, SOAP"
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

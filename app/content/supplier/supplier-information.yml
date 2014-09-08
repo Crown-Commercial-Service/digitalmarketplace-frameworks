@@ -1,0 +1,45 @@
+Supplier information:
+  Supplier description:
+    mockAnswer: "With over than 200.000 installations, Umbraco is one of the most deployed Web Content Management Systems on the Microsoft stack. It's in the top five most popular server applications and among the ten most popular open source tools in general."
+    fields:
+      - type: textarea
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Website:
+    mockAnswer: "http://umbraco.com"
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Contact name:
+    mockAnswer: Joséphine Bloggs
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Contact email:
+    mockAnswer: "me@example.com"
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Contact phone:
+    mockAnswer: 01234 567890
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Client list:
+    hint: These will be visible on your supplier page so please make sure you have approval.
+    mockAnswer: "DEFRA, Ministry of Justice, GDS"
+    fields:
+      - type: list
+        addthing: Add another client
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

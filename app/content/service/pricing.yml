@@ -1,0 +1,75 @@
+Pricing:
+  What pricing levels do you offer?:
+    hint: "If the units and intervals you offer are not provided, tough"
+    mockAnswer: "Gold, Silver, Bronze"
+    fields:
+      - type: matrix
+        validation: ":("
+        columns:
+          - label: Label
+            hint: "Eg Gold, medium, 10–999 Users"
+            field:
+              type: text
+          - label: Unit price
+            hint: "Eg 1.50, 75"
+            field:
+              type: price
+          - label: Pricing unit
+            hint: "Eg GB, Mb/s"
+            field:
+              type: dropdown
+              options:
+                - ""
+                - n/a
+                - User
+                - Unit
+                - MbPS
+                - GB
+                - TB
+          - label: Pricing interval
+            hint: "Eg month, parsec"
+            field:
+              type: dropdown
+              options:
+                - ""
+                - Minute
+                - Hour
+                - Day
+                - Week
+                - Month
+                - Annum
+        errorMessage: ""
+        errorSummaryMessage: ""
+        addThing: Add another pricing level
+  Do the price(s) include VAT?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Do you offer education pricing?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Do you offer a trial option?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Do you offer a free option?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Rate Card (SFIA):
+    mockAnswer: Rate Card Umbraco 102014.odf
+    hint: Please upload your SFIA rate card if you have one. Should be in an open document format.
+    fields:
+      - type: upload
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

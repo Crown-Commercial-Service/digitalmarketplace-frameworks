@@ -1,8 +1,0 @@
-What identity standards does your service use?:
-  hint: "Eg OAuth, SAML"
-  fields:
-    - type: list
-      addthing: Add another standard
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

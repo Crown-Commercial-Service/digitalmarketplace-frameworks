@@ -1,0 +1,8 @@
+eSourcing:
+  Have you completed the eSourcing process:
+    mockAnswer: "Yes"
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

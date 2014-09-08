@@ -1,0 +1,82 @@
+Data storage:
+  Do datacentres adhere to EU Code of Conduct for Operations?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Can the data location option can be defined by the user?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Data processing and storage location(s):
+    hint: Choose all that apply
+    mockAnswer: United Kingdom
+    fields:
+      - type: checkbox
+        label: United Kingdom of Great Britain and Northern Ireland
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: checkbox
+        label: United States
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Data centre tier:
+    hint: Choose one
+    fields:
+      - type: radio
+        label: TIA-942 Tier 1
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: radio
+        label: TIA-942 Tier 2
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: radio
+        label: TIA-942 Tier 3
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: radio
+        label: TIA-942 Tier 4
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: radio
+        label: Uptime Institute Tier 1
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: radio
+        label: Uptime Institute Tier 2
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: radio
+        label: Uptime Institute Tier 3
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: radio
+        label: Uptime Institute Tier 4
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Backup and disaster recovery in place?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Data extraction/removal plan in place?:
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

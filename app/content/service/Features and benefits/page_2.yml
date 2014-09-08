@@ -1,9 +1,0 @@
-What are the business benefits of your service?:
-  hint: "How will your service help users improve their business? Use active phrases eg publish content, quickly manage content on the move."
-  mockAnswer: "Publish content, Quickly manage content on the move"
-  fields:
-    - type: list
-      validation: notBlank
-      errorMessage: ""
-      addthing: Add another business benefit
-      errorSummaryMessage: ""

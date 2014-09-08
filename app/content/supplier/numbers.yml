@@ -1,0 +1,15 @@
+Numbers:
+  DUNs number:
+    mockAnswer: 0123456789
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Company number:
+    mockAnswer: "9876543210"
+    fields:
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""

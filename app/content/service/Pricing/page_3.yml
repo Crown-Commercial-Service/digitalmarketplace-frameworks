@@ -1,7 +1,0 @@
-What is the pricing interval of your service?:
-  hint: "Optional. Eg Minute, hour, day, week, month, annum"
-  fields:
-    - type: text
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

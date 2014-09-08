@@ -1,6 +1,0 @@
-Is support accessible to third-party suppliers?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

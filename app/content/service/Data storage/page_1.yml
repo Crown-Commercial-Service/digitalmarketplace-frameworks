@@ -1,6 +1,0 @@
-Do datacentres adhere to EU Code of Conduct for Operations?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

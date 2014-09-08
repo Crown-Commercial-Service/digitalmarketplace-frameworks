@@ -1,6 +1,0 @@
-Is an elastic cloud approach supported?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

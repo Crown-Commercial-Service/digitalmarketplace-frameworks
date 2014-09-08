@@ -1,6 +1,0 @@
-Is real-time management information available?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

@@ -1,6 +1,0 @@
-Is an incident escalation process available?:
-  fields:
-    - type: boolean
-      validation: notBlank
-      errorMessage: ""
-      errorSummaryMessage: ""

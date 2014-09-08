@@ -1,6 +1,0 @@
-mockAnswer: "Yes"
-fields:
-  - type: boolean
-    validation: notBlank
-    errorMessage: ""
-    errorSummaryMessage: ""
