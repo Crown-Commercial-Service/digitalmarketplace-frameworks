@@ -10,10 +10,18 @@ Pricing:
             hint: "Eg Gold, medium, 10–999 Users"
             field:
               type: text
+          - label: ""
+            field:
+              type: plaintext
+              text: "at"
           - label: Unit price
             hint: "Eg 1.50, 75"
             field:
               type: price
+          - label: ""
+            field:
+              type: plaintext
+              text: "per"
           - label: Pricing unit
             hint: "Eg GB, Mb/s"
             field:
@@ -26,6 +34,10 @@ Pricing:
                 - MbPS
                 - GB
                 - TB
+          - label: ""
+            field:
+              type: plaintext
+              text: "per"
           - label: Pricing interval
             hint: "Eg month, parsec"
             field:
