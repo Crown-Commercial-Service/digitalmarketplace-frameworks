@@ -13,7 +13,7 @@ Pricing:
           - label: ""
             field:
               type: plaintext
-              text: "at"
+              text: "at £"
           - label: Unit price
             hint: "Eg 1.50, 75"
             field:
