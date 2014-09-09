@@ -1,5 +1,5 @@
 Service details:
-  What kind of service are you providing?:
+  What kind of service are you submitting?:
     hint: Select one option relevant to your service
     mockAnswer: Software as a service
     fields:
