@@ -1,12 +1,12 @@
 API access:
-  Is API access available and supported?:
+  API access available and supported:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  What is the type of API?:
-    hint: "Eg RESTful, SOAP"
+  API type:
+    hint: "Examples of APIs include RESTful and SOAP"
     fields:
       - type: text
         validation: notBlank
