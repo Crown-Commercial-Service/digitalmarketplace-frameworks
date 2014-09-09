@@ -1,6 +1,6 @@
 Features and benefits:
-  What are the features of your service?:
-    hint: "Include the technical features of your product, eg graphical workflow, remote access."
+  Service features:
+    hint: "Include the technical features of your product, eg graphical workflow, remote access. (Maximum 10 words per feature. Maximum 10 features.)"
     mockAnswer: "Graphical workflow, Remote access, Revision control"
     fields:
       - type: list
@@ -8,8 +8,8 @@ Features and benefits:
         errorMessage: ""
         addthing: Add another feature
         errorSummaryMessage: ""
-  What are the business benefits of your service?:
-    hint: "How will your service help users improve their business? Use active phrases eg publish content, quickly manage content on the move."
+  Service benefits:
+    hint: "Include benefits that show how your service helps users improve their business. Use active phrases, eg publish content from multiple devices, quickly manage content on the move.  (Maximum 10 words per benefit. Maximum 10 benefits.)"
     mockAnswer: "Publish content, Quickly manage content on the move"
     fields:
       - type: list
