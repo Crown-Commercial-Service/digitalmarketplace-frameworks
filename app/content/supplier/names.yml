@@ -1,4 +1,4 @@
-Names:
+Names and addresses:
   Registered company name:
     mockAnswer: Umbraco
     fields:
@@ -6,7 +6,7 @@ Names:
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Trading as name:
+  Trading name:
     mockAnswer: Umbraco
     fields:
       - type: text

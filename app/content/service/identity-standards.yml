@@ -1,6 +1,6 @@
 Identity standards:
-  What identity standards does your service use?:
-    hint: "Eg OAuth, SAML"
+  Identity standards your service uses:
+    hint: "Examples of identity standards include OAuth, SAML"
     fields:
       - type: list
         addthing: Add another standard

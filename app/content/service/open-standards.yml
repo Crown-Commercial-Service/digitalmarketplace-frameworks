@@ -1,5 +1,5 @@
 Open standards:
-  Do you support and document open standards?:
+  Open standards supported and documented:
     fields:
       - type: boolean
         validation: notBlank

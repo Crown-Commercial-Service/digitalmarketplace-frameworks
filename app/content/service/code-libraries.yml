@@ -1,5 +1,5 @@
 Code libraries:
-  What languages are your code libraries written in?:
+  Languages your code libraries are written in:
     fields:
       - type: list
         addthing: Add another code library

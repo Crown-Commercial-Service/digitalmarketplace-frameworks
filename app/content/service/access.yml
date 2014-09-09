@@ -1,5 +1,5 @@
 Access:
-  Which web browsers are supported?:
+  Supported web browsers:
     fields:
       - type: checkbox
         label: Internet Explorer
@@ -26,13 +26,13 @@ Access:
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Is offline working and synching supported?:
+  Offline working and syncing supported:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Which devices are supported?:
+  Supported devices:
     fields:
       - type: checkbox
         label: PC

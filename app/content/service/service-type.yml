@@ -1,7 +1,7 @@
 Service type:
-  Which categories best describe your service?:
-    hint: Choose all that apply
-    mockAnswer: Content Management Systems
+  Choose the categories that apply to your service:
+    hint: "You can choose multiple categories"
+    mockAnswer: Content management system
     fields:
       - type: checkbox
         label: Accounting and finance

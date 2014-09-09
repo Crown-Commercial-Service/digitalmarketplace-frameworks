@@ -1,13 +1,14 @@
 Onboarding and offboarding:
-  Is an off-boarding process included?:
+  Onboarding process included:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Is an on-boarding process included?:
+  Offboarding process included:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
+

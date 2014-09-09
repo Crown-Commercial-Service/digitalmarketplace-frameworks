@@ -1,5 +1,5 @@
 Networks and connectivity:
-  What networks is the service directly connected to?:
+  Networks the service is directly connected to:
     mockAnswer: Internet
     fields:
       - type: checkbox

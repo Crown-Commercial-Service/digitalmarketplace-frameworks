@@ -1,5 +1,5 @@
 Support:
-  What is the type of support service?:
+  Support service type:
     hint: Choose all that apply
     fields:
       - type: checkbox
@@ -27,27 +27,27 @@ Support:
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Is support accessible to third-party suppliers?:
+  Support accessible to third-party suppliers:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  When is support available?:
-    hint: "Eg 24/7, 9 to 5"
+  Support availablility:
+    hint: "eg 24/7 or 9-5"
     fields:
       - type: text
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  What are the response times for support?:
-    hint: Maximum of 20 words
+  Support response times:
+    hint: "Maximum 20 words"
     fields:
       - type: text
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Is an incident escalation process available?:
+  Incident escalation process available:
     fields:
       - type: boolean
         validation: notBlank
