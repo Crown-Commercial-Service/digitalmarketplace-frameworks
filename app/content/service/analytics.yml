@@ -1,5 +1,5 @@
 Analytics:
-  Is real-time management information available?:
+  Real-time management information available:
     fields:
       - type: boolean
         validation: notBlank
