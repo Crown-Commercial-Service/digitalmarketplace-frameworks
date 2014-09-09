@@ -1,11 +1,11 @@
 Data storage:
-  Do datacentres adhere to EU Code of Conduct for Operations?:
+  Datacentres adhere to EU Code of Conduct for Operations:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Can the data location option can be defined by the user?:
+  User-defined data location:
     fields:
       - type: boolean
         validation: notBlank
@@ -16,7 +16,7 @@ Data storage:
     mockAnswer: United Kingdom
     fields:
       - type: checkbox
-        label: United Kingdom of Great Britain and Northern Ireland
+        label: United Kingdom
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
@@ -25,7 +25,7 @@ Data storage:
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Data centre tier:
+  Datacentre tier:
     hint: Choose one
     fields:
       - type: radio
@@ -68,13 +68,13 @@ Data storage:
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Backup and disaster recovery in place?:
+  Backup and disaster recovery in place:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Data extraction/removal plan in place?:
+  Data extraction/removal plan in place:
     fields:
       - type: boolean
         validation: notBlank
