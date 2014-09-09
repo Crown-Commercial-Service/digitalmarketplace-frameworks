@@ -9,10 +9,6 @@ Pricing:
           - label: Type
             field:
               type: text
-          - label: ""
-            field:
-              type: plaintext
-              text: " £"
           - label: Price
             field:
               type: price
