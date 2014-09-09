@@ -1,5 +1,5 @@
 Access:
-  Which web browsers are support?:
+  Which web browsers are supported?:
     fields:
       - type: checkbox
         label: Internet Explorer
