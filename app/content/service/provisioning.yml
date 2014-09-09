@@ -5,10 +5,17 @@ Provisioning:
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  How long does it take to provision or deprovision your service?:
-    hint: "8 words max"
+  Service provisioning time:
+    hint: ""
     fields:
-      - type: list
+      - type: text
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Service deprovisioning time:
+    hint: ""
+    fields:
+      - type: text
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
