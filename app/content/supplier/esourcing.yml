@@ -1,5 +1,5 @@
 eSourcing:
-  Have you completed the eSourcing process:
+  eSourcing process completed:
     mockAnswer: "Yes"
     fields:
       - type: boolean
