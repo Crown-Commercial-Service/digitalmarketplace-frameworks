@@ -1,29 +1,27 @@
 Pricing:
-  What pricing levels do you offer?:
-    hint: "If the units and intervals you offer are not provided, tough"
-    mockAnswer: "Gold, Silver, Bronze"
+  Service price:
+    hint: "If you offer bulk pricing, include type here, eg 10-99 users or 50+ users"
+    mockAnswer: "1-9 users, 10-99 users, 100+ users"
     fields:
       - type: matrix
         validation: ":("
         columns:
-          - label: Label
-            hint: "Eg Gold, medium, 10–999 Users"
+          - label: Type
             field:
               type: text
           - label: ""
             field:
               type: plaintext
-              text: "at £"
-          - label: Unit price
-            hint: "Eg 1.50, 75"
+              text: " £"
+          - label: Price
             field:
               type: price
           - label: ""
             field:
               type: plaintext
               text: "per"
-          - label: Pricing unit
-            hint: "Eg GB, Mb/s"
+          - label: Unit
+            hint: "eg GB, Mbps"
             field:
               type: dropdown
               options:
@@ -38,8 +36,8 @@ Pricing:
             field:
               type: plaintext
               text: "per"
-          - label: Pricing interval
-            hint: "Eg month, parsec"
+          - label: Interval
+            hint: "eg day, month"
             field:
               type: dropdown
               options:
@@ -52,34 +50,34 @@ Pricing:
                 - Annum
         errorMessage: ""
         errorSummaryMessage: ""
-        addThing: Add another pricing level
-  Do the price(s) include VAT?:
+        addThing: Add another pricing type
+  VAT included:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Do you offer education pricing?:
+  Education pricing:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Do you offer a trial option?:
+  Trial option:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Do you offer a free option?:
+  Free option:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Rate Card (SFIA):
+  Skills Framework for the Information Age (SFIA) rate card:
     mockAnswer: Rate Card Umbraco 102014.odf
-    hint: Please upload your SFIA rate card if you have one. Should be in an open document format.
+    hint: "Please upload your SFIA rate card if you have one. Use an open document format."
     fields:
       - type: upload
         validation: notBlank
