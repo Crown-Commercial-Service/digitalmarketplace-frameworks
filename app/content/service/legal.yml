@@ -1,5 +1,5 @@
 Legal:
-  Is eDiscovery supported?:
+  eDiscovery supported:
     fields:
       - type: boolean
         validation: notBlank
