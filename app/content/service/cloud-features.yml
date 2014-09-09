@@ -1,17 +1,17 @@
 Cloud features:
-  Is an elastic cloud approach supported?:
+  Elastic cloud approach supported:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Are guaranteed resources defined?:
+  Guaranteed resources defined:
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Is persistant storage supported?:
+  Persistent storage supported:
     fields:
       - type: boolean
         validation: notBlank
