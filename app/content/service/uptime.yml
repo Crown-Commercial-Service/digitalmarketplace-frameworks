@@ -1,6 +1,6 @@
 Uptime:
-  What level of uptime is offered?:
-    hint: Eg 99.99
+  Uptime offered:
+    hint: "eg 99.99"
     mockAnswer: "99.99%"
     fields:
       - type: percentage
