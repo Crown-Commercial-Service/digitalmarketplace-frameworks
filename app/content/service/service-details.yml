@@ -4,25 +4,25 @@ Service details:
     mockAnswer: Software as a service
     fields:
       - type: radio
-        label: Infrastructure as a service
+        label: Infrastructure as a Service
         validation: notBlank
         explanation: "Infrastructure is the hardware that makes software work. It’s the networks, hosting facilities and servers that platforms and software depend on. IaaS is infrastructure you can order and run entirely over the internet, without having to pay for your own hardware."
         errorMessage: ""
         errorSummaryMessage: ""
       - type: radio
-        label: Software as a service
+        label: Software as a Service
         validation: notBlank
         explanation: "SaaS is an application or service that can be run over the internet or in the cloud. For example, web-based email services, customer relationship management (CRM) software and analytics tools."
         errorMessage: ""
         errorSummaryMessage: ""
       - type: radio
-        label: Platform as a service
+        label: Platform as a Service
         validation: notBlank
         explanation: "Platforms are just that: software platforms that provide a basis for building other services and applications. With PaaS, you can set up, order, pay for and manage platforms in the cloud."
         errorMessage: ""
         errorSummaryMessage: ""
       - type: radio
-        label: Specialist cloud services
+        label: Specialist Cloud Services
         validation: notBlank
         explanation: "Specialist Cloud Services support your transition to SaaS, PaaS and IaaS. For example, cloud strategy, data transfer between providers, or day-to-day support of cloud-based services."
         errorMessage: ""
