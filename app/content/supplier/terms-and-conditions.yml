@@ -1,8 +1,0 @@
-Terms and conditions:
-  "If you have a terms and conditions document for your service, upload it here":
-    mockAnswer: Umbraco Terms_Conditions 102014.odf
-    fields:
-      - type: upload
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""

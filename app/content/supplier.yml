@@ -7,6 +7,4 @@
 - Page 3:
     name: Supplier information
     file: supplier/supplier-information.yml
-- Page 4:
-    name: Terms and conditions
-    file: supplier/terms-and-conditions.yml
+
