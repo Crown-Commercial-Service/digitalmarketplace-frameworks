@@ -1,0 +1,17 @@
+Data-in-transit protection:
+  "How is data protected between the user's device and the service?":
+    requirements: Data in transit is protected between the user’s devices and the service
+    filters: Data in transit is protected between the user’s devices and the service
+    label: Data protection between user device and service
+    relevantCategories: SaaS, PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "Encrypted community WAN service"
+          - "Community WAN service"
+          - "CAPS-encrypted"
+          - "IPSec VPN Gateway - CPA"
+          - "Bonded fibre optic connections"
+          - "Legacy SSL or TLS encrypted"
+          - "TLS, version 1.2 or later, encrypted"
+          - "Not encrypted"

@@ -1,0 +1,105 @@
+- Page 2:
+    name: Service type
+    file: service/service-type.yml
+- Page 3:
+    name: Service description
+    file: service/service-description.yml
+- Page 4:
+    name: Features and benefits
+    file: service/features-and-benefits.yml
+- Page 5:
+    name: Terms and conditions
+    file: service/terms-and-conditions.yml
+- Page 6:
+    name: Pricing
+    file: service/pricing.yml
+- Page 7:
+    name: Legal
+    file: service/legal.yml
+- Page 8:
+    name: Open standards
+    file: service/open-standards.yml
+- Page 9:
+    name: Cloud features
+    file: service/cloud-features.yml
+- Page 10:
+    name: Analytics
+    file: service/analytics.yml
+- Page 11:
+    name: Provisioning
+    file: service/provisioning.yml
+- Page 12:
+    name: Data storage
+    file: service/data-storage.yml
+- Page 13:
+    name: Onboarding and offboarding
+    file: service/onboarding-and-offboarding.yml
+- Page 14:
+    name: Open source
+    file: service/open-source.yml
+- Page 15:
+    name: Support
+    file: service/support.yml
+- Page 16:
+    name: Uptime
+    file: service/uptime.yml
+- Page 17:
+    name: API access
+    file: service/api-access.yml
+- Page 18:
+    name: Networks and connectivity
+    file: service/networks-and-connectivity.yml
+- Page 19:
+    name: Access
+    file: service/access.yml
+- Page 20:
+    name: Certifications
+    file: service/certifications.yml
+- Page 21:
+    name: Code libraries
+    file: service/code-libraries.yml
+- Page 22:
+    name: Identity standards
+    file: service/identity-standards.yml
+- Page 23:
+    name: 00
+    file: security/SaaS/00.yml
+- Page 24:
+    name: 01
+    file: security/SaaS/01.yml
+- Page 25:
+    name: 02
+    file: security/SaaS/02.yml
+- Page 26:
+    name: 03
+    file: security/SaaS/03.yml
+- Page 27:
+    name: 04
+    file: security/SaaS/04.yml
+- Page 28:
+    name: 05
+    file: security/SaaS/05.yml
+- Page 29:
+    name: 06
+    file: security/SaaS/06.yml
+- Page 30:
+    name: 07
+    file: security/SaaS/07.yml
+- Page 31:
+    name: 08
+    file: security/SaaS/08.yml
+- Page 32:
+    name: 09
+    file: security/SaaS/09.yml
+- Page 33:
+    name: 10
+    file: security/SaaS/10.yml
+- Page 34:
+    name: 11
+    file: security/SaaS/11.yml
+- Page 35:
+    name: 12
+    file: security/SaaS/12.yml
+- Page 36:
+    name: 13
+    file: security/SaaS/13.yml

@@ -1,0 +1,14 @@
+Asset protection and resilience:
+  "Where is the service provider's legal jurisdiction?":
+    requirements: The legal jurisdiction(s) in which the service provider operates
+    filters: The legal jurisdiction(s) in which the service provider operates
+    label: Legal jurisdiction of service provider
+    relevantCategories: All
+    fields:
+      - type: radios
+        options:
+          - "UK"
+          - "EU"
+          - "USA - Safe Harbor"
+          - "Other countries with data protection treaties"
+          - "Other countries"

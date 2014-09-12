@@ -1,6 +1,3 @@
-- Page 1:
-    name: Service details
-    file: service/service-details.yml
 - Page 2:
     name: Service type
     file: service/service-type.yml
@@ -66,43 +63,43 @@
     file: service/identity-standards.yml
 - Page 23:
     name: 00
-    file: security/pages/00.yml
+    file: security/PaaS-IaaS/00.yml
 - Page 24:
     name: 01
-    file: security/pages/01.yml
+    file: security/PaaS-IaaS/01.yml
 - Page 25:
     name: 02
-    file: security/pages/02.yml
+    file: security/PaaS-IaaS/02.yml
 - Page 26:
     name: 03
-    file: security/pages/03.yml
+    file: security/PaaS-IaaS/03.yml
 - Page 27:
     name: 04
-    file: security/pages/04.yml
+    file: security/PaaS-IaaS/04.yml
 - Page 28:
     name: 05
-    file: security/pages/05.yml
+    file: security/PaaS-IaaS/05.yml
 - Page 29:
     name: 06
-    file: security/pages/06.yml
+    file: security/PaaS-IaaS/06.yml
 - Page 30:
     name: 07
-    file: security/pages/07.yml
+    file: security/PaaS-IaaS/07.yml
 - Page 31:
     name: 08
-    file: security/pages/08.yml
+    file: security/PaaS-IaaS/08.yml
 - Page 32:
     name: 09
-    file: security/pages/09.yml
+    file: security/PaaS-IaaS/09.yml
 - Page 33:
     name: 10
-    file: security/pages/10.yml
+    file: security/PaaS-IaaS/10.yml
 - Page 34:
     name: 11
-    file: security/pages/11.yml
+    file: security/PaaS-IaaS/11.yml
 - Page 35:
     name: 12
-    file: security/pages/12.yml
+    file: security/PaaS-IaaS/12.yml
 - Page 36:
     name: 13
-    file: security/pages/13.yml
+    file: security/PaaS-IaaS/13.yml
