@@ -13,5 +13,6 @@ Service description:
     fields:
       - type: textarea
         validation: notBlank
+        maxLengthInWords: 50
         errorMessage: ""
         errorSummaryMessage: ""
