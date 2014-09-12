@@ -61,45 +61,15 @@
 - Page 22:
     name: Identity standards
     file: service/identity-standards.yml
-- Page 23:
-    name: 00
-    file: security/SCS/00.yml
 - Page 24:
     name: 01
     file: security/SCS/01.yml
-- Page 25:
-    name: 02
-    file: security/SCS/02.yml
-- Page 26:
-    name: 03
-    file: security/SCS/03.yml
 - Page 27:
     name: 04
     file: security/SCS/04.yml
 - Page 28:
     name: 05
     file: security/SCS/05.yml
-- Page 29:
-    name: 06
-    file: security/SCS/06.yml
 - Page 30:
     name: 07
     file: security/SCS/07.yml
-- Page 31:
-    name: 08
-    file: security/SCS/08.yml
-- Page 32:
-    name: 09
-    file: security/SCS/09.yml
-- Page 33:
-    name: 10
-    file: security/SCS/10.yml
-- Page 34:
-    name: 11
-    file: security/SCS/11.yml
-- Page 35:
-    name: 12
-    file: security/SCS/12.yml
-- Page 36:
-    name: 13
-    file: security/SCS/13.yml
