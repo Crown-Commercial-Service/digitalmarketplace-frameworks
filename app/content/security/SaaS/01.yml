@@ -12,6 +12,7 @@ Asset protection and resilience:
           - "USA - Safe Harbor"
           - "Other countries with data protection treaties"
           - "Other countries"
+      - type: assurance
   "Where are the services managed from?":
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
@@ -25,6 +26,7 @@ Asset protection and resilience:
           - "USA - Safe Harbor"
           - "Other countries with data protection treaties"
           - "Other countries"
+      - type: assurance
   "Where is the service provider's legal jurisdiction?":
     requirements: The legal jurisdiction(s) in which the service provider operates
     filters: The legal jurisdiction(s) in which the service provider operates
@@ -38,6 +40,7 @@ Asset protection and resilience:
           - "USA - Safe Harbor"
           - "Other countries with data protection treaties"
           - "Other countries"
+      - type: assurance
   "Do the datacentres where your consumer data is located, have suitable physical security?":
     requirements: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
     filters: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
@@ -48,6 +51,7 @@ Asset protection and resilience:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "How is storage containing consumer data-at-rest protected from unauthorised access?":
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     filters: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
@@ -62,6 +66,7 @@ Asset protection and resilience:
           - "Other encryption"
           - "Secure containers or cages"
           - "No protection"
+      - type: assurance
   "How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service or when they request it to be erased?":
     requirements: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
     filters: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
@@ -75,6 +80,7 @@ Asset protection and resilience:
           - "CESG or CPNI-approved erasure"
           - "Other secure erasure"
           - "Other erasure process"
+      - type: assurance
   "What is the availability of the service?":
     requirements: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
     filters: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
@@ -82,3 +88,4 @@ Asset protection and resilience:
     relevantCategories: SaaS, PaaS, IaaS
     fields:
       - type: percentage
+      - type: assurance

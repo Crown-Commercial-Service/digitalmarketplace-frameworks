@@ -9,6 +9,7 @@ Supply-chain security:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Do your procurement processes ensure that relevant security requirements, such as the Cloud Security Principles, placed on third-party suppliers and delivery partners are explicitly documented?":
     requirements: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
@@ -19,6 +20,7 @@ Supply-chain security:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Are the risks to your service from third-party suppliers and delivery partners regularly assessed and appropriate security controls implemented?":
     requirements: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
@@ -29,6 +31,7 @@ Supply-chain security:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Do you monitor how your suppliers comply with security requirements and initiate remedial action where necessary?":
     requirements: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
     filters: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
@@ -39,3 +42,4 @@ Supply-chain security:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance

@@ -11,6 +11,7 @@ Separation between consumers:
           - "Community cloud"
           - "Private cloud"
           - "Hybrid cloud"
+      - type: assurance
   "What types of other consumer, do your consumers share the service or platform with?":
     requirements: Consumers should understand the types of consumer they share the service or platform with.
     filters: Consumers should understand the types of consumer they share the service or platform with.
@@ -23,6 +24,7 @@ Separation between consumers:
           - "Only government"
           - "A specific group"
           - "Anyone - public"
+      - type: assurance
   "Do you provide separation of consumer data and service from other consumers of the service?":
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     filters: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
@@ -33,6 +35,7 @@ Separation between consumers:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Is the management of a consumer’s service, kept separate from other consumers?":
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     filters: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
@@ -43,3 +46,4 @@ Separation between consumers:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance

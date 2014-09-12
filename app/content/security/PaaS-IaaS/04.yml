@@ -9,6 +9,7 @@ Configuration and change management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Are changes to the service assessed for potential security impact? And are changes managed and tracked through to completion?":
     requirements: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
     filters: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
@@ -19,6 +20,7 @@ Configuration and change management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
 Vulnerabilility management:
   "Are potential new threats, vulnerabilities or exploitation techniques which could affect the service assessed, and are corrective actions taken?":
     requirements: Consumers should have confidence that potential new threats, vulnerabilities or exploitation techniques which could affect the service are assessed and corrective action is taken.
@@ -30,6 +32,7 @@ Vulnerabilility management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Do you monitor relevant sources of information relating to threat, vulnerability and exploitation techniques?":
     requirements: Consumers should have confidence that relevant sources of information relating to threat, vulnerability and exploitation technique information are monitored by the service provider.
     filters: Consumers should have confidence that relevant sources of information relating to threat, vulnerability and exploitation technique information are monitored by the service provider.
@@ -40,6 +43,7 @@ Vulnerabilility management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Are the severity of threats and vulnerabilities considered within the context of the service and do you use this information to prioritise implementation of mitigations?":
     requirements: Consumers should have confidence that the severity of threats and vulnerabilities are considered within the context of the service and this information is used to prioritise implementation of mitigations.
     filters: Consumers should have confidence that the severity of threats and vulnerabilities are considered within the context of the service and this information is used to prioritise implementation of mitigations.
@@ -50,6 +54,7 @@ Vulnerabilility management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Are known vulnerabilities within the service tracked until suitable mitigations have been deployed through a suitable change-management process?":
     requirements: Consumers should have confidence that known vulnerabilities within the service are tracked until suitable mitigations have been deployed through a suitable change management process.
     filters: Consumers should have confidence that known vulnerabilities within the service are tracked until suitable mitigations have been deployed through a suitable change management process.
@@ -60,6 +65,7 @@ Vulnerabilility management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Do you make timescales for implementing mitigations to vulnerabilities available to buyers?":
     requirements: Consumers should have confidence that service provider timescales for implementing mitigations to vulnerabilities found within the service are made available to them.
     filters: Consumers should have confidence that service provider timescales for implementing mitigations to vulnerabilities found within the service are made available to them.
@@ -70,6 +76,7 @@ Vulnerabilility management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
 Protective monitoring:
   "Do you conduct protective monitoring and analysis to identify suspicious activity?":
     requirements: Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.
@@ -81,6 +88,7 @@ Protective monitoring:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
 Incident management:
   "Do you have incident management processes in place and are they enacted in response to security incidents?":
     requirements: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
@@ -92,6 +100,7 @@ Incident management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Do you have a defined process and contact route for reporting security incidents by consumers and external entities?":
     requirements: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
     filters: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
@@ -102,6 +111,7 @@ Incident management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Do you publish to consumers a definition of a security incident, along with the triggers and timescales for sharing such incidents with service consumers?":
     requirements: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
     filters: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
@@ -112,6 +122,7 @@ Incident management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Do you publish the content and format of security incident notifications?":
     requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
     filters: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
@@ -122,6 +133,7 @@ Incident management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "What are your maximum timescales by which an incident will be investigated?":
     requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
     filters: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
@@ -134,3 +146,4 @@ Incident management:
           - "2 weeks"
           - "1 month"
           - "3 months"
+      - type: assurance

@@ -15,3 +15,4 @@ Identity and authentication:
           - "Username and strong password/passphrase enforcement"
           - "Other mechanism"
           - "No controls"
+      - type: assurance

@@ -15,3 +15,4 @@ Data-in-transit protection:
           - "Legacy SSL or TLS encrypted"
           - "TLS, version 1.2 or later, encrypted"
           - "Not encrypted"
+      - type: assurance

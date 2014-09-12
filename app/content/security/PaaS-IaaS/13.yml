@@ -10,6 +10,7 @@ Secure use of the service by the customer:
           - "Corporate/enterprise devices"
           - "Partner devices"
           - "Unknown devices"
+      - type: assurance
   "Do you provide on-boarding guidance, including impacts on the consumer’s security?":
     requirements: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
     filters: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
@@ -21,6 +22,7 @@ Secure use of the service by the customer:
           - "Yes"
           - "No"
           - "N/A"
+      - type: assurance
   "Do you provide user or administrator training on the use of the service and its security?":
     requirements: The consumer can educate those administrating and using the service in how to use it safely and securely.
     filters: The consumer can educate those administrating and using the service in how to use it safely and securely.
@@ -31,3 +33,4 @@ Secure use of the service by the customer:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance

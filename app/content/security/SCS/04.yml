@@ -9,3 +9,4 @@ Incident management:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance

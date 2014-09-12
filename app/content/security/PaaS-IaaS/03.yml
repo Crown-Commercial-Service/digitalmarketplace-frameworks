@@ -9,3 +9,4 @@ Governance:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance

@@ -15,6 +15,7 @@ Data-in-transit protection:
           - "Legacy SSL or TLS encrypted"
           - "TLS, version 1.2 or later, encrypted"
           - "Not encrypted"
+      - type: assurance
   "How is data protected within the service?":
     requirements: Data in transit is protected internally within the service
     filters: Data in transit is protected internally within the service
@@ -31,6 +32,7 @@ Data-in-transit protection:
           - "Legacy SSL or TLS encrypted"
           - "TLS, version 1.2 or later, encrypted"
           - "Not encrypted"
+      - type: assurance
   "How is data protected between services?":
     requirements: Data in transit is protected between the service and other services (e.g. where APIs are exposed)
     filters: Data in transit is protected between the service and other services (e.g. where APIs are exposed)
@@ -47,3 +49,4 @@ Data-in-transit protection:
           - "Legacy SSL or TLS encrypted"
           - "TLS, version 1.2 or later, encrypted"
           - "Not encrypted"
+      - type: assurance

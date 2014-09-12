@@ -9,6 +9,7 @@ External interface protection:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
   "Do you provide authentication and authorisation to the service for all functions?":
     requirements: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
     filters: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
@@ -19,3 +20,4 @@ External interface protection:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance

@@ -12,3 +12,4 @@ Secure service administration:
           - "Dedicated devices for multiple community service management"
           - "Service management via bastion hosts"
           - "Direct service management"
+      - type: assurance

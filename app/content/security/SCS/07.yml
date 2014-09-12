@@ -9,3 +9,4 @@ Supply-chain security:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
+      - type: assurance
