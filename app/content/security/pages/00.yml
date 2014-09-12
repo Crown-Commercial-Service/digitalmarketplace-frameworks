@@ -1,0 +1,49 @@
+Data-in-transit protection:
+  "How is data protected between the user's device and the service?":
+    requirements: Data in transit is protected between the user’s devices and the service
+    filters: Data in transit is protected between the user’s devices and the service
+    label: Data protection between user device and service
+    relevantCategories: SaaS, PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "Encrypted community WAN service"
+          - "Community WAN service"
+          - "CAPS-encrypted"
+          - "IPSec VPN Gateway - CPA"
+          - "Bonded fibre optic connections"
+          - "Legacy SSL or TLS encrypted"
+          - "TLS, version 1.2 or later, encrypted"
+          - "Not encrypted"
+  "How is data protected within the service?":
+    requirements: Data in transit is protected internally within the service
+    filters: Data in transit is protected internally within the service
+    label: Data protection within service
+    relevantCategories: PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "Encrypted community WAN service"
+          - "Community WAN service"
+          - "CAPS-encrypted"
+          - "IPSec VPN Gateway - CPA"
+          - "Bonded fibre optic connections"
+          - "Legacy SSL or TLS encrypted"
+          - "TLS, version 1.2 or later, encrypted"
+          - "Not encrypted"
+  "How is data protected between services?":
+    requirements: Data in transit is protected between the service and other services (e.g. where APIs are exposed)
+    filters: Data in transit is protected between the service and other services (e.g. where APIs are exposed)
+    label: Data protection between services
+    relevantCategories: PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "Encrypted community WAN service"
+          - "Community WAN service"
+          - "CAPS-encrypted"
+          - "IPSec VPN Gateway - CPA"
+          - "Bonded fibre optic connections"
+          - "Legacy SSL or TLS encrypted"
+          - "TLS, version 1.2 or later, encrypted"
+          - "Not encrypted"

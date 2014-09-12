@@ -1,0 +1,43 @@
+External interface protection:
+  "Do you provide onboarding guidance, covering safe and secure connection?":
+    requirements: The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.
+    filters: The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.
+    label: None
+    relevantCategories: PaaS, IaaS
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
+  "What method of interconnection do you provide?":
+    requirements: The consumer understands what physical and logical interfaces their information is available from.
+    filters: The consumer understands what physical and logical interfaces their information is available from.
+    label: None
+    relevantCategories: PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "Internet"
+          - "PSN WAN"
+          - "Private WAN"
+          - "Internet and Private WAN"
+  "Do you provide access control of the data, to the service for consumers?":
+    requirements: The consumer has sufficient confidence that protections are in place to control access to their data.
+    filters: The consumer has sufficient confidence that protections are in place to control access to their data.
+    label: None
+    relevantCategories: SaaS, PaaS, IaaS
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
+  "Do you provide authentication and authorisation to the service for all functions?":
+    requirements: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
+    filters: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
+    label: None
+    relevantCategories: SaaS, PaaS, IaaS
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
