@@ -1,0 +1,9 @@
+Service type:
+  Choose the categories that apply to your service:
+    hint: "You can choose multiple categories"
+    mockAnswer: Compute
+    fields:
+      - type: checkbox
+        label: Compute
+      - type: checkbox
+        label: Storage

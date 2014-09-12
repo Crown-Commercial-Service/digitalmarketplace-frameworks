@@ -1,6 +1,3 @@
-- Page 2:
-    name: Service type
-    file: service/service-type.yml
 - Page 3:
     name: Service description
     file: service/service-description.yml
