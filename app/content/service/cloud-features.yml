@@ -1,17 +1,27 @@
 Cloud features:
   Elastic cloud approach supported:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   Guaranteed resources defined:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   Persistent storage supported:
+    dependsOnLots: SaaS, PaaS, IaaS
+    fields:
+      - type: boolean
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
+  Real-time management information available:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank

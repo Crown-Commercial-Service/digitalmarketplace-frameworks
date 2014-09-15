@@ -1,11 +1,13 @@
 Terms and conditions:
   Termination cost:
+    dependsOnLots: PaaS, IaaS, SCS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   Minimum contract period:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
         validation: notBlank
@@ -13,6 +15,7 @@ Terms and conditions:
         errorSummaryMessage: ""
   If you have a terms and conditions document for your service, upload it here:
     mockAnswer: Umbraco Terms_Conditions 102014.odf
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: upload
         validation: notBlank

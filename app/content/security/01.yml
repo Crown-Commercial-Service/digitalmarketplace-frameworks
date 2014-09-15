@@ -3,7 +3,7 @@ Asset protection and resilience:
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     label: Datacentre location
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
         options:
@@ -17,7 +17,7 @@ Asset protection and resilience:
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     label: None
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
         options:
@@ -31,7 +31,7 @@ Asset protection and resilience:
     requirements: The legal jurisdiction(s) in which the service provider operates
     filters: The legal jurisdiction(s) in which the service provider operates
     label: Legal jurisdiction of service provider
-    relevantCategories: All
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: radios
         options:
@@ -45,7 +45,7 @@ Asset protection and resilience:
     requirements: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
     filters: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
     label: Datacentre protection
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean
@@ -56,7 +56,7 @@ Asset protection and resilience:
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     filters: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     label: Data at rest protection
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
         options:
@@ -71,7 +71,7 @@ Asset protection and resilience:
     requirements: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
     filters: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
     label: Secure data deletion
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
         options:
@@ -81,11 +81,65 @@ Asset protection and resilience:
           - "Other secure erasure"
           - "Other erasure process"
       - type: assurance
+  "How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime?":
+    requirements: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
+    filters: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
+    label: Storage media disposal
+    dependsOnLots: PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "CESG-assured destruction service (CAS)"
+          - "CPA Foundation Assured Product"
+          - "CPNI-approved destruction service"
+          - "BS EN 151713:2009-compliant destruction"
+          - "CESG or CPNI-approved erasure"
+          - "Other secure erasure"
+          - "Other destruction/erasure process"
+      - type: assurance
+  "Is all equipment potentially containing consumer data, credentials or configuration information identified at the end of its life or prior to being recycled?":
+    requirements: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
+    filters: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
+    label: Secure equipment disposal
+    dependsOnLots: PaaS, IaaS
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: assurance
+  "How are any components containing sensitive data sanitised, removed or destroyed?":
+    requirements: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
+    filters: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
+    label: Secure component disposal
+    dependsOnLots: PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "CESG-assured destruction service (CAS)"
+          - "CPA Foundation Assured Product"
+          - "CPNI-approved destruction service"
+          - "BS EN 151713:2009-compliant destruction"
+          - "CESG or CPNI-approved erasure"
+          - "Other secure erasure"
+          - "Other destruction/erasure process"
+      - type: assurance
+  "Are accounts or credentials specific to redundant equipment revoked to reduce their value to an attacker?":
+    requirements: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
+    filters: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
+    label: Redundant equipment accounts revoked
+    dependsOnLots: PaaS, IaaS
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: assurance
   "What is the availability of the service?":
     requirements: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
     filters: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
     label: Service availability (%)
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: percentage
       - type: assurance

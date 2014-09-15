@@ -1,5 +1,6 @@
 Open standards:
   Open standards supported and documented:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank

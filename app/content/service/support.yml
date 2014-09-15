@@ -1,5 +1,6 @@
 Support:
   Support service type:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: Choose all that apply
     fields:
       - type: checkbox
@@ -28,12 +29,14 @@ Support:
         errorMessage: ""
         errorSummaryMessage: ""
   Support accessible to third-party suppliers:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   Support availablility:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "eg 24/7 or 9-5"
     fields:
       - type: text
@@ -41,6 +44,7 @@ Support:
         errorMessage: ""
         errorSummaryMessage: ""
   Support response times:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "Maximum 20 words"
     fields:
       - type: text
@@ -48,6 +52,7 @@ Support:
         errorMessage: ""
         errorSummaryMessage: ""
   Incident escalation process available:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
         validation: notBlank

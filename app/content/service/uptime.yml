@@ -1,5 +1,6 @@
 Uptime:
   Uptime offered:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "eg 99.99"
     mockAnswer: "99.99%"
     fields:

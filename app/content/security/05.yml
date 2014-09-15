@@ -3,7 +3,7 @@ Personnel security:
     requirements: Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.
     filters: Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.
     label: Personnel security checks
-    relevantCategories: All
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: radios
         options:

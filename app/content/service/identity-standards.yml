@@ -1,5 +1,6 @@
 Identity standards:
   Identity standards your service uses:
+    dependsOnLots: SaaS
     hint: "Examples of identity standards include OAuth, SAML"
     fields:
       - type: list

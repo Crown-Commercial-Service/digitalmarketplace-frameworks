@@ -3,7 +3,7 @@ Data-in-transit protection:
     requirements: Data in transit is protected between the user’s devices and the service
     filters: Data in transit is protected between the user’s devices and the service
     label: Data protection between user device and service
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
         options:
@@ -20,7 +20,7 @@ Data-in-transit protection:
     requirements: Data in transit is protected internally within the service
     filters: Data in transit is protected internally within the service
     label: Data protection within service
-    relevantCategories: PaaS, IaaS
+    dependsOnLots: PaaS, IaaS
     fields:
       - type: radios
         options:
@@ -37,7 +37,7 @@ Data-in-transit protection:
     requirements: Data in transit is protected between the service and other services (e.g. where APIs are exposed)
     filters: Data in transit is protected between the service and other services (e.g. where APIs are exposed)
     label: Data protection between services
-    relevantCategories: PaaS, IaaS
+    dependsOnLots: PaaS, IaaS
     fields:
       - type: radios
         options:

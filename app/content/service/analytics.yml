@@ -1,5 +1,6 @@
 Analytics:
   Real-time management information available:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank

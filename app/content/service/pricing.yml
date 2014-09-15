@@ -2,6 +2,7 @@ Pricing:
   Service price:
     hint: "If you offer bulk pricing, include type here, eg 10-99 users or 50+ users"
     mockAnswer: "1-9 users, 10-99 users, 100+ users"
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: matrix
         validation: ":("
@@ -48,30 +49,44 @@ Pricing:
         errorSummaryMessage: ""
         addThing: Add another pricing type
   VAT included:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   Education pricing:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   Trial option:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   Free option:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
+  Pricing document:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
+    mockAnswer: Pricing Document Umbraco 102014.odf
+    hint: "Please upload your pricing document if you have one. Use an open document format."
+    fields:
+      - type: upload
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
   Skills Framework for the Information Age (SFIA) rate card:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     mockAnswer: Rate Card Umbraco 102014.odf
     hint: "Please upload your SFIA rate card if you have one. Use an open document format."
     fields:

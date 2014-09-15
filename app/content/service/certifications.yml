@@ -1,5 +1,6 @@
 Certifications:
   Vendor certification(s):
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: list
         addthing: Add another certification

@@ -3,7 +3,7 @@ Separation between consumers:
     requirements: Service providers must state whether the service is a public, private or community cloud service.
     filters: Service providers must state whether the service is a public, private or community cloud service.
     label: Cloud deployment model
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
         options:
@@ -16,7 +16,7 @@ Separation between consumers:
     requirements: Consumers should understand the types of consumer they share the service or platform with.
     filters: Consumers should understand the types of consumer they share the service or platform with.
     label: Type of consumer
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
         options:
@@ -29,7 +29,7 @@ Separation between consumers:
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     filters: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     label: Services separation
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean
@@ -40,7 +40,7 @@ Separation between consumers:
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     filters: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     label: Services Management separation
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean

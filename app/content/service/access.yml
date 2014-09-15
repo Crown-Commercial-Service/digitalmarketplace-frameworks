@@ -1,5 +1,6 @@
 Access:
   Supported web browsers:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: checkbox
         label: Internet Explorer
@@ -27,12 +28,14 @@ Access:
         errorMessage: ""
         errorSummaryMessage: ""
   Offline working and syncing supported:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   Supported devices:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: checkbox
         label: PC
