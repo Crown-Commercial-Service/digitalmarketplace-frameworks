@@ -3,7 +3,7 @@ Authentication of consumers to management interfaces and within support channels
     requirements: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to authenticate to and access management interfaces for the service (Principle 10 should be used assess the risks of different approaches to meet this objective).
     filters: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to authenticate to and access management interfaces for the service (Principle 10 should be used assess the risks of different approaches to meet this objective).
     label: User authentication and access management
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean
@@ -14,7 +14,7 @@ Authentication of consumers to management interfaces and within support channels
     requirements: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.
     filters: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.
     label: User access control through support channels
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean
@@ -26,7 +26,7 @@ Separation and access control within management interfaces:
     requirements: The consumer has sufficient confidence that other consumers cannot access, modify or otherwise affect their service management.
     filters: The consumer has sufficient confidence that other consumers cannot access, modify or otherwise affect their service management.
     label: User access control within management interfaces
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean
@@ -37,7 +37,18 @@ Separation and access control within management interfaces:
     requirements: The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.
     filters: The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.
     label: Supports 'principle of least privilege'
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: assurance
+  "Do you inform consumers which networks, management interfaces are exposed to and what functionality is available via those interfaces?":
+    requirements: The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.
+    filters: The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.
+    label: Visibility of the networks to which management interfaces are exposed
+    dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean

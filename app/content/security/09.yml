@@ -3,7 +3,7 @@ Identity and authentication:
     requirements: Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.
     filters: Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.
     label: Identity and authentication controls
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
         options:

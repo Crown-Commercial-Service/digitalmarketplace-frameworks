@@ -3,7 +3,7 @@ Supply-chain security:
     requirements: The consumer understands and accepts how their information is shared with, or accessible by, third party suppliers and their supply chains.
     filters: The consumer understands and accepts how their information is shared with, or accessible by, third party suppliers and their supply chains.
     label: Visibility of data shared with third-party suppliers
-    relevantCategories: All
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
         validation: boolean
@@ -14,7 +14,7 @@ Supply-chain security:
     requirements: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
     label: Third-party supplier security requirements
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean
@@ -25,7 +25,7 @@ Supply-chain security:
     requirements: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
     label: Third-party supplier risk assessment
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean
@@ -36,7 +36,18 @@ Supply-chain security:
     requirements: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
     filters: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
     label: Third-party supplier compliance monitoring
-    relevantCategories: SaaS, PaaS, IaaS
+    dependsOnLots: SaaS, PaaS, IaaS
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: assurance
+  "Do you have the necessary information and processes to verify that hardware and software used in the service is genuine and has not been obviously tampered with?":
+    requirements: The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.
+    filters: The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.
+    label: Hardware and software verification
+    dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
         validation: boolean
