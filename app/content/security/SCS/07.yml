@@ -1,0 +1,12 @@
+Supply-chain security:
+  "Do you inform consumers how much of their information is shared with, or accessible by, third-party suppliers and their supply chains?":
+    requirements: The consumer understands and accepts how their information is shared with, or accessible by, third party suppliers and their supply chains.
+    filters: The consumer understands and accepts how their information is shared with, or accessible by, third party suppliers and their supply chains.
+    label: Visibility of data shared with third-party suppliers
+    relevantCategories: All
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: assurance

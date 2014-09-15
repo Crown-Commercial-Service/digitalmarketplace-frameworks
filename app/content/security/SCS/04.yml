@@ -1,0 +1,12 @@
+Incident management:
+  "Do you have incident management processes in place and are they enacted in response to security incidents?":
+    requirements: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
+    filters: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
+    label: Incident management processes
+    relevantCategories: All
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: assurance

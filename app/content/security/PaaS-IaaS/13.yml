@@ -1,0 +1,36 @@
+Secure use of the service by the customer:
+  "Which end-device population is the cloud service accessible from?":
+    requirements: The consumer understands any service configuration options available to them and the security implications of choices they make.
+    filters: The consumer understands any service configuration options available to them and the security implications of choices they make.
+    label: Device access method
+    relevantCategories: SaaS, PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "Corporate/enterprise devices"
+          - "Partner devices"
+          - "Unknown devices"
+      - type: assurance
+  "Do you provide on-boarding guidance, including impacts on the consumer’s security?":
+    requirements: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
+    filters: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
+    label: None
+    relevantCategories: PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "Yes"
+          - "No"
+          - "N/A"
+      - type: assurance
+  "Do you provide user or administrator training on the use of the service and its security?":
+    requirements: The consumer can educate those administrating and using the service in how to use it safely and securely.
+    filters: The consumer can educate those administrating and using the service in how to use it safely and securely.
+    label: None
+    relevantCategories: SaaS, PaaS, IaaS
+    fields:
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
+      - type: assurance

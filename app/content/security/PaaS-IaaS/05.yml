@@ -1,0 +1,15 @@
+Personnel security:
+  "Do your staff, who have access to the service, have adequate personnel security screening for their role?":
+    requirements: Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.
+    filters: Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.
+    label: Personnel security checks
+    relevantCategories: All
+    fields:
+      - type: radios
+        options:
+          - "Developed vetting"
+          - "Security clearance vetting"
+          - "Baseline personnel security standard (BPSS)"
+          - "Background checks in accordance with BS7858:2012"
+          - "Employment checks"
+      - type: assurance

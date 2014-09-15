@@ -1,0 +1,18 @@
+Identity and authentication:
+  "Do your identity and authentication controls provide an appropriate level of confidence that a user has authorisation to access a specific interface?":
+    requirements: Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.
+    filters: Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.
+    label: Identity and authentication controls
+    relevantCategories: SaaS, PaaS, IaaS
+    fields:
+      - type: radios
+        options:
+          - "Username and two factor authentication"
+          - "Username and TLS client certificate"
+          - "Authentication federation"
+          - "Limited access over dedicated link, enterprise or community network"
+          - "Username and password"
+          - "Username and strong password/passphrase enforcement"
+          - "Other mechanism"
+          - "No controls"
+      - type: assurance

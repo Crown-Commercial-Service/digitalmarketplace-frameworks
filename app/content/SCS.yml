@@ -1,0 +1,72 @@
+- Page 2:
+    name: Service type
+    file: service/service-type-SCS.yml
+- Page 3:
+    name: Service description
+    file: service/service-description.yml
+- Page 4:
+    name: Features and benefits
+    file: service/features-and-benefits.yml
+- Page 5:
+    name: Terms and conditions
+    file: service/terms-and-conditions.yml
+- Page 6:
+    name: Pricing
+    file: service/pricing.yml
+- Page 7:
+    name: Open standards
+    file: service/open-standards.yml
+- Page 8:
+    name: Cloud features
+    file: service/cloud-features.yml
+- Page 9:
+    name: Analytics
+    file: service/analytics.yml
+- Page 10:
+    name: Provisioning
+    file: service/provisioning.yml
+- Page 11:
+    name: Data storage
+    file: service/data-storage.yml
+- Page 12:
+    name: Onboarding and offboarding
+    file: service/onboarding-and-offboarding.yml
+- Page 13:
+    name: Open source
+    file: service/open-source.yml
+- Page 14:
+    name: Support
+    file: service/support.yml
+- Page 15:
+    name: Uptime
+    file: service/uptime.yml
+- Page 16:
+    name: API access
+    file: service/api-access.yml
+- Page 17:
+    name: Networks and connectivity
+    file: service/networks-and-connectivity.yml
+- Page 18:
+    name: Access
+    file: service/access.yml
+- Page 19:
+    name: Certifications
+    file: service/certifications.yml
+- Page 20:
+    name: Code libraries
+    file: service/code-libraries.yml
+- Page 21:
+    name: Identity standards
+    file: service/identity-standards.yml
+- Page 24:
+    name: 01
+    file: security/SCS/01.yml
+- Page 27:
+    name: 04
+    file: security/SCS/04.yml
+- Page 28:
+    name: 05
+    file: security/SCS/05.yml
+- Page 30:
+    name: 07
+    file: security/SCS/07.yml
