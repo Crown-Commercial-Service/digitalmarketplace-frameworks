@@ -1,5 +1,6 @@
 Open source:
   Open-source software used and supported:
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
         validation: notBlank

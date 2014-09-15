@@ -1,11 +1,13 @@
 Provisioning:
   Self-service provisioning supported:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   Service provisioning time:
+    dependsOnLots: SaaS, PaaS, IaaS
     hint: ""
     fields:
       - type: text
@@ -13,6 +15,7 @@ Provisioning:
         errorMessage: ""
         errorSummaryMessage: ""
   Service deprovisioning time:
+    dependsOnLots: SaaS, PaaS, IaaS
     hint: ""
     fields:
       - type: text

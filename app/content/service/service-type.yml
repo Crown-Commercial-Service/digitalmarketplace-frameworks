@@ -1,5 +1,15 @@
 Service type:
   Choose the categories that apply to your service:
+    dependsOnLots: IaaS
+    hint: "You can choose multiple categories"
+    mockAnswer: Compute
+    fields:
+      - type: checkbox
+        label: Compute
+      - type: checkbox
+        label: Storage
+  Choose the categories that apply to your service:
+    dependsOnLots: SaaS
     hint: "You can choose multiple categories"
     mockAnswer: Content management system
     fields:
@@ -47,3 +57,18 @@ Service type:
         label: Legal
       - type: checkbox
         label: Transport and logistics
+  Choose the categories that apply to your service:
+    dependsOnLots: SCS
+    hint: "You can choose multiple categories"
+    mockAnswer: Content management system
+    fields:
+      - type: checkbox
+        label: Planning
+      - type: checkbox
+        label: Implementation
+      - type: checkbox
+        label: Testing
+      - type: checkbox
+        label: Training
+      - type: checkbox
+        label: Ongoing support

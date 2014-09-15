@@ -1,5 +1,6 @@
 Networks and connectivity:
   Networks the service is directly connected to:
+    dependsOnLots: SaaS, PaaS, IaaS
     mockAnswer: Internet
     fields:
       - type: checkbox
@@ -38,6 +39,7 @@ Networks and connectivity:
         errorMessage: ""
         errorSummaryMessage: ""
   Cloud type:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: checkbox
         label: Public

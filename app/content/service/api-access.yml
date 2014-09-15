@@ -1,11 +1,13 @@
 API access:
   API access available and supported:
+    dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
   API type:
+    dependsOnLots: SaaS, PaaS, IaaS
     hint: "Examples of APIs include RESTful and SOAP"
     fields:
       - type: text

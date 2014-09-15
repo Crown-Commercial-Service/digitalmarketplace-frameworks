@@ -1,6 +1,9 @@
+- Page 1:
+    name: Service type
+    file: service/service-details.yml
 - Page 2:
     name: Service type
-    file: service/service-type-IaaS.yml
+    file: service/service-type.yml
 - Page 3:
     name: Service description
     file: service/service-description.yml
