@@ -1,8 +1,8 @@
 Governance:
-  "Do you have a governance framework and processes in place for the service?":
+  "Governance Framework":
     requirements: The consumer should have sufficient confidence that the governance framework and processes in place for the service are appropriate for their intended use of it.
     filters: The consumer should have sufficient confidence that the governance framework and processes in place for the service are appropriate for their intended use of it.
-    label: Governance Framework
+    hint: "Do you have a governance framework and processes in place for the service?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean

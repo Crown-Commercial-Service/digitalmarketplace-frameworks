@@ -1,8 +1,8 @@
 External interface protection:
-  "Do you provide onboarding guidance, covering safe and secure connection?":
+  "None":
     requirements: The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.
     filters: The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.
-    label: None
+    hint: "Do you provide onboarding guidance, covering safe and secure connection?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
@@ -10,10 +10,10 @@ External interface protection:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "What method of interconnection do you provide?":
+  "None":
     requirements: The consumer understands what physical and logical interfaces their information is available from.
     filters: The consumer understands what physical and logical interfaces their information is available from.
-    label: None
+    hint: "What method of interconnection do you provide?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: radios
@@ -23,10 +23,10 @@ External interface protection:
           - "Private WAN"
           - "Internet and Private WAN"
       - type: assurance
-  "Do you provide access control of the data, to the service for consumers?":
+  "None":
     requirements: The consumer has sufficient confidence that protections are in place to control access to their data.
     filters: The consumer has sufficient confidence that protections are in place to control access to their data.
-    label: None
+    hint: "Do you provide access control of the data, to the service for consumers?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -34,10 +34,10 @@ External interface protection:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Do you provide authentication and authorisation to the service for all functions?":
+  "None":
     requirements: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
     filters: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
-    label: None
+    hint: "Do you provide authentication and authorisation to the service for all functions?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean

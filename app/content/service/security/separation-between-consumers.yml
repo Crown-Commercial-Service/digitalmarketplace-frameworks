@@ -1,8 +1,8 @@
 Separation between consumers:
-  "Is the service a public, private, community or hybrid cloud service?":
+  "Cloud deployment model":
     requirements: Service providers must state whether the service is a public, private or community cloud service.
     filters: Service providers must state whether the service is a public, private or community cloud service.
-    label: Cloud deployment model
+    hint: "Is the service a public, private, community or hybrid cloud service?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
@@ -12,10 +12,10 @@ Separation between consumers:
           - "Private cloud"
           - "Hybrid cloud"
       - type: assurance
-  "What types of other consumer, do your consumers share the service or platform with?":
+  "Type of consumer":
     requirements: Consumers should understand the types of consumer they share the service or platform with.
     filters: Consumers should understand the types of consumer they share the service or platform with.
-    label: Type of consumer
+    hint: "What types of other consumer, do your consumers share the service or platform with?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
@@ -25,10 +25,10 @@ Separation between consumers:
           - "A specific group"
           - "Anyone - public"
       - type: assurance
-  "Do you provide separation of consumer data and service from other consumers of the service?":
+  "Services separation":
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     filters: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
-    label: Services separation
+    hint: "Do you provide separation of consumer data and service from other consumers of the service?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -36,10 +36,10 @@ Separation between consumers:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Is the management of a consumer’s service, kept separate from other consumers?":
+  "Services Management separation":
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     filters: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
-    label: Services Management separation
+    hint: "Is the management of a consumer’s service, kept separate from other consumers?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean

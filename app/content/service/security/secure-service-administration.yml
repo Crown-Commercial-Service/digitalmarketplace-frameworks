@@ -1,8 +1,8 @@
 Secure service administration:
-  "Which service management model do you use?":
+  "Service management model":
     requirements: Consumers have sufficient confidence that the technical approach the service provider uses to manage the service does not put their data or service at risk.
     filters: Consumers have sufficient confidence that the technical approach the service provider uses to manage the service does not put their data or service at risk.
-    label: Service management model
+    hint: "Which service management model do you use?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
