@@ -14,92 +14,89 @@
     name: Pricing
     file: service/pricing.yml
 - Page 7:
-    name: Legal
-    file: service/legal.yml
-- Page 8:
     name: Open standards
     file: service/open-standards.yml
-- Page 9:
+- Page 8:
     name: Cloud features
     file: service/cloud-features.yml
-- Page 10:
+- Page 9:
     name: Analytics
     file: service/analytics.yml
-- Page 11:
+- Page 10:
     name: Provisioning
     file: service/provisioning.yml
-- Page 12:
+- Page 11:
     name: Data storage
     file: service/data-storage.yml
-- Page 13:
+- Page 12:
     name: Onboarding and offboarding
     file: service/onboarding-and-offboarding.yml
-- Page 14:
+- Page 13:
     name: Open source
     file: service/open-source.yml
-- Page 15:
+- Page 14:
     name: Support
     file: service/support.yml
-- Page 16:
+- Page 15:
     name: Uptime
     file: service/uptime.yml
-- Page 17:
+- Page 16:
     name: API access
     file: service/api-access.yml
-- Page 18:
+- Page 17:
     name: Networks and connectivity
     file: service/networks-and-connectivity.yml
-- Page 19:
+- Page 18:
     name: Access
     file: service/access.yml
-- Page 20:
+- Page 19:
     name: Certifications
     file: service/certifications.yml
-- Page 21:
+- Page 20:
     name: Code libraries
     file: service/code-libraries.yml
-- Page 22:
+- Page 21:
     name: Identity standards
     file: service/identity-standards.yml
-- Page 23:
+- Page 22:
     name: 00
     file: security/PaaS-IaaS/00.yml
-- Page 24:
+- Page 23:
     name: 01
     file: security/PaaS-IaaS/01.yml
-- Page 25:
+- Page 24:
     name: 02
     file: security/PaaS-IaaS/02.yml
-- Page 26:
+- Page 25:
     name: 03
     file: security/PaaS-IaaS/03.yml
-- Page 27:
+- Page 26:
     name: 04
     file: security/PaaS-IaaS/04.yml
-- Page 28:
+- Page 27:
     name: 05
     file: security/PaaS-IaaS/05.yml
-- Page 29:
+- Page 28:
     name: 06
     file: security/PaaS-IaaS/06.yml
-- Page 30:
+- Page 29:
     name: 07
     file: security/PaaS-IaaS/07.yml
-- Page 31:
+- Page 30:
     name: 08
     file: security/PaaS-IaaS/08.yml
-- Page 32:
+- Page 31:
     name: 09
     file: security/PaaS-IaaS/09.yml
-- Page 33:
+- Page 32:
     name: 10
     file: security/PaaS-IaaS/10.yml
-- Page 34:
+- Page 33:
     name: 11
     file: security/PaaS-IaaS/11.yml
-- Page 35:
+- Page 34:
     name: 12
     file: security/PaaS-IaaS/12.yml
-- Page 36:
+- Page 35:
     name: 13
     file: security/PaaS-IaaS/13.yml
