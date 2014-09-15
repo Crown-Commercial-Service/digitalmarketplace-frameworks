@@ -68,44 +68,44 @@
     name: Identity standards
     file: service/identity-standards.yml
 - Page 22:
-    name: 00
-    file: security/00.yml
+    name: Data-in-transit protection
+    file: service/security/data-in-transit-protection.yml
 - Page 23:
-    name: 01
-    file: security/01.yml
+    name: Asset protection and resilience
+    file: service/security/asset-protection-and-resilience.yml
 - Page 24:
-    name: 02
-    file: security/02.yml
+    name: Separation between consumers
+    file: service/security/separation-between-consumers.yml
 - Page 25:
-    name: 03
-    file: security/03.yml
+    name: Governance
+    file: service/security/governance.yml
 - Page 26:
-    name: 04
-    file: security/04.yml
+    name: Configuration and change management
+    file: service/security/configuration-and-change-management.yml
 - Page 27:
-    name: 05
-    file: security/05.yml
+    name: Personnel security
+    file: service/security/personnel-security.yml
 - Page 28:
-    name: 06
-    file: security/06.yml
+    name: Secure development
+    file: service/security/secure-development.yml
 - Page 29:
-    name: 07
-    file: security/07.yml
+    name: Supply-chain security
+    file: service/security/supply-chain-security.yml
 - Page 30:
-    name: 08
-    file: security/08.yml
+    name: Authentication of consumers to management interfaces and within support channels
+    file: service/security/authentication-of-consumers-to-management-interfaces-and-within-support-channels.yml
 - Page 31:
-    name: 09
-    file: security/09.yml
+    name: Identity and authentication
+    file: service/security/identity-and-authentication.yml
 - Page 32:
-    name: 10
-    file: security/10.yml
+    name: External interface protection
+    file: service/security/external-interface-protection.yml
 - Page 33:
-    name: 11
-    file: security/11.yml
+    name: Secure service administration
+    file: service/security/secure-service-administration.yml
 - Page 34:
-    name: 12
-    file: security/12.yml
+    name: Audit information provision to consumers
+    file: service/security/audit-information-provision-to-consumers.yml
 - Page 35:
-    name: 13
-    file: security/13.yml
+    name: Secure use of the service by the customer
+    file: service/security/secure-use-of-the-service-by-the-customer.yml
