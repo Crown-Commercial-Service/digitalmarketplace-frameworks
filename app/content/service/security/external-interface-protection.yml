@@ -1,5 +1,5 @@
 External interface protection:
-  "None":
+  "Onboarding guidance provided":
     requirements: The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.
     filters: The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.
     hint: "Do you provide onboarding guidance, covering safe and secure connection?"
@@ -10,7 +10,7 @@ External interface protection:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "None":
+  "Interconnection method provided":
     requirements: The consumer understands what physical and logical interfaces their information is available from.
     filters: The consumer understands what physical and logical interfaces their information is available from.
     hint: "What method of interconnection do you provide?"
@@ -23,10 +23,10 @@ External interface protection:
           - "Private WAN"
           - "Internet and Private WAN"
       - type: assurance
-  "None":
+  "Data access control provided":
     requirements: The consumer has sufficient confidence that protections are in place to control access to their data.
     filters: The consumer has sufficient confidence that protections are in place to control access to their data.
-    hint: "Do you provide access control of the data, to the service for consumers?"
+    hint: "Do you provide access control of the data to the service for consumers?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -34,7 +34,7 @@ External interface protection:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "None":
+  "Authentication and authorisation provided":
     requirements: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
     filters: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
     hint: "Do you provide authentication and authorisation to the service for all functions?"
