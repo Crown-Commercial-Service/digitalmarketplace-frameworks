@@ -9,10 +9,16 @@ Terms and conditions:
   Minimum contract period:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
-      - type: boolean
+      - type: radios
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
+        options:
+          - "Hour"
+          - "Day"
+          - "Month"
+          - "Year"
+          - "Other"
   If you have a terms and conditions document for your service, upload it here:
     mockAnswer: Umbraco Terms_Conditions 102014.odf
     dependsOnLots: SaaS, PaaS, IaaS, SCS
