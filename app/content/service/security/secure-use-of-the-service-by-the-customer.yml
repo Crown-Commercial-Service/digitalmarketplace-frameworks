@@ -2,7 +2,7 @@ Secure use of the service by the customer:
   "Device access method":
     requirements: The consumer understands any service configuration options available to them and the security implications of choices they make.
     filters: The consumer understands any service configuration options available to them and the security implications of choices they make.
-    hint: "Which end-device population is the cloud service accessible from?"
+    hint: "Which end device is the cloud service accessible from?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
@@ -11,10 +11,10 @@ Secure use of the service by the customer:
           - "Partner devices"
           - "Unknown devices"
       - type: assurance
-  "On-boarding guidance":
+  "Onboarding guidance":
     requirements: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
     filters: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
-    hint: "Do you provide on-boarding guidance, including impacts on the consumer’s security?"
+    hint: "Do you provide onboarding guidance, including impacts on the consumer’s security?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: radios
