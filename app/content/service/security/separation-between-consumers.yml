@@ -15,7 +15,7 @@ Separation between consumers:
   "Type of consumer":
     requirements: Consumers should understand the types of consumer they share the service or platform with.
     filters: Consumers should understand the types of consumer they share the service or platform with.
-    hint: "What types of other consumer, do your consumers share the service or platform with?"
+    hint: "What types of other consumer do your consumers share the service or platform with?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
@@ -36,10 +36,10 @@ Separation between consumers:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Services Management separation":
+  "Services management separation":
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     filters: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
-    hint: "Is the management of a consumer’s service, kept separate from other consumers?"
+    hint: "Is the management of a consumer’s service kept separate from other consumers?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
