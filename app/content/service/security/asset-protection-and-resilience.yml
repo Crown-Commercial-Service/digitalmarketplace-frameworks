@@ -30,7 +30,7 @@ Asset protection and resilience:
   "Legal jurisdiction of service provider":
     requirements: The legal jurisdiction(s) in which the service provider operates
     filters: The legal jurisdiction(s) in which the service provider operates
-    hint: "Where is the service provider's legal jurisdiction?"
+    hint: ""
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: radios
@@ -44,7 +44,7 @@ Asset protection and resilience:
   "Datacentre protection":
     requirements: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
     filters: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
-    hint: "Do the datacentres where your consumer data is located, have suitable physical security?"
+    hint: "Do the datacentres where your consumer data is located have suitable physical security?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -52,7 +52,7 @@ Asset protection and resilience:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Data at rest protection":
+  "Data-at-rest protection":
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     filters: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     hint: "How is storage containing consumer data-at-rest protected from unauthorised access?"
@@ -70,7 +70,7 @@ Asset protection and resilience:
   "Secure data deletion":
     requirements: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
     filters: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
-    hint: "How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service or when they request it to be erased?"
+    hint: "How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service, or when they request it to be erased?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
