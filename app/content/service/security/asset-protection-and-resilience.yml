@@ -1,8 +1,8 @@
 Asset protection and resilience:
-  "Where are the service provider's datacentres located?":
+  "Datacentre location":
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
-    label: Datacentre location
+    hint: "Where are the service provider's datacentres located?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
@@ -13,10 +13,10 @@ Asset protection and resilience:
           - "Other countries with data protection treaties"
           - "Other countries"
       - type: assurance
-  "Where are the services managed from?":
+  "Data management location":
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
-    label: None
+    hint: "Where are the services managed from?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
@@ -27,10 +27,10 @@ Asset protection and resilience:
           - "Other countries with data protection treaties"
           - "Other countries"
       - type: assurance
-  "Where is the service provider's legal jurisdiction?":
+  "Legal jurisdiction of service provider":
     requirements: The legal jurisdiction(s) in which the service provider operates
     filters: The legal jurisdiction(s) in which the service provider operates
-    label: Legal jurisdiction of service provider
+    hint: "Where is the service provider's legal jurisdiction?"
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: radios
@@ -41,10 +41,10 @@ Asset protection and resilience:
           - "Other countries with data protection treaties"
           - "Other countries"
       - type: assurance
-  "Do the datacentres where your consumer data is located, have suitable physical security?":
+  "Datacentre protection":
     requirements: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
     filters: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
-    label: Datacentre protection
+    hint: "Do the datacentres where your consumer data is located, have suitable physical security?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -52,10 +52,10 @@ Asset protection and resilience:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "How is storage containing consumer data-at-rest protected from unauthorised access?":
+  "Data at rest protection":
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     filters: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
-    label: Data at rest protection
+    hint: "How is storage containing consumer data-at-rest protected from unauthorised access?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
@@ -67,10 +67,10 @@ Asset protection and resilience:
           - "Secure containers or cages"
           - "No protection"
       - type: assurance
-  "How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service or when they request it to be erased?":
+  "Secure data deletion":
     requirements: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
     filters: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
-    label: Secure data deletion
+    hint: "How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service or when they request it to be erased?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
@@ -81,10 +81,10 @@ Asset protection and resilience:
           - "Other secure erasure"
           - "Other erasure process"
       - type: assurance
-  "How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime?":
+  "Storage media disposal":
     requirements: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
     filters: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
-    label: Storage media disposal
+    hint: "How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: radios
@@ -97,10 +97,10 @@ Asset protection and resilience:
           - "Other secure erasure"
           - "Other destruction/erasure process"
       - type: assurance
-  "Is all equipment potentially containing consumer data, credentials or configuration information identified at the end of its life or prior to being recycled?":
+  "Secure equipment disposal":
     requirements: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
     filters: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
-    label: Secure equipment disposal
+    hint: "Is all equipment potentially containing consumer data, credentials or configuration information identified at the end of its life or prior to being recycled?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
@@ -108,10 +108,10 @@ Asset protection and resilience:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "How are any components containing sensitive data sanitised, removed or destroyed?":
+  "Secure component disposal":
     requirements: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
     filters: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
-    label: Secure component disposal
+    hint: "How are any components containing sensitive data sanitised, removed or destroyed?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: radios
@@ -124,10 +124,10 @@ Asset protection and resilience:
           - "Other secure erasure"
           - "Other destruction/erasure process"
       - type: assurance
-  "Are accounts or credentials specific to redundant equipment revoked to reduce their value to an attacker?":
+  "Redundant equipment accounts revoked":
     requirements: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
     filters: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
-    label: Redundant equipment accounts revoked
+    hint: "Are accounts or credentials specific to redundant equipment revoked to reduce their value to an attacker?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
@@ -135,10 +135,10 @@ Asset protection and resilience:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "What is the availability of the service?":
+  "Service availability (%)":
     requirements: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
     filters: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
-    label: Service availability (%)
+    hint: "What is the availability of the service?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: percentage

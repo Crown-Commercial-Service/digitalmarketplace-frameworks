@@ -1,8 +1,8 @@
 Configuration and change management:
-  "Are the status, location and configuration of service components tracked throughout their lifetime?":
+  "Configuration and change management tracking":
     requirements: Consumers should have confidence that the status, location and configuration of service components (including hardware and software components) are tracked throughout their lifetime within the service.
     filters: Consumers should have confidence that the status, location and configuration of service components (including hardware and software components) are tracked throughout their lifetime within the service.
-    label: Configuration and change management tracking
+    hint: "Are the status, location and configuration of service components tracked throughout their lifetime?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
@@ -10,10 +10,10 @@ Configuration and change management:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Are changes to the service assessed for potential security impact? And are changes managed and tracked through to completion?":
+  "Change impact assessment":
     requirements: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
     filters: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
-    label: Change impact assessment
+    hint: "Are changes to the service assessed for potential security impact? And are changes managed and tracked through to completion?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -22,10 +22,10 @@ Configuration and change management:
         errorSummaryMessage: ""
       - type: assurance
 Vulnerabilility management:
-  "Are potential new threats, vulnerabilities or exploitation techniques which could affect the service assessed, and are corrective actions taken?":
+  "Vulnerability assessment":
     requirements: Consumers should have confidence that potential new threats, vulnerabilities or exploitation techniques which could affect the service are assessed and corrective action is taken.
     filters: Consumers should have confidence that potential new threats, vulnerabilities or exploitation techniques which could affect the service are assessed and corrective action is taken.
-    label: Vulnerability assessment
+    hint: "Are potential new threats, vulnerabilities or exploitation techniques which could affect the service assessed, and are corrective actions taken?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -33,10 +33,10 @@ Vulnerabilility management:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Do you monitor relevant sources of information relating to threat, vulnerability and exploitation techniques?":
+  "Vulnerability monitoring":
     requirements: Consumers should have confidence that relevant sources of information relating to threat, vulnerability and exploitation technique information are monitored by the service provider.
     filters: Consumers should have confidence that relevant sources of information relating to threat, vulnerability and exploitation technique information are monitored by the service provider.
-    label: Vulnerability monitoring
+    hint: "Do you monitor relevant sources of information relating to threat, vulnerability and exploitation techniques?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -44,10 +44,10 @@ Vulnerabilility management:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Are the severity of threats and vulnerabilities considered within the context of the service and do you use this information to prioritise implementation of mitigations?":
+  "Vulnerability mitigation prioritisation":
     requirements: Consumers should have confidence that the severity of threats and vulnerabilities are considered within the context of the service and this information is used to prioritise implementation of mitigations.
     filters: Consumers should have confidence that the severity of threats and vulnerabilities are considered within the context of the service and this information is used to prioritise implementation of mitigations.
-    label: Vulnerability mitigation prioritisation
+    hint: "Are the severity of threats and vulnerabilities considered within the context of the service and do you use this information to prioritise implementation of mitigations?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -55,10 +55,10 @@ Vulnerabilility management:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Are known vulnerabilities within the service tracked until suitable mitigations have been deployed through a suitable change-management process?":
+  "Complete vulnerability change-management process":
     requirements: Consumers should have confidence that known vulnerabilities within the service are tracked until suitable mitigations have been deployed through a suitable change management process.
     filters: Consumers should have confidence that known vulnerabilities within the service are tracked until suitable mitigations have been deployed through a suitable change management process.
-    label: Complete vulnerability change-management process
+    hint: "Are known vulnerabilities within the service tracked until suitable mitigations have been deployed through a suitable change-management process?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -66,10 +66,10 @@ Vulnerabilility management:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Do you make timescales for implementing mitigations to vulnerabilities available to buyers?":
+  "Vulnerability mitigation timescales":
     requirements: Consumers should have confidence that service provider timescales for implementing mitigations to vulnerabilities found within the service are made available to them.
     filters: Consumers should have confidence that service provider timescales for implementing mitigations to vulnerabilities found within the service are made available to them.
-    label: Vulnerability mitigation timescales
+    hint: "Do you make timescales for implementing mitigations to vulnerabilities available to buyers?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -78,10 +78,10 @@ Vulnerabilility management:
         errorSummaryMessage: ""
       - type: assurance
 Protective monitoring:
-  "Do you conduct protective monitoring and analysis to identify suspicious activity?":
+  "Protective monitoring":
     requirements: Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.
     filters: Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.
-    label: Protective monitoring
+    hint: "Do you conduct protective monitoring and analysis to identify suspicious activity?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -90,10 +90,10 @@ Protective monitoring:
         errorSummaryMessage: ""
       - type: assurance
 Incident management:
-  "Do you have incident management processes in place and are they enacted in response to security incidents?":
+  "Incident management processes":
     requirements: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
     filters: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
-    label: Incident management processes
+    hint: "Do you have incident management processes in place and are they enacted in response to security incidents?"
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
@@ -101,10 +101,10 @@ Incident management:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Do you have a defined process and contact route for reporting security incidents by consumers and external entities?":
+  "Consumer reporting of security incidents":
     requirements: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
     filters: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
-    label: Consumer reporting of security incidents
+    hint: "Do you have a defined process and contact route for reporting security incidents by consumers and external entities?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -112,21 +112,21 @@ Incident management:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Do you publish to consumers a definition of a security incident, along with the triggers and timescales for sharing such incidents with service consumers?":
+  "Security incident definition published":
     requirements: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
     filters: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
     dependsOnLots: SaaS, PaaS, IaaS
-    label: Security incident definition published
+    hint: Do you publish to consumers a definition of a security incident, along with the triggers and timescales for sharing such incidents with service consumers?
     fields:
       - type: boolean
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Do you publish the content and format of security incident notifications?":
+  "Format of security incident notificaitions published":
     requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
     filters: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
-    label: Format of security incident notificaitions published
+    hint: "Do you publish the content and format of security incident notifications?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -134,10 +134,10 @@ Incident management:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "What are your maximum timescales by which an incident will be investigated?":
+  "Maxiumum timescale for incident investigation":
     requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
     filters: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
-    label: Maxiumum timescale for incident investigation
+    hint: "What are your maximum timescales by which an incident will be investigated?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios

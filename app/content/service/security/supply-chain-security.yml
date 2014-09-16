@@ -1,8 +1,8 @@
 Supply-chain security:
-  "Do you inform consumers how much of their information is shared with, or accessible by, third-party suppliers and their supply chains?":
+  "Visibility of data shared with third-party suppliers":
     requirements: The consumer understands and accepts how their information is shared with, or accessible by, third party suppliers and their supply chains.
     filters: The consumer understands and accepts how their information is shared with, or accessible by, third party suppliers and their supply chains.
-    label: Visibility of data shared with third-party suppliers
+    hint: "Do you inform consumers how much of their information is shared with, or accessible by, third-party suppliers and their supply chains?"
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
@@ -10,10 +10,10 @@ Supply-chain security:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Do your procurement processes ensure that relevant security requirements, such as the Cloud Security Principles, placed on third-party suppliers and delivery partners are explicitly documented?":
+  "Third-party supplier security requirements":
     requirements: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
-    label: Third-party supplier security requirements
+    hint: "Do your procurement processes ensure that relevant security requirements, such as the Cloud Security Principles, placed on third-party suppliers and delivery partners are explicitly documented?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -21,10 +21,10 @@ Supply-chain security:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Are the risks to your service from third-party suppliers and delivery partners regularly assessed and appropriate security controls implemented?":
+  "Third-party supplier risk assessment":
     requirements: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
-    label: Third-party supplier risk assessment
+    hint: "Are the risks to your service from third-party suppliers and delivery partners regularly assessed and appropriate security controls implemented?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -32,10 +32,10 @@ Supply-chain security:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Do you monitor how your suppliers comply with security requirements and initiate remedial action where necessary?":
+  "Third-party supplier compliance monitoring":
     requirements: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
     filters: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
-    label: Third-party supplier compliance monitoring
+    hint: "Do you monitor how your suppliers comply with security requirements and initiate remedial action where necessary?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -43,10 +43,10 @@ Supply-chain security:
         errorMessage: ""
         errorSummaryMessage: ""
       - type: assurance
-  "Do you have the necessary information and processes to verify that hardware and software used in the service is genuine and has not been obviously tampered with?":
+  "Hardware and software verification":
     requirements: The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.
     filters: The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.
-    label: Hardware and software verification
+    hint: "Do you have the necessary information and processes to verify that hardware and software used in the service is genuine and has not been obviously tampered with?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean

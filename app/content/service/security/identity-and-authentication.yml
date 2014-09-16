@@ -1,8 +1,8 @@
 Identity and authentication:
-  "Do your identity and authentication controls provide an appropriate level of confidence that a user has authorisation to access a specific interface?":
+  "Identity and authentication controls":
     requirements: Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.
     filters: Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.
-    label: Identity and authentication controls
+    hint: "Do your identity and authentication controls provide an appropriate level of confidence that a user has authorisation to access a specific interface?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radios
