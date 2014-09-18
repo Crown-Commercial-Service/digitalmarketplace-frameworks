@@ -38,21 +38,4 @@ Networks and connectivity:
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Cloud type:
-    dependsOnLots: SaaS, PaaS, IaaS
-    fields:
-      - type: checkbox
-        label: Public
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
-      - type: checkbox
-        label: Private
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
-      - type: checkbox
-        label: Hybrid
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
+  
