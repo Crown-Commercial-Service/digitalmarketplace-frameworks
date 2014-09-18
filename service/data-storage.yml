@@ -13,21 +13,6 @@ Data storage:
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Data processing and storage location(s):
-    hint: Choose all that apply
-    mockAnswer: United Kingdom
-    dependsOnLots: SaaS, PaaS, IaaS
-    fields:
-      - type: checkbox
-        label: United Kingdom
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
-      - type: checkbox
-        label: United States
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Datacentre tier:
     hint: Choose one
     dependsOnLots: SaaS, PaaS, IaaS
