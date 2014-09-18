@@ -138,7 +138,7 @@ Asset protection and resilience:
   "Service availability (%)":
     requirements: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
     filters: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
-    hint: "What is the availability of the service?"
+    hint: "What is the availability of the service? eg 99.99%"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: percentage
