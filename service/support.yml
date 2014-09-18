@@ -37,7 +37,7 @@ Support:
         errorSummaryMessage: ""
   Support availablility:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
-    hint: "eg 24/7 or 9-5"
+    hint: "eg 24/7 or 9 to 5"
     fields:
       - type: text
         validation: notBlank
@@ -45,7 +45,7 @@ Support:
         errorSummaryMessage: ""
   Support response times:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
-    hint: "Maximum 20 words"
+    hint: "How long will it take until support can begin to be provided? Maximum 20 words."
     fields:
       - type: text
         validation: notBlank

@@ -1,12 +1,12 @@
 Onboarding and offboarding:
-  Onboarding process included:
+  Service onboarding process included:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         validation: notBlank
         errorMessage: ""
         errorSummaryMessage: ""
-  Offboarding process included:
+  Service offboarding process included:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
