@@ -7,13 +7,13 @@ Data-in-transit protection:
     fields:
       - type: radios
         options:
-          - "Encrypted community WAN service"
-          - "Community WAN service"
           - "CAPS-encrypted"
+          - "Encrypted community WAN service"
           - "IPSec VPN Gateway - CPA"
-          - "Bonded fibre optic connections"
-          - "Legacy SSL or TLS encrypted"
           - "TLS, version 1.2 or later, encrypted"
+          - "Legacy SSL or TLS-encrypted"
+          - "Bonded fibre optic connections"
+          - "Community WAN service"
           - "Not encrypted"
       - type: assurance
   "Data protection within service":
@@ -24,13 +24,13 @@ Data-in-transit protection:
     fields:
       - type: radios
         options:
-          - "Encrypted community WAN service"
-          - "Community WAN service"
           - "CAPS-encrypted"
+          - "Encrypted community WAN service"
           - "IPSec VPN Gateway - CPA"
-          - "Bonded fibre optic connections"
-          - "Legacy SSL or TLS encrypted"
           - "TLS, version 1.2 or later, encrypted"
+          - "Legacy SSL or TLS-encrypted"
+          - "Bonded fibre optic connections"
+          - "Community WAN service"
           - "Not encrypted"
       - type: assurance
   "Data protection between services":
@@ -41,12 +41,12 @@ Data-in-transit protection:
     fields:
       - type: radios
         options:
-          - "Encrypted community WAN service"
-          - "Community WAN service"
           - "CAPS-encrypted"
+          - "Encrypted community WAN service"
           - "IPSec VPN Gateway - CPA"
-          - "Bonded fibre optic connections"
-          - "Legacy SSL or TLS encrypted"
           - "TLS, version 1.2 or later, encrypted"
+          - "Legacy SSL or TLS-encrypted"
+          - "Bonded fibre optic connections"
+          - "Community WAN service"
           - "Not encrypted"
       - type: assurance
