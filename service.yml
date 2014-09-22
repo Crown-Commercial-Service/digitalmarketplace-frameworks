@@ -26,86 +26,83 @@
     name: Open standards
     file: service/open-standards.yml
 - Page 9:
-    name: Cloud features
-    file: service/cloud-features.yml
+    name: Support
+    file: service/support.yml
 - Page 10:
-    name: Analytics
-    file: service/analytics.yml
-- Page 11:
-    name: Provisioning
-    file: service/provisioning.yml
-- Page 12:
-    name: Data storage
-    file: service/data-storage.yml
-- Page 13:
     name: Onboarding and offboarding
     file: service/onboarding-and-offboarding.yml
+- Page 11:
+    name: Analytics
+    file: service/analytics.yml
+- Page 12:
+    name: Cloud features
+    file: service/cloud-features.yml
+- Page 13:
+    name: Provisioning
+    file: service/provisioning.yml
 - Page 14:
     name: Open source
     file: service/open-source.yml
 - Page 15:
-    name: Support
-    file: service/support.yml
-- Page 16:
-    name: Uptime
-    file: service/uptime.yml
-- Page 17:
-    name: API access
-    file: service/api-access.yml
-- Page 18:
-    name: Networks and connectivity
-    file: service/networks-and-connectivity.yml
-- Page 19:
-    name: Access
-    file: service/access.yml
-- Page 20:
-    name: Certifications
-    file: service/certifications.yml
-- Page 21:
     name: Code libraries
     file: service/code-libraries.yml
-- Page 22:
+- Page 16:
+    name: API access
+    file: service/api-access.yml
+- Page 17:
+    name: Networks and connectivity
+    file: service/networks-and-connectivity.yml
+- Page 18:
+    name: Access
+    file: service/access.yml
+- Page 19:
+    name: Certifications
+    file: service/certifications.yml
+- Page 20:
     name: Identity standards
     file: service/identity-standards.yml
-- Page 23:
+- Page 21:
+    name: Data storage
+    file: service/data-storage.yml
+- Page 22:
     name: Data-in-transit protection
     file: service/security/data-in-transit-protection.yml
-- Page 24:
+- Page 23:
     name: Asset protection and resilience
     file: service/security/asset-protection-and-resilience.yml
-- Page 25:
+- Page 24:
     name: Separation between consumers
     file: service/security/separation-between-consumers.yml
-- Page 26:
+- Page 25:
     name: Governance
     file: service/security/governance.yml
-- Page 27:
+- Page 26:
     name: Configuration and change management
     file: service/security/configuration-and-change-management.yml
-- Page 28:
+- Page 27:
     name: Personnel security
     file: service/security/personnel-security.yml
-- Page 29:
+- Page 28:
     name: Secure development
     file: service/security/secure-development.yml
-- Page 30:
+- Page 29:
     name: Supply-chain security
     file: service/security/supply-chain-security.yml
-- Page 31:
-    name: Authentication of consumers to management interfaces and within support channels
+- Page 30:
+    name: Authentication of consumers
     file: service/security/authentication-of-consumers-to-management-interfaces-and-within-support-channels.yml
-- Page 32:
+- Page 31:
     name: Identity and authentication
     file: service/security/identity-and-authentication.yml
-- Page 33:
+- Page 32:
     name: External interface protection
     file: service/security/external-interface-protection.yml
-- Page 34:
+- Page 33:
     name: Secure service administration
     file: service/security/secure-service-administration.yml
-- Page 35:
+- Page 34:
     name: Audit information provision to consumers
     file: service/security/audit-information-provision-to-consumers.yml
-- Page 36:
+- Page 35:
     name: Secure use of the service by the customer
     file: service/security/secure-use-of-the-service-by-the-customer.yml
