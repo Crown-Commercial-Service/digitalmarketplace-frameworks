@@ -1,0 +1,10 @@
+Service definition:
+  Service definition document:
+    hint: "Please upload your service definition. Use an open document format. Refer to the ITT documentation for further guidance on what to include." 
+    mockAnswer: Umbraco Service_Definition 102014.odf
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
+    fields:
+      - type: upload
+        validation: notBlank
+        errorMessage: ""
+        errorSummaryMessage: ""
