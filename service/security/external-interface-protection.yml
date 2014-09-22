@@ -9,7 +9,6 @@ External interface protection:
         validation: boolean
         errorMessage: ""
         errorSummaryMessage: ""
-      - type: assurance
   "Interconnection method provided":
     requirements: The consumer understands what physical and logical interfaces their information is available from.
     filters: The consumer understands what physical and logical interfaces their information is available from.
@@ -22,7 +21,6 @@ External interface protection:
           - "PSN WAN"
           - "Private WAN"
           - "Internet and Private WAN"
-      - type: assurance
   "Data access control provided":
     requirements: The consumer has sufficient confidence that protections are in place to control access to their data.
     filters: The consumer has sufficient confidence that protections are in place to control access to their data.
