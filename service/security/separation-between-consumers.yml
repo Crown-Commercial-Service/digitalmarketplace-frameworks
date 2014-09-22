@@ -11,7 +11,6 @@ Separation between consumers:
           - "Community cloud"
           - "Private cloud"
           - "Hybrid cloud"
-      - type: assurance
   "Type of consumer":
     requirements: Consumers should understand the types of consumer they share the service or platform with.
     filters: Consumers should understand the types of consumer they share the service or platform with.
