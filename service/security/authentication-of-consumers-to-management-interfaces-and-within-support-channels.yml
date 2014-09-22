@@ -1,4 +1,4 @@
-Authentication of consumers to management interfaces and within support channels:
+Authentication of consumers:
   "User authentication and access management":
     requirements: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to authenticate to and access management interfaces for the service (Principle 10 should be used assess the risks of different approaches to meet this objective).
     filters: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to authenticate to and access management interfaces for the service (Principle 10 should be used assess the risks of different approaches to meet this objective).

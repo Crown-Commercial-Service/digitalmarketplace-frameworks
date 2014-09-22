@@ -17,38 +17,38 @@
     name: Features and benefits
     file: service/features-and-benefits.yml
 - Page 6:
+    name: Service definition
+    file: service/service-definition.yml
+- Page 7:
     name: Terms and conditions
     file: service/terms-and-conditions.yml
-- Page 7:
+- Page 8:
     name: Pricing
     file: service/pricing.yml
-- Page 8:
+- Page 9:
     name: Open standards
     file: service/open-standards.yml
-- Page 9:
-    name: Cloud features
-    file: service/cloud-features.yml
 - Page 10:
-    name: Analytics
-    file: service/analytics.yml
-- Page 11:
-    name: Provisioning
-    file: service/provisioning.yml
-- Page 12:
-    name: Data storage
-    file: service/data-storage.yml
-- Page 13:
-    name: Onboarding and offboarding
-    file: service/onboarding-and-offboarding.yml
-- Page 14:
-    name: Open source
-    file: service/open-source.yml
-- Page 15:
     name: Support
     file: service/support.yml
+- Page 11:
+    name: Onboarding and offboarding
+    file: service/onboarding-and-offboarding.yml
+- Page 12:
+    name: Analytics
+    file: service/analytics.yml
+- Page 13:
+    name: Cloud features
+    file: service/cloud-features.yml
+- Page 14:
+    name: Provisioning
+    file: service/provisioning.yml
+- Page 15:
+    name: Open source
+    file: service/open-source.yml
 - Page 16:
-    name: Uptime
-    file: service/uptime.yml
+    name: Code libraries
+    file: service/code-libraries.yml
 - Page 17:
     name: API access
     file: service/api-access.yml
@@ -62,11 +62,11 @@
     name: Certifications
     file: service/certifications.yml
 - Page 21:
-    name: Code libraries
-    file: service/code-libraries.yml
-- Page 22:
     name: Identity standards
     file: service/identity-standards.yml
+- Page 22:
+    name: Data storage
+    file: service/data-storage.yml
 - Page 23:
     name: Data-in-transit protection
     file: service/security/data-in-transit-protection.yml
@@ -92,7 +92,7 @@
     name: Supply-chain security
     file: service/security/supply-chain-security.yml
 - Page 31:
-    name: Authentication of consumers to management interfaces and within support channels
+    name: Authentication of consumers
     file: service/security/authentication-of-consumers-to-management-interfaces-and-within-support-channels.yml
 - Page 32:
     name: Identity and authentication
