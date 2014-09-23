@@ -57,6 +57,7 @@ Pricing:
         errorSummaryMessage: ""
   Education pricing:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
+    hint: "Do you offer special pricing for educational organisations?"
     fields:
       - type: boolean
         validation: notBlank
