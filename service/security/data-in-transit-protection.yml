@@ -16,6 +16,7 @@ Data-in-transit protection:
           - "Community WAN service"
           - "Not encrypted"
       - type: assurance
+        hint: "How can you support the above answer?"
   "Data protection within service":
     requirements: Data in transit is protected internally within the service
     filters: Data in transit is protected internally within the service
