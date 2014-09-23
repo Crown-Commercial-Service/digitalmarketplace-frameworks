@@ -1,6 +1,7 @@
 Code libraries:
   Languages your code libraries are written in:
     dependsOnLots: SaaS
+    hint: "Examples of code libraries include Grails and Apache Lucene. Maximum 10 languages."
     fields:
       - type: list
         addthing: Add another code library
