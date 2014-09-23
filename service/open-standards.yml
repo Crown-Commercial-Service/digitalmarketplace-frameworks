@@ -1,6 +1,7 @@
 Open standards:
   Open standards supported and documented:
     dependsOnLots: SaaS, PaaS, IaaS
+    hint: "Take a look at the GOV.UK Open Standards principles for more information on open standards."
     fields:
       - type: boolean
         validation: notBlank
