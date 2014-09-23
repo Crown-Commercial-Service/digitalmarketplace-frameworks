@@ -17,11 +17,10 @@ Secure use of the service by the customer:
     hint: "Do you provide onboarding guidance, including impacts on the consumer’s security?"
     dependsOnLots: PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "Yes"
-          - "No"
-          - "N/A"
+      - type: boolean
+        validation: boolean
+        errorMessage: ""
+        errorSummaryMessage: ""
       - type: assurance
   "Training":
     requirements: The consumer can educate those administrating and using the service in how to use it safely and securely.
