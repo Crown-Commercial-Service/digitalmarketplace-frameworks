@@ -8,7 +8,7 @@ API access:
         errorSummaryMessage: ""
   API type:
     dependsOnLots: SaaS, PaaS, IaaS
-    hint: "Examples of APIs include RESTful and SOAP"
+    hint: "Examples of API include RESTful and SOAP"
     fields:
       - type: text
         validation: notBlank
