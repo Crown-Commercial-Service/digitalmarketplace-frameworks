@@ -9,7 +9,7 @@ Service description:
         errorMessage: ""
         errorSummaryMessage: ""
   Service summary:
-    hint: "Please provide a short description of your service. (50 words maximum). Company information should not be included here. You can provide a company description for your supplier page elsewhere."
+    hint: "Please provide a short description of your service. (50 words maximum). You'll be asked to go into more detail about the features and benefits of your service on the next page. Company information should not be included here. You can provide a company description for your supplier page elsewhere."
     mockAnswer: "Professional website development to enhance the delivery and performance of online services based on Sitecore or Umbraco Content Management Systems. We provide development and support services for large scale, business critical websites for many organisations including NHS Direct, Department for Education and the Department for Business, Innovation and Skills."
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
