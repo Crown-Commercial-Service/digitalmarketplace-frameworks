@@ -1,6 +1,6 @@
 Service details:
   Service type:
-    hint: Select one option relevant to your service
+    hint: Select one option relevant to your service. For more detail on each category, please take a look at the National Institute of Standards and Technology (NIST) definitions of cloud computing services.
     mockAnswer: Software as a service
     fields:
       - type: radio
