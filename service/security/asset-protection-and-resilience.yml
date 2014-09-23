@@ -5,13 +5,16 @@ Asset protection and resilience:
     hint: "Where are the service provider's datacentres located?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "UK"
-          - "EU"
-          - "USA - Safe Harbor"
-          - "Other countries with data protection treaties"
-          - "Other countries"
+      - type: checkbox
+        label: "UK"
+      - type: checkbox
+        label: "EU"
+      - type: checkbox
+        label: "USA - Safe Harbor"
+      - type: checkbox
+        label: "Other countries with data protection treaties"
+      - type: checkbox
+        label: "Other countries"
       - type: assurance
   "Data management location":
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
@@ -19,13 +22,16 @@ Asset protection and resilience:
     hint: "Where are the services managed from?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "UK"
-          - "EU"
-          - "USA - Safe Harbor"
-          - "Other countries with data protection treaties"
-          - "Other countries"
+      - type: checkbox
+        label: "UK"
+      - type: checkbox
+        label: "EU"
+      - type: checkbox
+        label: "USA - Safe Harbor"
+      - type: checkbox
+        label: "Other countries with data protection treaties"
+      - type: checkbox
+        label: "Other countries"
       - type: assurance
   "Legal jurisdiction of service provider":
     requirements: The legal jurisdiction(s) in which the service provider operates
