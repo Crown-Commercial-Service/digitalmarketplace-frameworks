@@ -49,7 +49,7 @@ Data-in-transit protection:
   "Data protection between services":
     requirements: Data in transit is protected between the service and other services (eg where APIs are exposed)
     filters: Data in transit is protected between the service and other services (eg where APIs are exposed)
-    hint: ""
+    hint: "Choose 1"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: radio
