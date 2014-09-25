@@ -5,6 +5,6 @@ API access:
       - type: boolean
   API type:
     dependsOnLots: SaaS, PaaS, IaaS
-    hint: "Examples of API include RESTful and SOAP"
+    hint: "Examples of API include RESTful and SOAP."
     fields:
       - type: text
