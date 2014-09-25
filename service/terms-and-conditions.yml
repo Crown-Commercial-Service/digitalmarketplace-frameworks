@@ -19,5 +19,6 @@ Terms and conditions:
   Please upload your terms and conditions document:
     mockAnswer: Umbraco Terms_Conditions 102014.odf
     dependsOnLots: SaaS, PaaS, IaaS, SCS
+    hint: "Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
     fields:
       - type: upload
