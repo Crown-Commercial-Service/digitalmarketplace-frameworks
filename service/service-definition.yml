@@ -1,6 +1,6 @@
 Service definition:
   Service definition document:
-    hint: "Please upload your service definition. Use an open document format. Refer to the ITT documentation for further guidance on what to include."
+    hint: "Please upload your service definition. Refer to the ITT documentation for further guidance on what to include. Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
     mockAnswer: Umbraco Service_Definition 102014.odf
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
