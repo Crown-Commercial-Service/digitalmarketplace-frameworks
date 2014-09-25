@@ -6,9 +6,6 @@ Configuration and change management:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Change impact assessment":
     requirements: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
@@ -17,9 +14,6 @@ Configuration and change management:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
 Vulnerabilility management:
   "Vulnerability assessment":
@@ -29,9 +23,6 @@ Vulnerabilility management:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Vulnerability monitoring":
     requirements: Consumers should have confidence that relevant sources of information relating to threat, vulnerability and exploitation technique information are monitored by the service provider.
@@ -40,9 +31,6 @@ Vulnerabilility management:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Vulnerability mitigation prioritisation":
     requirements: Consumers should have confidence that the severity of threats and vulnerabilities are considered within the context of the service and this information is used to prioritise implementation of mitigations.
@@ -51,9 +39,6 @@ Vulnerabilility management:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Complete vulnerability change-management process":
     requirements: Consumers should have confidence that known vulnerabilities within the service are tracked until suitable mitigations have been deployed through a suitable change management process.
@@ -62,9 +47,6 @@ Vulnerabilility management:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Vulnerability mitigation timescales":
     requirements: Consumers should have confidence that service provider timescales for implementing mitigations to vulnerabilities found within the service are made available to them.
@@ -73,9 +55,6 @@ Vulnerabilility management:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
 Protective monitoring:
   "Protective monitoring":
@@ -85,9 +64,6 @@ Protective monitoring:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
 Incident management:
   "Incident management processes":
@@ -97,9 +73,6 @@ Incident management:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Consumer reporting of security incidents":
     requirements: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
@@ -108,9 +81,6 @@ Incident management:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Security incident definition published":
     requirements: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
@@ -119,9 +89,6 @@ Incident management:
     hint: Do you publish to consumers a definition of a security incident, along with the triggers and timescales for sharing such incidents with service consumers?
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Format of security incident notificaitions published":
     requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
@@ -130,9 +97,6 @@ Incident management:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Maxiumum timescale for incident investigation":
     requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
@@ -140,10 +104,12 @@ Incident management:
     hint: "What are your maximum timescales by which an incident will be investigated?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "1 week"
-          - "2 weeks"
-          - "1 month"
-          - "3 months"
+      - type: radio
+        label: "1 week"
+      - type: radio
+        label: "2 weeks"
+      - type: radio
+        label: "1 month"
+      - type: radio
+        label: "3 months"
       - type: assurance

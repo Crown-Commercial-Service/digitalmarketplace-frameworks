@@ -5,16 +5,22 @@ Data-in-transit protection:
     hint: ""
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "CAPS-encrypted"
-          - "Encrypted community WAN service"
-          - "IPSec VPN Gateway - CPA"
-          - "TLS, version 1.2 or later, encrypted"
-          - "Legacy SSL or TLS-encrypted"
-          - "Bonded fibre optic connections"
-          - "Community WAN service"
-          - "Not encrypted"
+      - type: radio
+        label: "CAPS-encrypted"
+      - type: radio
+        label: "Encrypted community WAN service"
+      - type: radio
+        label: "IPSec VPN Gateway - CPA"
+      - type: radio
+        label: "TLS, version 1.2 or later, encrypted"
+      - type: radio
+        label: "Legacy SSL or TLS-encrypted"
+      - type: radio
+        label: "Bonded fibre optic connections"
+      - type: radio
+        label: "Community WAN service"
+      - type: radio
+        label: "Not encrypted"
       - type: assurance
         hint: "How can you support the above answer?"
   "Data protection within service":
@@ -23,16 +29,22 @@ Data-in-transit protection:
     hint: ""
     dependsOnLots: PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "CAPS-encrypted"
-          - "Encrypted community WAN service"
-          - "IPSec VPN Gateway - CPA"
-          - "TLS, version 1.2 or later, encrypted"
-          - "Legacy SSL or TLS-encrypted"
-          - "Bonded fibre optic connections"
-          - "Community WAN service"
-          - "Not encrypted"
+      - type: radio
+        label: "CAPS-encrypted"
+      - type: radio
+        label: "Encrypted community WAN service"
+      - type: radio
+        label: "IPSec VPN Gateway - CPA"
+      - type: radio
+        label: "TLS, version 1.2 or later, encrypted"
+      - type: radio
+        label: "Legacy SSL or TLS-encrypted"
+      - type: radio
+        label: "Bonded fibre optic connections"
+      - type: radio
+        label: "Community WAN service"
+      - type: radio
+        label: "Not encrypted"
       - type: assurance
   "Data protection between services":
     requirements: Data in transit is protected between the service and other services (eg where APIs are exposed)
@@ -40,14 +52,20 @@ Data-in-transit protection:
     hint: ""
     dependsOnLots: PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "CAPS-encrypted"
-          - "Encrypted community WAN service"
-          - "IPSec VPN Gateway - CPA"
-          - "TLS, version 1.2 or later, encrypted"
-          - "Legacy SSL or TLS-encrypted"
-          - "Bonded fibre optic connections"
-          - "Community WAN service"
-          - "Not encrypted"
+      - type: radio
+        label: "CAPS-encrypted"
+      - type: radio
+        label: "Encrypted community WAN service"
+      - type: radio
+        label: "IPSec VPN Gateway - CPA"
+      - type: radio
+        label: "TLS, version 1.2 or later, encrypted"
+      - type: radio
+        label: "Legacy SSL or TLS-encrypted"
+      - type: radio
+        label: "Bonded fibre optic connections"
+      - type: radio
+        label: "Community WAN service"
+      - type: radio
+        label: "Not encrypted"
       - type: assurance

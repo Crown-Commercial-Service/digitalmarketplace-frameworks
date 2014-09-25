@@ -6,9 +6,6 @@ Authentication of consumers:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "User access control through support channels":
     requirements: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.
@@ -17,9 +14,6 @@ Authentication of consumers:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
 Separation and access control within management interfaces:
   "User access control within management interfaces":
@@ -29,9 +23,6 @@ Separation and access control within management interfaces:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Supports 'principle of least privilege'":
     requirements: The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.
@@ -40,9 +31,6 @@ Separation and access control within management interfaces:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Visibility of the networks to which management interfaces are exposed":
     requirements: The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.
@@ -51,7 +39,4 @@ Separation and access control within management interfaces:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance

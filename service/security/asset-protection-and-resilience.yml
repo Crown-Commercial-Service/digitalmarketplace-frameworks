@@ -39,13 +39,16 @@ Asset protection and resilience:
     hint: ""
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
-      - type: radios
-        options:
-          - "UK"
-          - "EU"
-          - "USA - Safe Harbor"
-          - "Other countries with data protection treaties"
-          - "Other countries"
+      - type: radio
+        label: "UK"
+      - type: radio
+        label: "EU"
+      - type: radio
+        label: "USA - Safe Harbor"
+      - type: radio
+        label: "Other countries with data protection treaties"
+      - type: radio
+        label: "Other countries"
       - type: assurance
   "Datacentre protection":
     requirements: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
@@ -54,9 +57,6 @@ Asset protection and resilience:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Data-at-rest protection":
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
@@ -64,14 +64,18 @@ Asset protection and resilience:
     hint: "How is storage containing consumer data-at-rest protected from unauthorised access?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "CAPS-assured components"
-          - "Foundation grade-assured components"
-          - "FIPS-assured encryption"
-          - "Other encryption"
-          - "Secure containers or cages"
-          - "No protection"
+      - type: radio
+        label: "CAPS-assured components"
+      - type: radio
+        label: "Foundation grade-assured components"
+      - type: radio
+        label: "FIPS-assured encryption"
+      - type: radio
+        label: "Other encryption"
+      - type: radio
+        label: "Secure containers or cages"
+      - type: radio
+        label: "No protection"
       - type: assurance
   "Secure data deletion":
     requirements: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
@@ -79,13 +83,16 @@ Asset protection and resilience:
     hint: "How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service, or when they request it to be erased?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "CPA Foundation"
-          - "CESG-assured product" 
-          - "CPNI-approved erasure"
-          - "Other secure erasure"
-          - "Other erasure process"
+      - type: radio
+        label: "CPA Foundation"
+      - type: radio
+        label: "CESG-assured product"
+      - type: radio
+        label: "CPNI-approved erasure"
+      - type: radio
+        label: "Other secure erasure"
+      - type: radio
+        label: "Other erasure process"
       - type: assurance
   "Storage media disposal":
     requirements: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
@@ -93,15 +100,20 @@ Asset protection and resilience:
     hint: "How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime?"
     dependsOnLots: PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "CESG-assured destruction service (CAS(T))"
-          - "CPA Foundation-assured product"
-          - "CPNI-approved destruction service"
-          - "BS EN 151713:2009-compliant destruction"
-          - "CESG-approved erasure"
-          - "Other secure erasure"
-          - "Other destruction/erasure process"
+      - type: radio
+        label: "CESG-assured destruction service (CAS(T))"
+      - type: radio
+        label: "CPA Foundation-assured product"
+      - type: radio
+        label: "CPNI-approved destruction service"
+      - type: radio
+        label: "BS EN 151713:2009-compliant destruction"
+      - type: radio
+        label: "CESG-approved erasure"
+      - type: radio
+        label: "Other secure erasure"
+      - type: radio
+        label: "Other destruction/erasure process"
       - type: assurance
   "Secure equipment disposal":
     requirements: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
@@ -110,9 +122,6 @@ Asset protection and resilience:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Secure component disposal":
     requirements: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
@@ -120,15 +129,20 @@ Asset protection and resilience:
     hint: "How are any components containing sensitive data sanitised, removed or destroyed?"
     dependsOnLots: PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "CESG-assured destruction service (CAS)"
-          - "CPA Foundation Assured Product"
-          - "CPNI-approved destruction service"
-          - "BS EN 151713:2009-compliant destruction"
-          - "CESG or CPNI-approved erasure"
-          - "Other secure erasure"
-          - "Other destruction/erasure process"
+      - type: radio
+        label: "CESG-assured destruction service (CAS)"
+      - type: radio
+        label: "CPA Foundation Assured Product"
+      - type: radio
+        label: "CPNI-approved destruction service"
+      - type: radio
+        label: "BS EN 151713:2009-compliant destruction"
+      - type: radio
+        label: "CESG or CPNI-approved erasure"
+      - type: radio
+        label: "Other secure erasure"
+      - type: radio
+        label: "Other destruction/erasure process"
       - type: assurance
   "Redundant equipment accounts revoked":
     requirements: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
@@ -137,9 +151,6 @@ Asset protection and resilience:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Service availability (%)":
     requirements: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.

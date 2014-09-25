@@ -5,11 +5,14 @@ Personnel security:
     hint: "Do your staff, who have access to the service, have adequate personnel security screening for their role?"
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
-      - type: radios
-        options:
-          - "Developed vetting"
-          - "Security clearance vetting"
-          - "Baseline personnel security standard (BPSS)"
-          - "Background checks in accordance with BS7858:2012"
-          - "Employment checks"
+      - type: radio
+        label: "Developed vetting"
+      - type: radio
+        label: "Security clearance vetting"
+      - type: radio
+        label: "Baseline personnel security standard (BPSS)"
+      - type: radio
+        label: "Background checks in accordance with BS7858:2012"
+      - type: radio
+        label: "Employment checks"
       - type: assurance

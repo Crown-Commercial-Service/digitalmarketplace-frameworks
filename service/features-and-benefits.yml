@@ -5,17 +5,11 @@ Features and benefits:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: list
-        validation: notBlank
-        errorMessage: ""
         addthing: Add another feature
-        errorSummaryMessage: ""
   Service benefits:
     hint: "Include benefits that show how your service helps users improve their business. Use active phrases, eg publish content from multiple devices, quickly manage content on the move.  (Maximum 10 words per benefit. Maximum 10 benefits.)"
     mockAnswer: "Publish content, Quickly manage content on the move"
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: list
-        validation: notBlank
-        errorMessage: ""
         addthing: Add another business benefit
-        errorSummaryMessage: ""

@@ -5,24 +5,28 @@ Separation between consumers:
     hint: "Is the service a public, private, community or hybrid cloud service?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "Public cloud"
-          - "Community cloud"
-          - "Private cloud"
-          - "Hybrid cloud"
+      - type: radio
+        label: "Public cloud"
+      - type: radio
+        label: "Community cloud"
+      - type: radio
+        label: "Private cloud"
+      - type: radio
+        label: "Hybrid cloud"
   "Type of consumer":
     requirements: Consumers should understand the types of consumer they share the service or platform with.
     filters: Consumers should understand the types of consumer they share the service or platform with.
     hint: "What types of other consumer do your consumers share the service or platform with?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "No other consumer"
-          - "Only government"
-          - "A specific group"
-          - "Anyone - public"
+      - type: radio
+        label: "No other consumer"
+      - type: radio
+        label: "Only government"
+      - type: radio
+        label: "A specific group"
+      - type: radio
+        label: "Anyone - public"
       - type: assurance
   "Services separation":
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
@@ -31,9 +35,6 @@ Separation between consumers:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Services management separation":
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
@@ -42,7 +43,4 @@ Separation between consumers:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance

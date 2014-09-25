@@ -5,11 +5,14 @@ Secure service administration:
     hint: ""
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "Dedicated devices on a segregated network"
-          - "Dedicated devices for community service management"
-          - "Dedicated devices for multiple community service management"
-          - "Service management via bastion hosts"
-          - "Direct service management"
+      - type: radio
+        label: "Dedicated devices on a segregated network"
+      - type: radio
+        label: "Dedicated devices for community service management"
+      - type: radio
+        label: "Dedicated devices for multiple community service management"
+      - type: radio
+        label: "Service management via bastion hosts"
+      - type: radio
+        label: "Direct service management"
       - type: assurance

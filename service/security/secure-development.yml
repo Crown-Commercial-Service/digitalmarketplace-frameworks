@@ -6,9 +6,6 @@ Secure development:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Secure design, coding, testing and deployment":
     requirements: Consumers should be sufficiently confident that development is carried out in line with industry good practice regarding secure design, coding, testing and deployment.
@@ -17,9 +14,6 @@ Secure development:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Software configuration management":
     requirements: Consumers should be sufficiently confident that configuration management processes are in place to ensure the integrity of the solution through development, testing and deployment.
@@ -28,7 +22,4 @@ Secure development:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
