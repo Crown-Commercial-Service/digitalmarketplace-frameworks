@@ -4,56 +4,26 @@ Access:
     fields:
       - type: checkbox
         label: Internet Explorer
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Firefox
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Chrome
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Safari
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Opera
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Offline working and syncing supported:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Supported devices:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: checkbox
         label: PC
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Mac
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Smartphone
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Tablet
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""

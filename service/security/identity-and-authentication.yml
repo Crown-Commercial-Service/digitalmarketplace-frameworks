@@ -5,14 +5,20 @@ Identity and authentication:
     hint: "Do your identity and authentication controls provide an appropriate level of confidence that a user has authorisation to access a specific interface?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "Username and two factor authentication"
-          - "Username and TLS client certificate"
-          - "Authentication federation"
-          - "Limited access over dedicated link, enterprise or community network"
-          - "Username and password"
-          - "Username and strong password/passphrase enforcement"
-          - "Other mechanism"
-          - "No controls"
+      - type: radio
+        label: "Username and two factor authentication"
+      - type: radio
+        label: "Username and TLS client certificate"
+      - type: radio
+        label: "Authentication federation"
+      - type: radio
+        label: "Limited access over dedicated link, enterprise or community network"
+      - type: radio
+        label: "Username and password"
+      - type: radio
+        label: "Username and strong password/passphrase enforcement"
+      - type: radio
+        label: "Other mechanism"
+      - type: radio
+        label: "No controls"
       - type: assurance

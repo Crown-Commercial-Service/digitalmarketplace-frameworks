@@ -3,6 +3,3 @@ Analytics:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""

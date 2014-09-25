@@ -5,56 +5,29 @@ Support:
     fields:
       - type: checkbox
         label: Service desk
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Email
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Phone
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Live chat
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: checkbox
         label: Onsite
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Support accessible to any third-party suppliers:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Support availablility:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "eg 24/7 or 9 to 5"
     fields:
       - type: text
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Standard support response times:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "How long will it take until support can begin to be provided? eg 1 hour or 1 business day. Maximum 20 words."
     fields:
       - type: text
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Incident escalation process available:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""

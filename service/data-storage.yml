@@ -3,72 +3,36 @@ Data storage:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   User-defined data location:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Datacentre tier:
     hint: Choose one
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radio
         label: TIA-942 Tier 1
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: radio
         label: TIA-942 Tier 2
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: radio
         label: TIA-942 Tier 3
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: radio
         label: TIA-942 Tier 4
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: radio
         label: Uptime Institute Tier 1
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: radio
         label: Uptime Institute Tier 2
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: radio
         label: Uptime Institute Tier 3
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: radio
         label: Uptime Institute Tier 4
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Backup, disaster recovery and resilience plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
     hint: "You can provide more detail on your disaster recovery plan in your service definition document."
     fields:
       - type: boolean
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""
   Data extraction/removal plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""

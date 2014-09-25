@@ -5,11 +5,12 @@ Secure use of the service by the customer:
     hint: "Which end device is the cloud service accessible from?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "Corporate/enterprise devices"
-          - "Partner devices"
-          - "Unknown devices"
+      - type: radio
+        label: "Corporate/enterprise devices"
+      - type: radio
+        label: "Partner devices"
+      - type: radio
+        label: "Unknown devices"
       - type: assurance
   "Onboarding guidance":
     requirements: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
@@ -18,9 +19,6 @@ Secure use of the service by the customer:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Training":
     requirements: The consumer can educate those administrating and using the service in how to use it safely and securely.
@@ -29,7 +27,4 @@ Secure use of the service by the customer:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance

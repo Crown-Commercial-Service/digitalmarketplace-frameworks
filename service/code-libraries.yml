@@ -5,6 +5,3 @@ Code libraries:
     fields:
       - type: list
         addthing: Add another code library
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""

@@ -6,21 +6,20 @@ External interface protection:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
   "Interconnection method provided":
     requirements: The consumer understands what physical and logical interfaces their information is available from.
     filters: The consumer understands what physical and logical interfaces their information is available from.
     hint: "What method of interconnection do you provide?"
     dependsOnLots: PaaS, IaaS
     fields:
-      - type: radios
-        options:
-          - "Internet"
-          - "PSN WAN"
-          - "Private WAN"
-          - "Internet and Private WAN"
+      - type: radio
+        label: "Internet"
+      - type: radio
+        label: "PSN WAN"
+      - type: radio
+        label: "Private WAN"
+      - type: radio
+        label: "Internet and Private WAN"
   "Data access control provided":
     requirements: The consumer has sufficient confidence that protections are in place to control access to their data.
     filters: The consumer has sufficient confidence that protections are in place to control access to their data.
@@ -28,9 +27,6 @@ External interface protection:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
   "Authentication and authorisation provided":
     requirements: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
@@ -39,7 +35,4 @@ External interface protection:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance

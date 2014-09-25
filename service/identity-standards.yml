@@ -5,6 +5,3 @@ Identity standards:
     fields:
       - type: list
         addthing: Add another standard
-        validation: notBlank
-        errorMessage: ""
-        errorSummaryMessage: ""

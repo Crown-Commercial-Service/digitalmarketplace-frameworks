@@ -6,7 +6,4 @@ Governance:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-        validation: boolean
-        errorMessage: ""
-        errorSummaryMessage: ""
       - type: assurance
