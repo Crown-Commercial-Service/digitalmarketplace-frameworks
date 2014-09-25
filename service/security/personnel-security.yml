@@ -2,7 +2,7 @@ Personnel security:
   "Personnel security checks":
     requirements: Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.
     filters: Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.
-    hint: "Do your staff, who have access to the service, have adequate personnel security screening for their role?"
+    hint: "What kind of personnel security do you apply to staff who have access to the service? Choose all that apply."
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: radio
