@@ -1,7 +1,7 @@
 Service type:
   Choose the categories that apply to your service:
     dependsOnLots: IaaS
-    hint: "You can choose multiple categories"
+    hint: "You can choose multiple categories."
     mockAnswer: Compute
     fields:
       - type: checkbox

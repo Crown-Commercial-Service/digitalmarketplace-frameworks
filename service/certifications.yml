@@ -1,7 +1,7 @@
 Certifications:
   Vendor certification(s):
     dependsOnLots: SaaS, PaaS, IaaS, SCS
-    hint: "Examples of certifications include VMware Certified Professional, Oracle Gold Partner."
+    hint: "Examples of certifications include VMware Certified Professional and Oracle Gold Partner. (Optional.)"
     fields:
       - type: list
         addthing: Add another certification

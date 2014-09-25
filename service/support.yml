@@ -1,7 +1,7 @@
 Support:
   Support service type:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
-    hint: Choose all that apply
+    hint: Choose all that apply.
     fields:
       - type: checkbox
         label: Service desk
@@ -19,12 +19,12 @@ Support:
       - type: boolean
   Support availablility:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
-    hint: "eg 24/7 or 9 to 5"
+    hint: "eg 24/7 or 9 to 5. (Maximum 20 words.)"
     fields:
       - type: text
   Standard support response times:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
-    hint: "How long will it take until support can begin to be provided? eg 1 hour or 1 business day. Maximum 20 words."
+    hint: "How long will it take until support can begin to be provided? eg 1 hour or 1 business day. (Maximum 20 words.)"
     fields:
       - type: text
   Incident escalation process available:

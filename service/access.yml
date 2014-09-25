@@ -1,6 +1,7 @@
 Access:
   Supported web browsers:
     dependsOnLots: SaaS, PaaS, IaaS
+    hint: "Choose all that apply."
     fields:
       - type: checkbox
         label: Internet Explorer
@@ -18,6 +19,7 @@ Access:
       - type: boolean
   Supported devices:
     dependsOnLots: SaaS, PaaS, IaaS
+    hint: "Choose all that apply."
     fields:
       - type: checkbox
         label: PC

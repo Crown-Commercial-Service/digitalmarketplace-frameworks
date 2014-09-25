@@ -21,7 +21,7 @@ Names and addresses:
         errorMessage: ""
         errorSummaryMessage: ""
   Contact address:
-    hint: "Optional. If you would prefer an alternative address to be included on your service listings, please provide details here."
+    hint: "If you would prefer an alternative address to be included on your service listings, please provide details here. (Optional.)"
     mockAnswer: ""
     fields:
       - type: address

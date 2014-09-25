@@ -2,7 +2,7 @@ Asset protection and resilience:
   "Datacentre location":
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
-    hint: "Where are the service provider's datacentres located?"
+    hint: "Where are the service provider's datacentres located? Choose all that apply."
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: checkbox
@@ -19,7 +19,7 @@ Asset protection and resilience:
   "Data management location":
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
-    hint: "Where are the services managed from?"
+    hint: "Where are the services managed from? Choose all that apply."
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: checkbox
@@ -36,7 +36,7 @@ Asset protection and resilience:
   "Legal jurisdiction of service provider":
     requirements: The legal jurisdiction(s) in which the service provider operates
     filters: The legal jurisdiction(s) in which the service provider operates
-    hint: ""
+    hint: "Choose 1"
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: radio
@@ -61,7 +61,7 @@ Asset protection and resilience:
   "Data-at-rest protection":
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     filters: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
-    hint: "How is storage containing consumer data-at-rest protected from unauthorised access?"
+    hint: "How is storage containing consumer data-at-rest protected from unauthorised access? Choose 1."
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radio
@@ -80,7 +80,7 @@ Asset protection and resilience:
   "Secure data deletion":
     requirements: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
     filters: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
-    hint: "How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service, or when they request it to be erased?"
+    hint: "How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service, or when they request it to be erased? Choose 1."
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radio
@@ -97,7 +97,7 @@ Asset protection and resilience:
   "Storage media disposal":
     requirements: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
     filters: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
-    hint: "How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime?"
+    hint: "How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime? Choose 1."
     dependsOnLots: PaaS, IaaS
     fields:
       - type: radio
@@ -118,7 +118,7 @@ Asset protection and resilience:
   "Secure equipment disposal":
     requirements: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
     filters: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
-    hint: "Is all equipment potentially containing consumer data, credentials or configuration information identified at the end of its life or prior to being recycled?"
+    hint: "Is all equipment potentially containing consumer data, credentials or configuration information identified at the end of its life or prior to being recycled? Choose 1."
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
@@ -126,7 +126,7 @@ Asset protection and resilience:
   "Secure component disposal":
     requirements: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
     filters: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
-    hint: "How are any components containing sensitive data sanitised, removed or destroyed?"
+    hint: "How are any components containing sensitive data sanitised, removed or destroyed? Choose 1."
     dependsOnLots: PaaS, IaaS
     fields:
       - type: radio
