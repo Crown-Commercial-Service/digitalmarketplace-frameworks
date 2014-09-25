@@ -12,14 +12,12 @@ External interface protection:
     hint: "What method of interconnection do you provide?"
     dependsOnLots: PaaS, IaaS
     fields:
-      - type: radio
+      - type: checkbox
         label: "Internet"
-      - type: radio
+      - type: checkbox
         label: "PSN WAN"
-      - type: radio
+      - type: checkbox
         label: "Private WAN"
-      - type: radio
-        label: "Internet and Private WAN"
   "Data access control provided":
     requirements: The consumer has sufficient confidence that protections are in place to control access to their data.
     filters: The consumer has sufficient confidence that protections are in place to control access to their data.
