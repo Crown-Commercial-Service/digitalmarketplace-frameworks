@@ -1,7 +1,7 @@
 Support:
   Support service type:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
-    hint: Choose all that apply
+    hint: Choose all that apply.
     fields:
       - type: checkbox
         label: Service desk
