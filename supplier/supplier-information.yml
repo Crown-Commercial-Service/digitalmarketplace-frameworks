@@ -37,7 +37,7 @@ Supplier information:
         errorMessage: ""
         errorSummaryMessage: ""
   Client list:
-    hint: You can choose to include a list of clients you work with here. Any client listings you include will appear on your supplier page on the Digital Marketplace.
+    hint: You can choose to include a list of clients you work with here. Any client listings you include will appear on your supplier page on the Digital Marketplace. (Maximum 10 clients.)
     mockAnswer: "DEFRA, Ministry of Justice, GDS"
     fields:
       - type: list
