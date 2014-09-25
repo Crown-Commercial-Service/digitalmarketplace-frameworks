@@ -1,6 +1,6 @@
 Supplier information:
   Supplier description:
-    hint: Maximum 50 words
+    hint: (Maximum 50 words.)
     mockAnswer: "With over 200.000 installations, Umbraco is one of the most deployed web content management systems on the Microsoft stack. It's in the top five most popular server applications and among the ten most popular open source tools in general."
     fields:
       - type: textarea
