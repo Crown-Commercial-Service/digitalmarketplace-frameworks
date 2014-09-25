@@ -2,6 +2,7 @@ Networks and connectivity:
   Networks the service is directly connected to:
     dependsOnLots: SaaS, PaaS, IaaS
     mockAnswer: Internet
+    hint: "Choose all that apply."
     fields:
       - type: checkbox
         label: Internet
