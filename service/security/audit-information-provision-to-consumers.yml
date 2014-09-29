@@ -11,3 +11,4 @@ Audit information provision to consumers:
         label: "Data made available"
       - type: radio
         label: "Data made available by negotiation"
+    validationNotAnswered: "Please choose the type of audit information provided"
