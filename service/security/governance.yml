@@ -7,3 +7,4 @@ Governance:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if a governance framework and process is in place"
