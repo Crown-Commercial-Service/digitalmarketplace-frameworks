@@ -16,6 +16,7 @@ Asset protection and resilience:
       - type: checkbox
         label: "Other countries"
       - type: assurance
+    validationNotAnswered: "Please choose at least one datacentre location"
   "Data management location":
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
@@ -33,6 +34,7 @@ Asset protection and resilience:
       - type: checkbox
         label: "Other countries"
       - type: assurance
+    validationNotAnswered: "Please choose at least one data management location"
   "Legal jurisdiction of service provider":
     requirements: The legal jurisdiction(s) in which the service provider operates
     filters: The legal jurisdiction(s) in which the service provider operates
@@ -50,6 +52,7 @@ Asset protection and resilience:
       - type: radio
         label: "Other countries"
       - type: assurance
+    validationNotAnswered: "Please choose at least one legal jurisdiction the service provider operates in"
   "Datacentre protection":
     requirements: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
     filters: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
@@ -58,6 +61,7 @@ Asset protection and resilience:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the datacentre is protected"
   "Data-at-rest protection":
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     filters: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
@@ -77,6 +81,7 @@ Asset protection and resilience:
       - type: radio
         label: "No protection"
       - type: assurance
+    validationNotAnswered: "Please choose at least one type of data-at-rest protection"
   "Secure data deletion":
     requirements: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
     filters: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
@@ -94,6 +99,7 @@ Asset protection and resilience:
       - type: radio
         label: "Other erasure process"
       - type: assurance
+    validationNotAnswered: "Please choose at least one type of secure data deletion"
   "Storage media disposal":
     requirements: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
     filters: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
@@ -115,6 +121,7 @@ Asset protection and resilience:
       - type: radio
         label: "Other destruction/erasure process"
       - type: assurance
+    validationNotAnswered: "Please choose at least one method of storage media disposal"
   "Secure equipment disposal":
     requirements: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
     filters: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
@@ -123,6 +130,7 @@ Asset protection and resilience:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if secure equipment disposal is provided"
   "Secure component disposal":
     requirements: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
     filters: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
@@ -144,6 +152,7 @@ Asset protection and resilience:
       - type: radio
         label: "Other destruction/erasure process"
       - type: assurance
+    validationNotAnswered: "Please choose the method of secure component disposal"
   "Redundant equipment accounts revoked":
     requirements: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
     filters: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
@@ -152,6 +161,7 @@ Asset protection and resilience:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if redundant equipment accounts are revoked"
   "Service availability (%)":
     requirements: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
     filters: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
@@ -160,3 +170,4 @@ Asset protection and resilience:
     fields:
       - type: percentage
       - type: assurance
+    validationNotAnswered: "Please give the availability of the service"
