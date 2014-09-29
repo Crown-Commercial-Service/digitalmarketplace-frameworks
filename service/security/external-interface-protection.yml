@@ -6,6 +6,7 @@ External interface protection:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if onboarding guidance is provided"
   "Interconnection method provided":
     requirements: The consumer understands what physical and logical interfaces their information is available from.
     filters: The consumer understands what physical and logical interfaces their information is available from.
@@ -18,6 +19,7 @@ External interface protection:
         label: "PSN WAN"
       - type: checkbox
         label: "Private WAN"
+    validationNotAnswered: "Please choose at least one interconnection method"
   "Data access control provided":
     requirements: The consumer has sufficient confidence that protections are in place to control access to their data.
     filters: The consumer has sufficient confidence that protections are in place to control access to their data.
@@ -26,6 +28,7 @@ External interface protection:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if data access control is provided"
   "Authentication and authorisation provided":
     requirements: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
     filters: The consumer has sufficient confidence that the service can determine the identity of connecting users and services to an appropriate level for the data or function being accessed.
@@ -34,3 +37,4 @@ External interface protection:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if authentication and authorisation are provided"
