@@ -13,6 +13,7 @@ Separation between consumers:
         label: "Private cloud"
       - type: radio
         label: "Hybrid cloud"
+    validationNotAnswered: "Please give the type of cloud deployment model"
   "Type of consumer":
     requirements: Consumers should understand the types of consumer they share the service or platform with.
     filters: Consumers should understand the types of consumer they share the service or platform with.
@@ -28,6 +29,7 @@ Separation between consumers:
       - type: radio
         label: "Anyone - public"
       - type: assurance
+    validationNotAnswered: "Please give the type of consumer"
   "Services separation":
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     filters: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
@@ -36,6 +38,7 @@ Separation between consumers:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if services separation is provided"
   "Services management separation":
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     filters: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
@@ -44,3 +47,4 @@ Separation between consumers:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if services management separation is provided"
