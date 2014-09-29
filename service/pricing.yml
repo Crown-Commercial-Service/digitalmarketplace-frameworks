@@ -49,28 +49,36 @@ Pricing:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if VAT is included"
   Education pricing:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "Do you offer special pricing for educational organisations?"
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if you offer special pricing"
   Trial option:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if there is a trial option"
   Free option:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if there is a free option"
   Pricing document:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     mockAnswer: Pricing Document Umbraco 102014.odf
     hint: "Please upload your pricing document. Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
     fields:
       - type: upload
+    validationWrongFormat: "Please upload your pricing document in a recognised format"
+    validationTooLarge: "Please upload a version of your pricing document below the maximum size"
   Skills Framework for the Information Age (SFIA) rate card:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     mockAnswer: Rate Card Umbraco 102014.odf
     hint: "Please upload your SFIA rate card if you have one. Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
     fields:
       - type: upload
+    validationWrongFormat: "Please upload your pricing document in a recognised format"
+    validationTooLarge: "Please upload a version of your pricing document below the maximum size"
