@@ -3,7 +3,9 @@ Onboarding and offboarding:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if a service onboarding process is included"
   Service offboarding process included:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if a service offboarding process is included"
