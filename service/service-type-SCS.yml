@@ -14,3 +14,4 @@ Service type:
         label: Training
       - type: checkbox
         label: Ongoing support
+    validationNotAnswered: "Please choose at least one category"
