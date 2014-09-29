@@ -7,6 +7,7 @@ Supply-chain security:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if there is visibility of data shared with third-party suppliers"
   "Third-party supplier security requirements":
     requirements: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
@@ -15,6 +16,7 @@ Supply-chain security:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the service provides security requirements for third-party suppliers"
   "Third-party supplier risk assessment":
     requirements: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
@@ -23,6 +25,7 @@ Supply-chain security:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the service provides third-party supplier risk assessments"
   "Third-party supplier compliance monitoring":
     requirements: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
     filters: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
@@ -31,6 +34,7 @@ Supply-chain security:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the service provides third-party supplier compliance monitoring"
   "Hardware and software verification":
     requirements: The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.
     filters: The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.
@@ -39,3 +43,4 @@ Supply-chain security:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the service provides hardware and software verification"
