@@ -16,3 +16,4 @@ Personnel security:
       - type: checkbox
         label: "Employment checks"
       - type: assurance
+    validationNotAnswered: "Please choose at least one type of personal security check"
