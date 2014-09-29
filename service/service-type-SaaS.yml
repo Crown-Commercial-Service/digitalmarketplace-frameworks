@@ -33,7 +33,6 @@ Service type:
       - type: checkbox
         label: Operations management
       - type: checkbox
-    validationNotAnswered: "Please choose at least one category"
         label: Project management and planning
       - type: checkbox
         label: Security
@@ -49,3 +48,4 @@ Service type:
         label: Legal
       - type: checkbox
         label: Transport and logistics
+    validationNotAnswered: "Please choose at least one category"
