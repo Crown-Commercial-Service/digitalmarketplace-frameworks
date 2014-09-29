@@ -13,21 +13,26 @@ Support:
         label: Live chat
       - type: checkbox
         label: Onsite
+    validationNotAnswered: "Please choose at least one support service type"
   Support accessible to any third-party suppliers:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if support is accessible to third party suppliers"
   Support availablility:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "eg 24/7 or 9 to 5. (Maximum 20 words.)"
     fields:
       - type: text
+    validationNotAnswered: "Please give the support availability"
   Standard support response times:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "How long will it take until support can begin to be provided? eg 1 hour or 1 business day. (Maximum 20 words.)"
     fields:
       - type: text
+    validationNotAnswered: "Please give the standard support response times"
   Incident escalation process available:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if there is an incident escalation process"
