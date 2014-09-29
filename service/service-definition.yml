@@ -5,3 +5,5 @@ Service definition:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: upload
+    validationWrongFormat: "Please upload your service definition in a recognised format"
+    validationTooLarge: "Please upload a version of your service definition below the maximum size"
