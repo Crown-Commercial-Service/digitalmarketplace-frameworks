@@ -16,3 +16,4 @@ Secure service administration:
       - type: radio
         label: "Direct service management"
       - type: assurance
+    validationNotAnswered: "Please give the service management model used"
