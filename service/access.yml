@@ -13,10 +13,12 @@ Access:
         label: Safari
       - type: checkbox
         label: Opera
+    validationNotAnswered: "Please choose at least one web browser you support"
   Offline working and syncing supported:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if offline working and syncing is supported"
   Supported devices:
     dependsOnLots: SaaS, PaaS, IaaS
     hint: "Choose all that apply."
@@ -29,3 +31,4 @@ Access:
         label: Smartphone
       - type: checkbox
         label: Tablet
+    validationNotAnswered: "Please choose at least one type of device you support"

@@ -3,3 +3,4 @@ Open source:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if open-source software is used and supported"

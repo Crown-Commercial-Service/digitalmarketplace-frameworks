@@ -3,11 +3,14 @@ Cloud features:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if elastic cloud approach is supported"
   Guaranteed resources defined:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if guaranteed resources are defined"
   Persistent storage supported:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if persistent storage is supported"

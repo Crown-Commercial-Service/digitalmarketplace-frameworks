@@ -3,6 +3,7 @@ Terms and conditions:
     dependsOnLots: PaaS, IaaS, SCS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if there is a termination cost"
   Minimum contract period:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
@@ -16,9 +17,13 @@ Terms and conditions:
         label: "Year"
       - type: radio
         label: "Other"
+    validationNotAnswered: "Please choose a minimum contract period"
   Please upload your terms and conditions document:
     mockAnswer: Umbraco Terms_Conditions 102014.odf
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
     fields:
       - type: upload
+    validationNotAnswered: "Please upload your terms and conditions"
+    validationWrongFormat: "Please upload your terms and conditions in a recognised format"
+    validationTooLarge: "Please upload a version of your terms and conditions below the maximum size"

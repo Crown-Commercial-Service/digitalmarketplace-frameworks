@@ -12,6 +12,7 @@ Secure use of the service by the customer:
       - type: radio
         label: "Unknown devices"
       - type: assurance
+    validationNotAnswered: "Please give the device access method"
   "Onboarding guidance":
     requirements: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
     filters: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
@@ -20,6 +21,7 @@ Secure use of the service by the customer:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if onboarding guidance is provided"
   "Training":
     requirements: The consumer can educate those administrating and using the service in how to use it safely and securely.
     filters: The consumer can educate those administrating and using the service in how to use it safely and securely.
@@ -28,3 +30,4 @@ Secure use of the service by the customer:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if training is provided"

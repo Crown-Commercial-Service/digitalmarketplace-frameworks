@@ -3,10 +3,12 @@ Data storage:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if the datacentres adhere to EU Code of Conduct for Operations"
   User-defined data location:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if the location of data can be defined by the user"
   Datacentre tier:
     hint: Choose one
     dependsOnLots: SaaS, PaaS, IaaS
@@ -27,12 +29,15 @@ Data storage:
         label: Uptime Institute Tier 3
       - type: radio
         label: Uptime Institute Tier 4
+    validationNotAnswered: "Please choose at least one datacentre tier"
   Backup, disaster recovery and resilience plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
     hint: "You can provide more detail on your disaster recovery plan in your service definition document."
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if plans for backup, disaster recovery and resilience are in place"
   Data extraction/removal plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+    validationNotAnswered: "Please answer if there is a plan for data extraction/removal in place"

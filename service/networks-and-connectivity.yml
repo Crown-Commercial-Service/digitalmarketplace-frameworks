@@ -18,3 +18,4 @@ Networks and connectivity:
         label: Joint Academic Network (JANET)
       - type: checkbox
         label: Other
+    validationNotAnswered: "Please choose at least one type of network"

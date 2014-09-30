@@ -7,6 +7,7 @@ Configuration and change management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the service has configuration and change management tracking"
   "Change impact assessment":
     requirements: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
     filters: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
@@ -15,6 +16,7 @@ Configuration and change management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if impact assessments are performed for changes to the service"
 Vulnerabilility management:
   "Vulnerability assessment":
     requirements: Consumers should have confidence that potential new threats, vulnerabilities or exploitation techniques which could affect the service are assessed and corrective action is taken.
@@ -24,6 +26,7 @@ Vulnerabilility management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if assessments are performed for service vulnerabilities"
   "Vulnerability monitoring":
     requirements: Consumers should have confidence that relevant sources of information relating to threat, vulnerability and exploitation technique information are monitored by the service provider.
     filters: Consumers should have confidence that relevant sources of information relating to threat, vulnerability and exploitation technique information are monitored by the service provider.
@@ -32,6 +35,7 @@ Vulnerabilility management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if there is monitoring for service vulnerabilities"
   "Vulnerability mitigation prioritisation":
     requirements: Consumers should have confidence that the severity of threats and vulnerabilities are considered within the context of the service and this information is used to prioritise implementation of mitigations.
     filters: Consumers should have confidence that the severity of threats and vulnerabilities are considered within the context of the service and this information is used to prioritise implementation of mitigations.
@@ -40,6 +44,7 @@ Vulnerabilility management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if vulnerability mitigation is prioritised"
   "Complete vulnerability change-management process":
     requirements: Consumers should have confidence that known vulnerabilities within the service are tracked until suitable mitigations have been deployed through a suitable change management process.
     filters: Consumers should have confidence that known vulnerabilities within the service are tracked until suitable mitigations have been deployed through a suitable change management process.
@@ -48,6 +53,7 @@ Vulnerabilility management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if there is a complete vulnerability change-management process"
   "Vulnerability mitigation timescales":
     requirements: Consumers should have confidence that service provider timescales for implementing mitigations to vulnerabilities found within the service are made available to them.
     filters: Consumers should have confidence that service provider timescales for implementing mitigations to vulnerabilities found within the service are made available to them.
@@ -56,6 +62,7 @@ Vulnerabilility management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if vulnerability mitigations are timescaled"
 Protective monitoring:
   "Protective monitoring":
     requirements: Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.
@@ -65,6 +72,7 @@ Protective monitoring:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the service has protective monitoring"
 Incident management:
   "Incident management processes":
     requirements: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
@@ -74,6 +82,7 @@ Incident management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the service has incident management processes"
   "Consumer reporting of security incidents":
     requirements: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
     filters: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
@@ -82,6 +91,7 @@ Incident management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the service has consumer reporting of security incidents"
   "Security incident definition published":
     requirements: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
     filters: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
@@ -90,7 +100,8 @@ Incident management:
     fields:
       - type: boolean
       - type: assurance
-  "Format of security incident notificaitions published":
+    validationNotAnswered: "Please answer if security incident definitions are published"
+  "Format of security incident notifications published":
     requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
     filters: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
     hint: "Do you publish the content and format of security incident notifications?"
@@ -98,6 +109,7 @@ Incident management:
     fields:
       - type: boolean
       - type: assurance
+    validationNotAnswered: "Please answer if the format security incident definitions is published"
   "Maxiumum timescale for incident investigation":
     requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
     filters: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
@@ -113,3 +125,4 @@ Incident management:
       - type: radio
         label: "3 months"
       - type: assurance
+    validationNotAnswered: "Please give the maxiumum timescale for an incident investigation"
