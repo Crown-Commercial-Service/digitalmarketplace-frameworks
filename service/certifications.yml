@@ -6,4 +6,4 @@ Certifications:
     fields:
       - type: list
         addthing: Add another certification
-    validationNotAnswered: "Please list the vendor certifications"
+    validationNotAnswered: "This question requires an answer."

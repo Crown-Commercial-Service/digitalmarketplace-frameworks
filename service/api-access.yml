@@ -3,10 +3,10 @@ API access:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-    validationNotAnswered: "Please answer if API access is available and supported"
+    validationNotAnswered: "This question requires an answer."
   API type:
     dependsOnLots: SaaS, PaaS, IaaS
     hint: "Examples of API include RESTful and SOAP."
     fields:
       - type: text
-    validationNotAnswered: "Please give the type of API"
+    validationNotAnswered: "This question requires an answer."

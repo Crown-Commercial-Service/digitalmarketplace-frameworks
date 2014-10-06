@@ -48,4 +48,4 @@ Service type:
         label: Legal
       - type: checkbox
         label: Transport and logistics
-    validationNotAnswered: "Please choose at least one category"
+    validationNotAnswered: "This question requires an answer."

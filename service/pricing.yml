@@ -49,36 +49,38 @@ Pricing:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
-    validationNotAnswered: "Please answer if VAT is included"
+    validationNotAnswered: "This question requires an answer."
   Education pricing:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "Do you offer special pricing for educational organisations?"
     fields:
       - type: boolean
-    validationNotAnswered: "Please answer if you offer special pricing"
+    validationNotAnswered: "This question requires an answer."
   Trial option:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-    validationNotAnswered: "Please answer if there is a trial option"
+    validationNotAnswered: "This question requires an answer."
   Free option:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-    validationNotAnswered: "Please answer if there is a free option"
+    validationNotAnswered: "This question requires an answer."
   Pricing document:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     mockAnswer: Pricing Document Umbraco 102014.odf
     hint: "Please upload your pricing document. This document will not be indexed by search on the Digital Marketplace. Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
     fields:
       - type: upload
-    validationWrongFormat: "Please upload your pricing document in a recognised format"
-    validationTooLarge: "Please upload a version of your pricing document below the maximum size"
+    validationUploadFail: "Your document failed to upload. Please try again."
+    validationWrongFormat: "Your document is not in an open document format. Please save in an odf, pdf or pda format."
+    validationTooLarge: "Your document exceeds the 5MB limit. Please reduce file size."
   Skills Framework for the Information Age (SFIA) rate card:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     mockAnswer: Rate Card Umbraco 102014.odf
     hint: "Please upload your SFIA rate card if you have one. This document will not be indexed by search on the Digital Marketplace. Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
     fields:
       - type: upload
-    validationWrongFormat: "Please upload your pricing document in a recognised format"
-    validationTooLarge: "Please upload a version of your pricing document below the maximum size"
+    validationUploadFail: "Your document failed to upload. Please try again."
+    validationWrongFormat: "Your document is not in an open document format. Please save in an odf, pdf or pda format."
+    validationTooLarge: "Your document exceeds the 5MB limit. Please reduce file size."
