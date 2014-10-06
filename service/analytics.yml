@@ -3,4 +3,4 @@ Analytics:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
-    validationNotAnswered: "Please answer if real-time management information is available"
+    validationNotAnswered: "This question requires an answer."

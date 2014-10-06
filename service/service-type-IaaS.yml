@@ -8,4 +8,4 @@ Service type:
         label: Compute
       - type: checkbox
         label: Storage
-    validationNotAnswered: "Please choose at least one category"
+    validationNotAnswered: "This question requires an answer."

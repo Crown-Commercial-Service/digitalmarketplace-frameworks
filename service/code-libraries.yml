@@ -6,4 +6,4 @@ Code libraries:
     fields:
       - type: list
         addthing: Add another code library
-    validationNotAnswered: "Please list the languages your code libraries are written in"
+    validationNotAnswered: "This question requires an answer."

@@ -7,7 +7,7 @@ Authentication of consumers:
     fields:
       - type: boolean
       - type: assurance
-    validationNotAnswered: "Please answer if the service provides user authentication and access management"
+    validationNotAnswered: "This question requires an answer."
   "User access control through support channels":
     requirements: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.
     filters: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.
@@ -16,7 +16,7 @@ Authentication of consumers:
     fields:
       - type: boolean
       - type: assurance
-    validationNotAnswered: "Please answer if the service provides user access control through support channels"
+    validationNotAnswered: "This question requires an answer."
 Separation and access control within management interfaces:
   "User access control within management interfaces":
     requirements: The consumer has sufficient confidence that other consumers cannot access, modify or otherwise affect their service management.
@@ -26,7 +26,7 @@ Separation and access control within management interfaces:
     fields:
       - type: boolean
       - type: assurance
-    validationNotAnswered: "Please answer if the service provides user access control within management interfaces"
+    validationNotAnswered: "This question requires an answer."
   "Supports 'principle of least privilege'":
     requirements: The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.
     filters: The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.
@@ -35,7 +35,7 @@ Separation and access control within management interfaces:
     fields:
       - type: boolean
       - type: assurance
-    validationNotAnswered: "Please answer if the service supports the 'principle of least privilege"
+    validationNotAnswered: "This question requires an answer."
   "Visibility of the networks to which management interfaces are exposed":
     requirements: The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.
     filters: The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.
@@ -44,4 +44,4 @@ Separation and access control within management interfaces:
     fields:
       - type: boolean
       - type: assurance
-    validationNotAnswered: "Please answer if the service gives visibility of the networks to which management interfaces are exposed"
+    validationNotAnswered: "This question requires an answer."

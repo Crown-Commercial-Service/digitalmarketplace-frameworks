@@ -23,7 +23,7 @@ Data-in-transit protection:
         label: "Not encrypted"
       - type: assurance
         hint: "How can you support the above answer?"
-    validationNotAnswered: "Please choose at least one method of data protection between user device and service"
+    validationNotAnswered: "This question requires an answer."
   "Data protection within service":
     requirements: Data in transit is protected internally within the service
     filters: Data in transit is protected internally within the service
@@ -47,7 +47,7 @@ Data-in-transit protection:
       - type: radio
         label: "Not encrypted"
       - type: assurance
-    validationNotAnswered: "Please choose at least one method of data protection within the service"
+    validationNotAnswered: "This question requires an answer."
   "Data protection between services":
     requirements: Data in transit is protected between the service and other services (eg where APIs are exposed)
     filters: Data in transit is protected between the service and other services (eg where APIs are exposed)
@@ -71,4 +71,4 @@ Data-in-transit protection:
       - type: radio
         label: "Not encrypted"
       - type: assurance
-    validationNotAnswered: "Please choose at least one method of data protection between services"
+    validationNotAnswered: "This question requires an answer."

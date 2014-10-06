@@ -6,4 +6,4 @@ Identity standards:
     fields:
       - type: list
         addthing: Add another standard
-    validationNotAnswered: "Please list the identity standards your service uses"
+    validationNotAnswered: "This question requires an answer."

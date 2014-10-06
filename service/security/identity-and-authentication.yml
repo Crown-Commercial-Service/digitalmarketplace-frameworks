@@ -22,4 +22,4 @@ Identity and authentication:
       - type: checkbox
         label: "No controls"
       - type: assurance
-    validationNotAnswered: "Please choose at least one identity and authentication control"
+    validationNotAnswered: "This question requires an answer."
