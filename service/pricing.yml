@@ -1,50 +1,11 @@
 Pricing:
   Service price:
-    hint: ""
-    mockAnswer: "1-9 users, 10-99 users, 100+ users"
+    hint: "This is an indicative price. Users will be able to refer to your pricing document for more information."
     dependsOnLots: SaaS, PaaS, IaaS, SCS
+    validationNoMinPriceSpecified: "Minimum price requires an answer."
+    validationNoUnitSpecified: "Pricing unit requires an answer. If none of the provided units apply, please choose 'Unit'."
     fields:
-      - type: matrix
-        columns:
-          - label: Type
-            field:
-              type: text
-          - label: Price
-            field:
-              type: price
-          - label: ""
-            field:
-              type: plaintext
-              text: "per"
-          - label: Unit
-            hint: "eg GB, Mbps"
-            field:
-              type: dropdown
-              options:
-                - ""
-                - n/a
-                - User
-                - Unit
-                - MbPS
-                - GB
-                - TB
-          - label: ""
-            field:
-              type: plaintext
-              text: "per"
-          - label: Interval
-            hint: "eg day, month"
-            field:
-              type: dropdown
-              options:
-                - ""
-                - Minute
-                - Hour
-                - Day
-                - Week
-                - Month
-                - Annum
-        addThing: Add another pricing type
+      - type: pricing
   VAT included:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
