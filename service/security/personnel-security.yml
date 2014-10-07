@@ -15,5 +15,7 @@ Personnel security:
         label: "Background checks in accordance with BS7858:2012"
       - type: checkbox
         label: "Employment checks"
+      - type: checkbox
+        label: "None of the above"
       - type: assurance
     validationNotAnswered: "This question requires an answer."
