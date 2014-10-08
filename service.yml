@@ -83,29 +83,41 @@
     name: Configuration and change management
     file: service/security/configuration-and-change-management.yml
 - Page 28:
+    name: Vulnerability management
+    file: service/security/vulnerability-management.yml
+- Page 29:
+    name: Protective monitoring
+    file: service/security/protective-monitoring.yml
+- Page 30:
+    name: Incident management
+    file: service/security/incident-management.yml
+- Page 31:
     name: Personnel security
     file: service/security/personnel-security.yml
-- Page 29:
+- Page 32:
     name: Secure development
     file: service/security/secure-development.yml
-- Page 30:
+- Page 33:
     name: Supply-chain security
     file: service/security/supply-chain-security.yml
-- Page 31:
+- Page 34:
     name: Authentication of consumers
     file: service/security/authentication-of-consumers-to-management-interfaces-and-within-support-channels.yml
-- Page 32:
+- Page 35:
+    name: Separation and access control within management interfaces
+    file: service/security/separation-and-access-control-within-management-interfaces.yml
+- Page 36:
     name: Identity and authentication
     file: service/security/identity-and-authentication.yml
-- Page 33:
+- Page 37:
     name: External interface protection
     file: service/security/external-interface-protection.yml
-- Page 34:
+- Page 38:
     name: Secure service administration
     file: service/security/secure-service-administration.yml
-- Page 35:
+- Page 39:
     name: Audit information provision to consumers
     file: service/security/audit-information-provision-to-consumers.yml
-- Page 36:
+- Page 40:
     name: Secure use of the service by the customer
     file: service/security/secure-use-of-the-service-by-the-customer.yml
