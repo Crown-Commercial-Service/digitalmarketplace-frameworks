@@ -1,0 +1,53 @@
+Incident management:
+  "Incident management processes":
+    requirements: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
+    filters: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
+    hint: "Do you have incident management processes in place and are they enacted in response to security incidents?"
+    dependsOnLots: SaaS, PaaS, IaaS, SCS
+    fields:
+      - type: boolean
+      - type: assurance
+    validationNotAnswered: "This question requires an answer."
+  "Consumer reporting of security incidents":
+    requirements: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
+    filters: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
+    hint: "Do you have a defined process and contact route for reporting security incidents by consumers and external entities?"
+    dependsOnLots: SaaS, PaaS, IaaS
+    fields:
+      - type: boolean
+      - type: assurance
+    validationNotAnswered: "This question requires an answer."
+  "Security incident definition published":
+    requirements: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
+    filters: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
+    dependsOnLots: SaaS, PaaS, IaaS
+    hint: Do you publish to consumers a definition of a security incident, along with the triggers and timescales for sharing such incidents with service consumers?
+    fields:
+      - type: boolean
+      - type: assurance
+    validationNotAnswered: "This question requires an answer."
+  "Format of security incident notifications published":
+    requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
+    filters: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
+    hint: "Do you publish the content and format of security incident notifications?"
+    dependsOnLots: SaaS, PaaS, IaaS
+    fields:
+      - type: boolean
+      - type: assurance
+    validationNotAnswered: "This question requires an answer."
+  "Maxiumum timescale for incident investigation":
+    requirements: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
+    filters: Consumers should have confidence that security incidents of relevance to them will be reported to them in acceptable timescales and format.
+    hint: "What are your maximum timescales by which an incident will be investigated?"
+    dependsOnLots: SaaS, PaaS, IaaS
+    fields:
+      - type: radio
+        label: "1 week"
+      - type: radio
+        label: "2 weeks"
+      - type: radio
+        label: "1 month"
+      - type: radio
+        label: "3 months"
+      - type: assurance
+    validationNotAnswered: "This question requires an answer."
