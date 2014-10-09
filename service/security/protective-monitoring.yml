@@ -1,8 +1,8 @@
-Protective monitoring:
-  "Protective monitoring":
+Event monitoring:
+  "Event monitoring":
     requirements: Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.
     filters: Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.
-    hint: "Do you conduct protective monitoring and analysis to identify suspicious activity?"
+    hint: "Do you conduct event monitoring and analysis to identify suspicious activity?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean

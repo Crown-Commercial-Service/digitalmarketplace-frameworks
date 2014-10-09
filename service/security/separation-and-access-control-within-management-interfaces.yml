@@ -8,19 +8,19 @@ Separation and access control within management interfaces:
       - type: boolean
       - type: assurance
     validationNotAnswered: "This question requires an answer."
-  "Supports 'principle of least privilege'":
+  "Administrator permissions":
     requirements: The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.
     filters: The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.
-    hint: "Does your service support consumers in implementing the ‘principle of least privilege’ by providing the ability to constrain permissions given to consumer administrators?"
+    hint: "Can consumers restrict permissions given to their administrators?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
       - type: assurance
     validationNotAnswered: "This question requires an answer."
-  "Visibility of the networks to which management interfaces are exposed":
+  "Management interface protection":
     requirements: The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.
     filters: The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.
-    hint: "Do you inform consumers which networks, management interfaces are exposed to and what functionality is available via those interfaces?"
+    hint: "Do you tell consumers what functionality and protection is available for management interfaces?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean

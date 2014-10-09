@@ -14,7 +14,7 @@ Asset protection and resilience:
       - type: checkbox
         label: "Other countries with data protection treaties"
       - type: checkbox
-        label: "Other countries"
+        label: "Rest of world"
       - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Data management location":
@@ -32,7 +32,7 @@ Asset protection and resilience:
       - type: checkbox
         label: "Other countries with data protection treaties"
       - type: checkbox
-        label: "Other countries"
+        label: "Rest of world"
       - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Legal jurisdiction of service provider":
@@ -50,13 +50,13 @@ Asset protection and resilience:
       - type: radio
         label: "Other countries with data protection treaties"
       - type: radio
-        label: "Other countries"
+        label: "Rest of world"
       - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Datacentre protection":
     requirements: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
     filters: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
-    hint: "Do the datacentres where your consumer data is located have suitable physical security?"
+    hint: "Do you tell your consumers what physical security your datacentres have?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -65,20 +65,20 @@ Asset protection and resilience:
   "Data-at-rest protection":
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     filters: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
-    hint: "How is storage containing consumer data-at-rest protected from unauthorised access? Choose 1."
+    hint: "How is storage media containing consumer protected from physical unauthorised access? Choose 1."
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radio
-        label: "CAPS-assured components"
-      - type: radio
-        label: "Foundation grade-assured components"
+        label: "CPA Foundation-grade assured components"
       - type: radio
         label: "FIPS-assured encryption"
       - type: radio
         label: "Other encryption"
       - type: radio
-        label: "Secure containers or cages"
+        label: "Secure containers, racks or cages"
       - type: radio
+        label: "Physical access control"
+        - type: radio
         label: "No protection"
       - type: assurance
     validationNotAnswered: "This question requires an answer."
@@ -89,13 +89,11 @@ Asset protection and resilience:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radio
-        label: "CPA Foundation"
+        label: "CPA Foundation-grade erasure product"
       - type: radio
-        label: "CESG-assured product"
+        label: "CESG or CPNI-approved erasure process"
       - type: radio
-        label: "CPNI-approved erasure"
-      - type: radio
-        label: "Other secure erasure"
+        label: "Other secure erasure process"
       - type: radio
         label: "Other erasure process"
       - type: assurance
@@ -115,9 +113,9 @@ Asset protection and resilience:
       - type: radio
         label: "BS EN 151713:2009-compliant destruction"
       - type: radio
-        label: "CESG-approved erasure"
+        label: "CESG or CPNI-approved erasure process"
       - type: radio
-        label: "Other secure erasure"
+        label: "Other secure erasure process"
       - type: radio
         label: "Other destruction/erasure process"
       - type: assurance
@@ -129,28 +127,6 @@ Asset protection and resilience:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
-      - type: assurance
-    validationNotAnswered: "This question requires an answer."
-  "Secure component disposal":
-    requirements: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
-    filters: Consumers should be sufficiently confident that any components containing sensitive data are sanitised, removed or destroyed as appropriate.
-    hint: "How are any components containing sensitive data sanitised, removed or destroyed? Choose 1."
-    dependsOnLots: PaaS, IaaS
-    fields:
-      - type: radio
-        label: "CESG-assured destruction service (CAS)"
-      - type: radio
-        label: "CPA Foundation Assured Product"
-      - type: radio
-        label: "CPNI-approved destruction service"
-      - type: radio
-        label: "BS EN 151713:2009-compliant destruction"
-      - type: radio
-        label: "CESG or CPNI-approved erasure"
-      - type: radio
-        label: "Other secure erasure"
-      - type: radio
-        label: "Other destruction/erasure process"
       - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Redundant equipment accounts revoked":

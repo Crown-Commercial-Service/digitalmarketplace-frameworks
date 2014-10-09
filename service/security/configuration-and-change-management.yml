@@ -2,7 +2,7 @@ Configuration and change management:
   "Configuration and change management tracking":
     requirements: Consumers should have confidence that the status, location and configuration of service components (including hardware and software components) are tracked throughout their lifetime within the service.
     filters: Consumers should have confidence that the status, location and configuration of service components (including hardware and software components) are tracked throughout their lifetime within the service.
-    hint: "Are the status, location and configuration of service components tracked throughout their lifetime?"
+    hint: "Do you track the status, location and configuration of service components throughout their lifetime?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean
@@ -11,7 +11,7 @@ Configuration and change management:
   "Change impact assessment":
     requirements: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
     filters: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
-    hint: "Are changes to the service assessed for potential security impact? And are changes managed and tracked through to completion?"
+    hint: "Are changes to the service assessed for potential security impact, and are changes managed and tracked through to completion?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean

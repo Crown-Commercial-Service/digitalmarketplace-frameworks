@@ -11,7 +11,7 @@ Supply-chain security:
   "Third-party supplier security requirements":
     requirements: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.
-    hint: "Do your procurement processes ensure that relevant security requirements, such as the Cloud Security Principles, placed on third-party suppliers and delivery partners are explicitly documented?"
+    hint: "Do you ensure that relevant security requirements, such as the Cloud Security Principles, are placed on third-party suppliers and delivery partners?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -20,7 +20,7 @@ Supply-chain security:
   "Third-party supplier risk assessment":
     requirements: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
     filters: The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.
-    hint: "Are the risks to your service from third-party suppliers and delivery partners regularly assessed and appropriate security controls implemented?"
+    hint: "Do you manage the risks to your service from third-party suppliers and delivery partners?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -29,7 +29,7 @@ Supply-chain security:
   "Third-party supplier compliance monitoring":
     requirements: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
     filters: The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.
-    hint: "Do you monitor how your suppliers comply with security requirements and initiate remedial action where necessary?"
+    hint: "Do you manage your third-party suppliers' compliance with relevant security requirements?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -38,7 +38,7 @@ Supply-chain security:
   "Hardware and software verification":
     requirements: The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.
     filters: The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.
-    hint: "Do you have the necessary information and processes to verify that hardware and software used in the service is genuine and has not been obviously tampered with?"
+    hint: "Do you verify that the hardware and software used in the service are genuine and have not been obviously tampered with?"
     dependsOnLots: PaaS, IaaS
     fields:
       - type: boolean

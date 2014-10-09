@@ -2,7 +2,7 @@ Secure development:
   "Secure development":
     requirements: Consumers should be sufficiently confident that new and evolving threats are reviewed and the service improved in line with them.
     filters: Consumers should be sufficiently confident that new and evolving threats are reviewed and the service improved in line with them.
-    hint: "Are new and evolving threats regularly reviewed and are development tasks initiated to improve and reinforce the security of the service in line with these changing threats?"
+    hint: "Are new and evolving threats reviewed and your services improved accordingly?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -11,7 +11,7 @@ Secure development:
   "Secure design, coding, testing and deployment":
     requirements: Consumers should be sufficiently confident that development is carried out in line with industry good practice regarding secure design, coding, testing and deployment.
     filters: Consumers should be sufficiently confident that development is carried out in line with industry good practice regarding secure design, coding, testing and deployment.
-    hint: "Is software development carried out in line with industry good practice regarding secure design, coding, testing and deployment?"
+    hint: "Is development carried out in line with industry good practice regarding secure design, coding, testing and deployment?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
@@ -20,7 +20,7 @@ Secure development:
   "Software configuration management":
     requirements: Consumers should be sufficiently confident that configuration management processes are in place to ensure the integrity of the solution through development, testing and deployment.
     filters: Consumers should be sufficiently confident that configuration management processes are in place to ensure the integrity of the solution through development, testing and deployment.
-    hint: "Are software configuration management processes in place to ensure the integrity of the solution through development, testing and deployment?"
+    hint: "Do you have configuration management in place to ensure the integrity of the service through development, testing and deployment?"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean

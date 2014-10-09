@@ -6,21 +6,17 @@ Data-in-transit protection:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radio
-        label: "CAPS-encrypted"
+        label: "Encrypted PSN service"
       - type: radio
-        label: "Encrypted community WAN service"
+        label: "PSN service"
       - type: radio
-        label: "IPSec VPN Gateway - CPA"
+        label: "CPA Foundation VPN Gateway"
       - type: radio
-        label: "TLS, version 1.2 or later, encrypted"
+        label: "VPN using TLS, version 1.2 or later"
       - type: radio
-        label: "Legacy SSL or TLS-encrypted"
+        label: "VPN using legacy SSL or TLS"
       - type: radio
-        label: "Bonded fibre optic connections"
-      - type: radio
-        label: "Community WAN service"
-      - type: radio
-        label: "Not encrypted"
+        label: "No encryption"
       - type: assurance
         hint: "How can you support the above answer?"
     validationNotAnswered: "This question requires an answer."
@@ -31,21 +27,17 @@ Data-in-transit protection:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: radio
-        label: "CAPS-encrypted"
+        label: "VPN using TLS, version 1.2 or later"
       - type: radio
-        label: "Encrypted community WAN service"
+        label: "VPN using legacy SSL or TLS"
       - type: radio
-        label: "IPSec VPN Gateway - CPA"
-      - type: radio
-        label: "TLS, version 1.2 or later, encrypted"
-      - type: radio
-        label: "Legacy SSL or TLS-encrypted"
+        label: "VLAN"
       - type: radio
         label: "Bonded fibre optic connections"
       - type: radio
-        label: "Community WAN service"
+        label: "Other network protection"
       - type: radio
-        label: "Not encrypted"
+        label: "No encryption"
       - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Data protection between services":
@@ -55,20 +47,16 @@ Data-in-transit protection:
     dependsOnLots: PaaS, IaaS
     fields:
       - type: radio
-        label: "CAPS-encrypted"
+        label: "Encrypted PSN service"
       - type: radio
-        label: "Encrypted community WAN service"
+        label: "PSN service"
       - type: radio
-        label: "IPSec VPN Gateway - CPA"
+        label: "CPA Foundation VPN Gateway"
       - type: radio
-        label: "TLS, version 1.2 or later, encrypted"
+        label: "VPN using TLS, version 1.2 or later"
       - type: radio
-        label: "Legacy SSL or TLS-encrypted"
+        label: "VPN using legacy SSL or TLS"
       - type: radio
-        label: "Bonded fibre optic connections"
-      - type: radio
-        label: "Community WAN service"
-      - type: radio
-        label: "Not encrypted"
+        label: "No encryption"
       - type: assurance
     validationNotAnswered: "This question requires an answer."
