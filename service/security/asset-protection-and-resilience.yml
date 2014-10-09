@@ -162,12 +162,13 @@ Asset protection and resilience:
       - type: boolean
       - type: assurance
     validationNotAnswered: "This question requires an answer."
-  "Service availability (%)":
+  "Service availability":
     requirements: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
     filters: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
-    hint: "What is the availability of the service? eg 99.99%"
+    hint: "What is the availability of the service? eg 99.99"
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: percentage
       - type: assurance
     validationNotAnswered: "This question requires an answer."
+    validationNotANumber: "Availability must be a number less than 100"
