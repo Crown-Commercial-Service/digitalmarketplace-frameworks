@@ -65,7 +65,7 @@ Asset protection and resilience:
   "Data-at-rest protection":
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     filters: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
-    hint: "How is storage media containing consumer protected from physical unauthorised access? Choose 1."
+    hint: "How is storage media containing consumer data protected from unauthorised physical access? Choose 1."
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: radio
