@@ -4,6 +4,8 @@ Data-in-transit protection:
     filters: Data in transit is protected between the user’s devices and the service
     hint: "Choose 1"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach: 4answers-type1
+    assuranceHint: "How can you support the above answer?"
     fields:
       - type: radio
         label: "Encrypted PSN service"
@@ -17,14 +19,13 @@ Data-in-transit protection:
         label: "VPN using legacy SSL or TLS"
       - type: radio
         label: "No encryption"
-      - type: assurance
-        hint: "How can you support the above answer?"
     validationNotAnswered: "This question requires an answer."
   "Data protection within service":
     requirements: Data in transit is protected internally within the service
     filters: Data in transit is protected internally within the service
     hint: "Choose 1"
     dependsOnLots: PaaS, IaaS
+    assuranceApproach: 4answers-type1
     fields:
       - type: radio
         label: "VPN using TLS, version 1.2 or later"
@@ -38,13 +39,13 @@ Data-in-transit protection:
         label: "Other network protection"
       - type: radio
         label: "No encryption"
-      - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Data protection between services":
     requirements: Data in transit is protected between the service and other services (eg where APIs are exposed)
     filters: Data in transit is protected between the service and other services (eg where APIs are exposed)
     hint: "Choose 1"
     dependsOnLots: PaaS, IaaS
+    assuranceApproach: 4answers-type1
     fields:
       - type: radio
         label: "Encrypted PSN service"
@@ -58,5 +59,4 @@ Data-in-transit protection:
         label: "VPN using legacy SSL or TLS"
       - type: radio
         label: "No encryption"
-      - type: assurance
     validationNotAnswered: "This question requires an answer."

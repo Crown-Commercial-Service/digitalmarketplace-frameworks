@@ -4,6 +4,7 @@ Secure service administration:
     filters: Consumers have sufficient confidence that the technical approach the service provider uses to manage the service does not put their data or service at risk.
     hint: "Which technical approach do you use for your service management? Choose 1."
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach:
     fields:
       - type: radio
         label: "Dedicated devices on a segregated network"
@@ -15,5 +16,4 @@ Secure service administration:
         label: "Service management via bastion hosts"
       - type: radio
         label: "Direct service management"
-      - type: assurance
     validationNotAnswered: "This question requires an answer."

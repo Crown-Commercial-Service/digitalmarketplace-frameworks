@@ -19,6 +19,7 @@ Separation between consumers:
     filters: Consumers should understand the types of consumer they share the service or platform with.
     hint: "What types of other consumer do you share the service or platform with?"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach:
     fields:
       - type: radio
         label: "No other consumer"
@@ -28,23 +29,22 @@ Separation between consumers:
         label: "A specific consumer group, eg Police, Defence or Health"
       - type: radio
         label: "Anyone - public"
-      - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Services separation":
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     filters: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     hint: "Do you securely separate consumer data and services from other consumers of the service?"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach:
     fields:
       - type: boolean
-      - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Services management separation":
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     filters: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     hint: "Is your management of a consumer’s service kept separate from other consumers?"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach:
     fields:
       - type: boolean
-      - type: assurance
     validationNotAnswered: "This question requires an answer."
