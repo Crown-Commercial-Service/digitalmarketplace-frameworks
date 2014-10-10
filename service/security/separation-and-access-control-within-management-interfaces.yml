@@ -4,7 +4,7 @@ Separation and access control within management interfaces:
     filters: The consumer has sufficient confidence that other consumers cannot access, modify or otherwise affect their service management.
     hint: "Can consumers manage only their own service, and not access, modify or otherwise affect the service of other consumers via management tools and interfaces?"
     dependsOnLots: SaaS, PaaS, IaaS
-    assuranceApproach:
+    assuranceApproach: 2answers-type2
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."
@@ -13,7 +13,7 @@ Separation and access control within management interfaces:
     filters: The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.
     hint: "Can consumers restrict permissions given to their administrators?"
     dependsOnLots: SaaS, PaaS, IaaS
-    assuranceApproach:
+    assuranceApproach: 2answers-type2
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."
@@ -22,7 +22,7 @@ Separation and access control within management interfaces:
     filters: The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.
     hint: "Do you tell consumers what functionality and protection is available for management interfaces?"
     dependsOnLots: PaaS, IaaS
-    assuranceApproach:
+    assuranceApproach: 2answers-type2
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."

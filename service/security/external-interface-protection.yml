@@ -4,6 +4,7 @@ External interface protection:
     filters: The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.
     hint: "Do you provide onboarding guidance covering secure connection to the service?"
     dependsOnLots: PaaS, IaaS
+    assuranceApproach: 2answers-type1
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."
@@ -12,6 +13,7 @@ External interface protection:
     filters: The consumer understands what physical and logical interfaces their information is available from.
     hint: "What method of interconnection to the service do you provide? Choose all that apply."
     dependsOnLots: PaaS, IaaS
+    assuranceApproach: 2answers-type1
     fields:
       - type: checkbox
         label: "Encrypted PSN service"

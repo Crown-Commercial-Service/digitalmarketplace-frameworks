@@ -4,7 +4,7 @@ Configuration and change management:
     filters: Consumers should have confidence that the status, location and configuration of service components (including hardware and software components) are tracked throughout their lifetime within the service.
     hint: "Do you track the status, location and configuration of service components throughout their lifetime?"
     dependsOnLots: PaaS, IaaS
-    assuranceApproach:
+    assuranceApproach: 2answers-type1
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."
@@ -13,7 +13,7 @@ Configuration and change management:
     filters: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
     hint: "Are changes to the service assessed for potential security impact, and are changes managed and tracked through to completion?"
     dependsOnLots: SaaS, PaaS, IaaS
-    assuranceApproach:
+    assuranceApproach: 2answers-type1
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."

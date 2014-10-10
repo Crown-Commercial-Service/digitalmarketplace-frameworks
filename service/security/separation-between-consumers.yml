@@ -4,6 +4,7 @@ Separation between consumers:
     filters: Service providers must state whether the service is a public, private or community cloud service.
     hint: "Is the service a public, private, community or hybrid cloud service?"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach: 3answers-type1
     fields:
       - type: radio
         label: "Public cloud"
@@ -19,7 +20,7 @@ Separation between consumers:
     filters: Consumers should understand the types of consumer they share the service or platform with.
     hint: "What types of other consumer do you share the service or platform with?"
     dependsOnLots: SaaS, PaaS, IaaS
-    assuranceApproach:
+    assuranceApproach: 3answers-type1
     fields:
       - type: radio
         label: "No other consumer"
@@ -35,7 +36,7 @@ Separation between consumers:
     filters: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     hint: "Do you securely separate consumer data and services from other consumers of the service?"
     dependsOnLots: SaaS, PaaS, IaaS
-    assuranceApproach:
+    assuranceApproach: 4answers-type3
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."
@@ -44,7 +45,7 @@ Separation between consumers:
     filters: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     hint: "Is your management of a consumer’s service kept separate from other consumers?"
     dependsOnLots: SaaS, PaaS, IaaS
-    assuranceApproach:
+    assuranceApproach: 4answers-type3
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."
