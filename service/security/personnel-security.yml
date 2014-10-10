@@ -4,18 +4,14 @@ Personnel security:
     filters: Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.
     hint: "What kind of personnel security do you apply to staff who have access to the service? Choose all that apply."
     dependsOnLots: SaaS, PaaS, IaaS, SCS
+    assuranceApproach: 2answers-type1
     fields:
       - type: checkbox
-        label: "Developed vetting"
-      - type: checkbox
-        label: "Security clearance vetting"
+        label: "Security clearance national vetting (SC)"
       - type: checkbox
         label: "Baseline personnel security standard (BPSS)"
       - type: checkbox
         label: "Background checks in accordance with BS7858:2012"
       - type: checkbox
         label: "Employment checks"
-      - type: checkbox
-        label: "None of the above"
-      - type: assurance
     validationNotAnswered: "This question requires an answer."

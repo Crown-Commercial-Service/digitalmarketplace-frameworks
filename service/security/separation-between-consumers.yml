@@ -4,6 +4,7 @@ Separation between consumers:
     filters: Service providers must state whether the service is a public, private or community cloud service.
     hint: "Is the service a public, private, community or hybrid cloud service?"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach: 3answers-type1
     fields:
       - type: radio
         label: "Public cloud"
@@ -17,34 +18,34 @@ Separation between consumers:
   "Type of consumer":
     requirements: Consumers should understand the types of consumer they share the service or platform with.
     filters: Consumers should understand the types of consumer they share the service or platform with.
-    hint: "What types of other consumer do your consumers share the service or platform with?"
+    hint: "What types of other consumer do you share the service or platform with?"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach: 3answers-type1
     fields:
       - type: radio
         label: "No other consumer"
       - type: radio
-        label: "Only government"
+        label: "Only government consumers"
       - type: radio
-        label: "A specific group"
+        label: "A specific consumer group, eg Police, Defence or Health"
       - type: radio
         label: "Anyone - public"
-      - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Services separation":
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     filters: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
-    hint: "Do you provide separation of consumer data and service from other consumers of the service?"
+    hint: "Do you securely separate consumer data and services from other consumers of the service?"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach: 4answers-type3
     fields:
       - type: boolean
-      - type: assurance
     validationNotAnswered: "This question requires an answer."
   "Services management separation":
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     filters: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
-    hint: "Is the management of a consumer’s service kept separate from other consumers?"
+    hint: "Is your management of a consumer’s service kept separate from other consumers?"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach: 4answers-type3
     fields:
       - type: boolean
-      - type: assurance
     validationNotAnswered: "This question requires an answer."

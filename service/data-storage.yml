@@ -1,17 +1,21 @@
 Data storage:
   Datacentres adhere to EU Code of Conduct for Operations:
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach:
+    assuranceHint:
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."
   User-defined data location:
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach:
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."
   Datacentre tier:
     hint: Choose one
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach:
     fields:
       - type: radio
         label: TIA-942 Tier 1
@@ -32,12 +36,14 @@ Data storage:
     validationNotAnswered: "This question requires an answer."
   Backup, disaster recovery and resilience plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach:
     hint: "You can provide more detail on your disaster recovery plan in your service definition document."
     fields:
       - type: boolean
     validationNotAnswered: "Please answer if plans for backup, disaster recovery and resilience are in place"
   Data extraction/removal plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach:
     fields:
       - type: boolean
     validationNotAnswered: "This question requires an answer."

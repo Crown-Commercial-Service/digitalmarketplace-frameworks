@@ -4,71 +4,59 @@ Data-in-transit protection:
     filters: Data in transit is protected between the user’s devices and the service
     hint: "Choose 1"
     dependsOnLots: SaaS, PaaS, IaaS
+    assuranceApproach: 4answers-type1
+    assuranceHint: "How can you support the above answer?"
     fields:
       - type: radio
-        label: "CAPS-encrypted"
+        label: "Encrypted PSN service"
       - type: radio
-        label: "Encrypted community WAN service"
+        label: "PSN service"
       - type: radio
-        label: "IPSec VPN Gateway - CPA"
+        label: "CPA Foundation VPN Gateway"
       - type: radio
-        label: "TLS, version 1.2 or later, encrypted"
+        label: "VPN using TLS, version 1.2 or later"
       - type: radio
-        label: "Legacy SSL or TLS-encrypted"
+        label: "VPN using legacy SSL or TLS"
       - type: radio
-        label: "Bonded fibre optic connections"
-      - type: radio
-        label: "Community WAN service"
-      - type: radio
-        label: "Not encrypted"
-      - type: assurance
-        hint: "How can you support the above answer?"
+        label: "No encryption"
     validationNotAnswered: "This question requires an answer."
   "Data protection within service":
     requirements: Data in transit is protected internally within the service
     filters: Data in transit is protected internally within the service
     hint: "Choose 1"
     dependsOnLots: PaaS, IaaS
+    assuranceApproach: 4answers-type1
     fields:
       - type: radio
-        label: "CAPS-encrypted"
+        label: "VPN using TLS, version 1.2 or later"
       - type: radio
-        label: "Encrypted community WAN service"
+        label: "VPN using legacy SSL or TLS"
       - type: radio
-        label: "IPSec VPN Gateway - CPA"
-      - type: radio
-        label: "TLS, version 1.2 or later, encrypted"
-      - type: radio
-        label: "Legacy SSL or TLS-encrypted"
+        label: "VLAN"
       - type: radio
         label: "Bonded fibre optic connections"
       - type: radio
-        label: "Community WAN service"
+        label: "Other network protection"
       - type: radio
-        label: "Not encrypted"
-      - type: assurance
+        label: "No encryption"
     validationNotAnswered: "This question requires an answer."
   "Data protection between services":
     requirements: Data in transit is protected between the service and other services (eg where APIs are exposed)
     filters: Data in transit is protected between the service and other services (eg where APIs are exposed)
     hint: "Choose 1"
     dependsOnLots: PaaS, IaaS
+    assuranceApproach: 4answers-type1
     fields:
       - type: radio
-        label: "CAPS-encrypted"
+        label: "Encrypted PSN service"
       - type: radio
-        label: "Encrypted community WAN service"
+        label: "PSN service"
       - type: radio
-        label: "IPSec VPN Gateway - CPA"
+        label: "CPA Foundation VPN Gateway"
       - type: radio
-        label: "TLS, version 1.2 or later, encrypted"
+        label: "VPN using TLS, version 1.2 or later"
       - type: radio
-        label: "Legacy SSL or TLS-encrypted"
+        label: "VPN using legacy SSL or TLS"
       - type: radio
-        label: "Bonded fibre optic connections"
-      - type: radio
-        label: "Community WAN service"
-      - type: radio
-        label: "Not encrypted"
-      - type: assurance
+        label: "No encryption"
     validationNotAnswered: "This question requires an answer."
