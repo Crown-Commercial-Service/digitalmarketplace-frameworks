@@ -15,4 +15,4 @@ Service details:
       - type: radio
         label: Specialist Cloud Services (SCS)
         explanation: "Specialist Cloud Services support your transition to SaaS, PaaS and IaaS. Examples of SCS include cloud strategy, data transfer between providers, or day-to-day support of cloud-based services."
-    validationNotAnswered: "This question requires an answer."
+    validationNotAnswered: "Please select a service type."
