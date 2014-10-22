@@ -6,4 +6,3 @@ Certifications:
     fields:
       - type: list
         addthing: Add another certification
-    validationNotAnswered: "This question requires an answer."
