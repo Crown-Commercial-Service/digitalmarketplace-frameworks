@@ -6,4 +6,3 @@ Code libraries:
     fields:
       - type: list
         addthing: Add another code library
-    validationNotAnswered: "This question requires an answer."

@@ -6,4 +6,3 @@ Identity standards:
     fields:
       - type: list
         addthing: Add another standard
-    validationNotAnswered: "This question requires an answer."
