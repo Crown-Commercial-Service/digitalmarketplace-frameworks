@@ -11,23 +11,25 @@ Service type:
       - type: checkbox
         label: Collaboration
       - type: checkbox
-        label: Telecoms
+        label: Creative and design
       - type: checkbox
         label: Customer relationship management (CRM)
       - type: checkbox
-        label: Creative and design
-      - type: checkbox
         label: Data management
       - type: checkbox
-        label: Sales
-      - type: checkbox
-        label: Software development tools
-      - type: checkbox
         label: Electronic document and records management (EDRM)
+      - type: checkbox
+        label: Energy and environment
+      - type: checkbox
+        label: Healthcare
       - type: checkbox
         label: Human resources and employee management
       - type: checkbox
         label: IT management
+      - type: checkbox
+        label: Legal
+      - type: checkbox
+        label: Libraries
       - type: checkbox
         label: Marketing
       - type: checkbox
@@ -35,17 +37,15 @@ Service type:
       - type: checkbox
         label: Project management and planning
       - type: checkbox
-        label: Security
-      - type: checkbox
-        label: Libraries
+        label: Sales
       - type: checkbox
         label: Schools and education
       - type: checkbox
-        label: Energy and environment
+        label: Security
       - type: checkbox
-        label: Healthcare
+        label: Software development tools
       - type: checkbox
-        label: Legal
+        label: Telecoms
       - type: checkbox
         label: Transport and logistics
     validationNotAnswered: "This question requires an answer."

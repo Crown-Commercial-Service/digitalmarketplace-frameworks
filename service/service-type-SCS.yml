@@ -5,13 +5,13 @@ Service type:
     mockAnswer: Content management system
     fields:
       - type: checkbox
-        label: Planning
-      - type: checkbox
         label: Implementation
+      - type: checkbox
+        label: Ongoing support
+      - type: checkbox
+        label: Planning
       - type: checkbox
         label: Testing
       - type: checkbox
         label: Training
-      - type: checkbox
-        label: Ongoing support
     validationNotAnswered: "This question requires an answer."
