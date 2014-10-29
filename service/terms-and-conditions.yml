@@ -24,6 +24,7 @@ Terms and conditions:
     hint: "Please upload your terms and conditions document. This document will not be indexed by search on the Digital Marketplace. Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
     fields:
       - type: upload
+    validationNotAnswered: "This question requires an answer."
     validationUploadFail: "Your document failed to upload. Please try again."
     validationWrongFormat: "Your document is not in an open document format. Please save in an odf, pdf or pda format."
     validationTooLarge: "Your document exceeds the 5MB limit. Please reduce file size."
