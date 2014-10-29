@@ -12,9 +12,7 @@ Access:
       - type: checkbox
         label: Internet Explorer 9
       - type: checkbox
-        label: Internet Explorer 10
-      - type: checkbox
-        label: Internet Explorer 11+        
+        label: Internet Explorer 10+
       - type: checkbox
         label: Firefox
       - type: checkbox
