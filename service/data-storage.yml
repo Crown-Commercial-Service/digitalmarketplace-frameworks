@@ -33,6 +33,8 @@ Data storage:
         label: Uptime Institute Tier 3
       - type: radio
         label: Uptime Institute Tier 4
+      - type: radio
+        label: None of the above
     validationNotAnswered: "This question requires an answer."
   Backup, disaster recovery and resilience plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
