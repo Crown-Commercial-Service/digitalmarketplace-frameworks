@@ -32,19 +32,19 @@ Pricing:
   Pricing document:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     mockAnswer: Pricing Document Umbraco 102014.odf
-    hint: "Please upload your pricing document. This document will not be indexed by search on the Digital Marketplace. Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
+    hint: "Please upload your pricing document. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)"
     fields:
       - type: upload
     validationNotAnswered: "This question requires an answer."
     validationUploadFail: "Your document failed to upload. Please try again."
-    validationWrongFormat: "Your document is not in an open document format. Please save in an odf, pdf or pda format."
+    validationWrongFormat: "Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt)."
     validationTooLarge: "Your document exceeds the 5MB limit. Please reduce file size."
   Skills Framework for the Information Age (SFIA) rate card:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     mockAnswer: Rate Card Umbraco 102014.odf
-    hint: "Please upload your SFIA rate card if you have one. This document will not be indexed by search on the Digital Marketplace. Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
+    hint: "Please upload your SFIA rate card if you have one. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)"
     fields:
       - type: upload
     validationUploadFail: "Your document failed to upload. Please try again."
-    validationWrongFormat: "Your document is not in an open document format. Please save in an odf, pdf or pda format."
+    validationWrongFormat: "Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt)."
     validationTooLarge: "Your document exceeds the 5MB limit. Please reduce file size."
