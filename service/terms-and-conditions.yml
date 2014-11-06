@@ -21,10 +21,10 @@ Terms and conditions:
   Please upload your terms and conditions document:
     mockAnswer: Umbraco Terms_Conditions 102014.odf
     dependsOnLots: SaaS, PaaS, IaaS, SCS
-    hint: "Please upload your terms and conditions document. This document will not be indexed by search on the Digital Marketplace. Use an open document format, eg odf, pdf or pda. (Maximum file size 5MB.)"
+    hint: "Please upload your terms and conditions document. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)"
     fields:
       - type: upload
     validationNotAnswered: "This question requires an answer."
     validationUploadFail: "Your document failed to upload. Please try again."
-    validationWrongFormat: "Your document is not in an open document format. Please save in an odf, pdf or pda format."
+    validationWrongFormat: "Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt)."
     validationTooLarge: "Your document exceeds the 5MB limit. Please reduce file size."
