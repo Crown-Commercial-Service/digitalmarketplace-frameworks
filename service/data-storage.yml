@@ -5,12 +5,16 @@ Data storage:
     assuranceHint:
     fields:
       - type: boolean
+        filterLabel: Datacentres adhere to EU Code of Conduct for Operations
+        servicePageLabel: Datacentres adhere to EU Code of Conduct for Operations
     validationNotAnswered: "This question requires an answer."
   User-defined data location:
     dependsOnLots: SaaS, PaaS, IaaS
     assuranceApproach:
     fields:
       - type: boolean
+        filterLabel: User-defined data location
+        servicePageLabel: User-defined data location
     validationNotAnswered: "This question requires an answer."
   Datacentre tier:
     hint: Choose one
@@ -19,22 +23,39 @@ Data storage:
     fields:
       - type: radio
         label: TIA-942 Tier 1
+        filterLabel: TIA-942 Tier 1 datacentre
+        servicePageLabel: TIA-942 Tier 1
       - type: radio
         label: TIA-942 Tier 2
+        filterLabel: TIA-942 Tier 2 datacentre
+        servicePageLabel: TIA-942 Tier 2
       - type: radio
         label: TIA-942 Tier 3
+        filterLabel: TIA-942 Tier 3 datacentre
+        servicePageLabel: TIA-942 Tier 3
       - type: radio
         label: TIA-942 Tier 4
+        filterLabel: TIA-942 Tier 4 datacentre
+        servicePageLabel: TIA-942 Tier 4
       - type: radio
         label: Uptime Institute Tier 1
+        filterLabel: Uptime Institute Tier 1 datacentre
+        servicePageLabel: Uptime Institute Tier 1
       - type: radio
         label: Uptime Institute Tier 2
+        filterLabel: Uptime Institute Tier 2 datacentre
+        servicePageLabel: Uptime Institute Tier 2
       - type: radio
         label: Uptime Institute Tier 3
+        filterLabel: Uptime Institute Tier 3 datacentre
+        servicePageLabel: Uptime Institute Tier 3
       - type: radio
         label: Uptime Institute Tier 4
+        filterLabel: Uptime Institute Tier 4 datacentre
+        servicePageLabel: Uptime Institute Tier 4
       - type: radio
         label: None of the above
+        servicePageLabel: Not specified
     validationNotAnswered: "This question requires an answer."
   Backup, disaster recovery and resilience plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
@@ -42,10 +63,14 @@ Data storage:
     hint: "You can provide more detail on your disaster recovery plan in your service definition document."
     fields:
       - type: boolean
+        filterLabel: Backup, disaster recovery and resilience plan in place
+        servicePageLabel: Backup, disaster recovery and resilience plan in place
     validationNotAnswered: "Please answer if plans for backup, disaster recovery and resilience are in place"
   Data extraction/removal plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
     assuranceApproach:
     fields:
       - type: boolean
+        filterLabel: Data extraction/removal plan in place
+        servicePageLabel: Data extraction/removal plan in place
     validationNotAnswered: "This question requires an answer."
