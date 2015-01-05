@@ -12,22 +12,26 @@ Pricing:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
+        filterLabel: VAT included
     validationNotAnswered: "This question requires an answer."
   Education pricing:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "Do you offer special pricing for educational organisations?"
     fields:
       - type: boolean
+        filterLabel: Education pricing
     validationNotAnswered: "This question requires an answer."
   Trial option:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+        filterLabel: Trial option
     validationNotAnswered: "This question requires an answer."
   Free option:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+        filterLabel: Free option
     validationNotAnswered: "This question requires an answer."
   Pricing document:
     dependsOnLots: SaaS, PaaS, IaaS, SCS

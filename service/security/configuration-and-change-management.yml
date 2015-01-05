@@ -7,6 +7,7 @@ Configuration and change management:
     assuranceApproach: 2answers-type1
     fields:
       - type: boolean
+        filterLabel: Configuration and change management tracking
     validationNotAnswered: "This question requires an answer."
   "Change impact assessment":
     requirements: Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.
@@ -16,4 +17,5 @@ Configuration and change management:
     assuranceApproach: 2answers-type1
     fields:
       - type: boolean
+        filterLabel: Change impact assessment
     validationNotAnswered: "This question requires an answer."

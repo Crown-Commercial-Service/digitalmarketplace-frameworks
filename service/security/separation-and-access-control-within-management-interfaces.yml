@@ -7,6 +7,7 @@ Separation and access control within management interfaces:
     assuranceApproach: 2answers-type2
     fields:
       - type: boolean
+        filterLabel: User access control within management interfaces
     validationNotAnswered: "This question requires an answer."
   "Administrator permissions":
     requirements: The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.
@@ -16,6 +17,7 @@ Separation and access control within management interfaces:
     assuranceApproach: 2answers-type2
     fields:
       - type: boolean
+        filterLabel: Administrator permissions
     validationNotAnswered: "This question requires an answer."
   "Management interface protection":
     requirements: The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.
@@ -25,4 +27,5 @@ Separation and access control within management interfaces:
     assuranceApproach: 2answers-type2
     fields:
       - type: boolean
+        filterLabel: Management interface protection
     validationNotAnswered: "This question requires an answer."

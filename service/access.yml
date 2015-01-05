@@ -35,6 +35,7 @@ Access:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+        filterLabel: Offline working and syncing supported
     validationNotAnswered: "This question requires an answer."
   Supported devices:
     dependsOnLots: SaaS, PaaS, IaaS

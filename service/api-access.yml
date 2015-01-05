@@ -3,6 +3,7 @@ API access:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+        filterLabel: API access available and supported
     validationNotAnswered: "This question requires an answer."
   API type:
     dependsOnLots: SaaS, PaaS, IaaS

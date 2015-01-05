@@ -47,6 +47,7 @@ Separation between consumers:
     assuranceApproach: 4answers-type3
     fields:
       - type: boolean
+        filterLabel: Services separation
     validationNotAnswered: "This question requires an answer."
   "Services management separation":
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
@@ -56,4 +57,5 @@ Separation between consumers:
     assuranceApproach: 4answers-type3
     fields:
       - type: boolean
+        filterLabel: Services management separation
     validationNotAnswered: "This question requires an answer."

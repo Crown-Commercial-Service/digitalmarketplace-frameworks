@@ -76,6 +76,7 @@ Asset protection and resilience:
     assuranceApproach: 3answers-type1
     fields:
       - type: boolean
+        filterLabel: Datacentre protection
     validationNotAnswered: "This question requires an answer."
   "Data-at-rest protection":
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
@@ -160,6 +161,7 @@ Asset protection and resilience:
     assuranceApproach: 4answers-type2
     fields:
       - type: boolean
+        filterLabel: Secure equipment disposal
     validationNotAnswered: "This question requires an answer."
   "Redundant equipment accounts revoked":
     requirements: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
@@ -169,6 +171,7 @@ Asset protection and resilience:
     assuranceApproach: 3answers-type1
     fields:
       - type: boolean
+        filterLabel: Redundant equipment accounts revoked
     validationNotAnswered: "This question requires an answer."
   "Service availability":
     requirements: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.

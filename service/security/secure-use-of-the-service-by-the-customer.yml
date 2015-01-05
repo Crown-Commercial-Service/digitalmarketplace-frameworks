@@ -24,6 +24,7 @@ Secure use of the service by the customer:
     assuranceApproach: 3answers-type2
     fields:
       - type: boolean
+        filterLabel: Service configuration guidance
     validationNotAnswered: "This question requires an answer."
   "Training":
     requirements: The consumer can educate those administrating and using the service in how to use it safely and securely.
@@ -33,4 +34,5 @@ Secure use of the service by the customer:
     assuranceApproach: 2answers-type1
     fields:
       - type: boolean
+        filterLabel: Training
     validationNotAnswered: "This question requires an answer."

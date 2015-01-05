@@ -7,6 +7,7 @@ Incident management:
     assuranceApproach: 2answers-type1
     fields:
       - type: boolean
+        filterLabel: Incident management processes
     validationNotAnswered: "This question requires an answer."
   "Consumer reporting of security incidents":
     requirements: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
@@ -16,6 +17,7 @@ Incident management:
     assuranceApproach: 2answers-type1
     fields:
       - type: boolean
+        filterLabel: Consumer reporting of security incidents
     validationNotAnswered: "This question requires an answer."
   "Security incident definition published":
     requirements: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
@@ -25,4 +27,5 @@ Incident management:
     hint: "Do you publish to consumers your definition of a security incident, along with the format, incident triggers and timescales for reporting such incidents?"
     fields:
       - type: boolean
+        filterLabel: Security incident definition published
     validationNotAnswered: "This question requires an answer."

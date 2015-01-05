@@ -23,6 +23,7 @@ Support:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
+        filterLabel: Support accessible to any third-party suppliers
     validationNotAnswered: "This question requires an answer."
   Support availablility:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
@@ -40,4 +41,5 @@ Support:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
+        filterLabel: Incident escalation process available
     validationNotAnswered: "This question requires an answer."

@@ -7,4 +7,5 @@ Event monitoring:
     assuranceApproach: 2answers-type1
     fields:
       - type: boolean
+        filterLabel: Event monitoring
     validationNotAnswered: "This question requires an answer."

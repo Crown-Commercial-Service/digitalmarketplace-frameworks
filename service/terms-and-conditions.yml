@@ -3,6 +3,7 @@ Terms and conditions:
     dependsOnLots: PaaS, IaaS, SCS
     fields:
       - type: boolean
+        filterLabel: Termination cost
     validationNotAnswered: "This question requires an answer."
   Minimum contract period:
     dependsOnLots: SaaS, PaaS, IaaS, SCS

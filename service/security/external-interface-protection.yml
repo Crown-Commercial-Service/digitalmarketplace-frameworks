@@ -7,6 +7,7 @@ External interface protection:
     assuranceApproach: 2answers-type1
     fields:
       - type: boolean
+        filterLabel: Onboarding guidance provided
     validationNotAnswered: "This question requires an answer."
   "Interconnection method provided":
     requirements: The consumer understands what physical and logical interfaces their information is available from.
