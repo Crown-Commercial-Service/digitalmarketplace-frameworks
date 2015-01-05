@@ -8,10 +8,14 @@ Personnel security:
     fields:
       - type: checkbox
         label: "Security clearance national vetting (SC)"
+        filterLabel: "Security clearance national vetting (SC)"
       - type: checkbox
         label: "Baseline personnel security standard (BPSS)"
+        filterLabel: "Baseline personnel security standard (BPSS)"
       - type: checkbox
         label: "Background checks in accordance with BS7858:2012"
+        filterLabel: "Background checks in accordance with BS7858:2012"
       - type: checkbox
         label: "Employment checks"
+        filterLabel: "Employment checks"
     validationNotAnswered: "This question requires an answer."

@@ -7,4 +7,5 @@ Governance:
     assuranceApproach: 2answers-type1
     fields:
       - type: boolean
+        filterLabel: Governance framework
     validationNotAnswered: "This question requires an answer."

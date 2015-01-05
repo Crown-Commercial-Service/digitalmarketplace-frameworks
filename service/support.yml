@@ -5,19 +5,25 @@ Support:
     fields:
       - type: checkbox
         label: Service desk
+        filterLabel: Service desk
       - type: checkbox
         label: Email
+        filterLabel: Email
       - type: checkbox
         label: Phone
+        filterLabel: Phone
       - type: checkbox
         label: Live chat
+        filterLabel: Live chat
       - type: checkbox
         label: Onsite
+        filterLabel: Onsite
     validationNotAnswered: "This question requires an answer."
   Support accessible to any third-party suppliers:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
+        filterLabel: Support accessible to any third-party suppliers
     validationNotAnswered: "This question requires an answer."
   Support availablility:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
@@ -35,4 +41,5 @@ Support:
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
+        filterLabel: Incident escalation process available
     validationNotAnswered: "This question requires an answer."

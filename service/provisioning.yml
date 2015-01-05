@@ -3,6 +3,7 @@ Provisioning:
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
+        filterLabel: Self-service provisioning supported
     validationNotAnswered: "This question requires an answer."
   Service provisioning time:
     dependsOnLots: SaaS, PaaS, IaaS

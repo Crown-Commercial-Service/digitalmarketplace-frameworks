@@ -4,4 +4,5 @@ Open standards:
     hint: "Take a look at the GOV.UK Open Standards principles for more information on open standards."
     fields:
       - type: boolean
+        filterLabel: Open standards supported and documented
     validationNotAnswered: "This question requires an answer."

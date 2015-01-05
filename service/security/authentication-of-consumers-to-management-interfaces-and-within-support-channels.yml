@@ -7,6 +7,7 @@ Authentication of consumers:
     assuranceApproach: 2answers-type2
     fields:
       - type: boolean
+        filterLabel: User authentication and access management
     validationNotAnswered: "This question requires an answer."
   "User access control through support channels":
     requirements: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.
@@ -16,4 +17,5 @@ Authentication of consumers:
     assuranceApproach: 2answers-type2
     fields:
       - type: boolean
+        filterLabel: User access control through support channels
     validationNotAnswered: "This question requires an answer."

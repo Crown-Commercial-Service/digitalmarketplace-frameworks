@@ -7,6 +7,7 @@ External interface protection:
     assuranceApproach: 2answers-type1
     fields:
       - type: boolean
+        filterLabel: Onboarding guidance provided
     validationNotAnswered: "This question requires an answer."
   "Interconnection method provided":
     requirements: The consumer understands what physical and logical interfaces their information is available from.
@@ -17,10 +18,14 @@ External interface protection:
     fields:
       - type: checkbox
         label: "Encrypted PSN service"
+        filterLabel: "Encrypted PSN service"
       - type: checkbox
         label: "PSN service"
+        filterLabel: "PSN service"
       - type: checkbox
         label: "Private WAN"
+        filterLabel: "Private WAN"
       - type: checkbox
         label: "Internet"
+        filterLabel: "Internet"
     validationNotAnswered: "This question requires an answer."

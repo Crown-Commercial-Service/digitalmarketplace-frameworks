@@ -8,16 +8,23 @@ Identity and authentication:
     fields:
       - type: checkbox
         label: "Username and two-factor authentication"
+        filterLabel: "Username and two-factor authentication"
       - type: checkbox
         label: "Username and TLS client certificate"
+        filterLabel: "Username and TLS client certificate"
       - type: checkbox
         label: "Authentication federation"
+        filterLabel: "Authentication federation"
       - type: checkbox
         label: "Limited access over dedicated link, enterprise or community network"
+        filterLabel: "Limited access over dedicated link, enterprise or community network"
       - type: checkbox
         label: "Username and password"
+        filterLabel: "Username and password"
       - type: checkbox
         label: "Username and strong password/passphrase enforcement"
+        filterLabel: "Username and strong password/passphrase enforcement"
       - type: checkbox
         label: "Other mechanism"
+        filterLabel: "Other mechanism"
     validationNotAnswered: "This question requires an answer."
