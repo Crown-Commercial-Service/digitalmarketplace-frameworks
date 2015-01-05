@@ -181,5 +181,6 @@ Asset protection and resilience:
     assuranceApproach: 3answers-type1
     fields:
       - type: percentage
+        filterLabel: Service availability
     validationNotAnswered: "This question requires an answer."
     validationNotANumber: "Availability must be a number less than 100"
