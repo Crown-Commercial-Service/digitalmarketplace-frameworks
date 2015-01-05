@@ -1,51 +1,69 @@
 Data storage:
   Datacentres adhere to EU Code of Conduct for Operations:
     dependsOnLots: SaaS, PaaS, IaaS
+    servicePageLabel: Datacentres adhere to EU Code of Conduct for Operations
     assuranceApproach:
     assuranceHint:
     fields:
       - type: boolean
+        filterLabel: Datacentres adhere to EU Code of Conduct for Operations
     validationNotAnswered: "This question requires an answer."
   User-defined data location:
     dependsOnLots: SaaS, PaaS, IaaS
+    servicePageLabel: User-defined data location
     assuranceApproach:
     fields:
       - type: boolean
+        filterLabel: User-defined data location
     validationNotAnswered: "This question requires an answer."
   Datacentre tier:
     hint: Choose one
     dependsOnLots: SaaS, PaaS, IaaS
+    servicePageLabel: Datacentre tier
     assuranceApproach:
     fields:
       - type: radio
         label: TIA-942 Tier 1
+        filterLabel: TIA-942 Tier 1 datacentre
+        displayedResponse: TIA-942 Tier 1
       - type: radio
         label: TIA-942 Tier 2
+        filterLabel: TIA-942 Tier 2 datacentre
       - type: radio
         label: TIA-942 Tier 3
+        filterLabel: TIA-942 Tier 3 datacentre
       - type: radio
         label: TIA-942 Tier 4
+        filterLabel: TIA-942 Tier 4 datacentre
       - type: radio
         label: Uptime Institute Tier 1
+        filterLabel: Uptime Institute Tier 1 datacentre
       - type: radio
         label: Uptime Institute Tier 2
+        filterLabel: Uptime Institute Tier 2 datacentre
       - type: radio
         label: Uptime Institute Tier 3
+        filterLabel: Uptime Institute Tier 3 datacentre
       - type: radio
         label: Uptime Institute Tier 4
+        filterLabel: Uptime Institute Tier 4 datacentre
       - type: radio
         label: None of the above
     validationNotAnswered: "This question requires an answer."
   Backup, disaster recovery and resilience plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
+    servicePageLabel: Backup, disaster recovery and resilience plan in place
     assuranceApproach:
     hint: "You can provide more detail on your disaster recovery plan in your service definition document."
     fields:
       - type: boolean
+        filterLabel: Backup, disaster recovery and resilience plan in place
     validationNotAnswered: "Please answer if plans for backup, disaster recovery and resilience are in place"
   Data extraction/removal plan in place:
     dependsOnLots: SaaS, PaaS, IaaS
+    servicePageLabel: Data extraction/removal plan in place
     assuranceApproach:
     fields:
       - type: boolean
+        filterLabel: Data extraction/removal plan in place
     validationNotAnswered: "This question requires an answer."
