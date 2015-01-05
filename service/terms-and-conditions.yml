@@ -9,14 +9,19 @@ Terms and conditions:
     fields:
       - type: radio
         label: "Hour"
+        filterLabel: "Hour"
       - type: radio
         label: "Day"
+        filterLabel: "Day"
       - type: radio
         label: "Month"
+        filterLabel: "Month"
       - type: radio
         label: "Year"
+        filterLabel: "Year"
       - type: radio
         label: "Other"
+        filterLabel: "Other"
     validationNotAnswered: "This question requires an answer."
   Please upload your terms and conditions document:
     mockAnswer: Umbraco Terms_Conditions 102014.odf

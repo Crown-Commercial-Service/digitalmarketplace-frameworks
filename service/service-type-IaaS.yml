@@ -6,6 +6,8 @@ Service type:
     fields:
       - type: checkbox
         label: Compute
+        filterLabel: Compute
       - type: checkbox
         label: Storage
+        filterLabel: Storage
     validationNotAnswered: "This question requires an answer."

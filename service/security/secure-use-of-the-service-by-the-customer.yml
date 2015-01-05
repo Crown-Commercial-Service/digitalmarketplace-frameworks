@@ -8,10 +8,13 @@ Secure use of the service by the customer:
     fields:
       - type: radio
         label: "Corporate/enterprise devices"
+        filterLabel: "Corporate/enterprise devices"
       - type: radio
         label: "Partner devices"
+        filterLabel: "Partner devices"
       - type: radio
         label: "Unknown devices"
+        filterLabel: "Unknown devices"
     validationNotAnswered: "This question requires an answer."
   "Service configuration guidance":
     requirements: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.

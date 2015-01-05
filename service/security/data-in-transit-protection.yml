@@ -9,16 +9,22 @@ Data-in-transit protection:
     fields:
       - type: radio
         label: "Encrypted PSN service"
+        filterLabel: "Encrypted PSN service"
       - type: radio
         label: "PSN service"
+        filterLabel: "PSN service"
       - type: radio
         label: "CPA Foundation VPN Gateway"
+        filterLabel: "CPA Foundation VPN Gateway"
       - type: radio
         label: "VPN using TLS, version 1.2 or later"
+        filterLabel: "VPN using TLS, version 1.2 or later"
       - type: radio
         label: "VPN using legacy SSL or TLS"
+        filterLabel: "VPN using legacy SSL or TLS"
       - type: radio
         label: "No encryption"
+        filterLabel: "No encryption"
     validationNotAnswered: "This question requires an answer."
   "Data protection within service":
     requirements: Data in transit is protected internally within the service
@@ -29,16 +35,22 @@ Data-in-transit protection:
     fields:
       - type: radio
         label: "VPN using TLS, version 1.2 or later"
+        filterLabel: "VPN using TLS, version 1.2 or later"
       - type: radio
         label: "VPN using legacy SSL or TLS"
+        filterLabel: "VPN using legacy SSL or TLS"
       - type: radio
         label: "VLAN"
+        filterLabel: "VLAN"
       - type: radio
         label: "Bonded fibre optic connections"
+        filterLabel: "Bonded fibre optic connections"
       - type: radio
         label: "Other network protection"
+        filterLabel: "Other network protection"
       - type: radio
         label: "No encryption"
+        filterLabel: "No encryption"
     validationNotAnswered: "This question requires an answer."
   "Data protection between services":
     requirements: Data in transit is protected between the service and other services (eg where APIs are exposed)
@@ -49,14 +61,20 @@ Data-in-transit protection:
     fields:
       - type: radio
         label: "Encrypted PSN service"
+        filterLabel: "Encrypted PSN service"
       - type: radio
         label: "PSN service"
+        filterLabel: "PSN service"
       - type: radio
         label: "CPA Foundation VPN Gateway"
+        filterLabel: "CPA Foundation VPN Gateway"
       - type: radio
         label: "VPN using TLS, version 1.2 or later"
+        filterLabel: "VPN using TLS, version 1.2 or later"
       - type: radio
         label: "VPN using legacy SSL or TLS"
+        filterLabel: "VPN using legacy SSL or TLS"
       - type: radio
         label: "No encryption"
+        filterLabel: "No encryption"
     validationNotAnswered: "This question requires an answer."

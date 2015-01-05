@@ -8,12 +8,16 @@ Separation between consumers:
     fields:
       - type: radio
         label: "Public cloud"
+        filterLabel: "Public cloud"
       - type: radio
         label: "Community cloud"
+        filterLabel: "Community cloud"
       - type: radio
         label: "Private cloud"
+        filterLabel: "Private cloud"
       - type: radio
         label: "Hybrid cloud"
+        filterLabel: "Hybrid cloud"
     validationNotAnswered: "This question requires an answer."
   "Type of consumer":
     requirements: Consumers should understand the types of consumer they share the service or platform with.
@@ -24,12 +28,16 @@ Separation between consumers:
     fields:
       - type: radio
         label: "No other consumer"
+        filterLabel: "No other consumer"
       - type: radio
         label: "Only government consumers"
+        filterLabel: "Only government consumers"
       - type: radio
         label: "A specific consumer group, eg Police, Defence or Health"
+        filterLabel: "A specific consumer group, eg Police, Defence or Health"
       - type: radio
         label: "Anyone - public"
+        filterLabel: "Anyone - public"
     validationNotAnswered: "This question requires an answer."
   "Services separation":
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.

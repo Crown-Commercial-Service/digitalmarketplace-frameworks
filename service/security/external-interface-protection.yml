@@ -17,10 +17,14 @@ External interface protection:
     fields:
       - type: checkbox
         label: "Encrypted PSN service"
+        filterLabel: "Encrypted PSN service"
       - type: checkbox
         label: "PSN service"
+        filterLabel: "PSN service"
       - type: checkbox
         label: "Private WAN"
+        filterLabel: "Private WAN"
       - type: checkbox
         label: "Internet"
+        filterLabel: "Internet"
     validationNotAnswered: "This question requires an answer."
