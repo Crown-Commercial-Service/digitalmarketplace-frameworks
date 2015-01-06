@@ -24,5 +24,4 @@ Networks and connectivity:
         filterLabel: Joint Academic Network (JANET)
       - type: checkbox
         label: Other
-        filterLabel: Other
     validationNotAnswered: "This question requires an answer."

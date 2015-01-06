@@ -20,7 +20,6 @@ Asset protection and resilience:
         filterLabel: "Other countries with data protection treaties"
       - type: checkbox
         label: "Rest of world"
-        filterLabel: "Rest of world"
     validationNotAnswered: "This question requires an answer."
   "Data management location":
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
@@ -43,7 +42,6 @@ Asset protection and resilience:
         filterLabel: "Other countries with data protection treaties"
       - type: checkbox
         label: "Rest of world"
-        filterLabel: "Rest of world"
     validationNotAnswered: "This question requires an answer."
   "Legal jurisdiction of service provider":
     requirements: The legal jurisdiction(s) in which the service provider operates
@@ -66,7 +64,6 @@ Asset protection and resilience:
         filterLabel: "Other countries with data protection treaties"
       - type: radio
         label: "Rest of world"
-        filterLabel: "Rest of world"
     validationNotAnswered: "This question requires an answer."
   "Datacentre protection":
     requirements: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
@@ -102,7 +99,6 @@ Asset protection and resilience:
         filterLabel: "Physical access control"
       - type: radio
         label: "No protection"
-        filterLabel: "No protection"
     validationNotAnswered: "This question requires an answer."
   "Secure data deletion":
     requirements: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
@@ -122,7 +118,6 @@ Asset protection and resilience:
         filterLabel: "Other secure erasure process"
       - type: radio
         label: "Other erasure process"
-        filterLabel: "Other erasure process"
     validationNotAnswered: "This question requires an answer."
   "Storage media disposal":
     requirements: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
@@ -151,7 +146,6 @@ Asset protection and resilience:
         filterLabel: "Other secure erasure process"
       - type: radio
         label: "Other destruction/erasure process"
-        filterLabel: "Other destruction/erasure process"
     validationNotAnswered: "This question requires an answer."
   "Secure equipment disposal":
     requirements: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
