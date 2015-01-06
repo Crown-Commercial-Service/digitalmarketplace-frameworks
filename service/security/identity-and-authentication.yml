@@ -26,5 +26,4 @@ Identity and authentication:
         filterLabel: "Username and strong password/passphrase enforcement"
       - type: checkbox
         label: "Other mechanism"
-        filterLabel: "Other mechanism"
     validationNotAnswered: "This question requires an answer."

@@ -37,7 +37,6 @@ Separation between consumers:
         filterLabel: "A specific consumer group, eg Police, Defence or Health"
       - type: radio
         label: "Anyone - public"
-        filterLabel: "Anyone - public"
     validationNotAnswered: "This question requires an answer."
   "Services separation":
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.

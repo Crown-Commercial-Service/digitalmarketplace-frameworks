@@ -8,7 +8,6 @@ Audit information provision to consumers:
     fields:
       - type: radio
         label: "None"
-        filterLabel: "None"
       - type: radio
         label: "Data made available"
         filterLabel: "Data made available"

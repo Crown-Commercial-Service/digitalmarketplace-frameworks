@@ -24,7 +24,6 @@ Data-in-transit protection:
         filterLabel: "VPN using legacy SSL or TLS"
       - type: radio
         label: "No encryption"
-        filterLabel: "No encryption"
     validationNotAnswered: "This question requires an answer."
   "Data protection within service":
     requirements: Data in transit is protected internally within the service
@@ -50,7 +49,6 @@ Data-in-transit protection:
         filterLabel: "Other network protection"
       - type: radio
         label: "No encryption"
-        filterLabel: "No encryption"
     validationNotAnswered: "This question requires an answer."
   "Data protection between services":
     requirements: Data in transit is protected between the service and other services (eg where APIs are exposed)
@@ -76,5 +74,4 @@ Data-in-transit protection:
         filterLabel: "VPN using legacy SSL or TLS"
       - type: radio
         label: "No encryption"
-        filterLabel: "No encryption"
     validationNotAnswered: "This question requires an answer."
