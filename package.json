@@ -1,0 +1,23 @@
+{
+  "name": "ssp-content",
+  "version": "1.0.0",
+  "description": "digital-marketplace-ssp-content ===============================",
+  "main": "process.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphagov/digital-marketplace-ssp-content.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alphagov/digital-marketplace-ssp-content/issues"
+  },
+  "homepage": "https://github.com/alphagov/digital-marketplace-ssp-content",
+  "dependencies": {
+    "js-yaml": "^3.2.7",
+    "yamljs": "^0.2.1"
+  }
+}
