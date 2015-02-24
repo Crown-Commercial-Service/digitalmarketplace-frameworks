@@ -1,5 +1,6 @@
 Service type:
   Choose the categories that apply to your service:
+    key: serviceTypes
     dependsOnLots: SCS
     hint: "You can choose multiple categories"
     mockAnswer: Content management system

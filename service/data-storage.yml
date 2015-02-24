@@ -1,5 +1,6 @@
 Data storage:
   Datacentres adhere to EU Code of Conduct for Operations:
+    key: datacentresEUCode
     dependsOnLots: SaaS, PaaS, IaaS
     servicePageLabel: Datacentres adhere to EU Code of Conduct for Operations
     assuranceApproach:
@@ -9,6 +10,7 @@ Data storage:
         filterLabel: Datacentres adhere to EU Code of Conduct for Operations
     validationNotAnswered: "This question requires an answer."
   User-defined data location:
+    key: datacentresSpecifyLocation
     dependsOnLots: SaaS, PaaS, IaaS
     servicePageLabel: User-defined data location
     assuranceApproach:
@@ -17,6 +19,7 @@ Data storage:
         filterLabel: User-defined data location
     validationNotAnswered: "This question requires an answer."
   Datacentre tier:
+    key: datacentreTier
     hint: Choose one
     dependsOnLots: SaaS, PaaS, IaaS
     servicePageLabel: Datacentre tier
@@ -51,6 +54,7 @@ Data storage:
         label: None of the above
     validationNotAnswered: "This question requires an answer."
   Backup, disaster recovery and resilience plan in place:
+    key: dataBackupRecovery
     dependsOnLots: SaaS, PaaS, IaaS
     servicePageLabel: Backup, disaster recovery and resilience plan in place
     assuranceApproach:
@@ -60,6 +64,7 @@ Data storage:
         filterLabel: Backup, disaster recovery and resilience plan in place
     validationNotAnswered: "Please answer if plans for backup, disaster recovery and resilience are in place"
   Data extraction/removal plan in place:
+    key: dataExtractionRemoval
     dependsOnLots: SaaS, PaaS, IaaS
     servicePageLabel: Data extraction/removal plan in place
     assuranceApproach:

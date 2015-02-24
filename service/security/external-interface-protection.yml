@@ -1,5 +1,6 @@
 External interface protection:
   "Onboarding guidance provided":
+    key: onboardingGuidance
     requirements: The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.
     filters: The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.
     hint: "Do you provide onboarding guidance covering secure connection to the service?"
@@ -10,6 +11,7 @@ External interface protection:
         filterLabel: Onboarding guidance provided
     validationNotAnswered: "This question requires an answer."
   "Interconnection method provided":
+    key: interconnectionMethods
     requirements: The consumer understands what physical and logical interfaces their information is available from.
     filters: The consumer understands what physical and logical interfaces their information is available from.
     hint: "What method of interconnection to the service do you provide? Choose all that apply."

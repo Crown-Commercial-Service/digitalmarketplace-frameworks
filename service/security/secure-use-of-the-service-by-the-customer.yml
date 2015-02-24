@@ -1,5 +1,6 @@
 Secure use of the service by the customer:
   "Device access method":
+    key: deviceAccessMethod
     requirements: The consumer understands any service configuration options available to them and the security implications of choices they make.
     filters: The consumer understands any service configuration options available to them and the security implications of choices they make.
     hint: "Which end device is the cloud service accessible from?"
@@ -17,6 +18,7 @@ Secure use of the service by the customer:
         filterLabel: "Unknown devices"
     validationNotAnswered: "This question requires an answer."
   "Service configuration guidance":
+    key: serviceConfigurationGuidance
     requirements: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
     filters: The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.
     hint: "Do you provide guidance on service configuration options and the relative impacts on security?"
@@ -27,6 +29,7 @@ Secure use of the service by the customer:
         filterLabel: Service configuration guidance
     validationNotAnswered: "This question requires an answer."
   "Training":
+    key: trainingProvided
     requirements: The consumer can educate those administrating and using the service in how to use it safely and securely.
     filters: The consumer can educate those administrating and using the service in how to use it safely and securely.
     hint: "Do you provide user or administrator training on the use of the service and its security?"

@@ -1,5 +1,6 @@
 Asset protection and resilience:
   "Datacentre location":
+    key: datacentreLocations
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     hint: "Where are the service provider's datacentres located? Choose all that apply."
@@ -22,6 +23,7 @@ Asset protection and resilience:
         label: "Rest of world"
     validationNotAnswered: "This question requires an answer."
   "Data management location":
+    key: dataManagementLocations
     requirements: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     filters: The geographic location(s) where consumer data is stored, processed or managed from (to country level)
     hint: "Where are the services managed from? Choose all that apply."
@@ -44,6 +46,7 @@ Asset protection and resilience:
         label: "Rest of world"
     validationNotAnswered: "This question requires an answer."
   "Legal jurisdiction of service provider":
+    key: legalJurisdiction
     requirements: The legal jurisdiction(s) in which the service provider operates
     filters: The legal jurisdiction(s) in which the service provider operates
     hint: "Choose 1"
@@ -66,6 +69,7 @@ Asset protection and resilience:
         label: "Rest of world"
     validationNotAnswered: "This question requires an answer."
   "Datacentre protection":
+    key: datacentreProtectionDisclosure
     requirements: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
     filters: Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.
     hint: "Do you tell your consumers what physical security your datacentres have?"
@@ -76,6 +80,7 @@ Asset protection and resilience:
         filterLabel: Datacentre protection
     validationNotAnswered: "This question requires an answer."
   "Data-at-rest protection":
+    key: dataAtRestProtection
     requirements: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     filters: Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.
     hint: "How is storage media containing consumer data protected from unauthorised physical access? Choose 1."
@@ -101,6 +106,7 @@ Asset protection and resilience:
         label: "No protection"
     validationNotAnswered: "This question requires an answer."
   "Secure data deletion":
+    key: dataSecureDeletion
     requirements: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
     filters: Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.
     hint: "How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service, or when they request it to be erased? Choose 1."
@@ -120,6 +126,7 @@ Asset protection and resilience:
         label: "Other erasure process"
     validationNotAnswered: "This question requires an answer."
   "Storage media disposal":
+    key: dataStorageMediaDisposal
     requirements: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
     filters: Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life
     hint: "How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime? Choose 1."
@@ -148,6 +155,7 @@ Asset protection and resilience:
         label: "Other destruction/erasure process"
     validationNotAnswered: "This question requires an answer."
   "Secure equipment disposal":
+    key: dataSecureEquipmentDisposal
     requirements: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
     filters: Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).
     hint: "Is all equipment potentially containing consumer data, credentials or configuration information identified at the end of its life or prior to being recycled? Choose 1."
@@ -158,6 +166,7 @@ Asset protection and resilience:
         filterLabel: Secure equipment disposal
     validationNotAnswered: "This question requires an answer."
   "Redundant equipment accounts revoked":
+    key: dataRedundantEquipmentAccountsRevoked
     requirements: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
     filters: Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.
     hint: "Are accounts or credentials specific to redundant equipment revoked to reduce their value to an attacker?"
@@ -168,6 +177,7 @@ Asset protection and resilience:
         filterLabel: Redundant equipment accounts revoked
     validationNotAnswered: "This question requires an answer."
   "Service availability":
+    key: serviceAvailabilityPercentage
     requirements: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
     filters: Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.
     hint: "What is the availability of the service? eg 99.99"

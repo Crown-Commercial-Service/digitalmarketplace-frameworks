@@ -1,5 +1,6 @@
 Separation between consumers:
   "Cloud deployment model":
+    key: cloudDeploymentModel
     requirements: Service providers must state whether the service is a public, private or community cloud service.
     filters: Service providers must state whether the service is a public, private or community cloud service.
     hint: "Is the service a public, private, community or hybrid cloud service?"
@@ -20,6 +21,7 @@ Separation between consumers:
         filterLabel: "Hybrid cloud"
     validationNotAnswered: "This question requires an answer."
   "Type of consumer":
+    key: otherConsumers
     requirements: Consumers should understand the types of consumer they share the service or platform with.
     filters: Consumers should understand the types of consumer they share the service or platform with.
     hint: "What types of other consumer do you share the service or platform with?"
@@ -39,6 +41,7 @@ Separation between consumers:
         label: "Anyone - public"
     validationNotAnswered: "This question requires an answer."
   "Services separation":
+    key: servicesSeparation
     requirements: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     filters: Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.
     hint: "Do you securely separate consumer data and services from other consumers of the service?"
@@ -49,6 +52,7 @@ Separation between consumers:
         filterLabel: Services separation
     validationNotAnswered: "This question requires an answer."
   "Services management separation":
+    key: servicesManagementSepartion
     requirements: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     filters: Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).
     hint: "Is your management of a consumer’s service kept separate from other consumers?"

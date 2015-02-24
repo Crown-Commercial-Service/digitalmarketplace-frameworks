@@ -1,5 +1,6 @@
 Pricing:
   Service price:
+    key: servicePrice
     hint: "This is an indicative price. Users will be able to refer to your pricing document for more information."
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     validationNoMinPriceSpecified: "Minimum price requires an answer."
@@ -9,12 +10,14 @@ Pricing:
     fields:
       - type: pricing
   VAT included:
+    key: vatIncluded
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
         filterLabel: VAT included
     validationNotAnswered: "This question requires an answer."
   Education pricing:
+    key: educationPricing
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "Do you offer special pricing for educational organisations?"
     fields:
@@ -22,18 +25,21 @@ Pricing:
         filterLabel: Education pricing
     validationNotAnswered: "This question requires an answer."
   Trial option:
+    key: trialOption
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         filterLabel: Trial option
     validationNotAnswered: "This question requires an answer."
   Free option:
+    key: freeOption
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         filterLabel: Free option
     validationNotAnswered: "This question requires an answer."
   Pricing document:
+    key: pricingDocument
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     mockAnswer: Pricing Document Umbraco 102014.odf
     hint: "Please upload your pricing document. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)"
@@ -44,6 +50,7 @@ Pricing:
     validationWrongFormat: "Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt)."
     validationTooLarge: "Your document exceeds the 5MB limit. Please reduce file size."
   Skills Framework for the Information Age (SFIA) rate card:
+    key: sfiaRateCard
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     mockAnswer: Rate Card Umbraco 102014.odf
     hint: "Please upload your SFIA rate card if you have one. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)"

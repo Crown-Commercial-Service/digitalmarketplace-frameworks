@@ -1,5 +1,6 @@
 Support:
   Support service type:
+    key: supportTypes
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: Choose all that apply.
     fields:
@@ -20,24 +21,28 @@ Support:
         filterLabel: Onsite
     validationNotAnswered: "This question requires an answer."
   Support accessible to any third-party suppliers:
+    key: supportForThirdParties
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean
         filterLabel: Support accessible to any third-party suppliers
     validationNotAnswered: "This question requires an answer."
   Support availablility:
+    key: supportAvailability
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "eg 24/7 or 9 to 5. (Maximum 20 words.)"
     fields:
       - type: text
     validationNotAnswered: "This question requires an answer."
   Standard support response times:
+    key: supportResponseTime
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "How long will it take until support can begin to be provided? eg 1 hour or 1 business day. (Maximum 20 words.)"
     fields:
       - type: text
     validationNotAnswered: "This question requires an answer."
   Incident escalation process available:
+    key: incidentEscalation
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: boolean

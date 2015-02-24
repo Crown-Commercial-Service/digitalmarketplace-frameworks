@@ -1,5 +1,6 @@
 Identity and authentication:
   "Identity and authentication controls":
+    key: identityAuthenticationControls
     requirements: Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.
     filters: Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.
     hint: "How do your identity and authentication controls ensure that users are authorised to access specific interfaces? Choose all that apply."

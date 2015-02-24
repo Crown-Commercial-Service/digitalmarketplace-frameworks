@@ -1,5 +1,6 @@
 Access:
   Supported web browsers:
+    key: supportedBrowsers
     dependsOnLots: SaaS, PaaS, IaaS
     hint: "Choose all that apply."
     fields:
@@ -32,12 +33,14 @@ Access:
         filterLabel: Opera
     validationNotAnswered: "This question requires an answer."
   Offline working and syncing supported:
+    key: offlineWorking
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean
         filterLabel: Offline working and syncing supported
     validationNotAnswered: "This question requires an answer."
   Supported devices:
+    key: supportedDevices
     dependsOnLots: SaaS, PaaS, IaaS
     hint: "Choose all that apply."
     fields:

@@ -1,11 +1,13 @@
 Terms and conditions:
   Termination cost:
+    key: terminationCost
     dependsOnLots: PaaS, IaaS, SCS
     fields:
       - type: boolean
         filterLabel: Termination cost
     validationNotAnswered: "This question requires an answer."
   Minimum contract period:
+    key: minimumContractPeriod
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     fields:
       - type: radio
@@ -24,6 +26,7 @@ Terms and conditions:
         label: "Other"
     validationNotAnswered: "This question requires an answer."
   Please upload your terms and conditions document:
+    key: termsAndConditionsDocument
     mockAnswer: Umbraco Terms_Conditions 102014.odf
     dependsOnLots: SaaS, PaaS, IaaS, SCS
     hint: "Please upload your terms and conditions document. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)"
