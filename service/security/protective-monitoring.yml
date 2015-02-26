@@ -1,5 +1,6 @@
 Event monitoring:
   "Event monitoring":
+    key: eventMonitoring
     requirements: Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.
     filters: Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.
     hint: "Do you conduct event monitoring and analysis to identify suspicious activity?"

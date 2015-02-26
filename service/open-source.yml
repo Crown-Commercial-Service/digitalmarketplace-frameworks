@@ -1,5 +1,6 @@
 Open source:
   Open-source software used and supported:
+    key: openSource
     dependsOnLots: SaaS, PaaS, IaaS
     fields:
       - type: boolean

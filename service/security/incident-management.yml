@@ -1,5 +1,6 @@
 Incident management:
   "Incident management processes":
+    key: incidentManagementProcess
     requirements: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
     filters: Consumers should have confidence that incident management processes are in place for the service and are enacted in response to security incidents.
     hint: "Do you have incident management processes in place and are they enacted in response to security incidents?"
@@ -10,6 +11,7 @@ Incident management:
         filterLabel: Incident management processes
     validationNotAnswered: "This question requires an answer."
   "Consumer reporting of security incidents":
+    key: incidentManagementReporting
     requirements: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
     filters: Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.
     hint: "Do you have a defined process for reporting security incidents experienced by consumers and external entities?"
@@ -20,6 +22,7 @@ Incident management:
         filterLabel: Consumer reporting of security incidents
     validationNotAnswered: "This question requires an answer."
   "Security incident definition published":
+    key: incidentDefinitionPublished
     requirements: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
     filters: Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.
     dependsOnLots: SaaS, PaaS, IaaS

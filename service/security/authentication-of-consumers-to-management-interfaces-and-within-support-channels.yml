@@ -1,5 +1,6 @@
 Authentication of consumers:
   "User authentication and access management":
+    key: userAuthenticateManagement
     requirements: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to authenticate to and access management interfaces for the service (Principle 10 should be used assess the risks of different approaches to meet this objective).
     filters: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to authenticate to and access management interfaces for the service (Principle 10 should be used assess the risks of different approaches to meet this objective).
     hint: "Can only authorised individuals from the consumer organisation access management interfaces for the service?"
@@ -10,6 +11,7 @@ Authentication of consumers:
         filterLabel: User authentication and access management
     validationNotAnswered: "This question requires an answer."
   "User access control through support channels":
+    key: userAuthenticateSupport
     requirements: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.
     filters: The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.
     hint: "Can only authorised individuals from the consumer organisation perform actions affecting the consumer’s service through your support channels?"

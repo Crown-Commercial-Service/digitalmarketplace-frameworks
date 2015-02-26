@@ -1,5 +1,6 @@
 Data-in-transit protection:
   "Data protection between user device and service":
+    key: dataProtectionBetweenUserAndService
     requirements: Data in transit is protected between the user’s devices and the service
     filters: Data in transit is protected between the user’s devices and the service
     hint: "Choose 1"
@@ -26,6 +27,7 @@ Data-in-transit protection:
         label: "No encryption"
     validationNotAnswered: "This question requires an answer."
   "Data protection within service":
+    key: dataProtctionWithinService
     requirements: Data in transit is protected internally within the service
     filters: Data in transit is protected internally within the service
     hint: "Choose 1"
@@ -51,6 +53,7 @@ Data-in-transit protection:
         label: "No encryption"
     validationNotAnswered: "This question requires an answer."
   "Data protection between services":
+    key: dataProtectionBetweenServices
     requirements: Data in transit is protected between the service and other services (eg where APIs are exposed)
     filters: Data in transit is protected between the service and other services (eg where APIs are exposed)
     hint: "Choose 1"
