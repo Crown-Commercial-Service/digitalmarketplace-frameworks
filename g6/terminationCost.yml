@@ -1,0 +1,7 @@
+dependsOnLots: 'PaaS, IaaS, SCS'
+fields:
+    -
+        type: boolean
+        filterLabel: 'Termination cost'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Termination cost'

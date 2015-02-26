@@ -1,0 +1,11 @@
+requirements: 'Consumers should be sufficiently confident that new and evolving threats are reviewed and the service improved in line with them.'
+filters: 'Consumers should be sufficiently confident that new and evolving threats are reviewed and the service improved in line with them.'
+hint: 'Are new and evolving threats reviewed and your services improved accordingly?'
+dependsOnLots: 'SaaS, PaaS, IaaS'
+assuranceApproach: 2answers-type1
+fields:
+    -
+        type: boolean
+        filterLabel: 'Secure development'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Secure development'

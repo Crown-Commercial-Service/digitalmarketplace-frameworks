@@ -1,0 +1,11 @@
+requirements: 'The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.'
+filters: 'The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.'
+hint: 'Do you manage the risks to your service from third-party suppliers and delivery partners?'
+dependsOnLots: 'SaaS, PaaS, IaaS'
+assuranceApproach: 2answers-type1
+fields:
+    -
+        type: boolean
+        filterLabel: 'Third-party supplier risk assessment'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Third-party supplier risk assessment'

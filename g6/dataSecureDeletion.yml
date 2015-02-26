@@ -1,0 +1,23 @@
+requirements: 'Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.'
+filters: 'Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.'
+hint: 'How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service, or when they request it to be erased? Choose 1.'
+dependsOnLots: 'SaaS, PaaS, IaaS'
+assuranceApproach: 4answers-type1
+fields:
+    -
+        type: radio
+        label: 'CPA Foundation-grade erasure product'
+        filterLabel: 'CPA Foundation-grade erasure product'
+    -
+        type: radio
+        label: 'CESG or CPNI-approved erasure process'
+        filterLabel: 'CESG or CPNI-approved erasure process'
+    -
+        type: radio
+        label: 'Other secure erasure process'
+        filterLabel: 'Other secure erasure process'
+    -
+        type: radio
+        label: 'Other erasure process'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Secure data deletion'

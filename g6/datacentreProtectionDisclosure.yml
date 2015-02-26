@@ -1,0 +1,11 @@
+requirements: 'Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.'
+filters: 'Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.'
+hint: 'Do you tell your consumers what physical security your datacentres have?'
+dependsOnLots: 'SaaS, PaaS, IaaS'
+assuranceApproach: 3answers-type1
+fields:
+    -
+        type: boolean
+        filterLabel: 'Datacentre protection'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Datacentre protection'

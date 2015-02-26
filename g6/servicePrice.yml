@@ -1,0 +1,10 @@
+hint: 'This is an indicative price. Users will be able to refer to your pricing document for more information.'
+dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
+validationNoMinPriceSpecified: 'Minimum price requires an answer.'
+validationNoUnitSpecified: 'Pricing unit requires an answer. If none of the provided units apply, please choose ''Unit''.'
+validationNotANumber: 'Prices must be numbers only, without units, eg 99.95'
+validationMaxLessThanMin: 'Minimum price must be less than maximum price'
+fields:
+    -
+        type: pricing
+question: 'Service price'

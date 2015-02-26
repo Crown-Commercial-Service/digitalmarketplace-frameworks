@@ -1,0 +1,11 @@
+requirements: 'The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.'
+filters: 'The consumer understands the security requirements on their processes, uses, and infrastructure related to the use of the service.'
+hint: 'Do you provide guidance on service configuration options and the relative impacts on security?'
+dependsOnLots: 'PaaS, IaaS'
+assuranceApproach: 3answers-type2
+fields:
+    -
+        type: boolean
+        filterLabel: 'Service configuration guidance'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Service configuration guidance'

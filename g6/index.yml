@@ -1,0 +1,223 @@
+- Page 1
+    name: Access
+    questions:
+        - supportedBrowsers.yml
+        - offlineWorking.yml
+        - supportedDevices.yml
+- Page 2
+    name: Analytics
+    questions:
+        - analyticsAvailable.yml
+- Page 3
+    name: API access
+    questions:
+        - apiAccess.yml
+        - apiType.yml
+- Page 4
+    name: Certifications
+    questions:
+        - vendorCertifications.yml
+- Page 5
+    name: Cloud features
+    questions:
+        - elasticCloud.yml
+        - guaranteedResources.yml
+        - persistantStorage.yml
+- Page 6
+    name: Code libraries
+    questions:
+        - codeLibraryLanguages.yml
+- Page 7
+    name: Data storage
+    questions:
+        - datacentresEUCode.yml
+        - datacentresSpecifyLocation.yml
+        - datacentreTier.yml
+        - dataBackupRecovery.yml
+        - dataExtractionRemoval.yml
+- Page 8
+    name: Features and benefits
+    questions:
+        - serviceFeatures.yml
+        - serviceBenefits.yml
+- Page 9
+    name: Identity standards
+    questions:
+        - identityStandards.yml
+- Page 10
+    name: Networks and connectivity
+    questions:
+        - networksConnected.yml
+- Page 11
+    name: Onboarding and offboarding
+    questions:
+        - serviceOnboarding.yml
+        - serviceOffboarding.yml
+- Page 12
+    name: Open source
+    questions:
+        - openSource.yml
+- Page 13
+    name: Open standards
+    questions:
+        - openStandardsSupported.yml
+- Page 14
+    name: Pricing
+    questions:
+        - servicePrice.yml
+        - vatIncluded.yml
+        - educationPricing.yml
+        - trialOption.yml
+        - freeOption.yml
+        - pricingDocument.yml
+        - sfiaRateCard.yml
+- Page 15
+    name: Provisioning
+    questions:
+        - selfServiceProvisioning.yml
+        - provisioningTime.yml
+        - deprovisioningTime.yml
+- Page 16
+    name: Asset protection and resilience
+    questions:
+        - datacentreLocations.yml
+        - dataManagementLocations.yml
+        - legalJurisdiction.yml
+        - datacentreProtectionDisclosure.yml
+        - dataAtRestProtection.yml
+        - dataSecureDeletion.yml
+        - dataStorageMediaDisposal.yml
+        - dataSecureEquipmentDisposal.yml
+        - dataRedundantEquipmentAccountsRevoked.yml
+        - serviceAvailabilityPercentage.yml
+- Page 17
+    name: Audit information provision to consumers
+    questions:
+        - auditInformationProvided.yml
+- Page 18
+    name: Authentication of consumers
+    questions:
+        - userAuthenticateManagement.yml
+        - userAuthenticateSupport.yml
+- Page 19
+    name: Configuration and change management
+    questions:
+        - configurationTracking.yml
+        - changeImpactAssessment.yml
+- Page 20
+    name: Data-in-transit protection
+    questions:
+        - dataProtectionBetweenUserAndService.yml
+        - dataProtctionWithinService.yml
+        - dataProtectionBetweenServices.yml
+- Page 21
+    name: External interface protection
+    questions:
+        - onboardingGuidance.yml
+        - interconnectionMethods.yml
+- Page 22
+    name: Governance
+    questions:
+        - governanceFramework.yml
+- Page 23
+    name: Identity and authentication
+    questions:
+        - identityAuthenticationControls.yml
+- Page 24
+    name: Incident management
+    questions:
+        - incidentManagementProcess.yml
+        - incidentManagementReporting.yml
+        - incidentDefinitionPublished.yml
+- Page 25
+    name: Personnel security
+    questions:
+        - personnelSecurityChecks.yml
+- Page 26
+    name: Event monitoring
+    questions:
+        - eventMonitoring.yml
+- Page 27
+    name: Secure development
+    questions:
+        - secureDevelopment.yml
+        - secureDesign.yml
+        - secureConfigurationManagement.yml
+- Page 28
+    name: Secure service administration
+    questions:
+        - serviceManagementModel.yml
+- Page 29
+    name: Secure use of the service by the customer
+    questions:
+        - deviceAccessMethod.yml
+        - serviceConfigurationGuidance.yml
+        - trainingProvided.yml
+- Page 30
+    name: Separation and access control within management interfaces
+    questions:
+        - userAccessControlManagement.yml
+        - restrictAdministratorPermissions.yml
+        - managementInterfaceProtection.yml
+- Page 31
+    name: Separation between consumers
+    questions:
+        - cloudDeploymentModel.yml
+        - otherConsumers.yml
+        - servicesSeparation.yml
+        - servicesManagementSepartion.yml
+- Page 32
+    name: Supply-chain security
+    questions:
+        - thirdPartyDataSharingInformation.yml
+        - thirdPartySecurityRequirements.yml
+        - thirdPartyRiskAssessment.yml
+        - thirdPartyComplianceMonitoring.yml
+        - hardwareSoftwareVerification.yml
+- Page 33
+    name: Vulnerabilility management
+    questions:
+        - vulnerabilityAssessment.yml
+        - vulnerabilityMonitoring.yml
+        - vulnerabilityMitigationPrioritisation.yml
+        - vulnerabilityTracking.yml
+        - vulnerabilityTimescales.yml
+- Page 34
+    name: Service definition
+    questions:
+        - serviceDefinitionDocument.yml
+- Page 35
+    name: Service description
+    questions:
+        - serviceName.yml
+        - serviceSummary.yml
+- Page 36
+    name: Service details
+    questions:
+        - undefined.yml
+- Page 37
+    name: Service type
+    questions:
+        - serviceTypes.yml
+- Page 38
+    name: Service type
+    questions:
+        - serviceTypes.yml
+- Page 39
+    name: Service type
+    questions:
+        - undefined.yml
+- Page 40
+    name: Support
+    questions:
+        - supportTypes.yml
+        - supportForThirdParties.yml
+        - supportAvailability.yml
+        - supportResponseTime.yml
+        - incidentEscalation.yml
+- Page 41
+    name: Terms and conditions
+    questions:
+        - terminationCost.yml
+        - minimumContractPeriod.yml
+        - termsAndConditionsDocument.yml

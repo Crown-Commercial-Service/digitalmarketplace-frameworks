@@ -1,0 +1,31 @@
+requirements: 'Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.'
+filters: 'Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.'
+hint: 'How is storage media containing consumer data protected from unauthorised physical access? Choose 1.'
+dependsOnLots: 'SaaS, PaaS, IaaS'
+assuranceApproach: 4answers-type1
+fields:
+    -
+        type: radio
+        label: 'CPA Foundation-grade assured components'
+        filterLabel: 'CPA Foundation-grade assured components'
+    -
+        type: radio
+        label: 'FIPS-assured encryption'
+        filterLabel: 'FIPS-assured encryption'
+    -
+        type: radio
+        label: 'Other encryption'
+        filterLabel: 'Other encryption'
+    -
+        type: radio
+        label: 'Secure containers, racks or cages'
+        filterLabel: 'Secure containers, racks or cages'
+    -
+        type: radio
+        label: 'Physical access control'
+        filterLabel: 'Physical access control'
+    -
+        type: radio
+        label: 'No protection'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Data-at-rest protection'

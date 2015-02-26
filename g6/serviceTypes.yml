@@ -1,0 +1,26 @@
+dependsOnLots: SCS
+hint: 'You can choose multiple categories'
+mockAnswer: 'Content management system'
+fields:
+    -
+        type: checkbox
+        label: Implementation
+        filterLabel: Implementation
+    -
+        type: checkbox
+        label: 'Ongoing support'
+        filterLabel: 'Ongoing support'
+    -
+        type: checkbox
+        label: Planning
+        filterLabel: Planning
+    -
+        type: checkbox
+        label: Testing
+        filterLabel: Testing
+    -
+        type: checkbox
+        label: Training
+        filterLabel: Training
+validationNotAnswered: 'This question requires an answer.'
+question: 'Choose the categories that apply to your service'

@@ -1,0 +1,32 @@
+requirements: 'Data in transit is protected between the user’s devices and the service'
+filters: 'Data in transit is protected between the user’s devices and the service'
+hint: 'Choose 1'
+dependsOnLots: 'SaaS, PaaS, IaaS'
+assuranceApproach: 4answers-type1
+assuranceHint: 'How can you support the above answer?'
+fields:
+    -
+        type: radio
+        label: 'Encrypted PSN service'
+        filterLabel: 'Encrypted PSN service'
+    -
+        type: radio
+        label: 'PSN service'
+        filterLabel: 'PSN service'
+    -
+        type: radio
+        label: 'CPA Foundation VPN Gateway'
+        filterLabel: 'CPA Foundation VPN Gateway'
+    -
+        type: radio
+        label: 'VPN using TLS, version 1.2 or later'
+        filterLabel: 'VPN using TLS, version 1.2 or later'
+    -
+        type: radio
+        label: 'VPN using legacy SSL or TLS'
+        filterLabel: 'VPN using legacy SSL or TLS'
+    -
+        type: radio
+        label: 'No encryption'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Data protection between user device and service'

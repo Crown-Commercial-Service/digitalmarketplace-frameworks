@@ -1,0 +1,8 @@
+dependsOnLots: SaaS
+hint: 'Examples of identity standards include OAuth and SAML. (Optional.)'
+listItemName: 'identity standards example'
+fields:
+    -
+        type: list
+        addthing: 'Add another standard'
+question: 'Identity standards your service uses'
