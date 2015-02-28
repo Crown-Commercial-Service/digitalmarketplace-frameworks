@@ -1,10 +1,15 @@
+question: 'Skills Framework for the Information Age (SFIA) rate card'
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
 mockAnswer: 'Rate Card Umbraco 102014.odf'
 hint: 'Please upload your SFIA rate card if you have one. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)'
-fields:
-    -
-        type: upload
-validationUploadFail: 'Your document failed to upload. Please try again.'
-validationWrongFormat: 'Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).'
-validationTooLarge: 'Your document exceeds the 5MB limit. Please reduce file size.'
-question: 'Skills Framework for the Information Age (SFIA) rate card'
+type: upload
+validations:
+  -
+    name: uploadFail
+    message: 'Your document failed to upload. Please try again.'
+  -
+    name: wrongFormat
+    message: 'Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).'
+  -
+    name: tooLarge
+    message: 'Your document exceeds the 5MB limit. Please reduce file size.'

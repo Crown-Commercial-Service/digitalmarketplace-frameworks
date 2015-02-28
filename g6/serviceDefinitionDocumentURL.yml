@@ -1,11 +1,18 @@
+question: 'Service definition document'
 hint: 'Please upload your service definition. Refer to the ITT documentation for further guidance on what to include. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)'
 mockAnswer: 'Umbraco Service_Definition 102014.odf'
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
-fields:
-    -
-        type: upload
-validationNotAnswered: 'This question requires an answer.'
-validationUploadFail: 'Your document failed to upload. Please try again.'
-validationWrongFormat: 'Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).'
-validationTooLarge: 'Your document exceeds the 5MB limit. Please reduce file size.'
-question: 'Service definition document'
+type: upload
+validations:
+  -
+    name: notAnswered
+    message: 'This question requires an answer.'
+  -
+    name: uploadFail
+    message: 'Your document failed to upload. Please try again.'
+  -
+    name: wrongFormat
+    message: 'Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).'
+  -
+    name: tooLarge
+    message: 'Your document exceeds the 5MB limit. Please reduce file size.'
