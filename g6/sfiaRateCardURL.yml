@@ -5,11 +5,11 @@ hint: 'Please upload your SFIA rate card if you have one. This document will not
 type: upload
 validations:
   -
-    name: uploadFail
-    message: 'Your document failed to upload. Please try again.'
-  -
-    name: wrongFormat
+    name: file_is_open_document_format
     message: 'Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).'
   -
-    name: tooLarge
+    name: file_is_less_than_5mb
     message: 'Your document exceeds the 5MB limit. Please reduce file size.'
+  -
+    name: file_can_be_saved
+    message: 'Your document failed to upload. Please try again.'
