@@ -1,0 +1,8 @@
+hint: 'Include your product name only. Using additional keywords may impact your acceptance on to the Digital Marketplace.'
+mockAnswer: 'Umbraco CMS'
+dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
+fields:
+    -
+        type: text
+validationNotAnswered: 'This question requires an answer.'
+question: 'Service name'

@@ -1,0 +1,11 @@
+requirements: 'The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to authenticate to and access management interfaces for the service (Principle 10 should be used assess the risks of different approaches to meet this objective).'
+filters: 'The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to authenticate to and access management interfaces for the service (Principle 10 should be used assess the risks of different approaches to meet this objective).'
+hint: 'Can only authorised individuals from the consumer organisation access management interfaces for the service?'
+dependsOnLots: 'SaaS, PaaS, IaaS'
+assuranceApproach: 2answers-type2
+fields:
+    -
+        type: boolean
+        filterLabel: 'User authentication and access management'
+validationNotAnswered: 'This question requires an answer.'
+question: 'User authentication and access management'

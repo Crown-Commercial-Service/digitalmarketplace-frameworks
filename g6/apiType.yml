@@ -1,0 +1,7 @@
+dependsOnLots: 'SaaS, PaaS, IaaS'
+hint: 'Examples of API include RESTful and SOAP.'
+fields:
+    -
+        type: text
+validationNotAnswered: 'This question requires an answer.'
+question: 'API type'

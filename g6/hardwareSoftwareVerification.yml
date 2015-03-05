@@ -1,0 +1,11 @@
+requirements: 'The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.'
+filters: 'The consumer understands and accepts how the service provider verifies that hardware and software used in the service is genuine and has not been tampered with.'
+hint: 'Do you verify that the hardware and software used in the service are genuine and have not been obviously tampered with?'
+dependsOnLots: 'PaaS, IaaS'
+assuranceApproach: 2answers-type1
+fields:
+    -
+        type: boolean
+        filterLabel: 'Hardware and software verification'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Hardware and software verification'

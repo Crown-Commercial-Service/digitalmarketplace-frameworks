@@ -1,0 +1,27 @@
+requirements: 'The geographic location(s) where consumer data is stored, processed or managed from (to country level)'
+filters: 'The geographic location(s) where consumer data is stored, processed or managed from (to country level)'
+hint: 'Where are the service provider''s datacentres located? Choose all that apply.'
+dependsOnLots: 'SaaS, PaaS, IaaS'
+assuranceApproach: 3answers-type1
+fields:
+    -
+        type: checkbox
+        label: UK
+        filterLabel: UK
+    -
+        type: checkbox
+        label: EU
+        filterLabel: EU
+    -
+        type: checkbox
+        label: 'USA - Safe Harbor'
+        filterLabel: 'USA - Safe Harbor'
+    -
+        type: checkbox
+        label: 'Other countries with data protection treaties'
+        filterLabel: 'Other countries with data protection treaties'
+    -
+        type: checkbox
+        label: 'Rest of world'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Datacentre location'

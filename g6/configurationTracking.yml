@@ -1,0 +1,11 @@
+requirements: 'Consumers should have confidence that the status, location and configuration of service components (including hardware and software components) are tracked throughout their lifetime within the service.'
+filters: 'Consumers should have confidence that the status, location and configuration of service components (including hardware and software components) are tracked throughout their lifetime within the service.'
+hint: 'Do you track the status, location and configuration of service components throughout their lifetime?'
+dependsOnLots: 'PaaS, IaaS'
+assuranceApproach: 2answers-type1
+fields:
+    -
+        type: boolean
+        filterLabel: 'Configuration and change management tracking'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Configuration and change management tracking'

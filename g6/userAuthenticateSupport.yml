@@ -1,0 +1,11 @@
+requirements: 'The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.'
+filters: 'The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.'
+hint: 'Can only authorised individuals from the consumer organisation perform actions affecting the consumer’s service through your support channels?'
+dependsOnLots: 'SaaS, PaaS, IaaS'
+assuranceApproach: 2answers-type2
+fields:
+    -
+        type: boolean
+        filterLabel: 'User access control through support channels'
+validationNotAnswered: 'This question requires an answer.'
+question: 'User access control through support channels'

@@ -1,0 +1,7 @@
+dependsOnLots: 'SaaS, PaaS, IaaS'
+fields:
+    -
+        type: boolean
+        filterLabel: 'Open-source software used and supported'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Open-source software used and supported'

@@ -1,0 +1,31 @@
+requirements: 'Data in transit is protected internally within the service'
+filters: 'Data in transit is protected internally within the service'
+hint: 'Choose 1'
+dependsOnLots: 'PaaS, IaaS'
+assuranceApproach: 4answers-type1
+fields:
+    -
+        type: radio
+        label: 'VPN using TLS, version 1.2 or later'
+        filterLabel: 'VPN using TLS, version 1.2 or later'
+    -
+        type: radio
+        label: 'VPN using legacy SSL or TLS'
+        filterLabel: 'VPN using legacy SSL or TLS'
+    -
+        type: radio
+        label: VLAN
+        filterLabel: VLAN
+    -
+        type: radio
+        label: 'Bonded fibre optic connections'
+        filterLabel: 'Bonded fibre optic connections'
+    -
+        type: radio
+        label: 'Other network protection'
+        filterLabel: 'Other network protection'
+    -
+        type: radio
+        label: 'No encryption'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Data protection within service'

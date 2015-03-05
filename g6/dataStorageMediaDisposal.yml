@@ -1,0 +1,35 @@
+requirements: 'Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life'
+filters: 'Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life'
+hint: 'How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime? Choose 1.'
+dependsOnLots: 'PaaS, IaaS'
+assuranceApproach: 5answers-type1
+fields:
+    -
+        type: radio
+        label: 'CESG-assured destruction service (CAS(T))'
+        filterLabel: 'CESG-assured destruction service (CAS(T))'
+    -
+        type: radio
+        label: 'CPA Foundation-assured product'
+        filterLabel: 'CPA Foundation-assured product'
+    -
+        type: radio
+        label: 'CPNI-approved destruction service'
+        filterLabel: 'CPNI-approved destruction service'
+    -
+        type: radio
+        label: 'BS EN 151713:2009-compliant destruction'
+        filterLabel: 'BS EN 151713:2009-compliant destruction'
+    -
+        type: radio
+        label: 'CESG or CPNI-approved erasure process'
+        filterLabel: 'CESG or CPNI-approved erasure process'
+    -
+        type: radio
+        label: 'Other secure erasure process'
+        filterLabel: 'Other secure erasure process'
+    -
+        type: radio
+        label: 'Other destruction/erasure process'
+validationNotAnswered: 'This question requires an answer.'
+question: 'Storage media disposal'

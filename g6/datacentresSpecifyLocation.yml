@@ -1,0 +1,9 @@
+dependsOnLots: 'SaaS, PaaS, IaaS'
+servicePageLabel: 'User-defined data location'
+assuranceApproach: null
+fields:
+    -
+        type: boolean
+        filterLabel: 'User-defined data location'
+validationNotAnswered: 'This question requires an answer.'
+question: 'User-defined data location'
