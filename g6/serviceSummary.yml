@@ -7,3 +7,4 @@ fields:
         maxLengthInWords: 50
 validationNotAnswered: 'This question requires an answer.'
 question: 'Service summary'
+type: textbox_large
