@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Guaranteed resources defined'
+type: boolean
+filterLabel: 'Guaranteed resources defined'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Guaranteed resources defined'

@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Self-service provisioning supported'
+type: boolean
+filterLabel: 'Self-service provisioning supported'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Self-service provisioning supported'

@@ -3,9 +3,7 @@ filters: 'Consumers should be sufficiently confident that accounts or credential
 hint: 'Are accounts or credentials specific to redundant equipment revoked to reduce their value to an attacker?'
 dependsOnLots: 'PaaS, IaaS'
 assuranceApproach: 3answers-type1
-fields:
-    -
-        type: boolean
-        filterLabel: 'Redundant equipment accounts revoked'
+type: boolean
+filterLabel: 'Redundant equipment accounts revoked'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Redundant equipment accounts revoked'

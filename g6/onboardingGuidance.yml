@@ -3,9 +3,7 @@ filters: 'The consumer understands how to safely connect to the service whilst m
 hint: 'Do you provide onboarding guidance covering secure connection to the service?'
 dependsOnLots: 'PaaS, IaaS'
 assuranceApproach: 2answers-type1
-fields:
-    -
-        type: boolean
-        filterLabel: 'Onboarding guidance provided'
+type: boolean
+filterLabel: 'Onboarding guidance provided'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Onboarding guidance provided'

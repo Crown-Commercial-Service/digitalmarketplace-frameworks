@@ -3,21 +3,18 @@ filters: 'Service providers must state whether the service is a public, private 
 hint: 'Is the service a public, private, community or hybrid cloud service?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 3answers-type1
-fields:
+type: radios
+options:
     -
-        type: radio
         label: 'Public cloud'
         filterLabel: 'Public cloud'
     -
-        type: radio
         label: 'Community cloud'
         filterLabel: 'Community cloud'
     -
-        type: radio
         label: 'Private cloud'
         filterLabel: 'Private cloud'
     -
-        type: radio
         label: 'Hybrid cloud'
         filterLabel: 'Hybrid cloud'
 validationNotAnswered: 'This question requires an answer.'

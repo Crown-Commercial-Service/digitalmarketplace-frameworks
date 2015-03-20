@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Persistent storage supported'
+type: boolean
+filterLabel: 'Persistent storage supported'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Persistent storage supported'

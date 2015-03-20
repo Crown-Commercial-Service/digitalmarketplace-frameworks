@@ -3,9 +3,7 @@ filters: 'Consumers should have confidence that pre-defined processes are in pla
 hint: 'Do you have a defined process for reporting security incidents experienced by consumers and external entities?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 2answers-type1
-fields:
-    -
-        type: boolean
-        filterLabel: 'Consumer reporting of security incidents'
+type: boolean
+filterLabel: 'Consumer reporting of security incidents'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Consumer reporting of security incidents'

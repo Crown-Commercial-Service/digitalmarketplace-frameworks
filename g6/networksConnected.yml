@@ -1,33 +1,27 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
 mockAnswer: Internet
 hint: 'Choose all that apply.'
-fields:
+type: checkboxes
+options:
     -
-        type: checkbox
         label: Internet
         filterLabel: Internet
     -
-        type: checkbox
         label: 'Public Services Network (PSN)'
         filterLabel: 'Public Services Network (PSN)'
     -
-        type: checkbox
         label: 'Government Secure intranet (GSi)'
         filterLabel: 'Government Secure intranet (GSi)'
     -
-        type: checkbox
         label: 'Police National Network (PNN)'
         filterLabel: 'Police National Network (PNN)'
     -
-        type: checkbox
         label: 'New NHS Network (N3)'
         filterLabel: 'New NHS Network (N3)'
     -
-        type: checkbox
         label: 'Joint Academic Network (JANET)'
         filterLabel: 'Joint Academic Network (JANET)'
     -
-        type: checkbox
         label: Other
 validationNotAnswered: 'This question requires an answer.'
 question: 'Networks the service is directly connected to'

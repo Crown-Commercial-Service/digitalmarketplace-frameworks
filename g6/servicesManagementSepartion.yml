@@ -3,9 +3,7 @@ filters: 'Consumers should have confidence that their management of the service 
 hint: 'Is your management of a consumer’s service kept separate from other consumers?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 4answers-type3
-fields:
-    -
-        type: boolean
-        filterLabel: 'Services management separation'
+type: boolean
+filterLabel: 'Services management separation'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Services management separation'

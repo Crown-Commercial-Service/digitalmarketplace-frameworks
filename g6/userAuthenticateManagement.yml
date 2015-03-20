@@ -3,9 +3,7 @@ filters: 'The consumer has sufficient confidence that only authorised individual
 hint: 'Can only authorised individuals from the consumer organisation access management interfaces for the service?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 2answers-type2
-fields:
-    -
-        type: boolean
-        filterLabel: 'User authentication and access management'
+type: boolean
+filterLabel: 'User authentication and access management'
 validationNotAnswered: 'This question requires an answer.'
 question: 'User authentication and access management'

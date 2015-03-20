@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Offline working and syncing supported'
+type: boolean
+filterLabel: 'Offline working and syncing supported'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Offline working and syncing supported'

@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'VAT included'
+type: boolean
+filterLabel: 'VAT included'
 validationNotAnswered: 'This question requires an answer.'
 question: 'VAT included'

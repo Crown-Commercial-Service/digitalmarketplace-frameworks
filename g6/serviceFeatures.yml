@@ -2,9 +2,7 @@ hint: 'Include the technical features of your product, eg graphical workflow, re
 mockAnswer: 'Graphical workflow, Remote access, Revision control'
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
 listItemName: 'service feature'
-fields:
-    -
-        type: list
-        addthing: 'Add another feature'
+type: list
+addthing: 'Add another feature'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Service features'

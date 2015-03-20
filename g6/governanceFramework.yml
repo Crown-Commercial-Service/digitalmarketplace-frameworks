@@ -3,9 +3,7 @@ filters: 'The consumer should have sufficient confidence that the governance fra
 hint: 'Do you have a governance framework and process in place for the service, eg ISO277001:2013?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 2answers-type1
-fields:
-    -
-        type: boolean
-        filterLabel: 'Governance framework'
+type: boolean
+filterLabel: 'Governance framework'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Governance framework'

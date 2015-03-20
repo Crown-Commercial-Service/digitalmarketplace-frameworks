@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
 hint: ""
-fields:
-    -
-        type: text
+type: text
 validationNotAnswered: 'This question requires an answer.'
 question: 'Service deprovisioning time'

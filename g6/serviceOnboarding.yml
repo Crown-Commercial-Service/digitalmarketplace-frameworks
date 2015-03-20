@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Service onboarding process included'
+type: boolean
+filterLabel: 'Service onboarding process included'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Service onboarding process included'

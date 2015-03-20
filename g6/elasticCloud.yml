@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Elastic cloud approach supported'
+type: boolean
+filterLabel: 'Elastic cloud approach supported'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Elastic cloud approach supported'

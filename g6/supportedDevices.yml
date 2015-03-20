@@ -1,20 +1,17 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
 hint: 'Choose all that apply.'
-fields:
+type: checkboxes
+options:
     -
-        type: checkbox
         label: PC
         filterLabel: PC
     -
-        type: checkbox
         label: Mac
         filterLabel: Mac
     -
-        type: checkbox
         label: Smartphone
         filterLabel: Smartphone
     -
-        type: checkbox
         label: Tablet
         filterLabel: Tablet
 validationNotAnswered: 'This question requires an answer.'

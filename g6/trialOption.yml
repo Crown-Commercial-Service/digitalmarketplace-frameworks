@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Trial option'
+type: boolean
+filterLabel: 'Trial option'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Trial option'

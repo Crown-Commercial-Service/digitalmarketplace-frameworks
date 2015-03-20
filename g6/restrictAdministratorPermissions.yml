@@ -3,9 +3,7 @@ filters: 'The consumer can manage the risks of their own privileged access, e.g.
 hint: 'Can consumers restrict permissions given to their administrators?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 2answers-type2
-fields:
-    -
-        type: boolean
-        filterLabel: 'Administrator permissions'
+type: boolean
+filterLabel: 'Administrator permissions'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Administrator permissions'

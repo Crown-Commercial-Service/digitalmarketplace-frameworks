@@ -3,9 +3,7 @@ filters: 'Consumers should have confidence that the status, location and configu
 hint: 'Do you track the status, location and configuration of service components throughout their lifetime?'
 dependsOnLots: 'PaaS, IaaS'
 assuranceApproach: 2answers-type1
-fields:
-    -
-        type: boolean
-        filterLabel: 'Configuration and change management tracking'
+type: boolean
+filterLabel: 'Configuration and change management tracking'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Configuration and change management tracking'

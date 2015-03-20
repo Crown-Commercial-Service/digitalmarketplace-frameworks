@@ -3,9 +3,7 @@ filters: 'Consumers should be sufficiently confident that all equipment potentia
 hint: 'Is all equipment potentially containing consumer data, credentials or configuration information identified at the end of its life or prior to being recycled? Choose 1.'
 dependsOnLots: 'PaaS, IaaS'
 assuranceApproach: 4answers-type2
-fields:
-    -
-        type: boolean
-        filterLabel: 'Secure equipment disposal'
+type: boolean
+filterLabel: 'Secure equipment disposal'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Secure equipment disposal'
