@@ -1,5 +1,8 @@
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
 hint: 'eg 24/7 or 9 to 5. (Maximum 20 words.)'
 type: text
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Support availablility'

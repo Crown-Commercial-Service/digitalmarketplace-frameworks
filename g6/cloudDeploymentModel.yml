@@ -17,5 +17,8 @@ options:
     -
         label: 'Hybrid cloud'
         filterLabel: 'Hybrid cloud'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Cloud deployment model'

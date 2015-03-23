@@ -25,5 +25,8 @@ options:
         filterLabel: 'Username and strong password/passphrase enforcement'
     -
         label: 'Other mechanism'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Identity and authentication controls'

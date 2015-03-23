@@ -4,5 +4,8 @@ dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
 listItemName: 'service benefit'
 type: list
 addthing: 'Add another business benefit'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Service benefits'

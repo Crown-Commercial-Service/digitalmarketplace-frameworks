@@ -5,5 +5,8 @@ dependsOnLots: 'PaaS, IaaS'
 assuranceApproach: 2answers-type1
 type: boolean
 filterLabel: 'Configuration and change management tracking'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Configuration and change management tracking'

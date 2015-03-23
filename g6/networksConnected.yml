@@ -23,5 +23,8 @@ options:
         filterLabel: 'Joint Academic Network (JANET)'
     -
         label: Other
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Networks the service is directly connected to'

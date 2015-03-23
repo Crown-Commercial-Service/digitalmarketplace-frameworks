@@ -15,5 +15,8 @@ options:
         filterLabel: Year
     -
         label: Other
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Minimum contract period'

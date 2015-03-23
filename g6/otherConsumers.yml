@@ -16,5 +16,8 @@ options:
         filterLabel: 'A specific consumer group, eg Police, Defence or Health'
     -
         label: 'Anyone - public'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Type of consumer'

@@ -70,5 +70,8 @@ options:
     -
         label: 'Transport and logistics'
         filterLabel: 'Transport and logistics'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Choose the categories that apply to your service'

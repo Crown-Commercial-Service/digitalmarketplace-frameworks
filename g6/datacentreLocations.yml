@@ -19,5 +19,8 @@ options:
         filterLabel: 'Other countries with data protection treaties'
     -
         label: 'Rest of world'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Datacentre location'

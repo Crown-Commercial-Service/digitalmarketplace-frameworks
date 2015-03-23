@@ -30,5 +30,8 @@ options:
         filterLabel: 'Uptime Institute Tier 4 datacentre'
     -
         label: 'None of the above'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Datacentre tier'

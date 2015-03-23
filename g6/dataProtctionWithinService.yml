@@ -22,5 +22,8 @@ options:
         filterLabel: 'Other network protection'
     -
         label: 'No encryption'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Data protection within service'

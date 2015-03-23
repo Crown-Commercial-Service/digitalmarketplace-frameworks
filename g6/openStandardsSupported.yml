@@ -2,5 +2,8 @@ dependsOnLots: 'SaaS, PaaS, IaaS'
 hint: 'Take a look at the GOV.UK Open Standards principles for more information on open standards.'
 type: boolean
 filterLabel: 'Open standards supported and documented'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Open standards supported and documented'

@@ -2,5 +2,8 @@ hint: 'Include your product name only. Using additional keywords may impact your
 mockAnswer: 'Umbraco CMS'
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
 type: text
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Service name'

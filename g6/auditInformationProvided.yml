@@ -13,5 +13,8 @@ options:
     -
         label: 'Data made available by negotiation'
         filterLabel: 'Data made available by negotiation'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Audit information provided'

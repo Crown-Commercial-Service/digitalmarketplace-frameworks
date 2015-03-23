@@ -17,5 +17,8 @@ options:
     -
         label: Internet
         filterLabel: Internet
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Interconnection method provided'
