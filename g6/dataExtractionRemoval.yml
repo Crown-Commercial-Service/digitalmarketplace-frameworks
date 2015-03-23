@@ -1,9 +1,7 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
 servicePageLabel: 'Data extraction/removal plan in place'
 assuranceApproach: null
-fields:
-    -
-        type: boolean
-        filterLabel: 'Data extraction/removal plan in place'
+type: boolean
+filterLabel: 'Data extraction/removal plan in place'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Data extraction/removal plan in place'

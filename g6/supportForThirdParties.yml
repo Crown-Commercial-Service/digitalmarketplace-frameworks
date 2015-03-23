@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Support accessible to any third-party suppliers'
+type: boolean
+filterLabel: 'Support accessible to any third-party suppliers'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Support accessible to any third-party suppliers'

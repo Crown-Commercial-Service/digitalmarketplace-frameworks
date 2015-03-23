@@ -3,17 +3,15 @@ filters: 'The consumer understands any service configuration options available t
 hint: 'Which end device is the cloud service accessible from?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 2answers-type1
-fields:
+type: radios
+options:
     -
-        type: radio
         label: 'Corporate/enterprise devices'
         filterLabel: 'Corporate/enterprise devices'
     -
-        type: radio
         label: 'Partner devices'
         filterLabel: 'Partner devices'
     -
-        type: radio
         label: 'Unknown devices'
         filterLabel: 'Unknown devices'
 validationNotAnswered: 'This question requires an answer.'

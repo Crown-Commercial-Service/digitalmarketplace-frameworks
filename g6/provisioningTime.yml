@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
 hint: 'How long does it take to get your service up and running? For example 1 to 5 hours, 2 to 3 days.'
-fields:
-    -
-        type: text
+type: text
 validationNotAnswered: 'This question requires an answer.'
 question: 'Service provisioning time'

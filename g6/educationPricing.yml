@@ -1,8 +1,6 @@
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
 hint: 'Do you offer special pricing for educational organisations?'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Education pricing'
+type: boolean
+filterLabel: 'Education pricing'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Education pricing'

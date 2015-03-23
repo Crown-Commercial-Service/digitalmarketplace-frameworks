@@ -2,9 +2,7 @@ dependsOnLots: 'SaaS, PaaS, IaaS'
 servicePageLabel: 'Backup, disaster recovery and resilience plan in place'
 assuranceApproach: null
 hint: 'You can provide more detail on your disaster recovery plan in your service definition document.'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Backup, disaster recovery and resilience plan in place'
+type: boolean
+filterLabel: 'Backup, disaster recovery and resilience plan in place'
 validationNotAnswered: 'Please answer if plans for backup, disaster recovery and resilience are in place'
 question: 'Backup, disaster recovery and resilience plan in place'

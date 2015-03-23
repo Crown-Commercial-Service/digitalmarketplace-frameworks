@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Service offboarding process included'
+type: boolean
+filterLabel: 'Service offboarding process included'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Service offboarding process included'

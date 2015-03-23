@@ -1,40 +1,32 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
 hint: 'Choose all that apply.'
-fields:
+type: checkboxes
+options:
     -
-        type: checkbox
         label: 'Internet Explorer 6'
         filterLabel: 'Internet Explorer 6'
     -
-        type: checkbox
         label: 'Internet Explorer 7'
         filterLabel: 'Internet Explorer 7'
     -
-        type: checkbox
         label: 'Internet Explorer 8'
         filterLabel: 'Internet Explorer 8'
     -
-        type: checkbox
         label: 'Internet Explorer 9'
         filterLabel: 'Internet Explorer 9'
     -
-        type: checkbox
         label: 'Internet Explorer 10+'
         filterLabel: 'Internet Explorer 10+'
     -
-        type: checkbox
         label: Firefox
         filterLabel: Firefox
     -
-        type: checkbox
         label: Chrome
         filterLabel: Chrome
     -
-        type: checkbox
         label: Safari
         filterLabel: Safari
     -
-        type: checkbox
         label: Opera
         filterLabel: Opera
 validationNotAnswered: 'This question requires an answer.'

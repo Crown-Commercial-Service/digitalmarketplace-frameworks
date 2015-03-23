@@ -2,9 +2,7 @@ hint: 'Include benefits that show how your service helps users improve their bus
 mockAnswer: 'Publish content, Quickly manage content on the move'
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
 listItemName: 'service benefit'
-fields:
-    -
-        type: list
-        addthing: 'Add another business benefit'
+type: list
+addthing: 'Add another business benefit'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Service benefits'

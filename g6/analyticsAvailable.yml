@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Real-time management information available'
+type: boolean
+filterLabel: 'Real-time management information available'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Real-time management information available'

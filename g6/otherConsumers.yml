@@ -3,21 +3,18 @@ filters: 'Consumers should understand the types of consumer they share the servi
 hint: 'What types of other consumer do you share the service or platform with?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 3answers-type1
-fields:
+type: radios
+options:
     -
-        type: radio
         label: 'No other consumer'
         filterLabel: 'No other consumer'
     -
-        type: radio
         label: 'Only government consumers'
         filterLabel: 'Only government consumers'
     -
-        type: radio
         label: 'A specific consumer group, eg Police, Defence or Health'
         filterLabel: 'A specific consumer group, eg Police, Defence or Health'
     -
-        type: radio
         label: 'Anyone - public'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Type of consumer'

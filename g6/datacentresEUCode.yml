@@ -2,9 +2,7 @@ dependsOnLots: 'SaaS, PaaS, IaaS'
 servicePageLabel: 'Datacentres adhere to EU Code of Conduct for Operations'
 assuranceApproach: null
 assuranceHint: null
-fields:
-    -
-        type: boolean
-        filterLabel: 'Datacentres adhere to EU Code of Conduct for Operations'
+type: boolean
+filterLabel: 'Datacentres adhere to EU Code of Conduct for Operations'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Datacentres adhere to EU Code of Conduct for Operations'

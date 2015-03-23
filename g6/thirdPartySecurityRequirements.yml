@@ -3,9 +3,7 @@ filters: 'The consumer understands and accepts how the service provider’s proc
 hint: 'Do you ensure that relevant security requirements, such as the Cloud Security Principles, are placed on third-party suppliers and delivery partners?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 2answers-type1
-fields:
-    -
-        type: boolean
-        filterLabel: 'Third-party supplier security requirements'
+type: boolean
+filterLabel: 'Third-party supplier security requirements'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Third-party supplier security requirements'

@@ -3,9 +3,7 @@ filters: 'The consumer understands and accepts how the service provider manages 
 hint: 'Do you manage your third-party suppliers'' compliance with relevant security requirements?'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 2answers-type1
-fields:
-    -
-        type: boolean
-        filterLabel: 'Third-party supplier compliance monitoring'
+type: boolean
+filterLabel: 'Third-party supplier compliance monitoring'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Third-party supplier compliance monitoring'

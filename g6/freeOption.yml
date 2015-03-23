@@ -1,7 +1,5 @@
 dependsOnLots: 'SaaS, PaaS, IaaS'
-fields:
-    -
-        type: boolean
-        filterLabel: 'Free option'
+type: boolean
+filterLabel: 'Free option'
 validationNotAnswered: 'This question requires an answer.'
 question: 'Free option'
