@@ -14,5 +14,8 @@ options:
     -
         label: Tablet
         filterLabel: Tablet
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Supported devices'

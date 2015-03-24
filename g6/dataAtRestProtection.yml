@@ -22,5 +22,8 @@ options:
         filterLabel: 'Physical access control'
     -
         label: 'No protection'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Data-at-rest protection'

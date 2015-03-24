@@ -14,5 +14,8 @@ options:
     -
         label: 'Unknown devices'
         filterLabel: 'Unknown devices'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Device access method'

@@ -5,5 +5,8 @@ dependsOnLots: 'PaaS, IaaS'
 assuranceApproach: 3answers-type2
 type: boolean
 filterLabel: 'Service configuration guidance'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Service configuration guidance'

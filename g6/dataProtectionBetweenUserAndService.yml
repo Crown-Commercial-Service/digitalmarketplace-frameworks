@@ -23,5 +23,8 @@ options:
         filterLabel: 'VPN using legacy SSL or TLS'
     -
         label: 'No encryption'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Data protection between user device and service'

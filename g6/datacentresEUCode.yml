@@ -4,5 +4,8 @@ assuranceApproach: null
 assuranceHint: null
 type: boolean
 filterLabel: 'Datacentres adhere to EU Code of Conduct for Operations'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Datacentres adhere to EU Code of Conduct for Operations'

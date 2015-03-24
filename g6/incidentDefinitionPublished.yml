@@ -5,5 +5,8 @@ assuranceApproach: 2answers-type1
 hint: 'Do you publish to consumers your definition of a security incident, along with the format, incident triggers and timescales for reporting such incidents?'
 type: boolean
 filterLabel: 'Security incident definition published'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Security incident definition published'

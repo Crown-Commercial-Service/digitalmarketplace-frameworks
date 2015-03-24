@@ -5,5 +5,8 @@ dependsOnLots: 'PaaS, IaaS'
 assuranceApproach: 3answers-type1
 type: boolean
 filterLabel: 'Redundant equipment accounts revoked'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Redundant equipment accounts revoked'

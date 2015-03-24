@@ -5,5 +5,8 @@ dependsOnLots: 'PaaS, IaaS'
 assuranceApproach: 4answers-type2
 type: boolean
 filterLabel: 'Secure equipment disposal'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Secure equipment disposal'

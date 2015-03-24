@@ -1,8 +1,17 @@
 hint: 'This is an indicative price. Users will be able to refer to your pricing document for more information.'
 dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
-validationNoMinPriceSpecified: 'Minimum price requires an answer.'
-validationNoUnitSpecified: 'Pricing unit requires an answer. If none of the provided units apply, please choose ''Unit''.'
-validationNotANumber: 'Prices must be numbers only, without units, eg 99.95'
-validationMaxLessThanMin: 'Minimum price must be less than maximum price'
+validations:
+  -
+    name: no_min_price_specified
+    message: 'Minimum price requires an answer.'
+  -
+    name: no_unit_specified
+    message: 'Pricing unit requires an answer. If none of the provided units apply, please choose ''Unit''.'
+  -
+    name: not_a_number
+    message: 'Prices must be numbers only, without units, eg 99.95'
+  -
+    name: max_less_than_min
+    message: 'Minimum price must be less than maximum price'
 type: pricing
 question: 'Service price'

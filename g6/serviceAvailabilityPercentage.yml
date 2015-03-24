@@ -5,6 +5,11 @@ dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 3answers-type1
 type: percentage
 filterLabel: 'Service availability'
-validationNotAnswered: 'This question requires an answer.'
-validationNotANumber: 'Availability must be a number less than 100'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
+  -
+    name: not_a_number
+    message: 'Availability must be a number less than 100'
 question: 'Service availability'

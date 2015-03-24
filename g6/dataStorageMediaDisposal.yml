@@ -25,5 +25,8 @@ options:
         filterLabel: 'Other secure erasure process'
     -
         label: 'Other destruction/erasure process'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Storage media disposal'

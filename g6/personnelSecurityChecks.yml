@@ -17,5 +17,8 @@ options:
     -
         label: 'Employment checks'
         filterLabel: 'Employment checks'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Personnel security checks'

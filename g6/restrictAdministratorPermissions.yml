@@ -5,5 +5,8 @@ dependsOnLots: 'SaaS, PaaS, IaaS'
 assuranceApproach: 2answers-type2
 type: boolean
 filterLabel: 'Administrator permissions'
-validationNotAnswered: 'This question requires an answer.'
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
 question: 'Administrator permissions'
