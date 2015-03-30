@@ -16,5 +16,8 @@ validations:
   -
     name: max_less_than_min
     message: 'Minimum price must be less than maximum price'
+  -
+    name: price_string_can_be_composed
+    message: 'An error has occured'
 type: pricing
 question: 'Service price'
