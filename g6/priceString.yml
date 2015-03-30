@@ -8,7 +8,10 @@ validations:
     name: no_unit_specified
     message: 'Pricing unit requires an answer. If none of the provided units apply, please choose ''Unit''.'
   -
-    name: not_a_number
+    name: min_price_not_a_number
+    message: 'Prices must be numbers only, without units, eg 99.95'
+  -
+    name: max_price_not_a_number
     message: 'Prices must be numbers only, without units, eg 99.95'
   -
     name: max_less_than_min
