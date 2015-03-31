@@ -7,5 +7,8 @@ validations:
   -
     name: answer_required
     message: 'This question requires an answer.'
+  -
+    name: under_50_words
+    message: 'Your description must not be more than 50 words.'
 question: 'Service summary'
 type: textbox_large
