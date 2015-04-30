@@ -1,0 +1,16 @@
+dependsOnLots: IaaS
+hint: 'You can choose multiple categories.'
+mockAnswer: Compute
+type: checkboxes
+options:
+  -
+    label: Compute
+    filterLabel: Compute
+  -
+    label: Storage
+    filterLabel: Storage
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
+question: 'Choose the categories that apply to your service'
