@@ -2,7 +2,7 @@ hint: 'Choose one'
 dependsOnLots: 'SaaS, PaaS, IaaS'
 servicePageLabel: 'Datacentre tier'
 assuranceApproach: null
-type: radio
+type: radios
 options:
     -
         label: 'TIA-942 Tier 1'

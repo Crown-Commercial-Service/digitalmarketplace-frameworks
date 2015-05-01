@@ -1,0 +1,76 @@
+dependsOnLots: SaaS
+hint: 'You can choose multiple categories'
+mockAnswer: Content management system
+type: checkboxes
+options:
+  -
+    label: Accounting and finance
+    filterLabel: Accounting and finance
+  -
+    label: Business intelligence and analytics
+    filterLabel: Business intelligence and analytics
+  -
+    label: Collaboration
+    filterLabel: Collaboration
+  -
+    label: Creative and design
+    filterLabel: Creative and design
+  -
+    label: Customer relationship management (CRM)
+    filterLabel: Customer relationship management (CRM)
+  -
+    label: Data management
+    filterLabel: Data management
+  -
+    label: Electronic document and records management (EDRM)
+    filterLabel: Electronic document and records management (EDRM)
+  -
+    label: Energy and environment
+    filterLabel: Energy and environment
+  -
+    label: Healthcare
+    filterLabel: Healthcare
+  -
+    label: Human resources and employee management
+    filterLabel: Human resources and employee management
+  -
+    label: IT management
+    filterLabel: IT management
+  -
+    label: Legal
+    filterLabel: Legal
+  -
+    label: Libraries
+    filterLabel: Libraries
+  -
+    label: Marketing
+    filterLabel: Marketing
+  -
+    label: Operations management
+    filterLabel: Operations management
+  -
+    label: Project management and planning
+    filterLabel: Project management and planning
+  -
+    label: Sales
+    filterLabel: Sales
+  -
+    label: Schools and education
+    filterLabel: Schools and education
+  -
+    label: Security
+    filterLabel: Security
+  -
+    label: Software development tools
+    filterLabel: Software development tools
+  -
+    label: Telecoms
+    filterLabel: Telecoms
+  -
+    label: Transport and logistics
+    filterLabel: Transport and logistics
+validations:
+  -
+    name: answer_required
+    message: 'This question requires an answer.'
+question: 'Choose the categories that apply to your service'
