@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.4"
+install:
+  - pip install -r requirements_for_test.txt
+script:
+  - py.test
+notifications:
+  email: false
