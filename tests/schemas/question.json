@@ -1,0 +1,20 @@
+{
+  "title": "Question",
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "question": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "boolean", "text", "radios", "list", "checkboxes", "service_id",
+        "pricing", "upload", "percentage", "textbox_large"
+      ]
+    }
+  },
+  "required": [
+    "question",
+    "type"
+  ]
+}
