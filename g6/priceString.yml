@@ -1,5 +1,12 @@
 hint: 'This is an indicative price. Users will be able to refer to your pricing document for more information.'
-dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+      - SCS
 validations:
   -
     name: no_min_price_specified

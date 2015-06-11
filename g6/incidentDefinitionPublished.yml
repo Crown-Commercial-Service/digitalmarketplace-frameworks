@@ -1,6 +1,12 @@
 requirements: 'Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.'
 filters: 'Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.'
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 assuranceApproach: 2answers-type1
 hint: 'Do you publish to consumers your definition of a security incident, along with the format, incident triggers and timescales for reporting such incidents?'
 type: boolean

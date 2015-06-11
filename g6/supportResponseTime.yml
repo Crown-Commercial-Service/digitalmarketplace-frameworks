@@ -1,4 +1,11 @@
-dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+      - SCS
 hint: 'How long will it take until support can begin to be provided? eg 1 hour or 1 business day. (Maximum 20 words.)'
 type: text
 validations:

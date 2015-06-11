@@ -1,5 +1,8 @@
 id: serviceTypes
-dependsOnLots: SaaS
+depends:
+  -
+    on: lot
+    being: SaaS
 hint: 'You can choose multiple categories'
 mockAnswer: 'Content management system'
 type: checkboxes

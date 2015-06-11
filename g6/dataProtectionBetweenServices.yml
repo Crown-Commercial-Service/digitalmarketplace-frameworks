@@ -1,7 +1,12 @@
 requirements: 'Data in transit is protected between the service and other services (eg where APIs are exposed)'
 filters: 'Data in transit is protected between the service and other services (eg where APIs are exposed)'
 hint: 'Choose 1'
-dependsOnLots: 'PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - PaaS
+      - IaaS
 assuranceApproach: 4answers-type1
 type: radios
 options:

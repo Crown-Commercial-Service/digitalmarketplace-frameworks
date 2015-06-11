@@ -1,7 +1,13 @@
 requirements: 'The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.'
 filters: 'The consumer can manage the risks of their own privileged access, e.g. through ‘principle of least privilege’, providing the ability to constrain permissions given to consumer administrators.'
 hint: 'Can consumers restrict permissions given to their administrators?'
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 assuranceApproach: 2answers-type2
 type: boolean
 filterLabel: 'Administrator permissions'

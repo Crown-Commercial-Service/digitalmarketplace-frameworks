@@ -1,7 +1,13 @@
 requirements: 'Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.'
 filters: 'Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.'
 hint: 'How is storage media containing consumer data protected from unauthorised physical access? Choose 1.'
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 assuranceApproach: 4answers-type1
 type: radios
 options:

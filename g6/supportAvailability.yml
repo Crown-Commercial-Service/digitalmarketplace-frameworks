@@ -1,4 +1,11 @@
-dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+      - SCS
 hint: 'eg 24/7 or 9 to 5. (Maximum 20 words.)'
 type: text
 validations:

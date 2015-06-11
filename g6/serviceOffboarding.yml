@@ -1,4 +1,10 @@
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 type: boolean
 filterLabel: 'Service offboarding process included'
 validations:

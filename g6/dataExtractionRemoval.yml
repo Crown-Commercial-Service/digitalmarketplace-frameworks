@@ -1,4 +1,10 @@
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 servicePageLabel: 'Data extraction/removal plan in place'
 assuranceApproach: null
 type: boolean

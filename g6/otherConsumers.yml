@@ -1,7 +1,13 @@
 requirements: 'Consumers should understand the types of consumer they share the service or platform with.'
 filters: 'Consumers should understand the types of consumer they share the service or platform with.'
 hint: 'What types of other consumer do you share the service or platform with?'
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 assuranceApproach: 3answers-type1
 type: radios
 options:

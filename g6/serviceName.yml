@@ -1,6 +1,13 @@
 hint: 'Include your product name only. Using additional keywords may impact your acceptance on to the Digital Marketplace.'
 mockAnswer: 'Umbraco CMS'
-dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+      - SCS
 type: text
 validations:
   -
