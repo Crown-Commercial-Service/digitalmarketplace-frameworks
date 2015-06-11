@@ -1,7 +1,13 @@
 requirements: 'Data in transit is protected between the user’s devices and the service'
 filters: 'Data in transit is protected between the user’s devices and the service'
 hint: 'Choose 1'
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 assuranceApproach: 4answers-type1
 assuranceHint: 'How can you support the above answer?'
 type: radios

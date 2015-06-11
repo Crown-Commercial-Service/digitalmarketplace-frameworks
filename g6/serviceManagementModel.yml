@@ -1,7 +1,13 @@
 requirements: 'Consumers have sufficient confidence that the technical approach the service provider uses to manage the service does not put their data or service at risk.'
 filters: 'Consumers have sufficient confidence that the technical approach the service provider uses to manage the service does not put their data or service at risk.'
 hint: 'Which technical approach do you use for your service management? Choose 1.'
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 assuranceApproach: 2answers-type1
 type: radios
 options:

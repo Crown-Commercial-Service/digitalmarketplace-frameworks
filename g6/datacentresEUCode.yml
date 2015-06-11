@@ -1,4 +1,10 @@
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 servicePageLabel: 'Datacentres adhere to EU Code of Conduct for Operations'
 assuranceApproach: null
 assuranceHint: null

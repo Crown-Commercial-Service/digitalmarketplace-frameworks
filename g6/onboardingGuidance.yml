@@ -1,7 +1,12 @@
 requirements: 'The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.'
 filters: 'The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.'
 hint: 'Do you provide onboarding guidance covering secure connection to the service?'
-dependsOnLots: 'PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - PaaS
+      - IaaS
 assuranceApproach: 2answers-type1
 type: boolean
 filterLabel: 'Onboarding guidance provided'

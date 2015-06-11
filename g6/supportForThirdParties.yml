@@ -1,4 +1,11 @@
-dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+      - SCS
 type: boolean
 filterLabel: 'Support accessible to any third-party suppliers'
 validations:

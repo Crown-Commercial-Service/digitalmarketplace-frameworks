@@ -1,7 +1,12 @@
 requirements: 'Data in transit is protected internally within the service'
 filters: 'Data in transit is protected internally within the service'
 hint: 'Choose 1'
-dependsOnLots: 'PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - PaaS
+      - IaaS
 assuranceApproach: 4answers-type1
 type: radios
 options:

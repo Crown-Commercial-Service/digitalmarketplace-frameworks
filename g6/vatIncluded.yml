@@ -1,4 +1,11 @@
-dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+      - SCS
 type: boolean
 filterLabel: 'VAT included'
 validations:

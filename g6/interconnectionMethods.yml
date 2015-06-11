@@ -1,7 +1,12 @@
 requirements: 'The consumer understands what physical and logical interfaces their information is available from.'
 filters: 'The consumer understands what physical and logical interfaces their information is available from.'
 hint: 'What method of interconnection to the service do you provide? Choose all that apply.'
-dependsOnLots: 'PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - PaaS
+      - IaaS
 assuranceApproach: 2answers-type1
 type: checkboxes
 options:

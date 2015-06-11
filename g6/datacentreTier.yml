@@ -1,5 +1,11 @@
 hint: 'Choose one'
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 servicePageLabel: 'Datacentre tier'
 assuranceApproach: null
 type: radios

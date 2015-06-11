@@ -1,5 +1,12 @@
 question: 'Pricing document'
-dependsOnLots: 'SaaS, PaaS, IaaS, SCS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+      - SCS
 mockAnswer: 'Pricing Document Umbraco 102014.odf'
 hint: 'Please upload your pricing document. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)'
 type: upload

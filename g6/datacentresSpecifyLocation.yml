@@ -1,4 +1,10 @@
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 servicePageLabel: 'User-defined data location'
 assuranceApproach: null
 type: boolean

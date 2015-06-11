@@ -1,7 +1,12 @@
 requirements: 'Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life'
 filters: 'Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life'
 hint: 'How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime? Choose 1.'
-dependsOnLots: 'PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - PaaS
+      - IaaS
 assuranceApproach: 5answers-type1
 type: radios
 options:

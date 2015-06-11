@@ -1,4 +1,10 @@
-dependsOnLots: 'SaaS, PaaS, IaaS'
+depends:
+  -
+    on: lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
 mockAnswer: Internet
 hint: 'Choose all that apply.'
 type: checkboxes
