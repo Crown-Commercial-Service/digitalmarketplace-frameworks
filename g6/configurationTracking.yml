@@ -3,7 +3,7 @@ filters: 'Consumers should have confidence that the status, location and configu
 hint: 'Do you track the status, location and configuration of service components throughout their lifetime?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - PaaS
       - IaaS

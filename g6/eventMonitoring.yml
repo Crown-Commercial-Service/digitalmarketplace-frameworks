@@ -3,7 +3,7 @@ filters: 'Consumers should have confidence that events generated in service comp
 hint: 'Do you conduct event monitoring and analysis to identify suspicious activity?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

@@ -3,7 +3,7 @@ filters: 'The legal jurisdiction(s) in which the service provider operates'
 hint: 'Choose 1'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

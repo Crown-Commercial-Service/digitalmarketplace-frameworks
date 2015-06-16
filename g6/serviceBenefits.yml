@@ -2,7 +2,7 @@ hint: 'Include benefits that show how your service helps users improve their bus
 mockAnswer: 'Publish content, Quickly manage content on the move'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

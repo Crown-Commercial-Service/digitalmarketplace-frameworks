@@ -3,7 +3,7 @@ filters: 'The consumer understands and accepts how the service provider manages 
 hint: 'Do you manage the risks to your service from third-party suppliers and delivery partners?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

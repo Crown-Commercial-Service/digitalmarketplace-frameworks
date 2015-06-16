@@ -3,7 +3,7 @@ filters: 'Consumers should have sufficient confidence that identity and authenti
 hint: 'How do your identity and authentication controls ensure that users are authorised to access specific interfaces? Choose all that apply.'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

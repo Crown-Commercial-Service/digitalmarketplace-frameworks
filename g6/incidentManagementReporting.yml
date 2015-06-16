@@ -3,7 +3,7 @@ filters: 'Consumers should have confidence that pre-defined processes are in pla
 hint: 'Do you have a defined process for reporting security incidents experienced by consumers and external entities?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

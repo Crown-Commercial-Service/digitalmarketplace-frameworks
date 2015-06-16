@@ -2,7 +2,7 @@ hint: 'Include the technical features of your product, eg graphical workflow, re
 mockAnswer: 'Graphical workflow, Remote access, Revision control'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

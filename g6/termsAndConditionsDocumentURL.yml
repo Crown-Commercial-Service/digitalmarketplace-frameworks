@@ -2,7 +2,7 @@ question: 'Please upload your terms and conditions document'
 mockAnswer: 'Umbraco Terms_Conditions 102014.odf'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

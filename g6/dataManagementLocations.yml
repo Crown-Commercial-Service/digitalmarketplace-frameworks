@@ -3,7 +3,7 @@ filters: 'The geographic location(s) where consumer data is stored, processed or
 hint: 'Where are the services managed from? Choose all that apply.'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

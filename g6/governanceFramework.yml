@@ -3,7 +3,7 @@ filters: 'The consumer should have sufficient confidence that the governance fra
 hint: 'Do you have a governance framework and process in place for the service, eg ISO27001:2013?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

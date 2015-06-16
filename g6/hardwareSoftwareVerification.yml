@@ -3,7 +3,7 @@ filters: 'The consumer understands and accepts how the service provider verifies
 hint: 'Do you verify that the hardware and software used in the service are genuine and have not been obviously tampered with?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - PaaS
       - IaaS

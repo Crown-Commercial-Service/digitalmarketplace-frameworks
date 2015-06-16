@@ -3,7 +3,7 @@ filters: 'Consumers should be sufficiently confident that accounts or credential
 hint: 'Are accounts or credentials specific to redundant equipment revoked to reduce their value to an attacker?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - PaaS
       - IaaS

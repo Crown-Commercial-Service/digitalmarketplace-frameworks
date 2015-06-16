@@ -3,7 +3,7 @@ filters: 'Consumers should be confident that the physical security measures empl
 hint: 'Do you tell your consumers what physical security your datacentres have?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

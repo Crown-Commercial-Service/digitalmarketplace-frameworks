@@ -3,7 +3,7 @@ filters: 'Data in transit is protected internally within the service'
 hint: 'Choose 1'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - PaaS
       - IaaS

@@ -1,7 +1,7 @@
 question: 'Skills Framework for the Information Age (SFIA) rate card'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

@@ -3,7 +3,7 @@ filters: 'Consumers have sufficient confidence that the technical approach the s
 hint: 'Which technical approach do you use for your service management? Choose 1.'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

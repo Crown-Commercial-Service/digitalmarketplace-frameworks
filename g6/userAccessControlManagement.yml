@@ -3,7 +3,7 @@ filters: 'The consumer has sufficient confidence that other consumers cannot acc
 hint: 'Can consumers manage only their own service, and not access, modify or otherwise affect the service of other consumers via management tools and interfaces?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

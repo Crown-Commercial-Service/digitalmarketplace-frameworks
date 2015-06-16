@@ -1,7 +1,7 @@
 hint: 'Choose one'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS
