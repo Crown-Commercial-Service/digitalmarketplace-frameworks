@@ -3,7 +3,7 @@ filters: 'Consumers should have sufficient confidence that storage media contain
 hint: 'How is storage media containing consumer data protected from unauthorised physical access? Choose 1.'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

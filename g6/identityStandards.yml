@@ -1,6 +1,6 @@
 depends:
   -
-    on: lot
+    "on": lot
     being: SaaS
 hint: 'Examples of identity standards include OAuth and SAML. (Optional.)'
 listItemName: 'identity standards example'

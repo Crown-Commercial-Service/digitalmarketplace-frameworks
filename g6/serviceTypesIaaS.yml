@@ -1,6 +1,6 @@
 depends:
   -
-    on: lot
+    "on": lot
     being: IaaS
 hint: 'You can choose multiple categories.'
 mockAnswer: Compute

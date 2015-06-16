@@ -3,7 +3,7 @@ filters: 'Consumers should have confidence that changes to the service are asses
 hint: 'Are changes to the service assessed for potential security impact, and are changes managed and tracked through to completion?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

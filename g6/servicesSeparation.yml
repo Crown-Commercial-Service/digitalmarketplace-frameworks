@@ -3,7 +3,7 @@ filters: 'Consumers should have confidence that the service provides sufficient 
 hint: 'Do you securely separate consumer data and services from other consumers of the service?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

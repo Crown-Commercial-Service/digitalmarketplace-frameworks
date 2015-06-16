@@ -3,7 +3,7 @@ filters: 'Consumers should be content with the level of security screening condu
 hint: 'What kind of personnel security do you apply to staff who have access to the service? Choose all that apply.'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

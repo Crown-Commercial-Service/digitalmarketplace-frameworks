@@ -3,7 +3,7 @@ filters: 'Consumers are aware of the audit information that will be provided to 
 hint: 'Do you provide audit information to consumers? Choose 1.'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

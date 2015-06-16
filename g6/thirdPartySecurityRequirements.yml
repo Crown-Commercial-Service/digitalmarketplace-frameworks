@@ -3,7 +3,7 @@ filters: 'The consumer understands and accepts how the service provider’s proc
 hint: 'Do you ensure that relevant security requirements, such as the Cloud Security Principles, are placed on third-party suppliers and delivery partners?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

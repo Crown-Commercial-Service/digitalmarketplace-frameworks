@@ -1,6 +1,6 @@
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

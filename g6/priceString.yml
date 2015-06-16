@@ -1,7 +1,7 @@
 hint: 'This is an indicative price. Users will be able to refer to your pricing document for more information.'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

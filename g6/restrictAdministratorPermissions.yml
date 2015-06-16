@@ -3,7 +3,7 @@ filters: 'The consumer can manage the risks of their own privileged access, e.g.
 hint: 'Can consumers restrict permissions given to their administrators?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

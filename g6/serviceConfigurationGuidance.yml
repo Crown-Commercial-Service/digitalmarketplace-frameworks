@@ -3,7 +3,7 @@ filters: 'The consumer understands the security requirements on their processes,
 hint: 'Do you provide guidance on service configuration options and the relative impacts on security?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - PaaS
       - IaaS

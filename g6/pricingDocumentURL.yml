@@ -1,7 +1,7 @@
 question: 'Pricing document'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

@@ -3,7 +3,7 @@ filters: 'Consumers should understand the types of consumer they share the servi
 hint: 'What types of other consumer do you share the service or platform with?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

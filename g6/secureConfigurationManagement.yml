@@ -3,7 +3,7 @@ filters: 'Consumers should be sufficiently confident that configuration manageme
 hint: 'Do you have configuration management in place to ensure the integrity of the service through development, testing and deployment?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

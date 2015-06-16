@@ -3,7 +3,7 @@ filters: 'The consumer understands how to safely connect to the service whilst m
 hint: 'Do you provide onboarding guidance covering secure connection to the service?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - PaaS
       - IaaS

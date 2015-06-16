@@ -3,7 +3,7 @@ filters: 'Service providers must state whether the service is a public, private 
 hint: 'Is the service a public, private, community or hybrid cloud service?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

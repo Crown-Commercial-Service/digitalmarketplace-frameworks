@@ -3,7 +3,7 @@ filters: 'Data in transit is protected between the user’s devices and the serv
 hint: 'Choose 1'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

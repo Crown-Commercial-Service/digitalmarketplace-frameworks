@@ -3,7 +3,7 @@ filters: 'The consumer has sufficient confidence that only authorised individual
 hint: 'Can only authorised individuals from the consumer organisation access management interfaces for the service?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

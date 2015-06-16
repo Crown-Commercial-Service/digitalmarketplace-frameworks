@@ -3,7 +3,7 @@ filters: 'The consumer understands what physical and logical interfaces their in
 hint: 'What method of interconnection to the service do you provide? Choose all that apply.'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - PaaS
       - IaaS

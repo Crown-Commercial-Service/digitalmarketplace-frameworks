@@ -3,7 +3,7 @@ filters: 'Data in transit is protected between the service and other services (e
 hint: 'Choose 1'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - PaaS
       - IaaS

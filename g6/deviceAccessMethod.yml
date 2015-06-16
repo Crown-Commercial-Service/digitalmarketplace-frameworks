@@ -3,7 +3,7 @@ filters: 'The consumer understands any service configuration options available t
 hint: 'Which end device is the cloud service accessible from?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

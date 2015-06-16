@@ -1,7 +1,7 @@
 id: serviceTypes
 depends:
   -
-    on: lot
+    "on": lot
     being: SaaS
 hint: 'You can choose multiple categories'
 mockAnswer: 'Content management system'

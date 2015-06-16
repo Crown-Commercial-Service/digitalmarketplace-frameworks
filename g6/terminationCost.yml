@@ -1,6 +1,6 @@
 depends:
   -
-    on: lot
+    "on": lot
     being: 'PaaS, IaaS, SCS'
 type: boolean
 filterLabel: 'Termination cost'

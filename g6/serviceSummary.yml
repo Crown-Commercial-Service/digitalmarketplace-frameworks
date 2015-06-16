@@ -2,7 +2,7 @@ hint: 'Please provide a short description of your service. (Maximum 50 words.) Y
 mockAnswer: 'Professional website development to enhance the delivery and performance of online services based on Sitecore or Umbraco Content Management Systems. We provide development and support services for large scale, business critical websites for many organisations including NHS Direct, Department for Education and the Department for Business, Innovation and Skills.'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

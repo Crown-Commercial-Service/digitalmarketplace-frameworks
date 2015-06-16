@@ -2,7 +2,7 @@ hint: 'Include your product name only. Using additional keywords may impact your
 mockAnswer: 'Umbraco CMS'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

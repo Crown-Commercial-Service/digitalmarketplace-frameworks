@@ -3,7 +3,7 @@ hint: 'Please upload your service definition. Refer to the ITT documentation for
 mockAnswer: 'Umbraco Service_Definition 102014.odf'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS

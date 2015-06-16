@@ -3,7 +3,7 @@ filters: 'Consumers should be sufficiently confident that new and evolving threa
 hint: 'Are new and evolving threats reviewed and your services improved accordingly?'
 depends:
   -
-    on: lot
+    "on": lot
     being:
       - SaaS
       - PaaS
