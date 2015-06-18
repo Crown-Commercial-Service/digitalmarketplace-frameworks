@@ -5,7 +5,6 @@ depends:
       - SaaS
       - PaaS
       - IaaS
-mockAnswer: Internet
 hint: 'Choose all that apply.'
 type: checkboxes
 options:
