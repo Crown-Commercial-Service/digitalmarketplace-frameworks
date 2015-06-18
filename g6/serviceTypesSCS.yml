@@ -3,7 +3,6 @@ depends:
     "on": lot
     being: SCS
 hint: 'You can choose multiple categories'
-mockAnswer: 'Content management system'
 type: checkboxes
 options:
     -

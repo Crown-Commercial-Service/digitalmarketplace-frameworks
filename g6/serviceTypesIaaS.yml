@@ -3,7 +3,6 @@ depends:
     "on": lot
     being: IaaS
 hint: 'You can choose multiple categories.'
-mockAnswer: Compute
 type: checkboxes
 options:
   -
