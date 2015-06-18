@@ -23,6 +23,12 @@
         },
         "filterLabel": {
           "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
         }
       },
       "additionalProperties": false,
