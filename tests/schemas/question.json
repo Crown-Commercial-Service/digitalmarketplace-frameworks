@@ -17,18 +17,20 @@
     },
     "options": {
       "type": "array",
-      "properties": {
-        "label": {
-          "type": "string"
-        },
-        "filterLabel": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "value": {
-          "type": "string"
+      "items": {
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "filterLabel": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
         }
       },
       "additionalProperties": false,
@@ -38,12 +40,14 @@
     },
     "validations": {
       "type": "array",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "message": {
-          "type": "string"
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
         }
       },
       "additionalProperties": false,
@@ -54,12 +58,14 @@
     },
     "depends": {
       "type": "array",
-      "properties": {
-        "on": {
-          "type": "string"
-        },
-        "being": {
-          "type": "array"
+      "items": {
+        "properties": {
+          "on": {
+            "type": "string"
+          },
+          "being": {
+            "type": "array"
+          }
         }
       },
       "additionalProperties": false,
