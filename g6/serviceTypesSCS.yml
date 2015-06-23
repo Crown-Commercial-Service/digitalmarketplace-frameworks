@@ -1,7 +1,8 @@
 depends:
   -
     "on": lot
-    being: SCS
+    being:
+      - SCS
 hint: 'You can choose multiple categories'
 type: checkboxes
 options:

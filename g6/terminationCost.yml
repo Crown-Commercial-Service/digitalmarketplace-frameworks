@@ -1,7 +1,10 @@
 depends:
   -
     "on": lot
-    being: 'PaaS, IaaS, SCS'
+    being:
+      - PaaS
+      - IaaS
+      - SCS
 type: boolean
 filterLabel: 'Termination cost'
 validations:

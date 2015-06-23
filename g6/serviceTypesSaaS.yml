@@ -1,7 +1,8 @@
 depends:
   -
     "on": lot
-    being: SaaS
+    being:
+      - SaaS
 hint: 'You can choose multiple categories'
 type: checkboxes
 options:
