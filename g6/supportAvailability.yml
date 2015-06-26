@@ -12,4 +12,4 @@ validations:
   -
     name: answer_required
     message: 'This question requires an answer.'
-question: 'Support availablility'
+question: 'Support availability'
