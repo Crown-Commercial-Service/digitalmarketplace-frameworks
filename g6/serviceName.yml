@@ -13,6 +13,6 @@ validations:
     name: answer_required
     message: 'This question requires an answer.'
   -
-    name: under_100_characters
+    name: under_character_limit
     message: "Your service name can't be more than 100 characters."
 question: 'Service name'

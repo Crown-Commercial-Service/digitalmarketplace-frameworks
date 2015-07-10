@@ -13,5 +13,5 @@ filterLabel: 'Backup, disaster recovery and resilience plan in place'
 validations:
   -
     name: answer_required
-    message: 'Please answer if plans for backup, disaster recovery and resilience are in place'
+    message: 'This question requires an answer.'
 question: 'Backup, disaster recovery and resilience plan in place'
