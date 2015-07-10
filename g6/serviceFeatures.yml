@@ -15,9 +15,12 @@ validations:
     name: answer_required
     message: 'This question requires an answer.'
   -
-    name: items_under_10_words_each
-    message: 'Each feature must be less than 10 words'
+    name: under_10_words
+    message: 'Each feature must be no more than 10 words.'
   -
     name: under_10_items
-    message: 'You must have 10 or fewer features'
+    message: 'You must have 10 or fewer features.'
+  -
+    name: under_character_limit
+    message: 'Each feature must be no more than 100 characters.'
 question: 'Service features'

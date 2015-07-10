@@ -12,4 +12,10 @@ validations:
   -
     name: answer_required
     message: 'This question requires an answer.'
+  -
+    name: under_20_words
+    message: 'Support availability must be no more than 20 words.'
+  -
+    name: under_character_limit
+    message: "Support availability can't be more than 200 characters."
 question: 'Support availability'

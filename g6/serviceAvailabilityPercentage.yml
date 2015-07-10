@@ -17,5 +17,5 @@ validations:
     message: 'This question requires an answer.'
   -
     name: not_a_number
-    message: 'Availability must be a number less than 100'
+    message: 'Availability must be a number less than 100.'
 question: 'Service availability'
