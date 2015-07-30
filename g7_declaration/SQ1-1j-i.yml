@@ -1,8 +1,8 @@
-question: > 
-"To provide the services specified in this procurement, is it a legal requirement in the state where you're established to be:
+question: >
+  To provide the services specified in this procurement, is it a legal requirement in the state where you're established to be:
 
 
-- licensed?
+  - licensed?
 
-- a member of a relevant organisation?"
+  - a member of a relevant organisation?"
 type: boolean

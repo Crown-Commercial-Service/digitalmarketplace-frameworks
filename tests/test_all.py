@@ -27,10 +27,15 @@ def test_questions_match_schema(all_files):
 def all_files():
     all_paths = []
     root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    root_dir = os.path.join(root_dir, 'g6')
-    for filename in os.listdir(root_dir):
+    g6_root_dir = os.path.join(root_dir, 'g6')
+    g7d_root_dir = os.path.join(root_dir, 'g7_declaration')
+    for filename in os.listdir(g6_root_dir):
         if filename.endswith('.yml') and filename != 'index.yml':
-            filepath = os.path.join(root_dir, filename)
+            filepath = os.path.join(g6_root_dir, filename)
+            all_paths.append(filepath)
+    for filename in os.listdir(g7d_root_dir):
+        if filename.endswith('.yml') and filename != 'index.yml':
+            filepath = os.path.join(g7d_root_dir, filename)
             all_paths.append(filepath)
     return all_paths
 
