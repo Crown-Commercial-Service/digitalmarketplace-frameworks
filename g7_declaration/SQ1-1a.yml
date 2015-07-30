@@ -1,2 +1,3 @@
-question: Full name of the Potential Provider submitting the Tender. [For a Group of Economic Operators this will be the name of the Lead Contact]
+question: Full name of the potential provider applying to the G-Cloud 7 framework. 
+hint: For a group of economic operators, this will be the name of the lead contact. (Maximum 225 characters.)
 type: text
