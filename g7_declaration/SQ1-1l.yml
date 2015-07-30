@@ -1,0 +1,9 @@
+question: Relevant classifications
+type: checkboxes
+options:
+  -
+    label: Voluntary Community Social Enterprise (VCSE)
+  -
+    label: Sheltered Workshop
+  -
+    label: Public service mutual

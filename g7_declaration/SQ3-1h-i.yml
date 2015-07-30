@@ -1,0 +1,6 @@
+question: >
+  An organisation has:
+  Been guilty of serious misrepresentation in supplying the information required
+  for the verification of the absence of grounds for exclusion or the fulfilment
+  of the selection criteria; or
+type: boolean

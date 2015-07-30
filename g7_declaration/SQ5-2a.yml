@@ -1,0 +1,7 @@
+question: Please select YES or NO to indicate whether or not your business is established in the UK.
+type: radios
+options:
+  -
+    label: "YES Your business is established in the UK"
+  -
+    label: "NO Your business is not established in the UK"

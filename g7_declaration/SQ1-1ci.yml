@@ -1,0 +1,15 @@
+question: Trading status
+type: radios
+options:
+  -
+    label: public limited company
+  -
+    label: limited company
+  -
+    label: limited liability partnership
+  -
+    label: other partnership
+  -
+    label: sole trader
+  -
+    label: OTHER (please specify)
