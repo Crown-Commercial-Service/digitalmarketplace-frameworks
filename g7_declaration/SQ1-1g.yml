@@ -1,2 +1,3 @@
-question: Head office DUNS number
+question: What is the DUNS number for your organisastion's head office?
+hint: (Maximum 9 characters.)
 type: text
