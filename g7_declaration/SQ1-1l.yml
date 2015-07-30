@@ -1,9 +1,9 @@
-question: Relevant classifications
+question: Is your organisation classed as a:
 type: checkboxes
 options:
   -
-    label: Voluntary Community Social Enterprise (VCSE)
+    label: voluntary community social enterprise (VCSE)?
   -
-    label: Sheltered Workshop
+    label: sheltered workshop?
   -
-    label: Public service mutual
+    label: public service mutual?
