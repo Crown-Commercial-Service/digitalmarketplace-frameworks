@@ -1,2 +1,3 @@
-question: Date of registration in country of establishment
+question: When and where was your organisation registered?
+hint: (Maximum 255 characters.)
 type: text
