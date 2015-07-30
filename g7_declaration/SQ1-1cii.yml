@@ -1,2 +1,3 @@
-question: If you responded OTHER to SQ1.1(c) - (i) please specify, in the following text field, your trading status.
+question: If you selected 'other' to SQ1.1(c) - (i), please describe your trading status.
+hint: (Maximum 255 characters.)
 type: text
