@@ -1,2 +1,3 @@
-question: "Name of contact for the Tender, note: this person must be registered on the eSourcing Portal for this procurement"
+question: Who is the primary contact for the tender?
+hint: This person must be registered on the Digital Marketplace for this procurement.
 type: text
