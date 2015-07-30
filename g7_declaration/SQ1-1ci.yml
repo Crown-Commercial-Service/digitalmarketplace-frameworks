@@ -1,4 +1,4 @@
-question: Trading status
+question: What is the trading status of your organisation?
 type: radios
 options:
   -
@@ -12,4 +12,4 @@ options:
   -
     label: sole trader
   -
-    label: OTHER (please specify)
+    label: other (please specify)
