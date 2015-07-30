@@ -1,7 +1,7 @@
 id: SQ1.3
 question: >
-  "Do the cloud services you're providing for G-Cloud 7 have or support:"
- " - on-demand self-service? Is access to your cloud services, eg server time or network storage, automically available as needed without interaction between the supplier and the contracting body?
+  "Do the cloud services you're providing for G-Cloud 7 have or support:
+  - on-demand self-service? Is access to your cloud services, eg server time or network storage, automically available as needed without interaction between the supplier and the contracting body?
   - broad network access? Are your cloud services easily accessible over the network and across a wide range of platforms (eg mobile phones, tablets, laptops and workstations) and a mix of applications that are both thin (the bulk of data processing occurs on the server) and thick (most processing occurs on the local platform)?
   - resource pooling? Are your computing resources (eg storage, processing, memory and network bandwidth) pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand. 
   - rapid elasticity? Can your cloud services be quickly, and sometimes automatically, scaled to serve the required number of users, according to demand?
