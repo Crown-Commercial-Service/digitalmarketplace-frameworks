@@ -1,8 +1,7 @@
 question: >
-  An organisation is bankrupt or is the subject of insolvency or winding-up
-  proceedings, where the organisation’s assets are being administered by a
-  liquidator or by the court, where it is in an arrangement with creditors,
-  where its business activities are suspended or it is in any analogous
-  situation arising from a similar procedure under the laws and regulations of
-  any state;
+Within the past three years, has your organisation or any of your partner organisations:
+  
+  
+    -  been made bankrupt or the subject of insolvency or winding-up
+  proceedings?
 type: boolean
