@@ -1,4 +1,4 @@
 question: >
   Have any members of your organisation or a partner organisation been legally found to be in breach of tax payments or social security contributions?
-hint: "Visit http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made to check that your organisation complies with Regulation 57(3) in the Public Contracts Regulations 2015.
+hint: "Visit http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made to check that your organisation complies with Regulation 57(3) in the Public Contracts Regulations 2015."
 type: boolean
