@@ -1,13 +1,15 @@
 question: What is the size of your organisation?
-
-
-    - micro
-  
-    - small 
-  
-    - medium
-  
-    - large
-    
 hint: "For help determining company size, visit http://ec.europa.eu/growth/smes/business-friendly-environment/sme-definition/index_en.htm"
-type: boolean
+type: radios
+options: 
+  - 
+    label: micro
+  - 
+    label: micro
+  - 
+    label: small 
+  - 
+    label: medium
+  - 
+    label: large
+    
