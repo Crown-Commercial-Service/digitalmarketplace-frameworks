@@ -7,5 +7,4 @@ question: >
     - given rise to a criminal conviction for tax-related offences which is unspent,
       or to a civil penalty for fraud or evasion?
 
-hint: "Section 4 relating to tax compliance only applies when the contract is over £5million in value."
 type: boolean
