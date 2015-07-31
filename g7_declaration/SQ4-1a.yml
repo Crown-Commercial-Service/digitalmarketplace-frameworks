@@ -1,10 +1,11 @@
 question: >
-  From 1 April 2013 onwards, have any of your or your partner organisations' tax returns
-  submitted after 1 October 2012:
+  Have any of your organisation's tax returns submitted on or after 1 October 2012:
   
+  
+    - been found to be incorrect as of 1 April 2013?
   
     - given rise to a criminal conviction for tax-related offences which is unspent,
-  or to a civil penalty for fraud or evasion?
+      or to a civil penalty for fraud or evasion?
 
 hint: "Section 4 relating to tax compliance only applies when the contract is over £5million in value."
 type: boolean
