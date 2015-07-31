@@ -1,11 +1,4 @@
 question: >
-  Regulation 57 (3) –
-  Has it been established, for your organisation and/or any of your or the
-  Group of Economic Operators’ proposed Sub-Contractors and/or members of your
-  Group of Economic Operators, by a judicial or administrative decision having
-  final and binding effect in accordance with the legal provisions of any part
-  of the United Kingdom or the legal provisions of the country in which the
-  organisation is established (if outside the UK), that the organisation, if
-  applicable, is in breach of obligations related to the payment of tax or
-  social security contributions?
+  Have any members of your organisation or a partner organisation been legally found to be in breach of tax payments or social security contributions?
+hint: "Visit http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made to check that your organisation complies with Regulation 57(3) in the Public Contracts Regulations 2015.
 type: boolean
