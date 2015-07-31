@@ -2,8 +2,7 @@ question: >
   Within the past 3 years, has your organisation or any of your partner organisations:
 
 
-    - been found guilty of serious misrepresentation in supplying the information required
-      for the verification of the absence of grounds for exclusion or the fulfilment
-      of the selection criteria?
+    - been guilty of serious misrepresentation of the information required
+      for the verification of the selection criteria?
   
 type: boolean
