@@ -1,5 +1,5 @@
 question: "Is your organisation classed as a:"
-hint: "If not, you don't have to answer this question"
+hint: "If your organisation is not classed as a VCSE, sheltered workshop or public service mutual, you don't have to answer this question."
 type: checkboxes
 options:
   -
