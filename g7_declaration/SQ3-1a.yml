@@ -2,9 +2,7 @@ question: >
   Within the past three years, has your organisation or any of your partner organisations:
   
   
-  - violated applicable obligations referred to in Regulation
-  56 (2)(http://www.legislation.gov.uk/uksi/2015/102/part/2/chapter/2/crossheading/conduct-of-the-procedure-choice-of-participants-and-award-of-contracts/made) in the fields of environmental, social and labour law established by EU
-  law, national law, collective agreements or by the international environmental,
-  social and labour law provisions listed in Annex X to the Directive;
+  - violated EU obligations referred to in Regulation
+  56(2)(http://www.legislation.gov.uk/uksi/2015/102/part/2/chapter/2/crossheading/conduct-of-the-procedure-choice-of-participants-and-award-of-contracts/made) in the fields of environmental, social and labour law?
 hint: "Visit http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made to check that your organisation complies with Regulation 57(8) in the Public Contracts Regulations 2015."
 type: boolean
