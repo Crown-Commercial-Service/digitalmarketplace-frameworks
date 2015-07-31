@@ -13,23 +13,24 @@ question: >
   (Northern Ireland) 1969, the Theft Act 1978 or the Theft (Northern Ireland)
   Order 1978?
   
-  - fraudulent trading within the meaning of section 458 of the Companies Act
+    - fraudulent trading within the meaning of section 458 of the Companies Act
   1985, article 451 of the Companies (Northern Ireland) Order 1986 or section
   993 of the Companies Act 2006?
   
-  - fraudulent evasion within the meaning of section 170 of the Customs and
+    - fraudulent evasion within the meaning of section 170 of the Customs and
   Excise Management Act 1979 or section 72 of the Value Added Tax Act 1994?
   
-  - an offence in connection with taxation in the European Union within the
+    - an offence in connection with taxation in the European Union within the
   meaning of section 71 of the Criminal Justice Act 1993?
   
-  - destroying, defacing or concealing of documents or procuring the execution of
+    - destroying, defacing or concealing of documents or procuring the execution of
   a valuable security within the meaning of section 20 of the Theft Act 1968 or
   section 19 of the Theft Act (Northern Ireland) 1969?
   
-  - fraud within the meaning of section 2, 3 or 4 of the Fraud Act 2006?
+    - fraud within the meaning of section 2, 3 or 4 of the Fraud Act 2006?
   
-  - the possession of articles for use in frauds within the meaning of section 6
+    - the possession of articles for use in frauds within the meaning of section 6
   of the Fraud Act 2006, or the making, adapting, supplying or offering to
   supply articles for use in frauds within the meaning of section 7 of that Act?
+  
 type: boolean
