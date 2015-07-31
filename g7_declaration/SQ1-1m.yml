@@ -3,13 +3,11 @@ hint: "For help determining company size, visit http://ec.europa.eu/growth/smes/
 type: radios
 options: 
   - 
-    label: micro
+    label: "micro"
   - 
-    label: micro
+    label: "small" 
   - 
-    label: small 
+    label: "medium"
   - 
-    label: medium
-  - 
-    label: large
+    label: "large"
     
