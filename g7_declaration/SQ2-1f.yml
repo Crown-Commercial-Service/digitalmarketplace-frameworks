@@ -1,5 +1,9 @@
 question: >
-  any offence listed —
-  in section 41 of the Counter Terrorism Act 2008; or
-  in Schedule 2 to that Act where the court has determined that there is a terrorist connection;
+  Within the past five years has anyone who represents your organisation or a partner organisation been convicted of any offence listed in:
+  
+  
+    - section 41 of the Counter Terrorism Act 2008?
+  
+    - Schedule 2 of the Counter Terrorism Act 2008 where the court has determined that there is a terrorist connection?
+  
 type: boolean
