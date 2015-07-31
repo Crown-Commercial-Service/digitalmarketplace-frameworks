@@ -4,5 +4,5 @@ question: >
 
   - licensed?
 
-  - a member of a relevant organisation?"
+  - a member of a relevant organisation?
 type: boolean
