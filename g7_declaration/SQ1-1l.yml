@@ -1,4 +1,5 @@
 question: "Is your organisation classed as a:"
+hint: "If not, you don't have to answer this question"
 type: checkboxes
 options:
   -
