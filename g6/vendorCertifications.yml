@@ -21,3 +21,4 @@ validations:
       name: under_character_limit
       message: 'Each certification must be no more than 100 characters.'
 question: 'Vendor certification(s)'
+optional: true
