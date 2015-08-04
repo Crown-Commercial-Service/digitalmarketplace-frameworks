@@ -1,6 +1,6 @@
 requirements: 'Data in transit is protected between the service and other services (eg where APIs are exposed)'
 filters: 'Data in transit is protected between the service and other services (eg where APIs are exposed)'
-hint: 'Choose 1'
+hint: 'Choose all that apply'
 depends:
   -
     "on": lot
@@ -8,7 +8,7 @@ depends:
       - PaaS
       - IaaS
 assuranceApproach: 4answers-type1
-type: radios
+type: checkboxes
 options:
     -
         label: 'Encrypted PSN service'

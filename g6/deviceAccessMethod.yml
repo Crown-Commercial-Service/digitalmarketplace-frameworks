@@ -1,6 +1,6 @@
 requirements: 'The consumer understands any service configuration options available to them and the security implications of choices they make.'
 filters: 'The consumer understands any service configuration options available to them and the security implications of choices they make.'
-hint: 'Which end device is the cloud service accessible from?'
+hint: 'Which end devices are the cloud service accessible from? Choose all that apply.'
 depends:
   -
     "on": lot
@@ -9,7 +9,7 @@ depends:
       - PaaS
       - IaaS
 assuranceApproach: 2answers-type1
-type: radios
+type: checkboxes
 options:
     -
         label: 'Corporate/enterprise devices'
