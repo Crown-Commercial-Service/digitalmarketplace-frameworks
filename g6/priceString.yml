@@ -16,10 +16,10 @@ validations:
     message: 'Pricing unit requires an answer. If none of the provided units apply, please choose ''Unit''.'
   -
     name: min_price_not_a_number
-    message: 'Prices must be numbers only, without units, eg 99.95'
+    message: 'Minimum price must be a number, without units, eg 99.95'
   -
     name: max_price_not_a_number
-    message: 'Prices must be numbers only, without units, eg 99.95'
+    message: 'Maximum price must be a number, without units, eg 99.95'
   -
     name: max_less_than_min
     message: 'Minimum price must be less than maximum price'
