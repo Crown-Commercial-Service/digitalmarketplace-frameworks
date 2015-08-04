@@ -1,6 +1,6 @@
 requirements: 'Consumers have sufficient confidence that the technical approach the service provider uses to manage the service does not put their data or service at risk.'
 filters: 'Consumers have sufficient confidence that the technical approach the service provider uses to manage the service does not put their data or service at risk.'
-hint: 'Which technical approach do you use for your service management? Choose 1.'
+hint: 'Which technical approach do you use for your service management? Choose all that apply.'
 depends:
   -
     "on": lot
@@ -9,7 +9,7 @@ depends:
       - PaaS
       - IaaS
 assuranceApproach: 2answers-type1
-type: radios
+type: checkboxes
 options:
     -
         label: 'Dedicated devices on a segregated network'

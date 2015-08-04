@@ -1,6 +1,6 @@
 requirements: 'Data in transit is protected internally within the service'
 filters: 'Data in transit is protected internally within the service'
-hint: 'Choose 1'
+hint: 'Choose all that apply'
 depends:
   -
     "on": lot
@@ -8,7 +8,7 @@ depends:
       - PaaS
       - IaaS
 assuranceApproach: 4answers-type1
-type: radios
+type: checkboxes
 options:
     -
         label: 'VPN using TLS, version 1.2 or later'
