@@ -1,4 +1,4 @@
-question: 'Please upload your terms and conditions document'
+question: 'Terms and conditions document'
 depends:
   -
     "on": lot
