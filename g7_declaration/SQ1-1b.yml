@@ -1,2 +1,3 @@
 question: What is your organisation's registered office address?
+hint: "If you don't have a registered office address, you don't need to answer this question."
 type: text
