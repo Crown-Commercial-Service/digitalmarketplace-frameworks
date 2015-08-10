@@ -19,5 +19,5 @@ question: >
   - any other offence within the meaning of article 57(1) of the Public Contracts Directive as defined by the
     law of any jurisdiction outside England and Wales and Northern Ireland
   
-hint: "Answer yes anyone who represents your organisation or partner organisation has been convicted of any of the above. In questions 37-40, organisation representatives include: members of your group of economic operators, their proposed subcontractors, and any directors, partners, or any other person who has powers of representation, decision or control. Check that your organisation complies with [Regulation 57(1) of the Public Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made)."
+hint: "Answer yes if anyone who represents your organisation or partner organisation has been convicted of any of the above. In questions 37-40, organisation representatives include: members of your group of economic operators, their proposed subcontractors, and any directors, partners, or any other person who has powers of representation, decision or control. Check that your organisation complies with [Regulation 57(1) of the Public Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made)."
 type: boolean
