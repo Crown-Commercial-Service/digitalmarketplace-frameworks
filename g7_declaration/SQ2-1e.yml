@@ -33,4 +33,5 @@ question: >
   of the Fraud Act 2006, or the making, adapting, supplying or offering to
   supply articles for use in frauds within the meaning of section 7 of that Act?
   
+hint: "Answer 'yes' if anyone who represents your organisation or partner organisation has been convicted of any of the above."
 type: boolean
