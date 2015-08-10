@@ -1,3 +1,7 @@
-question: What is your organisation's registered VAT number? 
+question: "What is your organisation's registered VAT number?"
 hint: There are either 9 or 12 characters in a VAT number.
 type: text
+validations:
+  -
+    name: invalid_format
+    message: "There are either 9 or 12 characters in a VAT number."

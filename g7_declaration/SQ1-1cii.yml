@@ -1,2 +1,9 @@
 question: If you answered 'other' to question 19, please describe your trading status.
 type: text
+validations:
+  -
+    name: answer_required
+    message: "This question requires an answer because you answered 'other' to question 12"
+  -
+    name: under_character_limit
+    message: "This field must be a maximum of 255 characters."

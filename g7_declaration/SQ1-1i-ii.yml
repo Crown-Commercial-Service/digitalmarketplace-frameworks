@@ -1,2 +1,9 @@
 question: "If you answered 'yes' to question 27, please provide details including your organisation's registration number."
 type: text
+validations:
+  -
+    name: answer_required
+    message: "This question requires an answer because you answered yes to question 20"
+  -
+    name: under_character_limit
+    message: "This field must be a maximum of 4096 characters."
