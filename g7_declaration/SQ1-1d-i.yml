@@ -4,4 +4,4 @@ type: text
 validations:
   -
     name: under_character_limit
-    message: "This field must be a maximum of 255 characters."
+    message: "This field must be a maximum of 5000 characters."
