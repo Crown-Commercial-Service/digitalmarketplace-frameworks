@@ -1,5 +1,4 @@
 question: "Do you confirm that your organisation complies with legal equality and diversity obligations relating to:"
-hint:
 type: checkboxes
 options:
   -
