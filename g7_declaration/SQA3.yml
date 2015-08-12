@@ -1,3 +1,3 @@
-question:
+question: Do you confirm that your organisation has the skills and resources to deliver and support the cloud-based services that you're submitting for G-Cloud 7?
 hint:
-type:
+type: boolean
