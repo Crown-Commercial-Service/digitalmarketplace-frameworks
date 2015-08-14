@@ -1,3 +1,6 @@
-question: What is your organisation's Companies House number?
-hint: If you don't have a Companies House number, you don't have to answer this question.
+question: What is your organisation's company registration number?
+hint: >
+  If you don't have a Companies House number, provide the company registration
+  number from the country where you first registered. If you don't have an
+  organisation, you don't have to answer this question.
 type: text
