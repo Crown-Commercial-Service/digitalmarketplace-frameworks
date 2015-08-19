@@ -1,9 +1,9 @@
 question: >
-  If your business was not established in the UK, is it a legal requirement in the state where you’re established to be licensed or a member of a relevant organisation to provide the services specified in this procurement?:
+  If your business was not established in the UK, please confirm if it's a legal requirement in the state where you’re established to provide the services specified in this procurement to be:
 type: checkboxes
 options:
   -
-    label: licensed?
+    label: licensed
   -
-    label: a member of a relevant organisation?
+    label: a member of a relevant organisation
 
