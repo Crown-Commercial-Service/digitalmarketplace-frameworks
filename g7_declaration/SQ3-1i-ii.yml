@@ -1,7 +1,7 @@
 question: >
-  Within the past 3 years, has your organisation or any of your partner organisations:
+  Please confirm whether, within the past 3 years, your organisation or any of your partner organisations has:
   
   
     - obtained confidential information that may give you undue
-  advantages in the procurement procedure?
+  advantages in the procurement procedure
 type: boolean
