@@ -6,4 +6,4 @@ type: textbox_large
 validations:
   -
     name: answer_required
-    message: "This question is required because you answered yes to either question 54 or question 55."
+    message: "You must answer this question because you answered yes to either question 54 or question 55."
