@@ -1,3 +1,4 @@
+hint: 'Elasticity is similar to scalability. An elastic cloud environment can automatically expand and contract to meet business needs in real time.'
 depends:
   -
     "on": lot
