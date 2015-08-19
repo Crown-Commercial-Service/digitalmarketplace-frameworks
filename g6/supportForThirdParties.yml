@@ -1,3 +1,4 @@
+hint: 'Please confirm whether any third parties engaged by the buyer can access the support features of your service.'
 depends:
   -
     "on": lot
