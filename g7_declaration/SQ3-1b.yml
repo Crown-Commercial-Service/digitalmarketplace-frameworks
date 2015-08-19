@@ -1,6 +1,6 @@
 question: >
-    Within the past 3 years, has your organisation or any of your partner organisations:
+    Within the past 3 years, please confirm whether your organisation or any of your partner organisations has:
   
   
-    - been made bankrupt or the subject of insolvency or winding-up proceedings?
+    - been made bankrupt or the subject of insolvency or winding-up proceedings
 type: boolean
