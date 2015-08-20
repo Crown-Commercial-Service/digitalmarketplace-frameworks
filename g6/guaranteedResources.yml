@@ -1,3 +1,4 @@
+hint: 'Guaranteed resources are a stated minimum of memory, CPU and disk size or space.'
 depends:
   -
     "on": lot

@@ -1,3 +1,4 @@
+hint: 'Storage is persistent if recorded data is available indefinitely.'
 depends:
   -
     "on": lot
