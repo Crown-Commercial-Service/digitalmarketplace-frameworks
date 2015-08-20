@@ -1,4 +1,5 @@
-question: How will you provide G-Cloud services? 
+question: 'Please confirm whether you will provide G-Cloud services:'
+hint: 'Choose all that apply.'
 type: checkboxes
 options:
   -
