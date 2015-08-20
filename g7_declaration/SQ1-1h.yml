@@ -4,4 +4,4 @@ type: text
 validations:
   -
     name: invalid_format
-    message: "There are either 9 or 12 characters in a VAT number."
+    message: "You must enter a valid VAT number."
