@@ -6,4 +6,7 @@ options:
     label: licensed
   -
     label: a member of a relevant organisation
-
+validations:
+  -
+    name: answer_required
+    message: "You must answer this question because you answered no to question 26"

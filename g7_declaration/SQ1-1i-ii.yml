@@ -3,7 +3,7 @@ type: text
 validations:
   -
     name: answer_required
-    message: "You must answer this question because you answered yes to question 20"
+    message: "You must answer this question because you answered yes to question 27"
   -
     name: under_character_limit
     message: "This field must be a maximum of 5000 characters."
