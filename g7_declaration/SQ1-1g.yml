@@ -4,4 +4,4 @@ type: text
 validations:
   -
     name: invalid_format
-    message: "There are either 9 digits in a DUNS number."
+    message: "You must enter a valid DUNS number."
