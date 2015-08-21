@@ -1,3 +1,7 @@
 question: When was your organisation first registered?
 hint: If you don't have a registered organisation, you don't need to answer this question.
 type: text
+validations:
+  -
+    name: under_character_limit
+    message: "Maximum 5000 characters."
