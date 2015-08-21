@@ -5,13 +5,13 @@ depends:
       - SaaS
       - PaaS
       - IaaS
-servicePageLabel: 'Datacentres adhere to EU Code of Conduct for Operations'
+servicePageLabel: 'Datacentres adhere to the EU code of conduct for energy-efficient datacentres'
 assuranceApproach: null
 assuranceHint: null
 type: boolean
-filterLabel: 'Datacentres adhere to EU Code of Conduct for Operations'
+filterLabel: 'Datacentres adhere to the EU code of conduct for energy-efficient datacentres'
 validations:
   -
     name: answer_required
     message: 'This question requires an answer.'
-question: 'Datacentres adhere to EU Code of Conduct for Operations'
+question: 'Datacentres adhere to the EU code of conduct for energy-efficient datacentres'
