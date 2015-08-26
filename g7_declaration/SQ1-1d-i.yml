@@ -1,5 +1,4 @@
 question: When was your organisation first registered?
-hint: If you don't have a registered organisation, you don't need to answer this question.
 type: text
 validations:
   -
