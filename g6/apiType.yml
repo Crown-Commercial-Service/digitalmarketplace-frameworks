@@ -18,3 +18,4 @@ validations:
     name: under_character_limit
     message: "API type can't be more than 200 characters."
 question: 'API type'
+optional: true
