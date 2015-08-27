@@ -18,3 +18,4 @@ validations:
     name: under_character_limit
     message: 'Each identity standard must be no more than 100 characters.'
 question: 'Identity standards your service uses'
+optional: true
