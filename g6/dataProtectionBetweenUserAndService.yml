@@ -9,7 +9,6 @@ depends:
       - PaaS
       - IaaS
 assuranceApproach: 4answers-type1
-assuranceHint: 'How can you support the above answer?'
 type: checkboxes
 options:
     -
@@ -32,5 +31,8 @@ options:
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
 question: 'Data protection between user device and service'

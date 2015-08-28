@@ -11,5 +11,5 @@ filterLabel: 'Open standards supported and documented'
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
 question: 'Open standards supported and documented'

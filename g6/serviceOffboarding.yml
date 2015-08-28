@@ -10,5 +10,5 @@ filterLabel: 'Service offboarding process included'
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
 question: 'Service offboarding process included'

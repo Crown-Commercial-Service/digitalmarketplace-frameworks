@@ -13,7 +13,7 @@ addthing: 'Add another business benefit'
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
   -
     name: under_10_words
     message: 'Each benefit must be no more than 10 words.'

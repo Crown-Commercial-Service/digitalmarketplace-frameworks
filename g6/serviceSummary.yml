@@ -12,7 +12,7 @@ maxLengthInWords: 50
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
   -
     name: under_50_words
     message: 'Your description must not be more than 50 words.'

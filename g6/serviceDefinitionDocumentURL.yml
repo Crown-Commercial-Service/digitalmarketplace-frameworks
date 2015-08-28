@@ -12,7 +12,7 @@ type: upload
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
   -
     name: file_is_open_document_format
     message: 'Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).'

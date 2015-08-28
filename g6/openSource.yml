@@ -10,5 +10,5 @@ filterLabel: 'Open-source software used and supported'
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
 question: 'Open-source software used and supported'

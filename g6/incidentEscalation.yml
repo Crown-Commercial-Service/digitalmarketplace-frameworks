@@ -11,5 +11,5 @@ filterLabel: 'Incident escalation process available'
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
 question: 'Incident escalation process available'
