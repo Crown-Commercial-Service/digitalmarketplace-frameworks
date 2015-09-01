@@ -10,7 +10,7 @@ type: text
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
   -
     name: under_20_words
     message: 'Provisioning time must be no more than 20 words.'

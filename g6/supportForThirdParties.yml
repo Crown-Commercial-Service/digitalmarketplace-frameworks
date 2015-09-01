@@ -12,5 +12,5 @@ filterLabel: 'Support accessible to any third-party suppliers'
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
 question: 'Support accessible to any third-party suppliers'

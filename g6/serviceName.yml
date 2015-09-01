@@ -11,7 +11,7 @@ type: text
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
   -
     name: under_character_limit
     message: "Your service name can't be more than 100 characters."

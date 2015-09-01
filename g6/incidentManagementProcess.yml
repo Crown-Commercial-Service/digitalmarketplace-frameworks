@@ -14,5 +14,8 @@ filterLabel: 'Incident management processes'
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
 question: 'Incident management processes'

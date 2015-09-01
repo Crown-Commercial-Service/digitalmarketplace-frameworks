@@ -10,5 +10,5 @@ filterLabel: 'API access available and supported'
 validations:
   -
     name: answer_required
-    message: 'This question requires an answer.'
+    message: 'You need to answer this question.'
 question: 'API access available and supported'
