@@ -16,5 +16,6 @@ question: >
   
     - an offence in connection with the proceeds of drug trafficking within the meaning of section 49, 50 or 51 of the Drug Trafficking Act 1994; or
   any other offence within the meaning of article 57(1) of the Directive
-  
+
+hint: "Answer 'yes' if anyone who represents your organisation or partner organisation has been convicted of any of the above." 
 type: boolean
