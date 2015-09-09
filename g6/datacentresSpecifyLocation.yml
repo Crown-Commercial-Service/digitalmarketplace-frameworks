@@ -6,7 +6,6 @@ depends:
       - PaaS
       - IaaS
 servicePageLabel: 'User-defined data location'
-assuranceApproach: null
 type: boolean
 filterLabel: 'User-defined data location'
 validations:
