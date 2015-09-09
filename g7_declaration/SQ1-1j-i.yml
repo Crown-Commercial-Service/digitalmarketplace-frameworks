@@ -7,6 +7,8 @@ options:
     label: licensed
   -
     label: a member of a relevant organisation
+  -
+    label: none of the above    
 validations:
   -
     name: answer_required
