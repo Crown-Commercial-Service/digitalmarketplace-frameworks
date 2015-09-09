@@ -7,7 +7,6 @@ depends:
       - PaaS
       - IaaS
 servicePageLabel: 'Datacentre tier'
-assuranceApproach: null
 type: radios
 options:
     -
