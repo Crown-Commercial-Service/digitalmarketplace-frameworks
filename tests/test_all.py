@@ -6,15 +6,15 @@ from jsonschema.validators import validator_for
 from jsonschema import ValidationError
 
 
-def test_all_files_are_yaml(all_files):
-    for path in all_files:
+def test_all_files_are_yaml(get_all_files):
+    for path in get_all_files():
         with open(path) as f:
             yaml.load(f)
 
 
-def test_questions_match_schema(all_files):
+def test_questions_match_schema(get_all_files):
     question_schema = load_jsonschema('tests/schemas/question.json')
-    for path in all_files:
+    for path in get_all_files():
         with open(path) as f:
             data = yaml.load(f)
             try:
@@ -24,20 +24,16 @@ def test_questions_match_schema(all_files):
 
 
 @pytest.fixture
-def all_files():
-    all_paths = []
-    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-    g6_root_dir = os.path.join(root_dir, 'g6')
-    g7d_root_dir = os.path.join(root_dir, 'g7_declaration')
-    for filename in os.listdir(g6_root_dir):
-        if filename.endswith('.yml') and filename != 'index.yml':
-            filepath = os.path.join(g6_root_dir, filename)
-            all_paths.append(filepath)
-    for filename in os.listdir(g7d_root_dir):
-        if filename.endswith('.yml') and filename != 'index.yml':
-            filepath = os.path.join(g7d_root_dir, filename)
-            all_paths.append(filepath)
-    return all_paths
+def get_all_files():
+
+    def all_files():
+        root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../frameworks'))
+        for root, subdirs, files in os.walk(root_dir):
+            for filename in files:
+                if filename.endswith('.yml'):
+                    yield os.path.join(root, filename)
+
+    return all_files
 
 
 def load_jsonschema(path):
