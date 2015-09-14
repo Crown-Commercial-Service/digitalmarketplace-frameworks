@@ -7,14 +7,14 @@ from jsonschema import ValidationError
 
 
 def test_all_files_are_yaml(get_all_files):
-    for path in get_all_files():
+    for path in get_all_files:
         with open(path) as f:
             yaml.load(f)
 
 
 def test_questions_match_schema(get_all_files):
     question_schema = load_jsonschema('tests/schemas/question.json')
-    for path in get_all_files():
+    for path in get_all_files:
         with open(path) as f:
             data = yaml.load(f)
             try:
@@ -33,7 +33,7 @@ def get_all_files():
                 if filename.endswith('.yml'):
                     yield os.path.join(root, filename)
 
-    return all_files
+    return all_files()
 
 
 def load_jsonschema(path):
