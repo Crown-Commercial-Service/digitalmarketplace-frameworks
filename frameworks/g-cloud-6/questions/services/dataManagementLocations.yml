@@ -1,0 +1,35 @@
+requirements: 'The geographic location(s) where consumer data is stored, processed or managed from (to country level)'
+filters: 'The geographic location(s) where consumer data is stored, processed or managed from (to country level)'
+hint: 'Where are the services managed from? Choose all that apply.'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+assuranceApproach: 3answers-type1
+type: checkboxes
+options:
+    -
+        label: UK
+        filterLabel: UK
+    -
+        label: EU
+        filterLabel: EU
+    -
+        label: 'USA - Safe Harbor'
+        filterLabel: 'USA - Safe Harbor'
+    -
+        label: 'Other countries with data protection treaties'
+        filterLabel: 'Other countries with data protection treaties'
+    -
+        label: 'Rest of world'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
+question: 'Data management location'

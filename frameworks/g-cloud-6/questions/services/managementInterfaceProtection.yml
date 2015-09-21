@@ -1,0 +1,20 @@
+requirements: 'The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.'
+filters: 'The consumer understands how management interfaces are protected (see Principle 11) and what functionality is available via those interfaces.'
+hint: 'Do you tell consumers what functionality and protection is available for management interfaces?'
+depends:
+  -
+    "on": lot
+    being:
+      - PaaS
+      - IaaS
+assuranceApproach: 2answers-type2
+type: boolean
+filterLabel: 'Management interface protection'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
+question: 'Management interface protection'

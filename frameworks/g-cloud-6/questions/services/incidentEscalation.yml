@@ -1,0 +1,15 @@
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+      - SCS
+type: boolean
+filterLabel: 'Incident escalation process available'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+question: 'Incident escalation process available'

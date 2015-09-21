@@ -1,0 +1,15 @@
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+servicePageLabel: 'User-defined data location'
+type: boolean
+filterLabel: 'User-defined data location'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+question: 'User-defined data location'

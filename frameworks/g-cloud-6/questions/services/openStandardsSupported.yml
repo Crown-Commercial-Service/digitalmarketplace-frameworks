@@ -1,0 +1,15 @@
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+hint: 'Take a look at the [GOV.UK Open Standards principles](https://www.gov.uk/government/publications/open-standards-for-government) for more information on open standards.'
+type: boolean
+filterLabel: 'Open standards supported and documented'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+question: 'Open standards supported and documented'

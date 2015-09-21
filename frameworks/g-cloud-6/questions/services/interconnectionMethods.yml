@@ -1,0 +1,32 @@
+requirements: 'The consumer understands what physical and logical interfaces their information is available from.'
+filters: 'The consumer understands what physical and logical interfaces their information is available from.'
+hint: 'What method of interconnection to the service do you provide? Choose all that apply.'
+depends:
+  -
+    "on": lot
+    being:
+      - PaaS
+      - IaaS
+assuranceApproach: 2answers-type1
+type: checkboxes
+options:
+    -
+        label: 'Encrypted PSN service'
+        filterLabel: 'Encrypted PSN service'
+    -
+        label: 'PSN service'
+        filterLabel: 'PSN service'
+    -
+        label: 'Private WAN'
+        filterLabel: 'Private WAN'
+    -
+        label: Internet
+        filterLabel: Internet
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
+question: 'Interconnection method provided'

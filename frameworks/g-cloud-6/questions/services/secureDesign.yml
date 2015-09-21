@@ -1,0 +1,21 @@
+requirements: 'Consumers should be sufficiently confident that development is carried out in line with industry good practice regarding secure design, coding, testing and deployment.'
+filters: 'Consumers should be sufficiently confident that development is carried out in line with industry good practice regarding secure design, coding, testing and deployment.'
+hint: 'Is development carried out in line with industry good practice regarding secure design, coding, testing and deployment?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+assuranceApproach: 2answers-type1
+type: boolean
+filterLabel: 'Secure design, coding, testing and deployment'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
+question: 'Secure design, coding, testing and deployment'

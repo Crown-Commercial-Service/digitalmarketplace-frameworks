@@ -1,0 +1,21 @@
+requirements: 'Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.'
+filters: 'Consumers should have confidence that events generated in service components required to support effective identification of suspicious activity are collected and fed into an analysis system.'
+hint: 'Do you conduct event monitoring and analysis to identify suspicious activity?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+assuranceApproach: 2answers-type1
+type: boolean
+filterLabel: 'Event monitoring'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
+question: 'Event monitoring'
