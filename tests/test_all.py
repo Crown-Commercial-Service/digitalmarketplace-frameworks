@@ -15,6 +15,12 @@ def test_all_files_are_yaml(get_all_files):
 def test_questions_match_schema(get_all_files):
     question_schema = load_jsonschema('tests/schemas/question.json')
     for path in get_all_files:
+        parent_folder_path = os.path.abspath(os.path.join(
+            path.replace(os.path.basename(path), ''),
+            os.pardir
+        ))
+        if os.path.basename(parent_folder_path) is not 'questions':
+            continue
         with open(path) as f:
             data = yaml.load(f)
             try:
