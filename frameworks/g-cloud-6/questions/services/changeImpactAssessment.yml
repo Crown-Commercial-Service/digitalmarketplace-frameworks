@@ -1,0 +1,21 @@
+requirements: 'Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.'
+filters: 'Consumers should have confidence that changes to the service are assessed for potential security impact. Changes are managed and tracked through to completion.'
+hint: 'Are changes to the service assessed for potential security impact, and are changes managed and tracked through to completion?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+assuranceApproach: 2answers-type1
+type: boolean
+filterLabel: 'Change impact assessment'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
+question: 'Change impact assessment'

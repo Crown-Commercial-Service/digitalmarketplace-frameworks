@@ -1,0 +1,21 @@
+requirements: 'Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).'
+filters: 'Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).'
+hint: 'Is your management of a consumer’s service kept separate from other consumers?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+assuranceApproach: 4answers-type3
+type: boolean
+filterLabel: 'Services management separation'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
+question: 'Services management separation'

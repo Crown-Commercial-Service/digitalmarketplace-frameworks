@@ -1,0 +1,19 @@
+depends:
+  -
+    "on": lot
+    being:
+      - IaaS
+hint: 'You can choose multiple categories.'
+type: checkboxes
+options:
+  -
+    label: Compute
+    filterLabel: Compute
+  -
+    label: Storage
+    filterLabel: Storage
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+question: 'Choose the categories that apply to your service'

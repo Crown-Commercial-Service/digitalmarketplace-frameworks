@@ -1,0 +1,14 @@
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - PaaS
+      - IaaS
+type: boolean
+filterLabel: 'Real-time management information available'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+question: 'Real-time management information available'
