@@ -1,0 +1,6 @@
+question: >
+  Please confirm if, to provide the services specified in this procurement, it’s a legal requirement in the state where you’re established to be:
+  - licensed
+  - a member of a relevant organisation
+type: boolean
+hint: You don’t need to answer this question if your business was established in the UK.
