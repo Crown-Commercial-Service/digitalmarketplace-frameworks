@@ -1,0 +1,13 @@
+question: >
+  Please confirm that your organisation complies with legal equality and diversity obligations relating to:
+  - race
+  - sexual orientation
+  - disability
+  - age equality
+  - religion or belief
+  - gender (sex)
+  - gender reassignment
+  - marriage or civil partnership
+  - pregnancy or maternity
+  - human rights
+type: boolean
