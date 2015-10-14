@@ -4,4 +4,4 @@ type: text
 validations:
   -
     name: answer_required
-    message: 'This is the message you will see if you don’t answer the question.'
+    message: 'This is the message you will see if you don’t answer the question'
