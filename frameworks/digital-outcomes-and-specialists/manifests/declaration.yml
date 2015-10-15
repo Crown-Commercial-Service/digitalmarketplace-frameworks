@@ -2,6 +2,7 @@
   name: Page 1
   editable: True
   questions:
+    - termsOfParticipation
     - termsAndConditions
     - davidKershaw
     - readUnderstoodGuidance
