@@ -98,10 +98,6 @@
   questions:
     - skillsAndCapabilityAssessment
     - civilServiceValues
-    - outcomes
-    - specialists
-    - researchStudios
-    - participants
     - userNeeds
     - changesInNeeds
     - framingNeeds
