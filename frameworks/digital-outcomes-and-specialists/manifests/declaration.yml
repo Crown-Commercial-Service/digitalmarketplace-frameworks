@@ -1,5 +1,5 @@
 -
-  name: Page 1
+  name: Essentials
   editable: True
   questions:
     - termsOfParticipation
@@ -8,46 +8,70 @@
     - readUnderstoodGuidance
     - understandTool
     - understandHowToAskQuestions
+    - proofOfClaims
+    - permanentMemberOfStaff
+    - skillsAndResources
+    - accuratelyDescribed
+    - canProvideServices
+-
+  name: Grounds for mandatory exclusion
+  editable: True
+  questions:
+    - conspiracyCorruptionBribery
+    - fraudAndTheft
+    - terrorism
+    - organisedCrime
+-
+  name: Grounds for discretionary exclusion
+  editable: True
+  questions:
+    - taxEvasion
+    - environmentalSocialLabourLaw
+    - bankrupt
+    - graveProfessionalMisconduct
+    - distortingCompetition
+    - conflictOfInterest
+    - distortedCompetition
+    - significantOrPersistentDeficiencies
+    - seriousMisrepresentation
+    - witheldSupportingDocuments
+    - influencedContractingAuthority
+    - confidentialInformation
+    - misleadingInformation
+    - mitigatingFactors
+    - unspentTaxConvictions
+    - GAAR
+    - mitigatingFactors2
+-
+  name: Working with government
+  editable: True
+  questions:
+    - MI
+    - canProvideFromDayOne
+    - evidence
     - environmentallyFriendly
     - consistentDelivery
     - continuousProfessionalDevelopment
     - customerSatisfactionProcess
-    - skillsAndCapabilityAssessment
-    - civilServiceValues
     - permanentMemberOfStaff
     - equalityAndDiversity
-    - outcomes
-    - specialists
-    - researchStudios
-    - participants
-    - userNeeds
-    - changesInNeeds
-    - framingNeeds
-    - freeAndOpenData
-    - bespokeSystemInformation
-    - openStandardsComponents
-    - governmentsDesire
-    - reusePurchasedAssets
-    - governmentSecurityPrinciples
-    - openStandardsPrinciples
-    - openSourceLicence
-    - safeguardPersonalData
-    - incentives
-    - safeguardData
-    - safeguardOfficialInformation
-    - hideGovernment
+-
+  name: Working with digital
+  editable: True
+  questions:
     - technologyCodesOfPractice
     - serviceStandard
     - ongoingEngagement
     - transparentContracting
     - publishContracts
-    - canProvideFromDayOne
-    - evidence
-    - canProvideServices
-    - skillsAndResources
-    - accuratelyDescribed
-    - proofOfClaims
-    - MI
+    - safeguardOfficialInformation
+    - safeguardPersonalData
+    - cyberEssentials
+    - cyberEssentialsPlus
+-
+  name: About you
+  editable: True
+  questions:
     - primaryContact
     - primaryContactEmail
     - nameOfOrganisation
@@ -68,27 +92,28 @@
     - subcontracting
     - contactNameContractNotice
     - contactEmailContractNotice
-    - cyberEssentials
-    - cyberEssentialsPlus
+-
+  name: LEFTOVERS
+  editable: True
+  questions:
+    - skillsAndCapabilityAssessment
+    - civilServiceValues
+    - outcomes
+    - specialists
+    - researchStudios
+    - participants
+    - userNeeds
+    - changesInNeeds
+    - framingNeeds
+    - freeAndOpenData
+    - bespokeSystemInformation
+    - openStandardsComponents
+    - governmentsDesire
+    - reusePurchasedAssets
+    - governmentSecurityPrinciples
+    - openStandardsPrinciples
+    - openSourceLicence
+    - incentives
+    - safeguardData
+    - hideGovernment
     - employmentAgency
-    - conspiracyCorruptionBribery
-    - fraudAndTheft
-    - terrorism
-    - organisedCrime
-    - taxEvasion
-    - environmentalSocialLabourLaw
-    - bankrupt
-    - graveProfessionalMisconduct
-    - distortingCompetition
-    - conflictOfInterest
-    - distortedCompetition
-    - significantOrPersistentDeficiencies
-    - seriousMisrepresentation
-    - witheldSupportingDocuments
-    - influencedContractingAuthority
-    - confidentialInformation
-    - misleadingInformation
-    - mitigatingFactors
-    - unspentTaxConvictions
-    - GAAR
-    - mitigatingFactors2
