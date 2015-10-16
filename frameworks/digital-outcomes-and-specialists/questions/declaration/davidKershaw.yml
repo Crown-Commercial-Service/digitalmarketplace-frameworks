@@ -1,21 +1,21 @@
 question: >
-  Do you agree:
+  Please confirm that you agree:
 
-    - to sign the final Framework Agreement within 10 working days of request by the authority NEED THIS ONE
-    - to have gathered sufficient information to fully understand the requirements of this procurement NEED THIS ONE
-    - that all response information is accurate and in the event of any changes occurring, you will inform the authority as soon as practicable NEED THIS ONE
-    - to have complied with all requirements for this procurement, and in particular the Terms of Participation section of the ITT NEED THIS ONE
-    - that all requisite authority to compete in this procurement and to sign the Framework Agreement has been sought. NEED THIS ONE
+    - to sign the final framework agreement within 10 working days of request by the Crown Commercial Service
+    - to have gathered sufficient information to fully understand the requirements of this procurement 
+    - that all application information is accurate
+    - that you'll inform the Crown Commercial Service as soon as possible if there are any changes to the information you've provided
+    - to have complied with all requirements for this procurement, in particular the terms of participation in the invitation to tender 
+    - that all the required authority to compete in this procurement and sign the framework agreement has been sought
 
-  And if you are an applicant’s subcontractor or consortium member(s) or both:
+  If you are an applicant’s subcontractor or consortium member(s) or both, please confirm that:
 
-    - all the information contained in the response relating to you, your capability, your experience or you participation in the procurement and in the provision of services are accurate and you will notify the authority of any changes as soon as possible. NEED THIS ONE
+    - all the information contained in the application relating to you, your capability, your experience or your participation in the procurement and your provision of services is accurate 
+    - you will notify the Crown Commercial Service of any changes to the information you've provided as soon as possible
     - no party has:
-
-      * shared your response prices with anyone other than the Authority
-      * entered into any arrangement with any other person so that person refrains from submitting a response
-      * given access to information relating to the response to any other person, offered or given payment
-      * inducement or valuable consideration to any other person (except where such communication takes place with people who are also participants in the response, or where disclosure is made in confidence to obtain necessary information or security for the response). NEED THIS ONE
-
-    - no party has canvassed any government agent regarding this procurement or attempted to procure any information from them regarding the procurement. NEED THIS ONE
+      * shared your application prices with anyone other than the Crown Commercial Service
+      * entered into any arrangement with another person so that person refrains from submitting an application
+      * given access to information relating to the application to another person, or offered or given payment to another person
+      * given inducement or valuable consideration to another person (except where such communication takes place with people who are also participants in the application, or where disclosure is made in confidence to obtain necessary information or security for the application)
+    - no party has canvassed any government agent regarding this procurement or attempted to buy any information from them regarding the procurement
 type: boolean

@@ -3,5 +3,7 @@ question: >
 
     - licensed
     - a member of a relevant organisation
+    - other
+    
 type: boolean
-hint: You don’t need to answer this question if your business was established in the UK.
+hint: Answer 'other' if your business was established in the UK.

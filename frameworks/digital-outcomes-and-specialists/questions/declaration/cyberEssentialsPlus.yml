@@ -1,2 +1,3 @@
 question: Are you certified to the Cyber Essentials Plus level under the [Cyber Essentials scheme](https://www.gov.uk/government/publications/cyber-essentials-scheme-overview)?
+hint: "This is to establish how you safeguard your organisation against any cyber attack. (Optional.)"
 type: boolean

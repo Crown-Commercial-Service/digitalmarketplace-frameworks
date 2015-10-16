@@ -1,4 +1,3 @@
 question: >
-  Data is a public asset. Do you recognise and can you enable government’s access to bespoke system information to enable continuous improvement?
-  need to explain that this relates to suppliers who are building bespoke systems and that they are ensuring the data is available for future government use - needs clearer wording
+  If you build bespoke systems, do you recognise and can you ensure that the data will continue to be available for future government use. 
 type: boolean
