@@ -1,0 +1,42 @@
+coming:
+  template_name: 'framework-notice'
+  heading: 'Become a Digital Outcomes and Specialists supplier'
+  message: >
+    **Digital Outcomes and Specialists will be open for applications soon.**
+
+
+    You can apply to provide:
+
+      - digital outcomes,
+        eg a discovery phase or an online billing application
+      - digital specialists,
+        eg service managers or developers
+      - user research studios
+      - user research participants
+
+    [Create an account](https://www.digitalmarketplace.service.gov.uk/suppliers/create) to receive an email when Digital Outcomes and Specialists opens.
+
+
+    [Find out how to apply](https://www.digitalmarketplace.service.gov.uk/)
+
+open:  
+  template_name: 'framework-notice'
+  heading: 'Become a Digital Outcomes and Specialists supplier'
+  subheading: 'Deadline: 14 February 2016'
+  message: >
+    **Digital Outcomes and Specialists is open for applications.**
+
+
+    You can apply to provide:
+
+      - digital outcomes,
+        eg a discovery phase or an online billing application
+      - digital specialists,
+        eg service managers or developers
+      - user research studios
+      - user research participants
+
+    [Create an account](https://www.digitalmarketplace.service.gov.uk/suppliers/create) or [log in](https://www.digitalmarketplace.service.gov.uk/suppliers/login) to apply.
+
+
+    [Find out how to apply](https://www.digitalmarketplace.service.gov.uk/)
