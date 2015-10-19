@@ -1,0 +1,6 @@
+question: >
+  Please confirm that you agree:
+  
+    - to have gathered sufficient information to fully understand the requirements of this procurement 
+   
+type: boolean
