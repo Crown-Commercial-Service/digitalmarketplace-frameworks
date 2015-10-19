@@ -43,11 +43,11 @@
   name: Grounds for discretionary exclusion
   editable: True
   description: >
-    You must be able to truthfully answer 'no' to every question in 'Grounds for discretionary exclusion' for your bid to be considered
-    eligible. If you can't answer 'yes', your bid may not be accepted. If you do answer
-    'yes', you must provide full details of any subsequent event or remedial
-    action that you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information you provide to consider whether or not
-    you will be able to proceed any further with this procurement.
+    You must be able to truthfully answer 'no' to every question in 'Grounds for discretionary exclusion'
+    for your bid to be considered eligible. If you can't answer 'no', your bid may not be accepted. If
+    you do answer 'yes', you must provide full details of any subsequent event or remedial action that
+    you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
+    you provide to consider whether or not you will be able to proceed any further with this procurement.
 
 
     In questions [[taxEvasion]] to [[misleadingInformation]], 'partner organisations' include members
