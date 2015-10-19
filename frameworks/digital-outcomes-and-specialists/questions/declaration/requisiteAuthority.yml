@@ -1,0 +1,5 @@
+question: >
+  Please confirm that you agree:
+    - that all the required authority to compete in this procurement and sign the framework agreement has been sought
+   
+type: boolean

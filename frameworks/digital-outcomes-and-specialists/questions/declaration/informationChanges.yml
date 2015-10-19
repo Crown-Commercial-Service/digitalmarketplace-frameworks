@@ -1,0 +1,5 @@
+question: >
+  Please confirm that you agree:
+    - that you'll inform the Crown Commercial Service as soon as possible if there are any changes to the information you've provided
+   
+type: boolean
