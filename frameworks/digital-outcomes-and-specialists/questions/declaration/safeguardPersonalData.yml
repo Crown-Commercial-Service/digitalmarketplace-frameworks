@@ -1,3 +1,2 @@
-question: Do you agree to safeguard personal data and official government information to same standards as government?
-hint: insert link to relevant guidance
+question: Do you agree to safeguard personal data and official government information according to the government guidance on [data protection and your business](https://www.gov.uk/data-protection-your-business)?
 type: boolean
