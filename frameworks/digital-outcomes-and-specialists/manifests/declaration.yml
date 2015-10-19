@@ -90,6 +90,7 @@
     - customerSatisfactionProcess
     - permanentMemberOfStaff
     - equalityAndDiversity
+    - civilServiceValues
 -
   name: Working with digital
   editable: True
@@ -132,7 +133,6 @@
   editable: True
   questions:
     - skillsAndCapabilityAssessment
-    - civilServiceValues
     - userNeeds
     - changesInNeeds
     - framingNeeds
