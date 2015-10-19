@@ -11,8 +11,9 @@
     - proofOfClaims
     - permanentMemberOfStaff
     - skillsAndResources
-    - accuratelyDescribed
     - canProvideServices
+    - accuratelyDescribed
+
 -
   name: Grounds for mandatory exclusion
   editable: True
