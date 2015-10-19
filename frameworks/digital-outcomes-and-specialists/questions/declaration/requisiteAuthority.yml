@@ -1,4 +1,3 @@
 question: >
-  Please confirm that you agree:
-    - that all the required authority to compete in this procurement and sign the framework agreement has been sought
+  Has all the required authority to compete in this procurement and sign the framework agreement been sought?
 type: boolean
