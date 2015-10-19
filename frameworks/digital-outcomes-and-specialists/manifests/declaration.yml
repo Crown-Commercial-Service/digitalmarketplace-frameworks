@@ -1,5 +1,143 @@
 -
-  name: Page 1
+  name: Essentials
   editable: True
   questions:
-    - example
+    - termsOfParticipation
+    - termsAndConditions
+    - davidKershaw
+    - readUnderstoodGuidance
+    - understandTool
+    - understandHowToAskQuestions
+    - proofOfClaims
+    - permanentMemberOfStaff
+    - skillsAndResources
+    - accuratelyDescribed
+    - canProvideServices
+-
+  name: Grounds for mandatory exclusion
+  editable: True
+  description: >
+    You must select NO for every question in Section C for your bid to be
+    considered eligible. If you cannot answer NO to every question in this
+    section, it is very unlikely that your bid will be accepted.
+
+
+    Organisation representatives include: members of your group of economic
+    operators, their proposed subcontractors, and any directors, partners, or
+    any other person who has powers of representation, decision or control.
+    Check that your organisation complies with Regulation 57(1) of the Public
+    Contracts Regulations 2015.
+  questions:
+    - conspiracyCorruptionBribery
+    - fraudAndTheft
+    - terrorism
+    - organisedCrime
+-
+  name: Grounds for discretionary exclusion
+  editable: True
+  description: >
+    You should select NO to every question for your bid to be considered
+    eligible. If you select YES, your bid may not be accepted. If you do select
+    YES, you must provide full details of any subsequent event or remedial
+    action that you think the authority should take into consideration. The
+    authority will use the information you provide to consider whether or not
+    you will be able to proceed any further with this procurement.
+
+
+    In questions Cross check numbers, partner organisations include: members
+    of your group of economic operators or their proposed subcontractors.
+
+
+    The authority is also entitled to exclude you if you are guilty of serious
+    misrepresentation in providing any information referred to within
+    regulations 23, 24, 25, 27 or 27 of the Public Contracts Regulations 2015
+    or if you fail to provide any such information requested by the authority.
+  questions:
+    - taxEvasion
+    - environmentalSocialLabourLaw
+    - bankrupt
+    - graveProfessionalMisconduct
+    - distortingCompetition
+    - conflictOfInterest
+    - distortedCompetition
+    - significantOrPersistentDeficiencies
+    - seriousMisrepresentation
+    - witheldSupportingDocuments
+    - influencedContractingAuthority
+    - confidentialInformation
+    - misleadingInformation
+    - mitigatingFactors
+    - unspentTaxConvictions
+    - GAAR
+    - mitigatingFactors2
+-
+  name: Working with government
+  editable: True
+  questions:
+    - MI
+    - canProvideFromDayOne
+    - evidence
+    - environmentallyFriendly
+    - consistentDelivery
+    - continuousProfessionalDevelopment
+    - customerSatisfactionProcess
+    - permanentMemberOfStaff
+    - equalityAndDiversity
+-
+  name: Working with digital
+  editable: True
+  questions:
+    - technologyCodesOfPractice
+    - serviceStandard
+    - ongoingEngagement
+    - transparentContracting
+    - publishContracts
+    - safeguardOfficialInformation
+    - safeguardPersonalData
+    - cyberEssentials
+    - cyberEssentialsPlus
+-
+  name: About you
+  editable: True
+  questions:
+    - primaryContact
+    - primaryContactEmail
+    - nameOfOrganisation
+    - registeredAddress
+    - tradingStatus
+    - tradingStatusOther
+    - tradingNames
+    - firstRegistered
+    - firstRegisteredCountry
+    - companyRegistrationNumber
+    - registeredVATNumber
+    - establishedInTheUK
+    - appropriateTradeRegisters
+    - appropriateTradeRegistersNumber
+    - licenceOrMemberRequired
+    - licenceOrMemberRequiredDetails
+    - organisationSize
+    - subcontracting
+    - contactNameContractNotice
+    - contactEmailContractNotice
+-
+  name: LEFTOVERS
+  editable: True
+  questions:
+    - skillsAndCapabilityAssessment
+    - civilServiceValues
+    - userNeeds
+    - changesInNeeds
+    - framingNeeds
+    - freeAndOpenData
+    - bespokeSystemInformation
+    - openStandardsComponents
+    - governmentsDesire
+    - reusePurchasedAssets
+    - governmentSecurityPrinciples
+    - openStandardsPrinciples
+    - openSourceLicence
+    - incentives
+    - safeguardData
+    - hideGovernment
+    - employmentAgency

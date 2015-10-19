@@ -1,0 +1,3 @@
+question: Was your business established in the UK?
+type: text
+hint: If you answered ‘yes’ to question [[establishedInTheUK]], please move on to question [[organisationSize]]
