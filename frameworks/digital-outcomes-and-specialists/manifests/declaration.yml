@@ -17,8 +17,8 @@
   name: Grounds for mandatory exclusion
   editable: True
   description: >
-    You must select NO for every question in Section C for your bid to be
-    considered eligible. If you cannot answer NO to every question in this
+    You must select 'no' for every question in Section C for your bid to be
+    considered eligible. If you cannot answer 'no' to every question in this
     section, it is very unlikely that your bid will be accepted.
 
 
@@ -36,9 +36,9 @@
   name: Grounds for discretionary exclusion
   editable: True
   description: >
-    You should select NO to every question for your bid to be considered
-    eligible. If you select YES, your bid may not be accepted. If you do select
-    YES, you must provide full details of any subsequent event or remedial
+    You should select 'no' to every question for your bid to be considered
+    eligible. If you select 'yes', your bid may not be accepted. If you do select
+    'yes', you must provide full details of any subsequent event or remedial
     action that you think the authority should take into consideration. The
     authority will use the information you provide to consider whether or not
     you will be able to proceed any further with this procurement.
