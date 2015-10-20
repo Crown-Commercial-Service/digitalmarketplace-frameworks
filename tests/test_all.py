@@ -23,24 +23,24 @@ def get_all_files():
 schema_cache = {}
 
 
-def load_jsonschema(path):
+def load_jsonschema_validator(path):
     if path not in schema_cache:
         with open(path) as f:
             schema = json.load(f)
             validator = validator_for(schema)
             validator.check_schema(schema)
-            schema_cache[path] = schema
+            schema_cache[path] = validator(schema)
 
     return schema_cache[path]
 
 
 @pytest.mark.parametrize(("path", "schema_name"), get_all_files())
 def test_framework_file_matches_schema(path, schema_name):
-    question_schema = load_jsonschema('tests/schemas/{}.json'.format(schema_name))
+    validator = load_jsonschema_validator('tests/schemas/{}.json'.format(schema_name))
 
     with open(path) as f:
         data = yaml.load(f)
         try:
-            validator_for(question_schema)(question_schema).validate(data)
+            validator.validate(data)
         except ValidationError as e:
             pytest.fail("{} failed validation with: {}".format(path, e))
