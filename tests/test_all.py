@@ -34,6 +34,10 @@ def load_jsonschema_validator(path):
     return schema_cache[path]
 
 
+def test_that_there_are_some_files():
+    assert len(list(get_all_files())) > 0
+
+
 @pytest.mark.parametrize(("path", "schema_name"), get_all_files())
 def test_framework_file_matches_schema(path, schema_name):
     validator = load_jsonschema_validator('tests/schemas/{}.json'.format(schema_name))
