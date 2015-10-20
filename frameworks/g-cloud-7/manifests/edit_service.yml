@@ -1,18 +1,18 @@
 -
   name: Service attributes
-  editable: false
+  editable: False
   questions:
     - id
     - lot
 -
   name: Description
-  editable: edit
+  editable: True
   questions:
     - serviceName
     - serviceSummary
 -
   name: Features and benefits
-  editable: edit
+  editable: True
   questions:
     - serviceFeatures
     - serviceBenefits
