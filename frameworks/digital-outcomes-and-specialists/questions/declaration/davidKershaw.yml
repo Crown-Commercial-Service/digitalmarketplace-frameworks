@@ -1,21 +1,4 @@
 question: >
-  Please confirm that you agree:
-
-    - to sign the final framework agreement within 10 working days of request by the Crown Commercial Service
-    - to have gathered sufficient information to fully understand the requirements of this procurement 
-    - that all application information is accurate
-    - that you'll inform the Crown Commercial Service as soon as possible if there are any changes to the information you've provided
-    - to have complied with all requirements for this procurement, in particular the terms of participation in the invitation to tender 
-    - that all the required authority to compete in this procurement and sign the framework agreement has been sought
-
-  If you are an applicant’s subcontractor or consortium member(s) or both, please confirm that:
-
-    - all the information contained in the application relating to you, your capability, your experience or your participation in the procurement and your provision of services is accurate 
-    - you will notify the Crown Commercial Service of any changes to the information you've provided as soon as possible
-    - no party has:
-      * shared your application prices with anyone other than the Crown Commercial Service
-      * entered into any arrangement with another person so that person refrains from submitting an application
-      * given access to information relating to the application to another person, or offered or given payment to another person
-      * given inducement or valuable consideration to another person (except where such communication takes place with people who are also participants in the application, or where disclosure is made in confidence to obtain necessary information or security for the application)
-    - no party has canvassed any government agent regarding this procurement or attempted to buy any information from them regarding the procurement
+  Do you agree to sign the final framework agreement within 10 working days of request by the Crown Commercial Service?
+   
 type: boolean
