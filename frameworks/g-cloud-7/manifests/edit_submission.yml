@@ -2,7 +2,7 @@
   name: Service attributes
   editable: false
   questions:
-    - lot
+    - lotName
 -
   name: Service name
   editable: true
