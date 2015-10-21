@@ -3,7 +3,7 @@
   editable: false
   questions:
     - id
-    - lot
+    - lotName
 -
   name: Description
   editable: true

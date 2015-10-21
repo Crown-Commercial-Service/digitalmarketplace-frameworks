@@ -6,7 +6,9 @@ depends:
     "on": lot
     being:
       - PaaS
+      - paas
       - IaaS
+      - iaas
 assuranceApproach: 4answers-type2
 type: boolean
 filterLabel: 'Secure equipment disposal'

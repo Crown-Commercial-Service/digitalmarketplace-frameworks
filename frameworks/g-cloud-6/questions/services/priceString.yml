@@ -4,9 +4,13 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
       - SCS
+      - scs
 validations:
   -
     name: no_min_price_specified

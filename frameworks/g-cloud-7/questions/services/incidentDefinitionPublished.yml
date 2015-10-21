@@ -5,8 +5,11 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
 assuranceApproach: 2answers-type1
 hint: 'Do you publish to consumers your definition of a security incident, along with the format, incident triggers and timescales for reporting such incidents?'
 type: boolean

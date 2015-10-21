@@ -4,8 +4,11 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
 servicePageLabel: 'Datacentre tier'
 type: radios
 options:

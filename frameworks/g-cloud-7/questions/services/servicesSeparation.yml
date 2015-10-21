@@ -6,8 +6,11 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
 assuranceApproach: 4answers-type3
 type: boolean
 filterLabel: 'Services separation'

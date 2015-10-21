@@ -6,7 +6,9 @@ depends:
     "on": lot
     being:
       - PaaS
+      - paas
       - IaaS
+      - iaas
 assuranceApproach: 2answers-type1
 type: boolean
 filterLabel: 'Hardware and software verification'

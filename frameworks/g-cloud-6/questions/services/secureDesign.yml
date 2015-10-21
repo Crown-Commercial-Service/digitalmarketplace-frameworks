@@ -6,8 +6,11 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
 assuranceApproach: 2answers-type1
 type: boolean
 filterLabel: 'Secure design, coding, testing and deployment'
