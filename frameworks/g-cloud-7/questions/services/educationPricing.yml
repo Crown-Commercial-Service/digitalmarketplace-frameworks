@@ -3,9 +3,13 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
       - SCS
+      - scs
 hint: 'Do you offer special pricing for educational organisations?'
 type: boolean
 filterLabel: 'Education pricing'

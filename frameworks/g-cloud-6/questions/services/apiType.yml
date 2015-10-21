@@ -3,8 +3,11 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
 hint: 'Examples of API include RESTful and SOAP.'
 type: text
 validations:
