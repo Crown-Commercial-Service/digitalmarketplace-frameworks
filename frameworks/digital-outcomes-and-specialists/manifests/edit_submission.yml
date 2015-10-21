@@ -7,8 +7,19 @@
 - name: Supplier information
   editable: True
   questions:
-    - specialistsSupplierInformation
-    - outcomesSupplierInformation
+    - userNeeds
+    - changesInNeeds
+    - framingNeeds
+    - freeAndOpenData
+    - bespokeSystemInformation
+    - openStandardsComponents
+    - openStandardsComponents
+    - governmentsDesire
+    - reusePurchasedAssets
+    - openStandardsPrinciples
+    - openSourceLicence
+    - incentives
+    - hideGovernment
 
 - name: Outcomes approach
   editable: true
