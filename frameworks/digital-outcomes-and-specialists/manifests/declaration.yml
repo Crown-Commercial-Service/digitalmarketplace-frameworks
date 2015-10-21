@@ -28,9 +28,9 @@
   name: Grounds for mandatory exclusion
   editable: True
   description: >
-    You must be able to truthfully answer 'no' to every question in 'Grounds for mandatory exclusion' for your bid to be
+    You must be able to truthfully answer 'no' to every question under 'Grounds for mandatory exclusion' for your bid to be
     considered eligible. If you can't answer 'no' to every question in this
-    section, it is very unlikely that your bid will be accepted.
+    section, it's very unlikely that your bid will be accepted.
 
 
     In questions [[conspiracyCorruptionBribery]] to [[organisedCrime]], 'anyone who represents your organisation' includes members of your group of economic
@@ -47,7 +47,7 @@
   name: Grounds for discretionary exclusion
   editable: True
   description: >
-    You must be able to truthfully answer 'no' to every question in 'Grounds for discretionary exclusion'
+    You must be able to truthfully answer 'no' to every question under 'Grounds for discretionary exclusion'
     for your bid to be considered eligible. If you can't answer 'no', your bid may not be accepted. If
     you do answer 'yes', you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
@@ -58,7 +58,7 @@
     of your group of economic operators or their proposed subcontractors.
 
 
-    The authority is also entitled to exclude you if you are guilty of serious
+    CCS can also exclude you if you are guilty of serious
     misrepresentation in providing any information referred to within
     regulations
     [23](http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made),
@@ -67,7 +67,7 @@
     [26](http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made) or
     [27](http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made)
     of the [Public Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/contents/made)
-    or if you fail to provide any such information requested by CCS.
+    or if you fail to provide any such information it requests.
   questions:
     - taxEvasion
     - environmentalSocialLabourLaw
