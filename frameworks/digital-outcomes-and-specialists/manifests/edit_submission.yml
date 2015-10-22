@@ -39,7 +39,7 @@
     - deliveryManagerLocations
 
 - name: Product manager
-  editbale: True
+  editable: True
   questions:
     - productManagerDayRate
     - productManagerLocations
