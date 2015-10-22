@@ -2,4 +2,5 @@ type: text
 question: A question for specialists
 depends:
   - "on": lot
-    being: ["digital-specialists"]
+    being:
+      - digital-specialists

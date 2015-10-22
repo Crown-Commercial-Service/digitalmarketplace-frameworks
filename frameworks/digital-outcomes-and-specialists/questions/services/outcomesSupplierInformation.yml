@@ -2,4 +2,5 @@ type: text
 question: Some outcomes supplier information
 depends:
   - "on": lot
-    being: ["digital-outcomes"]
+    being:
+      - "digital-outcomes"
