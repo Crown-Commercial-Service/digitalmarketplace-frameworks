@@ -1,5 +1,63 @@
 -
-  name: Page 1
+  name: Service attributes
+  editable: false
+  questions:
+    - lot
+
+- name: Supplier information
   editable: True
   questions:
-    - example
+    - specialistsSupplierInformation
+    - outcomesSupplierInformation
+
+- name: Outcomes approach
+  editable: true
+  questions:
+    - outcomesApproachQuestion
+
+- name: Specialists approach
+  editable: True
+  questions:
+    - specialistsApproachQuestion
+
+- name: Developer
+  editable: True
+  questions:
+    - developerDayRate
+    - developerLocations
+
+- name: Technical architect
+  editable: True
+  questions:
+    - technicalArchitectDayRate
+    - technicalArchitectLocations
+
+- name: Delivery manager
+  editable: True
+  questions:
+    - deliveryManagerDayRate
+    - deliveryManagerLocations
+
+- name: Product manager
+  editable: True
+  questions:
+    - productManagerDayRate
+    - productManagerLocations
+
+- name: Service manager
+  editable: True
+  questions:
+    - serviceManagerDayRate
+    - serviceManagerLocations
+
+- name: Programme manager
+  editable: True
+  questions:
+    - programmeManagerDayRate
+    - programmeManagerLocations
+
+- name: Business analyst
+  editable: True
+  questions:
+    - businessAnalystDayRate
+    - businessAnalystLocations

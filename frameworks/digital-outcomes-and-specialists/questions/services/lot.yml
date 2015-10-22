@@ -1,0 +1,15 @@
+question: 'Service type'
+type: radios
+options:
+  -
+    label: Digital outcomes
+    value: digital-outcomes
+  -
+    label: Digital specialists
+    value: digital-specialists
+  - 
+    label: User research studios
+    value: user-research-studios
+  -
+    label: User research participants
+    value: user-research-participants
