@@ -1,7 +1,0 @@
-question: 'This is an example of a question'
-hint: 'This gives you a suggestion for how to answer it'
-type: text
-validations:
-  -
-    name: answer_required
-    message: 'This is the message you will see if you don’t answer the question'

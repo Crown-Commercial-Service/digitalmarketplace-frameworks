@@ -1,4 +1,3 @@
-hint: ''
 question: "Location you can provide services to"
 type: checkboxes
 options:
