@@ -3,9 +3,13 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
       - SCS
+      - scs
 hint: 'eg 24/7 or 9 to 5. (Maximum 20 words.)'
 type: text
 validations:

@@ -6,8 +6,11 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
 assuranceApproach: 3answers-type3
 type: checkboxes
 options:

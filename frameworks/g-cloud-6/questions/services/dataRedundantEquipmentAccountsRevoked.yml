@@ -6,7 +6,9 @@ depends:
     "on": lot
     being:
       - PaaS
+      - paas
       - IaaS
+      - iaas
 assuranceApproach: 3answers-type1
 type: boolean
 filterLabel: 'Redundant equipment accounts revoked'

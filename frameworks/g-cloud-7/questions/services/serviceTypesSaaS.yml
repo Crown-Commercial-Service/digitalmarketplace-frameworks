@@ -3,6 +3,7 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
 hint: 'You can choose multiple categories'
 type: checkboxes
 options:

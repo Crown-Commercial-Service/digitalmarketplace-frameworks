@@ -4,8 +4,11 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
 type: boolean
 filterLabel: 'Guaranteed resources defined'
 validations:

@@ -4,9 +4,13 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
       - SCS
+      - scs
 hint: 'Please upload your terms and conditions document. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)'
 type: upload
 validations:

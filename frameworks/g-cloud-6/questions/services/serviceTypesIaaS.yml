@@ -3,6 +3,7 @@ depends:
     "on": lot
     being:
       - IaaS
+      - iaas
 hint: 'You can choose multiple categories.'
 type: checkboxes
 options:

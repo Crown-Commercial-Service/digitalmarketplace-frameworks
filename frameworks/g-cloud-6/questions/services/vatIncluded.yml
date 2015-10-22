@@ -3,9 +3,13 @@ depends:
     "on": lot
     being:
       - SaaS
+      - saas
       - PaaS
+      - paas
       - IaaS
+      - iaas
       - SCS
+      - scs
 type: boolean
 filterLabel: 'VAT included'
 validations:
