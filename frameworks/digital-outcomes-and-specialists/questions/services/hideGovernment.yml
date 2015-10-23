@@ -3,6 +3,6 @@ question: >
   government department or agency you're working with?
 type: boolean
 depends:
-  - on: "lot"
+  - "on": "lot"
     being:
       - user-research-participants
