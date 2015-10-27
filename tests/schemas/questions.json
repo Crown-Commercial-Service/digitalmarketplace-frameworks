@@ -18,6 +18,7 @@
     "options": {
       "type": "array",
       "items": {
+        "type": "object",
         "properties": {
           "label": {
             "type": "string"
@@ -31,16 +32,17 @@
           "value": {
             "type": "string"
           }
-        }
-      },
-      "additionalProperties": false,
-      "required": [
-        "label"
-      ]
+        },
+        "additionalProperties": false,
+        "required": [
+          "label"
+        ]
+      }
     },
     "validations": {
       "type": "array",
       "items": {
+        "type": "object",
         "properties": {
           "name": {
             "type": "string"
@@ -48,17 +50,18 @@
           "message": {
             "type": "string"
           }
-        }
-      },
-      "additionalProperties": false,
-      "required": [
-        "name",
-        "message"
-      ]
+        },
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "message"
+        ]
+      }
     },
     "depends": {
       "type": "array",
       "items": {
+        "type": "object",
         "properties": {
           "on": {
             "type": "string"
@@ -66,13 +69,13 @@
           "being": {
             "type": "array"
           }
-        }
-      },
-      "additionalProperties": false,
-      "required": [
-        "on",
-        "being"
-      ]
+        },
+        "additionalProperties": false,
+        "required": [
+          "on",
+          "being"
+        ]
+      }
     },
     "filterLabel": {
       "type": "string"

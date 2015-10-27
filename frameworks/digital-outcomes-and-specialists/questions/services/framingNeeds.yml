@@ -3,7 +3,12 @@ question: >
 
     - provide evidence of user needs
     - describe user needs correctly
-    - set boundaries to the service improvements you make 
+    - set boundaries to the service improvements you make
 
 hint: Read the government service design manual to learn more about [how to define user needs](https://www.gov.uk/service-manual/user-centred-design/user-needs.html#how-we-define-user-needs).
 type: boolean
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists

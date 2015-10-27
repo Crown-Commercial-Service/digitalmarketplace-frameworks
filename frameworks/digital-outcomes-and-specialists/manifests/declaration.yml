@@ -42,6 +42,7 @@
     - fraudAndTheft
     - terrorism
     - organisedCrime
+    - employmentAgency
 -
   name: Grounds for discretionary exclusion
   editable: True
@@ -94,6 +95,7 @@
     - evidence
     - environmentallyFriendly
     - consistentDelivery
+    - skillsAndCapabilityAssessment
     - continuousProfessionalDevelopment
     - customerSatisfactionProcess
     - equalityAndDiversity
@@ -135,21 +137,3 @@
     - subcontracting
     - contactNameContractNotice
     - contactEmailContractNotice
--
-  name: LEFTOVERS
-  editable: True
-  questions:
-    - skillsAndCapabilityAssessment
-    - userNeeds
-    - changesInNeeds
-    - framingNeeds
-    - freeAndOpenData
-    - bespokeSystemInformation
-    - openStandardsComponents
-    - governmentsDesire
-    - reusePurchasedAssets
-    - openStandardsPrinciples
-    - openSourceLicence
-    - incentives
-    - hideGovernment
-    - employmentAgency
