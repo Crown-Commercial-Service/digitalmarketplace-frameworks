@@ -125,7 +125,7 @@
   name: About you
   editable: True
   description: >
-  The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the Digital and Commercial Specialists framework.
+    The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the Digital and Commercial Specialists framework.
   questions:
     - primaryContact
     - primaryContactEmail
