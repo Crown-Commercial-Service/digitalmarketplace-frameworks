@@ -38,11 +38,12 @@
     Check that your organisation complies with [Regulation 57(1) of the Public
     Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made).
   questions:
+    - employmentAgency
     - conspiracyCorruptionBribery
     - fraudAndTheft
     - terrorism
     - organisedCrime
-    - employmentAgency
+
 -
   name: Grounds for discretionary exclusion
   editable: True
@@ -89,6 +90,10 @@
 -
   name: Working with government
   editable: True
+  description: >
+    You must be able to truthfully answer 'yes' to every question under 'Working with government' for your bid to be
+    considered eligible. If you can't answer 'yes' to every question in this
+    section, it's very unlikely that your bid will be accepted.
   questions:
     - MI
     - canProvideFromDayOne
@@ -103,6 +108,9 @@
 -
   name: Working with digital
   editable: True
+  description: >
+    You must be able to truthfully answer 'yes' to questions [[technologyCodesOfPractice]] to [[safeguardPersonalData]] under 'Working with digital' for your bid to be
+    considered eligible. If you can't answer 'yes', it's very unlikely that your bid will be accepted. You can answer 'yes' or 'no' to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
   questions:
     - technologyCodesOfPractice
     - serviceStandard
@@ -116,6 +124,8 @@
 -
   name: About you
   editable: True
+  description: >
+    The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the Digital and Commercial Specialists framework.
   questions:
     - primaryContact
     - primaryContactEmail
