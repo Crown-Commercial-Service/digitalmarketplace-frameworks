@@ -1,0 +1,17 @@
+question: What is the name of the studio?
+type: text
+hint: A studio is the room in which the participant(s) and moderator(s) carry out testing. The name will help buyers refer to the right studio when communicating with you.
+
+depends:
+  -
+    "on": lot
+    being:
+      - user-research-studios
+
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your studio name can't be more than 100 characters."

@@ -1,8 +1,8 @@
 -
-  name: Service attributes
-  editable: false
+  name: Studio name
+  editable: True
   questions:
-    - lot
+    - serviceName
 
 - name: Supplier information
   editable: True
