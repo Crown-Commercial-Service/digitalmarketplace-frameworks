@@ -1,0 +1,16 @@
+question: What types of support and operations can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: Hosting
+  - label: Tooling (continuous integration / deployment tools)
+  - label: Incident management
+  - label: Monitoring
+  - label: Systems administration
+  - label: Customer support
+  - label: Technical service desk
+  - label: Network administration
+  - label: Firewall management

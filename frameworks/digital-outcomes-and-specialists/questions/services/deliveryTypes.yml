@@ -1,0 +1,15 @@
+question: What types of delivery can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: Service management
+  - label: Product management
+  - label: Project management
+  - label: Programme management
+  - label: Business analysis
+  - label: Agile coaching / training
+  - label: Agile delivery
+  - label: Digital communication / engagement

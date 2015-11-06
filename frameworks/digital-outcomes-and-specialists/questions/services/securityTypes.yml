@@ -1,0 +1,15 @@
+question: What types of security can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: CLAS / CESG certification
+  - label: THC (Pen) Testing
+  - label: Threat modelling
+  - label: Risk management
+  - label: Incident response / forensics
+  - label: Security policy
+  - label: Firewall review / audit
+  - label: Infrastructure review
