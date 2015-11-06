@@ -1,0 +1,11 @@
+question: How accessible is your studio?
+
+depends:
+  - "on": lot
+    being:
+      - user-research-studios
+
+type: textbox_large
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

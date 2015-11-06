@@ -1,0 +1,11 @@
+question: How do visitors get to your studio using public transport?
+
+depends:
+  - "on": lot
+    being:
+      - user-research-studios
+
+type: textbox_large
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

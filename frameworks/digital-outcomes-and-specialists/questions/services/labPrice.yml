@@ -1,0 +1,11 @@
+question: What is the minimum amount of time your studio can be booked for and how much does it cost?
+
+depends:
+  - "on": lot
+    being:
+      - user-research-studios
+
+type: pricing
+fields:
+  minimum_price: labPriceMin
+  maximum_price: labPriceMax
