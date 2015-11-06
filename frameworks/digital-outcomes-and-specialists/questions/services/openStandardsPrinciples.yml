@@ -1,4 +1,4 @@
-question: Do you support the government’s [open standards principles](https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles) and the implementation of [open standards selected for use across government](http://standards.data.gov.uk/challenges/adopted)?
+question: Will you work according to the government’s Open Standards Principles (https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles) and use the open standards selected for use across government(http://standards.data.gov.uk/challenges/adopted)?
 type: boolean
 depends:
   - "on": "lot"

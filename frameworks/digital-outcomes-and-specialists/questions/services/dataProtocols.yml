@@ -1,0 +1,7 @@
+question: Will you use standard, accessible data protocols to ensure interoperability across government services?
+type: boolean
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists

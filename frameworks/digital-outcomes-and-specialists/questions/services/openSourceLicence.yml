@@ -1,4 +1,4 @@
-question: Do you support the publication of specially written software under the appropriate open source licence so that it can be used and improved by other authors?
+question: Will you, by default, publish the software you build for the government under the appropriate open source (http://opensource.org/docs/definition.php) licence?
 type: boolean
 depends:
   - "on": "lot"
