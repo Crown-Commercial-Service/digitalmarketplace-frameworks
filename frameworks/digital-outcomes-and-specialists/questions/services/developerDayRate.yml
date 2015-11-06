@@ -1,2 +1,9 @@
+question: How much do you charge per day for a developer?
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
 type: pricing
-question: Day rate range
+fields:
+  minimum_price: developerPriceMin
+  maximum_price: developerPriceMax

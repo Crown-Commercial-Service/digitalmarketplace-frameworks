@@ -1,0 +1,9 @@
+question: How much do you charge per day for a agile coach?
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: pricing
+fields:
+  minimum_price: agileCoachPriceMin
+  maximum_price: agileCoachPriceMax

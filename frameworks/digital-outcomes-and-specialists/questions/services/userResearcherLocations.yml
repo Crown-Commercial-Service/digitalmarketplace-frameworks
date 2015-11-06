@@ -1,4 +1,4 @@
-question: Where will your product manager work?
+question: Where will your user researcher work?
 depends:
   - "on": lot
     being:

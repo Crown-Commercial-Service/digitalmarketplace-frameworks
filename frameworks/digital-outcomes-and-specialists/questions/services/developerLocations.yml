@@ -1,4 +1,8 @@
-question: "Location you can provide services to"
+question: Where will your developer work?
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
 type: checkboxes
 options:
   - label: "Scotland"

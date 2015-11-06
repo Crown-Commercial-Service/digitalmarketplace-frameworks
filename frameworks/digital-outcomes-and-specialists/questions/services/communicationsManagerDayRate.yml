@@ -1,0 +1,9 @@
+question: How much do you charge per day for a communications manager?
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: pricing
+fields:
+  minimum_price: communicationsManagerPriceMin
+  maximum_price: communicationsManagerPriceMax

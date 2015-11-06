@@ -1,0 +1,9 @@
+question: How much do you charge per day for a cyber security specialist?
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: pricing
+fields:
+  minimum_price: securitySpecialistPriceMin
+  maximum_price: securitySpecialistPriceMax
