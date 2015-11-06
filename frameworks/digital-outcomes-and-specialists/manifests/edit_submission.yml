@@ -1,74 +1,185 @@
 -
-  name: Studio name
+  name: Lab name
   editable: True
   questions:
     - serviceName
 
-- name: Supplier information
+- name: Essential
   editable: True
   questions:
-    - userNeeds
-    - changesInNeeds
-    - framingNeeds
-    - freeAndOpenData
+    - helpGovernmentImproveServices
     - bespokeSystemInformation
-    - openStandardsComponents
-    - openStandardsComponents
-    - governmentsDesire
-    - reusePurchasedAssets
+    - dataProtocols
     - openStandardsPrinciples
     - openSourceLicence
-    - incentives
-    - hideGovernment
+    - anonymousRecruitment
+    - manageIncentives
 
-- name: Outcomes approach
+- name: Team capabilities
+  editable: True
+  questions:
+    - performanceAnalysisTypes
+    - securityTypes
+    - deliveryTypes
+    - softwareDevelopmentTypes
+    - supportAndOperationsTypes
+    - testingAndAuditingTypes
+    - userExperienceAndDesignTypes
+    - userResearchTypes
+
+- name: Outcomes locations
   editable: true
   questions:
-    - outcomesApproachQuestion
+    - outcomesLocations
 
-- name: Specialists approach
+- name: Agile coach
   editable: True
   questions:
-    - specialistsApproachQuestion
-
-- name: Developer
-  editable: True
-  questions:
-    - developerDayRate
-    - developerLocations
-
-- name: Technical architect
-  editable: True
-  questions:
-    - technicalArchitectDayRate
-    - technicalArchitectLocations
-
-- name: Delivery manager
-  editable: True
-  questions:
-    - deliveryManagerDayRate
-    - deliveryManagerLocations
-
-- name: Product manager
-  editable: True
-  questions:
-    - productManagerDayRate
-    - productManagerLocations
-
-- name: Service manager
-  editable: True
-  questions:
-    - serviceManagerDayRate
-    - serviceManagerLocations
-
-- name: Programme manager
-  editable: True
-  questions:
-    - programmeManagerDayRate
-    - programmeManagerLocations
+    - agileCoachLocations
+    - agileCoachDayRate
 
 - name: Business analyst
   editable: True
   questions:
-    - businessAnalystDayRate
     - businessAnalystLocations
+    - businessAnalystDayRate
+
+- name: Content designer
+  editable: True
+  questions:
+    - contentDesignerLocations
+    - contentDesignerDayRate
+
+- name: Cyber security specialist
+  editable: True
+  questions:
+    - securitySpecialistLocations
+    - securitySpecialistDayRate
+
+- name: Delivery manager
+  editable: True
+  questions:
+    - deliveryManagerLocations
+    - deliveryManagerDayRate
+
+- name: Designer
+  editable: True
+  questions:
+    - designerLocations
+    - designerDayRate
+
+- name: Developer
+  editable: True
+  questions:
+    - developerLocations
+    - developerDayRate
+
+- name: Communications manager
+  editable: True
+  questions:
+    - communicationsManagerLocations
+    - communicationsManagerDayRate
+
+- name: Performance analyst
+  editable: True
+  questions:
+    - performanceAnalystLocations
+    - performanceAnalystDayRate
+
+- name: Portfolio manager
+  editable: True
+  questions:
+    - portfolioManagerLocations
+    - portfolioManagerDayRate
+
+- name: Product manager
+  editable: True
+  questions:
+    - productManagerLocations
+    - productManagerDayRate
+
+- name: Programme manager
+  editable: True
+  questions:
+    - programmeManagerLocations
+    - programmeManagerDayRate
+
+- name: Service manager
+  editable: True
+  questions:
+    - serviceManagerLocations
+    - serviceManagerDayRate
+
+- name: Technical architect
+  editable: True
+  questions:
+    - technicalArchitectLocations
+    - technicalArchitectDayRate
+
+- name: User researcher
+  editable: True
+  questions:
+    - userResearcherLocations
+    - userResearcherDayRate
+
+- name: User researcher
+  editable: True
+  questions:
+    - webOperationsLocations
+    - webOperationsDayRate
+
+- name: Location
+  editable: True
+  questions:
+    - labAddress
+    - labPublicTransport
+    - labCarPark
+    - recruitLocations
+
+- name: Lab size
+  editable: True
+  questions:
+    - labSize
+
+- name: Viewing
+  editable: True
+  questions:
+    - labViewingArea
+    - labStreaming
+    - labDesktopStreaming
+    - labDeviceStreaming
+    - labEyeTracking
+    - labWiFi
+
+- name: Technical assistance
+  editable: True
+  questions:
+    - labTechAssistance
+
+- name: Hospitality
+  editable: True
+  questions:
+    - labHosting
+    - labWaitingArea
+
+- name: Facilities
+  editable: True
+  questions:
+    - labToilets
+    - labBabyChanging
+
+- name: Accessibility
+  editable: True
+  questions:
+    - labAccessibility
+
+- name: Price
+  editable: True
+  questions:
+    - labPrice
+
+- name: Recruitment approach
+  editable: True
+  questions:
+    - recruitMethods
+    - recruitFromList
