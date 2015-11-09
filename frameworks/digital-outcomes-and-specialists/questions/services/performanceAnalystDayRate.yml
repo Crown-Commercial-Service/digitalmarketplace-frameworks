@@ -1,0 +1,9 @@
+question: How much do you charge per day for a performance analyst?
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: pricing
+fields:
+  minimum_price: performanceAnalystPriceMin
+  maximum_price: performanceAnalystPriceMax

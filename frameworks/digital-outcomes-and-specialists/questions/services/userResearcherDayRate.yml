@@ -1,0 +1,9 @@
+question: How much do you charge per day for a user researcher?
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: pricing
+fields:
+  minimum_price: userResearcherPriceMin
+  maximum_price: userResearcherPriceMax

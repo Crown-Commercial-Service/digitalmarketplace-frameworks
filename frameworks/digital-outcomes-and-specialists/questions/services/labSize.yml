@@ -1,0 +1,11 @@
+question: How many people can the lab accommodate?
+
+depends:
+  - "on": lot
+    being:
+      - user-research-studios
+
+type: text
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

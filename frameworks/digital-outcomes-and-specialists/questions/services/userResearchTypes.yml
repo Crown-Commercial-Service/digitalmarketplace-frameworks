@@ -1,0 +1,13 @@
+question: What types of user research can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: User needs and insights
+  - label: User journey mapping
+  - label: Creating personas
+  - label: Usability testing
+  - label: Quantitative research
+  - label: Surveys

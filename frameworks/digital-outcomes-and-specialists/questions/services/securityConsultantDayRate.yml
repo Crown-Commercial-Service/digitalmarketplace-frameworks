@@ -1,0 +1,9 @@
+question: How much do you charge per day for a cyber security consultant?
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: pricing
+fields:
+  minimum_price: securityConsultantPriceMin
+  maximum_price: securityConsultantPriceMax

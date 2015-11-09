@@ -98,6 +98,13 @@
     "filters": {
       "type": "string"
     },
+    "fields": {
+      "type": "object",
+      "properties": {
+        "minimum_price": {"type": "string"},
+        "maximum_price": {"type": "string"}
+      }
+    },
     "servicePageLabel": {
       "type": "string"
     },
