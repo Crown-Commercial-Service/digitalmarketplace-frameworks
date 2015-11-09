@@ -1,4 +1,3 @@
-requirements: 'The consumer understands how to safely connect to the service whilst minimising risk to the consumer’s systems.'
 hint: 'Do you provide onboarding guidance covering secure connection to the service?'
 depends:
   -

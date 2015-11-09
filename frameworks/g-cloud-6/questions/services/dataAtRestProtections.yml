@@ -1,4 +1,3 @@
-requirements: 'Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.'
 hint: 'How is storage media containing consumer data protected from unauthorised physical access? Choose all that apply.'
 depends:
   -

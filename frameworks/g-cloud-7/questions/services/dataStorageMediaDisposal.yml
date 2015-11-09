@@ -1,4 +1,3 @@
-requirements: 'Consumers should be sufficiently confident that storage media which has held consumer data is sanitised or securely destroyed at the end of its life'
 hint: 'How is storage media containing consumer data sanitised or securely destroyed at the end of its usable lifetime? Choose 1.'
 depends:
   -

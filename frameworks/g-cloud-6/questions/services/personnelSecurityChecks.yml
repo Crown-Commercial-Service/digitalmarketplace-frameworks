@@ -1,4 +1,3 @@
-requirements: 'Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.'
 hint: 'What kind of personnel security do you apply to staff who have access to the service? Choose all that apply.'
 depends:
   -

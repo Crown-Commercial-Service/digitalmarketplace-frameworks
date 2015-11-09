@@ -1,4 +1,3 @@
-requirements: 'Consumers should have confidence that a defined process and contact route exists for reporting of security incidents by consumers and external entities.'
 depends:
   -
     "on": lot

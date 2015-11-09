@@ -1,4 +1,3 @@
-requirements: 'The consumer has sufficient confidence that other consumers cannot access, modify or otherwise affect their service management.'
 hint: 'Can consumers manage only their own service, and not access, modify or otherwise affect the service of other consumers via management tools and interfaces?'
 depends:
   -

@@ -1,4 +1,3 @@
-requirements: 'Consumers should have confidence that pre-defined processes are in place for responding to common types of incident and attack.'
 hint: 'Do you have a defined process for reporting security incidents experienced by consumers and external entities?'
 depends:
   -

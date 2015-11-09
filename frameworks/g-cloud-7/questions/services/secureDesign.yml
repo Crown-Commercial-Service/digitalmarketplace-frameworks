@@ -1,4 +1,3 @@
-requirements: 'Consumers should be sufficiently confident that development is carried out in line with industry good practice regarding secure design, coding, testing and deployment.'
 hint: 'Is development carried out in line with industry good practice regarding secure design, coding, testing and deployment?'
 depends:
   -

@@ -1,4 +1,3 @@
-requirements: 'Data in transit is protected between the user’s devices and the service'
 hint: 'Choose all that apply'
 depends:
   -

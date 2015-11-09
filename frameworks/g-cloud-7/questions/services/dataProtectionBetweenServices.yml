@@ -1,4 +1,3 @@
-requirements: 'Data in transit is protected between the service and other services (eg where APIs are exposed)'
 hint: 'Choose all that apply'
 depends:
   -

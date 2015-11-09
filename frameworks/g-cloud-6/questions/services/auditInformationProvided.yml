@@ -1,4 +1,3 @@
-requirements: 'Consumers are aware of the audit information that will be provided to them, how and when it will be made available to them, the format of the data, and the retention period associated with it.'
 hint: 'Do you provide audit information to consumers? Choose 1.'
 depends:
   -

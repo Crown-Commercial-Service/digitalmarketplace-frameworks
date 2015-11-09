@@ -1,4 +1,3 @@
-requirements: 'Consumers should understand the types of consumer they share the service or platform with.'
 hint: 'What types of other consumer do you share the service or platform with?'
 depends:
   -

@@ -1,4 +1,3 @@
-requirements: 'The consumer has sufficient confidence that only authorised individuals from the consumer organisation are able to perform actions affecting the consumer’s service through support channels.'
 hint: 'Can only authorised individuals from the consumer organisation perform actions affecting the consumer’s service through your support channels?'
 depends:
   -

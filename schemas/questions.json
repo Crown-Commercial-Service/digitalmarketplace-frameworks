@@ -111,9 +111,6 @@
         "5answers-type1"
       ]
     },
-    "requirements": {
-      "type": "string"
-    },
     "fields": {
       "type": "object",
       "properties": {

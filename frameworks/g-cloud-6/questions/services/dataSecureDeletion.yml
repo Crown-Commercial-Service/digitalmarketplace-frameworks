@@ -1,4 +1,3 @@
-requirements: 'Consumers should be sufficiently confident that their data is erased when resources are moved or re-provisioned, when they leave the service or when they request it to be erased.'
 hint: 'How do you erase consumer data when resources are moved or re-provisioned, or when the consumer leaves the service, or when they request it to be erased? Choose 1.'
 depends:
   -

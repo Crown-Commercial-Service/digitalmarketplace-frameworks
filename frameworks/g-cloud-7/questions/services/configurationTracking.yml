@@ -1,4 +1,3 @@
-requirements: 'Consumers should have confidence that the status, location and configuration of service components (including hardware and software components) are tracked throughout their lifetime within the service.'
 hint: 'Do you track the status, location and configuration of service components throughout their lifetime?'
 depends:
   -

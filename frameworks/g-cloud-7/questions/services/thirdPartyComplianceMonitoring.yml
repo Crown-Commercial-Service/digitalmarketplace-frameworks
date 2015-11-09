@@ -1,4 +1,3 @@
-requirements: 'The consumer understands and accepts how the service provider manages the conformance of their suppliers with security requirements.'
 hint: 'Do you manage your third-party suppliers'' compliance with relevant security requirements?'
 depends:
   -
