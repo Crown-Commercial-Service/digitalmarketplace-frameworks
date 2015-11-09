@@ -1,4 +1,4 @@
-question: Will you, by default, publish the software you build for the government under the appropriate open source (http://opensource.org/docs/definition.php) licence?
+question: Will you, by default, publish the software you build for the government under the appropriate [open source licence](http://opensource.org/docs/definition.php)?
 type: boolean
 depends:
   - "on": "lot"
