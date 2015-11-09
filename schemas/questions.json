@@ -118,7 +118,7 @@
         "maximum_price": {"type": "string"}
       }
     },
-    "maxLengthInWords": {
+    "max_length_in_words": {
       "type": "integer"
     },
     "optional": {
