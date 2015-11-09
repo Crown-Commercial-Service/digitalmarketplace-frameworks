@@ -1,5 +1,4 @@
 requirements: 'Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.'
-filters: 'Consumers should be confident that the physical security measures employed by the provider are sufficient for their intended use of the service.'
 hint: 'Do you tell your consumers what physical security your datacentres have?'
 depends:
   -

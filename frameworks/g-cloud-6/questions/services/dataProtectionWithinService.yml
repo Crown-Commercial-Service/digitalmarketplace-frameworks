@@ -1,5 +1,4 @@
 requirements: 'Data in transit is protected internally within the service'
-filters: 'Data in transit is protected internally within the service'
 hint: 'Choose all that apply'
 depends:
   -

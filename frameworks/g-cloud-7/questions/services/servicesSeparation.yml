@@ -1,5 +1,4 @@
 requirements: 'Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.'
-filters: 'Consumers should have confidence that the service provides sufficient separation of their data and service from other consumers of the service.'
 hint: 'Do you securely separate consumer data and services from other consumers of the service?'
 depends:
   -

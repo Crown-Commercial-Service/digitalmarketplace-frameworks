@@ -1,5 +1,4 @@
 requirements: 'Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).'
-filters: 'Consumers should have confidence that their management of the service is kept separate from other consumers (covered separately as part of Principle 9).'
 hint: 'Is your management of a consumer’s service kept separate from other consumers?'
 depends:
   -

@@ -1,5 +1,4 @@
 requirements: 'The consumer can educate those administrating and using the service in how to use it safely and securely.'
-filters: 'The consumer can educate those administrating and using the service in how to use it safely and securely.'
 hint: 'Do you provide user or administrator training on the use of the service and its security?'
 depends:
   -

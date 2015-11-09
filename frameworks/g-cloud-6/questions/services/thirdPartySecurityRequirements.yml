@@ -1,5 +1,4 @@
 requirements: 'The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.'
-filters: 'The consumer understands and accepts how the service provider’s procurement processes place security requirements on third party suppliers and delivery partners.'
 hint: 'Do you ensure that relevant security requirements, such as the Cloud Security Principles, are placed on third-party suppliers and delivery partners?'
 depends:
   -

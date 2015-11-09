@@ -1,5 +1,4 @@
 requirements: 'Consumers should be sufficiently confident that new and evolving threats are reviewed and the service improved in line with them.'
-filters: 'Consumers should be sufficiently confident that new and evolving threats are reviewed and the service improved in line with them.'
 hint: 'Are new and evolving threats reviewed and your services improved accordingly?'
 depends:
   -

@@ -1,5 +1,4 @@
 requirements: 'The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.'
-filters: 'The consumer understands and accepts how the service provider manages security risks from third party suppliers and delivery partners.'
 hint: 'Do you manage the risks to your service from third-party suppliers and delivery partners?'
 depends:
   -

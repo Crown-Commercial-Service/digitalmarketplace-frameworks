@@ -1,5 +1,4 @@
 requirements: 'The consumer understands any service configuration options available to them and the security implications of choices they make.'
-filters: 'The consumer understands any service configuration options available to them and the security implications of choices they make.'
 hint: 'Which end devices are the cloud service accessible from? Choose all that apply.'
 depends:
   -

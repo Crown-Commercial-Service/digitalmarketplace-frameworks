@@ -114,9 +114,6 @@
     "requirements": {
       "type": "string"
     },
-    "filters": {
-      "type": "string"
-    },
     "fields": {
       "type": "object",
       "properties": {

@@ -1,5 +1,4 @@
 requirements: 'Consumers should be sufficiently confident that configuration management processes are in place to ensure the integrity of the solution through development, testing and deployment.'
-filters: 'Consumers should be sufficiently confident that configuration management processes are in place to ensure the integrity of the solution through development, testing and deployment.'
 hint: 'Do you have configuration management in place to ensure the integrity of the service through development, testing and deployment?'
 depends:
   -
