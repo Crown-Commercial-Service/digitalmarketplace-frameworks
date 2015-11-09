@@ -100,9 +100,15 @@
       "type": "string"
     },
     "assuranceApproach": {
-      "type": [
-        "string",
-        "null"
+      "enum": [
+        "2answers-type1",
+        "3answers-type1",
+        "3answers-type2",
+        "3answers-type3",
+        "4answers-type1",
+        "4answers-type2",
+        "4answers-type3",
+        "5answers-type1"
       ]
     },
     "requirements": {

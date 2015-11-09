@@ -9,7 +9,7 @@ depends:
       - paas
       - IaaS
       - iaas
-assuranceApproach: 2answers-type2
+assuranceApproach: 3answers-type2
 type: boolean
 validations:
   -
