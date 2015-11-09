@@ -8,7 +8,6 @@ depends:
       - paas
       - IaaS
       - iaas
-servicePageLabel: 'Datacentres adhere to the EU code of conduct for energy-efficient datacentres'
 type: boolean
 validations:
   -

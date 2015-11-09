@@ -9,7 +9,6 @@ depends:
       - paas
       - IaaS
       - iaas
-servicePageLabel: 'Datacentre tier'
 type: radios
 options:
     -

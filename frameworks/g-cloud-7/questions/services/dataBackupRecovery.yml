@@ -8,7 +8,6 @@ depends:
       - paas
       - IaaS
       - iaas
-servicePageLabel: 'Backup, disaster recovery and resilience plan in place'
 hint: 'You can provide more detail on your disaster recovery plan in your service definition document.'
 type: boolean
 validations:

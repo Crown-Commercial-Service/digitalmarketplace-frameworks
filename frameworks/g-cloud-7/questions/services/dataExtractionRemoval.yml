@@ -8,7 +8,6 @@ depends:
       - paas
       - IaaS
       - iaas
-servicePageLabel: 'Data extraction/removal plan in place'
 type: boolean
 validations:
   -

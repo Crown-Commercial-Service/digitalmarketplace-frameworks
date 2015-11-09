@@ -8,7 +8,6 @@ depends:
       - paas
       - IaaS
       - iaas
-servicePageLabel: 'User-defined data location'
 type: boolean
 validations:
   -
