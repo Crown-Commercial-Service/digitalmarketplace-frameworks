@@ -118,12 +118,6 @@
         "maximum_price": {"type": "string"}
       }
     },
-    "assuranceHint": {
-      "type": [
-        "null",
-        "string"
-      ]
-    },
     "maxLengthInWords": {
       "type": "integer"
     },
