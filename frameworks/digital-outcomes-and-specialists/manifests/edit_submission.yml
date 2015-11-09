@@ -4,7 +4,7 @@
   questions:
     - serviceName
 
-- name: Digital outcomes and specialists essentials
+- name: Service essentials
   editable: True
   questions:
     - helpGovernmentImproveServices
