@@ -8,9 +8,7 @@ depends:
       - paas
       - IaaS
       - iaas
-servicePageLabel: 'User-defined data location'
 type: boolean
-filterLabel: 'User-defined data location'
 validations:
   -
     name: answer_required

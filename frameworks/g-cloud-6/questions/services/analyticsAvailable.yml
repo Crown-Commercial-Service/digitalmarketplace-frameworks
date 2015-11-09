@@ -9,7 +9,6 @@ depends:
       - IaaS
       - iaas
 type: boolean
-filterLabel: 'Real-time management information available'
 validations:
   -
     name: answer_required

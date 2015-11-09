@@ -9,10 +9,8 @@ type: checkboxes
 options:
   -
     label: Compute
-    filterLabel: Compute
   -
     label: Storage
-    filterLabel: Storage
 validations:
   -
     name: answer_required

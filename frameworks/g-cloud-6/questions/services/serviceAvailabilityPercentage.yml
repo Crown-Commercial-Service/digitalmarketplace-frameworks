@@ -1,5 +1,3 @@
-requirements: 'Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.'
-filters: 'Consumers should be sufficiently confident that the availability commitments of the service, including their ability to recover from outages, meets their business needs.'
 hint: 'What is the availability of the service? eg 99.99'
 depends:
   -
@@ -13,7 +11,6 @@ depends:
       - iaas
 assuranceApproach: 3answers-type1
 type: percentage
-filterLabel: 'Service availability'
 validations:
   -
     name: answer_required

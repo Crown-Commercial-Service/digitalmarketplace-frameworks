@@ -1,5 +1,3 @@
-requirements: 'Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.'
-filters: 'Consumers should be content with the level of security screening conducted on service provider staff with access to their information or with ability to affect their service.'
 hint: 'What kind of personnel security do you apply to staff who have access to the service? Choose all that apply.'
 depends:
   -
@@ -16,16 +14,12 @@ type: checkboxes
 options:
     -
         label: 'Security clearance national vetting (SC)'
-        filterLabel: 'Security clearance national vetting (SC)'
     -
         label: 'Baseline personnel security standard (BPSS)'
-        filterLabel: 'Baseline personnel security standard (BPSS)'
     -
         label: 'Background checks in accordance with BS7858:2012'
-        filterLabel: 'Background checks in accordance with BS7858:2012'
     -
         label: 'Employment checks'
-        filterLabel: 'Employment checks'
 validations:
   -
     name: answer_required

@@ -12,7 +12,6 @@ depends:
       - SCS
       - scs
 type: boolean
-filterLabel: 'Support accessible to any third-party suppliers'
 validations:
   -
     name: answer_required

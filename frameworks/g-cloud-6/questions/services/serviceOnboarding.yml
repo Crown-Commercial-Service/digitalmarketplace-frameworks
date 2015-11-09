@@ -9,7 +9,6 @@ depends:
       - IaaS
       - iaas
 type: boolean
-filterLabel: 'Service onboarding process included'
 validations:
   -
     name: answer_required

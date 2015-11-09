@@ -14,16 +14,12 @@ type: radios
 options:
     -
         label: Hour
-        filterLabel: Hour
     -
         label: Day
-        filterLabel: Day
     -
         label: Month
-        filterLabel: Month
     -
         label: Year
-        filterLabel: Year
     -
         label: Other
 validations:

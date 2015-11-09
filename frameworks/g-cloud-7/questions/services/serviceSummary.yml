@@ -12,7 +12,7 @@ depends:
       - SCS
       - scs
 type: textarea
-maxLengthInWords: 50
+max_length_in_words: 50
 validations:
   -
     name: answer_required

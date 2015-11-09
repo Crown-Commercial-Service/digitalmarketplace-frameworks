@@ -1,5 +1,3 @@
-requirements: 'The consumer has sufficient confidence that other consumers cannot access, modify or otherwise affect their service management.'
-filters: 'The consumer has sufficient confidence that other consumers cannot access, modify or otherwise affect their service management.'
 hint: 'Can consumers manage only their own service, and not access, modify or otherwise affect the service of other consumers via management tools and interfaces?'
 depends:
   -
@@ -11,9 +9,8 @@ depends:
       - paas
       - IaaS
       - iaas
-assuranceApproach: 2answers-type2
+assuranceApproach: 3answers-type2
 type: boolean
-filterLabel: 'User access control within management interfaces'
 validations:
   -
     name: answer_required

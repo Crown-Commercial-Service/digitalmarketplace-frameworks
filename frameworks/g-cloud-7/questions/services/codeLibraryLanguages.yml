@@ -5,9 +5,8 @@ depends:
       - SaaS
       - saas
 hint: 'Examples of code libraries include AWS Ruby SDK and Stripe-Java. Examples of languages include PHP and Python. (Maximum 10 languages.) (Optional.) '
-listItemName: 'code libraries example'
+list_item_name: 'code libraries example'
 type: list
-addthing: 'Add another code library'
 validations:
   -
     name: under_10_words

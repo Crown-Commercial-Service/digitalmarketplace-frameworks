@@ -1,5 +1,3 @@
-requirements: 'The legal jurisdiction(s) in which the service provider operates'
-filters: 'The legal jurisdiction(s) in which the service provider operates'
 hint: 'Choose 1'
 depends:
   -
@@ -16,16 +14,12 @@ type: radios
 options:
     -
         label: UK
-        filterLabel: UK
     -
         label: EU
-        filterLabel: EU
     -
         label: 'USA - Safe Harbor'
-        filterLabel: 'USA - Safe Harbor'
     -
         label: 'Other countries with data protection treaties'
-        filterLabel: 'Other countries with data protection treaties'
     -
         label: 'Rest of world'
 validations:

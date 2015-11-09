@@ -1,5 +1,3 @@
-requirements: 'Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).'
-filters: 'Consumers should be sufficiently confident that all equipment potentially containing consumer data, credentials, or configuration information for the service is identified at the end of its life (or prior to being recycled).'
 hint: 'Is all equipment potentially containing consumer data, credentials or configuration information identified at the end of its life or prior to being recycled? Choose 1.'
 depends:
   -
@@ -11,7 +9,6 @@ depends:
       - iaas
 assuranceApproach: 4answers-type2
 type: boolean
-filterLabel: 'Secure equipment disposal'
 validations:
   -
     name: answer_required

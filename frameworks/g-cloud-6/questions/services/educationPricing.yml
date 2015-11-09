@@ -12,7 +12,6 @@ depends:
       - scs
 hint: 'Do you offer special pricing for educational organisations?'
 type: boolean
-filterLabel: 'Education pricing'
 validations:
   -
     name: answer_required

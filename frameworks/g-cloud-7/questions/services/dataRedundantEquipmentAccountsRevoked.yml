@@ -1,5 +1,3 @@
-requirements: 'Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.'
-filters: 'Consumers should be sufficiently confident that accounts or credentials specific to redundant equipment are revoked to reduce their value to an attacker.'
 hint: 'Are accounts or credentials specific to redundant equipment revoked to reduce their value to an attacker?'
 depends:
   -
@@ -11,7 +9,6 @@ depends:
       - iaas
 assuranceApproach: 3answers-type1
 type: boolean
-filterLabel: 'Redundant equipment accounts revoked'
 validations:
   -
     name: answer_required

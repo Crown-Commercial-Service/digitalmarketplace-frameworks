@@ -9,7 +9,6 @@ depends:
       - SCS
       - scs
 type: boolean
-filterLabel: 'Termination cost'
 validations:
   -
     name: answer_required

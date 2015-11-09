@@ -1,5 +1,3 @@
-requirements: 'Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.'
-filters: 'Consumers should have sufficient confidence that identity and authentication controls ensure users are authorised to access specific interfaces.'
 hint: 'How do your identity and authentication controls ensure that users are authorised to access specific interfaces? Choose all that apply.'
 depends:
   -
@@ -16,22 +14,16 @@ type: checkboxes
 options:
     -
         label: 'Username and two-factor authentication'
-        filterLabel: 'Username and two-factor authentication'
     -
         label: 'Username and TLS client certificate'
-        filterLabel: 'Username and TLS client certificate'
     -
         label: 'Authentication federation'
-        filterLabel: 'Authentication federation'
     -
         label: 'Limited access over dedicated link, enterprise or community network'
-        filterLabel: 'Limited access over dedicated link, enterprise or community network'
     -
         label: 'Username and password'
-        filterLabel: 'Username and password'
     -
         label: 'Username and strong password/passphrase enforcement'
-        filterLabel: 'Username and strong password/passphrase enforcement'
     -
         label: 'Other mechanism'
 validations:

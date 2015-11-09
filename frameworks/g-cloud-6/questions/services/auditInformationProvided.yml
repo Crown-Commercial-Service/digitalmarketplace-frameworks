@@ -1,5 +1,3 @@
-requirements: 'Consumers are aware of the audit information that will be provided to them, how and when it will be made available to them, the format of the data, and the retention period associated with it.'
-filters: 'Consumers are aware of the audit information that will be provided to them, how and when it will be made available to them, the format of the data, and the retention period associated with it.'
 hint: 'Do you provide audit information to consumers? Choose 1.'
 depends:
   -
@@ -18,10 +16,8 @@ options:
         label: None
     -
         label: 'Data made available'
-        filterLabel: 'Data made available'
     -
         label: 'Data made available by negotiation'
-        filterLabel: 'Data made available by negotiation'
 validations:
   -
     name: answer_required

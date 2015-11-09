@@ -11,9 +11,8 @@ depends:
       - SCS
       - scs
 hint: 'Examples of employee or company certifications include VMware Certified Professional and Oracle Gold Partner. (Optional.)'
-listItemName: 'certification example'
+list_item_name: 'certification example'
 type: list
-addthing: 'Add another certification'
 validations:
     -
       name: under_10_words

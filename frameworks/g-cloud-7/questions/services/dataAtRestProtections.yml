@@ -1,5 +1,3 @@
-requirements: 'Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.'
-filters: 'Consumers should have sufficient confidence that storage media containing their data is protected from unauthorised access.'
 hint: 'How is storage media containing consumer data protected from unauthorised physical access? Choose all that apply.'
 depends:
   -
@@ -16,19 +14,14 @@ type: checkboxes
 options:
     -
         label: 'CPA Foundation-grade assured components'
-        filterLabel: 'CPA Foundation-grade assured components'
     -
         label: 'FIPS-assured encryption'
-        filterLabel: 'FIPS-assured encryption'
     -
         label: 'Other encryption'
-        filterLabel: 'Other encryption'
     -
         label: 'Secure containers, racks or cages'
-        filterLabel: 'Secure containers, racks or cages'
     -
         label: 'Physical access control'
-        filterLabel: 'Physical access control'
     -
         label: 'No protection'
 validations:

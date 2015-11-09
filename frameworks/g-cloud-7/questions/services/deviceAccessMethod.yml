@@ -1,5 +1,3 @@
-requirements: 'The consumer understands any service configuration options available to them and the security implications of choices they make.'
-filters: 'The consumer understands any service configuration options available to them and the security implications of choices they make.'
 hint: 'Which end devices are the cloud service accessible from? Choose all that apply.'
 depends:
   -
@@ -16,13 +14,10 @@ type: checkboxes
 options:
     -
         label: 'Corporate/enterprise devices'
-        filterLabel: 'Corporate/enterprise devices'
     -
         label: 'Partner devices'
-        filterLabel: 'Partner devices'
     -
         label: 'Unknown devices'
-        filterLabel: 'Unknown devices'
 validations:
   -
     name: answer_required

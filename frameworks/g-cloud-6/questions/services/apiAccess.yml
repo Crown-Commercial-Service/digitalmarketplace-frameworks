@@ -9,7 +9,6 @@ depends:
       - IaaS
       - iaas
 type: boolean
-filterLabel: 'API access available and supported'
 validations:
   -
     name: answer_required

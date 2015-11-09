@@ -1,5 +1,3 @@
-requirements: 'Service providers must state whether the service is a public, private or community cloud service.'
-filters: 'Service providers must state whether the service is a public, private or community cloud service.'
 hint: 'Is the service a public, private, community or hybrid cloud service?'
 depends:
   -
@@ -16,16 +14,12 @@ type: radios
 options:
     -
         label: 'Public cloud'
-        filterLabel: 'Public cloud'
     -
         label: 'Community cloud'
-        filterLabel: 'Community cloud'
     -
         label: 'Private cloud'
-        filterLabel: 'Private cloud'
     -
         label: 'Hybrid cloud'
-        filterLabel: 'Hybrid cloud'
 validations:
   -
     name: answer_required
