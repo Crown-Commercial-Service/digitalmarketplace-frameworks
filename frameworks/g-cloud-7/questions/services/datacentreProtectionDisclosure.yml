@@ -13,7 +13,6 @@ depends:
       - iaas
 assuranceApproach: 3answers-type1
 type: boolean
-filterLabel: 'Datacentre protection'
 validations:
   -
     name: answer_required

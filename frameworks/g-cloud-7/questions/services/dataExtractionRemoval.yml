@@ -10,7 +10,6 @@ depends:
       - iaas
 servicePageLabel: 'Data extraction/removal plan in place'
 type: boolean
-filterLabel: 'Data extraction/removal plan in place'
 validations:
   -
     name: answer_required

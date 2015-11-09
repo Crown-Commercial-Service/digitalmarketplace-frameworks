@@ -16,19 +16,14 @@ type: checkboxes
 options:
     -
         label: 'CPA Foundation-grade assured components'
-        filterLabel: 'CPA Foundation-grade assured components'
     -
         label: 'FIPS-assured encryption'
-        filterLabel: 'FIPS-assured encryption'
     -
         label: 'Other encryption'
-        filterLabel: 'Other encryption'
     -
         label: 'Secure containers, racks or cages'
-        filterLabel: 'Secure containers, racks or cages'
     -
         label: 'Physical access control'
-        filterLabel: 'Physical access control'
     -
         label: 'No protection'
 validations:

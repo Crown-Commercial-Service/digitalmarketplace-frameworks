@@ -16,13 +16,10 @@ type: checkboxes
 options:
     -
         label: 'Corporate/enterprise devices'
-        filterLabel: 'Corporate/enterprise devices'
     -
         label: 'Partner devices'
-        filterLabel: 'Partner devices'
     -
         label: 'Unknown devices'
-        filterLabel: 'Unknown devices'
 validations:
   -
     name: answer_required

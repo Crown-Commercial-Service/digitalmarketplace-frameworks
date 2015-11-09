@@ -13,7 +13,6 @@ depends:
       - iaas
 assuranceApproach: 2answers-type1
 type: boolean
-filterLabel: 'Third-party supplier security requirements'
 validations:
   -
     name: answer_required

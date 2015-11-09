@@ -9,19 +9,14 @@ type: checkboxes
 options:
     -
         label: Implementation
-        filterLabel: Implementation
     -
         label: 'Ongoing support'
-        filterLabel: 'Ongoing support'
     -
         label: Planning
-        filterLabel: Planning
     -
         label: Testing
-        filterLabel: Testing
     -
         label: Training
-        filterLabel: Training
 validations:
   -
     name: answer_required

@@ -10,7 +10,6 @@ depends:
       - IaaS
       - iaas
 type: boolean
-filterLabel: 'Elastic cloud approach supported'
 validations:
   -
     name: answer_required

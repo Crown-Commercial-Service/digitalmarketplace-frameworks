@@ -16,16 +16,12 @@ type: checkboxes
 options:
     -
         label: UK
-        filterLabel: UK
     -
         label: EU
-        filterLabel: EU
     -
         label: 'USA - Safe Harbor'
-        filterLabel: 'USA - Safe Harbor'
     -
         label: 'Other countries with data protection treaties'
-        filterLabel: 'Other countries with data protection treaties'
     -
         label: 'Rest of world'
 validations:

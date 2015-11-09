@@ -13,7 +13,6 @@ depends:
       - iaas
 assuranceApproach: 2answers-type2
 type: boolean
-filterLabel: 'User authentication and access management'
 validations:
   -
     name: answer_required

@@ -14,22 +14,16 @@ type: radios
 options:
     -
         label: 'CESG-assured destruction service (CAS(T))'
-        filterLabel: 'CESG-assured destruction service (CAS(T))'
     -
         label: 'CPA Foundation-assured product'
-        filterLabel: 'CPA Foundation-assured product'
     -
         label: 'CPNI-approved destruction service'
-        filterLabel: 'CPNI-approved destruction service'
     -
         label: 'BS EN 151713:2009-compliant destruction'
-        filterLabel: 'BS EN 151713:2009-compliant destruction'
     -
         label: 'CESG or CPNI-approved erasure process'
-        filterLabel: 'CESG or CPNI-approved erasure process'
     -
         label: 'Other secure erasure process'
-        filterLabel: 'Other secure erasure process'
     -
         label: 'Other destruction/erasure process'
 validations:

@@ -16,16 +16,12 @@ type: checkboxes
 options:
     -
         label: 'Security clearance national vetting (SC)'
-        filterLabel: 'Security clearance national vetting (SC)'
     -
         label: 'Baseline personnel security standard (BPSS)'
-        filterLabel: 'Baseline personnel security standard (BPSS)'
     -
         label: 'Background checks in accordance with BS7858:2012'
-        filterLabel: 'Background checks in accordance with BS7858:2012'
     -
         label: 'Employment checks'
-        filterLabel: 'Employment checks'
 validations:
   -
     name: answer_required

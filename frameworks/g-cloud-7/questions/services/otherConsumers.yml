@@ -16,13 +16,10 @@ type: radios
 options:
     -
         label: 'No other consumer'
-        filterLabel: 'No other consumer'
     -
         label: 'Only government consumers'
-        filterLabel: 'Only government consumers'
     -
         label: 'A specific consumer group, eg Police, Defence or Health'
-        filterLabel: 'A specific consumer group, eg Police, Defence or Health'
     -
         label: 'Anyone - public'
 validations:

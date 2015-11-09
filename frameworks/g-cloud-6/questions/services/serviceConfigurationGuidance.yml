@@ -11,7 +11,6 @@ depends:
       - iaas
 assuranceApproach: 3answers-type2
 type: boolean
-filterLabel: 'Service configuration guidance'
 validations:
   -
     name: answer_required

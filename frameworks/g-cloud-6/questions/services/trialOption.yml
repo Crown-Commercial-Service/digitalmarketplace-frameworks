@@ -9,7 +9,6 @@ depends:
       - IaaS
       - iaas
 type: boolean
-filterLabel: 'Trial option'
 validations:
   -
     name: answer_required

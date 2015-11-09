@@ -9,7 +9,6 @@ depends:
       - IaaS
       - iaas
 type: boolean
-filterLabel: 'Open-source software used and supported'
 validations:
   -
     name: answer_required

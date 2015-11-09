@@ -9,7 +9,6 @@ depends:
       - IaaS
       - iaas
 type: boolean
-filterLabel: 'Service offboarding process included'
 validations:
   -
     name: answer_required

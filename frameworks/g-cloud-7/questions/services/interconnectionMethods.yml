@@ -14,16 +14,12 @@ type: checkboxes
 options:
     -
         label: 'Encrypted PSN service'
-        filterLabel: 'Encrypted PSN service'
     -
         label: 'PSN service'
-        filterLabel: 'PSN service'
     -
         label: 'Private WAN'
-        filterLabel: 'Private WAN'
     -
         label: Internet
-        filterLabel: Internet
 validations:
   -
     name: answer_required

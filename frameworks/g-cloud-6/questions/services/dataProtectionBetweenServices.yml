@@ -14,19 +14,14 @@ type: checkboxes
 options:
     -
         label: 'Encrypted PSN service'
-        filterLabel: 'Encrypted PSN service'
     -
         label: 'PSN service'
-        filterLabel: 'PSN service'
     -
         label: 'CPA Foundation VPN Gateway'
-        filterLabel: 'CPA Foundation VPN Gateway'
     -
         label: 'VPN using TLS, version 1.2 or later'
-        filterLabel: 'VPN using TLS, version 1.2 or later'
     -
         label: 'VPN using legacy SSL or TLS'
-        filterLabel: 'VPN using legacy SSL or TLS'
     -
         label: 'No encryption'
 validations:

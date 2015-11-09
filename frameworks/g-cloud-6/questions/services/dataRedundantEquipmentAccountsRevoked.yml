@@ -11,7 +11,6 @@ depends:
       - iaas
 assuranceApproach: 3answers-type1
 type: boolean
-filterLabel: 'Redundant equipment accounts revoked'
 validations:
   -
     name: answer_required

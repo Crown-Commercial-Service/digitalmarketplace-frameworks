@@ -9,7 +9,6 @@ depends:
       - IaaS
       - iaas
 type: boolean
-filterLabel: 'Offline working and syncing supported'
 validations:
   -
     name: answer_required

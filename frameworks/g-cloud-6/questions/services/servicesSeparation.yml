@@ -13,7 +13,6 @@ depends:
       - iaas
 assuranceApproach: 4answers-type3
 type: boolean
-filterLabel: 'Services separation'
 validations:
   -
     name: answer_required

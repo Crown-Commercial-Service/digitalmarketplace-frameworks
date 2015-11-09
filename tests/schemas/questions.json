@@ -23,7 +23,7 @@
           "label": {
             "type": "string"
           },
-          "filterLabel": {
+          "filter_label": {
             "type": "string"
           },
           "description": {
@@ -76,9 +76,6 @@
           "being"
         ]
       }
-    },
-    "filterLabel": {
-      "type": "string"
     },
     "listItemName": {
       "type": "string"

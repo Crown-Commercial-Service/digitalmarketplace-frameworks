@@ -13,16 +13,12 @@ type: checkboxes
 options:
     -
         label: PC
-        filterLabel: PC
     -
         label: Mac
-        filterLabel: Mac
     -
         label: Smartphone
-        filterLabel: Smartphone
     -
         label: Tablet
-        filterLabel: Tablet
 validations:
   -
     name: answer_required

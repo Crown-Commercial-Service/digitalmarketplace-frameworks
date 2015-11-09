@@ -18,10 +18,8 @@ options:
         label: None
     -
         label: 'Data made available'
-        filterLabel: 'Data made available'
     -
         label: 'Data made available by negotiation'
-        filterLabel: 'Data made available by negotiation'
 validations:
   -
     name: answer_required

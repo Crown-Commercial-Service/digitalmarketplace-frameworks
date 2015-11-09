@@ -13,7 +13,6 @@ depends:
       - iaas
 assuranceApproach: 2answers-type2
 type: boolean
-filterLabel: 'Administrator permissions'
 validations:
   -
     name: answer_required

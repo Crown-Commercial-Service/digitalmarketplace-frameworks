@@ -13,7 +13,6 @@ depends:
       - iaas
 assuranceApproach: 2answers-type2
 type: boolean
-filterLabel: 'User access control through support channels'
 validations:
   -
     name: answer_required

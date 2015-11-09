@@ -10,7 +10,6 @@ depends:
       - IaaS
       - iaas
 type: boolean
-filterLabel: 'Persistent storage supported'
 validations:
   -
     name: answer_required

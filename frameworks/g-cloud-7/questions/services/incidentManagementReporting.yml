@@ -13,7 +13,6 @@ depends:
       - iaas
 assuranceApproach: 2answers-type1
 type: boolean
-filterLabel: 'Consumer reporting of security incidents'
 validations:
   -
     name: answer_required
