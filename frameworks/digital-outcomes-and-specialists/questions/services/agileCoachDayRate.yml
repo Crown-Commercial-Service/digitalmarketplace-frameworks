@@ -1,4 +1,4 @@
-question: How much do you charge per day for a agile coach?
+question: How much do you charge per day for an agile coach?
 depends:
   - "on": lot
     being:
