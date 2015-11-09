@@ -54,11 +54,11 @@
     - contentDesignerLocations
     - contentDesignerDayRate
 
-- name: Cyber security specialist
+- name: Cyber security consultant
   editable: True
   questions:
-    - securitySpecialistLocations
-    - securitySpecialistDayRate
+    - securityConsultantLocations
+    - securityConsultantDayRate
 
 - name: Delivery manager
   editable: True

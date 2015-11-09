@@ -1,4 +1,4 @@
-question: Where will your cyber security specialist work?
+question: Where will your cyber security consultant work?
 depends:
   - "on": lot
     being:
