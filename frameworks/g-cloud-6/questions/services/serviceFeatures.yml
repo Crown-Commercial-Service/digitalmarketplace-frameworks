@@ -13,7 +13,6 @@ depends:
       - scs
 list_item_name: 'service feature'
 type: list
-addthing: 'Add another feature'
 validations:
   -
     name: answer_required

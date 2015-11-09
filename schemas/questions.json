@@ -99,9 +99,6 @@
     "list_item_name": {
       "type": "string"
     },
-    "addthing": {
-      "type": "string"
-    },
     "assuranceApproach": {
       "type": [
         "string",

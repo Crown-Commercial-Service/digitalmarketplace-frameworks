@@ -13,7 +13,6 @@ depends:
       - scs
 list_item_name: 'service benefit'
 type: list
-addthing: 'Add another business benefit'
 validations:
   -
     name: answer_required

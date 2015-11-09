@@ -13,7 +13,6 @@ depends:
 hint: 'Examples of employee or company certifications include VMware Certified Professional and Oracle Gold Partner. (Optional.)'
 list_item_name: 'certification example'
 type: list
-addthing: 'Add another certification'
 validations:
     -
       name: under_10_words

@@ -7,7 +7,6 @@ depends:
 hint: 'Examples of identity standards include OAuth and SAML. (Optional.)'
 list_item_name: 'identity standards example'
 type: list
-addthing: 'Add another standard'
 validations:
   -
     name: under_10_words
