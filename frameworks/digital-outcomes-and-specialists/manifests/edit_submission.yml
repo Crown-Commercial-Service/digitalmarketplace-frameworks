@@ -126,7 +126,7 @@
     - userResearcherLocations
     - userResearcherDayRate
 
-- name: User researcher
+- name: Web operations engineer
   editable: True
   questions:
     - webOperationsLocations
