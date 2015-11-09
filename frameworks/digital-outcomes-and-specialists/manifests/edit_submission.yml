@@ -4,7 +4,7 @@
   questions:
     - serviceName
 
-- name: Essential
+- name: Digital outcomes and specialists essentials
   editable: True
   questions:
     - helpGovernmentImproveServices
@@ -12,6 +12,10 @@
     - dataProtocols
     - openStandardsPrinciples
     - openSourceLicence
+
+- name: User research participants essentials
+  editable: True
+  questions:
     - anonymousRecruitment
     - manageIncentives
 
