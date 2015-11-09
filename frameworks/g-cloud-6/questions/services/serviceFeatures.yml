@@ -11,7 +11,7 @@ depends:
       - iaas
       - SCS
       - scs
-listItemName: 'service feature'
+list_item_name: 'service feature'
 type: list
 addthing: 'Add another feature'
 validations:

@@ -96,7 +96,7 @@
         ]
       }
     },
-    "listItemName": {
+    "list_item_name": {
       "type": "string"
     },
     "addthing": {

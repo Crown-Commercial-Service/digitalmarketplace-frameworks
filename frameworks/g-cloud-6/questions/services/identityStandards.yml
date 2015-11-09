@@ -5,7 +5,7 @@ depends:
       - SaaS
       - saas
 hint: 'Examples of identity standards include OAuth and SAML. (Optional.)'
-listItemName: 'identity standards example'
+list_item_name: 'identity standards example'
 type: list
 addthing: 'Add another standard'
 validations:
