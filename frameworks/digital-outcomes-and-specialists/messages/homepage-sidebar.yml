@@ -8,16 +8,19 @@ coming:
     You can apply to provide:
 
       - digital outcomes,
-        eg a discovery phase or an online billing application
+        eg a discovery phase for an online billing application
       - digital specialists,
         eg service managers or developers
       - user research studios
       - user research participants
 
-    [Create an account](https://www.digitalmarketplace.service.gov.uk/suppliers/create) to receive an email when Digital Outcomes and Specialists opens.
-
-
-    [Find out how to apply](https://www.digitalmarketplace.service.gov.uk/)
+    [Create an account](https://www.digitalmarketplace.service.gov.uk/suppliers/create) to receive an email when Digital Outcomes and Specialists opens. 
+    
+    
+    If you already have an account you’ll be notified by email when Digital Outcomes and Specialists opens.
+    
+    
+    [Find out if your services are suitable](https://digitalmarketplace.blog.gov.uk/2015/11/12/digital-outcomes-and-specialists-suitable-suppliers-and-services/)
 
 open:  
   template_name: 'framework-notice'
@@ -30,7 +33,7 @@ open:
     You can apply to provide:
 
       - digital outcomes,
-        eg a discovery phase or an online billing application
+        eg a discovery phase for an online billing application
       - digital specialists,
         eg service managers or developers
       - user research studios
@@ -39,4 +42,4 @@ open:
     [Create an account](https://www.digitalmarketplace.service.gov.uk/suppliers/create) or [log in](https://www.digitalmarketplace.service.gov.uk/suppliers/login) to apply.
 
 
-    [Find out how to apply](https://www.digitalmarketplace.service.gov.uk/)
+    [Find out if your services are suitable](https://digitalmarketplace.blog.gov.uk/2015/11/12/digital-outcomes-and-specialists-suitable-suppliers-and-services/)
