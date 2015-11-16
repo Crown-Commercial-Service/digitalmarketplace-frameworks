@@ -1,0 +1,12 @@
+question: Performance analyst
+name: Performance analyst
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+questions:
+  - performanceAnalystDayRate
+  - performanceAnalystLocations
+
+empty_message: You haven't added a performance analyst

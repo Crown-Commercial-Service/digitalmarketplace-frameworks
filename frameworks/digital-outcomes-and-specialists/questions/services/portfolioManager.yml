@@ -1,0 +1,12 @@
+question: Portfolio manager
+name: Portfolio manager
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+questions:
+  - portfolioManagerDayRate
+  - portfolioManagerLocations
+
+empty_message: You haven't added a portfolio manager

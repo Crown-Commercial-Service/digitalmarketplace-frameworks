@@ -1,0 +1,12 @@
+question: Product manager
+name: Product manager
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+questions:
+  - productManagerDayRate
+  - productManagerLocations
+
+empty_message: You haven't added a product manager

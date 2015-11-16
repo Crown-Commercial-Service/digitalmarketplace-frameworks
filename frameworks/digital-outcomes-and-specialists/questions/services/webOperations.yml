@@ -1,0 +1,12 @@
+question: Web operations engineer
+name: Web operations engineer
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+questions:
+  - webOperationsDayRate
+  - webOperationsLocations
+
+empty_message: You haven't added a web operations engineer
