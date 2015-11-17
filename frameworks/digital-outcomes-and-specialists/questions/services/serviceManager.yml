@@ -6,7 +6,7 @@ depends:
       - digital-specialists
 type: multiquestion
 questions:
-  - serviceManagerDayRate
   - serviceManagerLocations
+  - serviceManagerDayRate
 
 empty_message: You haven't added a service manager

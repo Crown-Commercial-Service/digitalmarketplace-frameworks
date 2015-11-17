@@ -6,7 +6,7 @@ depends:
       - digital-specialists
 type: multiquestion
 questions:
-  - performanceAnalystDayRate
   - performanceAnalystLocations
+  - performanceAnalystDayRate
 
 empty_message: You haven't added a performance analyst

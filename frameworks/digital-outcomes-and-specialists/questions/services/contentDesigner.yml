@@ -6,7 +6,7 @@ depends:
       - digital-specialists
 type: multiquestion
 questions:
-  - contentDesignerDayRate
   - contentDesignerLocations
+  - contentDesignerDayRate
 
 empty_message: You haven't added a content designer

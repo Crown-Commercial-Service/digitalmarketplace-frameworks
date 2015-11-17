@@ -6,7 +6,7 @@ depends:
       - digital-specialists
 type: multiquestion
 questions:
-  - webOperationsDayRate
   - webOperationsLocations
+  - webOperationsDayRate
 
 empty_message: You haven't added a web operations engineer

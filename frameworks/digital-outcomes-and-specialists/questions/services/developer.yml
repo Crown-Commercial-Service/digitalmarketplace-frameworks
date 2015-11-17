@@ -6,7 +6,7 @@ depends:
       - digital-specialists
 type: multiquestion
 questions:
-  - developerDayRate
   - developerLocations
+  - developerDayRate
 
 empty_message: You haven't added a developer

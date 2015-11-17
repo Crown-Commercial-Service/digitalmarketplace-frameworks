@@ -6,7 +6,7 @@ depends:
       - digital-specialists
 type: multiquestion
 questions:
-  - designerDayRate
   - designerLocations
+  - designerDayRate
 
 empty_message: You haven't added a designer

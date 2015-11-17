@@ -6,7 +6,7 @@ depends:
       - digital-specialists
 type: multiquestion
 questions:
-  - securityConsultantDayRate
   - securityConsultantLocations
+  - securityConsultantDayRate
 
 empty_message: You haven't added a cyber security consultant
