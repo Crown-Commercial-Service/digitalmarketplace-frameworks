@@ -32,6 +32,18 @@ Question keys
 * `fields` a mapping of toolkit form field key to the service data key used for multi-input field types (only valid for `pricing`)
 * `max_length_in_words` sets the limit on question value length in words
 
+
+Section keys
+-------------
+
+Manifest is a list of sections. Each section contains:
+
+* `name` name of the section (required)
+* `editable` controls whether section allows updates for the questions, boolean value
+* `edit_questions` controls whether individual questions can be edited separately (only supported by `multiquestion` questions)
+* `description` text to display after the section name
+* `questions` a list of section questions (required)
+
 Running the tests
 -----------------
 
