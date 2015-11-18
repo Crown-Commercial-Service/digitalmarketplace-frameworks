@@ -2,6 +2,18 @@
   "title": "Question",
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
+  "dependencies": {
+    "questions": {
+      "properties": {
+        "type": {"enum": ["multiquestion"]}
+      }
+    },
+    "fields": {
+      "properties": {
+        "type": {"enum": ["pricing"]}
+      }
+    }
+  },
   "properties": {
     "question": {
       "type": "string"
@@ -9,7 +21,7 @@
     "type": {
       "enum": [
         "boolean", "text", "radios", "list", "checkboxes", "service_id",
-        "pricing", "upload", "percentage", "textbox_large"
+        "pricing", "upload", "percentage", "textbox_large", "multiquestion"
       ]
     },
     "hint": {
@@ -37,6 +49,15 @@
         "required": [
           "label"
         ]
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
       }
     },
     "validations": {
@@ -123,6 +144,9 @@
     },
     "optional": {
       "type": "boolean"
+    },
+    "empty_message": {
+      "type": "string"
     }
   },
   "additionalProperties": false,

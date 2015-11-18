@@ -7,6 +7,9 @@ Question keys
 
 * `question` name of the question, displayed in forms and summary tables (required)
 * `type` type of the question input, used to find the related toolkit form template (required)
+* `name` short question name to use in summary tables instead of the full question. Also used to
+  generate the URL slug for addressable questions
+* `empty_message` a message to display instead of "Answer required" if question wasn't answered
 * `hint` hint text to display after the question name
 * `optional` if set to `true` makes the question optional
 * `options` a list of possible values for the types that support them. Each option consists of:
@@ -14,7 +17,7 @@ Question keys
     * `value` value submitted to the server when the option is selected
     * `filter_label` [currently unused] text displayed in the buyer frontend filters list instead of label
     * `description` additional text displayed after the option label (used for `lot` question)
-* `validations` a list of validation errors related to the field. Each validation conists of:
+* `validations` a list of validation errors related to the field. Each validation consists of:
     * `name` the error message key that should match the validation error returned by the API (required)
     * `message` text of the message that will be displayed by the frontend app (required)
 * `depends` describes the service conditions that must be met for question to be displayed. Right now, only used to list the
@@ -25,7 +28,8 @@ Question keys
 * `list_item_name` [currently unused] text displayed in the "Add another ..." button and item names by the list-entry inputs
 * `assuranceApproach` contains the name of the set of possible assurance answers for the question. Assurance answer sets are
   listed in the supplier frontend.
-* `fields` a mapping of toolkit form field key to the service data key used for multi-input field types (e.g. pricing)
+* `questions` a list of nested questions (only valid for `multiquestion` questions)
+* `fields` a mapping of toolkit form field key to the service data key used for multi-input field types (only valid for `pricing`)
 * `max_length_in_words` sets the limit on question value length in words
 
 Running the tests
