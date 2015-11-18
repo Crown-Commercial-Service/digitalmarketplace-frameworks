@@ -1,6 +1,22 @@
 #!/bin/sh
 
 make_questions() {
+    local specialist="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
+    sed -e "s/NAME/$specialist/" -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}.yml <<END
+question: NAME
+name: NAME
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+questions:
+  - QUESTIONLocations
+  - QUESTIONDayRate
+
+empty_message: You haven't added a TYPE
+END
+
     sed -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}DayRate.yml <<END
 question: How much do you charge per day for a TYPE?
 depends:
@@ -39,7 +55,7 @@ END
 make_questions "agile coach" "agileCoach"
 make_questions "business analyst" "businessAnalyst"
 make_questions "content designer" "contentDesigner"
-make_questions "cyber security specialist" "securitySpecialist"
+make_questions "cyber security consultant" "securityConsultant"
 make_questions "delivery manager" "deliveryManager"
 make_questions "designer" "designer"
 make_questions "developer" "developer"
@@ -52,3 +68,6 @@ make_questions "service manager" "serviceManager"
 make_questions "technical architect" "technicalArchitect"
 make_questions "user researcher" "userResearcher"
 make_questions "web operations engineer" "webOperations"
+
+
+sed -i '' 's/a agile coach/an agile coach/g' ${FRAMEWORKS_PATH}/*.yml
