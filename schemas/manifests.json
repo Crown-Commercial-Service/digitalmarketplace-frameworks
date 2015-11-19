@@ -11,6 +11,9 @@
       "editable": {
         "type": "boolean"
       },
+      "edit_questions": {
+        "type": "boolean"
+      },
       "questions": {
         "type": "array",
         "items": {

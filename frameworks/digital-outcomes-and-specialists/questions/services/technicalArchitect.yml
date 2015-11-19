@@ -1,0 +1,12 @@
+question: Technical architect
+name: Technical architect
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+questions:
+  - technicalArchitectLocations
+  - technicalArchitectDayRate
+
+empty_message: You haven't added a technical architect

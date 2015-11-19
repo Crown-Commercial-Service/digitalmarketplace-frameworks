@@ -1,0 +1,12 @@
+question: Agile coach
+name: Agile coach
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+questions:
+  - agileCoachLocations
+  - agileCoachDayRate
+
+empty_message: You haven't added an agile coach

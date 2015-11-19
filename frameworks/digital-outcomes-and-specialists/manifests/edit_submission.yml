@@ -36,101 +36,26 @@
   questions:
     - outcomesLocations
 
-- name: Agile coach
-  editable: True
+- name: Individual specialist roles
+  editable: False
+  edit_questions: True
   questions:
-    - agileCoachLocations
-    - agileCoachDayRate
-
-- name: Business analyst
-  editable: True
-  questions:
-    - businessAnalystLocations
-    - businessAnalystDayRate
-
-- name: Content designer
-  editable: True
-  questions:
-    - contentDesignerLocations
-    - contentDesignerDayRate
-
-- name: Cyber security consultant
-  editable: True
-  questions:
-    - securityConsultantLocations
-    - securityConsultantDayRate
-
-- name: Delivery manager
-  editable: True
-  questions:
-    - deliveryManagerLocations
-    - deliveryManagerDayRate
-
-- name: Designer
-  editable: True
-  questions:
-    - designerLocations
-    - designerDayRate
-
-- name: Developer
-  editable: True
-  questions:
-    - developerLocations
-    - developerDayRate
-
-- name: Communications manager
-  editable: True
-  questions:
-    - communicationsManagerLocations
-    - communicationsManagerDayRate
-
-- name: Performance analyst
-  editable: True
-  questions:
-    - performanceAnalystLocations
-    - performanceAnalystDayRate
-
-- name: Portfolio manager
-  editable: True
-  questions:
-    - portfolioManagerLocations
-    - portfolioManagerDayRate
-
-- name: Product manager
-  editable: True
-  questions:
-    - productManagerLocations
-    - productManagerDayRate
-
-- name: Programme manager
-  editable: True
-  questions:
-    - programmeManagerLocations
-    - programmeManagerDayRate
-
-- name: Service manager
-  editable: True
-  questions:
-    - serviceManagerLocations
-    - serviceManagerDayRate
-
-- name: Technical architect
-  editable: True
-  questions:
-    - technicalArchitectLocations
-    - technicalArchitectDayRate
-
-- name: User researcher
-  editable: True
-  questions:
-    - userResearcherLocations
-    - userResearcherDayRate
-
-- name: Web operations engineer
-  editable: True
-  questions:
-    - webOperationsLocations
-    - webOperationsDayRate
+    - agileCoach
+    - businessAnalyst
+    - communicationsManager
+    - contentDesigner
+    - securityConsultant
+    - deliveryManager
+    - designer
+    - developer
+    - performanceAnalyst
+    - portfolioManager
+    - productManager
+    - programmeManager
+    - serviceManager
+    - technicalArchitect
+    - userResearcher
+    - webOperations
 
 - name: Location
   editable: True

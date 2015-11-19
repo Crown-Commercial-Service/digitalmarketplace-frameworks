@@ -1,0 +1,12 @@
+question: Business analyst
+name: Business analyst
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+questions:
+  - businessAnalystLocations
+  - businessAnalystDayRate
+
+empty_message: You haven't added a business analyst

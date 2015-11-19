@@ -1,0 +1,12 @@
+question: Delivery manager
+name: Delivery manager
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+questions:
+  - deliveryManagerLocations
+  - deliveryManagerDayRate
+
+empty_message: You haven't added a delivery manager
