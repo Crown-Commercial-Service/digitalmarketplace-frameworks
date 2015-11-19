@@ -54,12 +54,12 @@ END
 
 make_questions "agile coach" "agileCoach"
 make_questions "business analyst" "businessAnalyst"
+make_questions "communications manager" "communicationsManager"
 make_questions "content designer" "contentDesigner"
 make_questions "cyber security consultant" "securityConsultant"
 make_questions "delivery manager" "deliveryManager"
 make_questions "designer" "designer"
 make_questions "developer" "developer"
-make_questions "communications manager" "communicationsManager"
 make_questions "performance analyst" "performanceAnalyst"
 make_questions "portfolio manager" "portfolioManager"
 make_questions "product manager" "productManager"

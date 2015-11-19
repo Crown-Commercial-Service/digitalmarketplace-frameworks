@@ -42,12 +42,12 @@
   questions:
     - agileCoach
     - businessAnalyst
+    - communicationsManager
     - contentDesigner
     - securityConsultant
     - deliveryManager
     - designer
     - developer
-    - communicationsManager
     - performanceAnalyst
     - portfolioManager
     - productManager
