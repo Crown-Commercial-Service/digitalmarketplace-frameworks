@@ -1,0 +1,9 @@
+question: How much do you charge per day for a quality assurance analyst?
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: pricing
+fields:
+  minimum_price: qualityAssurancePriceMin
+  maximum_price: qualityAssurancePriceMax
