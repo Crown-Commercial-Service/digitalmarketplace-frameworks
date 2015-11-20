@@ -5,12 +5,12 @@ depends:
       - digital-outcomes
 type: checkboxes
 options:
+  - label: Customer support
+  - label: Firewall management
   - label: Hosting
-  - label: Tooling (continuous integration / deployment tools)
   - label: Incident management
   - label: Monitoring
-  - label: Systems administration
-  - label: Customer support
-  - label: Technical service desk
   - label: Network administration
-  - label: Firewall management
+  - label: Systems administration
+  - label: Technical service desk
+  - label: Tooling (continuous integration / deployment tools)

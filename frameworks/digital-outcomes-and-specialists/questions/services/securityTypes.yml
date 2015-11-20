@@ -6,10 +6,10 @@ depends:
 type: checkboxes
 options:
   - label: CLAS / CESG certification
+  - label: Firewall review / audit
+  - label: Incident response / forensics
+  - label: Infrastructure review
+  - label: Risk management
+  - label: Security policy
   - label: THC (Pen) Testing
   - label: Threat modelling
-  - label: Risk management
-  - label: Incident response / forensics
-  - label: Security policy
-  - label: Firewall review / audit
-  - label: Infrastructure review

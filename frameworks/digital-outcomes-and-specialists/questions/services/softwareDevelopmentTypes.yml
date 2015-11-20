@@ -5,19 +5,19 @@ depends:
       - digital-outcomes
 type: checkboxes
 options:
-  - label: Frontend web application development
-  - label: Web application development
-  - label: Desktop application development
-  - label: Mobile application development
-  - label: Geographic information systems (GIS) development
-  - label: Database development (Relational/Document/XML/Graph/RDF/Key Value)
-  - label: Cloud-based service development
   - label: API development
-  - label: Game development
-  - label: Message Queues
-  - label: Search
-  - label: Customer relationship management
+  - label: Cloud-based service development
   - label: Content management system (Wordpress/Drupal)
-  - label: Systems Integration
-  - label: Mainframe (Cobol / etc)
+  - label: Customer relationship management
+  - label: Database development (Relational/Document/XML/Graph/RDF/Key Value)
+  - label: Desktop application development
+  - label: Frontend web application development
+  - label: Game development
+  - label: Geographic information systems (GIS) development
   - label: Machine learning
+  - label: Mainframe (Cobol / etc)
+  - label: Message Queues
+  - label: Mobile application development
+  - label: Search
+  - label: Systems Integration
+  - label: Web application development
