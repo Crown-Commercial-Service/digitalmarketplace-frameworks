@@ -9,7 +9,6 @@
     - termsOfParticipation
     - termsAndConditions
     - 10WorkingDays
-    - sufficientInformation
     - informationChanges
     - requisiteAuthority
     - accurateInformation
@@ -135,7 +134,7 @@
     - tradingStatusOther
     - tradingNames
     - firstRegistered
-    - firstRegisteredCountry
+    - currentRegisteredCountry
     - companyRegistrationNumber
     - registeredVATNumber
     - establishedInTheUK
