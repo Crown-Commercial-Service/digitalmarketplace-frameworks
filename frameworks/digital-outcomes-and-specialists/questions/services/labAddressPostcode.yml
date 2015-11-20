@@ -4,8 +4,12 @@ depends:
   - "on": lot
     being:
       - user-research-studios
-
 type: text
+
 validations:
-  - name: answer_required
+  -
+    name: answer_required
     message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your answer can't be more than 10 characters."
