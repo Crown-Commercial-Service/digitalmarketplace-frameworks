@@ -134,7 +134,7 @@
     - tradingStatusOther
     - tradingNames
     - firstRegistered
-    - firstRegisteredCountry
+    - currentRegisteredCountry
     - companyRegistrationNumber
     - registeredVATNumber
     - establishedInTheUK
