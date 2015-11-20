@@ -5,6 +5,7 @@ Usage:
     generate-schemas.py --output-path=<output_path>
 
 """
+from collections import defaultdict
 
 import os
 import re
@@ -50,6 +51,7 @@ def empty_schema(schema_name):
         "type": "object",
         "additionalProperties": False,
         "properties": {},
+        "anyOf": [],
         "required": [],
     }
 
@@ -161,6 +163,14 @@ def percentage_property(question):
     }}
 
 
+def multiquestion(question):
+    properties = {}
+    for nested_question in question['questions']:
+        properties.update(build_question_properties(nested_question))
+
+    return properties
+
+
 QUESTION_TYPES = {
     'text': text_property,
     'upload': uri_property,
@@ -169,8 +179,9 @@ QUESTION_TYPES = {
     'radios': radios_property,
     'boolean': boolean_property,
     'list': list_property,
-    'pricing': pricing_property,
+    'pricing': text_property,
     'percentage': percentage_property,
+    'multiquestion': multiquestion
 }
 
 
@@ -267,14 +278,31 @@ def build_question_properties(question):
     return question_data
 
 
+def build_any_of(fields):
+    return {
+        'required': [field for field in sorted(fields)]
+    }
+
+
 def build_schema_properties(schema, questions):
+    any_ofs = {}
+
     for key, question in questions.items():
         schema['properties'].update(build_question_properties(question))
-        if not question.get('optional'):
+        if question.get('optional'):
+            pass
+
+        elif question.get('any_of'):
+            any_ofs[question.id] = build_any_of(question.fields)
+
+        else:
             if key == 'priceString':
                 schema['required'].extend(['priceMin', 'priceUnit'])
             else:
-                schema['required'].append(key)
+                schema['required'].extend(question.fields)
+
+    if any_ofs:
+        schema['anyOf'] = [any_ofs[key] for key in sorted(any_ofs.keys())]
 
     schema['required'].sort()
 
