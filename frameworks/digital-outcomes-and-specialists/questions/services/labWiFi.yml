@@ -1,4 +1,4 @@
-question: Do you provide wifi?
+question: Do you provide Wi-Fi?
 
 depends:
   - "on": lot

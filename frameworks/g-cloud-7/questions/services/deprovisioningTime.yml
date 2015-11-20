@@ -19,5 +19,5 @@ validations:
     message: 'Deprovisioning time must be no more than 20 words.'
   -
     name: under_character_limit
-    message: "Deprovisioning time can't be more than 200 characters."
+    message: "Deprovisioning time must be no more than 200 characters."
 question: 'Service deprovisioning time'

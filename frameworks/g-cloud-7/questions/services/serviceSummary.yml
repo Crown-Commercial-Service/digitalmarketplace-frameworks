@@ -19,9 +19,9 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_50_words
-    message: 'Your description must not be more than 50 words.'
+    message: 'Your description must be no more than 50 words.'
   -
     name: under_character_limit
-    message: "Your description can't be more than 500 characters."
+    message: "Your description must be no more than 500 characters."
 question: 'Service summary'
 type: textbox_large

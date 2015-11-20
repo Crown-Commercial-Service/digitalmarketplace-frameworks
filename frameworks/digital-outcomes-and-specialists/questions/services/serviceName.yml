@@ -14,4 +14,4 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_character_limit
-    message: "Your studio name can't be more than 100 characters."
+    message: "Your studio name must be no more than 100 characters."
