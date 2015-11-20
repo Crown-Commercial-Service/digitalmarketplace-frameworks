@@ -19,6 +19,6 @@ validations:
     message: 'API type must be no more than 20 words.'
   -
     name: under_character_limit
-    message: "API type can't be more than 200 characters."
+    message: "API type must be no more than 200 characters."
 question: 'API type'
 optional: true

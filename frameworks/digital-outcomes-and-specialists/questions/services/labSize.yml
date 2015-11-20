@@ -12,4 +12,4 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_character_limit
-    message: "Your answer can't be more than 100 characters."
+    message: "Your answer must be no more than 100 characters."

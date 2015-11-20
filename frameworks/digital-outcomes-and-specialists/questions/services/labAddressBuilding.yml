@@ -16,4 +16,4 @@ validations:
     message: 'Your answer must be no more than 20 words.'
   -
     name: under_character_limit
-    message: "Your answer can't be more than 200 characters."
+    message: "Your answer must be no more than 200 characters."

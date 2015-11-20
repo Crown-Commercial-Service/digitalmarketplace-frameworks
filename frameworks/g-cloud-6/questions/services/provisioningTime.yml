@@ -19,5 +19,5 @@ validations:
     message: 'Provisioning time must be no more than 20 words.'
   -
     name: under_character_limit
-    message: "Provisioning time can't be more than 200 characters."
+    message: "Provisioning time must be no more than 200 characters."
 question: 'Service provisioning time'
