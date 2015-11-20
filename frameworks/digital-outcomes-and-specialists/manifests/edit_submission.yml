@@ -57,10 +57,16 @@
     - userResearcher
     - webOperations
 
+- name: Address
+  editable: True
+  questions:
+    - labAddressBuilding
+    - labAddressTown
+    - labAddressPostcode
+
 - name: Location
   editable: True
   questions:
-    - labAddress
     - labPublicTransport
     - labCarPark
     - recruitLocations
