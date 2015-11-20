@@ -5,11 +5,11 @@ depends:
       - digital-outcomes
 type: checkboxes
 options:
+  - label: A/B and multivariate testing
   - label: Data analysis
-  - label: Web analytics
   - label: Data cleansing
   - label: Data visualisation
-  - label: Statistical modelling
-  - label: Performance reporting
   - label: Performance frameworks
-  - label: A/B and multivariate testing
+  - label: Performance reporting
+  - label: Statistical modelling
+  - label: Web analytics

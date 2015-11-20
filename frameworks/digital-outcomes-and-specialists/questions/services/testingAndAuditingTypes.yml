@@ -5,10 +5,10 @@ depends:
       - digital-outcomes
 type: checkboxes
 options:
-  - label: Load/Performance testing
   - label: Accessibility testing
   - label: Application testing (Automated/Exploratory)
+  - label: Data auditing
+  - label: Load/Performance testing
+  - label: Process auditing
   - label: Software auditing
   - label: System auditing
-  - label: Process auditing
-  - label: Data auditing

@@ -5,11 +5,12 @@ depends:
       - digital-outcomes
 type: checkboxes
 options:
-  - label: Interaction design
-  - label: User experience and design strategy
-  - label: Information architecture
-  - label: Prototyping
   - label: Animation
   - label: Brand development
-  - label: Cross-platform design
   - label: Content design / copywriting
+  - label: Cross-platform design
+  - label: Information architecture
+  - label: Interaction design
+  - label: Prototyping
+  - label: Service design
+  - label: User experience and design strategy
