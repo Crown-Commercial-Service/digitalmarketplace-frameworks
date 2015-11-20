@@ -137,9 +137,12 @@
     },
     "fields": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "minimum_price": {"type": "string"},
-        "maximum_price": {"type": "string"}
+        "maximum_price": {"type": "string"},
+        "price_interval": {"type": "string"},
+        "price_unit": {"type": "string"}
       }
     },
     "max_length_in_words": {
