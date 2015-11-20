@@ -1,0 +1,11 @@
+question: Town or city
+
+depends:
+  - "on": lot
+    being:
+      - user-research-studios
+
+type: text
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
