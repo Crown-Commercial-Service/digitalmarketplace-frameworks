@@ -10,6 +10,7 @@ depends:
     being:
       - digital-specialists
 type: multiquestion
+any_of: specialist
 questions:
   - QUESTIONLocations
   - QUESTIONDayRate
