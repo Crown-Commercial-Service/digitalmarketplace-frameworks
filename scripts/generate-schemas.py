@@ -278,9 +278,10 @@ def build_question_properties(question):
     return question_data
 
 
-def build_any_of(fields):
+def build_any_of(any_of, fields):
     return {
-        'required': [field for field in sorted(fields)]
+        'required': [field for field in sorted(fields)],
+        'title': any_of
     }
 
 
@@ -293,7 +294,7 @@ def build_schema_properties(schema, questions):
             pass
 
         elif question.get('any_of'):
-            any_ofs[question.id] = build_any_of(question.fields)
+            any_ofs[question.id] = build_any_of(question.get('any_of'), question.fields)
 
         else:
             if key == 'priceString':
