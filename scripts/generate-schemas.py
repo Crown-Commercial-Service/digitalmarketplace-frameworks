@@ -50,7 +50,6 @@ def empty_schema(schema_name):
         "type": "object",
         "additionalProperties": False,
         "properties": {},
-        "anyOf": [],
         "required": [],
     }
 
