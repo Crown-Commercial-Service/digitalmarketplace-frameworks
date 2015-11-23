@@ -29,6 +29,7 @@ Question keys
 * `assuranceApproach` contains the name of the set of possible assurance answers for the question. Assurance answer sets are
   listed in the supplier frontend.
 * `questions` a list of nested questions (only valid for `multiquestion` questions)
+* `any_of` groups nested questions for "anyOf" validations and helps us return a helpful validation message (only valid for `multiquestion` questions)
 * `fields` a mapping of toolkit form field key to the service data key used for multi-input field types (only valid for `pricing`)
 * `max_length_in_words` sets the limit on question value length in words
 
