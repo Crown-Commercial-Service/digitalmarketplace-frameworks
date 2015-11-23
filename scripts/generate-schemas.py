@@ -5,7 +5,6 @@ Usage:
     generate-schemas.py --output-path=<output_path>
 
 """
-from collections import defaultdict
 
 import os
 import re
@@ -111,7 +110,14 @@ def list_property(question):
     }}
 
 
+def pricing_fields_property(question):
+    prop = text_property(question)
+    return {val: prop[question.id] for val in question.fields.values()}
+
+
 def pricing_property(question):
+    if question.get('fields'):
+        return pricing_fields_property(question)
     return {
         "priceMin": {
             "type": "string",
@@ -179,7 +185,7 @@ QUESTION_TYPES = {
     'radios': radios_property,
     'boolean': boolean_property,
     'list': list_property,
-    'pricing': text_property,
+    'pricing': pricing_property,
     'percentage': percentage_property,
     'multiquestion': multiquestion
 }
@@ -294,13 +300,19 @@ def build_schema_properties(schema, questions):
             pass
 
         elif question.get('any_of'):
-            any_ofs[question.id] = build_any_of(question.get('any_of'), question.fields)
+            question_fields = []
+            for q in question.questions:
+                if q.get('fields'):
+                    question_fields.extend(val for val in q.get('fields').values())
+                else:
+                    question_fields.append(q.id)
+            any_ofs[question.id] = build_any_of(question.get('any_of'), question_fields)
 
         else:
             if key == 'priceString':
                 schema['required'].extend(['priceMin', 'priceUnit'])
             else:
-                schema['required'].extend(question.fields)
+                schema['required'].extend(question.form_fields)
 
     if any_ofs:
         schema['anyOf'] = [any_ofs[key] for key in sorted(any_ofs.keys())]
