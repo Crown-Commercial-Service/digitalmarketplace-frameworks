@@ -20,16 +20,17 @@
     - manageIncentives
 
 - name: Team capabilities
-  editable: True
+  editable: False
+  edit_questions: True
   questions:
-    - performanceAnalysisTypes
-    - securityTypes
-    - deliveryTypes
-    - softwareDevelopmentTypes
-    - supportAndOperationsTypes
-    - testingAndAuditingTypes
-    - userExperienceAndDesignTypes
-    - userResearchTypes
+    - performanceAnalysis
+    - security
+    - delivery
+    - softwareDevelopment
+    - supportAndOperations
+    - testingAndAuditing
+    - userExperienceAndDesign
+    - userResearch
 
 - name: Outcomes locations
   editable: true

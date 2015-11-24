@@ -1,0 +1,12 @@
+question: Support and operations
+name: Support and operations
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: multiquestion
+questions:
+  - supportAndOperationsTypes
+
+empty_message: You haven't added any support and operations capabilities

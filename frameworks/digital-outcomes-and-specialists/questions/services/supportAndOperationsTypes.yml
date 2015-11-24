@@ -14,3 +14,7 @@ options:
   - label: Systems administration
   - label: Technical service desk
   - label: Tooling (continuous integration / deployment tools)
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
