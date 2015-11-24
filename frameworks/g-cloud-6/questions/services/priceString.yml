@@ -18,6 +18,8 @@ fields:
   maximum_price: priceMax
   price_unit: priceUnit
   price_interval: priceInterval
+optional_fields:
+  - maximum_price
 validations:
   -
     name: answer_required

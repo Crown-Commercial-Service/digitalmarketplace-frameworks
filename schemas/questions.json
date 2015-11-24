@@ -149,6 +149,10 @@
     "optional": {
       "type": "boolean"
     },
+    "optional_fields": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
     "empty_message": {
       "type": "string"
     }
