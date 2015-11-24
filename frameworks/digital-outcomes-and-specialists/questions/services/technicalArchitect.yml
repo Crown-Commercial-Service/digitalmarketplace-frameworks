@@ -1,5 +1,6 @@
 question: Technical architect
 name: Technical architect
+optional: true
 depends:
   - "on": lot
     being:

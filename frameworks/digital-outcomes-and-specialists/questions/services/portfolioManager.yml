@@ -1,5 +1,6 @@
 question: Portfolio manager
 name: Portfolio manager
+optional: true
 depends:
   - "on": lot
     being:

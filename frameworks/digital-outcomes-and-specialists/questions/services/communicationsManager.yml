@@ -1,5 +1,6 @@
 question: Communications manager
 name: Communications manager
+optional: true
 depends:
   - "on": lot
     being:

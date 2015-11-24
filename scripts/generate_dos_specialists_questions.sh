@@ -5,6 +5,7 @@ make_questions() {
     sed -e "s/NAME/$specialist/" -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}.yml <<END
 question: NAME
 name: NAME
+optional: true
 depends:
   - "on": lot
     being:

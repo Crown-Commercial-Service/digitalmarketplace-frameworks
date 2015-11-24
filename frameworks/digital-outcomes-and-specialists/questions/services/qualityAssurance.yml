@@ -1,5 +1,6 @@
 question: Quality assurance analyst
 name: Quality assurance analyst
+optional: true
 depends:
   - "on": lot
     being:

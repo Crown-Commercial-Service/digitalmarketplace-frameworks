@@ -1,5 +1,6 @@
 question: Designer
 name: Designer
+optional: true
 depends:
   - "on": lot
     being:

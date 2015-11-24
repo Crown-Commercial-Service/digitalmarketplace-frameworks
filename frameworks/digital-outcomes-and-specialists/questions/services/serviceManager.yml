@@ -1,5 +1,6 @@
 question: Service manager
 name: Service manager
+optional: true
 depends:
   - "on": lot
     being:

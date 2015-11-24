@@ -1,5 +1,6 @@
 question: Cyber security consultant
 name: Cyber security consultant
+optional: true
 depends:
   - "on": lot
     being:
