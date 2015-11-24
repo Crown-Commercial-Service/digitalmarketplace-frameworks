@@ -109,53 +109,69 @@ def list_property(question):
     }}
 
 
-def pricing_fields_property(question):
-    prop = text_property(question)
-    return {val: prop[question.id] for val in question.fields.values()}
-
-
 def pricing_property(question):
-    if question.get('fields'):
-        return pricing_fields_property(question)
+    assert question.get('fields')
+    field_types = {
+        'minimum_price': price_string,
+        'maximum_price': price_string,
+        'price_unit': price_unit,
+        'price_interval': price_interval,
+    }
+    result = {}
+    for key, field_name in question.fields.items():
+        optional = key in question.get('optional_fields', [])
+        result[field_name] = field_types[key](optional)
+    return result
+
+
+def price_string(optional):
+    pattern = r"^\d+(?:\.\d{1,5})?$"
+    if optional:
+        pattern = r"^$|" + pattern
     return {
-        "priceMin": {
-            "type": "string",
-            "pattern": "^\\d+(?:\\.\\d{1,5})?$"
-        },
-        "priceMax": {
-            "type": "string",
-            "pattern": "^$|^\\d+(?:\\.\\d{1,5})?$"
-        },
-        "priceUnit": {
-            "enum": [
-                "Unit",
-                "Person",
-                "Licence",
-                "User",
-                "Device",
-                "Instance",
-                "Server",
-                "Virtual machine",
-                "Transaction",
-                "Megabyte",
-                "Gigabyte",
-                "Terabyte"
-            ]
-        },
-        "priceInterval": {
-            "enum": [
-                "",
-                "Second",
-                "Minute",
-                "Hour",
-                "Day",
-                "Week",
-                "Month",
-                "Quarter",
-                "6 months",
-                "Year"
-            ]
-        },
+        "type": "string",
+        "pattern": pattern
+    }
+
+
+def price_unit(optional):
+    values = [
+        "Unit",
+        "Person",
+        "Licence",
+        "User",
+        "Device",
+        "Instance",
+        "Server",
+        "Virtual machine",
+        "Transaction",
+        "Megabyte",
+        "Gigabyte",
+        "Terabyte"
+    ]
+    if optional:
+        values.insert(0, "")
+    return {
+        "enum": values
+    }
+
+
+def price_interval(optional):
+    values = [
+        "Second",
+        "Minute",
+        "Hour",
+        "Day",
+        "Week",
+        "Month",
+        "Quarter",
+        "6 months",
+        "Year"
+    ]
+    if optional:
+        values.insert(0, "")
+    return {
+        "enum": values
     }
 
 
@@ -308,10 +324,7 @@ def build_schema_properties(schema, questions):
             any_ofs[question.id] = build_any_of(question.get('any_of'), question_fields)
 
         else:
-            if key == 'priceString':
-                schema['required'].extend(['priceMin', 'priceUnit'])
-            else:
-                schema['required'].extend(question.form_fields)
+            schema['required'].extend(question.required_form_fields)
 
     if any_ofs:
         schema['anyOf'] = [any_ofs[key] for key in sorted(any_ofs.keys())]
