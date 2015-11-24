@@ -321,12 +321,28 @@ def build_schema_properties(schema, questions):
     return schema
 
 
+def add_multiquestion_dependencies(schema, questions):
+    dependencies = {}
+    for key, question in questions.items():
+        if question.type == 'multiquestion':
+            dependencies.update({
+                field: sorted(set(question.form_fields) - set([field]))
+                for field in question.form_fields
+                if len(question.form_fields) > 1
+            })
+
+    if dependencies:
+        schema['dependencies'] = dependencies
+
+
 def generate_schema(path, schema_name, framework_slug, lot_slug):
     questions = load_questions(framework_slug, lot_slug)
     drop_non_schema_questions(questions)
     schema = empty_schema(schema_name)
 
     build_schema_properties(schema, questions)
+    add_multiquestion_anyof(schema, questions)
+    add_multiquestion_dependencies(schema, questions)
 
     with open(os.path.join(path, 'services-{}-{}.json'.format(framework_slug, lot_slug)), 'w') as f:
         json.dump(schema, f, sort_keys=True, indent=2, separators=(',', ': '))
