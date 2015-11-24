@@ -109,24 +109,20 @@ def list_property(question):
     }}
 
 
-def pricing_fields_property(question):
-    prop = text_property(question)
-    return {val: prop[question.id] for val in question.fields.values()}
-
-
 def pricing_property(question):
-    if question.get('fields'):
-        return pricing_fields_property(question)
-    return {
-        "priceMin": {
+    pricing = {}
+    if 'minimum_price' in question.fields:
+        pricing[question.fields['minimum_price']] = {
             "type": "string",
             "pattern": "^\\d+(?:\\.\\d{1,5})?$"
-        },
-        "priceMax": {
+        }
+    if 'maximum_price' in question.fields:
+        pricing[question.fields['maximum_price']] = {
             "type": "string",
-            "pattern": "^$|^\\d+(?:\\.\\d{1,5})?$"
-        },
-        "priceUnit": {
+            "pattern": "^\\d+(?:\\.\\d{1,5})?$"
+        }
+    if 'price_unit' in question.fields:
+        pricing[question.fields['price_unit']] = {
             "enum": [
                 "Unit",
                 "Person",
@@ -141,8 +137,9 @@ def pricing_property(question):
                 "Gigabyte",
                 "Terabyte"
             ]
-        },
-        "priceInterval": {
+        }
+    if 'price_interval' in question.fields:
+        pricing[question.fields['price_interval']] = {
             "enum": [
                 "",
                 "Second",
@@ -155,8 +152,9 @@ def pricing_property(question):
                 "6 months",
                 "Year"
             ]
-        },
-    }
+        }
+
+    return pricing
 
 
 def percentage_property(question):
