@@ -7,6 +7,9 @@ type: pricing
 fields:
   minimum_price: portfolioManagerPriceMin
   maximum_price: portfolioManagerPriceMax
+field_defaults:
+  price_unit: Person
+  price_interval: Day
 
 validations:
   - name: answer_required
