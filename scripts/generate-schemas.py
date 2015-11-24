@@ -109,7 +109,14 @@ def list_property(question):
     }}
 
 
+def pricing_fields_property(question):
+    prop = text_property(question)
+    return {val: prop[question.id] for val in question.fields.values()}
+
+
 def pricing_property(question):
+    if question.get('fields'):
+        return pricing_fields_property(question)
     return {
         "priceMin": {
             "type": "string",
@@ -161,6 +168,14 @@ def percentage_property(question):
     }}
 
 
+def multiquestion(question):
+    properties = {}
+    for nested_question in question['questions']:
+        properties.update(build_question_properties(nested_question))
+
+    return properties
+
+
 QUESTION_TYPES = {
     'text': text_property,
     'upload': uri_property,
@@ -171,6 +186,7 @@ QUESTION_TYPES = {
     'list': list_property,
     'pricing': pricing_property,
     'percentage': percentage_property,
+    'multiquestion': multiquestion
 }
 
 
@@ -267,14 +283,38 @@ def build_question_properties(question):
     return question_data
 
 
+def build_any_of(any_of, fields):
+    return {
+        'required': [field for field in sorted(fields)],
+        'title': any_of
+    }
+
+
 def build_schema_properties(schema, questions):
+    any_ofs = {}
+
     for key, question in questions.items():
         schema['properties'].update(build_question_properties(question))
-        if not question.get('optional'):
+        if question.get('optional'):
+            pass
+
+        elif question.get('any_of'):
+            question_fields = []
+            for q in question.questions:
+                if q.get('fields'):
+                    question_fields.extend(val for val in q.get('fields').values())
+                else:
+                    question_fields.append(q.id)
+            any_ofs[question.id] = build_any_of(question.get('any_of'), question_fields)
+
+        else:
             if key == 'priceString':
                 schema['required'].extend(['priceMin', 'priceUnit'])
             else:
-                schema['required'].append(key)
+                schema['required'].extend(question.form_fields)
+
+    if any_ofs:
+        schema['anyOf'] = [any_ofs[key] for key in sorted(any_ofs.keys())]
 
     schema['required'].sort()
 
