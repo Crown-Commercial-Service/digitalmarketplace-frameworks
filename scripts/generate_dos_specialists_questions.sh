@@ -29,6 +29,10 @@ type: pricing
 fields:
   minimum_price: QUESTIONPriceMin
   maximum_price: QUESTIONPriceMax
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
 END
 
     sed -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}Locations.yml <<END
@@ -51,6 +55,10 @@ options:
   - label: "South East England"
   - label: "West England"
   - label: "Northern Ireland"
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
 END
 }
 

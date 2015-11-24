@@ -7,3 +7,7 @@ type: pricing
 fields:
   minimum_price: qualityAssurancePriceMin
   maximum_price: qualityAssurancePriceMax
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

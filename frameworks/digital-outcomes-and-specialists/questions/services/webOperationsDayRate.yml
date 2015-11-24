@@ -7,3 +7,7 @@ type: pricing
 fields:
   minimum_price: webOperationsPriceMin
   maximum_price: webOperationsPriceMax
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
