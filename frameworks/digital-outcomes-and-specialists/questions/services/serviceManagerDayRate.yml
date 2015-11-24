@@ -7,3 +7,6 @@ type: pricing
 fields:
   minimum_price: serviceManagerPriceMin
   maximum_price: serviceManagerPriceMax
+field_defaults:
+  price_unit: Person
+  price_interval: Day
