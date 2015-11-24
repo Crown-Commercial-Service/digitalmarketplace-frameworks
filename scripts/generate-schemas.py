@@ -291,14 +291,26 @@ def build_any_of(any_of, fields):
 
 
 def build_schema_properties(schema, questions):
-    any_ofs = {}
-
     for key, question in questions.items():
         schema['properties'].update(build_question_properties(question))
         if question.get('optional'):
             pass
+        else:
+            if key == 'priceString':
+                schema['required'].extend(['priceMin', 'priceUnit'])
+            else:
+                schema['required'].extend(question.form_fields)
 
-        elif question.get('any_of'):
+    schema['required'].sort()
+
+    return schema
+
+
+def add_multiquestion_anyof(schema, questions):
+    any_ofs = {}
+
+    for key, question in questions.items():
+        if question.get('any_of'):
             question_fields = []
             for q in question.questions:
                 if q.get('fields'):
@@ -307,18 +319,8 @@ def build_schema_properties(schema, questions):
                     question_fields.append(q.id)
             any_ofs[question.id] = build_any_of(question.get('any_of'), question_fields)
 
-        else:
-            if key == 'priceString':
-                schema['required'].extend(['priceMin', 'priceUnit'])
-            else:
-                schema['required'].extend(question.form_fields)
-
     if any_ofs:
         schema['anyOf'] = [any_ofs[key] for key in sorted(any_ofs.keys())]
-
-    schema['required'].sort()
-
-    return schema
 
 
 def add_multiquestion_dependencies(schema, questions):
