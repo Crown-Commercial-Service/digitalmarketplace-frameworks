@@ -1,4 +1,9 @@
 #!/bin/sh
+#
+# Generate DOS questions for specialist roles and outcome capabilities.
+#
+# Usage:
+#   FRAMEWORKS_PATH=frameworks/digital-outcomes-and-specialists/questions/services/ ./scripts/generate_dos_questions.sh
 
 make_questions() {
     local specialist="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
@@ -29,9 +34,16 @@ type: pricing
 fields:
   minimum_price: QUESTIONPriceMin
   maximum_price: QUESTIONPriceMax
+field_defaults:
+  price_unit: Person
+  price_interval: Day
 
 validations:
   - name: answer_required
+    field: QUESTIONPriceMin
+    message: 'You need to answer this question.'
+  - name: answer_required
+    field: QUESTIONPriceMax
     message: 'You need to answer this question.'
 END
 
@@ -43,6 +55,7 @@ depends:
       - digital-specialists
 type: checkboxes
 options:
+  - label: "Off-site"
   - label: "Scotland"
   - label: "North East England"
   - label: "North West England"
@@ -93,6 +106,7 @@ depends:
     being:
       - digital-outcomes
 type: multiquestion
+any_of: capability
 questions:
   - QUESTIONTypes
 
