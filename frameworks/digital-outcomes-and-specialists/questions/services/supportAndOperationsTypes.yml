@@ -12,8 +12,8 @@ options:
   - label: Monitoring
   - label: Network administration
   - label: Systems administration
-  - label: Technical service desk
-  - label: Tooling (continuous integration / deployment tools)
+  - label: Service desk
+  - label: Tooling
 
 validations:
   - name: answer_required
