@@ -5,6 +5,7 @@ depends:
       - digital-outcomes
 type: checkboxes
 options:
+  - label: "Off-site"
   - label: "Scotland"
   - label: "North East England"
   - label: "North West England"
