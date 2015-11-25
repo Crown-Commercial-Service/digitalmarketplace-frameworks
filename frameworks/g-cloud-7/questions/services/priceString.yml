@@ -31,11 +31,11 @@ validations:
     field: priceUnit
     message: 'Pricing unit requires an answer. If none of the provided units apply, please choose ''Unit''.'
   -
-    name: not_a_number
+    name: not_money_format
     field: priceMin
     message: 'Minimum price must be a number, without units, eg 99.95'
   -
-    name: not_a_number
+    name: not_money_format
     field: priceMax
     message: 'Maximum price must be a number, without units, eg 99.95'
   -
