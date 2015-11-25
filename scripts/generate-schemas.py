@@ -109,18 +109,26 @@ def list_property(question):
     }}
 
 
+def price_string(optional):
+    pattern = r"^\d+(?:\.\d{1,5})?$"
+    if optional:
+        pattern = r"^$|" + pattern
+    return {
+        "type": "string",
+        "pattern": pattern,
+    }
+
+
 def pricing_property(question):
     pricing = {}
     if 'minimum_price' in question.fields:
-        pricing[question.fields['minimum_price']] = {
-            "type": "string",
-            "pattern": "^\\d+(?:\\.\\d{1,5})?$"
-        }
+        pricing[question.fields['minimum_price']] = price_string(
+            'minimum_price' in question.get('optional_fields', [])
+        )
     if 'maximum_price' in question.fields:
-        pricing[question.fields['maximum_price']] = {
-            "type": "string",
-            "pattern": "^\\d+(?:\\.\\d{1,5})?$"
-        }
+        pricing[question.fields['maximum_price']] = price_string(
+            'maximum_price' in question.get('optional_fields', [])
+        )
     if 'price_unit' in question.fields:
         pricing[question.fields['price_unit']] = {
             "enum": [
@@ -138,10 +146,11 @@ def pricing_property(question):
                 "Terabyte"
             ]
         }
+        if 'price_unit' in question.get('optional_fields', []):
+            pricing[question.fields['price_unit']]['enum'].insert(0, "")
     if 'price_interval' in question.fields:
         pricing[question.fields['price_interval']] = {
             "enum": [
-                "",
                 "Second",
                 "Minute",
                 "Hour",
@@ -153,6 +162,8 @@ def pricing_property(question):
                 "Year"
             ]
         }
+        if 'price_interval' in question.get('optional_fields', []):
+            pricing[question.fields['price_interval']]['enum'].insert(0, "")
 
     return pricing
 
@@ -291,13 +302,7 @@ def build_any_of(any_of, fields):
 def build_schema_properties(schema, questions):
     for key, question in questions.items():
         schema['properties'].update(build_question_properties(question))
-        if question.get('optional'):
-            pass
-        else:
-            if key == 'priceString':
-                schema['required'].extend(['priceMin', 'priceUnit'])
-            else:
-                schema['required'].extend(question.form_fields)
+        schema['required'].extend(question.required_form_fields)
 
     schema['required'].sort()
 
