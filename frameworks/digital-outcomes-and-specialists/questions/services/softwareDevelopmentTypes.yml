@@ -7,17 +7,17 @@ type: checkboxes
 options:
   - label: API development
   - label: Cloud-based service development
-  - label: Content management system (Wordpress/Drupal)
+  - label: Content management system
   - label: Customer relationship management
-  - label: Database development (Relational/Document/XML/Graph/RDF/Key Value)
+  - label: Database development
   - label: Desktop application development
   - label: Frontend web application development
   - label: Game development
   - label: Geographic information systems (GIS) development
   - label: Machine learning
-  - label: Mainframe (Cobol / etc)
-  - label: Message Queues
+  - label: Mainframe
+  - label: Message queues
   - label: Mobile application development
   - label: Search
-  - label: Systems Integration
+  - label: Systems integration
   - label: Web application development
