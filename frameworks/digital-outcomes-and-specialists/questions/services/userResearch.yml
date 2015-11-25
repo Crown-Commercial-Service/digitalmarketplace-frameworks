@@ -6,6 +6,7 @@ depends:
     being:
       - digital-outcomes
 type: multiquestion
+any_of: capability
 questions:
   - userResearchTypes
 
