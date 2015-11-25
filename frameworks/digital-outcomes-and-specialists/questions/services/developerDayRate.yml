@@ -13,4 +13,8 @@ field_defaults:
 
 validations:
   - name: answer_required
+    field: developerPriceMin
+    message: 'You need to answer this question.'
+  - name: answer_required
+    field: developerPriceMax
     message: 'You need to answer this question.'

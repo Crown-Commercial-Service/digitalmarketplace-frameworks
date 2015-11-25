@@ -13,4 +13,8 @@ field_defaults:
 
 validations:
   - name: answer_required
+    field: performanceAnalystPriceMin
+    message: 'You need to answer this question.'
+  - name: answer_required
+    field: performanceAnalystPriceMax
     message: 'You need to answer this question.'

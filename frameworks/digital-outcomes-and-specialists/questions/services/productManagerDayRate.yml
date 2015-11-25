@@ -13,4 +13,8 @@ field_defaults:
 
 validations:
   - name: answer_required
+    field: productManagerPriceMin
+    message: 'You need to answer this question.'
+  - name: answer_required
+    field: productManagerPriceMax
     message: 'You need to answer this question.'

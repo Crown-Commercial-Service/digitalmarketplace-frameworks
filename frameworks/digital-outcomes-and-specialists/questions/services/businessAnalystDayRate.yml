@@ -13,4 +13,8 @@ field_defaults:
 
 validations:
   - name: answer_required
+    field: businessAnalystPriceMin
+    message: 'You need to answer this question.'
+  - name: answer_required
+    field: businessAnalystPriceMax
     message: 'You need to answer this question.'

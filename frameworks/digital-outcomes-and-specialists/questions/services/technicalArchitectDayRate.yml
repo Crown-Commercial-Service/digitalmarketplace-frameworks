@@ -13,4 +13,8 @@ field_defaults:
 
 validations:
   - name: answer_required
+    field: technicalArchitectPriceMin
+    message: 'You need to answer this question.'
+  - name: answer_required
+    field: technicalArchitectPriceMax
     message: 'You need to answer this question.'

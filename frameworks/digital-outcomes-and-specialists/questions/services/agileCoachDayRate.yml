@@ -13,4 +13,8 @@ field_defaults:
 
 validations:
   - name: answer_required
+    field: agileCoachPriceMin
+    message: 'You need to answer this question.'
+  - name: answer_required
+    field: agileCoachPriceMax
     message: 'You need to answer this question.'
