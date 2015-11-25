@@ -109,24 +109,20 @@ def list_property(question):
     }}
 
 
-def pricing_fields_property(question):
-    prop = text_property(question)
-    return {val: prop[question.id] for val in question.fields.values()}
-
-
 def pricing_property(question):
-    if question.get('fields'):
-        return pricing_fields_property(question)
-    return {
-        "priceMin": {
+    pricing = {}
+    if 'minimum_price' in question.fields:
+        pricing[question.fields['minimum_price']] = {
             "type": "string",
             "pattern": "^\\d+(?:\\.\\d{1,5})?$"
-        },
-        "priceMax": {
+        }
+    if 'maximum_price' in question.fields:
+        pricing[question.fields['maximum_price']] = {
             "type": "string",
-            "pattern": "^$|^\\d+(?:\\.\\d{1,5})?$"
-        },
-        "priceUnit": {
+            "pattern": "^\\d+(?:\\.\\d{1,5})?$"
+        }
+    if 'price_unit' in question.fields:
+        pricing[question.fields['price_unit']] = {
             "enum": [
                 "Unit",
                 "Person",
@@ -141,8 +137,9 @@ def pricing_property(question):
                 "Gigabyte",
                 "Terabyte"
             ]
-        },
-        "priceInterval": {
+        }
+    if 'price_interval' in question.fields:
+        pricing[question.fields['price_interval']] = {
             "enum": [
                 "",
                 "Second",
@@ -155,8 +152,9 @@ def pricing_property(question):
                 "6 months",
                 "Year"
             ]
-        },
-    }
+        }
+
+    return pricing
 
 
 def percentage_property(question):
@@ -291,14 +289,26 @@ def build_any_of(any_of, fields):
 
 
 def build_schema_properties(schema, questions):
-    any_ofs = {}
-
     for key, question in questions.items():
         schema['properties'].update(build_question_properties(question))
         if question.get('optional'):
             pass
+        else:
+            if key == 'priceString':
+                schema['required'].extend(['priceMin', 'priceUnit'])
+            else:
+                schema['required'].extend(question.form_fields)
 
-        elif question.get('any_of'):
+    schema['required'].sort()
+
+    return schema
+
+
+def add_multiquestion_anyof(schema, questions):
+    any_ofs = {}
+
+    for key, question in questions.items():
+        if question.get('any_of'):
             question_fields = []
             for q in question.questions:
                 if q.get('fields'):
@@ -307,18 +317,22 @@ def build_schema_properties(schema, questions):
                     question_fields.append(q.id)
             any_ofs[question.id] = build_any_of(question.get('any_of'), question_fields)
 
-        else:
-            if key == 'priceString':
-                schema['required'].extend(['priceMin', 'priceUnit'])
-            else:
-                schema['required'].extend(question.form_fields)
-
     if any_ofs:
         schema['anyOf'] = [any_ofs[key] for key in sorted(any_ofs.keys())]
 
-    schema['required'].sort()
 
-    return schema
+def add_multiquestion_dependencies(schema, questions):
+    dependencies = {}
+    for key, question in questions.items():
+        if question.type == 'multiquestion':
+            dependencies.update({
+                field: sorted(set(question.form_fields) - set([field]))
+                for field in question.form_fields
+                if len(question.form_fields) > 1
+            })
+
+    if dependencies:
+        schema['dependencies'] = dependencies
 
 
 def generate_schema(path, schema_name, framework_slug, lot_slug):
@@ -327,6 +341,8 @@ def generate_schema(path, schema_name, framework_slug, lot_slug):
     schema = empty_schema(schema_name)
 
     build_schema_properties(schema, questions)
+    add_multiquestion_anyof(schema, questions)
+    add_multiquestion_dependencies(schema, questions)
 
     with open(os.path.join(path, 'services-{}-{}.json'.format(framework_slug, lot_slug)), 'w') as f:
         json.dump(schema, f, sort_keys=True, indent=2, separators=(',', ': '))

@@ -12,3 +12,7 @@ options:
   - label: Process auditing
   - label: Software auditing
   - label: System auditing
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

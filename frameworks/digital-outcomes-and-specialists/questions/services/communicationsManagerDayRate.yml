@@ -7,3 +7,7 @@ type: pricing
 fields:
   minimum_price: communicationsManagerPriceMin
   maximum_price: communicationsManagerPriceMax
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

@@ -1,5 +1,6 @@
 question: Content designer
 name: Content designer
+optional: true
 depends:
   - "on": lot
     being:

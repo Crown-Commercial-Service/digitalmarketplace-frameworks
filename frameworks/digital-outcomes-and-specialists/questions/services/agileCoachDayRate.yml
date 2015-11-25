@@ -7,3 +7,7 @@ type: pricing
 fields:
   minimum_price: agileCoachPriceMin
   maximum_price: agileCoachPriceMax
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

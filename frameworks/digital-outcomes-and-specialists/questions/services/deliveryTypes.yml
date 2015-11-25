@@ -13,3 +13,7 @@ options:
   - label: Programme management
   - label: Project management
   - label: Service management
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

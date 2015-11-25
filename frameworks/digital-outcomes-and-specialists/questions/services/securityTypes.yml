@@ -13,3 +13,7 @@ options:
   - label: Security policy
   - label: THC (Pen) Testing
   - label: Threat modelling
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

@@ -1,5 +1,6 @@
 question: User researcher
 name: User researcher
+optional: true
 depends:
   - "on": lot
     being:

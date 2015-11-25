@@ -7,3 +7,7 @@ type: pricing
 fields:
   minimum_price: contentDesignerPriceMin
   maximum_price: contentDesignerPriceMax
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

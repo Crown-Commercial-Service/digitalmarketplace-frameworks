@@ -14,3 +14,7 @@ options:
   - label: Prototyping
   - label: Service design
   - label: User experience and design strategy
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

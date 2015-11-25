@@ -1,5 +1,6 @@
 question: Programme manager
 name: Programme manager
+optional: true
 depends:
   - "on": lot
     being:

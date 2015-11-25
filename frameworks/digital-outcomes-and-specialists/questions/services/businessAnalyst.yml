@@ -1,5 +1,6 @@
 question: Business analyst
 name: Business analyst
+optional: true
 depends:
   - "on": lot
     being:

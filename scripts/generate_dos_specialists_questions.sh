@@ -5,6 +5,7 @@ make_questions() {
     sed -e "s/NAME/$specialist/" -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}.yml <<END
 question: NAME
 name: NAME
+optional: true
 depends:
   - "on": lot
     being:
@@ -28,6 +29,10 @@ type: pricing
 fields:
   minimum_price: QUESTIONPriceMin
   maximum_price: QUESTIONPriceMax
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
 END
 
     sed -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}Locations.yml <<END
@@ -50,6 +55,10 @@ options:
   - label: "South East England"
   - label: "West England"
   - label: "Northern Ireland"
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
 END
 }
 
@@ -71,5 +80,31 @@ make_questions "technical architect" "technicalArchitect"
 make_questions "user researcher" "userResearcher"
 make_questions "web operations engineer" "webOperations"
 
-
 sed -i '' 's/a agile coach/an agile coach/g' ${FRAMEWORKS_PATH}/*.yml
+
+make_outcomes_multiquestion() {
+    local capability="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
+    sed -e "s/NAME/$capability/" -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}.yml <<END
+question: NAME
+name: NAME
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: multiquestion
+questions:
+  - QUESTIONTypes
+
+empty_message: You haven't added any TYPE capabilities
+END
+}
+
+make_outcomes_multiquestion "performance analysis and data" performanceAnalysis
+make_outcomes_multiquestion "security" security
+make_outcomes_multiquestion "service delivery" delivery
+make_outcomes_multiquestion "software development" softwareDevelopment
+make_outcomes_multiquestion "support and operations" supportAndOperations
+make_outcomes_multiquestion "testing and auditing" testingAndAuditing
+make_outcomes_multiquestion "user experience and design" userExperienceAndDesign
+make_outcomes_multiquestion "user research" userResearch

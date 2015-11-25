@@ -21,3 +21,7 @@ options:
   - label: Search
   - label: Systems Integration
   - label: Web application development
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

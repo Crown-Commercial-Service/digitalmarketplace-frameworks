@@ -11,3 +11,7 @@ options:
   - label: Usability testing
   - label: User journey mapping
   - label: User needs and insights
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
