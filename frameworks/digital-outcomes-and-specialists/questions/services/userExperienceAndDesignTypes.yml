@@ -5,9 +5,10 @@ depends:
       - digital-outcomes
 type: checkboxes
 options:
+  - label: Accessibility
   - label: Animation
   - label: Brand development
-  - label: Content design / copywriting
+  - label: Content design and copywriting
   - label: Cross-platform design
   - label: Information architecture
   - label: Interaction design

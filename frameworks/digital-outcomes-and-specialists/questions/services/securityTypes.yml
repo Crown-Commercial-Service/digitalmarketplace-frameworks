@@ -5,11 +5,12 @@ depends:
       - digital-outcomes
 type: checkboxes
 options:
-  - label: CLAS / CESG certification
-  - label: Firewall review / audit
-  - label: Incident response / forensics
+  - label: CESG information assurance certification
+  - label: Firewall audit
+  - label: Incident response and forensics
   - label: Infrastructure review
   - label: Risk management
   - label: Security policy
-  - label: THC (Pen) Testing
+  - label: IT health check
   - label: Threat modelling
+  - label: Vulnerability and penetration testing
