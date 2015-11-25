@@ -7,3 +7,6 @@ type: pricing
 fields:
   minimum_price: designerPriceMin
   maximum_price: designerPriceMax
+field_defaults:
+  price_unit: Person
+  price_interval: Day

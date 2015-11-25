@@ -7,3 +7,6 @@ type: pricing
 fields:
   minimum_price: userResearcherPriceMin
   maximum_price: userResearcherPriceMax
+field_defaults:
+  price_unit: Person
+  price_interval: Day

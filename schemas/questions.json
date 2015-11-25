@@ -77,18 +77,16 @@
               "file_is_open_document_format",
               "invalid_format",
               "max_less_than_min",
-              "max_price_not_a_number",
-              "min_price_not_a_number",
-              "no_min_price_specified",
-              "no_unit_specified",
               "not_a_number",
-              "price_string_can_be_composed",
               "under_10_items",
               "under_10_words",
               "under_20_words",
               "under_50_words",
               "under_character_limit"
             ]
+          },
+          "field": {
+            "type": "string"
           },
           "message": {
             "type": "string"
@@ -137,9 +135,12 @@
     },
     "fields": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "minimum_price": {"type": "string"},
-        "maximum_price": {"type": "string"}
+        "maximum_price": {"type": "string"},
+        "price_interval": {"type": "string"},
+        "price_unit": {"type": "string"}
       }
     },
     "max_length_in_words": {
@@ -147,6 +148,10 @@
     },
     "optional": {
       "type": "boolean"
+    },
+    "optional_fields": {
+      "type": "array",
+      "items": {"type": "string"}
     },
     "empty_message": {
       "type": "string"

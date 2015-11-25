@@ -7,3 +7,6 @@ type: pricing
 fields:
   minimum_price: programmeManagerPriceMin
   maximum_price: programmeManagerPriceMax
+field_defaults:
+  price_unit: Person
+  price_interval: Day
