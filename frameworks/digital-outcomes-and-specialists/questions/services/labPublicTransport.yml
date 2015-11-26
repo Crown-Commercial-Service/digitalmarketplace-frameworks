@@ -1,5 +1,8 @@
-question: How do visitors get to your studio using public transport?
-hint: This is to help buyers understand how easy it is for them to reach your studio.
+name: How do visitors get to your studio using public transport?
+question: >
+  How do visitors get to your studio using public transport?
+
+  Use the description to help buyers understand how easy it is for visitors to reach your studio.
 depends:
   - "on": lot
     being:

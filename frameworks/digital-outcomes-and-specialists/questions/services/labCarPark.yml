@@ -1,5 +1,8 @@
-question: Where can visitors to your studio park?
-hint: This is to help buyers understand how easy it is for them to reach your studio.
+name: Where can visitors to your studio park?
+question: >
+  Where can visitors to your studio park?
+
+  This is to help buyers understand how easy it is for them to reach your studio.
 depends:
   - "on": lot
     being:

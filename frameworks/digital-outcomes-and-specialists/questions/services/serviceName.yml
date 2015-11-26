@@ -1,6 +1,9 @@
-question: What is the name of the lab?
+name: What is the name of the lab?
+question: >
+  What is the name of the lab?
+
+  Provide the name of the room where participants and researchers carry out testing.
 type: text
-hint: A studio is the room in which the participant(s) and moderator(s) carry out testing. The name will help buyers refer to the right studio when communicating with you.
 
 depends:
   -

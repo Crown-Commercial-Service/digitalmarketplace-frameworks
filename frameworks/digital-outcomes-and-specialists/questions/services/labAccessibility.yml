@@ -1,5 +1,10 @@
-question: How accessible is your studio?
-hint: This is to help buyers understand how easy it is for them to reach your studio.
+name: How accessible is your studio?
+question: >
+  How accessible is your studio?
+
+  Describe the ways in which your lab is accessible or inaccessible.
+
+  eg wheelchair access or hearing loops provided.
 depends:
   - "on": lot
     being:
