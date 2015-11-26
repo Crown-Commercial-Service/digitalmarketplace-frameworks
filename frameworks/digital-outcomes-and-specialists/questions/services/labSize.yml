@@ -1,5 +1,8 @@
-question: How many people can the lab accommodate?
-hint: This is the total number of people including participants and facilitators.
+name: How many people can the lab accommodate?
+question: >
+  How many people can the lab accommodate
+
+  This is the total number of people including participants and researchers.
 depends:
   - "on": lot
     being:
