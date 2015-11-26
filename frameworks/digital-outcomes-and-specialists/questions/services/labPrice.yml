@@ -9,3 +9,6 @@ type: pricing
 fields:
   minimum_price: labPriceMin
   maximum_price: labPriceMax
+field_defaults:
+  price_unit: Lab
+  price_interval: Day
