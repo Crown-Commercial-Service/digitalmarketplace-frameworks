@@ -10,7 +10,6 @@ options:
   - label: Entirely offline
   - label: Initial recruitment offline, but then contact them online
   - label: Entirely online
-type: boolean
 
 validations:
   - name: answer_required
