@@ -1,3 +1,4 @@
+name: Provide discreet recruitment
 question: Can you, if asked, recruit participants without revealing details of the organisation you're recruiting for?
 type: boolean
 depends:
