@@ -42,9 +42,18 @@ validations:
   - name: answer_required
     field: QUESTIONPriceMin
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: QUESTIONPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
   - name: answer_required
     field: QUESTIONPriceMax
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: QUESTIONPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: QUESTIONPriceMax
+    message: "Minimum price must be less than maximum price"
 END
 
     sed -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}Locations.yml <<END
