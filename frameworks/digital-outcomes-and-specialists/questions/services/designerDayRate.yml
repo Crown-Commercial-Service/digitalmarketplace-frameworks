@@ -15,6 +15,15 @@ validations:
   - name: answer_required
     field: designerPriceMin
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: designerPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
   - name: answer_required
     field: designerPriceMax
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: designerPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: designerPriceMax
+    message: "Minimum price must be less than maximum price"

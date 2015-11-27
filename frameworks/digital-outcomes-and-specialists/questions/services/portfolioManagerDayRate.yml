@@ -15,6 +15,15 @@ validations:
   - name: answer_required
     field: portfolioManagerPriceMin
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: portfolioManagerPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
   - name: answer_required
     field: portfolioManagerPriceMax
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: portfolioManagerPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: portfolioManagerPriceMax
+    message: "Minimum price must be less than maximum price"

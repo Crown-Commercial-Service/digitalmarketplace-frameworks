@@ -15,6 +15,15 @@ validations:
   - name: answer_required
     field: technicalArchitectPriceMin
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: technicalArchitectPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
   - name: answer_required
     field: technicalArchitectPriceMax
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: technicalArchitectPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: technicalArchitectPriceMax
+    message: "Minimum price must be less than maximum price"

@@ -15,6 +15,15 @@ validations:
   - name: answer_required
     field: performanceAnalystPriceMin
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: performanceAnalystPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
   - name: answer_required
     field: performanceAnalystPriceMax
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: performanceAnalystPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: performanceAnalystPriceMax
+    message: "Minimum price must be less than maximum price"
