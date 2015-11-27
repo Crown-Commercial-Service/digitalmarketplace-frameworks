@@ -15,6 +15,15 @@ validations:
   - name: answer_required
     field: userResearcherPriceMin
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: userResearcherPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
   - name: answer_required
     field: userResearcherPriceMax
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: userResearcherPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: userResearcherPriceMax
+    message: "Minimum price must be less than maximum price"

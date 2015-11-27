@@ -15,6 +15,15 @@ validations:
   - name: answer_required
     field: agileCoachPriceMin
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: agileCoachPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
   - name: answer_required
     field: agileCoachPriceMax
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: agileCoachPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: agileCoachPriceMax
+    message: "Minimum price must be less than maximum price"

@@ -15,6 +15,15 @@ validations:
   - name: answer_required
     field: programmeManagerPriceMin
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: programmeManagerPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
   - name: answer_required
     field: programmeManagerPriceMax
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: programmeManagerPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: programmeManagerPriceMax
+    message: "Minimum price must be less than maximum price"

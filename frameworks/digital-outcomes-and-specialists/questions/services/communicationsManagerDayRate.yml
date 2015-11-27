@@ -15,6 +15,15 @@ validations:
   - name: answer_required
     field: communicationsManagerPriceMin
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: communicationsManagerPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
   - name: answer_required
     field: communicationsManagerPriceMax
     message: 'You need to answer this question.'
+  - name: not_money_format
+    field: communicationsManagerPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: communicationsManagerPriceMax
+    message: "Minimum price must be less than maximum price"
