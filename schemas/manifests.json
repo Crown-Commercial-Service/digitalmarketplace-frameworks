@@ -8,6 +8,9 @@
       "name": {
         "type": "string"
       },
+      "summary_page_description": {
+        "type": "string"
+      },
       "editable": {
         "type": "boolean"
       },

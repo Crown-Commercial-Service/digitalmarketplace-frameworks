@@ -19,6 +19,9 @@
     - manageIncentives
 
 - name: Team capabilities
+  summary_page_description: >
+    You must be able to provide at least one team capability to be eligible to
+    supply digital outcomes.
   editable: False
   edit_questions: True
   questions:
@@ -37,6 +40,9 @@
     - outcomesLocations
 
 - name: Individual specialist roles
+  summary_page_description: >
+    You must be able to provide at least one individual specialist role to be
+    eligible to supply digital specialists.
   editable: False
   edit_questions: True
   questions:
