@@ -141,7 +141,8 @@
         "minimum_price": {"type": "string"},
         "maximum_price": {"type": "string"},
         "price_interval": {"type": "string"},
-        "price_unit": {"type": "string"}
+        "price_unit": {"type": "string"},
+        "hours_for_price": {"type": "string"}
       }
     },
     "field_defaults": {
@@ -151,7 +152,8 @@
         "minimum_price": {"type": "string"},
         "maximum_price": {"type": "string"},
         "price_interval": {"type": "string"},
-        "price_unit": {"type": "string"}
+        "price_unit": {"type": "string"},
+        "hours_for_price": {"type": "string"}
       }
     },
     "max_length_in_words": {
