@@ -1,4 +1,4 @@
-name: Share systems information
+name: Interoperability of systems
 question: Will you use standard, accessible data protocols to ensure interoperability across government services?
 type: boolean
 depends:
