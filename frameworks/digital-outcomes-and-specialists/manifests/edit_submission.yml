@@ -52,6 +52,7 @@
     - portfolioManager
     - productManager
     - programmeManager
+    - qualityAssurance
     - serviceManager
     - technicalArchitect
     - userResearcher
