@@ -1,6 +1,4 @@
 question: Building and street
-hint: This should be the address of the building where your lab is.
-
 depends:
   - "on": lot
     being:

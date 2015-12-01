@@ -64,7 +64,7 @@
     - userResearcher
     - webOperations
 
-- name: Address
+- name: Lab address
   editable: True
   questions:
     - labAddressBuilding
