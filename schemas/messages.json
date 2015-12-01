@@ -2,16 +2,37 @@
   "title": "Message",
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
-  "properties": {
-    "coming": {
-      "type": "object"
+  "anyOf": [
+    {"$ref": "#/definitions/dates"},
+    {"$ref": "#/definitions/frameworkStates"}
+  ],
+  "definitions": {
+    "dates": {
+      "properties": {
+        "clarifications_close_date": {"type": "string"},
+        "clarifications_publish_date": {"type": "string"},
+        "framework_close_date": {"type": "string"},
+        "framework_live_date": {"type": "string"}
+      },
+      "required": [
+        "clarifications_close_date", "clarifications_publish_date",
+        "framework_close_date"
+      ],
+      "additionalProperties": false
     },
-    "open": {
-      "type": "object"
-    },
-    "pending": {
-      "type": "object"
+    "frameworkStates": {
+      "properties": {
+        "coming": {
+          "type": "object"
+        },
+        "open": {
+          "type": "object"
+        },
+        "pending": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
     }
-  },
-  "additionalProperties": false
+  }
 }
