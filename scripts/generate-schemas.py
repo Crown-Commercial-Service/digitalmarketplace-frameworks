@@ -165,6 +165,20 @@ def pricing_property(question):
         if 'price_interval' in question.get('optional_fields', []):
             pricing[question.fields['price_interval']]['enum'].insert(0, "")
 
+    if 'hours_for_price' in question.fields:
+        pricing[question.fields['hours_for_price']] = {
+            "enum": [
+                "1 hour",
+                "2 hours",
+                "3 hours",
+                "4 hours",
+                "5 hours",
+                "6 hours",
+                "7 hours",
+                "8 hours"
+            ]
+        }
+
     return pricing
 
 
