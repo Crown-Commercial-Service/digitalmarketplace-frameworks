@@ -1,4 +1,4 @@
-question: Do you have an viewing area?
+question: Do you have a viewing area?
 
 depends:
   - "on": lot
