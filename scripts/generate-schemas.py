@@ -110,7 +110,7 @@ def list_property(question):
 
 
 def price_string(optional):
-    pattern = r"^\d+(?:\.\d{1,5})?$"
+    pattern = r"^\d{1,15}(?:\.\d{1,5})?$"
     if optional:
         pattern = r"^$|" + pattern
     return {
