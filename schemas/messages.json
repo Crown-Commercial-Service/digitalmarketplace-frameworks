@@ -12,11 +12,12 @@
         "clarifications_close_date": {"type": "string"},
         "clarifications_publish_date": {"type": "string"},
         "framework_close_date": {"type": "string"},
+        "intention_to_award_date": {"type": "string"},
         "framework_live_date": {"type": "string"}
       },
       "required": [
         "clarifications_close_date", "clarifications_publish_date",
-        "framework_close_date"
+        "framework_close_date", "intention_to_award_date", "framework_live_date"
       ],
       "additionalProperties": false
     },
