@@ -9,7 +9,7 @@ type: radios
 options:
   - label: Yes – included as standard
   - label: Yes – for an additional cost
-  - label: No
+  - label: "No"
 
 validations:
   - name: answer_required
