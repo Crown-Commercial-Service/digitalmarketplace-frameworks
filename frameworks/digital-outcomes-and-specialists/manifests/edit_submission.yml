@@ -129,8 +129,6 @@
 
 - name: Location
   editable: True
-  description: >
-    Help buyers understand how easy it is for visitors to reach your studio.
   questions:
     - recruitLocations 
 
