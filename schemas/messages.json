@@ -12,6 +12,7 @@
         "clarifications_close_date": {"type": "string"},
         "clarifications_publish_date": {"type": "string"},
         "framework_close_date": {"type": "string"},
+        "intention_to_award_date": {"type": "string"},
         "framework_live_date": {"type": "string"}
       },
       "required": [
