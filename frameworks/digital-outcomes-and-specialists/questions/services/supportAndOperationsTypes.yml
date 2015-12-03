@@ -6,14 +6,23 @@ depends:
 type: checkboxes
 options:
   - label: Customer support
+    description: Support user needs by providing help before, during and after people use a product or service.
   - label: Firewall management
+    description: Provision, deploy, upgrade, patch, and monitor firewalls to reduce cyber attack and compliance risks.
   - label: Hosting
+    description: Implement and manage cloud-hosted infrastructure or traditional datacentres.
   - label: Incident management
+    description: Log, record and manage incidents on digital services.
   - label: Monitoring
+    description: Monitor system performance and events. Ensure relevant alerts are set up.
   - label: Network administration
+    description: Assemble, maintain and upgrade computer hardware and software systems that make up a network.
   - label: Systems administration
+    description: Install, support and maintain computer systems. Manage user and security policies.
   - label: Service desk
+    description: Assemble, maintain and upgrade computer hardware and software systems that make up a network.
   - label: Tooling
+    description: Set up and maintain tools for continuous integration and deployment of digital services.
 
 validations:
   - name: answer_required

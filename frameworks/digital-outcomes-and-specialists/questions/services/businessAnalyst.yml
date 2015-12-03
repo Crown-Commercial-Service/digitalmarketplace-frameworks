@@ -12,3 +12,5 @@ questions:
   - businessAnalystDayRate
 
 empty_message: You haven't added a business analyst
+
+hint: Specify, collect and present key performance data and analysis for their service.
