@@ -17,7 +17,7 @@ options:
     description: Build and maintain a persistent storage solution to meet the needs of the project or service.  
   - label: Desktop application development
     description: Build and maintain applications for desktop computers based on user needs. 
-  - label: Frontend web application development
+  - label: Front-end web application development
     description: Build and maintain the user interface of a web application based on user needs.
   - label: Game development
     description: Develop games, eg for education or training.
