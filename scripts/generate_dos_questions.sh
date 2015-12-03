@@ -58,6 +58,7 @@ END
 
     sed -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}Locations.yml <<END
 question: Where will your TYPE work?
+hint: "[View regions](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
 depends:
   - "on": lot
     being:

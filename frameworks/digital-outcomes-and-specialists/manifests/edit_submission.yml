@@ -71,12 +71,13 @@
     - labAddressTown
     - labAddressPostcode
 
-- name: Location
+- name: Transport
   editable: True
+  description: >
+    Help buyers understand how easy it is for visitors to reach your studio.
   questions:
     - labPublicTransport
     - labCarPark
-    - recruitLocations
 
 - name: Lab size
   editable: True
@@ -125,3 +126,9 @@
   questions:
     - recruitMethods
     - recruitFromList
+
+- name: Location
+  editable: True
+  questions:
+    - recruitLocations 
+

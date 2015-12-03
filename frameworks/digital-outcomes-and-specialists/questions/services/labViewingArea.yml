@@ -1,4 +1,4 @@
-question: Do you have an viewing area?
+question: Do you have a viewing area?
 
 depends:
   - "on": lot
@@ -7,9 +7,9 @@ depends:
 
 type: radios
 options:
-  - label: "No"
   - label: Yes – included as standard
   - label: Yes – for an additional cost
+  - label: "No"
 
 validations:
   - name: answer_required

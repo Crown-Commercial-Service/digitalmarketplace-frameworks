@@ -1,4 +1,5 @@
 question: Building and street
+
 depends:
   - "on": lot
     being:
