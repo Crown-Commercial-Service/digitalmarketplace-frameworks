@@ -5,11 +5,7 @@ depends:
     being:
       - user-research-studios
 
-type: radios
-options:
-  - label: "No"
-  - label: Yes – included as standard
-  - label: Yes – for an additional cost
+type: boolean
 
 validations:
   - name: answer_required

@@ -2,9 +2,7 @@ name: How accessible is your studio?
 question: >
   How accessible is your studio?
 
-  Describe the ways in which your lab is accessible or inaccessible.
-
-  eg wheelchair access or hearing loops provided.
+  Describe the ways in which your lab is accessible or inaccessible, eg wheelchair access or hearing loops provided.
 depends:
   - "on": lot
     being:
