@@ -5,31 +5,21 @@ options:
     label: Apply to provide teams for digital outcomes
     value: digital-outcomes
     description: >
-      Provide teams to build and support digital outcomes.
-
-
-      Examples of digital outcomes include a discovery phase or an online billing application.
+      Examples of digital outcomes include the beta of an appointment booking system or the alpha of a billing application.
   -
     label: Apply to provide individual digital specialists
     value: digital-specialists
     description: >
-      Provide individual specialists to work on digital services, programmes or projects.
-
-
       Examples of digital specialists include content designers or technical architects.
   -
     label: Apply to provide user research studios
     value: user-research-studios
     description: >
-      Add studios for user research sessions and workshops.
-
-
-      Buyers will see this information and use it to choose the studio they want to hire.
+      User research studios sometimes have multiple labs, or rooms. Labs usually include a device to test a service
+      and a way to observe the session. Provide information on each lab you want buyers to use. 
   -
     label: Apply to provide user research participant recruitment
     value: user-research-participants
     description: >
-      Provide user research participant recruitment services.
-
-
-      Examples of participant recruitment services include finding and managing research participants from specific user groups.
+      Examples of participant recruitment services include finding and managing research participants from specific
+      user groups.
