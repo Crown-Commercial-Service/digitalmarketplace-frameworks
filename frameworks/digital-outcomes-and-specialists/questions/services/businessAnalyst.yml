@@ -12,3 +12,5 @@ questions:
   - businessAnalystDayRate
 
 empty_message: You haven't added a business analyst
+
+hint: Analyse a service or organisation’s business processes and systems. Specify, collect and present findings.
