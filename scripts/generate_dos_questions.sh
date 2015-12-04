@@ -65,7 +65,7 @@ depends:
       - digital-specialists
 type: checkboxes
 options:
-  - label: "Off-site"
+  - label: "Offsite"
   - label: "Scotland"
   - label: "North East England"
   - label: "North West England"
