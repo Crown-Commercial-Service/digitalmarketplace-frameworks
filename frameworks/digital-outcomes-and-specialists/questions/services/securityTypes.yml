@@ -13,12 +13,12 @@ options:
     description: Prepare for, and respond to a security incident. Determine what has gone wrong and how to resolve the incident. Understand and comply with forensic requirements.
   - label: Infrastructure review
     description: Review infrastructure to ensure the hardware and software meets security policies, and is appropriately configured and patched.
+  - label: IT health check
+    description: Conduct penetration testing using CESG-approved firms.
   - label: Risk management
     description: Identify, analyse, document, mitigate and monitor the risks of a system.
   - label: Security policy
     description: Evaluate and develop security plans and policies to protect digital assets.
-  - label: IT health check
-    description: Conduct penetration testing using CESG-approved firms.
   - label: Threat modelling
     description: Take a structured approach to analysing the security needs of a system or service.
   - label: Vulnerability and penetration testing
