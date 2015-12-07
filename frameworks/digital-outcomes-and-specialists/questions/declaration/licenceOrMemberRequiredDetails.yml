@@ -2,4 +2,4 @@ question: If you answered ‘licensed’ or ‘a member of a relevant organisati
 type: text
 validations:
   - name: answer_required
-    message: You need to answer this question because you answered answered ‘licensed’ or ‘a member of a relevant organisation’ in [[licenceOrMemberRequired]].
+    message: You need to answer this question because you answered ‘licensed’ or ‘a member of a relevant organisation’ in [[licenceOrMemberRequired]].
