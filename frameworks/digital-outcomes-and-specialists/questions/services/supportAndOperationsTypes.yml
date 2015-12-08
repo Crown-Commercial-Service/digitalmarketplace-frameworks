@@ -18,7 +18,7 @@ options:
   - label: Network administration
     description: Assemble, maintain and upgrade computer hardware and software systems that make up a network.
   - label: Service desk
-    description: Assemble, maintain and upgrade computer hardware and software systems that make up a network.
+    description: Provide first or second-line technical support to either internal or external users.
   - label: Systems administration
     description: Install, support and maintain computer systems. Manage user and security policies.
   - label: Tooling
