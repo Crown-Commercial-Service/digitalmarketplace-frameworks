@@ -17,10 +17,10 @@ options:
     description: Monitor system performance and events. Ensure relevant alerts are set up.
   - label: Network administration
     description: Assemble, maintain and upgrade computer hardware and software systems that make up a network.
-  - label: Systems administration
-    description: Install, support and maintain computer systems. Manage user and security policies.
   - label: Service desk
     description: Assemble, maintain and upgrade computer hardware and software systems that make up a network.
+  - label: Systems administration
+    description: Install, support and maintain computer systems. Manage user and security policies.
   - label: Tooling
     description: Set up and maintain tools for continuous integration and deployment of digital services.
 
