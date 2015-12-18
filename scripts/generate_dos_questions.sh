@@ -76,7 +76,7 @@ options:
   - label: "Wales"
   - label: "London"
   - label: "South East England"
-  - label: "West England"
+  - label: "South West England"
   - label: "Northern Ireland"
 
 validations:
