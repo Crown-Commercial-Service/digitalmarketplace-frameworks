@@ -7,6 +7,7 @@ question: >
 
 
   You can update the regions where you can provide services when the framework is live.
+hint: "[View regions](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
 depends:
   - "on": lot
     being:
@@ -24,5 +25,9 @@ options:
   - label: "Wales"
   - label: "London"
   - label: "South East England"
-  - label: "West England"
+  - label: "South West England"
   - label: "Northern Ireland"
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
