@@ -5,6 +5,9 @@
 # Usage:
 #   FRAMEWORKS_PATH=frameworks/digital-outcomes-and-specialists/questions/services/ ./scripts/generate_dos_questions.sh
 
+>&2 echo "This can no longer be used, it will clobber the questions, soz."
+exit 1
+
 make_questions() {
     local specialist="$(tr '[:lower:]' '[:upper:]' <<< ${1:0:1})${1:1}"
     sed -e "s/NAME/$specialist/" -e "s/TYPE/$1/" -e "s/QUESTION/$2/" > ${FRAMEWORKS_PATH}${2}.yml <<END
