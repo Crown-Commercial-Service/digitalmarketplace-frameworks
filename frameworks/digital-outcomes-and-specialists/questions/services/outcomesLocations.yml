@@ -27,3 +27,7 @@ options:
   - label: "South East England"
   - label: "South West England"
   - label: "Northern Ireland"
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
