@@ -2,6 +2,13 @@ Digital Marketplace content
 ===========================
 YAML definitions of the Digital Marketplace’s procurement frameworks.
 
+Terminology
+-----------
+
+* Multiquestion: A multi-question is a question which contains a questions key, which lets us reuse the same summary
+  tables markup so that each row represents a group of related questions (rather than just being limited to one
+  question).
+
 Question keys
 -------------
 
