@@ -2,8 +2,13 @@ import re
 from math import isnan
 from glob import glob
 import os
-import shutil
 
+try:
+    import __builtin__ as builtins
+except ImportError:
+    import builtins
+
+import mock
 import pytest
 from dmutils.content_loader import ContentQuestion
 from hypothesis.settings import Settings
@@ -13,9 +18,25 @@ from schema_generator import uri_property, parse_question_limits, \
     build_question_properties, empty_schema, load_questions, \
     drop_non_schema_questions, radios_property, list_property, price_string, \
     pricing_property, generate_schema, SCHEMAS
-from . import support
 
 Settings.default.database = None
+
+
+@pytest.fixture()
+def opened_files(request):
+    opened_files = []
+    original_open = builtins.open
+
+    def patched_open(*args):
+        fh = original_open(*args)
+        opened_files.append(fh.name)
+        return fh
+
+    open_patch = mock.patch.object(builtins, 'open', patched_open)
+    open_patch.start()
+    request.addfinalizer(open_patch.stop)
+
+    return opened_files
 
 
 def test_drop_non_schema_questions():
@@ -298,7 +319,7 @@ def test_multiquestion():
     assert result == bqp_result
 
 
-def test_generate_schema_opens_files():
+def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):
     """
     This test checks that when building a schema, all files are
     actually opened.
@@ -307,39 +328,30 @@ def test_generate_schema_opens_files():
     either they are unnecessary or something has gone profoundly wrong.
     """
     g_cloud_schemas = [x for x in SCHEMAS if x[1] == "g-cloud-7"]
-    dos_schemas = [x for x in SCHEMAS
-                   if x[1] == "digital-outcomes-and-specialists"]
-    test_directory = os.path.join(os.getcwd(), "tests/build")
+    test_directory = str(tmpdir.mkdir("schemas"))
 
-    # test G-Cloud 7 schemas
-    support.clear_buffer()
-    if not os.path.isdir(test_directory):
-        os.mkdir(test_directory)
     for schema in g_cloud_schemas:
         generate_schema(test_directory, *schema)
     g_cloud_path = "./frameworks/g-cloud-7"
-    g_cloud_opened_files = set([x for x in support.opened_files
-                                if x.startswith(g_cloud_path) and
-                                os.path.isfile(x)])
-    g_cloud_expected_files = set([y for x in os.walk(g_cloud_path)
-                                  for y in glob(g_cloud_path)
-                                  if os.path.isfile(y)])
-    g_cloud_diff = g_cloud_expected_files - g_cloud_opened_files
-    assert len(g_cloud_diff) == 0
-    shutil.rmtree(test_directory)
+    g_cloud_opened_files = set(x for x in opened_files
+                               if x.startswith(g_cloud_path) and
+                               os.path.isfile(x))
+    g_cloud_expected_files = set(y for x in os.walk(g_cloud_path)
+                                 for y in glob(g_cloud_path)
+                                 if os.path.isfile(y))
+    assert g_cloud_expected_files == g_cloud_opened_files
 
-    # test DOS
-    support.clear_buffer()
-    if not os.path.isdir(test_directory):
-        os.mkdir(test_directory)
+
+def test_generate_dos_schema_opens_files(opened_files, tmpdir):
+    dos_schemas = [x for x in SCHEMAS
+                   if x[1] == "digital-outcomes-and-specialists"]
+    test_directory = str(tmpdir.mkdir("schemas"))
+
     for schema in dos_schemas:
         generate_schema(test_directory, *schema)
     dos_path = "./frameworks/digital-outcomes-and-specialists"
-    dos_opened_files = set([x for x in support.opened_files
-                            if x.startswith(dos_path) and os.path.isfile(x)])
-    dos_expected_files = set([y for x in os.walk(dos_path)
-                              for y in glob(dos_path) if os.path.isfile(y)])
-    dos_diff = dos_expected_files - dos_opened_files
-    assert len(dos_diff) == 0
-    shutil.rmtree(test_directory)
-    support.clear_buffer()
+    dos_opened_files = set(x for x in opened_files
+                           if x.startswith(dos_path) and os.path.isfile(x))
+    dos_expected_files = set(y for x in os.walk(dos_path)
+                             for y in glob(dos_path) if os.path.isfile(y))
+    assert dos_expected_files == dos_opened_files
