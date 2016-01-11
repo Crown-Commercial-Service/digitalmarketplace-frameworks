@@ -39,6 +39,18 @@ def opened_files(request):
     return opened_files
 
 
+def recursive_file_list(dirname):
+    output = []
+    for filename in os.listdir(dirname):
+        filename = dirname + "/" + filename
+        if os.path.isfile(filename):
+            output.append(filename)
+        else:
+            for result in recursive_file_list(filename):
+                output.append(result)
+    return output
+
+
 def test_drop_non_schema_questions():
     questions = load_questions('g-cloud-7', 'scs')
     # lotName is in G-Cloud 7
@@ -336,9 +348,10 @@ def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):
     g_cloud_opened_files = set(x for x in opened_files
                                if x.startswith(g_cloud_path) and
                                os.path.isfile(x))
-    g_cloud_expected_files = set(y for x in os.walk(g_cloud_path)
-                                 for y in glob(g_cloud_path)
-                                 if os.path.isfile(y))
+    g_cloud_expected_files = set([x for x in recursive_file_list(g_cloud_path)
+                                  if ("questions/services" in x or
+                                      x.endswith("manifests/edit_submission.yml")) and
+                                  not x.endswith("lot.yml") and not x.endswith("id.yml")])
     assert g_cloud_expected_files == g_cloud_opened_files
 
 
@@ -352,6 +365,8 @@ def test_generate_dos_schema_opens_files(opened_files, tmpdir):
     dos_path = "./frameworks/digital-outcomes-and-specialists"
     dos_opened_files = set(x for x in opened_files
                            if x.startswith(dos_path) and os.path.isfile(x))
-    dos_expected_files = set(y for x in os.walk(dos_path)
-                             for y in glob(dos_path) if os.path.isfile(y))
+    dos_expected_files = set([x for x in recursive_file_list(dos_path)
+                              if ("questions/services" in x or
+                                  x.endswith("manifests/edit_submission.yml")) and
+                              not x.endswith("lot.yml")])
     assert dos_expected_files == dos_opened_files
