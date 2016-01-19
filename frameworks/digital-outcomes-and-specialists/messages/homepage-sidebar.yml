@@ -43,3 +43,10 @@ open:
 
 
     [Find out how to apply](https://www.gov.uk/guidance/digital-outcomes-and-specialists-suppliers-guide)
+  
+pending:
+  template_name: 'temporary-message'
+  heading: 'Digital Outcomes and Specialists is closed for applications'
+  messages:
+    - 'Applications are being reviewed.'
+    
