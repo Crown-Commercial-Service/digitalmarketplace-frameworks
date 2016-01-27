@@ -1,0 +1,25 @@
+name: Essential
+question: Essential requirements
+hint: >
+  List your essential requirements as yes/no questions.
+
+
+  Suppliers must be able to answer ‘yes’ to all of these questions to proceed to the next round of evaluation.
+
+
+  eg does your organisation have experience working with open source software?
+list_item_name: 'essential requirement'
+type: list
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_10_words
+    message: 'Each requirement must be no more than 10 words.'
+  -
+    name: under_10_items
+    message: 'You must have 10 or fewer requirements.'
+  -
+    name: under_character_limit
+    message: 'Each requirement must be no more than 100 characters.'

@@ -1,0 +1,11 @@
+name: Organisation
+question: Organisation the work is for
+hint: 'eg Department of Work and Pensions or Goldsmiths, University of London'
+type: text
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your organisation name must be no more than 100 characters."

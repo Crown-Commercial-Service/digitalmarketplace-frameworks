@@ -1,0 +1,9 @@
+name: Additional terms and conditions
+question: List any additional terms and conditions that are not included in the service contract
+hint: 'Optional'
+type: textbox_large
+max_length_in_words: 50
+validations:
+  -
+    name: under_50_words
+    message: 'Your answer must be no more than 50 words.'

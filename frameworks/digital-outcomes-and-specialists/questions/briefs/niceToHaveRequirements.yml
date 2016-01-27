@@ -1,0 +1,25 @@
+name: Nice to have
+question: Nice-to-have requirements
+  List your nice-to-have requirements as yes/no questions.
+
+
+  Suppliers will be prioritised based on the number of questions they can answer 'yes' to.
+
+
+  eg does your organisation have experience working with low technical experience users?
+list_item_name: 'nice-to-have requirement'
+optional: true
+type: list
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_10_words
+    message: 'Each requirement must be no more than 10 words.'
+  -
+    name: under_10_items
+    message: 'You must have 10 or fewer requirements.'
+  -
+    name: under_character_limit
+    message: 'Each requirement must be no more than 100 characters.'

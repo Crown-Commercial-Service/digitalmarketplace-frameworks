@@ -1,0 +1,12 @@
+name: Type of evaluation
+question: How do you want the shortlisted suppliers to demonstrate their proposed approach?
+type: checkboxes
+options:
+  - label: "provide a written proposal"
+  - label: "provide a case study or evidence of previous work"
+  - label: "presentation"
+  - label: "pitch"
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
