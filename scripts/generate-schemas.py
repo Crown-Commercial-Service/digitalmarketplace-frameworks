@@ -5,7 +5,8 @@ Usage:
     generate-schemas.py --output-path=<output_path>
 
 """
-
+import sys
+sys.path.insert(0, '.')
 
 from docopt import docopt
 from schema_generator import generate_schema, SCHEMAS
