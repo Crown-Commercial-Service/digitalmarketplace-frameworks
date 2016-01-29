@@ -1,0 +1,14 @@
+name: Specialist
+question: Do you need a digital specialist?
+type: radios
+options:
+  - label: "Yes"
+  - label: "No"
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'

@@ -52,7 +52,7 @@ def recursive_file_list(dirname):
 
 
 def test_drop_non_schema_questions():
-    questions = load_questions('g-cloud-7', 'scs')
+    questions = load_questions('services', 'g-cloud-7', 'scs')
     # lotName is in G-Cloud 7
     assert 'lotName' in questions.keys()
     drop_non_schema_questions(questions)
@@ -339,11 +339,11 @@ def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):
     The assumption is that if there are files which aren't opened,
     either they are unnecessary or something has gone profoundly wrong.
     """
-    g_cloud_schemas = [x for x in SCHEMAS if x[1] == "g-cloud-7"]
+    g_cloud_schemas = [x for x in SCHEMAS['services'] if x[1] == "g-cloud-7"]
     test_directory = str(tmpdir.mkdir("schemas"))
 
     for schema in g_cloud_schemas:
-        generate_schema(test_directory, *schema)
+        generate_schema(test_directory, 'services', *schema)
     g_cloud_path = "./frameworks/g-cloud-7"
     g_cloud_opened_files = set(x for x in opened_files
                                if x.startswith(g_cloud_path) and
@@ -356,12 +356,11 @@ def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):
 
 
 def test_generate_dos_schema_opens_files(opened_files, tmpdir):
-    dos_schemas = [x for x in SCHEMAS
-                   if x[1] == "digital-outcomes-and-specialists"]
+    dos_schemas = [x for x in SCHEMAS['services'] if x[1] == "digital-outcomes-and-specialists"]
     test_directory = str(tmpdir.mkdir("schemas"))
 
     for schema in dos_schemas:
-        generate_schema(test_directory, *schema)
+        generate_schema(test_directory, 'services', *schema)
     dos_path = "./frameworks/digital-outcomes-and-specialists"
     dos_opened_files = set(x for x in opened_files
                            if x.startswith(dos_path) and os.path.isfile(x))
