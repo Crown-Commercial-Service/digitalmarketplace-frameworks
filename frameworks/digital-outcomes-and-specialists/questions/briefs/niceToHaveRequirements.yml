@@ -10,6 +10,11 @@ question: Nice-to-have requirements
 list_item_name: 'nice-to-have requirement'
 optional: true
 type: list
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
 validations:
   -
     name: answer_required

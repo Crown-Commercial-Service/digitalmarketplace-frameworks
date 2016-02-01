@@ -6,6 +6,11 @@ options:
   - label: "provide a case study or evidence of previous work"
   - label: "presentation"
   - label: "pitch"
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
 validations:
   -
     name: answer_required

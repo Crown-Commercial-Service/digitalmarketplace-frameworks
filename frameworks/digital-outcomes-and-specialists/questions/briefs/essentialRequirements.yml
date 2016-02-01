@@ -10,6 +10,11 @@ hint: >
   eg does your organisation have experience working with open source software?
 list_item_name: 'essential requirement'
 type: list
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
 validations:
   -
     name: answer_required

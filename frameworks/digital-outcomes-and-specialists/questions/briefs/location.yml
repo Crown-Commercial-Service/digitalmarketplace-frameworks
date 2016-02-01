@@ -15,6 +15,11 @@ options:
   - label: "South East England"
   - label: "Northern Ireland"
   - label: "Offsite"
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
 validations:
   -
     name: answer_required
