@@ -3,25 +3,35 @@
   editable: True
   questions:
     - organisation
-
-- name: Where will the work be carried out?
+-
+  name: Specialist
+  editable: True
+  questions:
+    - specialist
+-
+  name: Outcome
+  editable: True
+  questions:
+    - outcome
+-
+  name: Where will the work be carried out?
   editable: True
   questions:
     - location
-
-- name: Working arrangements
+-
+  name: Working arrangements
   editable: True
   questions:
     - workingArrangements
     - additionalTerms
-
-- name: Your requirements
+-
+  name: Your requirements
   editable: True
   questions:
     - essentialRequirements
     - niceToHaveRequirements
-
-- name: Evaluating suppliers
+-
+  name: Evaluating suppliers
   editable: True
   questions:
     - evaluationType

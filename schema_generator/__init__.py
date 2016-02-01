@@ -33,7 +33,11 @@ SCHEMAS = {
     ],
     'briefs': [
         ('Digital Outcomes and Specialists Digital outcomes Brief',
-         'digital-outcomes-and-specialists', 'digital-outcomes')
+         'digital-outcomes-and-specialists', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists Digital specialists Brief',
+         'digital-outcomes-and-specialists', 'digital-specialists'),
+        ('Digital Outcomes and Specialists User research participants Brief',
+         'digital-outcomes-and-specialists', 'user-research-participants')
     ]
 }
 
