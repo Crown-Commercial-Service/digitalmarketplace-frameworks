@@ -369,3 +369,19 @@ def test_generate_dos_schema_opens_files(opened_files, tmpdir):
                                   x.endswith("manifests/edit_submission.yml")) and
                               not x.endswith("lot.yml")])
     assert dos_expected_files == dos_opened_files
+
+
+def test_generate_dos_brief_opens_files(opened_files, tmpdir):
+    dos_schemas = [x for x in SCHEMAS['briefs'] if x[1] == "digital-outcomes-and-specialists"]
+    test_directory = str(tmpdir.mkdir("briefs"))
+
+    for schema in dos_schemas:
+        generate_schema(test_directory, 'briefs', *schema)
+    dos_path = "./frameworks/digital-outcomes-and-specialists"
+    dos_opened_files = set(x for x in opened_files
+                           if x.startswith(dos_path) and os.path.isfile(x))
+    dos_expected_files = set([x for x in recursive_file_list(dos_path)
+                              if ("questions/briefs" in x or
+                                  x.endswith("manifests/edit_brief.yml")) and
+                              not x.endswith("lot.yml")])
+    assert dos_expected_files == dos_opened_files
