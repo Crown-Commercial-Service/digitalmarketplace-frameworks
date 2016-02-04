@@ -4,10 +4,10 @@
   questions:
     - organisation
 -
-  name: Specialist
+  name: Specialist Role
   editable: True
   questions:
-    - specialist
+    - specialistRole
 -
   name: Outcome
   editable: True
