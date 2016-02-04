@@ -1,0 +1,96 @@
+name: Specialist role
+question: Type of specalist you need
+type: radios
+options:
+  -
+    label: Agile coach
+    value: agile_coach
+    description: >
+      Help individuals, teams and managers be as effective as possible by embedding an agile culture.
+  -
+    label: Business analyst
+    value: business_analyst
+    description: >
+      Analyse a service or organisation’s business processes and systems. Specify, collect and present findings.
+  -
+    label: Communications manager
+    value: communications_manager
+    description: >
+      Develop user-focused messages, measurement techniques and communication approaches.
+      Establish integrated communication plans across a range of digital channels
+      to ensure that communication is ongoing, open and clear.
+  -
+    label: Content designer
+    value: content_designer
+    description: >
+      Ensure content is as clear and simple as possible to meet user needs.
+  -
+    label: Cyber security consultant
+    value: cyber_security_consultant
+    description: >
+      Minimise the chance of data or information systems security breaches.
+      Ensure information is protected against unauthorised or unintended access.
+      Put systems in place to prevent data destruction or disruption.
+  -
+    label: Delivery manager
+    value: delivery_manager
+    description: >
+      Set up a team for successful delivery.
+      Remove obstacles, track progress, facilitate meetings and help the team organise itself.
+  -
+    label: Designer
+    value: designer
+    description: >
+      Provide user-centred interaction design, service design and graphic design expertise.
+  -
+    label: Developer
+    value: developer
+    description: >
+      Build software that supports user needs. Continually improve the service by
+      identifying new tools and techniques, removing technical bottlenecks, and adapting and maintaining code.
+  -
+    label: Portfolio manager
+    value: portfolio_manager
+    description: >
+      Lead a digital portfolio of projects and programmes.
+  -
+    label: Product manager
+    value: product_manager
+    description: >
+      Lead the delivery and continuous improvement of one or more digital products or platforms.
+  -
+    label: Programme manager
+    value: programme_manager
+    description: >
+      Manage and organise groups of related projects so they work together to achieve a strategic objective.
+  -
+    label: Quality assurance analyst
+    value: quality_assurance_analyst
+    description: >
+      Ensure the quality of the digital service by testing it manually and writing automated tests
+      covering a range of conditions.
+  -
+    label: Service manager
+    value: service_manager
+    description: >
+      Develop and deliver an effective user-focused digital service.
+      Manage the full product lifecycle, including user research, design, delivery and continuous improvement.
+  -
+    label: User researcher
+    value: user_researcher
+    description: >
+      Design, conduct and analyse user research using a range of techniques,
+      eg one-to-one interviews or usability tests.
+  -
+    label: Web operations engineer
+    value: web_operations_engineer
+    description: >
+      Run the production systems to help the development team build software that is easy to operate, scale and secure.
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'

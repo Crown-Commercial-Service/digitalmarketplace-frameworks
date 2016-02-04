@@ -1,0 +1,37 @@
+-
+  name: Your organisation
+  editable: True
+  questions:
+    - organisation
+-
+  name: Specialist Role
+  editable: True
+  questions:
+    - specialistRole
+-
+  name: Outcome
+  editable: True
+  questions:
+    - outcome
+-
+  name: Where will the work be carried out?
+  editable: True
+  questions:
+    - location
+-
+  name: Working arrangements
+  editable: True
+  questions:
+    - workingArrangements
+    - additionalTerms
+-
+  name: Your requirements
+  editable: True
+  questions:
+    - essentialRequirements
+    - niceToHaveRequirements
+-
+  name: Evaluating suppliers
+  editable: True
+  questions:
+    - evaluationType

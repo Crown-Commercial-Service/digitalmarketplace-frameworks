@@ -4,27 +4,53 @@ import json
 from dmutils.content_loader import ContentLoader
 
 
-SCHEMAS = [
-    ('G-Cloud 7 SCS', 'g-cloud-7', 'scs'),
-    ('G-Cloud 7 IaaS', 'g-cloud-7', 'iaas'),
-    ('G-Cloud 7 PaaS', 'g-cloud-7', 'paas'),
-    ('G-Cloud 7 SaaS', 'g-cloud-7', 'saas'),
-    ('Digital Outcomes and Specialists Digital outcomes',
-     'digital-outcomes-and-specialists', 'digital-outcomes'),
-    ('Digital Outcomes and Specialists Digital specialists',
-     'digital-outcomes-and-specialists', 'digital-specialists'),
-    ('Digital Outcomes and Specialists User research studios',
-     'digital-outcomes-and-specialists', 'user-research-studios'),
-    ('Digital Outcomes and Specialists User research participants',
-     'digital-outcomes-and-specialists', 'user-research-participants'),
-]
+MANIFESTS = {
+    'services': {
+        'question_set': 'services',
+        'manifest': 'edit_submission'
+    },
+    'briefs': {
+        'question_set': 'briefs',
+        'manifest': 'edit_brief'
+    }
+}
 
 
-def load_questions(framework_slug, lot_slug):
+SCHEMAS = {
+    'services': [
+        ('G-Cloud 7 SCS Service', 'g-cloud-7', 'scs'),
+        ('G-Cloud 7 IaaS Service', 'g-cloud-7', 'iaas'),
+        ('G-Cloud 7 PaaS Service', 'g-cloud-7', 'paas'),
+        ('G-Cloud 7 SaaS Service', 'g-cloud-7', 'saas'),
+        ('Digital Outcomes and Specialists Digital outcomes Service',
+         'digital-outcomes-and-specialists', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists Digital specialists Service',
+         'digital-outcomes-and-specialists', 'digital-specialists'),
+        ('Digital Outcomes and Specialists User research studios Service',
+         'digital-outcomes-and-specialists', 'user-research-studios'),
+        ('Digital Outcomes and Specialists User research participants Service',
+         'digital-outcomes-and-specialists', 'user-research-participants')
+    ],
+    'briefs': [
+        ('Digital Outcomes and Specialists Digital outcomes Brief',
+         'digital-outcomes-and-specialists', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists Digital specialists Brief',
+         'digital-outcomes-and-specialists', 'digital-specialists'),
+        ('Digital Outcomes and Specialists User research participants Brief',
+         'digital-outcomes-and-specialists', 'user-research-participants')
+    ]
+}
+
+
+def load_questions(schema_type, framework_slug, lot_slug):
     loader = ContentLoader('./')
-    loader.load_manifest(framework_slug, 'services', 'edit_submission')
+    loader.load_manifest(
+        framework_slug,
+        MANIFESTS[schema_type]['question_set'],
+        MANIFESTS[schema_type]['manifest']
+    )
 
-    builder = loader.get_builder(framework_slug, 'edit_submission').filter({'lot': lot_slug})
+    builder = loader.get_builder(framework_slug, MANIFESTS[schema_type]['manifest']).filter({'lot': lot_slug})
     return {q['id']: q for q in sum((s.questions for s in builder.sections), [])}
 
 
@@ -37,7 +63,7 @@ def drop_non_schema_questions(questions):
 
 def empty_schema(schema_name):
     return {
-        "title": "{} Service Schema".format(schema_name),
+        "title": "{} Schema".format(schema_name),
         "$schema": "http://json-schema.org/schema#",
         "type": "object",
         "additionalProperties": False,
@@ -355,8 +381,8 @@ def add_multiquestion_dependencies(schema, questions):
         schema['dependencies'] = dependencies
 
 
-def generate_schema(path, schema_name, framework_slug, lot_slug):
-    questions = load_questions(framework_slug, lot_slug)
+def generate_schema(path, schema_type, schema_name, framework_slug, lot_slug):
+    questions = load_questions(schema_type, framework_slug, lot_slug)
     drop_non_schema_questions(questions)
     schema = empty_schema(schema_name)
 
@@ -364,5 +390,5 @@ def generate_schema(path, schema_name, framework_slug, lot_slug):
     add_multiquestion_anyof(schema, questions)
     add_multiquestion_dependencies(schema, questions)
 
-    with open(os.path.join(path, 'services-{}-{}.json'.format(framework_slug, lot_slug)), 'w') as f:
+    with open(os.path.join(path, '{}-{}-{}.json'.format(schema_type, framework_slug, lot_slug)), 'w') as f:
         json.dump(schema, f, sort_keys=True, indent=2, separators=(',', ': '))
