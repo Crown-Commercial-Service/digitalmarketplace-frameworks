@@ -1,0 +1,17 @@
+name: Expected Outcomes
+question: Expected Outcomes
+optional: true
+hint: |
+  Optional
+  
+  What might be delivered, eg a content audit, a discovery document or a notifications system.
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: under_50_words
+    message: 'Your answer must be no more than 50 words.'

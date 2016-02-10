@@ -1,6 +1,10 @@
 name: Remote working arrangements
 question: Describe working arrangement preference
-hint: 'eg remote working preference or specific hours or days required'
+hint: |
+  Optional
+  
+  eg remote working preference or specific hours or days required
+optional: true
 type: textbox_large
 max_length_in_words: 50
 depends:

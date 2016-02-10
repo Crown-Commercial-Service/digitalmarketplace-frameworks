@@ -19,6 +19,56 @@
   questions:
     - outcome
 -
+  name: Users
+  editable: True
+  questions:
+    - users
+-
+  name: User Needs
+  editable: True
+  questions:
+    - userNeeds
+-
+  name: Phase
+  editable: True
+  questions:
+    - phase
+-
+  name: Background Information
+  editable: True
+  questions:
+    - backgroundInformation
+-
+  name: Expected Outcomes
+  editable: True
+  questions:
+    - expectedOutcomes
+-
+  name: Success Criteria
+  editable: True
+  questions:
+    - successCriteria
+-
+  name: Current Technologies
+  editable: True
+  questions:
+    - currentTechnologies
+-
+  name: Start Date
+  editable: True
+  questions:
+    - startDate
+-
+  name: Contract Length
+  editable: True
+  questions:
+    - contractLength
+-
+  name: Important Dates
+  editable: True
+  questions:
+    - importantDates
+-
   name: Where will the work be carried out?
   editable: True
   questions:
