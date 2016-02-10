@@ -392,3 +392,4 @@ def generate_schema(path, schema_type, schema_name, framework_slug, lot_slug):
 
     with open(os.path.join(path, '{}-{}-{}.json'.format(schema_type, framework_slug, lot_slug)), 'w') as f:
         json.dump(schema, f, sort_keys=True, indent=2, separators=(',', ': '))
+        f.write('\n')
