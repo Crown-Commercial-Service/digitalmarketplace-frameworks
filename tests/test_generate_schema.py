@@ -50,6 +50,17 @@ def recursive_file_list(dirname):
     return output
 
 
+def radios():
+    return checkboxes()
+
+
+def checkboxes():
+    return st.dictionaries(
+        keys=st.sampled_from(['label', 'value']),
+        values=st.text(),
+    ).filter(lambda c: 'label' in c)
+
+
 def test_drop_non_schema_questions():
     questions = load_questions('services', 'g-cloud-7', 'scs')
     # lotName is in G-Cloud 7
@@ -143,16 +154,9 @@ def test_parse_question_limits_char_count(num):
     assert result['maxLength'] == num
 
 
-@given(st.text(),
-       st.lists(
-           st.dictionaries(
-               keys=st.just("label"),
-               values=st.text(),
-               min_size=1),
-           min_size=1))
+@given(st.text(), st.lists(checkboxes()))
 def test_checkbox_property(id, options):
     assume(len(id) > 0)
-    assume(len(options) > 0)
 
     question = {
         "id": id,
@@ -164,18 +168,27 @@ def test_checkbox_property(id, options):
     question['optional'] = True
     result = checkbox_property(question)
     assert result[id]['minItems'] == 0
-    assert len(result[id]['items']['enum']) == len(options)
+
+    enum = result[id]['items']['enum']
+    assert len(enum) == len(options)
+    assert all(option['value'] in enum
+               for option in options if 'value' in option)
+    assert all(option['label'] in enum
+               for option in options if 'value' not in option)
 
 
-@given(st.text(), st.lists(st.text()))
-def test_radios_property(id, list_of_options):
-    list_of_options = [{"label": x} for x in list_of_options]
-    question = {"id": id, "options": list_of_options}
+@given(st.text(), st.lists(radios()))
+def test_radios_property(id, options):
+    question = {"id": id, "options": options}
     result = radios_property(question)
     assert type(result) == dict
     assert id in result.keys()
     enum = result[id]['enum']
-    assert len(enum) == len(list_of_options)
+    assert len(enum) == len(options)
+    assert all(option['value'] in enum
+               for option in options if 'value' in option)
+    assert all(option['label'] in enum
+               for option in options if 'value' not in option)
 
 
 @given(st.text())
