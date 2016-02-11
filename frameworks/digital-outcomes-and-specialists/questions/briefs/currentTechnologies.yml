@@ -1,0 +1,15 @@
+name: Current Technologies
+question: Current technologies and languages that need to be considered
+optional: true
+hint: 'Optional'
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+validations:
+  -
+    name: under_50_words
+    message: 'Your answer must be no more than 50 words.'
