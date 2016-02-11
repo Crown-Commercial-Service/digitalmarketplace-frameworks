@@ -2,6 +2,7 @@ name: Location
 question: Where is the work to be carried out?
 type: radios
 options:
+  - label: "Offsite"
   - label: "Scotland"
   - label: "North East England"
   - label: "North West England"
@@ -14,7 +15,6 @@ options:
   - label: "South East England"
   - label: "South West England"
   - label: "Northern Ireland"
-  - label: "Offsite"
 depends:
   - "on": "lot"
     being:
