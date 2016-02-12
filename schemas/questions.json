@@ -83,6 +83,7 @@
               "under_10_words",
               "under_20_words",
               "under_50_words",
+              "under_100_words",
               "under_character_limit"
             ]
           },
