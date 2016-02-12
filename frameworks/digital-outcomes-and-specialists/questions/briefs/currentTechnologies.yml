@@ -11,5 +11,5 @@ depends:
       - digital-specialists
 validations:
   -
-    name: under_50_words
+    name: under_100_words
     message: 'Your answer must be no more than 50 words.'
