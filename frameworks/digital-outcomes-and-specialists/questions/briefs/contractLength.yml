@@ -1,4 +1,4 @@
-name: Contract Length
+name: Contract length
 question: Contract length
 type: text
 depends:

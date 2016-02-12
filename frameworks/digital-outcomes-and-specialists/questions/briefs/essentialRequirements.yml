@@ -1,11 +1,9 @@
-name: Essential
+name: Essential requirements
 question: Essential requirements
-hint: >
+hint: |
   List your essential requirements as yes/no questions.
 
-
   Suppliers must be able to answer ‘yes’ to all of these questions to proceed to the next round of evaluation.
-
 
   eg does your organisation have experience working with open source software?
 list_item_name: 'essential requirement'

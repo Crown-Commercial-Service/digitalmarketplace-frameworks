@@ -1,4 +1,4 @@
-name: Important Dates
+name: Important dates
 question: Any important dates
 hint: 'eg a policy date by which the minimum viable product must be ready'
 type: textbox_large
