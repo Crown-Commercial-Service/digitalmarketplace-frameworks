@@ -12,6 +12,10 @@ MANIFESTS = {
     'briefs': {
         'question_set': 'briefs',
         'manifest': 'edit_brief'
+    },
+    'brief-responses': {
+        'question_set': 'brief-responses',
+        'manifest': 'edit_brief_response'
     }
 }
 
@@ -37,6 +41,14 @@ SCHEMAS = {
         ('Digital Outcomes and Specialists Digital specialists Brief',
          'digital-outcomes-and-specialists', 'digital-specialists'),
         ('Digital Outcomes and Specialists User research participants Brief',
+         'digital-outcomes-and-specialists', 'user-research-participants')
+    ],
+    'brief-responses': [
+        ('Digital Outcomes and Specialists Digital outcomes Brief Response',
+         'digital-outcomes-and-specialists', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists Digital specialists Brief Response',
+         'digital-outcomes-and-specialists', 'digital-specialists'),
+        ('Digital Outcomes and Specialists User research participants Brief Response',
          'digital-outcomes-and-specialists', 'user-research-participants')
     ]
 }
@@ -132,6 +144,17 @@ def list_property(question):
             "type": "string",
             "maxLength": 100,
             "pattern": "^(?:\\S+\\s+){0,9}\\S+$"
+        }
+    }}
+
+
+def yes_no_question_property(question):
+    return {question['id']: {
+        "type": "array",
+        "minItems": 0 if question.get('optional') else 1,
+        "maxItems": 10,
+        "items": {
+            "type": "boolean"
         }
     }}
 
@@ -237,6 +260,7 @@ QUESTION_TYPES = {
     'radios': radios_property,
     'boolean': boolean_property,
     'list': list_property,
+    'yes_no_question': yes_no_question_property,
     'pricing': pricing_property,
     'percentage': percentage_property,
     'multiquestion': multiquestion
