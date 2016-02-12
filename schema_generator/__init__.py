@@ -100,14 +100,20 @@ def checkbox_property(question):
         "minItems": 0 if question.get('optional') else 1,
         "maxItems": len(question['options']),
         "items": {
-            "enum": [option['label'] for option in question['options']]
+            "enum": [
+                option.get('value', option['label'])
+                for option in question['options']
+            ]
         }
     }}
 
 
 def radios_property(question):
     return {question['id']: {
-        "enum": [option['label'] for option in question['options']]
+        "enum": [
+            option.get('value', option['label'])
+            for option in question['options']
+        ]
     }}
 
 
