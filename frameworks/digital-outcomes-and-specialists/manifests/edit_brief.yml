@@ -4,15 +4,20 @@
   questions:
     - title
 -
+  name: Location
+  editable: True
+  questions:
+    - location
+-
+  name: Specialist role
+  editable: True
+  questions:
+    - specialistRole
+-
   name: Your organisation
   editable: True
   questions:
     - organisation
--
-  name: Specialist Role
-  editable: True
-  questions:
-    - specialistRole
 -
   name: Outcome
   editable: True
@@ -24,7 +29,7 @@
   questions:
     - users
 -
-  name: User Needs
+  name: User needs
   editable: True
   questions:
     - userNeeds
@@ -34,45 +39,40 @@
   questions:
     - phase
 -
-  name: Background Information
+  name: Background information
   editable: True
   questions:
     - backgroundInformation
 -
-  name: Expected Outcomes
+  name: Expected outcomes
   editable: True
   questions:
     - expectedOutcomes
 -
-  name: Success Criteria
+  name: Success criteria
   editable: True
   questions:
     - successCriteria
 -
-  name: Current Technologies
+  name: Current technologies
   editable: True
   questions:
     - currentTechnologies
 -
-  name: Start Date
+  name: Start date
   editable: True
   questions:
     - startDate
 -
-  name: Contract Length
+  name: Contract length
   editable: True
   questions:
     - contractLength
 -
-  name: Important Dates
+  name: Important dates
   editable: True
   questions:
     - importantDates
--
-  name: Where will the work be carried out?
-  editable: True
-  questions:
-    - location
 -
   name: Working arrangements
   editable: True

@@ -1,5 +1,5 @@
-name: Success Criteria
-question: Success Criteria
+name: Success criteria
+question: Success criteria
 hint: 'eg key performance indicators, how you will know it’s finished.'
 type: textbox_large
 max_length_in_words: 100

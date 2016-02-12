@@ -1,4 +1,4 @@
-name: Start Date
+name: Start date
 question: Expected start date
 hint: 'eg 01/01/2016'
 type: text

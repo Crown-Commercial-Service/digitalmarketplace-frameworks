@@ -1,5 +1,5 @@
 name: Location
-question: Where is the work to be carried out?
+question: Where will the work be carried out?
 type: radios
 options:
   - label: "Scotland"
