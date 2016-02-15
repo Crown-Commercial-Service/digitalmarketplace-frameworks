@@ -35,3 +35,4 @@ depends:
   - "on": "lot"
     being:
       - digital-outcomes
+empty_message: Choose phase

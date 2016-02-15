@@ -15,3 +15,4 @@ validations:
   -
     name: under_character_limit
     message: "Your organisation name must be no more than 100 characters."
+empty_message: Add organisation
