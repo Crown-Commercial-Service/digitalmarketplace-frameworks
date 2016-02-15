@@ -94,3 +94,4 @@ validations:
   -
     name: answer_required
     message: 'You need to answer this question.'
+empty_message: Choose specialist role

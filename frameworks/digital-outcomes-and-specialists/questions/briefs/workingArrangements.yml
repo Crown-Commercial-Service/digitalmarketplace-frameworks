@@ -19,3 +19,4 @@ validations:
   -
     name: under_50_words
     message: 'Your description must be no more than 50 words.'
+empty_message: Add description

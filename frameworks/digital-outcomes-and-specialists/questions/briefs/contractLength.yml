@@ -13,3 +13,4 @@ validations:
   -
     name: under_character_limit
     message: "Your answer must be no more than 100 characters."
+empty_message: Set contract length

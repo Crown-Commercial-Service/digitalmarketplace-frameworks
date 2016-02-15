@@ -13,3 +13,4 @@ validations:
   -
     name: under_100_words
     message: 'Your answer must be no more than 100 words.'
+empty_message: Add description
