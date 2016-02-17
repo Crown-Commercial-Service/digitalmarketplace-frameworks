@@ -148,7 +148,7 @@ def list_property(question):
     }}
 
 
-def yes_no_question_property(question):
+def boolean_list_property(question):
     return {question['id']: {
         "type": "array",
         "minItems": 0 if question.get('optional') else 1,
@@ -260,7 +260,7 @@ QUESTION_TYPES = {
     'radios': radios_property,
     'boolean': boolean_property,
     'list': list_property,
-    'yes_no_question': yes_no_question_property,
+    'boolean_list': boolean_list_property,
     'pricing': pricing_property,
     'percentage': percentage_property,
     'multiquestion': multiquestion

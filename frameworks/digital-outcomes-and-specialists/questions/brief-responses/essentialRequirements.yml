@@ -1,7 +1,7 @@
 name: Essential requirements
 question: Do you fulfill the following essential requirements
 hint: 'If you cannot meet all requirements, you will not be eligible for this work.'
-type: yes_no_question
+type: boolean_list
 depends:
   - "on": "lot"
     being:

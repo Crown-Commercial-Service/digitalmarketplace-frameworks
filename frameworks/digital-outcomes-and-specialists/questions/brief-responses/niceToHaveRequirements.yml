@@ -1,7 +1,7 @@
 name: Nice-to-have requirements
 question: Do you fulfill the following nice-to-have requirements?
 hint: 'If you cannot meet all requirements, you may still be eligible for this work.'
-type: yes_no_question
+type: boolean_list
 optional: true
 depends:
   - "on": "lot"

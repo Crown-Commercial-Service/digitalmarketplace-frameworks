@@ -20,7 +20,7 @@
     },
     "type": {
       "enum": [
-        "boolean", "text", "radios", "list", "yes_no_question", "checkboxes", "service_id",
+        "boolean", "text", "radios", "list", "boolean_list", "checkboxes", "service_id",
         "pricing", "upload", "percentage", "textbox_large", "multiquestion"
       ]
     },
