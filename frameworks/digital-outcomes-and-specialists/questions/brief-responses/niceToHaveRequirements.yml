@@ -1,0 +1,16 @@
+name: Nice-to-have requirements
+question: Do you fulfill the following nice-to-have requirements?
+hint: 'If you cannot meet all requirements, you may still be eligible for this work.'
+type: boolean_list
+optional: true
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+empty_message: Respond to nice-to-have requirements

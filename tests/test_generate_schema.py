@@ -15,8 +15,8 @@ from hypothesis import given, assume, strategies as st
 from schema_generator import uri_property, parse_question_limits, \
     checkbox_property, percentage_property, multiquestion, \
     build_question_properties, empty_schema, load_questions, \
-    drop_non_schema_questions, radios_property, list_property, price_string, \
-    pricing_property, generate_schema, SCHEMAS
+    drop_non_schema_questions, radios_property, list_property, boolean_list_property, \
+    price_string, pricing_property, generate_schema, SCHEMAS
 
 Settings.default.database = None
 
@@ -198,6 +198,17 @@ def test_list_property(id):
         'optional': True
     }
     result = list_property(question)
+    assert id in result.keys()
+    assert result[id]['minItems'] == 0
+
+
+@given(st.text())
+def test_boolean_list_property(id):
+    question = {
+        'id': id,
+        'optional': True
+    }
+    result = boolean_list_property(question)
     assert id in result.keys()
     assert result[id]['minItems'] == 0
 

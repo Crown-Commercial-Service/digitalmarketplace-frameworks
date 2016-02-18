@@ -1,0 +1,30 @@
+-
+  name: Essential requirements
+  editable: True
+  questions:
+    - essentialRequirements
+-
+  name: Nice-to-have requirements
+  editable: True
+  questions:
+    - niceToHaveRequirements
+-
+  name: Availability
+  editable: True
+  questions:
+    - availability
+-
+  name: Day rate
+  editable: True
+  questions:
+    - dayRate
+-
+  name: Specialist name
+  editable: True
+  questions:
+    - specialistName
+-
+  name: User participant response
+  editable: True
+  questions:
+    - userParticipantResponse
