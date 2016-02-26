@@ -1,0 +1,9 @@
+question: Question
+name: Question
+type: textbox_large
+max_length_in_words: 100
+validations:
+  - name: answer_required
+    message: You must enter a question.
+  - name: under_100_words
+    message: Your question must be no more than 100 words.
