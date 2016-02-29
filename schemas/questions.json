@@ -169,6 +169,23 @@
     },
     "empty_message": {
       "type": "string"
+    },
+    "smaller": {
+      "type": "boolean"
+    },
+    "unit": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1
+    },
+    "unit_in_full": {
+      "type": "string"
+    },
+    "unit_position": {
+      "enum": [
+        "after",
+        "before"
+      ]
     }
   },
   "additionalProperties": false,

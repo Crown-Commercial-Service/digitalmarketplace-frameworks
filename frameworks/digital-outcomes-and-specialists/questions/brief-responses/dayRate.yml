@@ -2,6 +2,9 @@ name: Day rate
 question: How much do you charge per day?
 hint: 'Please enter a number, not a range'
 type: text
+unit: "£"
+unit_in_full: "pounds"
+unit_position: "before"
 depends:
   - "on": "lot"
     being:
