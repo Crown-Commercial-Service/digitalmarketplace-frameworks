@@ -39,6 +39,11 @@ Question keys
 * `any_of` groups nested questions for "anyOf" validations and helps us return a helpful validation message (only valid for `multiquestion` questions)
 * `fields` a mapping of toolkit form field key to the service data key used for multi-input field types (only valid for `pricing`)
 * `max_length_in_words` sets the limit on question value length in words
+* `smaller` allows for smaller textboxes
+* `unit` a one-character string. The unit for smaller textboxes accepting a unit (ie, pricing or percentage entry textboxes)
+* `unit_in_full` unit name as a string
+* `unit_position` position of the `unit` character within the textbox.
+    * Permitted values are `after` or `before`
 
 
 Section keys
