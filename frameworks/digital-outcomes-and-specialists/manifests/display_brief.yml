@@ -1,0 +1,37 @@
+-
+  name: Overview 
+  questions:
+    - startDate
+    - contractLength
+    - location
+    - outcome
+-
+  name: About the work
+  questions:
+    - backgroundInformation
+    - endUsers
+    - userNeeds
+    - phase
+    - workingArrangements
+    - location
+    - importantDates
+    - successCriteria
+-
+  name: Skills and experience
+  questions:
+    - essentialRequirements
+    - niceToHaveRequirements
+-
+  name: Type of specialist required
+  questions:
+    - specialistRole
+-
+  name: Evaluation
+  questions:
+    - evaluationType
+-
+  name: Additional information
+  questions:
+    - expectedOutcomes
+    - currentTechnologies
+    - additionalTerms
