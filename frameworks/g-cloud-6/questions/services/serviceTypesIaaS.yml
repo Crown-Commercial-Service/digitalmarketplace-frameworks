@@ -1,3 +1,4 @@
+id: serviceTypes
 depends:
   -
     "on": lot
