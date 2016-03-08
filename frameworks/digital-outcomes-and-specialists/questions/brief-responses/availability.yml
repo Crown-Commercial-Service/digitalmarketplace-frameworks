@@ -1,6 +1,6 @@
 name: Availability
 question: When would your specialist be available for work?
-hint: 'eg 01/01/2016'
+hint: 'eg 31/12/2016'
 type: text
 smaller: true
 depends:
