@@ -3,7 +3,8 @@
   questions:
     - startDate
     - contractLength
-    - location
+    - locationOutcomesSpecialists
+    - locationParticipants
     - outcome
 -
   name: About the work
@@ -13,7 +14,8 @@
     - userNeeds
     - phase
     - workingArrangements
-    - location
+    - locationOutcomesSpecialists
+    - locationParticipants
     - importantDates
     - successCriteria
 -
