@@ -7,7 +7,8 @@
   name: Location
   editable: True
   questions:
-    - location
+    - locationOutcomesSpecialists
+    - locationParticipants
 -
   name: Specialist role
   editable: True

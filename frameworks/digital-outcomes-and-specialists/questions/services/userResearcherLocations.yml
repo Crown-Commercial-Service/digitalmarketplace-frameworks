@@ -1,5 +1,5 @@
 question: Where will your user researcher work?
-hint: "[View regions](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
+hint: "[View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
 depends:
   - "on": lot
     being:

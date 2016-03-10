@@ -1,12 +1,9 @@
-question: Where will your agile coach work?
+name: Location
+id: location
+question: Where should participants be recruited from?
 hint: "[View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
-depends:
-  - "on": lot
-    being:
-      - digital-specialists
-type: checkboxes
+type: radios
 options:
-  - label: "Offsite"
   - label: "Scotland"
   - label: "North East England"
   - label: "North West England"
@@ -19,7 +16,13 @@ options:
   - label: "South East England"
   - label: "South West England"
   - label: "Northern Ireland"
-
+  - label: "International (outside the UK)"
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
 validations:
-  - name: answer_required
+  -
+    name: answer_required
     message: 'You need to answer this question.'
+empty_message: Choose location

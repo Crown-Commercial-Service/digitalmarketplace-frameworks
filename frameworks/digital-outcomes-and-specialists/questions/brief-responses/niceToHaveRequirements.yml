@@ -8,7 +8,6 @@ depends:
     being:
       - digital-outcomes
       - digital-specialists
-      - user-research-participants
 validations:
   -
     name: answer_required

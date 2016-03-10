@@ -1,5 +1,7 @@
 name: Location
+id: location
 question: Where will the work be carried out?
+hint: "[View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
 type: radios
 options:
   - label: "Scotland"
@@ -20,7 +22,6 @@ depends:
     being:
       - digital-outcomes
       - digital-specialists
-      - user-research-participants
 validations:
   -
     name: answer_required
