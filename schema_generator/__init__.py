@@ -33,7 +33,11 @@ SCHEMAS = {
         ('Digital Outcomes and Specialists User research studios Service',
          'digital-outcomes-and-specialists', 'user-research-studios'),
         ('Digital Outcomes and Specialists User research participants Service',
-         'digital-outcomes-and-specialists', 'user-research-participants')
+         'digital-outcomes-and-specialists', 'user-research-participants'),
+        ('G-Cloud 8 SCS Service', 'g-cloud-8', 'scs'),
+        ('G-Cloud 8 IaaS Service', 'g-cloud-8', 'iaas'),
+        ('G-Cloud 8 PaaS Service', 'g-cloud-8', 'paas'),
+        ('G-Cloud 8 SaaS Service', 'g-cloud-8', 'saas')
     ],
     'briefs': [
         ('Digital Outcomes and Specialists Digital outcomes Brief',
