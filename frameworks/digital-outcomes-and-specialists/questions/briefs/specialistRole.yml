@@ -1,5 +1,5 @@
 name: Specialist role
-question: Type of specalist you need
+question: Type of specialist you need
 type: radios
 options:
   -
