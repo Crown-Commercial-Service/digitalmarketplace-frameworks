@@ -1,4 +1,6 @@
 name: Supplier
+question: Supplier name
+type: text
 depends:
   - "on": "lot"
     being:
