@@ -2,6 +2,7 @@
   name: Apply to an opportunity
   editable: True
   questions:
+    - respondToEmailAddress
     - essentialRequirements
     - niceToHaveRequirements
     - availability
