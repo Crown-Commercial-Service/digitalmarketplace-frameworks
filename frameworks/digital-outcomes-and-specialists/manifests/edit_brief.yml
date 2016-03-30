@@ -1,5 +1,5 @@
 -
-  name: Requirements title
+  name: Title
   editable: True
   questions:
     - title
@@ -15,84 +15,36 @@
   questions:
     - specialistRole
 -
-  name: Your organisation
+  name: Description of work
   editable: True
   questions:
     - organisation
--
-  name: Outcome
-  editable: True
-  questions:
-    - outcome
--
-  name: Users
-  editable: True
-  questions:
-    - endUsers
--
-  name: User needs
-  editable: True
-  questions:
-    - userNeeds
--
-  name: Phase
-  editable: True
-  questions:
-    - phase
--
-  name: Background information
-  editable: True
-  questions:
     - backgroundInformation
--
-  name: Expected outcomes
-  editable: True
-  questions:
-    - expectedOutcomes
--
-  name: Success criteria
-  editable: True
-  questions:
-    - successCriteria
--
-  name: Current technologies
-  editable: True
-  questions:
-    - currentTechnologies
--
-  name: Start date
-  editable: True
-  questions:
+    - outcome
+    - userNeeds
+    - endUsers
+    - phase
+    - workingArrangements
     - startDate
--
-  name: Contract length
-  editable: True
-  questions:
     - contractLength
--
-  name: Important dates
-  editable: True
-  questions:
+    - additionalTerms
+    - expectedOutcomes
+    - currentTechnologies
     - importantDates
 -
-  name: Working arrangements
-  editable: True
-  questions:
-    - workingArrangements
-    - additionalTerms
--
-  name: Your requirements
+  name: Shortlist criteria
   editable: True
   questions:
     - essentialRequirements
     - niceToHaveRequirements
 -
-  name: Evaluating suppliers
+  name: Evaluation critera
   editable: True
   questions:
+    - successCriteria
     - evaluationType
-
-- name: Criteria weighting
+-
+  name: Criteria weighting
   editable: True
   questions:
     - culturalWeightingOutcomesSpecialists
@@ -101,8 +53,8 @@
     - priceWeightingParticipants
     - technicalWeightingOurcomesSpecialists
     - technicalWeightingParticipants
-
-- name: Supplier questions
+-
+  name: Describe question and answer session
   editable: True
   questions:
     - questionAndAnswerSessionDetails
