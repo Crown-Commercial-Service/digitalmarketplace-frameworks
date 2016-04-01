@@ -91,3 +91,13 @@
   editable: True
   questions:
     - evaluationType
+
+- name: Criteria weighting
+  editable: True
+  questions:
+    - culturalWeightingOutcomesSpecialists
+    - culturalWeightingParticipants
+    - priceWeightingOutcomesSpecialists
+    - priceWeightingParticipants
+    - technicalWeightingOurcomesSpecialists
+    - technicalWeightingParticipants
