@@ -170,6 +170,15 @@
       "type": "array",
       "items": {"type": "string"}
     },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_value": {"type": "number"},
+        "min_value": {"type": "number"},
+        "integer_only": {"type": "boolean"}
+      }
+    },
     "empty_message": {
       "type": "string"
     },
