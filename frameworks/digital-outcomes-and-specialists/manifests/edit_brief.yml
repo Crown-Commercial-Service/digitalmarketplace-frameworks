@@ -1,22 +1,26 @@
 -
   name: Title
   editable: True
+  step: 1
   questions:
     - title
 -
   name: Location
   editable: True
+  step: 1
   questions:
     - locationOutcomesSpecialists
     - locationParticipants
 -
   name: Specialist role
   editable: True
+  step: 1
   questions:
     - specialistRole
 -
   name: Description of work
   editable: True
+  step: 1
   questions:
     - organisation
     - backgroundInformation
@@ -34,18 +38,21 @@
 -
   name: Shortlist criteria
   editable: True
+  step: 2
   questions:
     - essentialRequirements
     - niceToHaveRequirements
 -
   name: Evaluation critera
   editable: True
+  step: 2
   questions:
     - successCriteria
     - evaluationType
 -
   name: Criteria weighting
   editable: True
+  step: 2
   questions:
     - culturalWeightingOutcomesSpecialists
     - culturalWeightingParticipants
@@ -56,5 +63,6 @@
 -
   name: Describe question and answer session
   editable: True
+  step: 3
   questions:
     - questionAndAnswerSessionDetails
