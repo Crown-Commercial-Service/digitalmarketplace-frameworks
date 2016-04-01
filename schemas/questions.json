@@ -87,7 +87,8 @@
               "under_20_words",
               "under_50_words",
               "under_100_words",
-              "under_character_limit"
+              "under_character_limit",
+              "total_is_100"
             ]
           },
           "field": {
