@@ -99,6 +99,13 @@ def text_property(question):
     return {question['id']: data}
 
 
+def email_property(question):
+    return {question['id']: {
+        "type": "string",
+        "format": "email",
+    }}
+
+
 def uri_property(question):
     return {question['id']: {
         "type": "string",
@@ -258,6 +265,7 @@ def multiquestion(question):
 
 QUESTION_TYPES = {
     'text': text_property,
+    'email': email_property,
     'upload': uri_property,
     'textbox_large': text_property,
     'checkboxes': checkbox_property,
