@@ -1,9 +1,9 @@
 -
-  name: Title
+  name: Specialist role
   editable: True
   step: 1
   questions:
-    - title
+    - specialistRole
 -
   name: Location
   editable: True
@@ -12,11 +12,11 @@
     - locationOutcomesSpecialists
     - locationParticipants
 -
-  name: Specialist role
+  name: Title
   editable: True
   step: 1
   questions:
-    - specialistRole
+    - title
 -
   name: Description of work
   editable: True
