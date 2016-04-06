@@ -85,6 +85,7 @@ options:
     value: technicalArchitect
     description: >
       Break down complex problems and identify steps towards solutions. Coach individuals and engage with non-technical people at all levels of seniority. Write code as a senior member of the development team.
+  -
     label: User researcher
     value: userResearcher
     description: >
