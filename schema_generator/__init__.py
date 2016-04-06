@@ -244,11 +244,12 @@ def pricing_property(question):
 
 
 def percentage_property(question):
+    limits = question.get('limits', {})
     return {question['id']: {
-        "exclusiveMaximum": True,
-        "maximum": 100,
-        "minimum": 0,
-        "type": "number"
+        "exclusiveMaximum": not limits.get('integer_only'),
+        "maximum": limits['max_value'] if limits.get('max_value') is not None else 100,
+        "minimum": limits.get('min_value') or 0,
+        "type": "integer" if limits.get('integer_only') else "number"
     }}
 
 

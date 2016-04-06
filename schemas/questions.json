@@ -87,7 +87,8 @@
               "under_20_words",
               "under_50_words",
               "under_100_words",
-              "under_character_limit"
+              "under_character_limit",
+              "total_should_be_100"
             ]
           },
           "field": {
@@ -169,6 +170,15 @@
     "optional_fields": {
       "type": "array",
       "items": {"type": "string"}
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_value": {"type": "number"},
+        "min_value": {"type": "number"},
+        "integer_only": {"type": "boolean"}
+      }
     },
     "empty_message": {
       "type": "string"

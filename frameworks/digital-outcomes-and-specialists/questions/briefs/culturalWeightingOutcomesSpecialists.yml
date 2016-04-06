@@ -1,0 +1,23 @@
+id: culturalWeighting
+question: 'Cultural fit'
+hint: 'Permitted range 5% to 20%'
+
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+      - digital-specialists
+
+type: percentage
+limits:
+  min_value: 5
+  max_value: 20
+  integer_only: true
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_a_number
+    message: 'Weighting must be a number between 5 and 20.'
+  - name: total_should_be_100
+    message: 'Total must add up to 100%.'

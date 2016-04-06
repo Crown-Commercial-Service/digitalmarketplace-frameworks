@@ -32,6 +32,10 @@ Question keys
     * `"on"` service data key name to use for comparison (e.g. "lot" for lots)
     * `being` a list of acceptable values for the key. If service data key value matches one of the values in the `being` the
        question is kept, otherwise the question is removed from the section for the given service
+* `limits` a dictionary of validation/type requirements to limit the possible question values. Available fields:
+    * `min_value` integer, sets the minimum value for percentage questions
+    * `max_value` integer, sets the maximum value for percentage questions
+    * `integer_only` boolean, when `true` makes the percentage question accept only integer values instead of numbers
 * `list_item_name` [currently unused] text displayed in the "Add another ..." button and item names by the list-entry inputs
 * `assuranceApproach` contains the name of the set of possible assurance answers for the question. Assurance answer sets are
   listed in the supplier frontend.
