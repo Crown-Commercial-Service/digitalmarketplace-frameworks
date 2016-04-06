@@ -4,3 +4,23 @@ pending:
   messages:
     - 'Applications are being reviewed.'
     - 'G‑Cloud 8 services will be available from 23 August 2016.'
+
+open:
+  template_name: 'framework-notice'
+  heading: 'Become a G-Cloud 8 supplier'
+  subheading: 'Deadline: 3pm <abbr title="British Summer Time">BST</abbr>, 31 February 3021 (CHANGE THIS)'
+  message: >
+    **G-Cloud 8 is open for applications.**
+
+
+    You can apply to provide:
+
+      - Software as a Service
+      - Platform as a Service
+      - Infrastructure as a Service
+      - Specialist Cloud Services
+
+    [Create an account](/suppliers/create) or [log in](/suppliers/login) to apply.
+
+
+    [Find out how to apply](https://www.gov.uk/guidance/g-cloud-8-suppliers-guide)
