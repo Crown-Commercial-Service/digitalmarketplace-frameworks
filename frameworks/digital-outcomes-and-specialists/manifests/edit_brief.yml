@@ -21,6 +21,8 @@
   name: Description of work
   editable: True
   step: 1
+  description: |
+    This will help suppliers decide whether to apply.
   questions:
     - organisation
     - backgroundInformation
@@ -39,6 +41,20 @@
   name: Shortlist criteria
   editable: True
   step: 2
+  description: |
+    After you’ve published your requirements, specialists will apply and tell you:
+
+    - when they can start work
+    - if they have the essential skills and experience
+    - which nice-to-have skills and experience they have
+
+    You can shortlist the specialists who:
+
+    - can start work when you need them to
+    - meet all the essential skills and experience
+    - provide the most nice-to-have skills and experience
+
+    [Read about how to shortlist.](http://giphy.com/)
   questions:
     - essentialRequirements
     - niceToHaveRequirements
@@ -46,6 +62,14 @@
   name: Evaluation critera
   editable: True
   step: 2
+  description: |
+    You need to tell suppliers how you’re going to evaluate them when you publish your requirements.
+
+    To find the most suitable supplier, you must evaluate your shortlist on:
+
+    - technical competence, eg how well the supplier's skills or proposed solution meet your needs
+    - ‘cultural fit’, eg how the supplier will work in your organisation
+    - the price of the proposed solution
   questions:
     - successCriteria
     - evaluationType
@@ -64,5 +88,13 @@
   name: Describe question and answer session
   editable: True
   step: 3
+  description: |
+    While the application period is open, you need to reply to all questions suppliers ask about your requirements.
+
+    When a supplier asks a question, you’ll be sent an email to the email address you registered with.
+
+    You’ll need to post all questions and answers on the Digital Marketplace so that all suppliers can see them.
+
+    Providing a question and answer session means you can explain your needs and answer any questions quickly.
   questions:
     - questionAndAnswerSessionDetails
