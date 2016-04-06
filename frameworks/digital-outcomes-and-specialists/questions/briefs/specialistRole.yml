@@ -49,8 +49,8 @@ options:
       Build software that supports user needs. Continually improve the service by
       identifying new tools and techniques, removing technical bottlenecks, and adapting and maintaining code.
   -
-    label: Performance analytist
-    value: performance_analytist
+    label: Performance analyst
+    value: performanceAnalyst
     description: >
       Specify, collect and present the key performance data and analysis for a service.
   -
@@ -82,7 +82,7 @@ options:
       Manage the full product lifecycle, including user research, design, delivery and continuous improvement.
   -
     label: Technical Architect
-    value: technical_architect
+    value: technicalArchitect
     description: >
       Break down complex problems and identify steps towards solutions. Coach individuals and engage with non-technical people at all levels of seniority. Write code as a senior member of the development team.
     label: User researcher
