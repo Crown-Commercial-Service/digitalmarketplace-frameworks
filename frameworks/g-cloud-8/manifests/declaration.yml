@@ -2,9 +2,7 @@
   name: G-Cloud 8 essentials
   editable: True
   questions:
-    - PR1
     - PR2
-    - SQC2
     - PR5
     - PR3
     - PR4
