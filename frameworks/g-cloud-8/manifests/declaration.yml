@@ -2,9 +2,7 @@
   name: G-Cloud 8 essentials
   editable: True
   questions:
-    - PR1
     - PR2
-    - SQC2
     - PR5
     - PR3
     - PR4
@@ -19,7 +17,9 @@
 -
   name: About you
   editable: True
-  questions:
+  description: >
+    The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the G-Cloud 8 framework.
+  questions:    
     - SQ1-2a
     - SQ1-2b
     - SQ1-1a
