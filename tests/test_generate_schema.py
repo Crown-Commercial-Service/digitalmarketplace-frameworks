@@ -337,6 +337,7 @@ def test_percentage_property_limits(max_value, min_value, integer_only):
     }}
     assert actual == expected
 
+
 def test_multiquestion():
     question = {}
     question['questions'] = []
