@@ -68,13 +68,13 @@ Running the tests
 The tests check that the YAML files are valid and that they match a schema.
 
 Setup a VirtualEnv
-`mkvirtualenv`
+`make virtualenv`
 
 Install dependencies
-`pip install -r requirements_for_test.txt`
+`make requirements_for_test`
 
 Run the tests
-`py.test`
+`make test`
 
 Versioning
 ----------
