@@ -1,0 +1,15 @@
+name: Weighting
+question: Evaluation weighting
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+any_of: weighting
+questions:
+  - technicalWeightingOutcomesSpecialists
+  - culturalWeightingOutcomesSpecialists
+  - priceWeightingOutcomesSpecialists
+empty_message: Set weighting

@@ -73,17 +73,8 @@
   questions:
     - successCriteria
     - evaluationType
--
-  name: Criteria weighting
-  editable: True
-  step: 2
-  questions:
-    - culturalWeightingOutcomesSpecialists
-    - culturalWeightingParticipants
-    - priceWeightingOutcomesSpecialists
-    - priceWeightingParticipants
-    - technicalWeightingOurcomesSpecialists
-    - technicalWeightingParticipants
+    - weightingOutcomesSpecialists
+    - weightingParticipants
 -
   name: Describe question and answer session
   editable: True

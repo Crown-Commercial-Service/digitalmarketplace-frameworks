@@ -1,0 +1,14 @@
+name: Weighting
+question: Evaluation weighting
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+any_of: weighting
+questions:
+  - technicalWeightingParticipants
+  - culturalWeightingParticipants
+  - priceWeightingParticipants
+empty_message: Set weighting
