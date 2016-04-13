@@ -25,6 +25,9 @@
       },
       "description": {
         "type": "string"
+      },
+      "step": {
+        "type": "integer"
       }
     },
     "required": ["name", "questions"],

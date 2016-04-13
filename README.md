@@ -60,6 +60,7 @@ Manifest is a list of sections. Each section contains:
 * `edit_questions` controls whether individual questions can be edited separately (only supported by `multiquestion` questions)
 * `description` text to display after the section name
 * `summary_page_description` text to display between the summary table heading and the table body
+* `step` decides how sections are grouped on (brief) overview pages
 * `questions` a list of section questions (required)
 
 Running the tests
