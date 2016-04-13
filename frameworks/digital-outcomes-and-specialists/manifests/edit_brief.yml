@@ -101,3 +101,8 @@
     - priceWeightingParticipants
     - technicalWeightingOurcomesSpecialists
     - technicalWeightingParticipants
+
+- name: Supplier questions
+  editable: True
+  questions:
+    - questionAndAnswerSessionDetails
