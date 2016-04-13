@@ -7,7 +7,6 @@ depends:
     being:
       - digital-outcomes
       - digital-specialists
-any_of: weighting
 questions:
   - technicalWeightingOutcomesSpecialists
   - culturalWeightingOutcomesSpecialists
