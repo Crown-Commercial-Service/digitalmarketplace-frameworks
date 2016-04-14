@@ -1,108 +1,91 @@
 -
-  name: Requirements title
+  name: Specialist role
   editable: True
+  step: 1
   questions:
-    - title
+    - specialistRole
 -
   name: Location
   editable: True
+  step: 1
   questions:
     - locationOutcomesSpecialists
     - locationParticipants
 -
-  name: Specialist role
+  name: Title
   editable: True
+  step: 1
   questions:
-    - specialistRole
+    - title
 -
-  name: Your organisation
+  name: Description of work
   editable: True
+  step: 1
+  description: |
+    This will help suppliers decide whether to apply.
   questions:
     - organisation
--
-  name: Outcome
-  editable: True
-  questions:
-    - outcome
--
-  name: Users
-  editable: True
-  questions:
-    - endUsers
--
-  name: User needs
-  editable: True
-  questions:
-    - userNeeds
--
-  name: Phase
-  editable: True
-  questions:
-    - phase
--
-  name: Background information
-  editable: True
-  questions:
     - backgroundInformation
--
-  name: Expected outcomes
-  editable: True
-  questions:
-    - expectedOutcomes
--
-  name: Success criteria
-  editable: True
-  questions:
-    - successCriteria
--
-  name: Current technologies
-  editable: True
-  questions:
-    - currentTechnologies
--
-  name: Start date
-  editable: True
-  questions:
+    - outcome
+    - userNeeds
+    - endUsers
+    - phase
+    - workingArrangements
     - startDate
--
-  name: Contract length
-  editable: True
-  questions:
     - contractLength
--
-  name: Important dates
-  editable: True
-  questions:
+    - additionalTerms
+    - expectedOutcomes
+    - currentTechnologies
     - importantDates
 -
-  name: Working arrangements
+  name: Shortlist criteria
   editable: True
-  questions:
-    - workingArrangements
-    - additionalTerms
--
-  name: Your requirements
-  editable: True
+  step: 2
+  description: |
+    After you’ve published your requirements, specialists will apply and tell you:
+
+    - when they can start work
+    - if they have the essential skills and experience
+    - which nice-to-have skills and experience they have
+
+    You can shortlist the specialists who:
+
+    - can start work when you need them to
+    - meet all the essential skills and experience
+    - provide the most nice-to-have skills and experience
+
+    [Read about how to shortlist.](http://giphy.com/)
   questions:
     - essentialRequirements
     - niceToHaveRequirements
 -
-  name: Evaluating suppliers
+  name: Evaluation critera
   editable: True
+  step: 2
+  description: |
+    You need to tell suppliers how you’re going to evaluate them when you publish your requirements.
+
+    To find the most suitable supplier, you must evaluate your shortlist on:
+
+    - technical competence, eg how well the supplier's skills or proposed solution meet your needs
+    - ‘cultural fit’, eg how the supplier will work in your organisation
+    - the price of the proposed solution
   questions:
+    - successCriteria
     - evaluationType
-
-- name: Criteria weighting
+    - weightingOutcomesSpecialists
+    - weightingParticipants
+-
+  name: Describe question and answer session
   editable: True
-  questions:
-    - culturalWeightingOutcomesSpecialists
-    - culturalWeightingParticipants
-    - priceWeightingOutcomesSpecialists
-    - priceWeightingParticipants
-    - technicalWeightingOurcomesSpecialists
-    - technicalWeightingParticipants
+  step: 3
+  description: |
+    While the application period is open, you need to reply to all questions suppliers ask about your requirements.
 
-- name: Supplier questions
-  editable: True
+    When a supplier asks a question, you’ll be sent an email to the email address you registered with.
+
+    You’ll need to post all questions and answers on the Digital Marketplace so that all suppliers can see them.
+
+    Providing a question and answer session means you can explain your needs and answer any questions quickly.
   questions:
     - questionAndAnswerSessionDetails

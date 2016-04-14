@@ -413,7 +413,7 @@ def add_multiquestion_anyof(schema, questions):
 def add_multiquestion_dependencies(schema, questions):
     dependencies = {}
     for key, question in questions.items():
-        if question.type == 'multiquestion':
+        if question.type == 'multiquestion' and question.get('any_of'):
             dependencies.update({
                 field: sorted(set(question.form_fields) - set([field]))
                 for field in question.form_fields
