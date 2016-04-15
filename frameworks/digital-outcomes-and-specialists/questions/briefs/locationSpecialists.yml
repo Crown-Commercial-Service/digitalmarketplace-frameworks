@@ -1,7 +1,10 @@
-name: Location
+name: Where you want the specialist to work
 id: location
-question: Where will the work be carried out?
-hint: "[View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
+question: |
+  This should be the primary location where they’ll be working.
+  
+  Suppliers have said where they’ll provide services.
+hint: "[View region map (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
 type: radios
 options:
   - label: "Scotland"
@@ -16,11 +19,11 @@ options:
   - label: "South East England"
   - label: "South West England"
   - label: "Northern Ireland"
-  - label: "Offsite"
+  - label: "No specific region, eg they can work remotely"
+    value: "Offsite"
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
       - digital-specialists
 validations:
   -

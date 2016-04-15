@@ -1,7 +1,7 @@
-name: Where the research will take place
+name: Where you want the supplier to work
 id: location
 question: |
-  This should be the primary location where the research will take place.
+  This should be the primary location where they’ll be working.
   
   Suppliers have said where they’ll provide services.
 hint: "[View region map (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
@@ -19,11 +19,12 @@ options:
   - label: "South East England"
   - label: "South West England"
   - label: "Northern Ireland"
-  - label: "International (outside the UK)"
+  - label: "No specific region, eg they can work remotely"
+    value: "Offsite"
 depends:
   - "on": "lot"
     being:
-      - user-research-participants
+      - digital-outcomes
 validations:
   -
     name: answer_required

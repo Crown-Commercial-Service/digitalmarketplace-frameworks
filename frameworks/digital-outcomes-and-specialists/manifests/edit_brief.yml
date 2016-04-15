@@ -15,7 +15,8 @@
   editable: True
   step: 1
   questions:
-    - locationOutcomesSpecialists
+    - locationOutcomes
+    - locationSpecialists
     - locationParticipants
 -
   name: Description of work
