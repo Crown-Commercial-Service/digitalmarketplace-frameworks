@@ -1,5 +1,5 @@
-name: Specific place where the supplier will work
-question: Specific place where the supplier will work
+name: Address where the work will take place
+question: Address where the work will take place
 question_advice: You must include a specific town or city. You can add more than one.
 type: textbox_large
 max_length_in_words: 100
@@ -7,6 +7,7 @@ depends:
   - "on": "lot"
     being:
       - digital-outcomes
+      - digital-specialists
 validations:
   -
     name: answer_required

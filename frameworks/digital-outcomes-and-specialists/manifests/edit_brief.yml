@@ -29,12 +29,14 @@
     - summary
     - backgroundInformation
     - outcome
+    - specialistWork
     - endUsers
     - userNeeds
     - earlyMarketEngagement
     - workAlreadyDone
     - phase
     - existingTeam
+    - existingTeamSpecialists
     - workplace
     - workingArrangements
     - securityClearance
@@ -42,9 +44,7 @@
     - contractLength
     - additionalTerms
     - budgetRange
-    - expectedOutcomes
-    - currentTechnologies
-    - importantDates
+    - maxDayRate
 -
   name: Shortlist criteria
   editable: True
