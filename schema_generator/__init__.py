@@ -179,6 +179,10 @@ def price_string(optional):
 
 def pricing_property(question):
     pricing = {}
+    if 'price' in question.fields:
+        pricing[question.fields['price']] = price_string(
+            'price' in question.get('optional_fields', [])
+        )
     if 'minimum_price' in question.fields:
         pricing[question.fields['minimum_price']] = price_string(
             'minimum_price' in question.get('optional_fields', [])

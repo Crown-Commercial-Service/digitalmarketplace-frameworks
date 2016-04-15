@@ -143,6 +143,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "price": {"type": "string"},
         "minimum_price": {"type": "string"},
         "maximum_price": {"type": "string"},
         "price_interval": {"type": "string"},
