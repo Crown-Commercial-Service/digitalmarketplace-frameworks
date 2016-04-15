@@ -12,7 +12,7 @@ import pytest
 from dmutils.content_loader import ContentQuestion
 from hypothesis.settings import Settings
 from hypothesis import given, assume, strategies as st
-from schema_generator import uri_property, parse_question_limits, \
+from schema_generator import text_property, uri_property, parse_question_limits, \
     checkbox_property, percentage_property, multiquestion, \
     build_question_properties, empty_schema, load_questions, \
     drop_non_schema_questions, radios_property, list_property, boolean_list_property, \
@@ -75,6 +75,24 @@ def test_empty_schema():
     assert "Test" in result['title']
     for k in ["title", "$schema", "type", "properties", "required"]:
         assert k in result.keys()
+
+
+@given(st.text())
+def test_text_property(id_name):
+    result = text_property({"id": id_name})
+    assert result == {id_name: {"type": "string", "minLength": 1}}
+
+
+@given(st.text(), st.booleans())
+def test_optional_text_property(id_name, optional):
+    result = text_property({"id": id_name, "optional": optional})
+    assert result == {id_name: {"type": "string", "minLength": 0 if optional else 1}}
+
+
+@given(st.text())
+def test_text_property_format(id_name):
+    result = text_property({"id": id_name, "limits": {"format": "email"}})
+    assert result == {id_name: {"type": "string", "format": "email", "minLength": 1}}
 
 
 @given(st.text())
