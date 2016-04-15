@@ -1,5 +1,6 @@
-name: Start date
+name: Expected start date
 question: Expected start date
+question_advice: This is when the work will start
 hint: 'eg 31/12/2016'
 type: text
 depends:
@@ -14,4 +15,4 @@ validations:
   -
     name: under_character_limit
     message: "Your start date must be no more than 100 characters."
-empty_message: Set date
+empty_message: Set expected start date

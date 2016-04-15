@@ -1,6 +1,6 @@
-name: Problem to be solved
-question: Problem to be solved
-question_advice: eg patients can’t access their medical records
+name: Specific place where the supplier will work
+question: Specific place where the supplier will work
+question_advice: You must include a specific town or city. You can add more than one.
 type: textbox_large
 max_length_in_words: 100
 depends:
@@ -14,4 +14,4 @@ validations:
   -
     name: under_100_words
     message: 'Your answer must be no more than 100 words.'
-empty_message: Describe problem
+empty_message: Describe where the supplier will work

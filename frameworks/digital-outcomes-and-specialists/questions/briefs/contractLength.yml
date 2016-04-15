@@ -1,6 +1,8 @@
-name: Contract length
-question: Contract length
+name: Expected contract length
+question: Expected contract length
+question_advice: Contracts can’t last for more than 2 years.
 type: text
+optional: true
 depends:
   - "on": "lot"
     being:
@@ -8,9 +10,6 @@ depends:
       - digital-specialists
 validations:
   -
-    name: answer_required
-    message: 'You need to answer this question.'
-  -
     name: under_character_limit
     message: "Your answer must be no more than 100 characters."
-empty_message: Set contract length
+empty_message: Set expected contract length

@@ -1,9 +1,13 @@
 name: Additional terms and conditions
-question: List any additional terms and conditions that are not included in the service contract
+question: Additional terms and conditions
+question_advice: |
+  You should use the [standard contract](https://www.gov.uk/guidance) unless your organisation needs to include additional terms and conditions.
+  
+  Read about [how the terms and conditions work](https://www.gov.uk/guidance/terms-and-conditions-of-digital-marketplace-frameworks).
 optional: true
 hint: 'Optional'
 type: textbox_large
-max_length_in_words: 50
+max_length_in_words: 100
 depends:
   - "on": "lot"
     being:
@@ -11,6 +15,6 @@ depends:
       - digital-specialists
 validations:
   -
-    name: under_50_words
-    message: 'Your answer must be no more than 50 words.'
-empty_message: Add description
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'
+empty_message: Add terms and conditions

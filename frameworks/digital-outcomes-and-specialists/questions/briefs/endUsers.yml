@@ -1,6 +1,15 @@
-name: Users
-question: Who are the users?
-hint: 'eg the ‘end user’ or ‘citizen’ that this work is being carried out for'
+name: Who the users are and what they need to do
+question: Who the users are and what they need to do
+question_advice: |
+  You should use this format:
+  
+  As a&hellip; (who is the user?)
+  
+  I need to&hellip; (what does the user want to do?)
+  
+  So that&hellip; (why does the user want to do this?)
+  
+  eg As a carer, I need to know if I can get Carer’s Allowance, so that I know if I should apply for it or not.
 type: textbox_large
 max_length_in_words: 100
 depends:
@@ -14,4 +23,4 @@ validations:
   -
     name: under_100_words
     message: 'Your answer must be no more than 100 words.'
-empty_message: Add description
+empty_message: Describe the users and their needs

@@ -26,15 +26,22 @@
     This will help suppliers decide whether to apply.
   questions:
     - organisation
+    - summary
     - backgroundInformation
     - outcome
-    - userNeeds
     - endUsers
+    - userNeeds
+    - earlyMarketEngagement
+    - workAlreadyDone
     - phase
+    - existingTeam
+    - workplace
     - workingArrangements
+    - securityClearance
     - startDate
     - contractLength
     - additionalTerms
+    - budgetRange
     - expectedOutcomes
     - currentTechnologies
     - importantDates
