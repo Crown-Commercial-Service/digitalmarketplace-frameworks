@@ -1,5 +1,6 @@
 name: Specialist role
 question: Type of specialist you need
+question_advice: You can only post requirements for 1 specialist at a time.
 type: radios
 options:
   -
@@ -84,7 +85,8 @@ options:
     label: Technical Architect
     value: technicalArchitect
     description: >
-      Break down complex problems and identify steps towards solutions. Coach individuals and engage with non-technical people at all levels of seniority. Write code as a senior member of the development team.
+      Break down complex problems and identify steps towards solutions. Coach individuals and engage with 
+      non-technical people at all levels of seniority. Write code as a senior member of the development team.
   -
     label: User researcher
     value: userResearcher
