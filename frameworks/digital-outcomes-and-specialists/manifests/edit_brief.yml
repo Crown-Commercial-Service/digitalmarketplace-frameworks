@@ -1,4 +1,10 @@
 -
+  name: Title
+  editable: True
+  step: 1
+  questions:
+    - title
+-
   name: Specialist role
   editable: True
   step: 1
@@ -11,12 +17,6 @@
   questions:
     - locationOutcomesSpecialists
     - locationParticipants
--
-  name: Title
-  editable: True
-  step: 1
-  questions:
-    - title
 -
   name: Description of work
   editable: True
