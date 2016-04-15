@@ -143,6 +143,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "price": {"type": "string"},
         "minimum_price": {"type": "string"},
         "maximum_price": {"type": "string"},
         "price_interval": {"type": "string"},
@@ -175,6 +176,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "format": {"type": "string"},
         "max_value": {"type": "number"},
         "min_value": {"type": "number"},
         "integer_only": {"type": "boolean"}

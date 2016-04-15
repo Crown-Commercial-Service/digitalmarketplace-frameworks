@@ -94,16 +94,13 @@ def text_property(question):
         "minLength": 0 if question.get('optional') else 1,
     }
 
+    format_limit = question.get('limits', {}).get('format')
+    if format_limit:
+        data['format'] = format_limit
+
     data.update(parse_question_limits(question))
 
     return {question['id']: data}
-
-
-def email_property(question):
-    return {question['id']: {
-        "type": "string",
-        "format": "email",
-    }}
 
 
 def uri_property(question):
@@ -182,6 +179,10 @@ def price_string(optional):
 
 def pricing_property(question):
     pricing = {}
+    if 'price' in question.fields:
+        pricing[question.fields['price']] = price_string(
+            'price' in question.get('optional_fields', [])
+        )
     if 'minimum_price' in question.fields:
         pricing[question.fields['minimum_price']] = price_string(
             'minimum_price' in question.get('optional_fields', [])
@@ -266,7 +267,6 @@ def multiquestion(question):
 
 QUESTION_TYPES = {
     'text': text_property,
-    'email': email_property,
     'upload': uri_property,
     'textbox_large': text_property,
     'checkboxes': checkbox_property,
