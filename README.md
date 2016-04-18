@@ -13,11 +13,13 @@ Question keys
 -------------
 
 * `question` name of the question, displayed in forms and summary tables (required)
+* `question_advice` a note about the question asked, usually giving some more information about what it means 
+   and why it is being asked
 * `type` type of the question input, used to find the related toolkit form template (required)
 * `name` short question name to use in summary tables instead of the full question. Also used to
   generate the URL slug for addressable questions
 * `empty_message` a message to display instead of "Answer required" if question wasn't answered
-* `hint` hint text to display after the question name
+* `hint` hint text to display after the question, eg advice about how to best format you answer
 * `optional` if set to `true` makes the question optional
 * `options` a list of possible values for the types that support them. Each option consists of:
     * `label` text displayed on the option label (required)
