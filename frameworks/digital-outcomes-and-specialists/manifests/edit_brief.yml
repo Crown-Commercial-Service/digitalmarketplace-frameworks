@@ -35,16 +35,16 @@
     - earlyMarketEngagement
     - workAlreadyDone
     - phase
-    - existingTeam
+    - existingTeamOutcomes
     - existingTeamSpecialists
-    - workplace
+    - workplaceAddress
     - workingArrangements
     - securityClearance
     - startDate
     - contractLength
     - additionalTerms
-    - budgetRange
-    - maxDayRate
+    - budgetRangeOutcomes
+    - budgetRangeSpecialists
 -
   name: Shortlist criteria
   editable: True
