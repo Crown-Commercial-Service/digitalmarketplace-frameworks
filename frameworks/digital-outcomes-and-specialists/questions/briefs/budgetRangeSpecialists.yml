@@ -1,4 +1,5 @@
 name: Maximum day rate
+id: budgetRange
 question: Maximum day rate
 question_advice: |
   How much can you afford to spend per day.

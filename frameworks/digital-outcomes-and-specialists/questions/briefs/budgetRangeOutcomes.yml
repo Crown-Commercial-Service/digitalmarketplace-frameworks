@@ -1,4 +1,5 @@
 name: Budget range
+id: budgetRange
 question: Budget range
 question_advice: |
   Include how much you can spend.
