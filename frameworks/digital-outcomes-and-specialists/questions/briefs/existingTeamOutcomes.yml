@@ -1,4 +1,5 @@
 name: Existing team
+id: existingTeam
 question: Existing team
 question_advice: |
   Describe the team the supplier will be working with,

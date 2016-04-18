@@ -1,4 +1,5 @@
 name: Who the specialist will work with
+id: existingTeam
 question: Who the specialist will work with
 question_advice: |
   Describe the team the specialist will be working with on this project.
