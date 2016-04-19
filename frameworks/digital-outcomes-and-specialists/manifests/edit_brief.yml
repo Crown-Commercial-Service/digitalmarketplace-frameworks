@@ -124,7 +124,7 @@
     - numberOfSuppliersParticipants
 
 -
-  name: Evaluation critera
+  name: Evaluation criteria
   editable: True
   step: 2
   description: |
@@ -145,7 +145,7 @@
     - evaluationTypeOutcomes
 
 -
-  name: Evaluation critera
+  name: Evaluation criteria
   editable: True
   step: 2
   description: |
@@ -163,7 +163,7 @@
     - evaluationTypeSpecialists
 
 -
-  name: Evaluation critera
+  name: Evaluation criteria
   editable: True
   step: 2
   description: |
