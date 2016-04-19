@@ -1,12 +1,12 @@
 id: priceWeighting
 question: 'Price'
-hint: 'Permitted range 20% to 85%'
+question_advice: Price is evaluated on how close each supplier’s quote is to the cheapest quote.
+hint: 'This can be between 20% and 85%'
 
 depends:
   - "on": lot
     being:
       - digital-outcomes
-      - digital-specialists
 
 type: percentage
 limits:

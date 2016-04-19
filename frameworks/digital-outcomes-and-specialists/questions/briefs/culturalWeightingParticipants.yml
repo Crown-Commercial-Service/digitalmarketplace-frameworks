@@ -1,6 +1,6 @@
 id: culturalWeighting
 question: 'Availability'
-hint: 'Permitted range 10% to 70%'
+hint: 'This can be between 10% and 70%'
 
 depends:
   - "on": lot

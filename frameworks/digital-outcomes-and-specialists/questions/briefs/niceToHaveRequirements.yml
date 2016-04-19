@@ -1,11 +1,19 @@
-name: Nice-to-have requirements
-question: Nice-to-have requirements
-hint: |
-  List your nice-to-have requirements as yes/no questions.
-
-  Suppliers will be prioritised based on the number of questions they can answer 'yes' to.
-
-  eg does your organisation have experience working with low technical experience users?
+name: Nice-to-have skills and experience
+question: Nice-to-have skills and experience
+question_advice: |
+  To find the best supplier to meet your needs, you should:
+  * list as many types of skills and experience as you can
+  * be specific about the skills and experience you're looking for
+  
+  If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and 
+  experience to exclude suppliers.
+  
+  List the skills and experience you’d like the supplier to have, 
+  eg provide evidence of delivering at scale
+  
+  If you want to add ‘points’ to the individual skills and experience requirements, you must include them here, 
+  eg previous experience working on government digital projects - 15 points
+hint: "Optional"
 list_item_name: 'nice-to-have requirement'
 number_of_items: 20
 optional: true
@@ -29,4 +37,4 @@ validations:
   -
     name: under_character_limit
     message: 'Each requirement must be no more than 300 characters.'
-empty_message: Add nice-to-have requirements
+empty_message: Add nice-to-have skills and experience

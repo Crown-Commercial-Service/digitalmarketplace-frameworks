@@ -1,5 +1,9 @@
 name: Weighting
 question: Evaluation weighting
+question_advice: |
+  Choose the weighting you want to apply to technical competence, availability and price.
+  
+  Total must add up to 100%
 optional: false
 type: multiquestion
 depends:
