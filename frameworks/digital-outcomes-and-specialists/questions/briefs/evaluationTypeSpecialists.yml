@@ -25,11 +25,6 @@ options:
     description: >
        A scenario or test can help you confirm a supplier’s skill level and understanding in a controlled environment, 
        eg a coding test for a developer or the approach a product manager would take to solve an example problem.
-  - label: "Scenario or test"
-    description: >
-       An interview can help you understand whether a supplier or team has the skills needed to work on your project. 
-       It will also help you see whether they will be a good fit for your existing team. You should follow an agreed 
-       format in which you ask all suppliers the same set of questions.
   - label: "Presentation"
     description: >
        A presentation can help you understand a specialist’s approach to delivering work, 
