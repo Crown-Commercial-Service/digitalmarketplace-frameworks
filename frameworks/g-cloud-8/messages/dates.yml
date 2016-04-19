@@ -1,5 +1,14 @@
-clarifications_close_date: '5pm <abbr title="British Summer Time">BST</abbr>, 31 February 3021 (CHANGE THIS)'
-clarifications_publish_date: '5pm <abbr title="British Summer Time">BST</abbr>, 31 February 3021 (CHANGE THIS)'
-framework_close_date: '3pm <abbr title="British Summer Time">BST</abbr>, 31 February 3021 (CHANGE THIS)'
+clarifications_close_date: |
+  5pm BST, 31 February 3021 (CHANGE THIS)
+
+  *[BST]: British Summer Time
+clarifications_publish_date: |
+  5pm BST, 31 February 3021 (CHANGE THIS)
+
+  *[BST]: British Summer Time
+framework_close_date: |
+  3pm BST, 31 February 3021 (CHANGE THIS)
+
+  *[BST]: British Summer Time
 intention_to_award_date: '31 February 3021 (CHANGE THIS)'
 framework_live_date: '31 February 3021 (CHANGE THIS)'
