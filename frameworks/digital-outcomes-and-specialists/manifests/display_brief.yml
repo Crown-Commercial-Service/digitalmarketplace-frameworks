@@ -3,9 +3,28 @@
   questions:
     - startDate
     - contractLength
-    - locationOutcomesSpecialists
-    - locationParticipants
+    - budgetRangeOutcomesParticipants
+    - budgetRangeSpecialists
     - outcome
+    - organisation
+    - specialistWork
+    - earlyMarketEngagement
+    - workAlreadyDone
+    - existingTeamOutcomes
+    - existingTeamSpecialists
+    - researchRounds
+    - participantsPerRound
+    - researchDates
+    - researchFrequency
+    - researchOutOfHours
+    - researchAddress
+    - accessRestrictions
+    - participantSpecification
+    - particpantAccessibilityNeeds
+    - researchPlan
+    - workplaceAddress
+    - securityClearance
+    - summary
 -
   name: About the work
   questions:
@@ -14,7 +33,8 @@
     - userNeeds
     - phase
     - workingArrangements
-    - locationOutcomesSpecialists
+    - locationOutcomes
+    - locationSpecialists
     - locationParticipants
     - importantDates
     - successCriteria
@@ -30,10 +50,10 @@
 -
   name: Evaluation
   questions:
-    - evaluationType
+    - evaluationTypeOutcomes
+    - evaluationTypeSpecialists
+    - evaluationTypeParticipants
 -
   name: Additional information
   questions:
-    - expectedOutcomes
-    - currentTechnologies
     - additionalTerms
