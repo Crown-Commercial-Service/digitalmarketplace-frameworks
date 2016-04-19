@@ -20,12 +20,12 @@ validations:
     name: answer_required
     message: 'You need to answer this question.'
   -
-    name: under_10_words
-    message: 'Each requirement must be no more than 10 words.'
+    name: under_30_words
+    message: 'Each requirement must be no more than 30 words.'
   -
     name: under_10_items
     message: 'You must have 10 or fewer requirements.'
   -
     name: under_character_limit
-    message: 'Each requirement must be no more than 100 characters.'
+    message: 'Each requirement must be no more than 300 characters.'
 empty_message: Add nice-to-have requirements

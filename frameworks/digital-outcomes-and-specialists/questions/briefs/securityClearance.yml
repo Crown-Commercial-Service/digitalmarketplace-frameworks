@@ -9,7 +9,7 @@ question_advice: |
 hint: Optional
 type: textbox_large
 optional: true
-max_length_in_words: 100
+max_length_in_words: 50
 depends:
   - "on": "lot"
     being:
@@ -17,6 +17,6 @@ depends:
       - digital-specialists
 validations:
   -
-    name: under_100_words
-    message: 'Your answer must be no more than 100 words.'
+    name: under_50_words
+    message: 'Your answer must be no more than 50 words.'
 empty_message: Add security clearance
