@@ -17,7 +17,7 @@ type: list
 depends:
   - "on": "lot"
     being:
-      - digital-specialists
+      - user-research-participants
 
 validations:
   -

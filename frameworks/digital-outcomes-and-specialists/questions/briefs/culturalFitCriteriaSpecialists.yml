@@ -1,4 +1,5 @@
 name: Cultural fit criteria
+id: culturalFitCriteria
 question: Proposed solution evaluation criteria
 question_advice: |
   Cultural fit is how well you and the individual or team will work together. If the supplier’s values and behaviour
@@ -17,8 +18,8 @@ number_of_items: 20
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
       - digital-specialists
+
 validations:
   -
     name: answer_required

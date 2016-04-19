@@ -55,6 +55,7 @@
     - budgetRangeOutcomesParticipants
     - budgetRangeSpecialists
     - summary
+
 -
   name: Shortlist criteria
   editable: True
@@ -118,39 +119,65 @@
     - essentialRequirementsParticipants
     - niceToHaveRequirementsParticipants
     - numberOfSuppliersParticipants
+
 -
   name: Evaluation critera
   editable: True
   step: 2
   description: |
     You need to tell suppliers how you’re going to evaluate them when you publish your requirements.
-
-    To find the most suitable supplier, you must evaluate your shortlist on:
-
-    - technical competence, eg how well the supplier's skills or proposed solution meet your needs
-    - ‘cultural fit’, eg how the supplier will work in your organisation
-    - the price of the proposed solution
     
-    If you want to add ‘points’ to the individual criteria in technical competence and cultural fit, 
-    you must tell suppliers the points you’ll give to each one when you publish your criteria, 
-    eg experience designing services for users with low digital literacy - 15 points
+    To find the most suitable supplier, you must evaluate your shortlist on:
+    
+    - technical competence, eg how well the supplier’s skills or proposal meet your needs
+    - ‘cultural fit’, eg how the supplier will work in your organisation
+    - the price of the proposal
   questions:
-    - weightingOutcomesSpecialists
-    - weightingParticipants
+    - weightingOutcomes
     - essentialRequirementsOutcomes
-    - essentialRequirementsSpecialists
-    - essentialRequirementsParticipants
     - niceToHaveRequirementsOutcomes
-    - niceToHaveRequirementsSpecialists
-    - niceToHaveRequirementsParticipants
     - successCriteriaOutcomes
-    - successCriteriaParticipants
-    - culturalFitCriteria
+    - culturalFitCriteriaOutcomes
     - priceCriteria
     - evaluationTypeOutcomes
-    - evaluationTypeSpecialists
-    - evaluationTypeParticipants
+
+-
+  name: Evaluation critera
+  editable: True
+  step: 2
+  description: |
+    You need to tell suppliers how you're going to evaluate them when you publish your requirements.
     
+    To find the most suitable supplier, you must evaluate your shortlist on:
+    
+    - technical competence, eg how well the supplier's skills or proposal meet your needs
+    - ‘cultural fit’, eg how the supplier will work in your organisation
+  questions:
+    - weightingSpecialists
+    - essentialRequirementsSpecialists
+    - niceToHaveRequirementsSpecialists
+    - culturalFitCriteriaSpecialists
+    - evaluationTypeSpecialists
+
+-
+  name: Evaluation critera
+  editable: True
+  step: 2
+  description: |
+    You need to tell suppliers how you're going to evaluate them when you publish your requirements.
+    
+    To find the most suitable supplier, you must evaluate your shortlist on:
+    
+    - technical competence, eg how well the supplier's skills or proposal meet your needs
+    - availability, eg whether the supplier can recruit user research participants when you need them
+    - the price of the proposal
+  questions:
+    - weightingParticipants
+    - essentialRequirementsParticipants
+    - niceToHaveRequirementsParticipants
+    - successCriteriaParticipants
+    - evaluationTypeParticipants
+
 -
   name: Describe question and answer session
   editable: True
