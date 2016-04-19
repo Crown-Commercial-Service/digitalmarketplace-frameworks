@@ -60,22 +60,64 @@
   editable: True
   step: 2
   description: |
-    After you’ve published your requirements, specialists will apply and tell you:
-
+    After you’ve published your requirements, suppliers will apply and tell you:
+    
     - when they can start work
     - if they have the essential skills and experience
     - which nice-to-have skills and experience they have
-
-    You can shortlist the specialists who:
-
+    
+    You can shortlist the suppliers who:
     - can start work when you need them to
     - meet all the essential skills and experience
     - provide the most nice-to-have skills and experience
 
-    [Read about how to shortlist.](http://giphy.com/)
+    [Read about how to shortlist.](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers)
   questions:
-    - essentialRequirements
-    - niceToHaveRequirements
+    - essentialRequirementsOutcomes
+    - niceToHaveRequirementsOutcomes
+    - numberOfSuppliersOutcomes
+-
+  name: Shortlist criteria
+  editable: True
+  step: 2
+  description: |
+    After you’ve published your requirements, specialists will apply and tell you:
+    
+    - when they can start work
+    - what their day rate is
+    - if they have the essential skills and experience
+    - which nice-to-have skills and experience they have
+    
+    You can shortlist the specialists who:
+    - can start work when you need them to
+    - are within your budget
+    - meet all the essential skills and experience
+    - provide the most nice-to-have skills and experience
+
+    [Read about how to shortlist.](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers)
+  questions:
+    - essentialRequirementsSpecialists
+    - niceToHaveRequirementsSpecialists
+    - numberOfSuppliersSpecialists
+-
+  name: Shortlist criteria
+  editable: True
+  step: 2
+  description: |
+    After you’ve published your requirements, suppliers will apply and tell you:
+    
+    - if they have the essential skills and experience
+    - which nice-to-have skills and experience they have
+    
+    You can shortlist the suppliers who:
+    - meet all the essential skills and experience
+    - provide the most nice-to-have skills and experience
+
+    [Read about how to shortlist.](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers)
+  questions:
+    - essentialRequirementsParticipants
+    - niceToHaveRequirementsParticipants
+    - numberOfSuppliersParticipants
 -
   name: Evaluation critera
   editable: True
@@ -95,8 +137,12 @@
   questions:
     - weightingOutcomesSpecialists
     - weightingParticipants
-    - essentialRequirements
-    - niceToHaveRequirements
+    - essentialRequirementsOutcomes
+    - essentialRequirementsSpecialists
+    - essentialRequirementsParticipants
+    - niceToHaveRequirementsOutcomes
+    - niceToHaveRequirementsSpecialists
+    - niceToHaveRequirementsParticipants
     - successCriteriaOutcomes
     - successCriteriaParticipants
     - culturalFitCriteria

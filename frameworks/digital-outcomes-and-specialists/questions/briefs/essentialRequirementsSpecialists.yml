@@ -1,0 +1,35 @@
+name: Essential skills and experience
+id: essentialRequirements
+question: Essential skills and experience
+question_advice: |
+  Specialists who don’t have all the essential skills you list here will be automatically notified that their 
+  application was unsuccessful.
+  
+  List all the specific skills or experience the specialist must have, 
+  eg have experience designing services for users with low digital literacy.
+  
+  You must tell suppliers if you want to score individual criteria.
+  
+  [Read more about how to set evaluation criteria.](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria)
+list_item_name: 'essential requirement'
+number_of_items: 20
+type: list
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_30_words
+    message: 'Each requirement must be no more than 30 words.'
+  -
+    name: max_items_limit
+    message: 'You must have 20 or fewer requirements.'
+  -
+    name: under_character_limit
+    message: 'Each requirement must be no more than 300 characters.'
+empty_message: Add essential skills or experience
