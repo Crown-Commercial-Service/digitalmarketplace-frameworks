@@ -36,8 +36,8 @@
     - locationOutcomes
     - locationSpecialists
     - locationParticipants
-    - importantDates
-    - successCriteria
+    - successCriteriaOutcomes
+    - successCriteriaParticipants
 -
   name: Skills and experience
   questions:
