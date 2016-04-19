@@ -1,5 +1,14 @@
-clarifications_close_date: '5pm <abbr title="British Summer Time">BST</abbr>, 22 September 2015'
-clarifications_publish_date: '5pm <abbr title="British Summer Time">BST</abbr>, 29 September 2015'
-framework_close_date: '3pm <abbr title="British Summer Time">BST</abbr>, 6 October 2015'
+clarifications_close_date: |
+  5pm BST, 22 September 2015
+
+  *[BST]: British Summer Time
+clarifications_publish_date: |
+  5pm BST, 29 September 2015
+
+  *[BST]: British Summer Time
+framework_close_date: |
+  3pm BST, 6 October 2015
+
+  *[BST]: British Summer Time
 intention_to_award_date: '9 November 2015'
 framework_live_date: '23 November 2015'
