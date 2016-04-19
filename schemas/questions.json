@@ -8,6 +8,11 @@
         "type": {"enum": ["multiquestion"]}
       }
     },
+    "number_of_items": {
+      "properties": {
+        "type": {"enum": ["list"]}
+      }
+    },
     "fields": {
       "properties": {
         "type": {"enum": ["pricing"]}
@@ -129,6 +134,9 @@
     },
     "list_item_name": {
       "type": "string"
+    },
+    "number_of_items": {
+      "type": "integer"
     },
     "assuranceApproach": {
       "enum": [

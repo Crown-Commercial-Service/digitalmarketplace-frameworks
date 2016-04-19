@@ -39,6 +39,7 @@ Question keys
     * `max_value` integer, sets the maximum value for percentage questions
     * `integer_only` boolean, when `true` makes the percentage question accept only integer values instead of numbers
     * `format` sets JSON schema 'format' property for text questions (eg `email`, `uri`)
+* `number_of_items` sets the maximum number of items for list questions (and changes "Add another (N remaining)" list button, defaults to 10)
 * `list_item_name` [currently unused] text displayed in the "Add another ..." button and item names by the list-entry inputs
 * `assuranceApproach` contains the name of the set of possible assurance answers for the question. Assurance answer sets are
   listed in the supplier frontend.
