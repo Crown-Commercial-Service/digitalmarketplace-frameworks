@@ -26,7 +26,6 @@
     This will help suppliers decide whether to apply.
   questions:
     - organisation
-    - summary
     - backgroundInformation
     - outcome
     - specialistWork
@@ -37,14 +36,25 @@
     - phase
     - existingTeamOutcomes
     - existingTeamSpecialists
+    - researchRounds
+    - participantsPerRound
+    - researchDates
+    - researchFrequency
+    - researchOutOfHours
+    - researchAddress
+    - accessRestrictions
+    - participantSpecification
+    - particpantAccessibilityNeeds
+    - researchPlan
     - workplaceAddress
     - workingArrangements
     - securityClearance
     - startDate
     - contractLength
     - additionalTerms
-    - budgetRangeOutcomes
+    - budgetRangeOutcomesParticipants
     - budgetRangeSpecialists
+    - summary
 -
   name: Shortlist criteria
   editable: True
