@@ -90,6 +90,7 @@
               "under_20_words",
               "under_50_words",
               "under_100_words",
+              "under_200_words",
               "under_character_limit",
               "total_should_be_100"
             ]
