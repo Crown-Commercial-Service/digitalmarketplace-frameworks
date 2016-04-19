@@ -7,6 +7,7 @@ hint: |
 
   eg does your organisation have experience working with open source software?
 list_item_name: 'essential requirement'
+number_of_items: 20
 type: list
 depends:
   - "on": "lot"
@@ -23,7 +24,7 @@ validations:
     message: 'Each requirement must be no more than 30 words.'
   -
     name: under_10_items
-    message: 'You must have 10 or fewer requirements.'
+    message: 'You must have 20 or fewer requirements.'
   -
     name: under_character_limit
     message: 'Each requirement must be no more than 300 characters.'
