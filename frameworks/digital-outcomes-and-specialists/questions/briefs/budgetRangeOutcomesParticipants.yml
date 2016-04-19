@@ -18,6 +18,7 @@ depends:
   - "on": "lot"
     being:
       - digital-outcomes
+      - user-research-participants
 validations:
   -
     name: under_100_words

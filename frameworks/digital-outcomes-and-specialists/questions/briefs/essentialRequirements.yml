@@ -1,11 +1,14 @@
-name: Essential requirements
-question: Essential requirements
-hint: |
-  List your essential requirements as yes/no questions.
-
-  Suppliers must be able to answer ‘yes’ to all of these questions to proceed to the next round of evaluation.
-
-  eg does your organisation have experience working with open source software?
+name: Essential skills and experience
+question: Essential skills and experience
+question_advice: |
+  Suppliers who don’t have all the essential skills you list here will be automatically notified that their 
+  application was unsuccessful.
+  
+  List all the specific skills or experience the supplier must have, 
+  eg have experience designing services for users with low digital literacy.
+  
+  If you want to add ‘points’ to the individual skills and experience requirements, you must include them here, 
+  eg experience designing services for users with low digital literacy - 15 points
 list_item_name: 'essential requirement'
 number_of_items: 20
 type: list
@@ -28,4 +31,5 @@ validations:
   -
     name: under_character_limit
     message: 'Each requirement must be no more than 300 characters.'
-empty_message: Add essential requirements
+empty_message: Add essential skills or experience
+

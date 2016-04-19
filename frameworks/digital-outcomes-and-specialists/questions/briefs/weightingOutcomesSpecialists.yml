@@ -1,5 +1,9 @@
 name: Weighting
 question: Evaluation weighting
+question_advice: |
+  Choose the weighting you want to apply to technical competence, cultural fit and price.
+  
+  Total must add up to 100%
 optional: false
 type: multiquestion
 depends:
@@ -8,7 +12,9 @@ depends:
       - digital-outcomes
       - digital-specialists
 questions:
-  - technicalWeightingOutcomesSpecialists
+  - technicalWeightingOutcomes
+  - technicalWeightingSpecialists
   - culturalWeightingOutcomesSpecialists
-  - priceWeightingOutcomesSpecialists
+  - priceWeightingOutcomes
+  - priceWeightingSpecialists
 empty_message: Set weighting

@@ -26,7 +26,6 @@
     This will help suppliers decide whether to apply.
   questions:
     - organisation
-    - summary
     - backgroundInformation
     - outcome
     - specialistWork
@@ -37,14 +36,25 @@
     - phase
     - existingTeamOutcomes
     - existingTeamSpecialists
+    - researchRounds
+    - participantsPerRound
+    - researchDates
+    - researchFrequency
+    - researchOutOfHours
+    - researchAddress
+    - accessRestrictions
+    - participantSpecification
+    - particpantAccessibilityNeeds
+    - researchPlan
     - workplaceAddress
     - workingArrangements
     - securityClearance
     - startDate
     - contractLength
     - additionalTerms
-    - budgetRangeOutcomes
+    - budgetRangeOutcomesParticipants
     - budgetRangeSpecialists
+    - summary
 -
   name: Shortlist criteria
   editable: True
@@ -78,11 +88,23 @@
     - technical competence, eg how well the supplier's skills or proposed solution meet your needs
     - ‘cultural fit’, eg how the supplier will work in your organisation
     - the price of the proposed solution
+    
+    If you want to add ‘points’ to the individual criteria in technical competence and cultural fit, 
+    you must tell suppliers the points you’ll give to each one when you publish your criteria, 
+    eg experience designing services for users with low digital literacy - 15 points
   questions:
-    - successCriteria
-    - evaluationType
     - weightingOutcomesSpecialists
     - weightingParticipants
+    - essentialRequirements
+    - niceToHaveRequirements
+    - successCriteriaOutcomes
+    - successCriteriaParticipants
+    - culturalFitCriteria
+    - priceCriteria
+    - evaluationTypeOutcomes
+    - evaluationTypeSpecialists
+    - evaluationTypeParticipants
+    
 -
   name: Describe question and answer session
   editable: True

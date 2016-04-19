@@ -1,0 +1,32 @@
+name: Price criteria
+question: Price criteria
+question_advice: You should choose the approach that best fits the way you work and provides the best value for money.
+type: radios
+options:
+  -
+    label: Fixed price
+    description: >
+      Choosing a fixed price approach means that the supplier owns most of the risk. They’re contractually bound 
+      to provide all the work you specify in each particular ‘statement of work’ within the stated timeframe. 
+      The supplier may charge more for owning more of the risk. A fixed price approach works best when the requirement
+       is well defined so the supplier can provide an accurate quote without incorporating extra costs.
+  -
+    label: Time and materials
+    description: >
+      A time and materials approach means you own more of the risk. The supplier can send a pricing matrix showing 
+      how long they need to provide the work. If it takes longer to do the work defined in a statement of work, you 
+      will be charged on a day rate and expenses basis.
+  -
+    label: Capped time and materials
+    description: >
+      The capped time and materials approach combines elements of the fixed price and time and materials methods. 
+      The supplier does the work on a day rate and expenses basis but you need to agree date which they can’t work 
+      past. Most buyers choose a capped time and materials approach for alpha, beta and live. They also tend to 
+      find that issuing lots of smaller statements of work, rather than one statement of work for each phase, 
+      gives them more flexibility.
+
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+empty_message: Choose price criteria
