@@ -9,6 +9,8 @@ depends:
   - "on": "lot"
     being:
       - digital-outcomes
+      - digital-specialists
+      - user-research-participants
 validations:
   -
     name: answer_required
@@ -16,4 +18,4 @@ validations:
   -
     name: under_100_words
     message: 'Your answer must be no more than 100 words.'
-empty_message: Provide a brief summary of the work
+empty_message: Provide a summary of the work
