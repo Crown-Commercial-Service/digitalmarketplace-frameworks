@@ -144,15 +144,19 @@ def boolean_property(question):
 
 
 def list_property(question):
+    items = {
+        "type": "string",
+        "maxLength": 100,
+        "pattern": "^(?:\\S+\\s+){0,9}\\S+$"
+    }
+
+    items.update(parse_question_limits(question, for_items=True))
+
     return {question['id']: {
         "type": "array",
         "minItems": 0 if question.get('optional') else 1,
-        "maxItems": 10,
-        "items": {
-            "type": "string",
-            "maxLength": 100,
-            "pattern": "^(?:\\S+\\s+){0,9}\\S+$"
-        }
+        "maxItems": question.get('number_of_items', 10),
+        "items": items
     }}
 
 
@@ -280,7 +284,7 @@ QUESTION_TYPES = {
 }
 
 
-def parse_question_limits(question):
+def parse_question_limits(question, for_items=False):
     """
     Converts word and character length validators into JSON Schema-compatible maxLength and regex validators.
     """
@@ -308,7 +312,7 @@ def parse_question_limits(question):
         limits['maxLength'] = int(char_length)
 
     if word_length:
-        if question.get('optional'):
+        if not for_items and question.get('optional'):
             limits['pattern'] = r"^$|(^(?:\S+\s+){0,%s}\S+$)" % (int(word_length) - 1)
         else:
             limits['pattern'] = r"^(?:\S+\s+){0,%s}\S+$" % (int(word_length) - 1)

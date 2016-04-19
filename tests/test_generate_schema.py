@@ -218,6 +218,11 @@ def test_list_property(id):
     result = list_property(question)
     assert id in result.keys()
     assert result[id]['minItems'] == 0
+    assert result[id]['items'] == {
+        'type': 'string',
+        'maxLength': 100,
+        "pattern": "^(?:\\S+\\s+){0,9}\\S+$"
+    }
 
 
 @given(st.text())

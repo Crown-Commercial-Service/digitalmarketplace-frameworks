@@ -8,6 +8,11 @@
         "type": {"enum": ["multiquestion"]}
       }
     },
+    "number_of_items": {
+      "properties": {
+        "type": {"enum": ["list"]}
+      }
+    },
     "fields": {
       "properties": {
         "type": {"enum": ["pricing"]}
@@ -85,11 +90,13 @@
               "max_less_than_min",
               "not_money_format",
               "not_a_number",
-              "under_10_items",
+              "max_items_limit",
               "under_10_words",
               "under_20_words",
+              "under_30_words",
               "under_50_words",
               "under_100_words",
+              "under_200_words",
               "under_character_limit",
               "total_should_be_100"
             ]
@@ -129,6 +136,9 @@
     },
     "list_item_name": {
       "type": "string"
+    },
+    "number_of_items": {
+      "type": "integer"
     },
     "assuranceApproach": {
       "enum": [
