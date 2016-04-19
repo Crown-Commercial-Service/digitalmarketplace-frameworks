@@ -24,7 +24,7 @@ validations:
     name: under_30_words
     message: 'Each requirement must be no more than 30 words.'
   -
-    name: under_10_items
+    name: max_items_limit
     message: 'You must have 20 or fewer requirements.'
   -
     name: under_character_limit

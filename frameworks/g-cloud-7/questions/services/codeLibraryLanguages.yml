@@ -12,7 +12,7 @@ validations:
     name: under_10_words
     message: 'Each code library must be no more than 10 words.'
   -
-    name: under_10_items
+    name: max_items_limit
     message: 'You must have 10 or fewer code libraries.'
   -
     name: under_character_limit

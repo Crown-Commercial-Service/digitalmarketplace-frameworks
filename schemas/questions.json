@@ -90,7 +90,7 @@
               "max_less_than_min",
               "not_money_format",
               "not_a_number",
-              "under_10_items",
+              "max_items_limit",
               "under_10_words",
               "under_20_words",
               "under_30_words",
