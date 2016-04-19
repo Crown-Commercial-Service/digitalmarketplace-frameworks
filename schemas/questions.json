@@ -24,6 +24,9 @@
         "pricing", "upload", "percentage", "textbox_large", "multiquestion", "email"
       ]
     },
+    "question_advice": {
+      "type": "string"
+    },
     "hint": {
       "type": "string"
     },

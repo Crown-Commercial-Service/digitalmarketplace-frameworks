@@ -15,7 +15,8 @@
   editable: True
   step: 1
   questions:
-    - locationOutcomesSpecialists
+    - locationOutcomes
+    - locationSpecialists
     - locationParticipants
 -
   name: Description of work
@@ -25,18 +26,25 @@
     This will help suppliers decide whether to apply.
   questions:
     - organisation
+    - summary
     - backgroundInformation
     - outcome
-    - userNeeds
+    - specialistWork
     - endUsers
+    - userNeeds
+    - earlyMarketEngagement
+    - workAlreadyDone
     - phase
+    - existingTeamOutcomes
+    - existingTeamSpecialists
+    - workplaceAddress
     - workingArrangements
+    - securityClearance
     - startDate
     - contractLength
     - additionalTerms
-    - expectedOutcomes
-    - currentTechnologies
-    - importantDates
+    - budgetRangeOutcomes
+    - budgetRangeSpecialists
 -
   name: Shortlist criteria
   editable: True

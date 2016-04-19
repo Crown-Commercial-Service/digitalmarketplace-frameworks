@@ -1,9 +1,10 @@
-name: Phase
-question: What phase is the work currently in?
-optional: true
-hint: 'Optional'
+name: Current phase
+question: Phase the work is currently in
 type: radios
 options:
+  -
+    label: Not applicable
+    value: not_applicable
   -
     label: Not started
     value: not_started
@@ -18,13 +19,14 @@ options:
     value: alpha
     description: >
       A short phase in which you prototype solutions for your users needs. 
-      You’ll be testing with a small group of users or stakeholders, and getting early feedback about the design of the service.
+      You’ll be testing with a small group of users or stakeholders, and getting early feedback about the design of 
+      the service.
   -
     label: Beta
     value: beta
     description: >
-      You’re developing against the demands of a live environment, understanding how to build and scale while meeting user needs. 
-      You’ll also be releasing a version to test in public.
+      You’re developing against the demands of a live environment, understanding how to build and scale while meeting
+      user needs. You’ll also be releasing a version to test in public.
   -
     label: Live
     value: live

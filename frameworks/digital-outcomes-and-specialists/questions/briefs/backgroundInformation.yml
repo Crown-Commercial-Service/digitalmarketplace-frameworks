@@ -1,14 +1,16 @@
-name: Background information
-question: Why this work is being done
-hint: 'Describe the background to the problem or situation that prompted you to go ahead with this work.'
+name: Why the work is being done
+question: Why the work is being done
+question_advice: |
+  Describe the organistaion or policy goal the work supports, eg how a new law changes the way users receive 
+  government payments.
+  
+  Include any important dates. This will help suppliers understand any time constraints.
 type: textbox_large
 max_length_in_words: 100
 depends:
   - "on": "lot"
     being:
       - digital-outcomes
-      - digital-specialists
-      - user-research-participants
 validations:
   -
     name: answer_required
@@ -16,4 +18,4 @@ validations:
   -
     name: under_100_words
     message: 'Your answer must be no more than 100 words.'
-empty_message: Add description
+empty_message: Describe why the work is being done

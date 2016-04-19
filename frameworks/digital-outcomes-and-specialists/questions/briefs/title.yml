@@ -1,6 +1,7 @@
-name: Requirements title
-question: Requirements title
-hint: 'This will help you refer to the requirements when talking to suppliers.'
+name: Title
+question: What you want to call your requirements
+question_advice: This will help you refer to your requirements when talking to suppliers.
+hint: 100 characters maximum
 type: text
 depends:
   - "on": "lot"
