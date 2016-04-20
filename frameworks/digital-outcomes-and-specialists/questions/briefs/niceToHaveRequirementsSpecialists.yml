@@ -3,20 +3,19 @@ id: niceToHaveRequirements
 question: Nice-to-have skills and experience
 question_advice: |
   To find the best specialist to meet your needs, you should:
-  
+
   - list as many types of skills and experience as you can
   - be specific about the skills and experience you're looking for
-  
-  If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and 
+
+  If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
   experience to exclude suppliers.
-  
+
   You must tell suppliers if you want to score individual criteria.
-  
+
   [Read more about how to set evaluation criteria](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria)
-  
-  List the skills and experience you’d like the specialist to have, 
+
+  List the skills and experience you’d like the specialist to have,
   eg experience working on government digital projects
-hint: "Optional"
 list_item_name: 'nice-to-have requirement'
 number_of_items: 20
 optional: true

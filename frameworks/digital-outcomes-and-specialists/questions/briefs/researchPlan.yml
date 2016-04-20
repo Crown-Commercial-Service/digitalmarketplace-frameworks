@@ -1,7 +1,6 @@
 name: Research plan
 question: Research plan
 question_advice: Describe your research plan and how it might change.
-hint: "Optional"
 optional: true
 type: textbox_large
 max_length_in_words: 100
