@@ -1,7 +1,6 @@
 name: Evening or weekend research
 question: Evening or weekend research
 question_advice: Tell the supplier if you need the research to happen outside the standard working day.
-hint: "Optional"
 optional: true
 type: checkboxes
 options:
