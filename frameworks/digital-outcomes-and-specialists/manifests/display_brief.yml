@@ -1,5 +1,5 @@
 -
-  name: Overview 
+  name: Overview
   questions:
     - specialistRole
     - summary
@@ -23,7 +23,7 @@
     - existingTeamOutcomes
     - existingTeamSpecialists
     - specialistWork
-    - phase 
+    - phase
 -
   name: About the research
   questions:
@@ -35,14 +35,14 @@
     - researchRounds
     - participantsPerRound
     - researchFrequency
-    - researchOutOfHours 
+    - researchOutOfHours
 -
   name: Work setup
   questions:
     - workplaceAddress
     - workingArrangements
     - securityClearance
-- 
+-
   name: Additional information
   questions:
     - additionalTerms
