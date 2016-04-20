@@ -9,14 +9,15 @@ question_advice: |
   eg ‘proposed approach and methodology - 15 points’
   
   Suggested criteria
-  * The proposed technical solution
-  * The proposed approach and methodology
-  * How the approach or solution meets your business or policy goal
-  * How the approach or solution meets user needs
-  * Estimated timeframes for the work
-  * How they’ve identified risks and dependencies and offered approaches to manage them
-  * Team structure and organisational makeup
-  * Value for money of the proposed solution
+  
+  - The proposed technical solution
+  - The proposed approach and methodology
+  - How the approach or solution meets your business or policy goal
+  - How the approach or solution meets user needs
+  - Estimated timeframes for the work
+  - How they’ve identified risks and dependencies and offered approaches to manage them
+  - Team structure and organisational makeup
+  - Value for money of the proposed solution
   
 type: list
 number_of_items: 20

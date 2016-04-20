@@ -1,0 +1,29 @@
+name: How many suppliers you want to evaluate
+id: numberOfSuppliers
+question: How many suppliers you want to evaluate
+question_advice: |
+  Try not take too many specialists through to the assessment stage.
+  
+  You must take the specialists who have the most nice-to-have skills and experience through.
+  
+  If the number of specialists who have the most skills and experience exceeds the number you give you here, 
+  you must ask for evidence of skills and experience.
+hint: "Minimum 3"
+type: text
+smaller: true
+limits:
+  min_value: 3
+  integer_only: true
+
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  - 
+    name: not_a_number
+    message: 'Enter a number 3 or over.'
+empty_message: Set number of suppliers to evaluate

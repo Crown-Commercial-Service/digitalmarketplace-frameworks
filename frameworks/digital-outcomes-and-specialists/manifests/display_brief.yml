@@ -41,8 +41,12 @@
 -
   name: Skills and experience
   questions:
-    - essentialRequirements
-    - niceToHaveRequirements
+    - essentialRequirementsOutcomes
+    - essentialRequirementsSpecialists
+    - essentialRequirementsParticipants
+    - niceToHaveRequirementsOutcomes
+    - niceToHaveRequirementsSpecialists
+    - niceToHaveRequirementsParticipants
 -
   name: Type of specialist required
   questions:

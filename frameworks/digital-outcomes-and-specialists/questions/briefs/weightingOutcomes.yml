@@ -10,11 +10,9 @@ depends:
   - "on": "lot"
     being:
       - digital-outcomes
-      - digital-specialists
 questions:
   - technicalWeightingOutcomes
-  - technicalWeightingSpecialists
-  - culturalWeightingOutcomesSpecialists
+  - culturalWeightingOutcomes
   - priceWeightingOutcomes
-  - priceWeightingSpecialists
+
 empty_message: Set weighting

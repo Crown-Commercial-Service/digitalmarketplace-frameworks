@@ -5,10 +5,12 @@ question_advice: |
   ‘technical merit and functional fit’. If a supplier has the right skills and experience, a good 
   understanding of your requirements, and works in an agile way, they should have the technical competence 
   to do the work.
+  
   You must assess a supplier’s technical competence by reviewing their:
-  * essential skills and experience
-  * nice-to-have skills and experience
-  * proposed solution
+  
+  - essential skills and experience
+  - nice-to-have skills and experience
+  - proposed solution
 hint: 'This can be between 10% and 70%'
 
 depends:
