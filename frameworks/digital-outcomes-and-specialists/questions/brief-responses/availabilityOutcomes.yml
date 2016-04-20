@@ -1,12 +1,13 @@
 name: Availability
-question: When would your specialist be available for work?
+id: availability
+question: When can the supplier start work?
 hint: 'eg 31/12/2016'
 type: text
 smaller: true
 depends:
   - "on": "lot"
     being:
-      - digital-specialists
+      - digital-outcomes
 validations:
   -
     name: answer_required

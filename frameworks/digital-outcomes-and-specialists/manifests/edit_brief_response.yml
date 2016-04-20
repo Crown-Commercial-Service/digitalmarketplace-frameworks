@@ -1,11 +1,12 @@
 -
   name: Apply to an opportunity
   editable: True
+  description: |
+    Buyers will use the information suppliers provide here to create a shortlist.
   questions:
     - respondToEmailAddress
     - essentialRequirements
     - niceToHaveRequirements
-    - availability
+    - availabilityOutcomes
+    - availabilitySpecialists
     - dayRate
-    - specialistName
-    - userParticipantResponse
