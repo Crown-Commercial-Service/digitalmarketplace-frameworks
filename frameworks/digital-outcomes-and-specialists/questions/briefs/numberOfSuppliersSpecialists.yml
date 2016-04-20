@@ -11,9 +11,6 @@ question_advice: |
 hint: "Minimum 3"
 type: text
 smaller: true
-limits:
-  min_value: 3
-  integer_only: true
 
 depends:
   - "on": "lot"
@@ -23,7 +20,4 @@ validations:
   -
     name: answer_required
     message: 'You need to answer this question.'
-  - 
-    name: not_a_number
-    message: 'Enter a number 3 or over.'
 empty_message: Set number of suppliers to evaluate
