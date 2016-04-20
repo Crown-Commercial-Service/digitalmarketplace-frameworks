@@ -4,17 +4,17 @@ hint: |
 
   You must include:
 
-  * the type of session you want to run, eg webinar, phone conference or meeting
-  * the date and time of the session
+  - the type of session you want to run, eg webinar, phone conference or meeting
+  - the date and time of the session
 
   Depending on the type of session you choose, you could also include:
 
-  * software needed
-  * the url
-  * the phone number
-  * the access code
-  * the address (including postcode)
-  * anything else needed to take part
+  - software needed
+  - the url
+  - the phone number
+  - the access code
+  - the address (including postcode)
+  - anything else needed to take part
 
   This information will only be available to eligible suppliers who have logged in.
 

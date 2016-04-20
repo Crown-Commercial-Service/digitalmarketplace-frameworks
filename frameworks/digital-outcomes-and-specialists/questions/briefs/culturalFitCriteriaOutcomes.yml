@@ -9,9 +9,10 @@ question_advice: |
   eg ‘transparent and collaborative when making decisions - 15 points’
   
   Suggested criteria
-  * Work as a team with our organisation and other suppliers
-  * Transparent and collaborative when making decisions
-  * Have a no-blame culture and encourage people to learn from their mistakes
+  
+  - Work as a team with our organisation and other suppliers
+  - Transparent and collaborative when making decisions
+  - Have a no-blame culture and encourage people to learn from their mistakes
   
 type: list
 number_of_items: 20
