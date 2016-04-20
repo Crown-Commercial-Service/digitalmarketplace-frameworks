@@ -1,42 +1,51 @@
 -
   name: Overview 
   questions:
+    - specialistRole
+    - summary
     - startDate
     - contractLength
+    - locationOutcomes
+    - locationSpecialists
+    - locationParticipants
+    - researchDates
+    - organisation
     - budgetRangeOutcomesParticipants
     - budgetRangeSpecialists
-    - outcome
-    - organisation
-    - specialistWork
-    - earlyMarketEngagement
-    - workAlreadyDone
-    - existingTeamOutcomes
-    - existingTeamSpecialists
-    - researchRounds
-    - participantsPerRound
-    - researchDates
-    - researchFrequency
-    - researchOutOfHours
-    - researchAddress
-    - accessRestrictions
-    - participantSpecification
-    - particpantAccessibilityNeeds
-    - researchPlan
-    - workplaceAddress
-    - securityClearance
-    - summary
 -
   name: About the work
   questions:
     - backgroundInformation
+    - outcome
     - endUsers
-    - phase
+    - earlyMarketEngagement
+    - workAlreadyDone
+    - existingTeamOutcomes
+    - existingTeamSpecialists
+    - specialistWork
+    - phase 
+-
+  name: About the research
+  questions:
+    - participantSpecification
+    - particpantAccessibilityNeeds
+    - researchPlan
+    - researchAddress
+    - accessRestrictions
+    - researchRounds
+    - participantsPerRound
+    - researchFrequency
+    - researchOutOfHours 
+-
+  name: Work setup
+  questions:
+    - workplaceAddress
     - workingArrangements
-    - locationOutcomes
-    - locationSpecialists
-    - locationParticipants
-    - successCriteriaOutcomes
-    - successCriteriaParticipants
+    - securityClearance
+- 
+  name: Additional information
+  questions:
+    - additionalTerms
 -
   name: Skills and experience
   questions:
@@ -47,16 +56,19 @@
     - niceToHaveRequirementsSpecialists
     - niceToHaveRequirementsParticipants
 -
-  name: Type of specialist required
-  questions:
-    - specialistRole
--
   name: Evaluation
   questions:
+    - numberOfSuppliersOutcomes
+    - numberOfSuppliersSpecialists
+    - numberOfSuppliersParticipants
+    - successCriteriaOutcomes
+    - successCriteriaParticipants
+    - culturalFitCriteriaOutcomes
+    - culturalFitCriteriaSpecialists
+    - priceCriteria
     - evaluationTypeOutcomes
     - evaluationTypeSpecialists
     - evaluationTypeParticipants
--
-  name: Additional information
-  questions:
-    - additionalTerms
+    - weightingOutcomes
+    - weightingSpecialists
+    - weightingParticipants
