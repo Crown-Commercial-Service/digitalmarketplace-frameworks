@@ -1,10 +1,12 @@
-name: Where the research will take place
+name: Region
+question: Where the research will take place
 id: location
-question: |
-  This should be the primary location where the research will take place.
-  
-  Suppliers have said where they’ll provide services.
-hint: "[View region map (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
+question_advice: |
+  This should be the primary location where they’ll be working.
+
+  Suppliers have said where they can recruit participants.
+
+  [View region map (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)
 type: radios
 options:
   - label: "Scotland"
