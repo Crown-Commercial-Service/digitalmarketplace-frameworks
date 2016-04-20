@@ -35,6 +35,7 @@ Question keys
     * `being` a list of acceptable values for the key. If service data key value matches one of the values in the `being` the
        question is kept, otherwise the question is removed from the section for the given service
 * `limits` a dictionary of validation/type requirements to limit the possible question values. Available fields:
+    * `type` string, the only recognised value is `number`, indicating that a `type: text` field should be given a numeric type in the generated schema
     * `min_value` integer, sets the minimum value for percentage questions
     * `max_value` integer, sets the maximum value for percentage questions
     * `integer_only` boolean, when `true` makes the percentage question accept only integer values instead of numbers
