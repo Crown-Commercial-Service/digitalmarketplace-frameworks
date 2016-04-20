@@ -1,6 +1,6 @@
-name: How many suppliers you want to evaluate
+name: How many suppliers will be evaluated
 id: numberOfSuppliers
-question: How many suppliers you want to evaluate
+question: How many suppliers will be evaluated
 question_advice: |
   Try not take too many suppliers through to the assessment stage.
   
