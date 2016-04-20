@@ -89,16 +89,28 @@ def empty_schema(schema_name):
 
 
 def text_property(question):
-    data = {
-        "type": "string",
-        "minLength": 0 if question.get('optional') else 1,
-    }
 
-    format_limit = question.get('limits', {}).get('format')
-    if format_limit:
-        data['format'] = format_limit
+    limits = question.get('limits', {})
+    if limits.get('type') == 'number':
+        data =  {
+            "minimum": limits.get('min_value') or 0,
+            "type": "integer" if limits.get('integer_only') else "number"
+        }
+        if limits.get('max_value') is not None:
+            data["maximum"] = limits['max_value']
+            data["exclusiveMaximum"] = not limits.get('integer_only'),
 
-    data.update(parse_question_limits(question))
+    else:
+        data = {
+            "type": "string",
+            "minLength": 0 if question.get('optional') else 1,
+        }
+
+        format_limit = question.get('limits', {}).get('format')
+        if format_limit:
+            data['format'] = format_limit
+
+        data.update(parse_question_limits(question))
 
     return {question['id']: data}
 

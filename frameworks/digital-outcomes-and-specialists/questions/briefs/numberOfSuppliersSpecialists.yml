@@ -12,6 +12,7 @@ hint: "Minimum 3"
 type: text
 smaller: true
 limits:
+  type: number
   min_value: 3
   integer_only: true
 

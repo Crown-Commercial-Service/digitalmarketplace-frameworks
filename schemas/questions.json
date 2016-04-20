@@ -189,6 +189,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "type": {"type": "string"},
         "format": {"type": "string"},
         "max_value": {"type": "number"},
         "min_value": {"type": "number"},
