@@ -30,7 +30,6 @@
   questions:
     - backgroundInformation
     - endUsers
-    - userNeeds
     - phase
     - workingArrangements
     - locationOutcomes
