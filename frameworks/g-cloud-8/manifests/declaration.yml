@@ -10,18 +10,18 @@
     question in this section, it's very unlikely that your bid will be accepted.
   questions:
     - termsOfParticipation
-    - PR2
+    - termsAndConditions
     - readUnderstoodGuidance
     - understandTool
     - understandHowToAskQuestions
-    - SQ1-3
-    - SQA2
-    - SQA3
-    - SQA4
-    - SQA5
-    - AQA3
-    - SQ5-1a
-    - SQC3
+    - servicesHaveOrSupport
+    - canProvideCloudServices
+    - hasSkillsAndResources
+    - accuratelyDescribed
+    - proofOfClaims
+    - MI
+    - employersInsurance
+    - equalityAndDiversity
 -
   name: About you
   editable: True
