@@ -23,36 +23,6 @@
     - employersInsurance
     - equalityAndDiversity
 -
-  name: About you
-  editable: True
-  description: >
-    The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the G-Cloud 8 framework.
-    
-    You can answer 'yes' or 'no' to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
-  questions:    
-    - SQ1-2a
-    - SQ1-2b
-    - SQ1-1a
-    - SQ1-1b
-    - SQ1-1ci
-    - SQ1-1cii
-    - SQ1-1k
-    - SQ1-1d-i
-    - SQ1-1d-ii
-    - SQ1-1e
-    - SQ1-1h
-    - SQ5-2a
-    - SQ1-1i-i
-    - SQ1-1i-ii
-    - SQ1-1j-i
-    - SQ1-1j-ii
-    - SQ1-1m
-    - SQE2a
-    - SQ1-1n
-    - SQ1-1o
-    - cyberEssentials
-    - cyberEssentialsPlus
--
   name: Grounds for mandatory exclusion
   editable: True
   description: >
@@ -67,10 +37,10 @@
     Check that your organisation complies with [Regulation 57(1) of the Public
     Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made).
   questions:
-    - SQ2-1abcd
-    - SQ2-1e
-    - SQ2-1f
-    - SQ2-1ghijklmn
+    - conspiracyCorruptionBribery
+    - fraudAndTheft
+    - terrorism
+    - organisedCrime
 -
   name: Grounds for discretionary exclusion
   editable: True
@@ -115,3 +85,33 @@
     - SQ4-1a
     - SQ4-1b
     - SQ4-1c
+-
+  name: About you
+  editable: True
+  description: >
+    The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the G-Cloud 8 framework.
+    
+    You can answer 'yes' or 'no' to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
+  questions:    
+    - SQ1-2a
+    - SQ1-2b
+    - SQ1-1a
+    - SQ1-1b
+    - SQ1-1ci
+    - SQ1-1cii
+    - SQ1-1k
+    - SQ1-1d-i
+    - SQ1-1d-ii
+    - SQ1-1e
+    - SQ1-1h
+    - SQ5-2a
+    - SQ1-1i-i
+    - SQ1-1i-ii
+    - SQ1-1j-i
+    - SQ1-1j-ii
+    - SQ1-1m
+    - SQE2a
+    - SQ1-1n
+    - SQ1-1o
+    - cyberEssentials
+    - cyberEssentialsPlus
