@@ -1,0 +1,9 @@
+name: Supplier
+question: Supplier name
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+      - user-research-participants
