@@ -1,6 +1,6 @@
 name: Day rate
-question: How much do you charge per day?
-hint: 'Please enter a number, not a range'
+question: What’s the specialist’s day rate?
+hint: Enter a number, not a range.
 
 type: pricing
 fields:

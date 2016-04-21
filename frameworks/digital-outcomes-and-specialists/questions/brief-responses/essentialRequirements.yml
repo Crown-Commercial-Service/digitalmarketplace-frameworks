@@ -1,6 +1,7 @@
 name: Essential requirements
-question: Do you fulfill the following essential requirements?
-hint: 'If you cannot meet all requirements, you will not be eligible for this work.'
+question: Do you have the essential skills and experience?
+question_advice: If you don’t have all the essential skills and experience, you won’t be eligible for this opportunity.
+
 type: boolean_list
 depends:
   - "on": "lot"
