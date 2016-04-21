@@ -1,5 +1,14 @@
-question: Question
-name: Question
+name: Supplier question
+question: Supplier question
+question_advice: |
+  **Publishing supplier questions**
+  
+  You must:
+  
+  - publish all questions that suppliers ask
+  - publish 1 question at a time
+  - remove any reference to the supplier’s name or any confidential information about the supplier
+
 type: textbox_large
 max_length_in_words: 100
 validations:
