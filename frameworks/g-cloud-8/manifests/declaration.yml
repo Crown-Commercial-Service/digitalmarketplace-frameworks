@@ -11,9 +11,9 @@
   questions:
     - termsOfParticipation
     - PR2
-    - PR5
-    - PR3
-    - PR4
+    - readUnderstoodGuidance
+    - understandTool
+    - understandHowToAskQuestions
     - SQ1-3
     - SQA2
     - SQA3
