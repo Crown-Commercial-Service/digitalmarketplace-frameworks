@@ -1,10 +1,9 @@
 question: >
   Does your organisation have, or
-  will it have prior to the framework award, employer’s liability insurance of at least
+  will it have prior to framework award, employer’s liability insurance of at least
   £5 million?
-
 hint:  Employer’s liability insurance is a legal requirement except for businesses
-  employing only the owner or close family members.
+  employing only the owner or close family members. You must answer 'Yes' or 'Not applicable' to be eligible for consideration for the G-Cloud framework.
 type: radios
 options:
   -
