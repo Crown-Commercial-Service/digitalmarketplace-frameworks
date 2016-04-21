@@ -1,16 +1,5 @@
 -
   name: Publish questions and answers
-  description: |
-    You must make sure that suppliers have access to the same information about the work.
-    This means all suppliers will have an equal opportunity to win the contract.
-    
-    You must publish all questions and answers.
-    
-    All published questions and answers will be public. They'll appear at the bottom of your published requirements
-    page.
-    
-    Read more about [how to manage supplier questions](https://www.gov.uk/guidance/how-to-answer-supplier-questions-about-your-digital-outcomes-and-specialists-requirements).
   editable: true
   questions:
-    - question
-    - answer
+    - questionAndAnswer
