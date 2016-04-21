@@ -1,11 +1,11 @@
 -
-  name: G-Cloud 8 essentials
+  name: Essentials
   editable: True
   description: >
     You must make this declaration to apply to G-Cloud 8. You can come back and change your answers at any time before
     5pm, 21 June 2016.
     
-    You must be able to truthfully answer 'yes' to every question under ‘G-Cloud 8 Essentials'
+    You must be able to truthfully answer 'yes' to every question under ‘Essentials'
     for your bid to be considered eligible. If you can't answer 'yes' to every
     question in this section, it's very unlikely that your bid will be accepted.
   questions:
@@ -16,7 +16,7 @@
     - understandHowToAskQuestions
     - servicesHaveOrSupport
     - canProvideCloudServices
-    - hasSkillsAndResources
+    - skillsAndResources
     - accuratelyDescribed
     - proofOfClaims
     - MI
@@ -68,23 +68,23 @@
     or if you fail to provide any such information it requests.
 
   questions:
-    - SQ2-2a
-    - SQ3-1a
-    - SQ3-1b
-    - SQ3-1c
-    - SQ3-1d
-    - SQ3-1e
-    - SQ3-1f
-    - SQ3-1g
-    - SQ3-1h-i
-    - SQ3-1h-ii
-    - SQ3-1i-i
-    - SQ3-1i-ii
-    - SQ3-1j
-    - SQ3-1k
-    - SQ4-1a
-    - SQ4-1b
-    - SQ4-1c
+    - taxEvasion
+    - environmentalSocialLabourLaw
+    - bankrupt
+    - graveProfessionalMisconduct
+    - distortingCompetition
+    - conflictOfInterest
+    - distortedCompetition
+    - significantOrPersistentDeficiencies
+    - seriousMisrepresentation
+    - witheldSupportingDocuments
+    - influencedContractingAuthority
+    - confidentialInformation
+    - misleadingInformation
+    - mitigatingFactors
+    - unspentTaxConvictions
+    - GAAR
+    - mitigatingFactors2
 -
   name: About you
   editable: True
@@ -93,25 +93,25 @@
     
     You can answer 'yes' or 'no' to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
   questions:    
-    - SQ1-2a
-    - SQ1-2b
-    - SQ1-1a
-    - SQ1-1b
-    - SQ1-1ci
-    - SQ1-1cii
-    - SQ1-1k
-    - SQ1-1d-i
-    - SQ1-1d-ii
-    - SQ1-1e
-    - SQ1-1h
-    - SQ5-2a
-    - SQ1-1i-i
-    - SQ1-1i-ii
-    - SQ1-1j-i
-    - SQ1-1j-ii
-    - SQ1-1m
-    - SQE2a
-    - SQ1-1n
-    - SQ1-1o
+    - primaryContact
+    - primaryContactEmail
+    - nameOfOrganisation
+    - registeredAddress
+    - tradingStatus
+    - tradingStatusOther
+    - tradingNames
+    - firstRegistered
+    - currentRegisteredCountry
+    - companyRegistrationNumber
+    - registeredVATNumber
+    - establishedInTheUK
+    - appropriateTradeRegisters
+    - appropriateTradeRegistersNumber
+    - licenceOrMemberRequired
+    - licenceOrMemberRequiredDetails
+    - organisationSize
+    - subcontracting
+    - contactNameContractNotice
+    - contactEmailContractNotice
     - cyberEssentials
     - cyberEssentialsPlus
