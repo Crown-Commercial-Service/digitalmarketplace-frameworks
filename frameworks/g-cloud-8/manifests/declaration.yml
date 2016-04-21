@@ -9,6 +9,7 @@
     for your bid to be considered eligible. If you can't answer 'yes' to every
     question in this section, it's very unlikely that your bid will be accepted.
   questions:
+    - termsOfParticipation
     - PR2
     - PR5
     - PR3
