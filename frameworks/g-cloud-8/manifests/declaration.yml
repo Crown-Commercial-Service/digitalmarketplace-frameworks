@@ -27,6 +27,8 @@
   editable: True
   description: >
     The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the G-Cloud 8 framework.
+    
+    You can answer 'yes' or 'no' to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
   questions:    
     - SQ1-2a
     - SQ1-2b
@@ -48,6 +50,8 @@
     - SQE2a
     - SQ1-1n
     - SQ1-1o
+    - cyberEssentials
+    - cyberEssentialsPlus
 -
   name: Grounds for mandatory exclusion
   editable: True
