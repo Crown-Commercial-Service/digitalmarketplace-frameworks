@@ -4,7 +4,8 @@ question_advice: |
   Describe the organistaion or policy goal the work supports, eg how a new law changes the way users receive 
   government payments.
   
-  Include any important dates. This will help suppliers understand any time constraints.
+  Include any important dates. You must say if you need the work to be done by a certain date.
+  This will help suppliers understand any time constraints.
 type: textbox_large
 max_length_in_words: 100
 depends:

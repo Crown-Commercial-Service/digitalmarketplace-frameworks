@@ -22,4 +22,4 @@ validations:
   -
     name: under_200_words
     message: 'Your answer must be no more than 200 words.'
-empty_message: Add restrictions
+empty_message: Describe participants

@@ -1,6 +1,7 @@
-name: Expected start date
-question: Expected start date
-question_advice: This is when the work will start
+name: Latest start date
+question: Latest start date
+question_advice: |
+  Say when you need suppliers to start work. When you shortlist, you can exclude suppliers who can't start by this date.
 hint: 'eg 31/12/2016'
 type: text
 depends:
@@ -15,4 +16,4 @@ validations:
   -
     name: under_character_limit
     message: "Your start date must be no more than 100 characters."
-empty_message: Set expected start date
+empty_message: Set latest start date
