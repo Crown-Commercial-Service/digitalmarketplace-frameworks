@@ -17,5 +17,5 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_50_words
-    message: 'Your answer must be no brief more than 50 words.'
+    message: 'Your answer must be no more than 50 words.'
 empty_message: Provide a summary of the work
