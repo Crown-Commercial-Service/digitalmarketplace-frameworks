@@ -48,6 +48,7 @@
     - additionalTerms
 -
   name: Skills and experience
+  summary_page_description: Buyers will use the essential and nice-to-have skills and experience to help them evaluate suppliers.
   questions:
     - essentialRequirementsOutcomes
     - essentialRequirementsSpecialists
@@ -56,7 +57,7 @@
     - niceToHaveRequirementsSpecialists
     - niceToHaveRequirementsParticipants
 -
-  name: Evaluation
+  name: How suppliers will be evaluated
   questions:
     - numberOfSuppliersOutcomes
     - numberOfSuppliersSpecialists
