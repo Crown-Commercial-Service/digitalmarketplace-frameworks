@@ -1,71 +1,117 @@
 -
-  name: G-Cloud 8 essentials
+  name: Essentials
   editable: True
+  description: >
+    You must make this declaration to apply to G-Cloud 8. You can come back and change your answers at any time before
+    5pm, 21 June 2016.
+    
+    You must be able to truthfully answer 'yes' to every question under ‘Essentials'
+    for your bid to be considered eligible. If you can't answer 'yes' to every
+    question in this section, it's very unlikely that your bid will be accepted.
   questions:
-    - PR2
-    - PR5
-    - PR3
-    - PR4
-    - SQ1-3
-    - SQA2
-    - SQA3
-    - SQA4
-    - SQA5
-    - AQA3
-    - SQ5-1a
-    - SQC3
+    - termsOfParticipation
+    - termsAndConditions
+    - readUnderstoodGuidance
+    - understandTool
+    - understandHowToAskQuestions
+    - servicesHaveOrSupport
+    - canProvideCloudServices
+    - skillsAndResources
+    - accuratelyDescribed
+    - proofOfClaims
+    - MI
+    - employersInsurance
+    - equalityAndDiversity
+-
+  name: Grounds for mandatory exclusion
+  editable: True
+  description: >
+    You must be able to truthfully answer 'no' to every question under 'Grounds for mandatory exclusion' for your bid to be
+    considered eligible. If you can't answer 'no' to every question in this
+    section, it's very unlikely that your bid will be accepted.
+
+
+    In questions [[conspiracyCorruptionBribery]] to [[organisedCrime]], 'anyone who represents your organisation' includes members of your group of economic
+    operators, their proposed subcontractors, and any directors, partners, or
+    any other person who has powers of representation, decision or control.
+    Check that your organisation complies with [Regulation 57(1) of the Public
+    Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made).
+  questions:
+    - conspiracyCorruptionBribery
+    - fraudAndTheft
+    - terrorism
+    - organisedCrime
+-
+  name: Grounds for discretionary exclusion
+  editable: True
+  description: >
+    You must be able to truthfully answer 'no' to every question under 'Grounds for discretionary exclusion'
+    for your bid to be considered eligible. If you can't answer 'no', your bid may not be accepted. If
+    you do answer 'yes', you must provide full details of any subsequent event or remedial action that
+    you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
+    you provide to consider whether or not you will be able to proceed any further with this procurement.
+
+
+    In questions [[taxEvasion]] to [[misleadingInformation]], 'partner organisations' include members
+    of your group of economic operators or their proposed subcontractors.
+
+
+    CCS can also exclude you if you are guilty of serious
+    misrepresentation in providing any information referred to within
+    regulations
+    [23](http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made),
+    [24](http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made),
+    [25](http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made),
+    [26](http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made) or
+    [27](http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made)
+    of the [Public Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/contents/made)
+    or if you fail to provide any such information it requests.
+
+  questions:
+    - taxEvasion
+    - environmentalSocialLabourLaw
+    - bankrupt
+    - graveProfessionalMisconduct
+    - distortingCompetition
+    - conflictOfInterest
+    - distortedCompetition
+    - significantOrPersistentDeficiencies
+    - seriousMisrepresentation
+    - witheldSupportingDocuments
+    - influencedContractingAuthority
+    - confidentialInformation
+    - misleadingInformation
+    - mitigatingFactors
+    - unspentTaxConvictions
+    - GAAR
+    - mitigatingFactors2
 -
   name: About you
   editable: True
   description: >
     The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the G-Cloud 8 framework.
+    
+    You can answer 'yes' or 'no' to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
   questions:    
-    - SQ1-2a
-    - SQ1-2b
-    - SQ1-1a
-    - SQ1-1b
-    - SQ1-1ci
-    - SQ1-1cii
-    - SQ1-1k
-    - SQ1-1d-i
-    - SQ1-1d-ii
-    - SQ1-1e
-    - SQ1-1h
-    - SQ5-2a
-    - SQ1-1i-i
-    - SQ1-1i-ii
-    - SQ1-1j-i
-    - SQ1-1j-ii
-    - SQ1-1m
-    - SQE2a
-    - SQ1-1n
-    - SQ1-1o
--
-  name: Grounds for mandatory exclusion
-  editable: True
-  questions:
-    - SQ2-1abcd
-    - SQ2-1e
-    - SQ2-1f
-    - SQ2-1ghijklmn
--
-  name: Grounds for discretionary exclusion
-  editable: True
-  questions:
-    - SQ2-2a
-    - SQ3-1a
-    - SQ3-1b
-    - SQ3-1c
-    - SQ3-1d
-    - SQ3-1e
-    - SQ3-1f
-    - SQ3-1g
-    - SQ3-1h-i
-    - SQ3-1h-ii
-    - SQ3-1i-i
-    - SQ3-1i-ii
-    - SQ3-1j
-    - SQ3-1k
-    - SQ4-1a
-    - SQ4-1b
-    - SQ4-1c
+    - primaryContact
+    - primaryContactEmail
+    - nameOfOrganisation
+    - registeredAddress
+    - tradingStatus
+    - tradingStatusOther
+    - tradingNames
+    - firstRegistered
+    - currentRegisteredCountry
+    - companyRegistrationNumber
+    - registeredVATNumber
+    - establishedInTheUK
+    - appropriateTradeRegisters
+    - appropriateTradeRegistersNumber
+    - licenceOrMemberRequired
+    - licenceOrMemberRequiredDetails
+    - organisationSize
+    - subcontracting
+    - contactNameContractNotice
+    - contactEmailContractNotice
+    - cyberEssentials
+    - cyberEssentialsPlus
