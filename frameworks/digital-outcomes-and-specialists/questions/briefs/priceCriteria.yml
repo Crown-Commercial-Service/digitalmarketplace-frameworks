@@ -19,11 +19,10 @@ options:
   -
     label: Capped time and materials
     description: >
-      The capped time and materials approach combines elements of the fixed price and time and materials methods. 
-      The supplier does the work on a day rate and expenses basis but you need to agree date which they can’t work 
-      past. Most buyers choose a capped time and materials approach for alpha, beta and live. They also tend to 
-      find that issuing lots of smaller statements of work, rather than one statement of work for each phase, 
-      gives them more flexibility.
+      A capped time and materials approach is the same as a time and materials approach but there’s a limit on how
+      much you have to pay for the work. If you reach the limit before the work is finished, the supplier has to
+      complete the work at their own cost. If the supplier finishes the work before they said they would, you still
+      have to pay the full amount.
 
 depends:
   - "on": "lot"
