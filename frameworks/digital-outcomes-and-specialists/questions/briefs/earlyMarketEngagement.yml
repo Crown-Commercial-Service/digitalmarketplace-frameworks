@@ -8,6 +8,8 @@ depends:
   - "on": "lot"
     being:
       - digital-outcomes
+      - digital-specialists
+      - user-research-participants
 validations:
   -
     name: under_200_words
