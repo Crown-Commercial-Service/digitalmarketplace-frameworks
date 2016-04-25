@@ -164,7 +164,7 @@ def boolean_list_property(question):
     return {question['id']: {
         "type": "array",
         "minItems": 0 if question.get('optional') else 1,
-        "maxItems": 10,
+        "maxItems": question.get('number_of_items', 10),
         "items": {
             "type": "boolean"
         }

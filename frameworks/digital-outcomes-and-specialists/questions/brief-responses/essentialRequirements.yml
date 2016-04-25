@@ -3,6 +3,7 @@ question: Do you have the essential skills and experience?
 question_advice: If you don’t have all the essential skills and experience, you won’t be eligible for this opportunity.
 
 type: boolean_list
+number_of_items: 20
 depends:
   - "on": "lot"
     being:

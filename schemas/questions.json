@@ -10,7 +10,7 @@
     },
     "number_of_items": {
       "properties": {
-        "type": {"enum": ["list"]}
+        "type": {"enum": ["list", "boolean_list"]}
       }
     },
     "fields": {
