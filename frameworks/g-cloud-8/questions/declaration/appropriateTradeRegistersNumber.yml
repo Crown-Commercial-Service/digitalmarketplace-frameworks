@@ -3,6 +3,5 @@ type: text
 validations:
   - name: answer_required
     message: You need to answer this question because you answered ‘yes’ to [[appropriateTradeRegisters]].
-
-    name: under_character_limit
+  - name: under_character_limit
     message: "Maximum 5000 characters."
