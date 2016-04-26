@@ -21,8 +21,8 @@ options:
     description: >
       A capped time and materials approach is the same as a time and materials approach but there’s a limit on how
       much you have to pay for the work. If you reach the limit before the work is finished, the supplier has to
-      complete the work at their own cost. If the supplier finishes the work before they said they would, you still
-      have to pay the full amount.
+      complete the work at their own cost. If the supplier finishes the work before they said they would, you only
+      pay them for time they took to do the work.
 
 depends:
   - "on": "lot"

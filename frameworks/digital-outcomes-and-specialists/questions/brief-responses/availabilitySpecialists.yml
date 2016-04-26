@@ -1,4 +1,4 @@
-name: Availability
+name: Date the specialist can start work
 id: availability
 question: When can the specialist start work?
 hint: 'eg 31/12/2016'
