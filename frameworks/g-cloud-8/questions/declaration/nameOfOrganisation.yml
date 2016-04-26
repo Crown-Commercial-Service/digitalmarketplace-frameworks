@@ -5,4 +5,4 @@ hint: For a group of economic operators, this will be the name of the lead organ
 validations:
   -
     name: under_character_limit
-    message: "Maximum 5000 characters."
+    message: "Your answer must be no more than than 5000 characters."
