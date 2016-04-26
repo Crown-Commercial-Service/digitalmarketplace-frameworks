@@ -106,7 +106,7 @@
     - configurationTracking
     - changeImpactAssessment
 -
-  name: Vulnerabilility management
+  name: Vulnerability management
   questions:
     - vulnerabilityAssessment
     - vulnerabilityMonitoring
