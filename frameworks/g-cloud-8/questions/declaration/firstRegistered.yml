@@ -3,4 +3,4 @@ type: text
 validations:
   -
     name: under_character_limit
-    message: "Maximum 5000 characters."
+    message: "Your answer must be no more than than 5000 characters."

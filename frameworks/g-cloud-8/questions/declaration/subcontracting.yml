@@ -1,4 +1,4 @@
-question: "Please confirm whether you will provide G-Cloud services:"
+question: "Please confirm whether you will provide G-Cloud 8 services:"
 type: checkboxes
 options:
   - label: yourself without the use of third parties (subcontractors)
