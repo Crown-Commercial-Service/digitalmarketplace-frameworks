@@ -17,8 +17,6 @@ options:
     -
         label: EU
     -
-        label: 'USA - Safe Harbor'
-    -
         label: 'Other countries with data protection treaties'
     -
         label: 'Rest of world'
