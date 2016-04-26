@@ -15,7 +15,7 @@ options:
     -
         label: 'Legacy SSL or TLS (HTTPS or VPN)'
     -
-        label: VLAN
+        label: 'VLAN'
     -
         label: 'Bonded fibre optic connections'
     -

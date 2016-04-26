@@ -5,9 +5,9 @@
     You must make this declaration to apply to G-Cloud 8. You can come back and change your answers at any time before
     5pm, 21 June 2016.
     
-    You must be able to truthfully answer 'yes' to every question under ‘Essentials'
-    for your bid to be considered eligible. If you can't answer 'yes' to every
-    question in this section, it's very unlikely that your bid will be accepted.
+    You must be able to truthfully answer ‘yes’ to every question under ‘Essentials’
+    for your bid to be considered eligible. If you can’t answer ‘yes’ to every
+    question in this section, it’s very unlikely that your bid will be accepted.
   questions:
     - termsOfParticipation
     - termsAndConditions
@@ -26,11 +26,11 @@
   name: Grounds for mandatory exclusion
   editable: True
   description: |
-    You must be able to truthfully answer 'no' to every question under 'Grounds for mandatory exclusion' for your bid
-    to be considered eligible. If you can't answer 'no' to every question in this section, it's very unlikely that
+    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your bid
+    to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very unlikely that
     your bid will be accepted.
 
-    In questions [[conspiracyCorruptionBribery]] to [[organisedCrime]], 'anyone who represents your organisation' 
+    In questions [[conspiracyCorruptionBribery]] to [[organisedCrime]], ‘anyone who represents your organisation’ 
     includes members of your group of economic operators, their proposed subcontractors, and any directors, partners,
     or any other person who has powers of representation, decision or control.
     
@@ -45,14 +45,14 @@
   name: Grounds for discretionary exclusion
   editable: True
   description: |
-    You must be able to truthfully answer 'no' to every question under 'Grounds for discretionary exclusion'
-    for your bid to be considered eligible. If you can't answer 'no', your bid may not be accepted.
+    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
+    for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
     
-    If you do answer 'yes', you must provide full details of any subsequent event or remedial action that
+    If you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
     you provide to consider whether or not you will be able to proceed any further with this procurement.
 
-    In questions [[taxEvasion]] to [[misleadingInformation]], 'partner organisations' include members
+    In questions [[taxEvasion]] to [[misleadingInformation]], ‘partner organisations’ include members
     of your group of economic operators or their proposed subcontractors.
 
     CCS can also exclude you if you are guilty of serious misrepresentation in providing any information referred
@@ -87,10 +87,10 @@
   name: About you
   editable: True
   description: |
-    The Crown Commercial Service will use the information you provide under 'About you' to process your application 
+    The Crown Commercial Service will use the information you provide under ‘About you’ to process your application 
     and manage your participation in the G-Cloud 8 framework.
     
-    You can answer 'yes' or 'no' to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
+    You can answer ‘yes’ or ‘no’ to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
   questions:    
     - primaryContact
     - primaryContactEmail

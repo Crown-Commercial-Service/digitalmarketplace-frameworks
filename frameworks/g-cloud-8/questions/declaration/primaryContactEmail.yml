@@ -1,4 +1,4 @@
-question: What is the primary contact's email address?
+question: What is the primary contact’s email address?
 type: text
 validations:
   -

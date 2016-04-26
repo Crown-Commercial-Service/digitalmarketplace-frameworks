@@ -1,4 +1,4 @@
-hint: 'Where are the service provider''s datacentres located? Choose all that apply.'
+hint: 'Where are the service provider’s datacentres located? Choose all that apply.'
 depends:
   -
     "on": lot

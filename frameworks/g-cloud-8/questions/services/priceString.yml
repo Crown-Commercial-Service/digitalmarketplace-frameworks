@@ -29,7 +29,7 @@ validations:
   -
     name: answer_required
     field: priceUnit
-    message: 'Pricing unit requires an answer. If none of the provided units apply, please choose ''Unit''.'
+    message: 'Pricing unit requires an answer. If none of the provided units apply, please choose ‘Unit’.'
   -
     name: not_money_format
     field: priceMin
