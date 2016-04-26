@@ -148,11 +148,11 @@
   editable: True
   step: 2
   description: |
-    You need to tell suppliers how you're going to evaluate them when you publish your requirements.
+    You need to tell suppliers how you’re going to evaluate them when you publish your requirements.
 
     To find the most suitable supplier, you must evaluate your shortlist on:
 
-    - technical competence, eg how well the supplier's skills or proposal meet your needs
+    - technical competence, eg how well the supplier’s skills or proposal meet your needs
     - ‘cultural fit’, eg how the supplier will work in your organisation
   questions:
     - weightingSpecialists
@@ -166,11 +166,11 @@
   editable: True
   step: 2
   description: |
-    You need to tell suppliers how you're going to evaluate them when you publish your requirements.
+    You need to tell suppliers how you’re going to evaluate them when you publish your requirements.
 
     To find the most suitable supplier, you must evaluate your shortlist on:
 
-    - technical competence, eg how well the supplier's skills or proposal meet your needs
+    - technical competence, eg how well the supplier’s skills or proposal meet your needs
     - availability, eg whether the supplier can recruit user research participants when you need them
     - the price of the proposal
   questions:
