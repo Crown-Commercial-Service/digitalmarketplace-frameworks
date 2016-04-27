@@ -1,4 +1,4 @@
-hint: 'Do you manage your third-party suppliers'' compliance with relevant security requirements?'
+hint: 'Do you manage your third-party suppliers’ compliance with relevant security requirements?'
 depends:
   -
     "on": lot

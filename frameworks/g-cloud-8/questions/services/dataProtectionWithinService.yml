@@ -11,11 +11,11 @@ assuranceApproach: 4answers-type1
 type: checkboxes
 options:
     -
-        label: 'VPN using TLS, version 1.2 or later'
+        label: 'TLS (HTTPS or VPN) version 1.2 or later'
     -
-        label: 'VPN using legacy SSL or TLS'
+        label: 'Legacy SSL or TLS (HTTPS or VPN)'
     -
-        label: VLAN
+        label: 'VLAN'
     -
         label: 'Bonded fibre optic connections'
     -
