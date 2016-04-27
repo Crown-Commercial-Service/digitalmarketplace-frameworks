@@ -1,5 +1,6 @@
 id: culturalWeighting
 question: 'Availability'
+question_advice: Availability is whether the supplier can recruit user research participants when you need them.
 hint: 'This can be between 10% and 70%'
 
 depends:

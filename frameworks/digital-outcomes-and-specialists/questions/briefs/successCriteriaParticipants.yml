@@ -1,6 +1,6 @@
 name: Proposal criteria
 id: successCriteria
-question: Proposed solution evaluation criteria
+question: Proposal criteria
 question_advice: |
   When you evaluate shortlisted suppliers on the technical competence of their proposal, 
   you must use the criteria you list here.
@@ -11,7 +11,7 @@ question_advice: |
   Suggested criteria
   
   - The proposed approach and methodology
-  - How the approach or solution meets your business or policy goal
+  - How the approach or solution meets your organisation’s policy or goal
   - How the approach or solution meets user needs
   - Estimated timeframes for the work
   - How they’ve identified risks and dependencies and offered approaches to manage them

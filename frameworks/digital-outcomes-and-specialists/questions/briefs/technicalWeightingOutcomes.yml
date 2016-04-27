@@ -9,7 +9,7 @@ question_advice: |
   
   - essential skills and experience
   - nice-to-have skills and experience
-  - proposed solution
+  - proposal
 hint: 'This can be between 10% and 75%'
 
 depends:
