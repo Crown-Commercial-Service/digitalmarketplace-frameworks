@@ -18,7 +18,10 @@ depends:
     being:
       - user-research-participants
 
-type: percentage
+type: number
+unit: "%"
+unit_in_full: "percent"
+unit_position: "after"
 limits:
   min_value: 10
   max_value: 70

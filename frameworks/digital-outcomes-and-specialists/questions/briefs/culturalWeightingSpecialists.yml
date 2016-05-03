@@ -10,7 +10,10 @@ depends:
     being:
       - digital-specialists
 
-type: percentage
+type: number
+unit: "%"
+unit_in_full: "percent"
+unit_position: "after"
 limits:
   min_value: 5
   max_value: 20
