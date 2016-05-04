@@ -1,2 +1,8 @@
+name: Registered address
 question: What is your organisation’s registered office address?
-type: text
+optional: false
+type: multiquestion
+questions:
+  - registeredAddressBuilding
+  - registeredAddressTown
+  - registeredAddressPostcode
