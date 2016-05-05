@@ -10,7 +10,10 @@ depends:
       - IaaS
       - iaas
 assuranceApproach: 3answers-type1
-type: percentage
+type: number
+unit: "%"
+unit_in_full: "percent"
+unit_position: "after"
 validations:
   -
     name: answer_required

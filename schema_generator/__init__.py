@@ -248,7 +248,7 @@ def pricing_property(question):
     return pricing
 
 
-def percentage_property(question):
+def number_property(question):
     limits = question.get('limits', {})
     return {question['id']: {
         "exclusiveMaximum": not limits.get('integer_only'),
@@ -279,7 +279,7 @@ QUESTION_TYPES = {
     'list': list_property,
     'boolean_list': boolean_list_property,
     'pricing': pricing_property,
-    'percentage': percentage_property,
+    'number': number_property,
     'multiquestion': multiquestion
 }
 

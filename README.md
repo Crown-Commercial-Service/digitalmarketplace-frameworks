@@ -35,9 +35,9 @@ Question keys
     * `being` a list of acceptable values for the key. If service data key value matches one of the values in the `being` the
        question is kept, otherwise the question is removed from the section for the given service
 * `limits` a dictionary of validation/type requirements to limit the possible question values. Available fields:
-    * `min_value` integer, sets the minimum value for percentage questions
-    * `max_value` integer, sets the maximum value for percentage questions
-    * `integer_only` boolean, when `true` makes the percentage question accept only integer values instead of numbers
+    * `min_value` integer, sets the minimum value for number questions (default 0)
+    * `max_value` integer, sets the maximum value for number questions (default 100)
+    * `integer_only` boolean, when `true` makes the number question accept only integer values instead of numbers
     * `format` sets JSON schema 'format' property for text questions (eg `email`, `uri`)
 * `number_of_items` sets the maximum number of items for list questions (and changes "Add another (N remaining)" list button, defaults to 10)
 * `list_item_name` [currently unused] text displayed in the "Add another ..." button and item names by the list-entry inputs
@@ -48,7 +48,7 @@ Question keys
 * `fields` a mapping of toolkit form field key to the service data key used for multi-input field types (only valid for `pricing`)
 * `max_length_in_words` sets the limit on question value length in words
 * `smaller` allows for smaller textboxes
-* `unit` a one-character string. The unit for smaller textboxes accepting a unit (ie, pricing or percentage entry textboxes)
+* `unit` a one-character string. The unit for smaller textboxes accepting a unit (ie, pricing or number entry textboxes)
 * `unit_in_full` unit name as a string
 * `unit_position` position of the `unit` character within the textbox.
     * Permitted values are `after` or `before`

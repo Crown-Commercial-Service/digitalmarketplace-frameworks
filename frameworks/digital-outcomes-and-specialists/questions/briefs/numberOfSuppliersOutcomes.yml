@@ -9,15 +9,20 @@ question_advice: |
   If the number of suppliers who have the most skills and experience exceeds the number you give you here, 
   you must ask for evidence of skills and experience.
 hint: "Minimum 3"
-type: text
-smaller: true
+type: number
+limits:
+  integer_only: true
+  min_value: 3
+  max_value: 10
 
 depends:
   - "on": "lot"
     being:
       - digital-outcomes
 validations:
-  -
-    name: answer_required
+  - name: answer_required
     message: 'You need to answer this question.'
+  - name: not_a_number
+    message: 'Number of suppliers to evaluate must be between 3 and 10.'
+
 empty_message: Set number of suppliers to evaluate

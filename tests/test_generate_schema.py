@@ -13,7 +13,7 @@ from dmutils.content_loader import ContentQuestion
 from hypothesis.settings import Settings
 from hypothesis import given, assume, strategies as st
 from schema_generator import text_property, uri_property, parse_question_limits, \
-    checkbox_property, percentage_property, multiquestion, \
+    checkbox_property, number_property, multiquestion, \
     build_question_properties, empty_schema, load_questions, \
     drop_non_schema_questions, radios_property, list_property, boolean_list_property, \
     price_string, pricing_property, generate_schema, SCHEMAS
@@ -336,8 +336,8 @@ def test_hours_for_price():
 
 
 @given(st.text())
-def test_percentage_property(id):
-    actual = percentage_property({'id': id, 'type': 'percentage'})
+def test_number_property(id):
+    actual = number_property({'id': id, 'type': 'number'})
     expected = {id: {
         "exclusiveMaximum": True,
         "maximum": 100,
@@ -348,11 +348,11 @@ def test_percentage_property(id):
 
 
 @given(st.integers(), st.integers(), st.booleans())
-def test_percentage_property_limits(max_value, min_value, integer_only):
-    actual = percentage_property({'id': 'percentage-question', 'type': 'percentage', 'limits': {
+def test_number_property_limits(max_value, min_value, integer_only):
+    actual = number_property({'id': 'number-question', 'type': 'number', 'limits': {
         'max_value': max_value, 'min_value': min_value, 'integer_only': integer_only
     }})
-    expected = {"percentage-question": {
+    expected = {"number-question": {
         "exclusiveMaximum": False if integer_only else True,
         "maximum": max_value,
         "minimum": min_value,
