@@ -3,7 +3,9 @@
   editable: True
   step: 1
   questions:
-    - title
+    - titleSpecialists
+    - titleOutcomes
+    - titleParticipants
 -
   name: Specialist role
   editable: True

@@ -1,6 +1,6 @@
 name: Specialist role
 question: Type of specialist you need
-question_advice: You can only post requirements for 1 specialist at a time.
+question_advice: You can only post requirements for 1 specialist role at a time, eg if you want to find 3 developers, you must post 3 separate requirements – 1 for each developer.
 type: radios
 options:
   -
