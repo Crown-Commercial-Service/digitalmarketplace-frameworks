@@ -4,8 +4,7 @@
   step: 1
   questions:
     - titleSpecialists
-    - titleOutcomes
-    - titleParticipants
+    - titleOutcomesParticipants
 -
   name: Specialist role
   editable: True
