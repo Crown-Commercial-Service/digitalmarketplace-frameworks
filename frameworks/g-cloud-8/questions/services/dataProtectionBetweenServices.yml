@@ -11,9 +11,9 @@ assuranceApproach: 4answers-type1
 type: checkboxes
 options:
     -
-        label: 'Encrypted PSN service'
+        label: 'PSN assured service'
     -
-        label: 'PSN service'
+        label: 'PSN protected service'
     -
         label: 'CPA Foundation VPN Gateway'
     -
