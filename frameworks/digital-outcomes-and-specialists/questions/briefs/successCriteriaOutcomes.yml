@@ -1,6 +1,6 @@
-name: Proposal criteria
+name: 'Technical comptence: proposed solution criteria'
 id: successCriteria
-question: Proposal criteria
+question: 'Technical comptence: proposed solution evaluation criteria'
 question_advice: |
   When you evaluate shortlisted suppliers on the technical competence of their proposal, 
   you must use the criteria you list here.
@@ -18,7 +18,7 @@ question_advice: |
   - How they’ve identified risks and dependencies and offered approaches to manage them
   - Team structure
   - Value for money of the proposal
-  
+
 type: list
 number_of_items: 20
 depends:
