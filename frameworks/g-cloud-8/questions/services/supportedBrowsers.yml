@@ -22,6 +22,8 @@ options:
     -
         label: 'Internet Explorer 10+'
     -
+        label: 'Microsoft Edge'
+    -
         label: Firefox
     -
         label: Chrome
