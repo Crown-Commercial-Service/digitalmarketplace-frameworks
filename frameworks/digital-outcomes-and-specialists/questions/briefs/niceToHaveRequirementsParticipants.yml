@@ -1,6 +1,6 @@
-name: Nice-to-have skills and experience
+name: 'Technical competence: nice-to-have skills and experience'
 id: niceToHaveRequirements
-question: Nice-to-have skills and experience
+question: 'Technical competence: nice-to-have skills and experience'
 question_advice: |
   To find the best supplier to meet your needs, you should:
 
@@ -9,6 +9,8 @@ question_advice: |
 
   If too many suppliers have all the essential skills and experience, you’ll use the nice-to-have skills and
   experience to exclude suppliers.
+
+  You’ll need to use the skills and experience you list here to evaluate suppliers’ technical competence.
 
   You must tell suppliers if you want to score individual criteria.
 
