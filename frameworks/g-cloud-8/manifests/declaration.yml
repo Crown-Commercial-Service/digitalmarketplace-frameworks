@@ -102,6 +102,7 @@
     - firstRegistered
     - currentRegisteredCountry
     - companyRegistrationNumber
+    - dunsNumber
     - registeredVATNumber
     - establishedInTheUK
     - appropriateTradeRegisters

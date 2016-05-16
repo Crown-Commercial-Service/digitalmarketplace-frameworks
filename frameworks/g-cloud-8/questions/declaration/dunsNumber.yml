@@ -1,0 +1,10 @@
+question: What is your organisation’s DUNS number?
+type: text
+hint: |
+  PLACEHOLDER - waiting to agree final copy.
+  There are 9 digits in a DUNS number.
+
+validations:
+  -
+    name: invalid_format
+    message: "You must enter a valid DUNS number."
