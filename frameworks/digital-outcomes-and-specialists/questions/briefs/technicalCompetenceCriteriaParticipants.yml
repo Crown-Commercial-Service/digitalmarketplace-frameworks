@@ -1,0 +1,29 @@
+name: Technical competence criteria
+question: Technical competence criteria
+question_advice: |
+  You must assess a supplier’s technical competence by reviewing their:
+
+  - essential skills and experience
+  - nice-to-have skills and experience
+  - proposal
+
+  If you want to score individual criteria, you must add points for all:
+
+  - essential skills and experience 
+  - nice-to-have skills and experience
+  - proposal criteria
+
+  The points you give for nice-to-have skills and experience must be lower than the points you give to the supplier’s essential skills and experience and proposal.
+
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+questions:
+  - essentialRequirementsParticipants
+  - niceToHaveRequirementsParticipants
+  - successCriteriaParticipants
+
+empty_message: Set technical competence criteria
