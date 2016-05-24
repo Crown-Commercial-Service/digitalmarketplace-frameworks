@@ -2,7 +2,7 @@ name: 'Essential skills and experience'
 id: essentialRequirements
 question: 'Essential skills and experience'
 question_advice: |
-  Suppliers who don’t have all the essential skills you list here will be automatically notified that their application was unsuccessful.
+  When suppliers apply they declare which of your ‘essential’ skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
 
   List all the specific skills or experience the supplier must have, 
   eg have experience designing services for users with low digital literacy.

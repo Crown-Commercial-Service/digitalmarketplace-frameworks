@@ -1,13 +1,10 @@
-name: How many specialists will be evaluated
+name: How many specialists you’ll shortlist
 id: numberOfSuppliers
-question: How many specialists will be evaluated
+question: How many specialists you’ll shortlist
 question_advice: |
-  Try not to take too many specialists through to the assessment stage.
-  
-  You must take the specialists who have the most nice-to-have skills and experience through.
-  
-  If the number of specialists who have the most skills and experience exceeds the number you give you here, 
-  you must ask for evidence of skills and experience.
+  This is how many specialists you’ll shortlist to evaluate.
+
+  [Read about how to shortlist](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers).
 hint: "Minimum 3"
 type: number
 limits:
@@ -23,6 +20,6 @@ validations:
   - name: answer_required
     message: 'You need to answer this question.'
   - name: not_a_number
-    message: 'Number of suppliers to evaluate must be between 3 and 15.'
+    message: 'Number of specialists to evaluate must be between 3 and 15.'
 
-empty_message: Set number of suppliers to evaluate
+empty_message: Set number of specialists to evaluate

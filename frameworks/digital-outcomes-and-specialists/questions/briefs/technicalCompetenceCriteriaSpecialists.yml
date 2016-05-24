@@ -1,19 +1,16 @@
 name: Technical competence criteria
 question: Technical competence criteria
 question_advice: |
-  You must assess a specialist’s technical competence by reviewing their:
+  Technical competence is how well the supplier can do the work you need them to do.
+
+  Evaluate specialists’ technical competence using criteria for:
 
   - essential skills and experience
   - nice-to-have skills and experience
-  - proposal
 
-  If you want to score individual criteria, you must add points for all:
+  If you want to score criteria individually, you must add points for everything.
 
-  - essential skills and experience 
-  - nice-to-have skills and experience
-  - proposal criteria
-
-  The points you give for nice-to-have skills and experience must be lower than the points you give to the specialist’s essential skills and experience and proposal.
+  The points you give for nice-to-have skills and experience must be lower than the points you give to the supplier’s essential skills and experience and proposal.
 
 optional: false
 type: multiquestion

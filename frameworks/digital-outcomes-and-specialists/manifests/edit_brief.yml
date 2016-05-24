@@ -57,33 +57,31 @@
     - summary
 
 -
-  name: Shortlist and evaluation criteria
+  name: Shortlist and evaluation process
   editable: True
   step: 2
   description: |
-    1\. Shortlist
+    There are 3 stages to finding the supplier that best meets your needs:
 
-    After you’ve published your requirements, suppliers will apply and tell you:
+    **1\. View suppliers who applied**<br />
+    When suppliers apply they declare which of your ‘essential’ and ‘nice-to-have’ skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
 
-    - when they can start work
-    - if they have the essential skills and experience
-    - which nice-to-have skills and experience they have
+    **2\. Create a shortlist**<br />
+    Once you have a list of eligible suppliers, you must shortlist the suppliers who:
 
-    You can shortlist suppliers who:
+    - have the most ‘nice-to-have’ skills and experience
+    - can start when you need them
 
-    - can start work when you need them to
-    - meet all the essential skills and experience
-    - provide the most nice-to-have skills and experience
+    You may need to ask for evidence of skills and experience if you have too many suppliers.
 
-    [Read how to shortlist](https://whitehall-admin.publishing.service.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers?cachebust=1459760956&preview=609577)
 
-    2\. Evaluate
+    **3\. Evaluate your shortlist**<br />
+    Ask the shortlisted suppliers for: 
 
-    To find the most suitable supplier, you must evaluate your shortlist on:
+      - evidence of their skills and experience
+      - a proposal explaining how they’ll deliver your requirements
 
-    - technical competence, eg how well the supplier’s skills or proposal meet your needs
-    - cultural fit, eg how the supplier will work in your organisation
-    - the price of the proposal
+    You must tell suppliers how you’ll evaluate and assess them.
 
   questions:
     - numberOfSuppliersOutcomes
@@ -98,29 +96,27 @@
   editable: True
   step: 2
   description: |
-    1\. Shortlist
+    There are 3 stages to finding the supplier that best meets your needs:
 
-    After you’ve published your requirements, specialists will apply and tell you:
+    **1\. View specialists who applied**<br />
+    When specialists apply they declare which of your ‘essential’ and ‘nice-to-have’ skills and experience they have. specialists who don’t meet your essential skills and experience are excluded.
 
-    - when they can start work
-    - if they have the essential skills and experience
-    - which nice-to-have skills and experience they have
+    **2\. Create a shortlist**<br />
+    Once you have a list of eligible specialists, you must shortlist the specialists who:
 
-    You can shortlist suppliers who:
+    - have the most ‘nice-to-have’ skills and experience
+    - can start when you need them
 
-    - can start work when you need them to
-    - meet all the essential skills and experience
-    - provide the most nice-to-have skills and experience
+    You may need to ask for evidence of skills and experience if you have too many specialists.
 
-    [Read how to shortlist](https://whitehall-admin.publishing.service.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers?cachebust=1459760956&preview=609577)
 
-    2\. Evaluate
+    **3\. Evaluate your shortlist**<br />
+    Ask the shortlisted specialists for: 
 
-    To find the most suitable supplier, you must evaluate your shortlist on:
+      - evidence of their skills and experience
+      - a proposal explaining how they’ll deliver your requirements
 
-    - technical competence, eg how well the specialist’s skills or proposal meet your needs
-    - cultural fit, eg how the supplier will work in your organisation
-    - the price of the proposal
+    You must tell specialists how you’ll evaluate and assess them.
 
   questions:
     - numberOfSuppliersSpecialists
@@ -134,29 +130,27 @@
   editable: True
   step: 2
   description: |
-    1\. Shortlist
+    There are 3 stages to finding the supplier that best meets your needs:
 
-    After you’ve published your requirements, suppliers will apply and tell you:
+    **1\. View suppliers who applied**<br />
+    When suppliers apply they declare which of your ‘essential’ and ‘nice-to-have’ skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
 
-    - when they can start work
-    - if they have the essential skills and experience
-    - which nice-to-have skills and experience they have
+    **2\. Create a shortlist**<br />
+    Once you have a list of eligible suppliers, you must shortlist the suppliers who:
 
-    You can shortlist suppliers who:
+    - have the most ‘nice-to-have’ skills and experience
+    - can start when you need them
 
-    - can start work when you need them to
-    - meet all the essential skills and experience
-    - provide the most nice-to-have skills and experience
+    You may need to ask for evidence of skills and experience if you have too many suppliers.
 
-    [Read how to shortlist](https://whitehall-admin.publishing.service.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers?cachebust=1459760956&preview=609577)
 
-    2\. Evaluate
+    **3\. Evaluate your shortlist**<br />
+    Ask the shortlisted suppliers for: 
 
-    To find the most suitable supplier, you must evaluate your shortlist on:
+      - evidence of their skills and experience
+      - a proposal explaining how they’ll deliver your requirements
 
-    - technical competence, eg how well the supplier’s skills or proposal meet your needs
-    - availability, whether the supplier can recruit user research participants when you need them.
-    - the price of the proposal
+    You must tell suppliers how you’ll evaluate and assess them.
 
   questions:
     - numberOfSuppliersParticipants
