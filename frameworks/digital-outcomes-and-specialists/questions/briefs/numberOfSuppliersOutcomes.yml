@@ -5,7 +5,7 @@ question_advice: |
   You must evaluate at least 3 suppliers.
 
   Read about [how many suppliers you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
-hint: 
+
 type: number
 limits:
   integer_only: true

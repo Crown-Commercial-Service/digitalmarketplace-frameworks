@@ -6,7 +6,6 @@ question_advice: |
 
    Read about [how many suppliers you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
 
-hint: 
 type: number
 limits:
   integer_only: true
