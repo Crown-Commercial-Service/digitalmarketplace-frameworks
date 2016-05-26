@@ -61,16 +61,16 @@
   editable: True
   step: 2
   description: |
-    There are 3 stages to finding the supplier that best meets your needs:
+    There are 3 stages to finding the supplier that best meets your needs.
 
     **1\. View suppliers who applied**<br />
-    When suppliers apply they declare which of your ‘essential’ and ‘nice-to-have’ skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
+    When suppliers apply, they declare which of your ‘essential’ and ‘nice&#8209;to&#8209;have’ skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
 
     **2\. Create a shortlist**<br />
-    Once you have a list of eligible suppliers, you must shortlist the suppliers who:
+    Once you have a list of eligible suppliers, you can exclude the suppliers who:
 
-    - have the most ‘nice-to-have’ skills and experience
-    - can start when you need them
+    - have the least ‘nice&#8209;to&#8209;have’ skills and experience
+    - can’t start when you need them to
 
     You may need to ask for evidence of skills and experience if you have too many suppliers.
 
@@ -79,7 +79,7 @@
     Ask the shortlisted suppliers for: 
 
       - evidence of their skills and experience
-      - a proposal explaining how they’ll deliver your requirements
+      - a proposal explaining how they plan to meet your requirements
 
     You must tell suppliers how you’ll evaluate and assess them.
 
@@ -96,25 +96,22 @@
   editable: True
   step: 2
   description: |
-    There are 3 stages to finding the supplier that best meets your needs:
+    There are 3 stages to finding the specialist that best meets your needs.
 
     **1\. View specialists who applied**<br />
-    When specialists apply they declare which of your ‘essential’ and ‘nice-to-have’ skills and experience they have. specialists who don’t meet your essential skills and experience are excluded.
+    When specialists apply, they declare which of your ‘essential’ and ‘nice&#8209;to&#8209;have’ skills and experience they have. Specialists who don’t meet your essential skills and experience are excluded.
 
     **2\. Create a shortlist**<br />
-    Once you have a list of eligible specialists, you must shortlist the specialists who:
+    Once you have a list of eligible specialists, you can exclude the specialists who:
 
-    - have the most ‘nice-to-have’ skills and experience
-    - can start when you need them
+    - have the least ‘nice&#8209;to&#8209;have’ skills and experience
+    - can’t start when you need them to
 
     You may need to ask for evidence of skills and experience if you have too many specialists.
 
 
     **3\. Evaluate your shortlist**<br />
-    Ask the shortlisted specialists for: 
-
-      - evidence of their skills and experience
-      - a proposal explaining how they’ll deliver your requirements
+    Ask the shortlisted specialists for evidence of their skills and experience.
 
     You must tell specialists how you’ll evaluate and assess them.
 
@@ -130,16 +127,16 @@
   editable: True
   step: 2
   description: |
-    There are 3 stages to finding the supplier that best meets your needs:
+    There are 3 stages to finding the supplier that best meets your needs.
 
     **1\. View suppliers who applied**<br />
-    When suppliers apply they declare which of your ‘essential’ and ‘nice-to-have’ skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
+    When suppliers apply, they declare which of your ‘essential’ and ‘nice&#8209;to&#8209;have’ skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
 
     **2\. Create a shortlist**<br />
-    Once you have a list of eligible suppliers, you must shortlist the suppliers who:
+    Once you have a list of eligible suppliers, you can exclude the suppliers who:
 
-    - have the most ‘nice-to-have’ skills and experience
-    - can start when you need them
+    - have the least ‘nice&#8209;to&#8209;have’ skills and experience
+    - can’t start when you need them to
 
     You may need to ask for evidence of skills and experience if you have too many suppliers.
 
@@ -148,7 +145,7 @@
     Ask the shortlisted suppliers for: 
 
       - evidence of their skills and experience
-      - a proposal explaining how they’ll deliver your requirements
+      - a proposal explaining how they plan to recruit particpants
 
     You must tell suppliers how you’ll evaluate and assess them.
 

@@ -1,7 +1,7 @@
 name: Evaluation weighting
 question: Evaluation weighting
 question_advice: |
-  Use weighting to say how important each evaluation criteria is.
+  Use the weightings to say how important each evaluation criteria is.
 
   Total must add up to 100%
 optional: false

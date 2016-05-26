@@ -6,14 +6,14 @@ question_advice: |
 
   Suggested criteria
   
-  - The proposed technical solution
-  - The proposed approach and methodology
+  - Technical solution
+  - Approach and methodology
+  - How the approach or solution meets user needs  
   - How the approach or solution meets your organisation’s policy or goal
-  - How the approach or solution meets user needs
   - Estimated timeframes for the work
   - How they’ve identified risks and dependencies and offered approaches to manage them
   - Team structure
-  - Value for money of the proposal
+  - Value for money
 
 type: list
 number_of_items: 20

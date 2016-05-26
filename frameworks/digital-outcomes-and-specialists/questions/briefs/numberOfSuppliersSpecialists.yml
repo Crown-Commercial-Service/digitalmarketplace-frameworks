@@ -1,11 +1,11 @@
-name: How many specialists you’ll shortlist
+name: Maximum number of specialists you’ll evaluate
 id: numberOfSuppliers
-question: How many specialists you’ll shortlist
+question: Maximum number of specialists you’ll evaluate
 question_advice: |
-  This is how many specialists you’ll shortlist to evaluate.
+  You must evaluate at least 3 specialists.
 
-  [Read about how to shortlist](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers).
-hint: "Minimum 3"
+  Read about [how many specialists you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
+hint: 
 type: number
 limits:
   integer_only: true
@@ -20,6 +20,6 @@ validations:
   - name: answer_required
     message: 'You need to answer this question.'
   - name: not_a_number
-    message: 'Number of specialists to evaluate must be between 3 and 15.'
+    message: 'You must evaluate at least 3, and no more than 15, specialists.'
 
-empty_message: Set number of specialists to evaluate
+empty_message: Set maximum number of specialists you’ll evaluate
