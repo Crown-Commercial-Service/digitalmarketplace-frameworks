@@ -5,6 +5,7 @@ question_advice: |
   You must evaluate at least 3 specialists.
 
   Read about [how many specialists you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
+
 type: number
 limits:
   integer_only: true

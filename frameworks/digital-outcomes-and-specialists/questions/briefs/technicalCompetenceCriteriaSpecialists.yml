@@ -12,6 +12,7 @@ question_advice: |
   You can give points to individual criteria, eg ‘have experience designing services for users with low digital literacy – 15 points’. If you choose to add points, you must do it for all individual criteria.
 
   The points you give for nice-to-have skills and experience must be lower than the points you give to the supplier’s essential skills and experience.
+
 optional: false
 type: multiquestion
 depends:
