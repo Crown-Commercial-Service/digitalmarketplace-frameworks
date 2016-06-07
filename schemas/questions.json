@@ -23,6 +23,11 @@
       "properties": {
         "type": {"enum": ["pricing"]}
       }
+    },
+    "before_summary_value": {
+      "properties": {
+        "type": {"enum": ["checkboxes"]}
+      }
     }
   },
   "properties": {
@@ -220,6 +225,10 @@
         "after",
         "before"
       ]
+    },
+    "before_summary_value": {
+      "type": "array",
+      "items": {"type": "string"}
     }
   },
   "additionalProperties": false,

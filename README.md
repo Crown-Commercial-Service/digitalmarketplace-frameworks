@@ -52,6 +52,8 @@ Question keys
 * `unit_in_full` unit name as a string
 * `unit_position` position of the `unit` character within the textbox.
     * Permitted values are `after` or `before`
+* `before_summary_value` lists additional values that will be added to the question values on the summary page. Can be used for
+  mandatory options or adding additional information to the question (only supported by 'checkboxes' questions at the moment)
 
 
 Section keys
