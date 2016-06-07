@@ -57,128 +57,102 @@
     - summary
 
 -
-  name: Shortlist criteria
+  name: Shortlist and evaluation process
   editable: True
   step: 2
   description: |
-    After you’ve published your requirements, suppliers will apply and tell you:
+    There are 3 stages to finding the supplier that best meets your needs.
 
-    - when they can start work
-    - if they have the essential skills and experience
-    - which nice-to-have skills and experience they have
+    ##1\. View suppliers who applied
+    When suppliers apply, they declare which of your ‘essential’ and ‘nice&#8209;to&#8209;have’ skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
 
-    You can shortlist the suppliers who:
+    ##2\. Create a shortlist
+    Once you have a list of eligible suppliers, you can exclude the suppliers who:
 
-    - can start work when you need them to
-    - meet all the essential skills and experience
-    - provide the most nice-to-have skills and experience
+    - have the least ‘nice&#8209;to&#8209;have’ skills and experience
+    - can’t start when you need them to
 
-    [Read about how to shortlist.](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers)
+    You may need to ask for evidence of skills and experience if you have too many suppliers.
+
+
+    ##3\. Evaluate your shortlist
+    Ask the shortlisted suppliers for: 
+
+      - evidence of their skills and experience
+      - a proposal explaining how they plan to meet your requirements
+
+    You must tell suppliers how you’ll evaluate and assess them.
+
   questions:
-    - essentialRequirementsOutcomes
-    - niceToHaveRequirementsOutcomes
     - numberOfSuppliersOutcomes
--
-  name: Shortlist criteria
-  editable: True
-  step: 2
-  description: |
-    After you’ve published your requirements, specialists will apply and tell you:
-
-    - when they can start work
-    - what their day rate is
-    - if they have the essential skills and experience
-    - which nice-to-have skills and experience they have
-
-    You can shortlist the specialists who:
-
-    - can start work when you need them to
-    - are within your budget
-    - meet all the essential skills and experience
-    - provide the most nice-to-have skills and experience
-
-    [Read about how to shortlist.](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers)
-  questions:
-    - essentialRequirementsSpecialists
-    - niceToHaveRequirementsSpecialists
-    - numberOfSuppliersSpecialists
--
-  name: Shortlist criteria
-  editable: True
-  step: 2
-  description: |
-    After you’ve published your requirements, suppliers will apply and tell you:
-
-    - if they have the essential skills and experience
-    - which nice-to-have skills and experience they have
-
-    You can shortlist the suppliers who:
-
-    - meet all the essential skills and experience
-    - provide the most nice-to-have skills and experience
-
-    [Read about how to shortlist.](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers)
-  questions:
-    - essentialRequirementsParticipants
-    - niceToHaveRequirementsParticipants
-    - numberOfSuppliersParticipants
-
--
-  name: Evaluation criteria
-  editable: True
-  step: 2
-  description: |
-    You need to tell suppliers how you’re going to evaluate them when you publish your requirements.
-
-    To find the most suitable supplier, you must evaluate your shortlist on:
-
-    - technical competence, using essential skills and experience, nice-to-have skills and experience, and their proposal
-    - ‘cultural fit’, eg how the supplier will work in your organisation
-    - the price of the proposal
-  questions:
     - weightingOutcomes
-    - essentialRequirementsOutcomes
-    - niceToHaveRequirementsOutcomes
-    - successCriteriaOutcomes
+    - technicalCompetenceCriteriaOutcomes
     - culturalFitCriteriaOutcomes
     - priceCriteria
     - evaluationTypeOutcomes
 
 -
-  name: Evaluation criteria
+  name: Shortlist and evaluation criteria
   editable: True
   step: 2
   description: |
-    You need to tell suppliers how you’re going to evaluate them when you publish your requirements.
+    There are 3 stages to finding the specialist that best meets your needs.
 
-    To find the most suitable supplier, you must evaluate your shortlist on:
+    ##1\. View specialists who applied
+    When specialists apply, they declare which of your essential and nice&#8209;to&#8209;have skills and experience they have. Specialists who don’t meet your essential skills and experience are excluded.
 
-    - technical competence, using the specialists’ essential skills and experience, and nice-to-have skills and experience
-    - ‘cultural fit’, eg how the supplier will work in your organisation
+    ##2\. Create a shortlist
+    Once you have a list of eligible specialists, you can exclude the specialists who:
+
+    - have the least ‘nice&#8209;to&#8209;have’ skills and experience
+    - can’t start when you need them to
+
+    You may need to ask for evidence of skills and experience if you have too many specialists.
+
+
+    ##3\. Evaluate your shortlist
+    Ask the shortlisted specialists for evidence of their skills and experience.
+
+    You must tell specialists how you’ll evaluate and assess them.
+
   questions:
+    - numberOfSuppliersSpecialists
     - weightingSpecialists
-    - essentialRequirementsSpecialists
-    - niceToHaveRequirementsSpecialists
+    - technicalCompetenceCriteriaSpecialists
     - culturalFitCriteriaSpecialists
     - evaluationTypeSpecialists
 
 -
-  name: Evaluation criteria
+  name: Shortlist and evaluation criteria
   editable: True
   step: 2
   description: |
-    You need to tell suppliers how you’re going to evaluate them when you publish your requirements.
+    There are 3 stages to finding the supplier that best meets your needs.
 
-    To find the most suitable supplier, you must evaluate your shortlist on:
+    ##1\. View suppliers who applied
+    When suppliers apply, they declare which of your essential and nice&#8209;to&#8209;have skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
 
-    - technical competence, using essential skills and experience, nice-to-have skills and experience, and their proposal
-    - availability, eg whether the supplier can recruit user research participants when you need them
-    - the price of the proposal
+    ##2\. Create a shortlist
+    Once you have a list of eligible suppliers, you can exclude the suppliers who:
+
+    - have the least nice&#8209;to&#8209;have skills and experience
+    - can’t start when you need them to
+
+    You may need to ask for evidence of skills and experience if you have too many suppliers.
+
+
+    ##3\. Evaluate your shortlist
+    Ask the shortlisted suppliers for: 
+
+      - evidence of their skills and experience
+      - a proposal explaining how they plan to recruit particpants
+
+    You must tell suppliers how you’ll evaluate and assess them.
+
   questions:
+    - numberOfSuppliersParticipants
     - weightingParticipants
-    - essentialRequirementsParticipants
-    - niceToHaveRequirementsParticipants
-    - successCriteriaParticipants
+    - technicalCompetenceCriteriaParticipants
     - evaluationTypeParticipants
 
 -

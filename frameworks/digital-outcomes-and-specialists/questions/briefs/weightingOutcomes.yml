@@ -1,8 +1,8 @@
-name: Weighting
+name: Evaluation weighting
 question: Evaluation weighting
 question_advice: |
-  Choose the weighting you want to apply to technical competence, cultural fit and price.
-  
+  Use the weightings to say how important each evaluation criteria is.
+
   Total must add up to 100%
 optional: false
 type: multiquestion
@@ -15,4 +15,4 @@ questions:
   - culturalWeightingOutcomes
   - priceWeightingOutcomes
 
-empty_message: Set weighting
+empty_message: Set evaluation weighting

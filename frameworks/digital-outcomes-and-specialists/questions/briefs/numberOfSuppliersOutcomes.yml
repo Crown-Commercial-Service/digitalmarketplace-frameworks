@@ -1,14 +1,11 @@
-name: How many suppliers will be evaluated
+name: Maximum number of suppliers you’ll evaluate
 id: numberOfSuppliers
-question: How many suppliers will be evaluated
+question: Maximum number of suppliers you’ll evaluate
 question_advice: |
-  Try not to take too many suppliers through to the assessment stage.
-  
-  You must take the suppliers who have the most nice-to-have skills and experience through.
-  
-  If the number of suppliers who have the most skills and experience exceeds the number you give you here, 
-  you must ask for evidence of skills and experience.
-hint: "Minimum 3"
+  You must evaluate at least 3 suppliers.
+
+  Read about [how many suppliers you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
+
 type: number
 limits:
   integer_only: true
@@ -23,6 +20,6 @@ validations:
   - name: answer_required
     message: 'You need to answer this question.'
   - name: not_a_number
-    message: 'Number of suppliers to evaluate must be between 3 and 15.'
+    message: 'You must evaluate at least 3, and no more than 15, suppliers.'
 
-empty_message: Set number of suppliers to evaluate
+empty_message: Set maximum number of suppliers you’ll evaluate
