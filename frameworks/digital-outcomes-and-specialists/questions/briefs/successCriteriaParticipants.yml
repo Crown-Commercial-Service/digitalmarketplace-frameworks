@@ -23,12 +23,12 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_30_words
-    message: 'Each criterion must be no more than 30 words.'
+    message: 'Criteria must be no more than 30 words.'
   -
     name: max_items_limit
     message: 'You must have 20 or fewer criteria.'
   -
     name: under_character_limit
-    message: 'Each criterion must be no more than 300 characters.'
+    message: 'Criteria must be no more than 300 characters.'
 
 empty_message: Choose evaluation criteria
