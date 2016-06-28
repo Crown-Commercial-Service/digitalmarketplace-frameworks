@@ -2,12 +2,22 @@ Digital Marketplace content
 ===========================
 YAML definitions of the Digital Marketplace’s procurement frameworks.
 
+The content here is pulled in to the frontend applications to display forms, and is also used to generate the JSON 
+schemas used by the API for validation (by running the `scripts/generate-schemas.py` script).
+
+<p align="center">
+  <img src="images/frameworks-content-triangle.png?raw=true" alt="Diagram showing how frameworks content is used by our apps">
+</p>
+
 Terminology
 -----------
 
-* Multiquestion: A multi-question is a question which contains a questions key, which lets us reuse the same summary
-  tables markup so that each row represents a group of related questions (rather than just being limited to one
-  question).
+* Multiquestion: A multi-question is a question which contains a `questions` key that is a list of sub-questions.
+  This lets us reuse the same summary tables markup so that each row represents a group of related questions 
+  (rather than just being limited to one question per row).
+  
+  For example, an `address` multiquestion could have the sub-questions `street`, `town` and `postcode`, and those
+  fields would be displayed together on the (multi)question page and in the summary table.
 
 Question keys
 -------------
@@ -56,10 +66,16 @@ Question keys
   mandatory options or adding additional information to the question (only supported by 'checkboxes' questions at the moment)
 
 
-Section keys
--------------
+Manifest files and section keys
+-------------------------------
 
-Manifest is a list of sections. Each section contains:
+Manifest files define a tree-like structure for content.  A manifest is a list of sections.
+
+<p align="center">
+  <img src="images/frameworks-manifest-file-tree-structure.png?raw=true" alt="Diagram showing how manifest files define structure">
+</p>
+
+Each section contains:
 
 * `name` name of the section (required)
 * `editable` controls whether section allows updates for the questions, boolean value
