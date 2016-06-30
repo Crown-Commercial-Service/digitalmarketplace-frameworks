@@ -1,11 +1,20 @@
+id: questionAndAnswerSessionDetails
 name: Question and answer session details
 question: Question and answer session details
 question_advice: |
-
-  You must include:
+  <br>
+  If you run a question and answer session, you must include:
 
   - the type of session you want to run, eg webinar, phone conference or meeting
-  - the date and time of the session (this should happen within 1 week of publishing your requirements)
+  - the date and time of your session
+
+  **When to run a question and answer session**
+
+  lf your requirements are live for 1 week, you must hold your session within the first 2 days of publishing.
+
+  If your requirements are live for 2 weeks, you must hold your session within the first 7 days of publishing.
+
+  **Information you should include**
 
   Depending on the type of session you choose, you could also include:
 
@@ -26,9 +35,7 @@ max_length_in_words: 100
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
       - digital-specialists
-      - user-research-participants
 validations:
   -
     name: answer_required

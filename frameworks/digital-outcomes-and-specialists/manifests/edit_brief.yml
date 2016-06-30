@@ -156,6 +156,13 @@
     - evaluationTypeParticipants
 
 -
+  name: Set how long your requirements will be live for
+  editable: True
+  step: 3
+  questions:
+    - opportunityLengthSpecialists
+
+-
   name: Describe question and answer session
   editable: True
   step: 3
@@ -168,4 +175,5 @@
 
     Providing a question and answer session means you can explain your needs and answer any questions quickly.
   questions:
-    - questionAndAnswerSessionDetails
+    - questionAndAnswerSessionDetailsOutcomesParticipants
+    - questionAndAnswerSessionDetailsSpecialists
