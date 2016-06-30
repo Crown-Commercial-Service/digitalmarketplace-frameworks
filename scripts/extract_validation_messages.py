@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 
-import yaml
-import os
+import yaml, os, shutil
 
 dir = os.getcwd()
-if os.path.isfile('{}/output.yml'.format(dir)):
-    os.remove('{}/output.yml'.format(dir))
+if os.path.exists('{}/validation_messages'.format(dir)):
+    shutil.rmtree('{}/validation_messages'.format(dir))
+
+os.makedirs('{}/validation_messages'.format(dir))
+
 
 def create_data_packet(file_path, doc):
     return dict(
@@ -30,18 +32,19 @@ def get_file_list(directory):
         output.append(with_paths)
     return [val for sublist in output for val in sublist]
 
-def read_and_write_files(file_paths):
+def read_and_write_files(file_paths, output_file_name):
     for file_path in file_paths:
         with open(file_path, 'r') as f:
             doc = yaml.load(f)
             if doc.get('validations'):
                 data = create_data_packet(file_path, doc)
-                with open ('output.yml', 'a') as output_file:
+                with open (output_file_name, 'a') as output_file:
                     write_back_to_file(output_file, data)
 
 
 if __name__ == '__main__':
     for dirName, subdirList, fileList in os.walk('{}/../frameworks'.format(dir)):
         if directory_is_questions_(dirName):
+            output_file_name = '{}/validation_messages/{}.yml'.format(dir, dirName.split('/')[-2])
             file_paths = get_file_list(dirName)
-            read_and_write_files(file_paths)
+            read_and_write_files(file_paths, output_file_name)
