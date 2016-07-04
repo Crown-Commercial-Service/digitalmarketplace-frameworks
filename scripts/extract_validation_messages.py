@@ -3,6 +3,7 @@
 import yaml, os, shutil
 
 dir = os.getcwd()
+
 if os.path.exists('{}/validation_messages'.format(dir)):
     shutil.rmtree('{}/validation_messages'.format(dir))
 
