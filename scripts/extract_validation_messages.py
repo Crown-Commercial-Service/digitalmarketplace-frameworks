@@ -20,7 +20,7 @@ def create_data_packet(file_path, doc):
     )
 
 def write_back_to_file(ouput_file, data):
-    ouput_file.write( yaml.dump(data, default_flow_style=False, allow_unicode=True) )
+    ouput_file.write( yaml.dump(data, default_style='>', default_flow_style=False, allow_unicode=True) )
     ouput_file.write('\n')
 
 def directory_is_questions_(dirName):
