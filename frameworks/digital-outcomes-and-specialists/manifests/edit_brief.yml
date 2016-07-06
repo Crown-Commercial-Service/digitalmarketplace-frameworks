@@ -76,7 +76,7 @@
 
 
     ##3\. Evaluate your shortlist
-    Ask the shortlisted suppliers for: 
+    Ask the shortlisted suppliers for:
 
       - evidence of their skills and experience
       - a proposal explaining how they plan to meet your requirements
@@ -142,7 +142,7 @@
 
 
     ##3\. Evaluate your shortlist
-    Ask the shortlisted suppliers for: 
+    Ask the shortlisted suppliers for:
 
       - evidence of their skills and experience
       - a proposal explaining how they plan to recruit particpants
@@ -160,7 +160,7 @@
   editable: True
   step: 3
   questions:
-    - opportunityLengthSpecialists
+    - requirementsLengthSpecialists
 
 -
   name: Describe question and answer session
