@@ -1,14 +1,27 @@
 #!/usr/bin/env python
+"""Extract validation messages from the frameworks questions content.
 
-import yaml, os, shutil
+This script retrieves all the validation messages within the frameworks repo for
+all the apps. There are small number of validation messages in the frontend apps
+which will need extracting manually for completeness.
 
-dir = os.path.dirname(__file__)
+Specify the output path for the files as below, and a directory will be created
+with a separate yaml file for each framework, containing that frameworks
+validation messages.
 
-if os.path.exists('{}/validation_messages'.format(dir)):
-    shutil.rmtree('{}/validation_messages'.format(dir))
+Usage:
+    extract_validation_messages.py --output-path=<output_path>
 
-os.makedirs('{}/validation_messages'.format(dir))
+"""
+import yaml, os, shutil, sys
+from docopt import docopt
 
+def check_and_create_output_directory(path):
+    if os.path.exists('{}/validation_messages'.format(path)):
+        print('{}/validation_messages already exists. Please specify a different output path.'.format(path))
+        sys.exit()
+
+    os.makedirs('{}/validation_messages'.format(path))
 
 def create_data_packet(file_path, doc):
     return dict(
@@ -44,8 +57,11 @@ def read_and_write_files(file_paths, output_file_name):
 
 
 if __name__ == '__main__':
+    dir = os.path.dirname(__file__)
+    arguments = docopt(__doc__)
+    check_and_create_output_directory(arguments['--output-path'])
     for dirName, subdirList, fileList in os.walk('{}/../frameworks'.format(dir)):
         if directory_is_questions_(dirName):
-            output_file_name = '{}/validation_messages/{}.yml'.format(dir, dirName.split('/')[-2])
+            output_file_name = '{}/validation_messages/{}.yml'.format(arguments['--output-path'], dirName.split('/')[-2])
             file_paths = get_file_list(dirName)
             read_and_write_files(file_paths, output_file_name)
