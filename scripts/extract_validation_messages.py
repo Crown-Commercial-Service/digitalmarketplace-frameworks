@@ -57,10 +57,10 @@ def read_and_write_files(file_paths, output_file_name):
 
 
 if __name__ == '__main__':
-    dir = os.path.dirname(__file__)
+    current_dir = os.path.dirname(__file__)
     arguments = docopt(__doc__)
     check_and_create_output_directory(arguments['--output-path'])
-    for dirName, subdirList, fileList in os.walk('{}/../frameworks'.format(dir)):
+    for dirName, subdirList, fileList in os.walk('{}/../frameworks'.format(current_dir)):
         if directory_is_questions_(dirName):
             output_file_name = '{}/validation_messages/{}.yml'.format(arguments['--output-path'], dirName.split('/')[-2])
             file_paths = get_file_list(dirName)
