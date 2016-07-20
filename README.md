@@ -80,7 +80,10 @@ Each section contains:
 * `name` name of the section (required)
 * `editable` controls whether section allows updates for the questions, boolean value
 * `edit_questions` controls whether individual questions can be edited separately (only supported by `multiquestion` questions)
-* `description` text to display after the section name
+* `description` could be either:
+  * A text to display after the section name
+  * A dictionary where keys are lot slugs and values are the descriptions that should be used for the given lot.
+    `default` key can be used to set a common description that will be used if there's no key for the given lot.
 * `summary_page_description` text to display between the summary table heading and the table body
 * `step` decides how sections are grouped on (brief) overview pages
 * `questions` a list of section questions (required)
