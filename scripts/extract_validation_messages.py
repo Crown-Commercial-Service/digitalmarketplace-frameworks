@@ -19,7 +19,7 @@ from docopt import docopt
 def check_and_create_output_directory(path):
     if os.path.exists('{}/validation_messages'.format(path)):
         print('{}/validation_messages already exists. Please specify a different output path.'.format(path))
-        sys.exit()
+        sys.exit(1)
 
     os.makedirs('{}/validation_messages'.format(path))
 
