@@ -5,6 +5,6 @@ python:
 install:
   - pip install -r requirements_for_test.txt
 script:
-  - py.test
+  - make test
 notifications:
   email: false
