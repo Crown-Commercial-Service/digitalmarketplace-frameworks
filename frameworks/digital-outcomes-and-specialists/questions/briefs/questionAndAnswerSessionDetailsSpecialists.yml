@@ -2,7 +2,6 @@ id: questionAndAnswerSessionDetails
 name: Question and answer session details
 question: Question and answer session details
 question_advice: |
-  <br>
   If you run a question and answer session, you must include:
 
   - the type of session you want to run, eg webinar, phone conference or meeting
