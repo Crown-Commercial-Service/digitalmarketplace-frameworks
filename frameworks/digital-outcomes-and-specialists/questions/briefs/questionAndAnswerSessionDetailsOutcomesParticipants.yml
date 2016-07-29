@@ -1,8 +1,9 @@
+id: questionAndAnswerSessionDetails
 name: Question and answer session details
 question: Question and answer session details
 question_advice: |
 
-  You must include:
+  You must give details of what type of session you want to hold, when it is and any details the attendees need.
 
   - the type of session you want to run, eg webinar, phone conference or meeting
   - the date and time of the session (this should happen within 1 week of publishing your requirements)
@@ -27,7 +28,6 @@ depends:
   - "on": "lot"
     being:
       - digital-outcomes
-      - digital-specialists
       - user-research-participants
 validations:
   -
