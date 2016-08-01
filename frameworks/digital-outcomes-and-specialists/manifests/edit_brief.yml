@@ -156,7 +156,7 @@
     - evaluationTypeParticipants
 
 -
-  name: Set how long your requirements will be live for
+  name: Set how long your requirements will be open for
   editable: True
   step: 3
   questions:

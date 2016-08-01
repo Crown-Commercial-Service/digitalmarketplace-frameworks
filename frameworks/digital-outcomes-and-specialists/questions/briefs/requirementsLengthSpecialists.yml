@@ -1,5 +1,5 @@
-name: Set how long your requirements will be live for
-question: Set how long your requirements will be live for
+name: Set how long your requirements will be open for
+question: Set how long your requirements will be open for
 id: requirementsLength
 type: radios
 options:
