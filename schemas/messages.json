@@ -4,7 +4,8 @@
   "type": "object",
   "anyOf": [
     {"$ref": "#/definitions/dates"},
-    {"$ref": "#/definitions/frameworkStates"}
+    {"$ref": "#/definitions/frameworkStates"},
+    {"$ref": "#/definitions/urls"}
   ],
   "definitions": {
     "dates": {
@@ -33,6 +34,15 @@
           "type": "object"
         }
       },
+      "additionalProperties": false
+    },
+    "urls": {
+      "properties": {
+        "framework_url": {"type": "string"}
+      },
+      "required": [
+        "framework_url"
+      ],
       "additionalProperties": false
     }
   }
