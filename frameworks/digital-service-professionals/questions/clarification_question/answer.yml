@@ -1,0 +1,22 @@
+name: Your answer
+question: Your answer
+question_advice: |
+  **Publishing answers**
+  
+  You must:
+  
+  - answer all supplier questions
+  - give an individual response to each question even when questions are similar
+  - publish 1 answer at a time
+  - answer all questions at least 1 working day before the deadline to give suppliers time to decide if the work is
+    right for them
+  - answer questions within 2 to 3 working days
+  - answer questions more frequently when the deadline is approaching
+
+type: textbox_large
+max_length_in_words: 100
+validations:
+  - name: answer_required
+    message: You must enter an answer.
+  - name: under_100_words
+    message: Your answer must be no more than 100 words.

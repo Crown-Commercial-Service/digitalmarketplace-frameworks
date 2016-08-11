@@ -1,0 +1,13 @@
+-
+  name: Apply for this opportunity
+  editable: True
+  description:
+    default: Buyers will use the information suppliers provide here to create a shortlist.
+    digital-professionals: You can only offer 1 specialist for this opportunity. Buyers will use the information suppliers provide here to create a shortlist.
+  questions:
+    - respondToEmailAddress
+    - essentialRequirements
+    - niceToHaveRequirements
+    - availabilityOutcomes
+    - availabilitySpecialists
+    - dayRate

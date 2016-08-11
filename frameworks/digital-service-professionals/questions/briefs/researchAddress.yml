@@ -1,0 +1,23 @@
+name: Research location
+question: Specific place where the research will happen
+question_advice: |
+  Include:
+  
+   - the town or city where the research will happen
+   - more than one address if appropriate
+   - a description of the research envrionment, eg whether the research will happen in a lab, at a participants home, 
+     or in a neutral location like a community centre
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'
+empty_message: Add location

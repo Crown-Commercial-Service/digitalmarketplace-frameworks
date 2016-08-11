@@ -1,0 +1,15 @@
+name: Any work that’s already been done
+question: Any work that’s already been done
+question_advice: If you’ve already done some work, eg completed a discovery phase, you should describe it here.
+type: textbox_large
+optional: true
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'
+empty_message: Describe any work that has already been done

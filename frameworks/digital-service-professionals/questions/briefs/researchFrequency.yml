@@ -1,0 +1,17 @@
+name: How often research will happen
+question: How often research will happen
+question_advice: Include the days or dates you expect research to happen, eg Tuesdays, every 2 weeks.
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'
+empty_message: Describe how often research will happen
