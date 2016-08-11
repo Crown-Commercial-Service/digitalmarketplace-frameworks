@@ -1,0 +1,38 @@
+name: 'Proposal criteria'
+id: successCriteria
+question: 'Proposal criteria'
+question_advice: |
+  When you evaluate shortlisted suppliers on the technical competence of their proposal, you must use the criteria you list here.
+
+  Suggested criteria
+  
+  - Technical solution
+  - Approach and methodology
+  - How the approach or solution meets user needs  
+  - How the approach or solution meets your organisation’s policy or goal
+  - Estimated timeframes for the work
+  - How they’ve identified risks and dependencies and offered approaches to manage them
+  - Team structure
+  - Value for money
+
+type: list
+number_of_items: 20
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_30_words
+    message: 'Criteria must be no more than 30 words.'
+  -
+    name: max_items_limit
+    message: 'You must have 20 or fewer criteria.'
+  -
+    name: under_character_limit
+    message: 'Criteria must be no more than 300 characters.'
+
+empty_message: Choose proposal criteria

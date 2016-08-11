@@ -1,0 +1,29 @@
+question: What types of security can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: CESG information assurance certification
+    description: Offer services as a CESG Certified Professional - the government's approved standard for cyber security professionals. 
+  - label: Firewall audit
+    description: Ensure deployed firewall rules match security policies, and identify where the rules should be changed.
+  - label: Incident response and forensics
+    description: Prepare for, and respond to a security incident. Determine what has gone wrong and how to resolve the incident. Understand and comply with forensic requirements.
+  - label: Infrastructure review
+    description: Review infrastructure to ensure the hardware and software meets security policies, and is appropriately configured and patched.
+  - label: IT health check
+    description: Conduct penetration testing using CESG-approved firms.
+  - label: Risk management
+    description: Identify, analyse, document, mitigate and monitor the risks of a system.
+  - label: Security policy
+    description: Evaluate and develop security plans and policies to protect digital assets.
+  - label: Threat modelling
+    description: Take a structured approach to analysing the security needs of a system or service.
+  - label: Vulnerability and penetration testing
+    description: Analyse and test a service for security problems.
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
