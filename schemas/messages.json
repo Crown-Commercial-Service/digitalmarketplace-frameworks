@@ -5,7 +5,8 @@
   "anyOf": [
     {"$ref": "#/definitions/dates"},
     {"$ref": "#/definitions/frameworkStates"},
-    {"$ref": "#/definitions/urls"}
+    {"$ref": "#/definitions/urls"},
+    {"$ref": "#/definitions/contract_variation"}
   ],
   "definitions": {
     "dates": {
@@ -42,6 +43,53 @@
       },
       "required": [
         "framework_url"
+      ],
+      "additionalProperties": false
+    },
+    "contract_variation": {
+      "properties": {
+        "variation_description": {
+          "type": "string"
+        },
+        "not_agreed_extra": {
+          "type": "string"
+        },
+        "agreed_extra": {
+          "type": "string"
+        },
+        "framework_agreement_changes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "clause": {
+                "type": "string"
+              },
+              "change": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "call_off_contract_changes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "clause": {
+                "type": "string"
+              },
+              "change": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "variation_description",
+        "framework_agreement_changes",
+        "call_off_contract_changes"
       ],
       "additionalProperties": false
     }

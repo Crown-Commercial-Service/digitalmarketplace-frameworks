@@ -1,0 +1,61 @@
+variation_description: |
+    The Crown Commercial Service (CCS) proposes to make some minor changes to the framework agreement and call-off 
+    contract (reference: RM1557viii-15-07-2016).
+    
+    These minor changes were agreed in the answers provided to suppliers while G-Cloud 8 applications were open. 
+    The changes make it easier for suppliers to work with government and are listed here.
+    
+not_agreed_extra: |
+    The changes were not included in the final documents that were signed on behalf of [[SUPPLIER_NAME]].
+    
+    To put these changes into effect, we need you to review and accept the changes here.
+    You can [download a PDF version of these changes](/suppliers/frameworks/g-cloud-8/files/g-cloud-8-contract-variation.pdf).
+
+agreed_extra: |
+    [Download a version of these changes (PDF)](/suppliers/frameworks/g-cloud-8/files/g-cloud-8-contract-variation.pdf).
+
+confirmation_message: |
+    You have accepted the proposed changes. You will be notified when they come into effect. 
+    Until then, you must sell your services using the published framework agreement and call-off contract.
+
+framework_agreement_changes:
+    - 
+      clause: 4.1.5
+      change: |
+          4.6.5 Subject to Clauses <span class="visuallyhidden">start insertion</span> <ins>4.6.1 and</ins>
+          <span class="visuallyhidden">end insertion</span> 4.6.4, the Supplier shall be liable for the following types
+          of loss, damage, cost <span class="visuallyhidden">start deletion</span> <del>or expense</del> 
+          <span class="visuallyhidden">end deletion</span> which shall be regarded as direct and shall be recoverable 
+          by the Authority:
+          
+          - any regulatory losses or fines arising directly from a breach by the Supplier of any Laws; and
+          - subject to Clause 4.6.3 any additional operational and/or administrative costs and expenses arising from any Material Breach.
+    - 
+      clause: 4.21.21
+      change: |
+          4.21.21 Subject to Clauses <span class="visuallyhidden">start insertion</span> <ins>4.6.1 and</ins>
+          <span class="visuallyhidden">end insertion</span> 4.6.4, the Supplier shall be liable for the following types
+          of loss, damage, cost <span class="visuallyhidden">start deletion</span> <del>or expense</del> 
+          <span class="visuallyhidden">end deletion</span> which shall be regarded as direct and shall be recoverable 
+          by the Authority:
+          
+          - any regulatory losses or fines arising directly from a breach by the Supplier of any Laws; and
+          - subject to Clause 4.6.3 any additional operational and/or administrative costs and expenses arising from any Material Breach.
+
+call_off_contract_changes:
+    - 
+      clause: 8.9.10
+      change: |
+          You can't do this any more.
+    - 
+      clause: 11.12.13
+      change: |
+          Lots of extra good things for suppliers. Oh yes really there are. 
+          4.6.5 Subject to Clauses <span class="visuallyhidden">start insertion</span> <ins>4.6.1 and</ins>
+          <span class="visuallyhidden">end insertion</span> 4.6.4, the Supplier shall be liable for the following types
+          of loss, damage, cost <span class="visuallyhidden">start deletion</span> <del>or expense</del> 
+          <span class="visuallyhidden">end deletion</span> which shall be regarded as direct and shall be recoverable 
+          by the Authority:
+          
+          - any regulatory losses or fines arising directly from a breach by the Supplier of any Laws; and
+          - subject to Clause 4.6.3 any additional operational and/or administrative costs and expenses arising from any Material Breach.
