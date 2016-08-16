@@ -1,11 +1,11 @@
 id: questionAndAnswerSessionDetails
 name: Question and answer session details
-question: Question and answer session details
+question: 
 question_advice: |
   If you run a question and answer session, you must include:
 
-  - the type of session you want to run, eg webinar, phone conference or meeting
-  - the date and time of your session
+  - The type of session you want to run. For example, a webinar, phone conference or meeting.
+  - The date and time of your session.
 
   **When to run a question and answer session**
 
@@ -26,7 +26,7 @@ question_advice: |
 
   This information will only be available to eligible suppliers who have logged in.
 
-  You must post all questions and answers on the Digital Marketplace so all suppliers can see them.
+  After the session, post all questions and answers onto your brief for all suppliers to see.
 
 optional: true
 type: textbox_large
