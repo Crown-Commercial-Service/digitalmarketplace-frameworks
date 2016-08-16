@@ -1,11 +1,10 @@
-name: Why the work is being done
-question: Why the work is being done
+name: What project is this work part of?
+question:
 question_advice: |
-  Describe the organisation or policy goal the work supports, eg how a new law changes the way users receive 
-  government payments.
+  Describe the project or policy goal this work supports and include any important dates. 
   
-  Include any important dates. You must say if you need the work to be done by a certain date.
   This will help suppliers understand any time constraints.
+  
 type: textbox_large
 max_length_in_words: 100
 depends:
