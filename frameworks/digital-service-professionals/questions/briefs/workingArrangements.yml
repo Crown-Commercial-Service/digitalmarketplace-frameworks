@@ -1,13 +1,9 @@
-name: Working arrangements
-question: Working arrangements
+name: What are the working arrangements?
+question: 
 question_advice: |
-  Describe how you want to work with the individual or team.
+  Describe how you want to work with the individual or team and include any limits on expenses.
   
-  Explain why you want to work with them in this way.
-  
-  Include any limits on expenses.
-  
-  eg onsite 3 days a week for face-to-face team meetings.
+  For example, onsite at least 3 days a week for face-to-face team meetings.
 
 type: textbox_large
 max_length_in_words: 100
