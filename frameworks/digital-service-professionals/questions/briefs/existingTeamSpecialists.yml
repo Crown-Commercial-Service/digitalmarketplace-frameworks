@@ -1,10 +1,7 @@
 name: Who will the specialist work with?
 id: existingTeam
 question: 
-question_advice: |
-  Describe the team the specialist will be working with on this project.
-
-  For example, you’ll be working with a user researcher and a designer.
+question_advice:Describe the project team the specialist will be working with.For example, you’ll be working with a user researcher and a designer.
 type: textbox_large
 max_length_in_words: 100
 depends:
