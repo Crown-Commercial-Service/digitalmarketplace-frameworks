@@ -1,12 +1,11 @@
-name: What the specialist will work on
-question: What the specialist will work on
+name: What do you need them to do?
+question: 
 question_advice: |
-  List all the work you expect the specialist to do. They can only work on the things you include here.
+  Outline the work you expect the specialist to do. They can only work on items you include here.
   
-  eg 
-
-  1. Do the front-end development work on the ‘Check your state pension’ service.
-  2. Implement toolkits and APIs to optimise the performance of the ‘Personal Tax Account’ service.
+ For example:
+  1. Front-end development on Transport for NSW website.
+  2. Implement toolkits and APIs to optimise the performance of the GOV.AU dashboard.
 type: textbox_large
 max_length_in_words: 100
 depends:
@@ -16,7 +15,7 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Please answer this question to continue.'
   -
     name: under_100_words
     message: 'Your answer must be no more than 100 words.'
