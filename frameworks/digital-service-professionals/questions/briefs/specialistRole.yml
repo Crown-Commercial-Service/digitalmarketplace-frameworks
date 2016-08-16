@@ -1,103 +1,78 @@
-name: Specialist role
-question: What type of specialist do you need?
+name: What type of specialist do you need?
+question: 
 question_advice: You can create a brief for 1 specialist at a time.
 type: radios
 options:
   -
-    label: Agile coach
+    label: Agile Coach
     value: agileCoach
     description: >
-      Help individuals, teams and managers be as effective as possible by embedding an agile culture.
+      Helps individuals, teams and managers be as effective as possible by embedding an agile culture.
   -
-    label: Business analyst
+    label: Business Analyst
     value: businessAnalyst
     description: >
-      Analyse a service or organisation’s business processes and systems. Specify, collect and present findings.
+      Analyses a service or organisation’s business processes and systems. Specify, collect and present findings.
   -
-    label: Communications manager
-    value: communicationsManager
-    description: >
-      Develop user-focused messages, measurement techniques and communication approaches.
-      Establish integrated communication plans across a range of digital channels
-      to ensure that communication is ongoing, open and clear.
-  -
-    label: Content designer
-    value: contentDesigner
-    description: >
-      Ensure content is as clear and simple as possible to meet user needs.
-  -
-    label: Cyber security consultant
-    value: securityConsultant
-    description: >
-      Minimise the chance of data or information systems security breaches.
-      Ensure information is protected against unauthorised or unintended access.
-      Put systems in place to prevent data destruction or disruption.
-  -
-    label: Delivery manager
+    label: Deliver Manager
     value: deliveryManager
     description: >
-      Set up a team for successful delivery.
-      Remove obstacles, track progress, facilitate meetings and help the team organise itself.
-  -
-    label: Designer
-    value: designer
-    description: >
-      Provide user-centred interaction design, service design and graphic design expertise.
+      Enables agile teams to deliver high-quality services. They remove obstacles or blockers to progress and facilitate project meetings.
   -
     label: Developer
     value: developer
     description: >
-      Build software that supports user needs. Continually improve the service by
-      identifying new tools and techniques, removing technical bottlenecks, and adapting and maintaining code.
+     Builds quality, well-tested software and sites according to standards and best practice.
   -
-    label: Performance analyst
-    value: performanceAnalyst
+    label: Digital Transformation Adviser
+    value: digitalTransformationAdviser
     description: >
-      Specify, collect and present the key performance data and analysis for a service.
+      Digital Transformation Advisers provide leadership in delivering new programs of work—either across the DTO, with state/territory and federal government agencies, or across multiple functions.
   -
-    label: Portfolio manager
-    value: portfolioManager
+    label: Ethical Hacker
+    value: ethicalHacker
     description: >
-      Lead a digital portfolio of projects and programmes.
+      Ensures system security, identifies cyber security risks, applies risk treatments, detects and manages cyber security incidents.
   -
-    label: Product manager
-    value: productManager
+    label: Inclusive Designer
+    value: inclusiveDesigner
     description: >
-      Lead the delivery and continuous improvement of one or more digital products or platforms.
+      Supports the team with an in-depth knowledge of best practice in accessible development.
   -
-    label: Programme manager
-    value: programmeManager
+    label: Interaction Designer
+    value: interactionDesigner
     description: >
-      Manage and organise groups of related projects so they work together to achieve a strategic objective.
+      Responsible for designing a user-focused and accessible service, and making use of established design patterns.
   -
-    label: Quality assurance analyst
+    label: Performance and Web Analyst
     value: qualityAssurance
     description: >
-      Ensure the quality of the digital service by testing it manually and writing automated tests
-      covering a range of conditions.
+      Specifies, collects and presents the key performance data and analysis for their service.
   -
-    label: Service manager
-    value: serviceManager
+    label: Product Manager
+    value: productManager
     description: >
-      Develop and deliver an effective user-focused digital service.
-      Manage the full product lifecycle, including user research, design, delivery and continuous improvement.
+      Works with the team to create the vision for the product, and sets the day-to-day priorities to fulfil that vision and ensure the team delivers.
   -
-    label: Technical Architect
-    value: technicalArchitect
+    label: Service Designer
+    value: serviceDesigner
     description: >
-      Break down complex problems and identify steps towards solutions. Coach individuals and engage with 
-      non-technical people at all levels of seniority. Write code as a senior member of the development team.
+      Designs user-focused services that meet web standards and contributes to the development and continual enhancement of products. 
   -
-    label: User researcher
+    label: Technical Lead/Architect
+    value: technicalLeadArchitect
+    description: >
+      The most senior technical person in the team. Their role is to break down complex problems and lead by example in writing quality code.
+  -
+    label: User Researcher
     value: userResearcher
     description: >
-      Design, conduct and analyse user research using a range of techniques,
-      eg one-to-one interviews or usability tests.
+      Helps the team develop a deep understanding of their users and user needs.
   -
-    label: Web operations engineer
-    value: webOperations
+    label: Web Operations Engineer (Web Devops)
+    value: webDevops
     description: >
-      Run the production systems to help the development team build software that is easy to operate, scale and secure.
+     Runs the production systems, helps the team deploy quickly and reliably and ensures the smooth running of the service.
 depends:
   - "on": "lot"
     being:
@@ -105,5 +80,5 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Please choose the specialist you need.'
 empty_message: Choose specialist role

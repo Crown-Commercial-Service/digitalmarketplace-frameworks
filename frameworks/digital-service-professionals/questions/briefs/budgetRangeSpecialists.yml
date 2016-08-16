@@ -1,14 +1,9 @@
-name: Maximum day rate
+name: Optional: Maximum day rate
 id: budgetRange
-question: Maximum day rate
-question_advice: |
-  How much can you afford to spend per day.
+question: 
+question_advice: 
+  By entering a maximum day rate you can exclude the specialists who don't match your budget. 
 
-  You must have budget approval before you publish your requirements.
-
-  If you don't provide a day rate, you won't be able to exclude specialists that exceed your budget.
-
-  Suppliers will provide you with a day rate for the specialist.
 optional: true
 type: textbox_large
 max_length_in_words: 100
