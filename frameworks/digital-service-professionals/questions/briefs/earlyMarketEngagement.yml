@@ -1,6 +1,9 @@
-name: Early market engagement
-question: Early market engagement
-question_advice: If you’ve done early market engagement, you must include a summary of any relevant findings.
+name: Early market engagement summary 
+question:
+question_advice: Early market engagement is about engaging with the market to gain an understanding of market dynamics and the potential to achieve your desired outcomes.
+
+If you’ve done any early market engagement, include a short summary of any relevant findings.
+
 type: textbox_large
 optional: true
 max_length_in_words: 200
