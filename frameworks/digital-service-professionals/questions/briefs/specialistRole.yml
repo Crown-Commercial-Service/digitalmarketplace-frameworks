@@ -1,15 +1,15 @@
-name: Specialist role
-question: What type of specialist do you need?
+name: What type of specialist do you need?
+question: 
 question_advice: You can create a brief for 1 specialist at a time.
 type: radios
 options:
   -
-    label: Agile coach
+    label: Agile Coach
     value: agileCoach
     description: >
       Help individuals, teams and managers be as effective as possible by embedding an agile culture.
   -
-    label: Business analyst
+    label: Business Analyst
     value: businessAnalyst
     description: >
       Analyse a service or organisation’s business processes and systems. Specify, collect and present findings.
@@ -33,7 +33,7 @@ options:
       Ensure information is protected against unauthorised or unintended access.
       Put systems in place to prevent data destruction or disruption.
   -
-    label: Delivery manager
+    label: Delivery Manager
     value: deliveryManager
     description: >
       Set up a team for successful delivery.
@@ -50,7 +50,7 @@ options:
       Build software that supports user needs. Continually improve the service by
       identifying new tools and techniques, removing technical bottlenecks, and adapting and maintaining code.
   -
-    label: Performance analyst
+    label: Performance Analyst
     value: performanceAnalyst
     description: >
       Specify, collect and present the key performance data and analysis for a service.
@@ -65,7 +65,7 @@ options:
     description: >
       Lead the delivery and continuous improvement of one or more digital products or platforms.
   -
-    label: Programme manager
+    label: Program Manager
     value: programmeManager
     description: >
       Manage and organise groups of related projects so they work together to achieve a strategic objective.
@@ -88,7 +88,7 @@ options:
       Break down complex problems and identify steps towards solutions. Coach individuals and engage with 
       non-technical people at all levels of seniority. Write code as a senior member of the development team.
   -
-    label: User researcher
+    label: User Researcher
     value: userResearcher
     description: >
       Design, conduct and analyse user research using a range of techniques,
@@ -105,5 +105,5 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'You need to choose at least one type of specialist.'
 empty_message: Choose specialist role
