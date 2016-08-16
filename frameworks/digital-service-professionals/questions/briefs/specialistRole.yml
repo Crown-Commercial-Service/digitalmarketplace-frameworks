@@ -14,7 +14,7 @@ options:
     description: >
       Analyses a service or organisation’s business processes and systems. Specify, collect and present findings.
   -
-    label: Deliver Manager
+    label: Delivery Manager
     value: deliveryManager
     description: >
       Enables agile teams to deliver high-quality services. They remove obstacles or blockers to progress and facilitate project meetings.
