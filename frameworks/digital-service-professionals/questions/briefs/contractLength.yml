@@ -1,6 +1,6 @@
 name: Expected contract length
 question: 
-question_advice: Contracts can not exceed 12 months. If you need to, break the work required into smaller components.
+question_advice: Contracts cannot exceed 12 months. If you need to, break the work required into smaller components.
 type: text
 optional: true
 depends:
