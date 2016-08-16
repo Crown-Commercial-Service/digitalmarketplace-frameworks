@@ -1,8 +1,6 @@
-name: Any special terms and conditions?
-question: ''
-question_advice: |
-  You should use the standard [Work Order](https://www.gov.au/marketplace/static/media/documents/DSPP_Order_Template.docx) unless your organisation needs to include additional terms and conditions.
-
+name: Any additional terms and conditions?
+question: Optional
+question_advice: Use the standard [Work Order](https://www.gov.au/marketplace/static/media/documents/DSPP_Order_Template.docx) unless your organisation needs to include additional terms and conditions.
 optional: true
 type: textbox_large
 max_length_in_words: 100
