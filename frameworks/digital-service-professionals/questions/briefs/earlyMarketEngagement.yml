@@ -1,8 +1,6 @@
-name: Early market engagement summary 
+name: Optional: Early market engagement 
 question:
 question_advice: If you’ve completed any early market engagement, include a short summary of any relevant findings.
-
-
 
 type: textbox_large
 optional: true
