@@ -1,7 +1,6 @@
 name: Who will the digital specialist work for? 
 question: 
-question_advice: 
-  Please the government department, agency or organisation in full. So, Department of Human Services—rather than DHS. 
+question_advice: Please the government department, agency or organisation in full. So, Department of Human Services—rather than DHS.
 hint: 100 characters maximum
 type: text
 depends:
