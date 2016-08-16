@@ -1,7 +1,7 @@
-name: What do you need them to do?
+name: What do you need the specialist to do?
 question: 
 question_advice: |
-  Outline the work you expect the specialist to do. They can only work on items you include here.
+  Outline all work you expect the specialist to do. They can only work on items you include here.
   
  For example:
   1. Front-end development on DTO website.
@@ -15,7 +15,7 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'Please answer this question to continue.'
+    message: 'You need to answer this question.'
   -
     name: under_100_words
     message: 'Your answer must be no more than 100 words.'
