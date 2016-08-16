@@ -1,10 +1,11 @@
 name: Where will the work take place?
 question:
-question_advice: Add the full address of the primary work location. 
+question_advice: |
+  Add the full address of the primary work location.
 
-If you don't have the full address please add the city or town. 
+  If you don't have the full address please add the city or town.
 
-You can include more than one location.
+  You can include more than one location.
 
 type: textbox_large
 max_length_in_words: 100

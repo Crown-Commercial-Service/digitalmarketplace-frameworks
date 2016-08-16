@@ -1,9 +1,7 @@
-name: Optional: Maximum day rate
+name: Maximum day rate
 id: budgetRange
 question: 
-question_advice: 
-  By entering a maximum day rate you can exclude the specialists who don't match your budget. 
-
+question_advice: By entering a maximum day rate you can exclude the specialists who don't match your budget.
 optional: true
 type: textbox_large
 max_length_in_words: 100
