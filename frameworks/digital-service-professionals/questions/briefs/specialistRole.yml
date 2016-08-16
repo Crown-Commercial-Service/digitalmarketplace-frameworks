@@ -1,6 +1,6 @@
 name: What type of specialist do you need?
 question: 
-question_advice: You can create a brief for 1 specialist at a time.
+question_advice: You can only create a brief for 1 specialist at a time. If you need additional specialists, create additional briefs.
 type: radios
 options:
   -
