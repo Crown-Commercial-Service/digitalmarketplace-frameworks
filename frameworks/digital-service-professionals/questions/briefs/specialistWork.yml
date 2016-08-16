@@ -4,8 +4,8 @@ question_advice: |
   Outline the work you expect the specialist to do. They can only work on items you include here.
   
  For example:
-  1. Front-end development on Transport for NSW website.
-  2. Implement toolkits and APIs to optimise the performance of the GOV.AU dashboard.
+  1. Front-end development on DTO website.
+  2. Implement toolkits and APIs to optimise performance.
 type: textbox_large
 max_length_in_words: 100
 depends:
