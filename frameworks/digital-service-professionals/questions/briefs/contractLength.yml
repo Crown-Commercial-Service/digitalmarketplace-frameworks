@@ -1,4 +1,4 @@
-name: Expected contract length
+name: How long is your initial contract?
 question: 
 question_advice: Contracts cannot exceed 12 months. If you need to, break the work required into smaller components.
 type: text
