@@ -1,10 +1,9 @@
 name: What do you need the specialist to do?
 question: 
-question_advice: |
-  Outline all work you expect the specialist to do. They can only work on items you include here.
-  For example
-    1. Front-end development on DTO website.
-    2. Implement toolkits and APIs to optimise performance.
+question_advice: "Outline all work you want the specialist to do. They can only work on items you include here.
+  For example:
+  1. Front-end development on DTO website.
+  2. Implement toolkits and APIs to optimise performance."
 type: textbox_large
 max_length_in_words: 100
 depends:
