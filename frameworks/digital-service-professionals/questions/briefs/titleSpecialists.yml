@@ -1,8 +1,10 @@
 id: title
-name: Tell us what you need
-question: ''
+name: Create a headline for your brief
+question: Title
 question_advice: |
-  This is the headline of your brief. So, for example 'Developer needed for immediate start'. Or simply, 'Ethical Hacker—6 month project'. You can update it later if needed.
+  For example 'Developer needed for immediate start'. Or simply, 'Ethical Hacker—6 month project'. 
+  
+  You can update it later if needed.
 hint: 100 characters maximum
 type: text
 depends:
