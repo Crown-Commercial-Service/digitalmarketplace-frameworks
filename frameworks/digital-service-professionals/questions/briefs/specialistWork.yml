@@ -1,7 +1,7 @@
-name: What do you need the specialist to do?
-question: ''
+name: What the specialist will do
+question: 'Work summary'
 question_advice: |
-  Outline all work you want the specialist to do. They can only work on items you include here.
+ List all tasks you want the specialist to do. They can only work on items you include here.
   For example:
   1. Front-end development on DTO website.
   2. Implement toolkits and APIs to optimise performance."
