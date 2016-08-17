@@ -1,5 +1,5 @@
 name: How long will your requirements will be open for?
-question: 
+question: ''
 id: requirementsLength
 type: radios
 options:
