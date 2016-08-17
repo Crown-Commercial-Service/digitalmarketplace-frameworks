@@ -1,8 +1,6 @@
 name: Summary of the work
-question: 
-question_advice: >
-  This will appear on the supplier opportunities page on the Digital Marketplace.
-  It will help suppliers decide whether or not to view your requirements.
+question: ''
+question_advice: "> This will appear on the supplier opportunities page to help suppliers decide whether or not to view your brief."
 type: textbox_large
 max_length_in_words: 50
 depends:

@@ -1,11 +1,8 @@
 id: title
-name: 
-question: Tell us what you need
+name: Tell us what you need
+question: ''
 question_advice: |
-  For example 'Developer needed for immediate start'. Or simply, 'Ethical Hacker—6 month project'.
-  
-  This is the headline of your brief. You can update it later if needed.
-
+  This is the headline of your brief. So, for example 'Developer needed for immediate start'. Or simply, 'Ethical Hacker—6 month project'. You can update it later if needed.
 hint: 100 characters maximum
 type: text
 depends:
@@ -15,7 +12,7 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'Please answer this question to continue.'
+    message: 'You need to answer this question.'
   -
     name: under_character_limit
     message: "Your summary needs to be 100 characters or less."

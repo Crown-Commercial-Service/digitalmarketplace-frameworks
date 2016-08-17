@@ -1,5 +1,5 @@
 name: When do you want the specialist to start?
-question: 
+question: ''
 question_advice: |
   Say when you need suppliers to commence work. When you shortlist, you can exclude suppliers who can't start by this date.
 hint: 'eg 31/12/2016'

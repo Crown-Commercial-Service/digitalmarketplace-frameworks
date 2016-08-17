@@ -1,10 +1,8 @@
 name: What project is this work part of?
-question:
+question: ''
 question_advice: |
-  Describe the project or policy goal this work supports and include any important dates. 
-  
-  This will help suppliers understand any time constraints.
-  
+  Briefly describe the project or policy goal this work supports and include any important dates. 
+
 type: textbox_large
 max_length_in_words: 100
 depends:
