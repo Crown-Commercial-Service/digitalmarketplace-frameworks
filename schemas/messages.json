@@ -57,6 +57,9 @@
         "agreed_extra": {
           "type": "string"
         },
+        "confirmation_message": {
+          "type": "string"
+        },
         "framework_agreement_changes": {
           "type": "array",
           "items": {
