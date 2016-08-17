@@ -1,6 +1,6 @@
 name: How many specialists will you evaluate?
 id: numberOfSuppliers
-question: ''
+question: Number of specialists
 question_advice: You must evaluate at least 3 specialists.
 
 type: number
