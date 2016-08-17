@@ -1,7 +1,7 @@
 name: Is security clearance required?
 question: 'Security clearance'
 question_advice: |
-List the type of security clearance you need, if any. If the specialist doesn't currently have the security clearance you need, you can apply.
+  List the type of security clearance you need, if any. If the specialist doesn't currently have the security clearance you need, you can apply.
 
 type: textbox_large
 optional: true
