@@ -1,5 +1,5 @@
-name: "Early market engagement"
-question: "Optional"
+name: "Optional: Background research"
+question: "Early market engagement"
 question_advice: "If you've completed any early market engagement, include a short summary of any relevant findings."
 type: textbox_large
 optional: true
