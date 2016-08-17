@@ -1,5 +1,5 @@
-name: Summary of the work
-question: ''
+name: Write a short overview of the role.
+question: Summary
 question_advice: "> This will appear on the supplier opportunities page to help suppliers decide whether or not to view your brief."
 type: textbox_large
 max_length_in_words: 50

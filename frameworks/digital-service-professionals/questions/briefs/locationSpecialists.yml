@@ -1,8 +1,8 @@
 name: Where in Australia will the work take place?
-question: ''
+question: Work location
 id: location
 question_advice: 
-  This can be more than one location. If the specialist can work anywhere, choose 'Can work remotely'.
+  "This can be more than one location. If the specialist can work anywhere, choose 'Can work remotely'."
 type: radios
 options:
   - label: "Australian Capital Territory"

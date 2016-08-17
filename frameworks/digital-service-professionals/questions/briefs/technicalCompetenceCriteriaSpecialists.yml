@@ -1,7 +1,6 @@
-name: Technical competence criteria
-question: ''
+name: How important is technichal competence?
+question: 'Technical competence'
 question_advice: |
-  Technical competence is how well the supplier can do the work you need them to do.
 
   Evaluate specialists’ technical competence using criteria for:
 
@@ -9,7 +8,7 @@ question_advice: |
   - nice-to-have skills and experience
 
   ##Giving points for individual criteria (optional)
-  You can give points to individual criteria. For example, 'have experience designing services for users with low digital literacy – 15 points’. If you choose to add points, you must do it for all individual criteria.
+  You can give points to individual criteria. For example, 'experience designing services for users with low digital literacy – 15 points’. If you choose to add points, you must do it for all individual criteria.
 
   The points you give for nice-to-have skills and experience must be lower than the points you give for
   essential skills and experience.

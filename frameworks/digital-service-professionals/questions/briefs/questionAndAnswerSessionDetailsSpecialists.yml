@@ -1,6 +1,6 @@
 id: questionAndAnswerSessionDetails
-name: Question and answer session details
-question: ''
+name: Will you have a question and answer session?
+question: Question and answer session
 question_advice: |
   If you run a question and answer session, you must include:
 
@@ -26,7 +26,7 @@ question_advice: |
 
   This information will only be available to eligible suppliers who have logged in.
 
-  After the session, post all questions and answers onto your brief for all suppliers to see.
+  After the session, post all questions and answers to your brief page for all suppliers to see.
 
 optional: true
 type: textbox_large

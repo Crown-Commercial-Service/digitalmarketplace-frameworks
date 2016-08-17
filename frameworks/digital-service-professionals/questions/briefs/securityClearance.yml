@@ -1,7 +1,8 @@
-name: Does the specialist need security clearance?
-question: ''
-question_advice: "Describe any security clearance the individual or team must have when they start work.
-  If the specialist doesn't currently have the security clearance you need, you may need to organise security clearance."
+name: Is security clearance required?
+question: 'Security clearance'
+question_advice: |
+  List the type of security clearance you need, if any. If the specialist doesn't currently have the security clearance you need, you can apply.
+
 type: textbox_large
 optional: true
 max_length_in_words: 50

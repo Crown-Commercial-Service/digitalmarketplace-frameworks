@@ -1,6 +1,6 @@
-name: Maximum day rate
+name: How much can you spend per day?
 id: budgetRange
-question: "Optional"
+question: "Maximum Day rate"
 question_advice: "Enter a maximum day rate to exclude the specialists who don't match your budget."
 optional: true
 type: textbox_large
