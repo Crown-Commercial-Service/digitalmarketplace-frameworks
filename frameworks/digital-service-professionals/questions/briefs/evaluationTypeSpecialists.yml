@@ -3,9 +3,9 @@ id: evaluationType
 question: ''
 question_advice: |
   
-  You must ask review the resumes of all specialists who reach assessment stage.
+  You must review the resumes of all specialists who reach assessment stage.
   
-  In addition, you can also use one or more of the evaluation methods below. You can only use the methods you select here. 
+  In addition, you can also choose one or more of the evaluation methods below. You can only use the methods you select here. 
 
   Read about [assessment methods](https://www.gov.uk/guidance/ways-to-assess-digital-outcomes-and-specialists-suppliers).
 type: checkboxes
