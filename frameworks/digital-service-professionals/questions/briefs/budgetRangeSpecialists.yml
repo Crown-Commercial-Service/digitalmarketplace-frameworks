@@ -1,7 +1,10 @@
 name: How much can you spend per day?
 id: budgetRange
-question: "Maximum Day rate"
-question_advice: "Enter a maximum day rate to exclude the specialists who don't match your budget."
+question: "Maximum day rate"
+question_advice: |
+  Enter a maximum day rate (including GST) to exclude specialists who exceed your budget. 
+
+  Travel and other costs can be negotiated separately."
 optional: true
 type: textbox_large
 max_length_in_words: 100

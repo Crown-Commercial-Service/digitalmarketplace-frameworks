@@ -1,7 +1,7 @@
-name: Who the specialist will work with
+name: Who will the specialist work with?
 id: existingTeam
-question: 'Project team'
-question_advice: "Describe the project team the specialist will be working with. For example, 'you'll be working with a
+question: 'Current team'
+question_advice: "Describe the team the specialist will be working with. For example, 'you'll be working with a
 user researcher and a designer.'"
 type: textbox_large
 max_length_in_words: 100
