@@ -1,6 +1,6 @@
 name: What type of specialist do you need?
 question: ''
-question_advice: You can only create a brief for 1 specialist at a time. If you need additional specialists, create additional briefs.
+question_advice:
 type: radios
 options:
   -
@@ -12,12 +12,12 @@ options:
     label: Business Analyst
     value: businessAnalyst
     description: >
-      Analyses a service or organisation’s business processes and systems. Specify, collect and present findings.
+      Analyses a service or organisation’s business processes and systems. Specifies, collects and presents findings.
   -
     label: Delivery Manager
     value: deliveryManager
     description: >
-      Enables agile teams to deliver high-quality services. They remove obstacles or blockers to progress and facilitate project meetings.
+      Enables agile teams to deliver high-quality services by removing obstacles or blockers to progress and facilitating project meetings.
   -
     label: Developer
     value: developer
@@ -27,7 +27,7 @@ options:
     label: Digital Transformation Adviser
     value: digitalTransformationAdviser
     description: >
-      Digital Transformation Advisers provide leadership in delivering new programs of work—either across the DTO, with state/territory and federal government agencies, or across multiple functions.
+      Digital Transformation Advisers provide leadership in delivering new programs of work in state, territory and federal government agencies, or across multiple functions.
   -
     label: Ethical Hacker
     value: ethicalHacker
