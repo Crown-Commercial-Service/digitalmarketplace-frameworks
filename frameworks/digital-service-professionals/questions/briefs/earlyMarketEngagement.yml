@@ -1,6 +1,6 @@
-name: "Optional: Background research"
+name: "Early market engagement"
 question: "Early market engagement"
-question_advice: "If you've completed any early market engagement, include a short summary of any relevant findings."
+question_advice: "Describe any engagement regarding this project that you have already had with suppliers."
 type: textbox_large
 optional: true
 max_length_in_words: 200
