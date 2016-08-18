@@ -1,10 +1,11 @@
-name: How you’ll assess specialists
+name: Evaluation methods
 id: evaluationType
-question: 'Evaluation methods'
+question: ''
 question_advice: |
-  You must ask all specialists that reach the assessment stage for a work history.
   
-  You can also choose additional evaluation methods. You can only use the methods you choose here. 
+  You must ask review the resumes of all specialists who reach assessment stage.
+  
+  In addition, you can also use one or more of the evaluation methods below. You can only use the methods you select here. 
 
   Read about [assessment methods](https://www.gov.uk/guidance/ways-to-assess-digital-outcomes-and-specialists-suppliers).
 type: checkboxes
