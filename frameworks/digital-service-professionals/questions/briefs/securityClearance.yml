@@ -1,8 +1,11 @@
-name: Is security clearance required?
+name: Security clearance
 question: 'Security clearance'
 question_advice: |
-  List the type of security clearance you need, if any. If the specialist doesn't currently have the security clearance you need, you can apply.
-
+  
+  This question is optional. You should only request security clearance if absolutely necessary, as you may restrict the number of specialists who can fulfil your requirements.
+  
+  If security clearance is required, remember you can also apply later on behalf of your specialist.
+  
 type: textbox_large
 optional: true
 max_length_in_words: 50
