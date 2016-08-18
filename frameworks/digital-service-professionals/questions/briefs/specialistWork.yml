@@ -1,7 +1,7 @@
 name: What the specialist will do
 question: 'Work summary'
 question_advice: |
- List all tasks you want the specialist to do. They can only work on items you include here.
+ List all tasks you want the specialist to do. 
   For example:
   1. Front-end development on DTO website.
   2. Implement toolkits and APIs to optimise performance."
