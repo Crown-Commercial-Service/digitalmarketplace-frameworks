@@ -23,8 +23,7 @@
   name: Description of work
   editable: True
   step: 1
-  description: |
-    This will help suppliers decide whether to apply.
+  description: ''
   questions:
     - organisation
     - backgroundInformation
