@@ -1,0 +1,27 @@
+question: What types of service delivery can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: Agile coaching
+    description: Help individuals, teams and managers to be effective by embedding an agile culture.
+  - label: Agile delivery
+    description: Support the delivery team by removing blockers to progress, facilitating discussion and helping the team to self-organise without imposing how work is done.
+  - label: Business analysis
+    description: Specify, collect and present performance data and analysis for a product or service.
+  - label: Digital communication and engagement
+    description: Develop or deliver a communications plan for a service or product which engages users across many channels.
+  - label: Product management
+    description: Lead the delivery and continuous improvement of one or more digital products or platforms.
+  - label: Programme management
+    description: Manage and organise groups of related projects so they work together to achieve a strategic objective.
+  - label: Project management
+    description: Motivate and manage a team, and plan and prioritise work to achieve project objectives.
+  - label: Service management
+    description: Develop and deliver an effective user-focused digital service. Manage the full product lifecycle including user research, design, delivery and the continuous improvement of one or more transactional services or platforms.
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

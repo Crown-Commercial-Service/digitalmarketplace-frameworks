@@ -1,0 +1,20 @@
+name: Technical competence
+question: ''
+question_advice: |
+
+  Evaluate specialists’ technical competence using criteria for:
+
+  - essential skills and experience
+  - nice-to-have skills and experience
+
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+questions:
+  - essentialRequirementsSpecialists
+  - niceToHaveRequirementsSpecialists
+
+empty_message: Set technical competence criteria

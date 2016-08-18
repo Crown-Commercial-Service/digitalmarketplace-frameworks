@@ -1,0 +1,24 @@
+question: What is the minimum amount of time your lab can be booked for and how much does it cost?
+
+depends:
+  - "on": lot
+    being:
+      - user-research-studios
+
+type: pricing
+fields:
+  hours_for_price: labTimeMin
+  minimum_price: labPriceMin
+field_defaults:
+  price_unit: Lab
+
+validations:
+  - name: answer_required
+    field: labTimeMin
+    message: 'You need to answer this question.'
+  - name: answer_required
+    field: labPriceMin
+    message: 'You need to answer this question.'
+  - name: not_money_format
+    field: labPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"

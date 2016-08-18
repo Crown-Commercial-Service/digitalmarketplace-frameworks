@@ -1,0 +1,43 @@
+name: Evaluation methods
+id: evaluationType
+question: ''
+question_advice: |
+  
+  You must review the resumes of all specialists who reach assessment stage.
+  
+  In addition, you can also choose one or more of the evaluation methods below. You can only use the methods you select here. 
+
+  Read about [assessment methods](https://www.gov.uk/guidance/ways-to-assess-digital-outcomes-and-specialists-suppliers).
+type: checkboxes
+optional: true
+
+before_summary_value:
+  - "Work history"
+
+options:
+  - label: "References"
+    description: >
+       References are a good way of confirming whether a specialist has done the work they’ve said they’ve 
+       done. You should always ask for references that relate to a specific time frame, for example the work they’ve done in the 
+       last 2 years.
+  - label: "Interview"
+    description: >
+       An interview can help you understand whether a specialist or team has the skills needed to work on your project.
+        It will also help you see whether they will be a good fit for your existing team. You should follow an agreed 
+        format and ask all specialists the same questions.
+  - label: "Scenario or test"
+    description: >
+       A scenario or test can help you confirm a supplier’s skill level and understanding in a controlled environment. For example, a coding test for a developer or the approach a product manager would take to solve an example problem.
+  - label: "Presentation"
+    description: >
+       A presentation can help you understand a specialist’s approach to delivering work. 
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+empty_message: Choose assessment method
+

@@ -1,0 +1,23 @@
+name: Who will the specialist work for? 
+question: 'Department, agency or organisation'
+question_advice: |
+Please write the name in full incluging your state, if necessary. 
+
+For example, Queensland Department of Education instead of DoE.
+
+hint: 100 characters maximum
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-professionals
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "The organisation name must be no more than 100 characters."
+empty_message: Add organisation

@@ -1,0 +1,13 @@
+name: Evening or weekend research
+question: Evening or weekend research
+question_advice: Tell the supplier if you need the research to happen outside the standard working day.
+optional: true
+type: checkboxes
+options:
+  - label: "Weekday evenings"
+  - label: "Weekends"
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+empty_message: Add evening or weekend research

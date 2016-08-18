@@ -1,0 +1,5 @@
+-
+  name: Publish questions and answers
+  editable: true
+  questions:
+    - questionAndAnswer

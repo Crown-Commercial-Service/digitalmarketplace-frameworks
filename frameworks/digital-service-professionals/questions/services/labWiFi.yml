@@ -1,0 +1,12 @@
+question: Do you provide Wi-Fi?
+
+depends:
+  - "on": lot
+    being:
+      - user-research-studios
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

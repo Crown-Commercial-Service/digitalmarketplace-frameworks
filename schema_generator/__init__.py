@@ -22,38 +22,16 @@ MANIFESTS = {
 
 SCHEMAS = {
     'services': [
-        ('G-Cloud 7 SCS Service', 'g-cloud-7', 'scs'),
-        ('G-Cloud 7 IaaS Service', 'g-cloud-7', 'iaas'),
-        ('G-Cloud 7 PaaS Service', 'g-cloud-7', 'paas'),
-        ('G-Cloud 7 SaaS Service', 'g-cloud-7', 'saas'),
-        ('Digital Outcomes and Specialists Digital outcomes Service',
-         'digital-outcomes-and-specialists', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists Digital specialists Service',
-         'digital-outcomes-and-specialists', 'digital-specialists'),
-        ('Digital Outcomes and Specialists User research studios Service',
-         'digital-outcomes-and-specialists', 'user-research-studios'),
-        ('Digital Outcomes and Specialists User research participants Service',
-         'digital-outcomes-and-specialists', 'user-research-participants'),
-        ('G-Cloud 8 SCS Service', 'g-cloud-8', 'scs'),
-        ('G-Cloud 8 IaaS Service', 'g-cloud-8', 'iaas'),
-        ('G-Cloud 8 PaaS Service', 'g-cloud-8', 'paas'),
-        ('G-Cloud 8 SaaS Service', 'g-cloud-8', 'saas')
+        ('Digital Professionals Service',
+         'digital-service-professionals', 'digital-professionals'),
     ],
     'briefs': [
-        ('Digital Outcomes and Specialists Digital outcomes Brief',
-         'digital-outcomes-and-specialists', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists Digital specialists Brief',
-         'digital-outcomes-and-specialists', 'digital-specialists'),
-        ('Digital Outcomes and Specialists User research participants Brief',
-         'digital-outcomes-and-specialists', 'user-research-participants')
+        ('Digital Service Professionals Brief',
+         'digital-service-professionals', 'digital-professionals'),
     ],
     'brief-responses': [
-        ('Digital Outcomes and Specialists Digital outcomes Brief Response',
-         'digital-outcomes-and-specialists', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists Digital specialists Brief Response',
-         'digital-outcomes-and-specialists', 'digital-specialists'),
-        ('Digital Outcomes and Specialists User research participants Brief Response',
-         'digital-outcomes-and-specialists', 'user-research-participants')
+        ('Digital Service Professionals Brief Response',
+         'digital-service-professionals', 'digital-professionals'),
     ]
 }
 

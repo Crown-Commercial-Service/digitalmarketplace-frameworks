@@ -1,0 +1,24 @@
+name: Write a short summary of the role
+question: Summary
+question_advice: |
+
+This will be the first thing suppliers see. 
+
+It should be descriptive enough for suppliers to decide whether to view the brief in full.
+
+type: textbox_large
+max_length_in_words: 50
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-professionals
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_50_words
+    message: 'Your answer must be no more than 50 words.'
+empty_message: Provide a summary of the work

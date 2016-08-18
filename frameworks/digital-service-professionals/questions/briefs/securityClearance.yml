@@ -1,0 +1,21 @@
+name: Security clearance
+question: 'Security clearance'
+question_advice: |
+  
+  This question is optional. You should only request security clearance if absolutely necessary, as you may restrict the number of specialists who can fulfil your requirements.
+  
+  If security clearance is required, remember you can also apply later on behalf of your specialist.
+  
+type: textbox_large
+optional: true
+max_length_in_words: 50
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-professionals
+validations:
+  -
+    name: under_50_words
+    message: 'Your answer must be no more than 50 words.'
+empty_message: Add security clearance

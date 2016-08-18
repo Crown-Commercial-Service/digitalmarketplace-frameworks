@@ -1,0 +1,37 @@
+name: Cultural fit
+id: culturalFitCriteria
+question: ''
+question_advice: |
+  Cultural fit is how well you and the individual or team will work together. If the supplier’s values and behaviour
+  are similar to your organisation’s, they should be a good cultural fit.
+
+  You must tell suppliers if you want to score individual criteria.
+
+  Suggested criteria
+
+  - Work as a team with our organisation and other suppliers
+  - Transparent and collaborative when making decisions
+  - Have a no-blame culture and encourage people to learn from their mistakes
+
+type: list
+number_of_items: 20
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_30_words
+    message: 'Criteria must be no more than 30 words.'
+  -
+    name: max_items_limit
+    message: 'You must have 20 or fewer criteria.'
+  -
+    name: under_character_limit
+    message: 'Criteria must be no more than 300 characters.'
+
+empty_message: Choose cultural fit criteria
