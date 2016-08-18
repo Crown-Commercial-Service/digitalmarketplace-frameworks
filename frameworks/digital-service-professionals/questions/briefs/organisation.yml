@@ -1,9 +1,9 @@
 name: Who will the specialist work for? 
 question: 'Department, agency or organisation'
 question_advice: |
-Please write the name in full incluging your state, if necessary. 
+  Please write the name in full incluging your state, if necessary. 
 
-For example, Queensland Department of Education instead of DoE.
+  For example, Queensland Department of Education instead of DoE.
 
 hint: 100 characters maximum
 type: text
