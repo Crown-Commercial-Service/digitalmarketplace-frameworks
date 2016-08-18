@@ -15,9 +15,9 @@ before_summary_value:
   - "Work history"
 
 options:
-  - label: "Reference"
+  - label: "References"
     description: >
-       A written reference is a good way of confirming whether a specialist has done the work they’ve said they’ve 
+       References are a good way of confirming whether a specialist has done the work they’ve said they’ve 
        done. You should always ask for references that relate to a specific time frame, for example the work they’ve done in the 
        last 2 years.
   - label: "Interview"
