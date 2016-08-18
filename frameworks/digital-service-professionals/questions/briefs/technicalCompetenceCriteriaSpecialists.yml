@@ -1,17 +1,11 @@
-name: How important is technichal competence?
-question: 'Technical competence'
+name: Technical competence
+question: ''
 question_advice: |
 
   Evaluate specialists’ technical competence using criteria for:
 
   - essential skills and experience
   - nice-to-have skills and experience
-
-  ##Giving points for individual criteria (optional)
-  You can give points to individual criteria. For example, 'experience designing services for users with low digital literacy – 15 points’. If you choose to add points, you must do it for all individual criteria.
-
-  The points you give for nice-to-have skills and experience must be lower than the points you give for
-  essential skills and experience.
 
 optional: false
 type: multiquestion
