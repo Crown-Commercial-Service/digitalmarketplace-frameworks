@@ -2,7 +2,7 @@ name: Is security clearance required?
 question: 'Security clearance'
 question_advice: |
   
-  You should only request security clearance if this role requires access to classified material, environments or assets.
+  You should only request security clearance if this specialist will access to classified material, environments or assets.
   
   If a specialist you choose does not have security clearance, remember you can apply later on their behalf.
 
