@@ -2,20 +2,17 @@ variation_description: |
     The Crown Commercial Service (CCS) proposes to make some minor changes to the framework agreement and call-off 
     contract (reference: RM1557viii-15-07-2016).
     
-    These minor changes were agreed in the answers provided to suppliers while G-Cloud 8 applications were open. 
+    These minor changes were agreed while G-Cloud 8 was open for applications.
     The changes make it easier for suppliers to work with government and are listed here.
     
 not_agreed_extra: |
     The changes were not included in the final documents that were signed on behalf of [[SUPPLIER_NAME]].
     
-    To put these changes into effect, we need you to review and accept the changes here.
+    To put these changes into effect, we need you to review and accept them here.
     You can [download a PDF version of these changes](/suppliers/frameworks/g-cloud-8/files/g-cloud-8-contract-variation.pdf).
 
-agreed_extra: |
-    [Download a version of these changes (PDF)](/suppliers/frameworks/g-cloud-8/files/g-cloud-8-contract-variation.pdf).
-
 confirmation_message: |
-    You have accepted the proposed changes. You will be notified when they come into effect. 
+    You have accepted the proposed changes. You’ll be notified when they come into effect. 
     Until then, you must sell your services using the published framework agreement and call-off contract.
 
 framework_agreement_changes:
