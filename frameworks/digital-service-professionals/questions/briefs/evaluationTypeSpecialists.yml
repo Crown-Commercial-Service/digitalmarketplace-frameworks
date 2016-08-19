@@ -1,11 +1,11 @@
-name: How will you confirm the specialist is right for the role? 
+name: How will you verify the specialist is right for the role? 
 id: evaluationType
 question: ''
 question_advice: |
   
   You must review the resumes of all specialists who reach assessment stage.
   
-  In addition, you can also choose one or more of the options below. You can only use the methods you select here. 
+  You can also choose one or more of the options below. You can only use the methods you select here. 
 
   Read about [assessment methods](https://www.gov.uk/guidance/ways-to-assess-digital-outcomes-and-specialists-suppliers).
 type: checkboxes
