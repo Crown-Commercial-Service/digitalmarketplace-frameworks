@@ -1,0 +1,107 @@
+variation_description: |
+    The Crown Commercial Service (CCS) proposes to make some minor changes to the framework agreement and call-off 
+    contract (reference: RM1557viii-15-07-2016).
+    
+    These minor changes were agreed while G-Cloud 8 was open for applications.
+    The changes make it easier for suppliers to work with government and are listed here.
+    
+not_agreed_extra: |
+    The changes were not included in the final documents that were signed on behalf of [[SUPPLIER_NAME]].
+    
+    To put these changes into effect, we need you to review and accept them here.
+    You can [download a PDF version of these changes](/suppliers/frameworks/g-cloud-8/files/g-cloud-8-contract-variation.pdf).
+
+confirmation_message: |
+    You have accepted the proposed changes. You’ll be notified when they come into effect. 
+    Until then, you must sell your services using the published framework agreement and call-off contract.
+
+framework_agreement_changes:
+    - 
+      clause: '4.6.5'
+      change: |
+          Subject to <span class="visuallyhidden">start deletion</span><del>Clause</del><span class="visuallyhidden">end deletion</span>
+          <span class="visuallyhidden">start insertion</span><ins>Clauses 4.6.1 and </ins><span class="visuallyhidden">end insertion</span>
+          4.6.4, the Supplier shall be liable for the following types of loss, damage, cost or expense which shall be 
+          regarded as direct and shall be recoverable by the Authority:
+          
+          - any regulatory losses or fines arising directly from a breach by the Supplier of any Laws; and
+          - subject to Clause 4.6.3 any additional operational and/or administrative costs and expenses arising from any 
+          Material Breach.
+    - 
+      clause: '8.19'
+      change: |
+          The Supplier must not be in a position where there is a conflict<span class="visuallyhidden">start insertion</span><ins>,
+          and will use reasonable endeavours to avoid being in a position where there is</ins><span class="visuallyhidden">end insertion</span>
+          <span class="visuallyhidden">start deletion</span> <del>or a</del><span class="visuallyhidden">end deletion</span> 
+          potential conflict, between its interests (or the interests of its staff or any affiliated company) and the 
+          duties owed to CCS and the Buyer under this Framework Agreement or any Call-Off Contract.  
+          Any breach of this clause will be deemed to be a Material Breach.
+    -
+      clause: '8.20'
+      change: |
+          A conflict of interest may occur where the Supplier or an affiliated company is bidding or intends to 
+          bid for the opportunity to deliver Services where the Supplier or an affiliated company has had involvement 
+          in the same or other related project that may give them an advantage. Where there is a risk of conflict, 
+          <span class="visuallyhidden">start insertion</span><ins> the Supplier will</ins><span class="visuallyhidden">end insertion</span> 
+          promptly establish the necessary ethical wall arrangement(s) to eliminate it. The Supplier must do this 
+          before the Call-Off commencement date of any affected Call-Off Contract, unless otherwise agreed with the 
+          Buyer. Details of such arrangements must be submitted as soon as possible to the affected Buyer (or where no 
+          Call-Off Contract then exists, to the affected Buyer who is tendering for Replacement Services).
+    -
+      clause: '8.22'
+      change: |
+          The Supplier will not do anything which may damage the public reputation of CCS. CCS may terminate this
+          Framework Agreement for Material Breach <span class="visuallyhidden">start deletion</span> <del>. This will happen</del> 
+          <span class="visuallyhidden">end deletion</span>if the Supplier causes material adverse publicity relating 
+          to or affecting CCS.  This is true whether or not the act or omission in question was done in connection with
+          the performance by the Supplier of its obligations hereunder.
+    -
+      clause: '8.35'
+      change: |
+          The Authority and the Supplier shall attempt in good faith to negotiate a settlement of any dispute 
+          between them in connection with this Framework Agreement within 20 Working Days of notification by either 
+          party. All disputes <span class="visuallyhidden">start insertion</span><ins>must be</ins><span class="visuallyhidden">end insertion</span>
+          notified to the Authority representative and the Supplier representative.
+    -
+      clause: '9.1'
+      change: |
+          ‘Call-Off Contract'<br />
+          The legally binding agreement (entered into following the provisions of this Framework Agreement) for the 
+          provision of Services made between a Buyer and the Supplier.  This may include the Order Form detailing service
+          requirements, <span class="visuallyhidden">start deletion</span><del>term</del><span class="visuallyhidden">end deletion</span>
+          <span class="visuallyhidden">start insertion</span><ins>terms and conditions substantially in the
+          form of the Call-Off Terms</ins><span class="visuallyhidden">end insertion</span>, term of Call-Off Order, 
+          start date and pricing.
+          <br /><br />
+
+          <span class="visuallyhidden">start insertion</span><ins>
+          'Call-Off Terms'<br />
+          The terms and conditions as published 
+          with the Contract Notice within the Official Journal of the European Union referred to in the OJEU Contract 
+          Notice reference number RM1557viii.
+          <span class="visuallyhidden">end insertion</span>
+
+call_off_contract_changes:
+    - 
+      clause: '16.1'
+      change: |
+          The Supplier will allow CCS (and CCS’s external auditor) to access its information and conduct audits 
+          of the Services provided under this Call-Off Contract and the provision of Management Information 
+          <span class="visuallyhidden">start insertion</span><ins>(subject to reasonable and appropriate confidentiality 
+          undertakings)</ins><span class="visuallyhidden">end insertion</span>.
+    - 
+      clause: '43'
+      change: |
+          'Management Information'<br />
+          The management information (MI) specified in section 6 (What you report to CCS) of <span class="visuallyhidden">start insertion</span><ins>the</ins><span class="visuallyhidden">end insertion</span>
+          <span class="visuallyhidden">start deletion</span> <del>this</del><span class="visuallyhidden">end deletion</span> Framework Agreement.
+          <br /><br />
+
+          ’Framework Agreement’<br />
+          <span class="visuallyhidden">start insertion</span><ins>The</ins><span class="visuallyhidden">end insertion</span>
+          <span class="visuallyhidden">start deletion</span> <del>This</del><span class="visuallyhidden">end deletion</span></del><span class="visuallyhidden">end deletion</span> 
+          contractually-binding 
+          <span class="visuallyhidden">start deletion</span> <del>document</del><span class="visuallyhidden">end deletion</span>
+          <span class="visuallyhidden">start insertion</span> <ins> framework agreement between the Crown Commercial 
+          Service and the Supplier, reference number: RM1557viii, referred to in the Order Form.</ins>
+          <span class="visuallyhidden">end insertion</span>
