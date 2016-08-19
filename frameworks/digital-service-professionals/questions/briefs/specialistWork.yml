@@ -5,8 +5,8 @@ question_advice: |
 
   For example:
 
-    -Front-end development on DTO website.
-    -Implement toolkits and APIs to optimise performance.
+    - Front-end development on DTO website.
+    - Implement toolkits and APIs to optimise performance.
 type: textbox_large
 max_length_in_words: 100
 depends:
