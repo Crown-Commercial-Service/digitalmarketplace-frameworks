@@ -1,10 +1,12 @@
 name: What will the specialist do?
 question: 'Work summary'
 question_advice: |
- List all tasks you want the specialist to do. 
+  List all tasks you want the specialist to do.
+
   For example:
-  1. Front-end development on DTO website.
-  2. Implement toolkits and APIs to optimise performance."
+
+    -Front-end development on DTO website.
+    -Implement toolkits and APIs to optimise performance.
 type: textbox_large
 max_length_in_words: 100
 depends:
