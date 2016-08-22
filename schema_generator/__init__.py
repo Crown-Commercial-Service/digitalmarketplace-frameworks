@@ -24,14 +24,23 @@ SCHEMAS = {
     'services': [
         ('Digital Professionals Service',
          'digital-service-professionals', 'digital-professionals'),
+
+        ('Digital Outcomes Service',
+         'digital-service-professionals', 'digital-outcome'),
     ],
     'briefs': [
         ('Digital Service Professionals Brief',
          'digital-service-professionals', 'digital-professionals'),
+
+        ('Digital Outcome Brief',
+         'digital-service-professionals', 'digital-outcome'),
     ],
     'brief-responses': [
         ('Digital Service Professionals Brief Response',
          'digital-service-professionals', 'digital-professionals'),
+
+        ('Digital Outcome Brief Response',
+         'digital-service-professionals', 'digital-outcome'),
     ]
 }
 

@@ -9,7 +9,7 @@ type: multiquestion
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
+      - digital-outcome
 questions:
   - technicalWeightingOutcomes
   - culturalWeightingOutcomes

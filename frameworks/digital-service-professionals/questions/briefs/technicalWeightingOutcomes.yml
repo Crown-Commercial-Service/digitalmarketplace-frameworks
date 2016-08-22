@@ -10,7 +10,7 @@ hint: 'This can be between 10% and 75%'
 depends:
   - "on": lot
     being:
-      - digital-outcomes
+      - digital-outcome
 
 type: number
 unit: "%"

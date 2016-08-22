@@ -2,7 +2,7 @@ question: What types of user experience and design can you provide?
 depends:
   - "on": lot
     being:
-      - digital-outcomes
+      - digital-outcome
 type: checkboxes
 options:
   - label: Accessibility

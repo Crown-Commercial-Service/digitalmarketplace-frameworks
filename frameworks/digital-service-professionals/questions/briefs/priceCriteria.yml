@@ -27,7 +27,7 @@ options:
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
+      - digital-outcome
 empty_message: Choose payment approach
 
 validations:

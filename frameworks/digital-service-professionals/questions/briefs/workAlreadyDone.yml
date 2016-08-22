@@ -7,7 +7,7 @@ max_length_in_words: 100
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
+      - digital-outcome
 validations:
   -
     name: under_100_words

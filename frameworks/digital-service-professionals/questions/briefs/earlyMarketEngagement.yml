@@ -7,7 +7,7 @@ max_length_in_words: 200
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
+      - digital-outcome
       - digital-professionals
       - user-research-participants
 validations:

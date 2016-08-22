@@ -12,7 +12,7 @@ hint: "[View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps
 depends:
   - "on": lot
     being:
-      - digital-outcomes
+      - digital-outcome
 type: checkboxes
 options:
   - label: "Offsite"

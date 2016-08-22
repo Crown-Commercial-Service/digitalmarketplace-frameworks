@@ -16,7 +16,7 @@ type: list
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
+      - digital-outcome
 
 validations:
   -

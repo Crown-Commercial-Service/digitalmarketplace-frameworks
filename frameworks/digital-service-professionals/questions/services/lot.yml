@@ -3,7 +3,7 @@ type: radios
 options:
   -
     label: Apply to provide teams for digital outcomes
-    value: digital-outcomes
+    value: digital-outcome
     description: >
       Examples of digital outcomes include the beta of an appointment booking system or the alpha of a billing application.
   -
