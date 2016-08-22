@@ -4,7 +4,7 @@ question: Maximum number of suppliers you’ll evaluate
 question_advice: |
   You must evaluate at least 3 suppliers.
 
-  Read about [how many suppliers you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcome-and-specialists-suppliers#how-many-suppliers-to-evaluate).
+  Read about [how many suppliers you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
 
 type: number
 limits:
