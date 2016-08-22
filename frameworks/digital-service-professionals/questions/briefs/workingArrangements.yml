@@ -3,7 +3,7 @@ question: 'Working arrangements'
 question_advice: |
   Describe how you want to work with the individual or team and include any limits on expenses.
   
-  For example, onsite at least 3 days a week for face-to-face team meetings.
+  For example, on site at least 3 days a week for face-to-face team meetings.
 
 type: textbox_large
 max_length_in_words: 100
