@@ -36,7 +36,7 @@ options:
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
+      - digital-outcome
 validations:
   -
     name: answer_required

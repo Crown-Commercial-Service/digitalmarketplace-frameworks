@@ -4,7 +4,7 @@ optional: true
 depends:
   - "on": lot
     being:
-      - digital-outcomes
+      - digital-outcome
 type: multiquestion
 any_of: capability
 questions:

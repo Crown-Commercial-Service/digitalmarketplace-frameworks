@@ -10,7 +10,7 @@ type: text
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
+      - digital-outcome
       - digital-professionals
       - user-research-participants
 validations:

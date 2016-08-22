@@ -20,7 +20,7 @@ number_of_items: 20
 depends:
   - "on": "lot"
     being:
-      - digital-outcomes
+      - digital-outcome
 
 validations:
   -
