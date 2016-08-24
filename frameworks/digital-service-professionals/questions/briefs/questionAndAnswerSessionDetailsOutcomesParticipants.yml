@@ -3,22 +3,22 @@ name: Will you hold a question and answer session?
 question: Question and answer session information
 question_advice: |
    Providing a question and answer session is optional but it means you can explain your needs and answer questions quickly.
-  If you wish to have a question and answer session, provide the details here. For example:
-  - the type of session you want to run, such as a webinar, phone conference or meeting
-  - the date and time of the session (this should happen within 1 week of publishing your brief)
+   If you wish to have a question and answer session, provide the details here. For example:
+   - the type of session you want to run, such as a webinar, phone conference or meeting
+   - the date and time of the session (this should happen within 1 week of publishing your brief)
 
-  Depending on the type of session you choose, you could also include:
+  Depending on the type of session, you could also include:
 
-  - software needed
-  - the url
-  - the phone number
-  - the access code
-  - the address (including postcode)
-  - anything else needed to take part
+   - software needed
+   - the url
+   - the phone number
+   - the access code
+   - the address (including postcode)
+   - anything else needed to take part
 
   This information will only be available to eligible sellers who have logged in.
 
-  After the session you must post all questions and answers on the Digital Marketplace so all suppliers can see them.
+  After the session you must add all questions and answers to your published brief so all suppliers can see them.
 
 optional: true
 type: textbox_large
