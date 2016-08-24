@@ -1,8 +1,9 @@
-name: What project is this work part of?
-question: ''
+name: Why is the work being done?
+question: Reason for the work
 question_advice: |
-  Briefly describe the project or policy goal this work supports and include any important dates. 
+  Describe the organisation or policy goal the work supports. 
 
+  Include any important dates, especially if the work needs to be done by a set date.
 type: textbox_large
 max_length_in_words: 100
 depends:
