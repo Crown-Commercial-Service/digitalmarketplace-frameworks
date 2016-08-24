@@ -1,12 +1,12 @@
 id: questionAndAnswerSessionDetails
 name: Will you have a question and answer session?
-question: Question and answer session information
+question: Session information
 question_advice: |
-   "If you want to hold a question and answer session please outline:
-  - The type of session you want to run — for example, a webinar, phone conference or meeting.
-  - The date and time of your session.
-
-  Depending on the type of session you choose, you could also include:
+  If you want to hold a question and answer session you should describe: 
+  - the type of session — for example a webinar, phone conference or meeting
+  - the date and time of your session
+  
+  You could also include:
 
   - software needed
   - the url
