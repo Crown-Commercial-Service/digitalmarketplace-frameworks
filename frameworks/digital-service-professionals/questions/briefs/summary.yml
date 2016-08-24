@@ -1,11 +1,9 @@
-name: Write a short summary of the role
+name: Write a summary of your brief
 question: Summary
 question_advice: |
-
-  This will be the first thing suppliers see. 
-
-  It should be descriptive enough for suppliers to decide whether to view the brief in full.
-
+  This will be the first thing sellers see when browsing opportunities. 
+  
+  It will help them decide whether or not to view your brief in full.
 type: textbox_large
 max_length_in_words: 50
 depends:
