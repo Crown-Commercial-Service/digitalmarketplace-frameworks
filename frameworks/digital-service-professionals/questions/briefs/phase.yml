@@ -31,7 +31,7 @@ options:
   -
     label: Other
     value: other
-    descriptions: >
+    description: >
       For example, a tech spike or proof of concept.
 depends:
   - "on": "lot"
