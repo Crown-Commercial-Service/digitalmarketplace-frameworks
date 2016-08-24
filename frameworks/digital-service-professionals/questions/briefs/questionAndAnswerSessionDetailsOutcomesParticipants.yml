@@ -2,8 +2,8 @@ id: questionAndAnswerSessionDetails
 name: Will you hold a question and answer session?
 question: Question and answer session information
 question_advice: |
-  If you wish to have a question and answer session, you must give details of what type of session you want to hold, when it is and any details the attendees need.
-  For example:
+   Providing a question and answer session is optional but it means you can explain your needs and answer questions quickly.
+  If you wish to have a question and answer session, provide the details here. For example:
   - the type of session you want to run, such as a webinar, phone conference or meeting
   - the date and time of the session (this should happen within 1 week of publishing your brief)
 
