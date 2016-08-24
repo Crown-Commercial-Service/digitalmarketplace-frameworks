@@ -2,8 +2,8 @@ id: title
 name: Title
 question: What you want to call your requirements
 question_advice: Describe the outcome you need in a 100 words or less.
-For example, 'Website redesign and development' or 'Digital maturity assessment'.
-You can update your title later if needed.
+  For example, 'Website redesign and development' or 'Digital maturity assessment'.
+  You can update your title later if needed.
 hint: 100 characters maximum
 type: text
 depends:
