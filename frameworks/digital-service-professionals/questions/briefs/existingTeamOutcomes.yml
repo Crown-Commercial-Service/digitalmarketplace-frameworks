@@ -1,10 +1,8 @@
-name: Existing team
+name: Who will the work be done with?
 id: existingTeam
 question: Existing team
 question_advice: |
-  Describe the team the supplier will be working with,
-  
-  eg whether the team will be working with another supplier.
+  Describe any other parties the seller will be working with. For example, 'you'll be working with a user research consultant and our brand agency'.
 type: textbox_large
 max_length_in_words: 100
 depends:

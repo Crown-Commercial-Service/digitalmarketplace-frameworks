@@ -1,14 +1,12 @@
 id: questionAndAnswerSessionDetails
-name: Question and answer session details
-question: Question and answer session details
+name: Will you have a question and answer session?
+question: Session information
 question_advice: |
-
-  You must give details of what type of session you want to hold, when it is and any details the attendees need.
-
-  - the type of session you want to run, eg webinar, phone conference or meeting
-  - the date and time of the session (this should happen within 1 week of publishing your requirements)
-
-  Depending on the type of session you choose, you could also include:
+  If you want to hold a question and answer session you should describe: 
+  - the type of session. For example, a webinar, phone conference or meeting
+  - the date and time of your session
+  
+  You could also include:
 
   - software needed
   - the url
@@ -19,7 +17,7 @@ question_advice: |
 
   This information will only be available to eligible suppliers who have logged in.
 
-  You must post all questions and answers on the Digital Marketplace so all suppliers can see them.
+  After the session, post all questions and answers to your requirements brief for all suppliers to see."
 
 optional: true
 type: textbox_large

@@ -2,14 +2,12 @@ name: Budget range
 id: budgetRange
 question: Budget range
 question_advice: |
-  Include how much you can spend.
+  Sellers find it helpful if you can provide a breakdown of costs. 
 
-  Suppliers will find it helpful if you can provide a breakdown of costs.
+  You can contact sellers before creating your brief to estimate how much the work may cost.
 
-  You must have budget approval before you publish your requirements.
+  Make sure you have budget approval before publishing your brief.
 
-  You should [talk to suppliers before you buy](https://www.gov.uk/guidance/talking-to-suppliers-before-you-buy-digital-marketplace-services)
-  so you know how much the work might cost.
 optional: true
 type: textbox_large
 max_length_in_words: 100

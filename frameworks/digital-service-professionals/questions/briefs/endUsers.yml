@@ -1,5 +1,5 @@
-name: Who the users are and what they need to do
-question: Who the users are and what they need to do
+name: Describe the users and their needs
+question: User needs
 question_advice: |
   You should use this format:
   
@@ -9,7 +9,7 @@ question_advice: |
   
   So that&hellip; (why does the user want to do this?)
   
-  eg As a carer, I need to know if I can get Carer’s Allowance, so that I know if I should apply for it or not.
+  For example, as a carer, I need to know if I can get Carer Payment, so that I know if I should apply.
 type: textbox_large
 max_length_in_words: 100
 depends:

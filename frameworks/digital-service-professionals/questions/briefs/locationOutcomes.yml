@@ -1,7 +1,7 @@
 name: Where will the work take place?
 question: ''
 id: location
-question_advice: This can be more than one location. If the specialist can work anywhere, choose 'Can work remotely'.
+question_advice: Select the primary location. If the specialist can work anywhere, choose 'Can work remotely'.
 
 type: radios
 options:

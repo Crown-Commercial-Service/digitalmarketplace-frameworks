@@ -2,9 +2,9 @@ id: questionAndAnswerSessionDetails
 name: Will you have a question and answer session?
 question: Session information
 question_advice: |
-  If you want to have a question and answer session please outline:
+  If you want to hold a question and answer session please outline:
 
-  - The type of session you want to run. For example, a webinar, phone conference or meeting.
+  - The type of session — for example, a webinar, phone conference or meeting.
   - The date and time of your session.
 
   **When to run a question and answer session**
@@ -26,7 +26,7 @@ question_advice: |
 
   This information will only be available to eligible suppliers who have logged in.
 
-  After the session, post all questions and answers to your brief page for all suppliers to see.
+  After the session, post all questions and answers to your brief page for all sellers to see.
 
 optional: true
 type: textbox_large

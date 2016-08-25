@@ -1,6 +1,7 @@
-name: Problem to be solved
-question: Problem to be solved
-question_advice: eg patients can’t access their medical records
+name: What's the key problem you need to solve?
+question: Problem to solve
+question_advice: For example, patients can’t access their medical records.
+
 type: textbox_large
 max_length_in_words: 100
 depends:
