@@ -1,0 +1,29 @@
+name: ''
+question: ''
+id: sellerSelector
+question_advice: ''
+type: radios
+options:
+  -
+    label: All qualified sellers
+    value: allSellers
+    description: >
+      Send it to all.
+  -
+    label: Specify a list of sellers
+    value: someSellers
+    description: >
+      Select multiple.
+  -
+    label: Specify an individual seller
+    value: oneSeller
+    description: >
+      Select one.
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one option to continue.'

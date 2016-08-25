@@ -30,7 +30,6 @@
     - outcome
     - specialistWork
     - endUsers
-    - earlyMarketEngagement
     - workAlreadyDone
     - phase
     - existingTeamOutcomes
@@ -176,3 +175,10 @@
   questions:
     - questionAndAnswerSessionDetailsOutcomesParticipants
     - questionAndAnswerSessionDetailsSpecialists
+
+-
+  name: Who can respond to the brief?
+  editable: True
+  step: 3
+  questions:
+    - specifySeller
