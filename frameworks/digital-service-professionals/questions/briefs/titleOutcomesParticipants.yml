@@ -1,8 +1,8 @@
 id: title
-name: Title
-question: What you want to call your requirements
+name: Create a title for your brief
+question: Title
 question_advice: | 
-  Describe the outcome you need in a 100 words or less. For example, 'Website redesign and development' or 'Digital maturity assessment'.
+  Describe the outcome you need in a 100 words or less. For example, 'Website redesign and development'.
   
   You can update your title later if needed.
 hint: 100 characters maximum
