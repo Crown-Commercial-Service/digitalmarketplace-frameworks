@@ -1,7 +1,7 @@
 name: How many specialists will you evaluate?
 id: numberOfSuppliers
 question: Number of specialists
-question_advice: You must evaluate between 3-15 specialists.
+question_advice: We recommend you evaluate at least 3.
 
 type: number
 limits:

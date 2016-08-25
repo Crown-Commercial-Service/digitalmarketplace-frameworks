@@ -2,7 +2,7 @@ id: title
 name: Create a title for your brief
 question: Title
 question_advice: |
-  For example, 'Developer needed for immediate start' or 'Ethical Hacker—6 month project'. 
+  For example, 'Developer needed for immediate start' or 'Ethical Hacker, 6 month project'. 
   
   You can update it later if needed.
 hint: 100 characters maximum

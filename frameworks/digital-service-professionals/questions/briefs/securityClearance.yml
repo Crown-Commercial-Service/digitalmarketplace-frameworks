@@ -2,9 +2,9 @@ name: Is security clearance required?
 question: 'Security clearance'
 question_advice: |
   
-  Only request security clearance access to classified material, environments or assets is required.
+  Only request security clearance if access to classified material, environments or assets is required.
   
-  If the specialist or team you choose doesn't have security clearance, remember you can apply later on their behalf.
+  If the specialist or team you choose doesn't have security clearance remember you can apply later on their behalf.
 
 type: textbox_large
 optional: true
