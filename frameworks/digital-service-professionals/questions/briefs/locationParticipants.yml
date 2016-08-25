@@ -1,0 +1,33 @@
+name: Region
+question: Where the research will take place
+id: location
+question_advice: |
+  This should be the primary location where they’ll be working.
+
+  Suppliers have said where they can recruit participants.
+
+  [View region map (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)
+type: radios
+options:
+  - label: "Scotland"
+  - label: "North East England"
+  - label: "North West England"
+  - label: "Yorkshire and the Humber"
+  - label: "East Midlands"
+  - label: "West Midlands"
+  - label: "East of England"
+  - label: "Wales"
+  - label: "London"
+  - label: "South East England"
+  - label: "South West England"
+  - label: "Northern Ireland"
+  - label: "International (outside the UK)"
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+empty_message: Choose location

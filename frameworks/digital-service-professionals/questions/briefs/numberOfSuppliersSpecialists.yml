@@ -1,0 +1,22 @@
+name: How many specialists will you evaluate?
+id: numberOfSuppliers
+question: Number of specialists
+question_advice: We recommend you evaluate at least 3.
+
+type: number
+limits:
+  integer_only: true
+  min_value: 3
+  max_value: 15
+
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_a_number
+    message: 'Enter a number between 3 and 15 to continue.'
+
+empty_message: Set maximum number of specialists you’ll evaluate

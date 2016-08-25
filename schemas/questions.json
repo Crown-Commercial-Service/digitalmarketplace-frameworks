@@ -32,7 +32,7 @@
   },
   "properties": {
     "question": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "type": {
       "enum": [
@@ -71,7 +71,7 @@
       }
     },
     "name": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "id": {
       "type": "string"

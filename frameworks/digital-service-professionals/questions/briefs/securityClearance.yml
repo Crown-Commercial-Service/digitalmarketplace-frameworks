@@ -1,0 +1,21 @@
+name: Is security clearance required?
+question: 'Security clearance'
+question_advice: |
+  
+  Only request security clearance if access to classified material, environments or assets is required.
+  
+  If security clearance is required, specify the type here.
+  
+type: textbox_large
+optional: true
+max_length_in_words: 50
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcome
+      - digital-professionals
+validations:
+  -
+    name: under_50_words
+    message: 'Your answer must be no more than 50 words.'
+empty_message: Add security clearance

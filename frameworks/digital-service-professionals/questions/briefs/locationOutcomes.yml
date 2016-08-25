@@ -1,0 +1,26 @@
+name: Where will the work take place?
+question: ''
+id: location
+question_advice: Select the primary location. If the specialist can work anywhere, choose 'Can work remotely'.
+
+type: radios
+options:
+  - label: "Australian Capital Territory"
+  - label: "New South Wales"
+  - label: "Northern Territory"
+  - label: "Queensland"
+  - label: "South Australia"
+  - label: "Tasmania"
+  - label: "Victoria"
+  - label: "Western Australia"
+  - label: "Can work remotely"
+    value: "Offsite"
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcome
+validations:
+  -
+    name: answer_required
+    message: 'Please select at least one location to continue.'
+empty_message: Choose location

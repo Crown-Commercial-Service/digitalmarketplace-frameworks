@@ -1,0 +1,15 @@
+name: How long is the contract?
+question: 'Contract length'
+question_advice: Contracts cannot exceed 12 months.
+type: text
+optional: true
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcome
+      - digital-professionals
+validations:
+  -
+    name: under_character_limit
+    message: "Your answer must be no more than 100 characters."
+empty_message: Set expected contract length

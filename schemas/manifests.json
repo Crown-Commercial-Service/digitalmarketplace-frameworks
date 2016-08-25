@@ -37,6 +37,7 @@
               "scs": {"type": "string"},
               "digital-outcomes": {"type": "string"},
               "digital-specialists": {"type": "string"},
+              "digital-professionals": {"type": "string"},
               "user-research-participants": {"type": "string"},
               "user-research-studios": {"type": "string"},
               "default": {"type": "string"}

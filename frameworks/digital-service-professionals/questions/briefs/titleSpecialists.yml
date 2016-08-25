@@ -1,0 +1,21 @@
+id: title
+name: Create a title for your brief
+question: Title
+question_advice: |
+  For example, 'Developer needed for immediate start' or 'Ethical Hacker, 6 month project'. 
+  
+  You can update it later if needed.
+hint: 100 characters maximum
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your summary needs to be 100 characters or less."
+empty_message: Add summary

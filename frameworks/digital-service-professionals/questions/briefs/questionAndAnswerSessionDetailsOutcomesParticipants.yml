@@ -1,0 +1,37 @@
+id: questionAndAnswerSessionDetails
+name: Will you have a question and answer session?
+question: Session information
+question_advice: |
+  If you want to hold a question and answer session you should describe: 
+  - the type of session. For example, a webinar, phone conference or meeting
+  - the date and time of your session
+  
+  You could also include:
+
+  - software needed
+  - the url
+  - the phone number
+  - the access code
+  - the address (including postcode)
+  - anything else needed to take part
+
+  This information will only be available to eligible suppliers who have logged in.
+
+  After the session, post all questions and answers to your requirements brief for all suppliers to see."
+
+optional: true
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcome
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_100_words
+    message: 'Your question and answer session details must be no more than 100 words.'
+empty_message: Add details
