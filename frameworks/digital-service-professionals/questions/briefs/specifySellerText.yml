@@ -3,6 +3,7 @@ name: ''
 question: 'Enter supplier email address'
 question_advice: ''
 type: text
+optional: true
 depends:
   - "on": "lot"
     being:

@@ -5,6 +5,7 @@ question_advice: ''
 list_item_name: 'seller list'
 number_of_items: 15
 type: list
+optional: true
 depends:
   - "on": "lot"
     being:
