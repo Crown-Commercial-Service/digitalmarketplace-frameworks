@@ -23,7 +23,4 @@ depends:
   - "on": "lot"
     being:
       - digital-professionals
-validations:
-  -
-    name: answer_required
-    message: 'Please select at least one option to continue.'
+      - digital-outcome
