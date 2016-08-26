@@ -1,5 +1,5 @@
 name: Who can respond to your brief?
-question: ''
+question: 'Specify Seller'
 question_advice: ''
 optional: false
 type: multiquestion
