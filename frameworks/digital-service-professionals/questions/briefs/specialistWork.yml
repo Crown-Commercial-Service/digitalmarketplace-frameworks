@@ -3,9 +3,8 @@ question: Work summary
 question_advice: |
   List all tasks you want the specialist to do.
 
-  For example:
-    - Front-end development on the DTO website.
-    - Implement toolkits and APIs to optimise performance.
+  For example,'Front-end development on the DTO website'.
+  
 type: textbox_large
 max_length_in_words: 100
 depends:
