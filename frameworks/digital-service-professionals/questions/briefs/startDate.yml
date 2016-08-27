@@ -1,7 +1,7 @@
 name: What is the latest start date?
 question: Latest start date
 question_advice: | 
-  For example, 31/12/2016
+  For example, 31/12/2016.
 type: text
 depends:
   - "on": "lot"
