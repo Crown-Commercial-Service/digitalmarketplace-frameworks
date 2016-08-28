@@ -155,14 +155,14 @@
     - evaluationTypeParticipants
 
 -
-  name: Set how long your requirements will be open for
+  name: How long your brief will be open
   editable: True
   step: 3
   questions:
     - requirementsLengthSpecialists
 
 -
-  name: Responding to seller questions
+  name: Question and answer session details
   editable: True
   step: 3
   description: |
