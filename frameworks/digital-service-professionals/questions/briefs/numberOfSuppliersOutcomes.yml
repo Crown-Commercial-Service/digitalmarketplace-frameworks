@@ -4,8 +4,6 @@ question: Number of sellers
 question_advice: |
   We recommend evaluating at least 3 sellers.
 
-  Read about [how many suppliers you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
-
 type: number
 limits:
   integer_only: true
