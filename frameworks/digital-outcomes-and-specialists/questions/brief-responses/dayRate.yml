@@ -1,5 +1,5 @@
 name: Day rate
-question: What’s the specialist’s day rate?
+question: What’s the specialist’s day rate in $AUD?
 hint: Enter a number, not a range.
 
 type: pricing
