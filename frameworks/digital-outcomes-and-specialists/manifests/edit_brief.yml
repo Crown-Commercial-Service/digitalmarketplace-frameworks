@@ -162,17 +162,13 @@
     - requirementsLengthSpecialists
 
 -
-  name: Describe question and answer session
+  name: Responding to seller questions
   editable: True
   step: 3
   description: |
-    While the application period is open, you need to reply to all questions suppliers ask about your requirements.
+    While the application period is open, you need to answer all questions suppliers ask you by posting them on your brief.
 
-    When a supplier asks a question, you’ll be sent an email to the email address you registered with.
-
-    You’ll need to post all questions and answers on the Digital Marketplace so that all suppliers can see them.
-
-    Providing a question and answer session means you can explain your needs and answer any questions quickly.
+    Providing a question and answer session is optional, but it means you can explain your needs and answer any questions quickly.
   questions:
     - questionAndAnswerSessionDetailsOutcomesParticipants
     - questionAndAnswerSessionDetailsSpecialists
