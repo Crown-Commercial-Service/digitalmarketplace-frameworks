@@ -1,5 +1,5 @@
 name: Day rate
-question: What’s the specialist’s day rate in $AUD?
+question: What’s your day rate?
 hint: Enter a number, not a range.
 
 type: pricing
@@ -15,7 +15,7 @@ validations:
     message: 'You need to answer this question.'
   - name: not_money_format
     field: dayRate
-    message: "Day rate must be a number, without units, eg 99.95"
+    message: "Day rate must be a number, without units. For example: 99.95"
   - name: max_less_than_min
     field: dayRate
     message: "This can't be more than the maximum day rate you've already provided."
