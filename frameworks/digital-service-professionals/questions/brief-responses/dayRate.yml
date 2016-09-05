@@ -1,5 +1,5 @@
 name: Day rate
-question: What’s your day rate?
+question: What's your day rate?
 hint: Enter a number, not a range.
 
 type: pricing
