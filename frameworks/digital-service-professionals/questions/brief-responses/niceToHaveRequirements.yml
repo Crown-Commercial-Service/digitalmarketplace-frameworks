@@ -1,7 +1,7 @@
 name: Nice-to-have requirements
 question: Do you have any of the nice-to-have skills and experience?
 question_advice: |
-  Buyers will filter supplier applications based on the number of nice-to-have skills and experience they have.
+  Buyers will filter seller applications based on the number of nice-to-have skills and experience they have.
 
 type: boolean_list
 number_of_items: 20
