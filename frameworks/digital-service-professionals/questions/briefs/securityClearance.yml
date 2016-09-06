@@ -1,10 +1,10 @@
-name: Is security clearance required?
+name: Security clearance
 question: 'Security clearance'
 question_advice: |
   
-  Only request security clearance if access to classified material, environments or assets is required.
+  Only request security clearance if access to classified material, environments or assets is essential.
   
-  If security clearance is required, specify the type here.
+  You shouldn't exclude sellers who don't have the security clearance you need — you can organise it later on their behalf.
   
 type: textbox_large
 optional: true
