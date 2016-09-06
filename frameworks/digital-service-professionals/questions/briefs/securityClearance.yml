@@ -6,6 +6,8 @@ question_advice: |
   
   You shouldn't exclude sellers who don't have the security clearance you need — you can organise it later on their behalf.
   
+  Security clearances are typically only given to Australian citizens without a criminal record.
+  
 type: textbox_large
 optional: true
 max_length_in_words: 50
