@@ -1,12 +1,10 @@
-name: Will the role require security clearance?
+name: Is security clearance required?
 question: 'Security clearance'
 question_advice: |
   
-  Advertising for individuals or teams who already have security clearance is against Australian Government policy. 
-  
-  If security clearance is required you can apply later. 
-  
-  Security clearance is typically only given to Australian citizens without a criminal record. 
+  Only request security clearance if access to classified material, environments or assets is required.
+
+  If security clearance is required, specify the level here.
   
 type: textbox_large
 optional: true
