@@ -1,0 +1,20 @@
+name: Technical competence criteria
+question: Technical competence criteria
+question_advice: |
+  Technical competence is how well the supplier can do the work you need them to do. Evaluate suppliers’ technical competence using criteria for:
+  - essential skills and experience
+  - nice-to-have skills and experience
+  - proposal
+
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcome
+questions:
+  - essentialRequirementsOutcomes
+  - niceToHaveRequirementsOutcomes
+  - successCriteriaOutcomes
+
+empty_message: Set technical competence criteria

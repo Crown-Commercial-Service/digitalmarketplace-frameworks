@@ -391,37 +391,13 @@ def test_multiquestion():
     assert result == bqp_result
 
 
-def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):
-    """
-    This test checks that when building a schema, all files are
-    actually opened.
-
-    The assumption is that if there are files which aren't opened,
-    either they are unnecessary or something has gone profoundly wrong.
-    """
-    g_cloud_schemas = [x for x in SCHEMAS['services'] if x[1] == "g-cloud-7"]
-    test_directory = str(tmpdir.mkdir("schemas"))
-
-    for schema in g_cloud_schemas:
-        generate_schema(test_directory, 'services', *schema)
-    g_cloud_path = "./frameworks/g-cloud-7"
-    g_cloud_opened_files = set(x for x in opened_files
-                               if x.startswith(g_cloud_path) and
-                               os.path.isfile(x))
-    g_cloud_expected_files = set([x for x in recursive_file_list(g_cloud_path)
-                                  if ("questions/services" in x or
-                                      x.endswith("manifests/edit_submission.yml")) and
-                                  not x.endswith("lot.yml") and not x.endswith("id.yml")])
-    assert g_cloud_expected_files == g_cloud_opened_files
-
-
-def test_generate_dos_schema_opens_files(opened_files, tmpdir):
-    dos_schemas = [x for x in SCHEMAS['services'] if x[1] == "digital-outcomes-and-specialists"]
+def test_generate_dsp_schema_opens_files(opened_files, tmpdir):
+    dos_schemas = [x for x in SCHEMAS['services'] if x[1] == "digital-service-professionals"]
     test_directory = str(tmpdir.mkdir("schemas"))
 
     for schema in dos_schemas:
         generate_schema(test_directory, 'services', *schema)
-    dos_path = "./frameworks/digital-outcomes-and-specialists"
+    dos_path = "./frameworks/digital-service-professionals"
     dos_opened_files = set(x for x in opened_files
                            if x.startswith(dos_path) and os.path.isfile(x))
     dos_expected_files = set([x for x in recursive_file_list(dos_path)
@@ -431,13 +407,13 @@ def test_generate_dos_schema_opens_files(opened_files, tmpdir):
     assert dos_expected_files == dos_opened_files
 
 
-def test_generate_dos_brief_opens_files(opened_files, tmpdir):
-    dos_schemas = [x for x in SCHEMAS['briefs'] if x[1] == "digital-outcomes-and-specialists"]
+def test_generate_dsp_brief_opens_files(opened_files, tmpdir):
+    dos_schemas = [x for x in SCHEMAS['briefs'] if x[1] == "digital-service-professionals"]
     test_directory = str(tmpdir.mkdir("briefs"))
 
     for schema in dos_schemas:
         generate_schema(test_directory, 'briefs', *schema)
-    dos_path = "./frameworks/digital-outcomes-and-specialists"
+    dos_path = "./frameworks/digital-service-professionals"
     dos_opened_files = set(x for x in opened_files
                            if x.startswith(dos_path) and os.path.isfile(x))
     dos_expected_files = set([x for x in recursive_file_list(dos_path)

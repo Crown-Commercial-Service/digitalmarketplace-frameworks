@@ -1,0 +1,26 @@
+name: ''
+question: 'Seller Selection'
+id: sellerSelector
+question_advice: ''
+type: radios
+options:
+  -
+    label: All qualified sellers
+    value: allSellers
+    description: >
+      Publish on the Digital Marketplace.
+  -
+    label: Specify a list of sellers
+    value: someSellers
+    description: >
+      Send directly to sellers of your choice.
+  -
+    label: Specify an individual seller
+    value: oneSeller
+    description: >
+      Send directly to one seller.
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+      - digital-outcome

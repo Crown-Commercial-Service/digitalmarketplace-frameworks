@@ -1,0 +1,17 @@
+name: Assisted digital and accessibility requirements
+question: Assisted digital and accessibility requirements
+question_advice: >
+  Describe any assisted digital, digital inclusion and accessibility needs participants should have,
+  eg users who rely on a screen reader, magnifier, mouth stick or head wand.
+optional: true
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'
+empty_message: Add requirements

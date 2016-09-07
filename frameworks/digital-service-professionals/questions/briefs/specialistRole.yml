@@ -1,0 +1,84 @@
+name: What type of digital specialist do you need?
+question: 'Specialist role'
+question_advice: ''
+type: radios
+options:
+  -
+    label: Agile Coach
+    value: agileCoach
+    description: >
+      Helps individuals, teams and managers be as effective as possible by embedding an agile culture.
+  -
+    label: Business Analyst
+    value: businessAnalyst
+    description: >
+      Analyses a service or organisation’s business processes and systems. Specifies, collects and presents findings.
+  -
+    label: Delivery Manager
+    value: deliveryManager
+    description: >
+      Enables agile teams to deliver high-quality services by removing obstacles or blockers to progress and facilitating project meetings.
+  -
+    label: Developer
+    value: developer
+    description: >
+     Builds quality, well-tested software and sites according to standards and best practice.
+  -
+    label: Digital Transformation Adviser
+    value: digitalTransformationAdviser
+    description: >
+      Digital Transformation Advisers provide leadership in delivering new programs of work in state, territory and federal government agencies, or across multiple functions.
+  -
+    label: Ethical Hacker
+    value: ethicalHacker
+    description: >
+      Ensures system security, identifies cyber security risks, applies risk treatments, detects and manages cyber security incidents.
+  -
+    label: Inclusive Designer
+    value: inclusiveDesigner
+    description: >
+      Supports the team with an in-depth knowledge of best practice in accessible development.
+  -
+    label: Interaction Designer
+    value: interactionDesigner
+    description: >
+      Responsible for designing a user-focused and accessible service, and making use of established design patterns.
+  -
+    label: Performance and Web Analyst
+    value: qualityAssurance
+    description: >
+      Specifies, collects and presents the key performance data and analysis for their service.
+  -
+    label: Product Manager
+    value: productManager
+    description: >
+      Works with the team to create the vision for the product, and sets the day-to-day priorities to fulfil that vision and ensure the team delivers.
+  -
+    label: Service Designer
+    value: serviceDesigner
+    description: >
+      Designs user-focused services that meet web standards and contributes to the development and continual enhancement of products. 
+  -
+    label: Technical Lead/Architect
+    value: technicalLeadArchitect
+    description: >
+      The most senior technical person in the team. Their role is to break down complex problems and lead by example in writing quality code.
+  -
+    label: User Researcher
+    value: userResearcher
+    description: >
+      Helps the team develop a deep understanding of their users and user needs.
+  -
+    label: Web Operations Engineer (Web Devops)
+    value: webDevops
+    description: >
+     Runs the production systems, helps the team deploy quickly and reliably and ensures the smooth running of the service.
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+validations:
+  -
+    name: answer_required
+    message: 'Please choose the specialist you need.'
+empty_message: Choose specialist role

@@ -1,0 +1,23 @@
+name: Who will the specialist work for? 
+question: Department, agency or organisation
+question_advice: |
+  Please write in full, including the state if necessary. 
+
+  For example, Digital Transformation Office instead of DTO.
+
+hint: 100 characters maximum
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcome
+      - digital-professionals
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "The organisation name must be no more than 100 characters."
+empty_message: Add organisation

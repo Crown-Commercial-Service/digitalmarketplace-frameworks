@@ -1,0 +1,16 @@
+name: Who can respond to your brief?
+question: 'Seller selection'
+question_advice: ''
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+      - digital-outcome
+questions:
+  - specifySellerRadio
+  - specifySellerList
+  - specifySellerText
+
+empty_message: Set technical competence criteria

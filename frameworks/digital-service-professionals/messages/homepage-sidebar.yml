@@ -1,0 +1,48 @@
+coming:
+  template_name: 'framework-notice'
+  heading: 'Become a Digital Outcomes and Specialists supplier'
+  message: |
+    **Digital Outcomes and Specialists will be open for applications soon.**
+
+    You can apply to provide:
+
+      - digital outcomes,
+        eg delivering the beta phase of an NHS booking system
+      - digital specialists,
+        eg service managers or developers
+      - user research studios
+      - user research participants
+
+    [Create an account](https://www.gov.au/marketplace/suppliers/create-your-account) to receive an email when Digital Outcomes and Specialists opens.
+
+    If you already have an account we’ll email you when Digital Outcomes and Specialists opens.
+
+    [Find out if your services are suitable](https://www.gov.au/marketplace/guidance/digital-outcomes-and-specialists-suppliers-guide)
+open:
+  template_name: 'framework-notice'
+  heading: 'Become a Digital Outcomes and Specialists supplier'
+  subheading: |
+    Deadline: 3pm GMT, 19 January 2016
+
+    *[GMT]: Greenwich Mean Time
+  message: |
+    **Digital Outcomes and Specialists is open for applications.**
+
+    You can apply to provide:
+
+      - digital outcomes,
+        eg delivering the beta phase of an NHS booking system
+      - digital specialists,
+        eg service managers or developers
+      - user research studios
+      - user research participants
+
+    [Create an account](https://www.gov.au/marketplace/suppliers/create-your-account) or [log in](https://www.gov.au/marketplace/login) to apply.
+
+    [Find out how to apply](https://www.gov.au/marketplace/guidance/digital-outcomes-and-specialists-suppliers-guide)
+pending:
+  template_name: 'temporary-message'
+  heading: 'Digital Outcomes and Specialists is closed for applications'
+  messages:
+    - 'Applications are being reviewed.'
+    

@@ -1,0 +1,13 @@
+name: ''
+id: sellerEmailList
+question: 'Enter supplier email addresses'
+question_advice: ''
+list_item_name: 'seller list'
+number_of_items: 15
+type: list
+optional: true
+depends:
+  - "on": "lot"
+    being:
+      - digital-professionals
+      - digital-outcome

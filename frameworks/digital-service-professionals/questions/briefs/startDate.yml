@@ -1,0 +1,18 @@
+name: What is the latest start date?
+question: Latest start date
+question_advice: | 
+  For example, 31/12/2016.
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcome
+      - digital-professionals
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your start date must be no more than 100 characters."
+empty_message: Set latest start date

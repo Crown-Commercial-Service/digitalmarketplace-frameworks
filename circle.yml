@@ -1,0 +1,11 @@
+machine:
+  timezone:
+    Australia/Sydney
+
+dependencies:
+  pre:
+    - pip install -r requirements_for_test.txt
+
+test:
+  override:
+    - py.test
