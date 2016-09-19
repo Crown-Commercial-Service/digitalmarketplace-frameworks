@@ -51,7 +51,8 @@
     - securityClearance
     - startDate
     - contractLength
-    - additionalTerms
+    - additionalTermsOutcomesSpecialists
+    - additionalTermsParticipants
     - budgetRangeOutcomesParticipants
     - budgetRangeSpecialists
     - summary
