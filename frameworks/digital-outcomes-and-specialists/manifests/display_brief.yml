@@ -45,7 +45,8 @@
 -
   name: Additional information
   questions:
-    - additionalTerms
+    - additionalTermsOutcomesSpecialists
+    - additionalTermsParticipants
 -
   name: Skills and experience
   summary_page_description: Buyers will use the essential and nice-to-have skills and experience to help them evaluate suppliers’ technical competence.
