@@ -1,0 +1,21 @@
+name: Who the specialist will work with
+id: existingTeam
+question: Who the specialist will work with
+question_advice: |
+  Describe the team the specialist will be working with on this project.
+
+  eg you’ll be working with a user researcher and a designer
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'
+empty_message: Describe existing team

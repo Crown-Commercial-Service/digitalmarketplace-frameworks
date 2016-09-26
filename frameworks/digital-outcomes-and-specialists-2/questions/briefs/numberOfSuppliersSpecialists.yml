@@ -1,0 +1,25 @@
+name: Maximum number of specialists that will be evaluated
+id: numberOfSuppliers
+question: Maximum number of specialists you’ll evaluate
+question_advice: |
+  You must evaluate at least 3 specialists.
+
+  Read about [how many specialists you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
+
+type: number
+limits:
+  integer_only: true
+  min_value: 3
+  max_value: 15
+
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_a_number
+    message: 'You must evaluate at least 3, and no more than 15, specialists.'
+
+empty_message: Set maximum number of specialists you’ll evaluate

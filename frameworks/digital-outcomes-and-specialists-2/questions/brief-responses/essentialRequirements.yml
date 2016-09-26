@@ -1,0 +1,17 @@
+name: Essential requirements
+question: Do you have the essential skills and experience?
+question_advice: If you don’t have all the essential skills and experience, you won’t be eligible for this opportunity.
+
+type: boolean_list
+number_of_items: 20
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer all the essential requirement questions.'
+empty_message: Respond to essential requirements
