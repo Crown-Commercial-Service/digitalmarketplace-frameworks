@@ -37,7 +37,15 @@ SCHEMAS = {
         ('G-Cloud 8 SCS Service', 'g-cloud-8', 'scs'),
         ('G-Cloud 8 IaaS Service', 'g-cloud-8', 'iaas'),
         ('G-Cloud 8 PaaS Service', 'g-cloud-8', 'paas'),
-        ('G-Cloud 8 SaaS Service', 'g-cloud-8', 'saas')
+        ('G-Cloud 8 SaaS Service', 'g-cloud-8', 'saas'),
+        ('Digital Outcomes and Specialists 2 Digital outcomes Service',
+         'digital-outcomes-and-specialists-2', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists 2 Digital specialists Service',
+         'digital-outcomes-and-specialists-2', 'digital-specialists'),
+        ('Digital Outcomes and Specialists 2 User research studios Service',
+         'digital-outcomes-and-specialists-2', 'user-research-studios'),
+        ('Digital Outcomes and Specialists 2 User research participants Service',
+         'digital-outcomes-and-specialists-2', 'user-research-participants'),
     ],
     'briefs': [
         ('Digital Outcomes and Specialists Digital outcomes Brief',

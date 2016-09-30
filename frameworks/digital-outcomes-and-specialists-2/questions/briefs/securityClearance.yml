@@ -1,0 +1,21 @@
+name: Security clearance
+question: Security clearance
+question_advice: |
+  Describe any security clearance the individual or team must have when they start work.
+
+  You shouldn’t exclude suppliers if they don’t currently have the security clearance you need.
+
+  You may need to organise security clearance.
+type: textbox_large
+optional: true
+max_length_in_words: 50
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+validations:
+  -
+    name: under_50_words
+    message: 'Your answer must be no more than 50 words.'
+empty_message: Add security clearance

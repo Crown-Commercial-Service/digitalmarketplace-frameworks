@@ -1,0 +1,27 @@
+question: What types of performance analysis can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: A/B and multivariate testing
+    description: Improve product performance by agreeing a hypothesis, setting up or managing a testing framework, and evaluating the results.
+  - label: Data analysis
+    description: Examine, transform and model data to discover useful insights, suggest conclusions and support decision making.
+  - label: Data cleansing
+    description: Detect and correct inaccurate or corrupt records from a record set, table or database. Collate and manipulate data into a usable format.
+  - label: Data visualisation
+    description: Interpret data into meaningful graphics to help analyse and display data.
+  - label: Performance frameworks
+    description: Set up key performance indicators (KPIs) and measure the progress of an organisation, programme, service or product against its goals.
+  - label: Performance reporting
+    description: Present key performance data and analysis for a service or product.
+  - label: Statistical modelling
+    description: Create models to help understand relationships between different types of data and support decision making.
+  - label: Web analytics
+    description: Measure, collect, analyse and report data on how people use a web service so that it can be improved.
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

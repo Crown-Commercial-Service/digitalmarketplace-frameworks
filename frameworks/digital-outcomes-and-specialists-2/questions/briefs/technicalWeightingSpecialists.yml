@@ -1,0 +1,31 @@
+id: technicalWeighting
+question: 'Technical competence'
+question_advice: |
+  Technical competence is how well the specialist can do the work you need them to do. It’s also known as
+  ‘technical merit and functional fit’. If a specialist has the right skills and experience, a good understanding
+  of your requirements, and works in an agile way, they should have the technical competence to do the work.
+
+  You must assess a supplier’s technical competence by reviewing their essential and nice-to-have skills and experience.
+hint: 'This can be between 10% and 75%'
+
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+
+type: number
+unit: "%"
+unit_in_full: "percent"
+unit_position: "after"
+limits:
+  min_value: 10
+  max_value: 75
+  integer_only: true
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_a_number
+    message: 'Weighting must be a number between 10 and 75.'
+  - name: total_should_be_100
+    message: 'Total must add up to 100%.'

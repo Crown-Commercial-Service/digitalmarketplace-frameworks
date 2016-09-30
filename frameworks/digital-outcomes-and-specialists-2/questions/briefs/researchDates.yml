@@ -1,0 +1,16 @@
+name: Research dates
+question: Research dates
+question_advice: If you don’t have exact dates, say when you expect research to start and end.
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your answer must be no more than 100 characters."
+empty_message: Add dates
