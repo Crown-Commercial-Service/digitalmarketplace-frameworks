@@ -48,13 +48,13 @@
     },
     "contract_variation": {
       "properties": {
-        "variation_description": {
+        "variation_description_not_in_place": {
           "type": "string"
         },
-        "not_agreed_extra": {
+        "variation_not_yet_agreed_extra": {
           "type": "string"
         },
-        "agreed_extra": {
+        "variation_description_in_place": {
           "type": "string"
         },
         "confirmation_message": {
@@ -90,7 +90,8 @@
         }
       },
       "required": [
-        "variation_description",
+        "variation_description_not_in_place",
+        "variation_description_in_place",
         "framework_agreement_changes",
         "call_off_contract_changes"
       ],
