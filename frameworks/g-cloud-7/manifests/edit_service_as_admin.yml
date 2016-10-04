@@ -35,3 +35,12 @@
     - termsAndConditionsDocumentURL
     - sfiaRateDocumentURL
     - pricingDocumentURL
+-
+  name: Support
+  editable: True
+  questions:
+    - supportTypes
+    - supportForThirdParties
+    - supportAvailability
+    - supportResponseTime
+    - incidentEscalation
