@@ -4,7 +4,7 @@
   description: >
     You must make this declaration to apply to Digital Outcomes and
     Specialists. You can come back and change your answers at any time before
-    3pm, 19 January 2016.
+    5pm, 6 December 2016.
 
 
     You must be able to truthfully answer 'yes' to every question under ‘Essentials'
@@ -43,7 +43,8 @@
     Check that your organisation complies with [Regulation 57(1) of the Public
     Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made).
   questions:
-    - conspiracyCorruptionBribery
+    - conspiracy
+    - corruptionBribery
     - fraudAndTheft
     - terrorism
     - organisedCrime
