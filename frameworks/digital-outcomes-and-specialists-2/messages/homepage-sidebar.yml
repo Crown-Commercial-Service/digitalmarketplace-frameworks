@@ -1,47 +1,16 @@
 coming:
-  template_name: 'framework-notice'
-  heading: 'Become a Digital Outcomes and Specialists 2 supplier'
-  message: |
-    **Digital Outcomes and Specialists 2 will be open for applications soon.**
+  heading: 'Digital Outcomes and Specialists&nbsp;2 coming soon'
+  messages:
+    - 'Provide digital outcomes and specialists, and user research studios and participants.'
+    - 'You need an account to receive notifications about when you can apply.'
 
-    You can apply to provide:
-
-      - digital outcomes,
-        eg delivering the beta phase of an NHS booking system
-      - digital specialists,
-        eg service managers or developers
-      - user research studios
-      - user research participants
-
-    [Create an account](/suppliers/create) to receive an email when Digital Outcomes and Specialists opens.
-
-    If you already have an account we’ll email you when Digital Outcomes and Specialists 2 opens.
-
-    [Find out if your services are suitable](https://digitalmarketplace.blog.gov.uk/2015/11/12/digital-outcomes-and-specialists-suitable-suppliers-and-services/)
 open:
-  template_name: 'framework-notice'
-  heading: 'Become a Digital Outcomes and Specialists 2 supplier'
-  subheading: |
-    Deadline: 5pm GMT, 6 December 2016
+  heading: 'Digital Outcomes and Specialists&nbsp;2 is open for applications'
+  messages:
+    - 'You need an account to apply.'
+    - 'The application deadline is 5pm&nbsp;GMT, 6 December 2016.'
 
-    *[GMT]: Greenwich Mean Time
-  message: |
-    **Digital Outcomes and Specialists 2 is open for applications.**
-
-    You can apply to provide:
-
-      - digital outcomes,
-        eg delivering the beta phase of an NHS booking system
-      - digital specialists,
-        eg service managers or developers
-      - user research studios
-      - user research participants
-
-    [Create an account](/suppliers/create) or [log in](/suppliers/login) to apply.
-
-    [Find out how to apply](https://www.gov.uk/guidance/digital-outcomes-and-specialists-suppliers-guide)
 pending:
-  template_name: 'temporary-message'
-  heading: 'Digital Outcomes and Specialists 2 is closed for applications'
+  heading: 'Digital Outcomes and Specialists&nbsp;2 is closed for applications'
   messages:
     - 'Applications are being reviewed.'

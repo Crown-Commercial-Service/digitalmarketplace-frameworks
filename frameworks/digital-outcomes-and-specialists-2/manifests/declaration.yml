@@ -3,7 +3,7 @@
   editable: True
   description: >
     You must make this declaration to apply to Digital Outcomes and
-    Specialists. You can come back and change your answers at any time before
+    Specialists&nbsp;2. You can come back and change your answers at any time before
     5pm, 6 December 2016.
 
 
@@ -37,7 +37,7 @@
     section, it's very unlikely that your bid will be accepted.
 
 
-    In questions [[conspiracyCorruptionBribery]] to [[organisedCrime]], 'anyone who represents your organisation' includes members of your group of economic
+    In questions [[conspiracy]] to [[organisedCrime]], 'anyone who represents your organisation' includes members of your group of economic
     operators, their proposed subcontractors, and any directors, partners, or
     any other person who has powers of representation, decision or control.
     Check that your organisation complies with [Regulation 57(1) of the Public
@@ -130,7 +130,7 @@
   name: About you
   editable: True
   description: >
-    The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the Digital and Commercial Specialists framework.
+    The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the Digital Outcomes and Specialists&nbsp;2 framework.
   questions:
     - primaryContact
     - primaryContactEmail
@@ -142,6 +142,7 @@
     - firstRegistered
     - currentRegisteredCountry
     - companyRegistrationNumber
+    - dunsNumber
     - registeredVATNumber
     - establishedInTheUK
     - appropriateTradeRegisters
