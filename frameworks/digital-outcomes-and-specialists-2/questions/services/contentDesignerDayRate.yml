@@ -1,4 +1,5 @@
-question: How much do you charge per day for a content designer?
+question: How much do you charge per day for a content designer (excluding VAT and expenses)?
+question_advice: You won’t be able to charge a higher rate when you apply for opportunities.
 depends:
   - "on": lot
     being:
