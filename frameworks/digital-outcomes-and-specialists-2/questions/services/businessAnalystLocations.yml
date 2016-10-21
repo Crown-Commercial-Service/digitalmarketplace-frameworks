@@ -1,4 +1,4 @@
-question: Where will your business analyst work?
+question: Where will your business analyst work? 
 question_advice: Choose all the locations where the specialist can work at buyers’ sites, and whether they can work offsite.
 hint: "[View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
 depends:
