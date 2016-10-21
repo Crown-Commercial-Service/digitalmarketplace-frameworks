@@ -1,5 +1,5 @@
 question: 'Service definition document'
-hint: 'Please upload your service definition. Refer to the G-Cloud 7 guidance for more information on what to include. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)'
+hint: 'Please upload your service definition. Refer to the G‑Cloud 7 guidance for more information on what to include. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)'
 depends:
   -
     "on": lot

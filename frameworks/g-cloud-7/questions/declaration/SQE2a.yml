@@ -1,5 +1,5 @@
 question: 'Please confirm whether you will provide G-Cloud services:'
-hint: 'Choose all that apply. You should only consider subcontractors whose products or services will be integral to the G-Cloud 7 services that you intend to provide.'
+hint: 'Choose all that apply. You should only consider subcontractors whose products or services will be integral to the G‑Cloud 7 services that you intend to provide.'
 type: checkboxes
 options:
   -
