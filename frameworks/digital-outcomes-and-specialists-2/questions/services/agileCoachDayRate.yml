@@ -1,4 +1,5 @@
-question: How much do you charge per day for an agile coach?
+question: How much do you charge per day for an agile coach (excluding VAT and expenses)?
+question_advice: You won’t be able to charge a higher rate when you apply for opportunities.
 depends:
   - "on": lot
     being:
