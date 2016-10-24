@@ -3,7 +3,7 @@
   editable: True
   description: >
     You must make this declaration to apply to Digital Outcomes and
-    Specialists&nbsp;2. You can come back and change your answers at any time before
+    Specialists 2. You can come back and change your answers at any time before
     5pm, 6 December 2016.
 
 
@@ -130,7 +130,7 @@
   name: About you
   editable: True
   description: >
-    The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the Digital Outcomes and Specialists&nbsp;2 framework.
+    The Crown Commercial Service will use the information you provide under 'About you' to process your application and manage your participation in the Digital Outcomes and Specialists 2 framework.
   questions:
     - primaryContact
     - primaryContactEmail

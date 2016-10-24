@@ -8,6 +8,9 @@
       "name": {
         "type": "string"
       },
+      "slug": {
+        "type": "string"
+      },
       "summary_page_description": {
         "type": "string"
       },

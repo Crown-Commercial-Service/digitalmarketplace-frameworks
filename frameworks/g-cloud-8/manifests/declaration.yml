@@ -2,7 +2,7 @@
   name: Essentials
   editable: True
   description: |
-    You must make this declaration to apply to G-Cloud 8. You can come back and change your answers at any time before
+    You must make this declaration to apply to G‑Cloud 8. You can come back and change your answers at any time before
     5pm BST, 23 June 2016.
     
     You must be able to truthfully answer ‘yes’ to every question under ‘Essentials’
@@ -88,7 +88,7 @@
   editable: True
   description: |
     The Crown Commercial Service will use the information you provide under ‘About you’ to process your application 
-    and manage your participation in the G-Cloud 8 framework.
+    and manage your participation in the G‑Cloud 8 framework.
     
     You can answer ‘yes’ or ‘no’ to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
   questions:    
