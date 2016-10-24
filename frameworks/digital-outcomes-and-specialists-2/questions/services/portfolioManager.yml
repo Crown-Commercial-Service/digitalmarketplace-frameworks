@@ -11,6 +11,6 @@ questions:
   - portfolioManagerLocations
   - portfolioManagerDayRate
 
-empty_message: You haven't added a portfolio manager
+empty_message: You haven’t added a portfolio manager
 
 hint: Lead a digital portfolio of projects and programmes.

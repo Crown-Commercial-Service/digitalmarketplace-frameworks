@@ -18,7 +18,7 @@ options:
   - label: Information architecture
     description: Organise, structure and label content to help users find information and complete tasks.
   - label: Interaction design
-    description: Design a digital service so that it's as simple as possible for users. Create user journeys and interaction patterns.
+    description: Design a digital service so that it’s as simple as possible for users. Create user journeys and interaction patterns.
   - label: Prototyping
     description: Create a basic version of a product that can be quickly tested and iterated with users.
   - label: Service design

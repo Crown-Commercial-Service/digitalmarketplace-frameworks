@@ -6,7 +6,7 @@ depends:
 type: checkboxes
 options:
   - label: CESG information assurance certification
-    description: Offer services as a CESG Certified Professional - the government's approved standard for cyber security professionals.
+    description: Offer services as a CESG Certified Professional - the government’s approved standard for cyber security professionals.
   - label: Firewall audit
     description: Ensure deployed firewall rules match security policies, and identify where the rules should be changed.
   - label: Incident response and forensics

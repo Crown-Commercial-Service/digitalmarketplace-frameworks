@@ -11,6 +11,6 @@ questions:
   - designerLocations
   - designerDayRate
 
-empty_message: You haven't added a designer
+empty_message: You haven’t added a designer
 
 hint: Provide user-centred interaction design, service design and graphic design expertise.
