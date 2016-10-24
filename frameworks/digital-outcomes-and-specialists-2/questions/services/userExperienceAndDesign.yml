@@ -10,4 +10,4 @@ any_of: capability
 questions:
   - userExperienceAndDesignTypes
 
-empty_message: You haven't added any user experience and design capabilities
+empty_message: You haven’t added any user experience and design capabilities

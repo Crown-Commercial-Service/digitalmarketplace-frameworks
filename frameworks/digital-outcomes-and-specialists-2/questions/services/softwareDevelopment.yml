@@ -10,4 +10,4 @@ any_of: capability
 questions:
   - softwareDevelopmentTypes
 
-empty_message: You haven't added any software development capabilities
+empty_message: You haven’t added any software development capabilities

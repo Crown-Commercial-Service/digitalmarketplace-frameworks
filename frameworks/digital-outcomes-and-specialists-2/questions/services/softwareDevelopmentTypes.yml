@@ -8,7 +8,7 @@ options:
   - label: API development
     description: Design and evolve secure APIs.
   - label: Cloud-based service development
-    description: Understand how using the cloud might change an application's architecture. Develop, deploy and maintain applications in the cloud where appropriate.
+    description: Understand how using the cloud might change an application’s architecture. Develop, deploy and maintain applications in the cloud where appropriate.
   - label: Content management system
     description: Build, maintain, customise and extend a CMS.
   - label: Customer relationship management
