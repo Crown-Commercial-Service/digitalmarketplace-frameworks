@@ -1,6 +1,6 @@
 question: Where will your content designer work?
 question_advice: Choose all the locations where the specialist can work at buyers’ sites, and whether they can work offsite.
-hint: "[View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
+hint: "[View locations (PDF, 262KB)](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/maps/regions--former-government-office-regions--gors---effective-at-31st-december--2011.pdf)"
 depends:
   - "on": lot
     being:
