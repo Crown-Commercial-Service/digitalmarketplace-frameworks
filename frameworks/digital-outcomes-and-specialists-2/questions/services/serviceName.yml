@@ -1,7 +1,6 @@
 name: What is the name of the lab?
-question: >
+question: |
   What is the name of the lab?
-
 
   Provide the name of the room where participants and researchers carry out testing.
 type: text

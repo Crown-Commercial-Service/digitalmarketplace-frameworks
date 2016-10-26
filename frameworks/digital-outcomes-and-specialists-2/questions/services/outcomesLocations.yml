@@ -1,14 +1,12 @@
 id: locations
 name: Where can you work on digital outcomes?
-question: >
+question: |
   Where can you work on digital outcomes?
-
 
   Choose all the locations where you can work at buyers’ sites, and whether you can work offsite.
 
-
-  You can update the regions where you can provide services when the framework is live.
-hint: "[View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
+  You can update the locations where you can provide services when the framework is live.
+hint: "[View locations (PDF, 262KB)](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/maps/regions--former-government-office-regions--gors---effective-at-31st-december--2011.pdf)"
 depends:
   - "on": lot
     being:
