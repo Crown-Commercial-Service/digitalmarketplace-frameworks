@@ -39,10 +39,11 @@
     },
     "urls": {
       "properties": {
-        "framework_url": {"type": "string"}
+        "framework_url": {"type": "string"},
+        "supplier_guide_url": {"type": "string"}
       },
       "required": [
-        "framework_url"
+        "supplier_guide_url"
       ],
       "additionalProperties": false
     },
