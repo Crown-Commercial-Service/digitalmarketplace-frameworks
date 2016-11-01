@@ -7,17 +7,13 @@ from jsonschema import ValidationError
 
 
 def get_all_files():
-
-    def all_files():
-        root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../frameworks'))
-        for root, subdirs, files in os.walk(root_dir):
-            for filename in files:
-                if filename.endswith('.yml'):
-                    file_path = os.path.join(root, filename)
-                    schema_name = file_path.replace(root_dir, '').split('/')[2:][0]
-                    yield (file_path, schema_name)
-
-    return all_files()
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../frameworks'))
+    for root, subdirs, files in os.walk(root_dir):
+        for filename in files:
+            if filename.endswith('.yml'):
+                file_path = os.path.join(root, filename)
+                schema_name = file_path.replace(root_dir, '').split('/')[2:][0]
+                yield (file_path, schema_name)
 
 
 schema_cache = {}
