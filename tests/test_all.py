@@ -43,7 +43,7 @@ def test_framework_file_matches_schema(path, schema_name):
     validator = load_jsonschema_validator('schemas/{}.json'.format(schema_name))
 
     with open(path) as f:
-        data = yaml.load(f)
+        data = yaml.safe_load(f)
         try:
             validator.validate(data)
         except ValidationError as e:
