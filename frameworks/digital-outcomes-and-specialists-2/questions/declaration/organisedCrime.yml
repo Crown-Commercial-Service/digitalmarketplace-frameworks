@@ -1,5 +1,5 @@
 question: >
-  Please confirm whether, within the past 5 years, anyone who represents your organisation or a partner organisation has been convicted of:
+  Please confirm whether, within the past 5 years, anyone who represents, supervises or has control in your organisation or a partner or parent organisation has been convicted of:
 
     - money laundering within the meaning of sections 340(11) and 415 of the Proceeds of Crime Act 2002
     - an offence in connection with the proceeds of criminal conduct within the meaning of section 93A, 93B or 93C of the Criminal Justice Act 1988 or article 45, 46 or 47 of the Proceeds of Crime (Northern Ireland) Order 1996
@@ -9,4 +9,4 @@ question: >
     - an offence in connection with the proceeds of drug trafficking within the meaning of section 49, 50 or 51 of the Drug Trafficking Act 1994; or any other offence within the meaning of article 57(1) of the Directive
     - an offence under section 2 or section 4 of the Modern Slavery Act 2015
 type: boolean
-hint: Answer ‘yes’ if anyone who represents your organisation or partner organisation has been convicted of any of the above.
+hint: Answer ‘yes’ if anyone who represents, supervises or has control in your organisation or a partner or parent organisation has been convicted of any of the above.
