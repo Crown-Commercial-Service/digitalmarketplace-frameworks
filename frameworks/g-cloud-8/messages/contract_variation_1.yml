@@ -15,9 +15,7 @@ variation_description_in_place: |
     (reference: RM1557viii) that make it easier for suppliers to work with government. 
     These changes have been accepted by suppliers and the contract variation is now in place.
 
-confirmation_message: |
-    You have accepted the proposed changes. You’ll be notified when they come into effect. 
-    Until then, you must use the published framework agreement and call-off contract to sell your services.
+confirmation_message: You have accepted the proposed changes. You’ll be notified when they come into effect. Until then, you must use the published framework agreement and call-off contract to sell your services.
 
 framework_agreement_changes:
     - 
