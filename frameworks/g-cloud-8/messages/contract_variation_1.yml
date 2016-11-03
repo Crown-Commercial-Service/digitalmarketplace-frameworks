@@ -4,7 +4,7 @@ variation_description_not_in_place: |
     The changes make it easier for suppliers to work with government and are listed here.
     
     These minor changes were agreed while G-Cloud 8 was open for applications.
-    The changes were not included in the final documents that were signed on behalf of [[SUPPLIER_NAME]].
+    The changes were not included in the final documents that were signed on behalf of {{ supplier_name }}.
 
 variation_not_yet_agreed_extra: |
     To put these changes into effect, we need you to review and accept them here.
