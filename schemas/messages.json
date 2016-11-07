@@ -40,6 +40,7 @@
     "urls": {
       "properties": {
         "framework_url": {"type": "string"},
+        "framework_agreement_url": {"type": "string"},
         "supplier_guide_url": {"type": "string"}
       },
       "required": [
