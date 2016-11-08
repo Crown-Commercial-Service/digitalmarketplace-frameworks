@@ -24,26 +24,7 @@
         }
       },
       "description": {
-        "oneOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "object",
-            "properties": {
-              "saas": {"type": "string"},
-              "paas": {"type": "string"},
-              "iaas": {"type": "string"},
-              "scs": {"type": "string"},
-              "digital-outcomes": {"type": "string"},
-              "digital-specialists": {"type": "string"},
-              "user-research-participants": {"type": "string"},
-              "user-research-studios": {"type": "string"},
-              "default": {"type": "string"}
-            },
-            "additionalProperties": false
-          }
-        ]
+        "type": "string"
       },
       "step": {
         "type": "integer"

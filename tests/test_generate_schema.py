@@ -9,7 +9,7 @@ except ImportError:
 
 import mock
 import pytest
-from dmutils.content_loader import ContentQuestion
+from dmcontent import ContentQuestion
 from hypothesis.settings import Settings
 from hypothesis import given, assume, strategies as st
 from schema_generator import text_property, uri_property, parse_question_limits, \

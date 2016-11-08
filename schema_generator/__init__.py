@@ -1,7 +1,7 @@
 import os
 import re
 import json
-from dmutils.content_loader import ContentLoader
+from dmcontent import ContentLoader
 
 
 MANIFESTS = {

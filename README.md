@@ -2,7 +2,7 @@ Digital Marketplace content
 ===========================
 YAML definitions of the Digital Marketplace’s procurement frameworks.
 
-The content here is pulled in to the frontend applications to display forms, and is also used to generate the JSON 
+The content here is pulled in to the frontend applications to display forms, and is also used to generate the JSON
 schemas used by the API for validation (by running the `scripts/generate-schemas.py` script).
 
 <p align="center">
@@ -13,23 +13,23 @@ Terminology
 -----------
 
 * Multiquestion: A multi-question is a question which contains a `questions` key that is a list of sub-questions.
-  This lets us reuse the same summary tables markup so that each row represents a group of related questions 
+  This lets us reuse the same summary tables markup so that each row represents a group of related questions
   (rather than just being limited to one question per row).
-  
+
   For example, an `address` multiquestion could have the sub-questions `street`, `town` and `postcode`, and those
   fields would be displayed together on the (multi)question page and in the summary table.
 
 Question keys
 -------------
 
-* `question` name of the question, displayed in forms and summary tables (required)
-* `question_advice` a note about the question asked, usually giving some more information about what it means 
-   and why it is being asked
+* `question` name of the question, displayed in forms and summary tables (required). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
+* `question_advice` a note about the question asked, usually giving some more information about what it means
+   and why it is being asked. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `type` type of the question input, used to find the related toolkit form template (required)
 * `name` short question name to use in summary tables instead of the full question. Also used to
-  generate the URL slug for addressable questions
+  generate the URL slug for addressable questions. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `empty_message` a message to display instead of "Answer required" if question wasn't answered
-* `hint` hint text to display after the question, eg advice about how to best format you answer
+* `hint` hint text to display after the question, eg advice about how to best format you answer. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `optional` if set to `true` makes the question optional
 * `options` a list of possible values for the types that support them. Each option consists of:
     * `label` text displayed on the option label (required)
@@ -77,16 +77,35 @@ Manifest files define a tree-like structure for content.  A manifest is a list o
 
 Each section contains:
 
-* `name` name of the section (required)
+* `name` name of the section (required). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `editable` controls whether section allows updates for the questions, boolean value
 * `edit_questions` controls whether individual questions can be edited separately (only supported by `multiquestion` questions)
-* `description` could be either:
-  * A text to display after the section name
-  * A dictionary where keys are lot slugs and values are the descriptions that should be used for the given lot.
-    `default` key can be used to set a common description that will be used if there's no key for the given lot.
+* `description` text to display after the section name. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `summary_page_description` text to display between the summary table heading and the table body
 * `step` decides how sections are grouped on (brief) overview pages
 * `questions` a list of section questions (required)
+
+Template Fields
+---------------
+
+[`TemplateField`](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8) objects are fields which are turned into jinja Templates, rendered
+with a view's context, run through a markdown filter, and returned as a Markup string.
+These fields therefore allow:
+
+- markdown formatting
+- valid jinja syntax
+  - (includes passing through variables)
+
+These are the fields that are turned into TemplateFields when the YAML files are loaded:
+
+| ContentSection                    | Question                                           |
+|-----------------------------------|----------------------------------------------------|
+| [`name`, `description`](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/content_loader.py#L123) | [`question`, `name`, `question_advice`, `hint`](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/questions.py#L10) |
+
+[Example usage given in content-loader pull request](https://github.com/alphagov/digitalmarketplace-content-loader/pull/8)
+
+*Note:*
+*All markdown formatting, HTML tags, or jinja passed in as part of the content of variables will be escaped.*
 
 Running the tests
 -----------------

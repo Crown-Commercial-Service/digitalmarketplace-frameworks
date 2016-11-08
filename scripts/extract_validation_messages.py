@@ -59,7 +59,7 @@ def read_and_write_files(file_paths, output_file_name):
     with open(output_file_name, 'a') as output_file:
         for file_path in file_paths:
             with open(file_path, 'r') as f:
-                doc = yaml.load(f)
+                doc = yaml.safe_load(f)
                 if doc.get('validations'):
                     data = create_data_packet(file_path, doc)
                     write_back_to_file(output_file, data)
