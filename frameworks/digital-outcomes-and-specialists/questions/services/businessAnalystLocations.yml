@@ -1,6 +1,6 @@
 question: Where will your business analyst work?
 hint: >
-    [View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)"
+    [View regions (PDF, 262KB)](https://geoportal.statistics.gov.uk/Docs/Maps/Regions_(Eng)_2011_map.pdf)
 depends:
   - "on": lot
     being:

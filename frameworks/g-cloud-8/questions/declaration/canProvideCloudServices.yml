@@ -1,5 +1,5 @@
 question: >
-    Do you confirm that you can provide cloud services as defined in the [framework agreement (ZIP, 2.4MB)](/suppliers/frameworks/g-cloud-8/files/g-cloud-8-supplier-pack.zip)?"
+    Do you confirm that you can provide cloud services as defined in the [framework agreement (ZIP, 2.4MB)](/suppliers/frameworks/g-cloud-8/files/g-cloud-8-supplier-pack.zip)?
 hint: >
     Check the [National Institute of Standards and Technology (NIST) definitions](http://csrc.nist.gov/publications/nistpubs/800-145/SP800-145.pdf) to see if your cloud services meet G-Cloud framework requirements.
 type: boolean
