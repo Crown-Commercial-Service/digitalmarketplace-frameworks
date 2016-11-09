@@ -1,4 +1,5 @@
-hint: 'Include the technical features of your product, eg real-time reporting, remote access. This content will be indexed by search. Using additional keywords may impact your acceptance on to the Digital Marketplace. Read the [guidance on writing good service descriptions](https://digitalmarketplace.blog.gov.uk/2014/10/21/digital-marketplace-content-its-all-change/). (Maximum 10 words per feature. Maximum 10 features.)'
+hint: >
+    Include the technical features of your product, eg real-time reporting, remote access. This content will be indexed by search. Using additional keywords may impact your acceptance on to the Digital Marketplace. Read the [guidance on writing good service descriptions](https://digitalmarketplace.blog.gov.uk/2014/10/21/digital-marketplace-content-its-all-change/). (Maximum 10 words per feature. Maximum 10 features.)'
 depends:
   -
     "on": lot
