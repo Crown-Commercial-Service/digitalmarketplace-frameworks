@@ -1,0 +1,30 @@
+-
+  name: Start date
+  editable: True
+  questions:
+    - availabilityOutcomes
+    - availabilitySpecialists
+
+-
+  name: Day rate
+  editable: True
+  questions:
+    - dayRate
+
+-
+  name: Essential requirements
+  editable: True
+  questions:
+    - essentialRequirements
+
+-
+  name: Nice to have requirements
+  editable: True
+  questions:
+    - niceToHaveRequirements
+
+-
+  name: Respond to email address
+  editable: True
+  questions:
+    - respondToEmailAddress
