@@ -1,0 +1,17 @@
+name: Essential requirements
+question: Do you have all the essential skills and experience?
+question_advice: >
+  <ul class="list-bullet">
+    {% for requirement in brief.essentialRequirements %}
+      <li>{{ requirement }}</li>
+    {% endfor %}
+  </ul>
+
+type: boolean
+
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+      - user-research-participants

@@ -1,9 +1,14 @@
 -
-  name: Start date
+  name: The earliest the specialist can start
   editable: True
   questions:
-    - availabilityOutcomes
-    - availabilitySpecialists
+    - newAvailabilitySpecialists
+
+-
+  name: The earliest the team can start
+  editable: True
+  questions:
+    - newAvailabilityOutcomes
 
 -
   name: Day rate
@@ -12,10 +17,10 @@
     - dayRate
 
 -
-  name: Essential requirements
+  name: Do you have all the essential skills and experience?
   editable: True
   questions:
-    - essentialRequirements
+    - essentialRequirementsMet
 
 -
   name: Nice to have requirements
