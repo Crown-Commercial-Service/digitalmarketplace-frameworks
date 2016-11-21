@@ -30,7 +30,7 @@ MANIFEST_QUESTION_SET = {
 
 QUESTION_SET_CONTEXT = {
     'briefs': {'lot': 'context-lot'},
-    'brief-responses': {'lot': 'context-lot', 'brief': mock.Mock()},
+    'brief-responses': {'lot': 'context-lot', 'brief': mock.MagicMock(), 'max_day_rate': "max day rate"},
     'services': {'lot': 'context-lot'},
 }
 
@@ -73,19 +73,13 @@ def test_render_section(framework, manifest, section_slug, section):
 
 @pytest.mark.parametrize("framework, question_set, question_id, question", content_questions())
 def test_render_question(framework, question_id, question_set, question):
-    question_set_context = {
-        'briefs': {'lot': 'context-lot'},
-        'brief-responses': {'lot': 'context-lot', 'brief': mock.MagicMock()},
-        'services': {'lot': 'context-lot'},
-    }
-
     brief_msg = "Brief questions must be single-line since they're used as <title>s: frameworks/{}/questions/{}/{}.yml"
 
     for field_name, field in question.items():
         if isinstance(field, TemplateField):
-            rendered_field = field.render(question_set_context.get(question_set))
-            rendered_md = TemplateField(field.source, markdown=True).render(question_set_context.get(question_set))
-            rendered_text = TemplateField(field.source, markdown=False).render(question_set_context.get(question_set))
+            rendered_field = field.render(QUESTION_SET_CONTEXT.get(question_set))
+            rendered_md = TemplateField(field.source, markdown=True).render(QUESTION_SET_CONTEXT.get(question_set))
+            rendered_text = TemplateField(field.source, markdown=False).render(QUESTION_SET_CONTEXT.get(question_set))
             assert rendered_field is not None
 
             assert (

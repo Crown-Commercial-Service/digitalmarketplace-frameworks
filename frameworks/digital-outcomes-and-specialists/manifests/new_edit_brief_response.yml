@@ -11,10 +11,10 @@
     - newAvailabilityOutcomes
 
 -
-  name: Day rate
+  name: How much you charge per day
   editable: True
   questions:
-    - dayRate
+    - newDayRate
 
 -
   name: Do you have all the essential skills and experience?
