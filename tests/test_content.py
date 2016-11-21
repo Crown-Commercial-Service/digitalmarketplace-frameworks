@@ -75,7 +75,7 @@ def test_render_section(framework, manifest, section_slug, section):
 def test_render_question(framework, question_id, question_set, question):
     question_set_context = {
         'briefs': {'lot': 'context-lot'},
-        'brief-responses': {'lot': 'context-lot', 'brief': mock.Mock()},
+        'brief-responses': {'lot': 'context-lot', 'brief': mock.MagicMock()},
         'services': {'lot': 'context-lot'},
     }
 
