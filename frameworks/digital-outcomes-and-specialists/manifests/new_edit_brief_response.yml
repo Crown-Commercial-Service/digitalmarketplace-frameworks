@@ -29,7 +29,7 @@
     - niceToHaveRequirements
 
 -
-  name: Respond to email address
+  name: Email address the buyer should use to contact you
   editable: True
   questions:
-    - respondToEmailAddress
+    - newRespondToEmailAddress
