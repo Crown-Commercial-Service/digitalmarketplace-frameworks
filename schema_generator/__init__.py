@@ -158,9 +158,10 @@ def radios_property(question):
 
 
 def boolean_property(question):
-    return {question['id']: {
-        "type": "boolean"
-    }}
+    data = {"type": "boolean"}
+    if question.get("required_value") is not None:
+        data["enum"] = [question["required_value"]]
+    return {question['id']: data}
 
 
 def list_property(question):

@@ -16,7 +16,7 @@ from schema_generator import text_property, uri_property, parse_question_limits,
     checkbox_property, number_property, multiquestion, \
     build_question_properties, empty_schema, load_questions, \
     drop_non_schema_questions, radios_property, list_property, boolean_list_property, \
-    price_string, pricing_property, generate_schema, SCHEMAS
+    boolean_property, price_string, pricing_property, generate_schema, SCHEMAS
 
 Settings.default.database = None
 
@@ -223,6 +223,25 @@ def test_list_property(id):
         'maxLength': 100,
         "pattern": "^(?:\\S+\\s+){0,9}\\S+$"
     }
+
+
+def test_boolean_property():
+    question = {
+        'id': "Test",
+    }
+    result = boolean_property(question)
+    assert "enum" not in result["Test"]
+
+
+@given(st.booleans())
+def test_boolean_property_with_required_value(boolean):
+    question = {
+        'id': "Test",
+        'required_value': boolean
+    }
+    result = boolean_property(question)
+    assert len(result["Test"]["enum"]) == 1
+    assert result["Test"]["enum"][0] is boolean
 
 
 @given(st.text())
