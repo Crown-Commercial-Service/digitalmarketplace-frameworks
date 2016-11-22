@@ -28,6 +28,11 @@
       "properties": {
         "type": {"enum": ["checkboxes"]}
       }
+    },
+    "required_value": {
+      "properties": {
+        "type": {"enum": ["boolean"]}
+      }
     }
   },
   "properties": {
@@ -84,6 +89,9 @@
     },
     "any_of": {
       "type": "string"
+    },
+    "required_value": {
+      "type": "boolean"
     },
     "validations": {
       "type": "array",
