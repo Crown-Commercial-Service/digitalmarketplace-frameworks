@@ -64,6 +64,7 @@ Question keys
     * Permitted values are `after` or `before`
 * `before_summary_value` lists additional values that will be added to the question values on the summary page. Can be used for
   mandatory options or adding additional information to the question (only supported by 'checkboxes' questions at the moment)
+* `required_value` for boolean questions can enforce that the correct response is provided (eg, you must answer this question "Yes") 
 
 
 Manifest files and section keys
