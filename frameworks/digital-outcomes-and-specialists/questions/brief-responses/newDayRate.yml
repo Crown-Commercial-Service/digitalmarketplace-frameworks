@@ -8,10 +8,10 @@ question_advice: |
   {% endif %}
   <h2>Your maximum day rate:</h2>
   <p>£{{ max_day_rate }}</p>
-type: text
-unit: £
-unit_in_full: pounds
-unit_position: before
+
+type: pricing
+fields:
+  price: dayRate
 
 depends:
   - "on": "lot"
