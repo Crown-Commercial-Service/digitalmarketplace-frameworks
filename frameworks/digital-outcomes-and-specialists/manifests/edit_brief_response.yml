@@ -11,7 +11,7 @@
     - newAvailabilityOutcomes
 
 -
-  name: How much you charge per day
+  name: How much you charge each day
   editable: True
   questions:
     - newDayRate
