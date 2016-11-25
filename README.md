@@ -64,7 +64,12 @@ Question keys
     * Permitted values are `after` or `before`
 * `before_summary_value` lists additional values that will be added to the question values on the summary page. Can be used for
   mandatory options or adding additional information to the question (only supported by 'checkboxes' questions at the moment)
-* `required_value` for boolean questions can enforce that the correct response is provided (eg, you must answer this question "Yes") 
+* `required_value` for boolean questions can enforce that the correct response is provided (eg, you must answer this question "Yes")
+* `dynamic_field` defines the field in the filter context that will be used to generate dynamic list questions (eg when passing
+  a brief as filter context setting `dynamic_field` to `brief.niceToHaveRequirements` will generate questions for nice-to-have
+  requirements) (only valid for `dynamic_list` questions)
+* `followup` sets the name of the question that will be required/shown if the current question is answered with "Yes" (only valid
+  for `boolean` questions)
 
 
 Manifest files and section keys

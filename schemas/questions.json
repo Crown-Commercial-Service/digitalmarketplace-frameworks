@@ -33,6 +33,16 @@
       "properties": {
         "type": {"enum": ["boolean"]}
       }
+    },
+    "dynamic_field": {
+      "properties": {
+        "type": {"enum": ["dynamic_list"]}
+      }
+    },
+    "followup": {
+      "properties": {
+        "type": {"enum": ["boolean"]}
+      }
     }
   },
   "properties": {
@@ -42,7 +52,7 @@
     "type": {
       "enum": [
         "boolean", "text", "radios", "list", "boolean_list", "checkboxes", "service_id",
-        "pricing", "upload", "number", "textbox_large", "multiquestion", "email"
+        "pricing", "upload", "number", "textbox_large", "multiquestion", "dynamic_list", "email"
       ]
     },
     "question_advice": {
@@ -238,6 +248,12 @@
     "before_summary_value": {
       "type": "array",
       "items": {"type": "string"}
+    },
+    "followup": {
+      "type": "string"
+    },
+    "dynamic_field": {
+      "type": "string"
     }
   },
   "additionalProperties": false,
