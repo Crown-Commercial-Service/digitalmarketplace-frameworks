@@ -2,8 +2,8 @@
   name: View response to requirements
   questions:
     - supplierName
-    - availabilityOutcomes
-    - availabilitySpecialists
-    - dayRate
+    - legacyAvailabilityOutcomes
+    - legacyAvailabilitySpecialists
+    - legacyDayRate
     - niceToHaveRequirements
-    - respondToEmailAddress
+    - legacyRespondToEmailAddress
