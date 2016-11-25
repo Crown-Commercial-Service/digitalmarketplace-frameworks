@@ -2,19 +2,19 @@
   name: The earliest the specialist can start
   editable: True
   questions:
-    - newAvailabilitySpecialists
+    - availabilitySpecialists
 
 -
   name: The earliest the team can start
   editable: True
   questions:
-    - newAvailabilityOutcomes
+    - availabilityOutcomes
 
 -
   name: How much you charge each day
   editable: True
   questions:
-    - newDayRate
+    - dayRate
 
 -
   name: Do you have all the essential skills and experience?
@@ -32,4 +32,4 @@
   name: Email address the buyer should use to contact you
   editable: True
   questions:
-    - newRespondToEmailAddress
+    - respondToEmailAddress
