@@ -1,14 +1,7 @@
 name: Day rate
 id: dayRate
 question: What’s the specialist’s day rate?
-question_advice: |
-  {% if brief.budgetRange is defined %}
-    <h2>Buyer's maximum day rate:</h2>
-    <p>{{ brief.budgetRange }}</p>
-  {% endif %}
-  <h2>Your maximum day rate:</h2>
-  <p>£{{ max_day_rate }}</p>
-
+question_advice: "{% if brief.budgetRange is defined %}<h2>Buyer's maximum day rate:</h2><p>{{ brief.budgetRange }}</p>{% endif %}<h2>Your maximum day rate:</h2><p>£{{ max_day_rate }}</p>"
 type: pricing
 fields:
   price: dayRate
