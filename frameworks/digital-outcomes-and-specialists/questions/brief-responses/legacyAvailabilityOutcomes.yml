@@ -1,14 +1,13 @@
-name: Earliest start date
+name: Date the supplier can start work
 id: availability
-question: When is the earliest the specialist can start work?
+question: When can the supplier start work?
 hint: 'eg 31/12/2016'
-question_advice: The buyer needs the specialist to start by {{ brief.startDate }}.
 type: text
 smaller: true
 depends:
   - "on": "lot"
     being:
-      - digital-specialists
+      - digital-outcomes
 validations:
   -
     name: answer_required

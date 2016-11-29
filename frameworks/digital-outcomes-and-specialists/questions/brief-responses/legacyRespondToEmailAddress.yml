@@ -1,6 +1,8 @@
 name: Email address
+id: respondToEmailAddress
 question: Email address the buyer should use to contact you
-question_advice: All communication about your application will be sent to this address.
+hint: All communication about your application will be sent to this address.
+
 type: text
 limits:
   format: email

@@ -1,8 +1,7 @@
-name: Earliest start date
+name: Date the specialist can start work
 id: availability
-question: When is the earliest the specialist can start work?
+question: When can the specialist start work?
 hint: 'eg 31/12/2016'
-question_advice: The buyer needs the specialist to start by {{ brief.startDate }}.
 type: text
 smaller: true
 depends:

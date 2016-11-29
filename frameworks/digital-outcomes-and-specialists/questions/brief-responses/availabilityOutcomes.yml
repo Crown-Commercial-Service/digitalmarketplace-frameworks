@@ -1,7 +1,8 @@
-name: Date the supplier can start work
+name: Earliest start date
 id: availability
-question: When can the supplier start work?
+question: When is the earliest the team can start?
 hint: 'eg 31/12/2016'
+question_advice: The buyer needs the team to start by {{ brief.startDate }}.
 type: text
 smaller: true
 depends:

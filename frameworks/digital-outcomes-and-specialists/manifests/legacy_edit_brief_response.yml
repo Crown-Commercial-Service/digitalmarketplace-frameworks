@@ -3,9 +3,9 @@
   editable: True
   description: "{% if lot == 'digital-specialists' %}You can only offer 1 specialist for this opportunity. {% endif %}Buyers will use the information suppliers provide here to create a shortlist."
   questions:
-    - respondToEmailAddress
+    - legacyRespondToEmailAddress
     - essentialRequirements
     - niceToHaveRequirements
-    - availabilityOutcomes
-    - availabilitySpecialists
-    - dayRate
+    - legacyAvailabilityOutcomes
+    - legacyAvailabilitySpecialists
+    - legacyDayRate

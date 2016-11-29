@@ -1,0 +1,35 @@
+-
+  name: The earliest the specialist can start
+  editable: True
+  questions:
+    - availabilitySpecialists
+
+-
+  name: The earliest the team can start
+  editable: True
+  questions:
+    - availabilityOutcomes
+
+-
+  name: How much you charge each day
+  editable: True
+  questions:
+    - dayRate
+
+-
+  name: Do you have all the essential skills and experience?
+  editable: True
+  questions:
+    - essentialRequirementsMet
+
+-
+  name: Nice to have requirements
+  editable: True
+  questions:
+    - niceToHaveRequirements
+
+-
+  name: Email address the buyer should use to contact you
+  editable: True
+  questions:
+    - respondToEmailAddress
