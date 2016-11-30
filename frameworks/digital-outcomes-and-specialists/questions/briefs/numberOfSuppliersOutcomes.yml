@@ -1,10 +1,10 @@
 name: Maximum number of suppliers that will be evaluated
 id: numberOfSuppliers
-question: Maximum number of suppliers you’ll evaluate
+question: How many suppliers to evaluate
 question_advice: |
   You must evaluate at least 3 suppliers.
 
-  Read about [how many suppliers you should evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
+  Read about [how many suppliers to evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
 
 type: number
 limits:
