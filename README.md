@@ -124,7 +124,7 @@ as follows:
 
 Then, whenever the framework content is changed:
 
-- deploy framework content to each frontend app with `make frontend_build` (NB this step required before deployment to PaaS via `cf push`)
+- on each frontend app, rebuild the static files to include the new content by running `make frontend_build` (NB this step also required before deployment to PaaS via `cf push`)
 - generate schemas into the API's `json_schema` directory using the `scripts/generate-schemas.py` script in this repo.
 
 Running the tests
