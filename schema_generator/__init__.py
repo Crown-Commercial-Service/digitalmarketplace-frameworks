@@ -290,6 +290,48 @@ def multiquestion(question):
     return properties
 
 
+def followup(question):
+    return {
+        'oneOf': [
+            {
+                "properties": {
+                    question['id']: {"enum": [False]},
+                },
+                "required": [question['id']]
+            },
+            {
+                "properties": {
+                    question['id']: {"enum": [True]},
+                    question['followup']: {"type": "string", "minLength": 1}
+                },
+                "required": [question['id'], question['followup']]
+            },
+        ]
+    }
+
+
+def dynamic_list(question):
+    properties = multiquestion(question)
+
+    property_schema = {
+        "type": "array",
+        "minItems": 0,
+        "items": {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": properties
+        }
+    }
+
+    for nested_question in question.questions:
+        if nested_question.get('followup'):
+            if 'allOf' not in property_schema['items']:
+                property_schema['items']['allOf'] = []
+            property_schema['items']['allOf'].append(followup(nested_question))
+
+    return {question['id']: property_schema}
+
+
 QUESTION_TYPES = {
     'text': text_property,
     'upload': uri_property,
@@ -301,7 +343,8 @@ QUESTION_TYPES = {
     'boolean_list': boolean_list_property,
     'pricing': pricing_property,
     'number': number_property,
-    'multiquestion': multiquestion
+    'multiquestion': multiquestion,
+    'dynamic_list': dynamic_list,
 }
 
 
