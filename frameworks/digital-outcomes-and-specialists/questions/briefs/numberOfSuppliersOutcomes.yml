@@ -1,4 +1,4 @@
-name: Maximum number of suppliers that will be evaluated
+name: How many suppliers to evaluate
 id: numberOfSuppliers
 question: How many suppliers to evaluate
 question_advice: |
