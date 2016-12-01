@@ -1,4 +1,5 @@
 name: Day rate
+id: dayRate
 question: What’s the specialist’s day rate?
 hint: Enter a number, not a range.
 
