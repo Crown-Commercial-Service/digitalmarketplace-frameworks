@@ -1,4 +1,4 @@
-name: Maximum number of specialists that will be evaluated
+name: How many specialists to evaluate
 id: numberOfSuppliers
 question: How many specialists to evaluate
 question_advice: |
