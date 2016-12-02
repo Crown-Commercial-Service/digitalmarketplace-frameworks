@@ -119,12 +119,13 @@ Development
 A local checkout of the frameworks repo can be shared with locally-running services (i.e. frontend applications)
 as follows:
 
-- from this repo, run `bower link`
-- from each app, run `bower link digitalmarketplace-frameworks`
+- from this repo, run `node_modules/bower/bin/bower link`
+- from each app, run `node_modules/bower/bin/bower link digitalmarketplace-frameworks`
 
 Then, whenever the framework content is changed:
 
-- on each frontend app, rebuild the static files to include the new content by running `make frontend_build` (NB this step also required before deployment to PaaS via `cf push`)
+- on each frontend app, rebuild the app's `content` directory to include the new content by running `make frontend_build` (NB this step also required before deployment to PaaS via `cf push`)
+- alternatively, run `npm run frontend-build:watch` to automatically rebuild the framework content whenever a framework YML file changes
 - generate schemas into the API's `json_schema` directory using the `scripts/generate-schemas.py` script in this repo.
 
 Running the tests
