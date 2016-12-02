@@ -1,4 +1,4 @@
-name: Region
+name: Location
 question: Where you want the specialist to work
 id: location
 question_advice: |
@@ -22,7 +22,7 @@ options:
   - label: "South East England"
   - label: "South West England"
   - label: "Northern Ireland"
-  - label: "No specific region, eg they can work remotely"
+  - label: "No specific location, eg they can work remotely"
     value: "Offsite"
 depends:
   - "on": "lot"
