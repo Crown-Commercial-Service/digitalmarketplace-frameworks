@@ -1,4 +1,4 @@
-question: 'How quickly do you respond to user questions?'
+question: 'How do users extract their data when a contract is ended?'
 depends:
   -
     "on": lot
@@ -9,7 +9,10 @@ depends:
       - paas
       - IaaS
       - iaas
+      - SCS
+      - scs
 type: textbox_large
+hidden: True
 hint: '50 word limit'
 max_length_in_words: 50
 validations:

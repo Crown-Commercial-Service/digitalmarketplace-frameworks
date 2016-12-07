@@ -1,0 +1,24 @@
+question: 'Does your datacentre security setup conform to a recognised standard?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: radio
+options:
+  -
+    label: 'Yes'
+  -
+    label: 'No'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

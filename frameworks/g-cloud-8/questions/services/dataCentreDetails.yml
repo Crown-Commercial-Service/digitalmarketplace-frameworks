@@ -1,4 +1,5 @@
-question: 'How quickly do you respond to user questions?'
+question: 'Describe your datacentre security.'
+hint: Include details of cetrification and standards.
 depends:
   -
     "on": lot
@@ -9,8 +10,9 @@ depends:
       - paas
       - IaaS
       - iaas
-type: textbox_large
-hint: '50 word limit'
+      - SCS
+      - scs
+type: textarea
 max_length_in_words: 50
 validations:
   -
@@ -22,3 +24,4 @@ validations:
   -
     name: under_character_limit
     message: 'Your description must be no more than 500 characters.'
+type: textbox_large

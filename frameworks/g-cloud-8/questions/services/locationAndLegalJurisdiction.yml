@@ -1,0 +1,26 @@
+question: 'Where is the data stored and processed and who has legal jurisdiction?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: radio
+options:
+  -
+    label: Unknown processing and storage locations
+  -
+    label: Known locations for storage only
+  -
+    label: Known locations for storage, processing and management
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

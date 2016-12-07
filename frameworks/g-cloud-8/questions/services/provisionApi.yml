@@ -1,0 +1,19 @@
+question: 'Can users set up and start using your product using an API?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+      - SCS
+      - scs
+type: boolean
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+followup: ProvisionApiDetails

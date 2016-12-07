@@ -1,3 +1,4 @@
+question: 'Product name'
 hint: 'Include your product name only. Using additional keywords may impact your acceptance on to the Digital Marketplace.'
 depends:
   -
@@ -18,5 +19,4 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_character_limit
-    message: 'Your service name must be no more than 100 characters.'
-question: 'Service name'
+    message: 'Your product name must be no more than 100 characters.'

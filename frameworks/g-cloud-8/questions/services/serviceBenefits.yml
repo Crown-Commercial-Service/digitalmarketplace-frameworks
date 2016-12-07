@@ -1,5 +1,6 @@
+question: 'Product benefits'
 hint: >
-    Include benefits that show how your service helps users improve their business. Use active phrases, eg publish content from multiple devices, quickly manage content on the move.  This content will be indexed by search. Using additional keywords may impact your acceptance on to the Digital Marketplace. Read the [guidance on writing good service descriptions](https://digitalmarketplace.blog.gov.uk/2014/10/21/digital-marketplace-content-its-all-change/). (Maximum 10 words per benefit. Maximum 10 benefits.)
+    Include benefits that show how your product helps users improve their business. Use active phrases, eg publish content from multiple devices, quickly manage content on the move.  This content will be indexed by search. Using additional keywords may impact your acceptance on to the Digital Marketplace. Read the [guidance on writing good product descriptions](https://digitalmarketplace.blog.gov.uk/2014/10/21/digital-marketplace-content-its-all-change/). (Maximum 10 words per benefit. Maximum 10 benefits.)
 depends:
   -
     "on": lot
@@ -12,7 +13,7 @@ depends:
       - iaas
       - SCS
       - scs
-list_item_name: 'service benefit'
+list_item_name: 'product benefit'
 type: list
 validations:
   -
@@ -27,4 +28,3 @@ validations:
   -
     name: under_character_limit
     message: 'Each benefit must be no more than 100 characters.'
-question: 'Service benefits'

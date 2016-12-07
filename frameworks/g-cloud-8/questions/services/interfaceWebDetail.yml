@@ -1,4 +1,5 @@
-question: 'How quickly do you respond to user questions?'
+question: 'Describe the web interface.'
+hint: 'Include details on what you’ve done to make the interface accessible.'
 depends:
   -
     "on": lot
@@ -9,7 +10,10 @@ depends:
       - paas
       - IaaS
       - iaas
+      - SCS
+      - scs
 type: textbox_large
+hidden: True
 hint: '50 word limit'
 max_length_in_words: 50
 validations:
