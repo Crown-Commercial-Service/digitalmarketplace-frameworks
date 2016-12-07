@@ -1,4 +1,4 @@
-question: 'Do you users need to contact you to organise backups?'
+question: 'Do users have to contact your support team to schedule backups?'
 depends:
   -
     "on": lot

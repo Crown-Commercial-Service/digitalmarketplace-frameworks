@@ -1,4 +1,4 @@
-question: 'How do users extract their data when a contract is ended?'
+question: 'How do users extract their data when the contract ends?'
 depends:
   -
     "on": lot
@@ -12,8 +12,7 @@ depends:
       - SCS
       - scs
 type: textbox_large
-hidden: True
-hint: '50 word limit'
+hint: '50-word limit'
 max_length_in_words: 50
 validations:
   -

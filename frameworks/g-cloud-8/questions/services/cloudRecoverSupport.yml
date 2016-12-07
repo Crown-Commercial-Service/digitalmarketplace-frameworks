@@ -1,4 +1,4 @@
-question: 'Is there way for users recover their data by contacting your organisation?'
+question: 'Do users have to contact your support team to recover their data?'
 depends:
   -
     "on": lot

@@ -1,4 +1,4 @@
-question: 'Do you provide self service cloud environment scaling?'
+question: 'Can users manage how the cloud environment scales?'
 depends:
   -
     "on": lot

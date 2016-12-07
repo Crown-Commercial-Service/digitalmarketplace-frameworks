@@ -1,4 +1,4 @@
-question: 'Describe how users can manually backup files.'
+question: 'Describe how users control when backups happen.'
 depends:
   -
     "on": lot
@@ -13,7 +13,7 @@ depends:
       - scs
 type: textbox_large
 hidden: True
-hint: '50 word limit'
+hint: '50-word limit'
 max_length_in_words: 50
 validations:
   -

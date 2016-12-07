@@ -1,4 +1,4 @@
-question: 'Describe how users can set up and start using your product using an API.'
+question: 'Describe how users set up and use your product using an API.'
 depends:
   -
     "on": lot

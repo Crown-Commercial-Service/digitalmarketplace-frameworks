@@ -10,7 +10,7 @@ depends:
       - IaaS
       - iaas
 type: textbox_large
-hint: '50 word limit'
+hint: '50-word limit'
 max_length_in_words: 50
 validations:
   -

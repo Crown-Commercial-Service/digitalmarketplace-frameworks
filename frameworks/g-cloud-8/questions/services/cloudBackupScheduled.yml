@@ -1,4 +1,4 @@
-question: 'Do you allow users to schedule backups?'
+question: 'Does your product back up data automatically?'
 depends:
   -
     "on": lot

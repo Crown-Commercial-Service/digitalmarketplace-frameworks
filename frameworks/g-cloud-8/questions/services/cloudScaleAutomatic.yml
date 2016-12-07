@@ -1,4 +1,4 @@
-question: 'Do you provide automatic cloud environment scaling?'
+question: 'Does your cloud environment scale automatically?'
 depends:
   -
     "on": lot

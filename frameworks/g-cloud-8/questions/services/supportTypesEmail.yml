@@ -1,4 +1,4 @@
-question: 'Does your product have either email or online ticketing support?'
+question: 'Do you provide either email or online ticketing support?'
 depends:
   -
     "on": lot

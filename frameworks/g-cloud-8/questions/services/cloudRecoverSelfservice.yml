@@ -1,4 +1,4 @@
-question: 'Is there way for users recover their own data?'
+question: 'Can users recover their own data?'
 depends:
   -
     "on": lot

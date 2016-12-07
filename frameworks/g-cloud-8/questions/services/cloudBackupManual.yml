@@ -1,4 +1,4 @@
-question: 'Do you allow users to manually backup files?'
+question: 'Can users control when backups happen?'
 depends:
   -
     "on": lot

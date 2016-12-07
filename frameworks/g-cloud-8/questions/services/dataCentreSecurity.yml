@@ -9,7 +9,7 @@ depends:
       - paas
       - IaaS
       - iaas
-type: radio
+type: radios
 options:
   -
     label: 'Yes'

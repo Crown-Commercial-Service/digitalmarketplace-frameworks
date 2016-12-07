@@ -1,4 +1,4 @@
-question: 'Describe how users can set up and start using your product.'
+question: 'Describe how users set up and use your product another way.'
 depends:
   -
     "on": lot

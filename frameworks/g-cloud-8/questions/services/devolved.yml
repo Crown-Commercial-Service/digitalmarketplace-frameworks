@@ -1,4 +1,5 @@
 question: 'Do you connect to any devolved networks?'
+hint: Devolved networks could be Scottish or Welsh.
 depends:
   -
     "on": lot

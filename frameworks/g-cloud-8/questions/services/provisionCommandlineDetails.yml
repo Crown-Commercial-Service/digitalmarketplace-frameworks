@@ -1,4 +1,4 @@
-question: 'Describe how users can set up and start using your product using a command line interface.'
+question: 'Describe how users set up and use your product using the command line.'
 depends:
   -
     "on": lot

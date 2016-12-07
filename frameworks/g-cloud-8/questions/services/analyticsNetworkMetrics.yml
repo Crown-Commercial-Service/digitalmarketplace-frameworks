@@ -1,4 +1,5 @@
-question: 'Do you provide network metrics (eg bandwidth data)?'
+question: 'Do you provide network metrics?'
+hint: Network metrics can include bandwidth data.
 depends:
   -
     "on": lot

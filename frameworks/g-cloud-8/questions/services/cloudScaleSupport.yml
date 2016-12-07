@@ -1,4 +1,4 @@
-question: 'Do you provide managed cloud environment scaling?'
+question: 'Do you manage how the cloud environment scales for the user?'
 depends:
   -
     "on": lot

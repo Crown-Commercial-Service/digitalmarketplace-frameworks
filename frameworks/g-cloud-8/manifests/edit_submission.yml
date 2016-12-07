@@ -21,13 +21,13 @@
     - serviceTypesSaaS
     - serviceTypesSCS
 -
-  name: Features and benefits
+  name: Product features and benefits
   editable: true
   questions:
     - serviceFeatures
     - serviceBenefits
 -
-  name: Constraints
+  name: Product scope
   editable: true
   questions:
     - serviceConstraints
@@ -45,7 +45,7 @@
     - supportReport
     - supportReportDetail
 -
-  name: Interface
+  name: How users work with your product
   editable: True
   questions:
     - interfaceApi
@@ -106,7 +106,7 @@
   questions:    
     - cloudPersistent
 -
-  name: Recovery and resilience plan
+  name: Recovery and resilience
   editable: True
   questions:
     - cloudDisasterDetails
@@ -147,13 +147,42 @@
   questions:
   - locationAndLegalJurisdiction
   - dataCentreSecurity
-  #- dataCentreSecurityDetail
-  #- penTestingFrequency
-  #- protectDataAtRest
-  #- protectDataAtRestDetail
-  #- sanatiseData
-  #- sanatiseDataDetail
-  #- disposeEquipment
-  #- disposeEquipmentDetail
-  #- managePhysicalResilience
-  #- managePhysicalResilienceDetail
+  - dataCentreSecurityDetails
+  - penTestingFrequency
+  - protectDataAtRest
+  - protectDataAtRestDetails
+  - sanatiseData
+  - sanatiseDataDetails
+  - disposeEquipment
+  - disposeEquipmentDetails
+  - managePhysicalResilience
+  - managePhysicalResilienceDetails
+-
+  name: Separation between users
+  editable: True
+  questions:
+  - separationOfUsers
+  - separationOfUsersDetails
+-
+  name: Identity and authentication
+  editable: True
+  questions:
+  - accessSecurity
+  - accessSecurityDetails
+-
+  name: Secure service administration
+  editable: True
+  questions:
+  - secureServiceAdministration
+  - secureServiceAdministrationDetails
+-
+  name: Audit information for users
+  editable: True
+  questions:
+  - usersAccessAuditInformation
+  - usersAccessAuditInformationDetails
+-
+  name: Secure use of the service
+  editable: True
+  questions:
+  - devicesWithAccess

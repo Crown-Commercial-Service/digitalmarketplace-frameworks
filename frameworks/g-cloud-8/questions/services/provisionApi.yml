@@ -1,4 +1,4 @@
-question: 'Can users set up and start using your product using an API?'
+question: 'Can users set up and use your product using an API?'
 depends:
   -
     "on": lot

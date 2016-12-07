@@ -1,4 +1,4 @@
-question: 'Product name'
+question: 'What’s your product called?'
 hint: 'Include your product name only. Using additional keywords may impact your acceptance on to the Digital Marketplace.'
 depends:
   -

@@ -1,4 +1,4 @@
-question: 'Do you provide anayltics reports?'
+question: 'Do you provide persistent file storage?'
 depends:
   -
     "on": lot

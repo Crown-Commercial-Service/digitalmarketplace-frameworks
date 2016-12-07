@@ -1,5 +1,4 @@
-question: 'Product summary'
-hint: 'Please provide a short description of your product. You’ll be asked to go into more detail about the features and benefits of your product on the next page. Company information should not be included here. You can provide a company description for your supplier page elsewhere. This content will be indexed by search. Using additional keywords may impact your acceptance onto the Digital Marketplace. (Maximum 50 words.)'
+question: 'Provide a product summary.'
 depends:
   -
     "on": lot
