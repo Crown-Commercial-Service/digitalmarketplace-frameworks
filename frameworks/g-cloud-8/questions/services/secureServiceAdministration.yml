@@ -1,0 +1,31 @@
+question: 'How do users administer the cloud service securely?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+assuranceApproach: 3answers-type1
+type: checkboxes
+options:
+    -
+        label: Dedicated device on segregated network (providers own provision)
+    -
+        label: Dedicated device on community network (eg PSN)
+    -
+        label: Dedicated device over multiple services/networks
+    -
+        label: Via bastion host
+    -
+        label: Direct administration
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

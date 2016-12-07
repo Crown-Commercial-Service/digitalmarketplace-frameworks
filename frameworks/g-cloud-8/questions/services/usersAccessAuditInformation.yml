@@ -1,0 +1,29 @@
+question: 'How do users administer the cloud service securely?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+assuranceApproach: 3answers-type1
+type: checkboxes
+options:
+    -
+        label: None
+    -
+        label: By negotiation
+    -
+        label: Available via 3rd parties
+    -
+        label: Available self-service
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'
