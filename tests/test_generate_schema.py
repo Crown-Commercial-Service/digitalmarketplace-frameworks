@@ -230,6 +230,7 @@ def test_boolean_property():
         'id': "Test",
     }
     result = boolean_property(question)
+    assert result["Test"]["type"] == "boolean"
     assert "enum" not in result["Test"]
 
 
@@ -240,8 +241,8 @@ def test_boolean_property_with_required_value(boolean):
         'required_value': boolean
     }
     result = boolean_property(question)
-    assert len(result["Test"]["enum"]) == 1
-    assert result["Test"]["enum"][0] is boolean
+    assert result["Test"]["enum"] == [boolean]
+    assert "type" not in result["Test"]
 
 
 @given(st.text())
