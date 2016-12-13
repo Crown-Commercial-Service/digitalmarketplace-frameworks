@@ -22,4 +22,4 @@ validations:
   - name: not_a_number
     message: 'You must evaluate at least 3, and no more than 15, specialists.'
 
-empty_message: Set maximum number of specialists you’ll evaluate
+empty_message: Set how many specialists to evaluate
