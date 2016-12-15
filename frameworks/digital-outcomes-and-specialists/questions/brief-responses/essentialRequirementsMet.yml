@@ -19,7 +19,7 @@ depends:
 validations:
   -
     name: not_required_value
-    message: 'You need to be able to provide all the essential requirements.'
+    message: 'To carry on with your application, you need to confirm that you meet all the essential requirements.'
   -
     name: answer_required
     message: 'You need to answer this question.'
