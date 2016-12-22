@@ -5,7 +5,7 @@
   "dependencies": {
     "questions": {
       "properties": {
-        "type": {"enum": ["multiquestion"]}
+        "type": {"enum": ["multiquestion", "dynamic_list"]}
       }
     },
     "number_of_items": {
