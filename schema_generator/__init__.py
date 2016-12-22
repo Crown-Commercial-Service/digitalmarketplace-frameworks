@@ -329,6 +329,10 @@ def dynamic_list(question):
                 property_schema['items']['allOf'] = []
             property_schema['items']['allOf'].append(followup(nested_question))
 
+    required_fields = [q['id'] for q in question.questions if not q.get('optional')]
+    if required_fields:
+        property_schema["items"]["required"] = required_fields
+
     return {question['id']: property_schema}
 
 
