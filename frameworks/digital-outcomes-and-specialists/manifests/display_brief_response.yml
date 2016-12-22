@@ -1,7 +1,7 @@
 -
   name: Your essential skills and experience
   questions:
-    - essentialRequirements
+    - legacyEssentialRequirements
 -
   name: Your nice-to-have skills and experience
   questions:
