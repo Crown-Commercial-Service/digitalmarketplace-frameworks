@@ -28,10 +28,17 @@ MANIFEST_QUESTION_SET = {
     "search_filters": "services",
 }
 
+# `item` property wouldn't usually be part of a brief response but is included here as the dynamic list child question
+# `evidence` relies on an `item` in its context to render
 QUESTION_SET_CONTEXT = {
     'briefs': {'lot': 'context-lot'},
-    'brief-responses': {'lot': 'context-lot', 'brief': mock.MagicMock(), 'max_day_rate': "max day rate"},
-    'services': {'lot': 'context-lot'},
+    'brief-responses': {
+        'lot': 'context-lot',
+        'brief': mock.MagicMock(),
+        'max_day_rate': "max day rate",
+        'item': 'essential requirement'
+    },
+    'services': {'lot': 'context-lot'}
 }
 
 

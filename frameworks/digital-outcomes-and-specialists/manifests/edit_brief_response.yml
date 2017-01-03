@@ -6,5 +6,6 @@
     - availabilityOutcomes
     - dayRate
     - essentialRequirementsMet
+    - essentialRequirements
     - niceToHaveRequirements
     - respondToEmailAddress
