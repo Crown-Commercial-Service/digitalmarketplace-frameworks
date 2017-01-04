@@ -9,6 +9,8 @@ schemas used by the API for validation (by running the `scripts/generate-schemas
   <img src="images/frameworks-content-triangle.png?raw=true" alt="Diagram showing how frameworks content is used by our apps">
 </p>
 
+[Kev Keenoy](https://peoplefinder.cabinetoffice.gov.uk/people/kevin-keenoy) gave a talk about how it works at PyCon UK 2016. You can watch [Kev's PyCon talk on YouTube](https://youtu.be/vdTw2Vqk4t0?t=12m44s).
+
 Terminology
 -----------
 
