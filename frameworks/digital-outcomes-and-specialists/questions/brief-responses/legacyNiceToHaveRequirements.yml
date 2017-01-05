@@ -1,4 +1,5 @@
 name: Nice-to-have requirements
+id: niceToHaveRequirements
 question: Do you have any of the nice-to-have skills and experience?
 question_advice: |
   Buyers will filter supplier applications based on the number of nice-to-have skills and experience they have.

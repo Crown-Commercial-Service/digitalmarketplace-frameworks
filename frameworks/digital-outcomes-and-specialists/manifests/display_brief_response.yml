@@ -5,7 +5,7 @@
 -
   name: Your nice-to-have skills and experience
   questions:
-    - niceToHaveRequirements
+    - legacyNiceToHaveRequirements
 -
   name: Your details
   questions:

@@ -7,5 +7,5 @@
     - dayRate
     - essentialRequirementsMet
     - essentialRequirements
-    - niceToHaveRequirements
+    - legacyNiceToHaveRequirements
     - respondToEmailAddress
