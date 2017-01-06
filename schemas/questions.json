@@ -254,6 +254,9 @@
     },
     "dynamic_field": {
       "type": "string"
+    },
+    "hidden": {
+      "type": "boolean"
     }
   },
   "additionalProperties": false,
