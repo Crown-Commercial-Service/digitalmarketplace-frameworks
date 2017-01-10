@@ -296,6 +296,7 @@ def followup(question):
             {
                 "properties": {
                     question['id']: {"enum": [False]},
+                    question['followup']: {"type": "null"}
                 },
                 "required": [question['id']]
             },
