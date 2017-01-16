@@ -16,6 +16,7 @@ MANIFEST_QUESTION_SET = {
     "edit_brief_response": "brief-responses",
     "legacy_edit_brief_response": "brief-responses",
     "output_brief_response": "brief-responses",
+    "legacy_output_brief_response": "brief-responses",
 
     "clarification_question": "clarification_question",
 
