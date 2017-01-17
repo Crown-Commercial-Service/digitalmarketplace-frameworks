@@ -2,8 +2,7 @@
   name: Apply for an opportunity
   editable: True
   questions:
-    - availabilitySpecialists
-    - availabilityOutcomes
+    - availability
     - dayRate
     - essentialRequirementsMet
     - essentialRequirements
