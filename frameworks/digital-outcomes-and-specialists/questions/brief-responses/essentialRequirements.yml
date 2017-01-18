@@ -16,10 +16,10 @@ question_advice: |
     </ul>
   </div>
 
-  You should only provide one example for each essential or nice-to-have requirement (unless the buyer specifies otherwise).
-  
+  You should only provide one example for each essential requirement (unless the buyer specifies otherwise).
+
   You can reuse examples across different essential or nice-to-have requirements if you need to.
-  
+
 type: dynamic_list
 dynamic_field: 'brief.essentialRequirements'
 questions:
