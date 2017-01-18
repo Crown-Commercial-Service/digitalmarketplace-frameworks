@@ -1,5 +1,6 @@
 name: Do you have any of the nice-to-have skills or experience?
 question: Do you have any of the nice-to-have skills or experience?
+optional: true
 question_advice: |
   All nice-to-have skills and experience are optional.
 
