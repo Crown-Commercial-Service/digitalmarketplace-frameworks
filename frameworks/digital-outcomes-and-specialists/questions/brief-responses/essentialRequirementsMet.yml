@@ -9,13 +9,6 @@ question_advice: >
 
 type: boolean
 required_value: true
-
-depends:
-  - "on": "lot"
-    being:
-      - digital-outcomes
-      - digital-specialists
-      - user-research-participants
 validations:
   -
     name: not_required_value

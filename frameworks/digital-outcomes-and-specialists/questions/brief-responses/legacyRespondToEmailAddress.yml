@@ -7,13 +7,6 @@ type: text
 limits:
   format: email
 
-depends:
-  - "on": "lot"
-    being:
-      - digital-outcomes
-      - digital-specialists
-      - user-research-participants
-
 validations:
   - name: answer_required
     message: 'You need to answer this question.'

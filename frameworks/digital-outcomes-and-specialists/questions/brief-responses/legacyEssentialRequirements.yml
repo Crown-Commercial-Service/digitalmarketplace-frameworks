@@ -5,12 +5,6 @@ question_advice: If you don’t have all the essential skills and experience, yo
 
 type: boolean_list
 number_of_items: 20
-depends:
-  - "on": "lot"
-    being:
-      - digital-outcomes
-      - digital-specialists
-      - user-research-participants
 validations:
   -
     name: answer_required
