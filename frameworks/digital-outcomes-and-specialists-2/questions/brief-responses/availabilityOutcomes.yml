@@ -1,7 +1,7 @@
 name: Date the supplier can start work
 id: availability
 question: When can the supplier start work?
-hint: 'eg 31/12/2016'
+hint: 'eg 31/12/2020'
 type: text
 smaller: true
 depends:
