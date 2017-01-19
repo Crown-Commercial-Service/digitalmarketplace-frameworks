@@ -5,7 +5,7 @@
   questions:
     - legacyRespondToEmailAddress
     - legacyEssentialRequirements
-    - niceToHaveRequirements
+    - legacyNiceToHaveRequirements
     - legacyAvailabilityOutcomes
     - legacyAvailabilitySpecialists
     - legacyDayRate
