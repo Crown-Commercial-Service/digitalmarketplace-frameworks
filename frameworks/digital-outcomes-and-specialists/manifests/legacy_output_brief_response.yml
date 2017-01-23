@@ -1,0 +1,9 @@
+-
+  name: View response to requirements
+  questions:
+    - supplierName
+    - legacyAvailabilityOutcomes
+    - legacyAvailabilitySpecialists
+    - legacyDayRate
+    - legacyNiceToHaveRequirements
+    - legacyRespondToEmailAddress
