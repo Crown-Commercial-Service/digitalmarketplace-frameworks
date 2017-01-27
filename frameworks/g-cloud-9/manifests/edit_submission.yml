@@ -1,0 +1,21 @@
+-
+  name: Service attributes
+  editable: false
+  questions:
+    - lotName
+-
+  name: Service name
+  editable: true
+  questions:
+    - serviceName
+-
+  name: Service description
+  editable: true
+  questions:
+    - serviceSummary
+-
+  name: Features and benefits
+  editable: true
+  questions:
+    - serviceFeatures
+    - serviceBenefits
