@@ -5,6 +5,11 @@
     - id
     - lotName
 -
+  name: All the things
+  editable:true
+  questions:
+    - allTheThingsToSee
+-
   name: Description
   editable: True
   questions:
