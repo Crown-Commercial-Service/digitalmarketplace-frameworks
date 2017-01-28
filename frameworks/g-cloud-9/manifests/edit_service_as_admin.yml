@@ -2,5 +2,5 @@
   name: Description
   editable: true
   questions:
-    - serviceName
-    - serviceSummary
+    - productName
+    - productDescription

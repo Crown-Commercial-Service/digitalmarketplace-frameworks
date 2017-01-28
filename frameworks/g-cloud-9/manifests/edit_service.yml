@@ -1,23 +1,13 @@
 -
-  name: Service attributes
+  name: Product attributes
   editable: False
   questions:
     - id
     - lotName
 -
-  name: All the things
-  editable:true
-  questions:
-    - allTheThingsToSee
--
-  name: Description
+  name: About your product
   editable: True
   questions:
-    - serviceName
-    - serviceSummary
--
-  name: Features and benefits
-  editable: True
-  questions:
-    - serviceFeatures
-    - serviceBenefits
+    - productName
+    - productDescription
+    - productFeaturesAndBenefits

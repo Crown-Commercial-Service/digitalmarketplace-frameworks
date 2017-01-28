@@ -1,5 +1,5 @@
 -
   name: Description
   questions:
-    - serviceName
-    - serviceSummary
+    - productName
+    - productDescription
