@@ -15,3 +15,6 @@
     - productName
     - productDescription
     - productFeaturesAndBenefits
+    - productCategoriesSoftware
+    - productCategoriesHosting
+    - productCategoriesSupport

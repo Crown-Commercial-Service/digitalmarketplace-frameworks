@@ -1,4 +1,5 @@
 question: 'List the product features.'
+name: 'Product features'
 question_advice: Include the technical features of your product, for example ‘real-time reporting’ or ‘remote access’.
 hint: '(Maximum 10 words per feature. Maximum 10 features.)'
 depends:

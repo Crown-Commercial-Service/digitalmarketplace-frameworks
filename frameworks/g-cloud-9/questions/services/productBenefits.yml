@@ -1,4 +1,5 @@
 question: 'List the product benefits.'
+name: 'Product benefits'
 question_advice: >
     Include the benefits that show how your product helps users improve their working processes.
     Use active phrases, for example ‘publish content from multiple devices’ or ‘quickly manage content on the move’.

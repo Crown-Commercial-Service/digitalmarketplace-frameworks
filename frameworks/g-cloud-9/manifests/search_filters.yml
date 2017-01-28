@@ -1,4 +1,6 @@
 -
   name: Search filters
   questions:
-    - productCategories
+    - productCategoriesSoftware
+    - productCategoriesHosting
+    - productCategoriesSupport
