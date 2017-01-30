@@ -1,0 +1,15 @@
+-
+  name: Your essential skills and experience
+  questions:
+    - legacyEssentialRequirements
+-
+  name: Your nice-to-have skills and experience
+  questions:
+    - legacyNiceToHaveRequirements
+-
+  name: Your details
+  questions:
+    - legacyDayRate
+    - legacyAvailabilityOutcomes
+    - legacyAvailabilitySpecialists
+    - legacyRespondToEmailAddress
