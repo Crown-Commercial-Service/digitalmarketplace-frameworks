@@ -1,41 +1,45 @@
 -
-  name: Essentials
+  name: Providing suitable services
   editable: True
   description: >
     You must make this declaration to apply to G-Cloud&nbsp;9. You can come back and change your answers at any time before
-    5pm GMT, 14 December 2016.
+    5pm BST, 11 April 2017. [might want to remove]
 
+    You must answer these questions to confirm that your services are suitable for G-Cloud&nbsp;9.
 
-    You must be able to truthfully answer ‘yes’ to every question under ‘Essentials’
-    for your bid to be considered eligible. If you can’t answer ‘yes’ to every
-    question in this section, it’s very unlikely that your bid will be accepted.
+    You must be able to truthfully answer ‘yes’ to every question for your application to be considered eligible. The Crown Commercial Service may ask for proof after you’ve submitted your application.
+
+    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted. 
+
   questions:
-    - termsOfParticipation
-    - termsAndConditions
-    - 10WorkingDays
-    - informationChanges
-    - requisiteAuthority
-    - accurateInformation
     - unfairCompetition
-    - readUnderstoodGuidance
-    - understandTool
-    - understandHowToAskQuestions
-    - proofOfClaims
     - skillsAndResources
-    - accuratelyDescribed
-    - employersInsurance
     - offerServicesYourselves
     - fullAccountability
 
 -
+  name: What it means to be on G-Cloud&nbsp;9
+  editable: True
+  description: >
+    If you make an application to G-Cloud&nbsp;9, you’re agreeing to the terms and conditions in the legal documentation.
+
+    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
+
+    If you can’t answer ‘yes’ to every question on this page, it’s very unlikely that your application will be accepted.
+
+  questions:
+    - termsOfParticipation
+    - termsAndConditions
+    - 10WorkingDays
+    - MI
+    
+-
   name: Grounds for mandatory exclusion
   editable: True
   description: >
-    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your bid to be
+    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your application to be
     considered eligible. If you can’t answer ‘no’ to every question in this
-    section, it’s very unlikely that your bid will be accepted.
-
-
+    section, it’s very unlikely that your application will be accepted.
     In questions [[conspiracy]] to [[organisedCrime]], ‘anyone who represents, supervises or has control in your organisation
     or a partner or parent organisation’ includes members of your group of economic 
     operators, their proposed subcontractors, and any directors, partners, or 
@@ -58,12 +62,8 @@
     you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
     you provide to consider whether or not you will be able to proceed any further with this procurement.
-
-
     In questions [[taxEvasion]] to [[misleadingInformation]], ‘a partner organisation’ includes members
     of your group of economic operators or their proposed subcontractors.
-
-
     CCS can also exclude you if you are guilty of serious
     misrepresentation in providing any information referred to within
     regulations
@@ -93,52 +93,63 @@
     - GAAR
     - mitigatingFactors2
 -
+
   name: Working with government
   editable: True
   description: >
     You must be able to truthfully answer ‘yes’ to every question under ‘Working with government’ for your bid to be
-    considered eligible. If you can’t answer ‘yes’ to every question in this
-    section, it’s very unlikely that your bid will be accepted.
+    considered eligible.
+    
+    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your bid will be accepted.
   questions:
-    - MI
     - canProvideFromDayOne
-    - evidence
     - environmentallyFriendly
-    - consistentDelivery
-    - skillsAndCapabilityAssessment
-    - continuousProfessionalDevelopment
-    - customerSatisfactionProcess
     - equalityAndDiversity
-    - civilServiceValues
+    - employersInsurance
+
 -
-  name: Working with digital
+  name: How you apply
   editable: True
   description: >
-    You must be able to truthfully answer ‘yes’ to questions [[technologyCodesOfPractice]] to [[safeguardPersonalData]] under ‘Working with digital’ for your bid to be
-    considered eligible. If you can’t answer ‘yes’, it’s very unlikely that your bid will be accepted. You can answer ‘yes’ or ‘no’ to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
+    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
+
+    If you can’t answer ‘yes’ to every question on this page, it’s very unlikely that your application will be accepted.
+
   questions:
-    - technologyCodesOfPractice
-    - serviceStandard
-    - ongoingEngagement
-    - transparentContracting
-    - publishContracts
-    - safeguardOfficialInformation
-    - safeguardPersonalData
-    - cyberEssentials
-    - cyberEssentialsPlus
+    - readUnderstoodGuidance
+    - understandTool
+    - understandHowToAskQuestions
 -
-  name: About you
+  name: Application accuracy
   editable: True
   description: >
-    The Crown Commercial Service will use the information you provide under ‘About you’ to process your application and manage your participation in the G-Cloud&nbsp;9 framework.
+    You must confirm the accuracy of the information in this declaration and in your service descriptions. We might ask for proof after you’ve submitted your application.
+
   questions:
-    - primaryContact
-    - primaryContactEmail
+    - requisiteAuthority
+    - accurateInformation
+    - proofOfClaims
+    - skillsAndResources
+    - accuratelyDescribed
+-
+  name: About your organisation
+  editable: True
+  description: >
+    The Crown Commercial Service will use the information you provide on this page to process your application and manage your participation in G-Cloud&nbsp;9. 
+
+    For a group of economic operators, this will be the name of the lead organisation (or the separate entity such as a special purpose vehicle if you have already created one).
+    If you’re submitting a response on behalf of another organisation, use their company name and details, not yours.
+  questions:
     - nameOfOrganisation
-    - registeredAddress
-    - tradingStatus
-    - tradingStatusOther
     - tradingNames
+    - registeredAddress
+
+-
+  name: Organisation registration
+  editable: True
+  description: >
+    The Crown Commercial Service will use this information to process your application and manage your participation in G-Cloud&nbsp;9.
+  questions:
     - firstRegistered
     - currentRegisteredCountry
     - companyRegistrationNumber
@@ -149,7 +160,39 @@
     - appropriateTradeRegistersNumber
     - licenceOrMemberRequired
     - licenceOrMemberRequiredDetails
-    - organisationSize
+-
+
+  name: How you’ll deliver your services
+  editable: True
+  description: >
+    The Crown Commercial Service will use this information to manage your participation in G-Cloud&nbsp;9. 
+  questions:
     - subcontracting
+-
+
+  name: Organisation’s size
+  editable: True
+  description: >
+    The Crown Commercial Service will use the information you provide to report overall statistics about the successful suppliers on G-Cloud&nbsp;9.
+  questions:
+    - organisationSize
+-
+
+  name: Trading status
+  editable: True
+  description: >
+    The Crown Commercial Service will use the information to understand the different types of suppliers providing G-Cloud&nbsp;9 services.
+  questions:
+    - tradingStatus
+    - tradingStatusOther
+-
+
+  name: Contact details
+  editable: True
+  description: >
+     The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.  
+  questions:
+    - primaryContact
+    - primaryContactEmail
     - contactNameContractNotice
     - contactEmailContractNotice
