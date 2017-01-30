@@ -46,6 +46,9 @@ SCHEMAS = {
          'digital-outcomes-and-specialists-2', 'user-research-studios'),
         ('Digital Outcomes and Specialists 2 User research participants Service',
          'digital-outcomes-and-specialists-2', 'user-research-participants'),
+        ('G-Cloud 9 Cloud Hosting Product', 'g-cloud-9', 'cloud-hosting'),
+        ('G-Cloud 9 Cloud Software Product', 'g-cloud-9', 'cloud-software'),
+        ('G-Cloud 9 Cloud Support Product', 'g-cloud-9', 'cloud-support'),
     ],
     'briefs': [
         ('Digital Outcomes and Specialists Digital outcomes Brief',
