@@ -7,7 +7,7 @@ depends:
       - cloud-hosting
       - cloud-software
       - cloud-support
-type: textarea
+type: textbox_large
 max_length_in_words: 50
 validations:
   -
