@@ -5,8 +5,6 @@ empty_message: this question has not been answered yet
 hint: hint about the answer
 optional: false
 type: checkboxes
-before_summary_value: 
-  - You have no option on picking this.
 options:
   - label: Option 1
     description: >
