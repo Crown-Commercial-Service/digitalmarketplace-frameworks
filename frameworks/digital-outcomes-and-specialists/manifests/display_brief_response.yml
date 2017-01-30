@@ -1,15 +1,14 @@
 -
   name: Your essential skills and experience
   questions:
-    - legacyEssentialRequirements
+    - essentialRequirements
 -
   name: Your nice-to-have skills and experience
   questions:
-    - legacyNiceToHaveRequirements
+    - niceToHaveRequirements
 -
   name: Your details
   questions:
-    - legacyDayRate
-    - legacyAvailabilityOutcomes
-    - legacyAvailabilitySpecialists
-    - legacyRespondToEmailAddress
+    - dayRate
+    - availability
+    - respondToEmailAddress
