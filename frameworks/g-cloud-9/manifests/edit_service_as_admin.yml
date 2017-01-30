@@ -1,0 +1,6 @@
+-
+  name: Description
+  editable: true
+  questions:
+    - productName
+    - productDescription

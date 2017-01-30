@@ -1,0 +1,18 @@
+question: 'Service type'
+type: radios
+options:
+  -
+    label: Cloud hosting
+    value: cloud-hosting
+    description: >
+      Used to be IaaS and PaaS.
+  -
+    label: Cloud software
+    value: cloud-software
+    description: >
+      Used to be SaaS.
+  -
+    label: Cloud support
+    value: cloud-support
+    description: >
+      Everything else you want to sell goes here.

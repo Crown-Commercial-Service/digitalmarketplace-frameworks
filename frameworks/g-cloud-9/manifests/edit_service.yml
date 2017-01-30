@@ -1,0 +1,13 @@
+-
+  name: Product attributes
+  editable: False
+  questions:
+    - id
+    - lotName
+-
+  name: About your product
+  editable: True
+  questions:
+    - productName
+    - productDescription
+    - productFeaturesAndBenefits

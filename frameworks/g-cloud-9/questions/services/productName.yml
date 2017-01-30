@@ -1,0 +1,19 @@
+id: serviceName
+question: 'What’s your product called?'
+name: 'Product name'
+hint: 'Include your product name only. Don’t use extra keywords.'
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+type: text
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: 'Your product name must be no more than 100 characters.'

@@ -1,0 +1,7 @@
+question: Postcode
+type: text
+
+validations:
+  -
+    name: answer_required
+    message: 'You need to enter the postcode.'

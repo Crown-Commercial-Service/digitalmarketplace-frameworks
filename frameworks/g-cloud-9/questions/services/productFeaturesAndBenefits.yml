@@ -1,0 +1,7 @@
+question: 'Product features and benefits'
+name: 'Product features and benefits'
+optional: false
+type: multiquestion
+questions:
+  - productFeatures
+  - productBenefits

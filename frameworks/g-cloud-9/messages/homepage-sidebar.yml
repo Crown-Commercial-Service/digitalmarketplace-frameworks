@@ -1,0 +1,16 @@
+coming:
+  heading: 'G-Cloud&nbsp;9 coming soon'
+  messages:
+    - 'Provide cloud hosting, software and support.'
+    - 'You need an account to receive notifications about when you can apply.'
+
+open:
+  heading: 'G-Cloud&nbsp;9 is open for applications'
+  messages:
+    - 'You need an account to apply.'
+    - 'The application deadline is 5pm&nbsp;GMT, 11 April 2017.'
+
+pending:
+  heading: 'G-Cloud&nbsp;9 is closed for applications'
+  messages:
+    - 'Applications are being reviewed.'

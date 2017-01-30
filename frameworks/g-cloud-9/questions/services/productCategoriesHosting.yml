@@ -1,0 +1,24 @@
+id: productCategories
+name: 'Product categories'
+question: 'Which categories does your product fit under?'
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+hint: 'You can choose multiple categories.'
+type: checkboxes
+options:
+  -
+    label: Hosting type 1
+    value: hosting_category_one
+  -
+    label: Hosting type 2
+    value: hosting_category_two
+  -
+    label: Or maybe hosting doesn't have categories at all?
+    value: hosting_category_three
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
