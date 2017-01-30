@@ -4,6 +4,11 @@
   questions:
     - lotName
 -
+  name: Product name
+  editable: true
+  questions:
+    - productName
+-
   name: All the things
   editable: true
   questions:
@@ -12,7 +17,6 @@
   name: About your product
   editable: True
   questions:
-    - productName
     - productDescription
     - productFeaturesAndBenefits
     - productCategoriesSoftware
