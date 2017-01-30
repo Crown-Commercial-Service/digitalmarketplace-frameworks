@@ -1,31 +1,34 @@
 -
-  name: Essentials
+  name: Confirm that your services are suitable
   editable: True
   description: >
     You must make this declaration to apply to G-Cloud&nbsp;9. You can come back and change your answers at any time before
-    5pm GMT, 14 December 2016.
+    5pm BST, 11 April 2017.
 
 
     You must be able to truthfully answer ‘yes’ to every question under ‘Essentials’
     for your bid to be considered eligible. If you can’t answer ‘yes’ to every
     question in this section, it’s very unlikely that your bid will be accepted.
   questions:
+    - unfairCompetition
+    - skillsAndResources
+    - offerServicesYourselves
+    - fullAccountability
+
+-
+name: What it means to be on G-Cloud 9
+  editable: True
+  description: >
+
+    You must be able to truthfully answer ‘yes’ to every question under ‘Essentials’
+    for your bid to be considered eligible. If you can’t answer ‘yes’ to every
+    question in this section, it’s very unlikely that your bid will be accepted.
+ 
+ questions:
     - termsOfParticipation
     - termsAndConditions
     - 10WorkingDays
-    - informationChanges
-    - requisiteAuthority
-    - accurateInformation
-    - unfairCompetition
-    - readUnderstoodGuidance
-    - understandTool
-    - understandHowToAskQuestions
-    - proofOfClaims
-    - skillsAndResources
-    - accuratelyDescribed
-    - employersInsurance
-    - offerServicesYourselves
-    - fullAccountability
+    - MI
 
 -
   name: Grounds for mandatory exclusion
@@ -93,52 +96,32 @@
     - GAAR
     - mitigatingFactors2
 -
-  name: Working with government
+
+name: Working with government
   editable: True
   description: >
     You must be able to truthfully answer ‘yes’ to every question under ‘Working with government’ for your bid to be
     considered eligible. If you can’t answer ‘yes’ to every question in this
     section, it’s very unlikely that your bid will be accepted.
   questions:
-    - MI
-    - canProvideFromDayOne
-    - evidence
-    - environmentallyFriendly
-    - consistentDelivery
-    - skillsAndCapabilityAssessment
-    - continuousProfessionalDevelopment
-    - customerSatisfactionProcess
     - equalityAndDiversity
-    - civilServiceValues
+    - employersInsurance
 -
-  name: Working with digital
-  editable: True
-  description: >
-    You must be able to truthfully answer ‘yes’ to questions [[technologyCodesOfPractice]] to [[safeguardPersonalData]] under ‘Working with digital’ for your bid to be
-    considered eligible. If you can’t answer ‘yes’, it’s very unlikely that your bid will be accepted. You can answer ‘yes’ or ‘no’ to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
-  questions:
-    - technologyCodesOfPractice
-    - serviceStandard
-    - ongoingEngagement
-    - transparentContracting
-    - publishContracts
-    - safeguardOfficialInformation
-    - safeguardPersonalData
-    - cyberEssentials
-    - cyberEssentialsPlus
--
-  name: About you
+
+name: Tell us about your organisation
   editable: True
   description: >
     The Crown Commercial Service will use the information you provide under ‘About you’ to process your application and manage your participation in the G-Cloud&nbsp;9 framework.
   questions:
-    - primaryContact
-    - primaryContactEmail
     - nameOfOrganisation
-    - registeredAddress
-    - tradingStatus
-    - tradingStatusOther
     - tradingNames
+    - registeredAddress
+
+name: Your organisation’s registration
+  editable: True
+  description: >
+    The Crown Commercial Service will use the information you provide under ‘About you’ to process your application and manage your participation in the G-Cloud&nbsp;9 framework.
+  questions:
     - firstRegistered
     - currentRegisteredCountry
     - companyRegistrationNumber
@@ -149,7 +132,40 @@
     - appropriateTradeRegistersNumber
     - licenceOrMemberRequired
     - licenceOrMemberRequiredDetails
-    - organisationSize
+-
+
+name: How you’ll deliver your services
+  editable: True
+  description: >
+    The Crown Commercial Service will use the information you provide under ‘About you’ to process your application and manage your participation in the G-Cloud&nbsp;9 framework.
+  questions:
     - subcontracting
+-
+
+name: Your organisation’s size
+  editable: True
+  description: >
+    The Crown Commercial Service will use the information you provide to report overall statistics about the successful suppliers on G-Cloud 9
+  questions:
+    - organisationSize
+-
+
+name: Trading status
+  editable: True
+  description: >
+    The Crown Commercial Service will use the information you provide to report overall statistics about the successful suppliers on G-Cloud 9
+  questions:
+    - tradingStatus
+    - tradingStatusOther
+-
+
+name: Contact details
+  editable: True
+  description: >
+     The Crown Commercial Service will use the primary contact information to contact your organisation if they have any questions about your application.  questions:
+  questions:
+    - primaryContact
+    - primaryContactEmail
     - contactNameContractNotice
     - contactEmailContractNotice
+-
