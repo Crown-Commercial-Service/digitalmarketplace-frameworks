@@ -18,5 +18,5 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_character_limit
-    message: "Your availability date must be no more than 100 characters."
+    message: "Your start date must be no more than 100 characters."
 empty_message: Set date
