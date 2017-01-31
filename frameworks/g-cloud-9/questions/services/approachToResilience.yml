@@ -1,0 +1,17 @@
+name: "Approach to resilience"
+question: "Describe how your service is designed to be resilient?"
+question_advice: "Include how your datacentre setup is resilient. If you don't want to make this information public, you can say that it's available on request."
+hint: "x-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

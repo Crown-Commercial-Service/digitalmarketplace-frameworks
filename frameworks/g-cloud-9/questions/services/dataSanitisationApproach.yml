@@ -1,0 +1,16 @@
+name: "Data sanitisation approach"
+question: "Describe your data sanitisation process"
+hint: "x-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

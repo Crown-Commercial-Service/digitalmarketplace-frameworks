@@ -1,0 +1,15 @@
+name: "Virtualisation technology used to keep applications and users sharing the same infrastructure apart"
+question: "Do you use virtualisation technology to keep applications and users sharing the same infrastructure apart?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: boolean
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

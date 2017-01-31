@@ -1,0 +1,24 @@
+name: "Data protection within the supplier's network"
+question: "How do you protect data within your network?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: checkboxes
+options:
+    -
+        label: "Private WAN service"
+    -
+        label: "TLS (Version 1.2 or above)"
+    -
+        label: "IPsec or TLS VPN gateway"
+    -
+        label: "Legacy SSL and TLS (under 1.2)"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

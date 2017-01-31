@@ -1,0 +1,26 @@
+name: "Access to audit information about suppliers' users' actions"
+question: "How do buyers access audit information about the actions your organisation has taken?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+    -
+        label: "Users have access to real-time audit information"
+    -
+        label: "Users receive audit information on a regular basis"
+    -
+        label: "Users contact the support team to get audit information"
+    -
+        label: "You control when users can access audit information"
+    -
+        label: "No audit information available"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

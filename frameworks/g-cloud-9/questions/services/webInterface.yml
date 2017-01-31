@@ -1,0 +1,15 @@
+name: "Web interface"
+question: "Is there a web interface for your service?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: boolean
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

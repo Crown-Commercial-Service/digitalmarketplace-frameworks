@@ -1,0 +1,16 @@
+name: "End-of-contract data extraction"
+question: "How do users extract their data when the contract ends?"
+hint: "x-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

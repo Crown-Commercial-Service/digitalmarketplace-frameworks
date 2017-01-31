@@ -1,0 +1,21 @@
+name: "Incident management approach"
+question: "Describe your incident management processes."
+question_advice: >
+    Include:
+
+      - whether you have pre-defined processes for common events
+      - how users report incidents
+      - how you provide incident reports
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

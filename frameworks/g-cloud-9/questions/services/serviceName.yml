@@ -1,7 +1,7 @@
 id: serviceName
-question: 'What’s your product called?'
-name: 'Product name'
-hint: 'Include your product name only. Don’t use extra keywords.'
+question: 'What’s your service called?'
+name: 'Service name'
+hint: 'Include your service name only. Don’t use extra keywords.'
 depends:
   -
     "on": lot
@@ -16,4 +16,4 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_character_limit
-    message: 'Your product name must be no more than 100 characters.'
+    message: 'Your service name must be no more than 100 characters.'

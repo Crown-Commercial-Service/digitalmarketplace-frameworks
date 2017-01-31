@@ -1,24 +1,217 @@
 -
-  name: Product attributes
+  name: Service attributes
   editable: false
   questions:
     - lotName
 -
-  name: Product name
+  name: About your service
   editable: true
   questions:
-    - productName
+    - serviceName
+    - serviceDescription
+    - serviceCategoriesSoftware
+    - serviceCategoriesHosting
+    - serviceCategoriesSupport
+    - serviceFeaturesAndBenefits
 -
-  name: All the things
+  name: Service scope
   editable: true
   questions:
-    - allTheThingsToSee
+    - serviceConstraints
+    - buyerResponsibilities
 -
-  name: About your product
-  editable: True
+  name: Reselling
+  editable: true
   questions:
-    - productDescription
-    - productFeaturesAndBenefits
-    - productCategoriesSoftware
-    - productCategoriesHosting
-    - productCategoriesSupport
+    - reselling
+
+-
+  name: User support
+  editable: true
+  questions:
+    - emailSupport
+    - onlineTicketingSupport
+    - onlineTIcketingSupportAccessibility
+    - supportResponseTimes
+    - phoneSupport
+    - phoneSupportAvailability
+    - webChatSupport
+    - webChatSupportAvailability
+    - webChatSupportAccessibility
+    - onsiteSupport
+    - supportLevels
+
+-
+  name: How users work with your service
+  editable: true
+  questions:
+    - webInterface
+    - webInterfaceAccessibilityStandards
+    - API
+    - APIAutomationTools
+    - usingTheAPI
+    - commandLineInterface
+    - commandLineOS
+    - usingTheCommandLineInterface
+
+-
+  name: Analytics
+  editable: true
+  questions:
+    - infrastructureApplicationMetrics
+    - metricsTypes
+    - reportingTypes
+
+-
+  name: Scaling
+  editable: true
+  questions:
+    - scalingType
+    - scalingApproach
+    - scalingReporting
+    - scalingPricingStructure
+
+-
+  name: Backups and recovery
+  editable: true
+  questions:
+    - whatIsBackedUp
+    - backupControls
+    - backupLocations
+    - schedulingBackups
+    - backupRecovery
+
+-
+  name: Onboarding and offboarding
+  editable: true
+  questions:
+    - gettingStarted
+    - documentationFormats
+    - endOfContractDataExtraction
+
+-
+  name: Data export
+  editable: true
+  questions:
+    - dataExportHow
+    - dataExportFormats
+    - dataExportFormatsOther
+
+-
+  name: Government networks
+  editable: true
+  questions:
+    - governmentWANS
+    - otherNetworks
+    - otherWANs
+
+-
+  name: Energy efficiency
+  editable: true
+  questions:
+    - energyEfficientDatacentres
+
+-
+  name: Data-in-transit protection
+  editable: true
+  questions:
+    - dataProtectionBetweenBuyersAndSuppliersNetworks
+    - dataProtectionWithinSuppliersNetwork
+
+-
+  name: Asset protection
+  editable: true
+  questions:
+    - dataStorageAndProcessingLocations
+    - userControlOverDataStorageAndProcessingLocations
+    - datacentreSecurityStandards
+    - penetrationTesting
+    - protectionOfDataAtRest
+    - dataSanitisationType
+    - dataSanitisationApproach
+    - equipmentDisposalApproach
+
+-
+  name: Availability and resilience
+  editable: true
+  description: >
+    Read about the government’s
+    [https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience](2nd
+    cloud security principle: ‘Asset protection and resilience’).
+  questions:
+    - guaranteedAvailability
+    - approachToResilience
+    - outageReporting
+
+-
+  name: Separation between users
+  editable: true
+  questions:
+    - virtualisationUsedForSeparation
+    - virtualisationTechnologiesUsed
+    - howSharedInfrastructureIsKeptSeparate
+
+-
+  name: Identity and authentication
+  editable: true
+  questions:
+    - userAuthentication
+    - accessRestrictionsManagementAndSupport
+    - accessControlsTestedRegularly
+    - devicesForManagement
+
+-
+  name: Audit information for users
+  editable: true
+  questions:
+    - accessToAuditInformationAboutBuyersUsersActions
+    - accessToAuditInformationAboutSuppliersUsersActions
+    - auditDataFormats
+
+-
+  name: Pricing
+  editable: true
+  questions:
+    - price
+    - educationPricing
+    - trialOption
+
+-
+  name: Standards and certifications
+  editable: true
+  questions:
+    - placeholderStandardsAndCertifications
+
+-
+  name: Governance
+  editable: true
+  questions:
+    - boardLevelServiceSecurity
+    - securityGovernanceStandards
+    - securityGovernanceApproach
+    - informationSecurityPoliciesAndProcesses
+
+-
+  name: Operational security
+  editable: true
+  questions:
+    - configurationAndChangeManagementType
+    - configurationAndChangeManagementProcesses
+    - vulnerabilityManagementType
+    - vulnerabilityManagementApproach
+    - protectiveMonitoringType
+    - protectiveMonitoringApproach
+    - incidentManagementType
+    - incidentManagementApproach
+
+-
+  name: Personnel security
+  editable: true
+  questions:
+    - staffSecurityClearanceChecks
+
+-
+  name: Secure development
+  editable: true
+  questions:
+    - secureDevelopment

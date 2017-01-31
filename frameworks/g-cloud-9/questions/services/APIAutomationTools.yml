@@ -1,0 +1,29 @@
+name: "API automation tools"
+question: "Which standard automation tools work with your service's API?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+    -
+        label: "Ansible"
+    -
+        label: "Chef"
+    -
+        label: "CloudFormation"
+    -
+        label: "OpenStack"
+    -
+        label: "SaltStack"
+    -
+        label: "Terraform"
+    -
+        label: "Puppet"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

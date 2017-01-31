@@ -1,0 +1,21 @@
+name: "Reporting types"
+question: "How do you provide infrastructure or application metrics?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: checkboxes
+options:
+    -
+        label: "API access"
+    -
+        label: "Real-time dashboards"
+    -
+        label: "Regular reports"
+    -
+        label: "Reports on request"
+
+optional: true

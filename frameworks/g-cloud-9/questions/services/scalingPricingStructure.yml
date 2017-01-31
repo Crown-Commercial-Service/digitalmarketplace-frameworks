@@ -1,0 +1,15 @@
+name: "Scaling pricing structure"
+question: "Describe how your pricing structure works when users scale the service up or down."
+hint: "x-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

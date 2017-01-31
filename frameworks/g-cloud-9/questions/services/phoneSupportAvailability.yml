@@ -1,0 +1,23 @@
+name: "Phone support availability"
+question: "When can users get phone support?"
+question_advice: "Choose the closest match to your phone support hours."
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+    -
+        label: "24 hours, 7 days a week"
+        filter_label: "24/7 phone support"
+    -
+        label: "9 to 5, 5 days a week"
+        filter_label: "9 to 5 phone support"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

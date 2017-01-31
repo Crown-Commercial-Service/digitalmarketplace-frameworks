@@ -1,0 +1,21 @@
+name: "Using the web interface"
+question: "Describe what users can and can't do using your web interface."
+question_advice: >
+    Include:
+
+      - how users can set up the service through the web interface
+      - how users can make changes through the web interface
+      - any limitations to how users can set up or make changes through the web interface
+hint: "x-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

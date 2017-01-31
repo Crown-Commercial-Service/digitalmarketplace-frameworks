@@ -1,6 +1,6 @@
-id: productCategories
-name: 'Product categories'
-question: 'Which categories does your product fit under?'
+id: serviceCategories
+name: 'Service categories'
+question: 'Which categories does your service fit under?'
 depends:
   -
     "on": lot

@@ -1,6 +1,6 @@
-question: 'List the product features.'
-name: 'Product features'
-question_advice: Include the technical features of your product, for example ‘real-time reporting’ or ‘remote access’.
+question: 'List the service features.'
+name: 'Service features'
+question_advice: Include the technical features of your service, for example ‘real-time reporting’ or ‘remote access’.
 hint: '(Maximum 10 words per feature. Maximum 10 features.)'
 depends:
   -
@@ -9,7 +9,7 @@ depends:
       - cloud-hosting
       - cloud-software
       - cloud-support
-list_item_name: 'product feature'
+list_item_name: 'service feature'
 type: list
 validations:
   -

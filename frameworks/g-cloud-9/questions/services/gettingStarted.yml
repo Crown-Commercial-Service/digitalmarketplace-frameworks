@@ -1,0 +1,17 @@
+name: "Getting started"
+question: "How do you help users start using your service?"
+question_advice: "Incude whether you provide onsite training, online training, or user documentation."
+hint: "x-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

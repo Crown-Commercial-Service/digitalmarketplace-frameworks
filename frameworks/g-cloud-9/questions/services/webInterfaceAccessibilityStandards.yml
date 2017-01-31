@@ -1,0 +1,23 @@
+name: Accessibility standards
+question: What accessibility standards does your web interface meet?
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+type: radios
+options:
+    -
+        label: 'WCAG 2.0 AAA or EN 301 549'
+    -
+        label: 'WCAG 2.0 AA'
+    -
+        label: 'WCAG 2.0 A'
+    -
+        label: 'None or don’t know'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+

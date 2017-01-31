@@ -1,0 +1,17 @@
+name: "Support response times"
+question: "How quickly do you respond to questions?"
+question_advice: "Say if response times are different at weekends"
+hint: "x-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

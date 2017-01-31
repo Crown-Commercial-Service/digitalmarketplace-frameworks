@@ -1,0 +1,16 @@
+name: "Other networks"
+question: "Can your service be connected to any other networks?"
+question_advice: "Say 'yes' if you can connect to a private WAN."
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: boolean
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

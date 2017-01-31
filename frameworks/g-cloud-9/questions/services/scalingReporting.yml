@@ -1,0 +1,23 @@
+name: "Scaling reporting"
+question: "How are users notified of scaling changes?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+    -
+        label: "API"
+    -
+        label: "Email"
+    -
+        label: "SMS"
+    -
+        label: "Other"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

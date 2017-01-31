@@ -1,0 +1,24 @@
+name: "What's backed up"
+question: "What can the service back up?"
+question_advice: "Examples include files, virtual machines, or databases."
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+
+
+type: list
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."
+  -
+    name: max_items_limit
+    message: "You must have 10 or fewer backup items."
+  -
+    name: under_character_limit
+    message: "Each backup item must be no more than 100 characters."
+
+optional: true

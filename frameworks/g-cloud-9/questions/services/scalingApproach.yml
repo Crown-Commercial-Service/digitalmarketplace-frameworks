@@ -1,0 +1,13 @@
+name: "Scaling approach"
+question: "Describe how your service scales."
+question_advice: "Include the conditions that make your service scale up or down and how users can change them."
+hint: "x-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+
+type: textbox_large
+
+optional: true

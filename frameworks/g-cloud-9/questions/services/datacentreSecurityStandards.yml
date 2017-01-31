@@ -1,0 +1,22 @@
+name: "Datacentre security standards"
+question: "With which standards does your datacentre security setup comply?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+    -
+        label: "Complies with a recognised standard, for example CSA CCM v3.0 or SSAE-16 / ISAE 3402"
+    -
+        label: "Supplier-defined controls"
+    -
+        label: "Undisclosed"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

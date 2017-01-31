@@ -1,0 +1,29 @@
+name: "Virtualisation technologies used"
+question: "What virtualisation technologies are used?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+
+list_item_name: "virtualisation technologies"
+type: list
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."
+  -
+    name: under_10_words
+    message: "Each virtualisation technology must be no more than 10 words."
+  -
+    name: under_20_words
+    message: "API type must be no more than 20 words."
+  -
+    name: max_items_limit
+    message: "You must have 10 or fewer virtualisation technology."
+  -
+    name: under_character_limit
+    message: "Each virtualisation technology must be no more than 100 characters."

@@ -1,0 +1,22 @@
+name: "Support levels"
+question: "Describe your support levels"
+question_advice: >
+    Describe:
+
+      - the support levels you provide
+      - how much the different support levels you provide cost
+      - whether you provide a technical account manager or cloud support engineer
+hint: "x-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

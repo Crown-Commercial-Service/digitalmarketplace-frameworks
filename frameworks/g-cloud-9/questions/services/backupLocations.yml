@@ -1,0 +1,21 @@
+name: "Backup locations"
+question: "Where can the service back up to?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+    -
+        label: "Single, onsite location"
+    -
+        label: "Multiple, onsite locations"
+    -
+        label: "Secure, offsite locations"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."
