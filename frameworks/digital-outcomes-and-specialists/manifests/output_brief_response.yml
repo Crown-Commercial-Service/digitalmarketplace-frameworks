@@ -2,8 +2,8 @@
   name: View response to requirements
   questions:
     - supplierName
+    - respondToEmailAddress
     - availability
     - dayRate
-    - respondToEmailAddress
     - essentialRequirements
     - niceToHaveRequirements
