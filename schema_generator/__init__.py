@@ -90,7 +90,10 @@ def load_questions(schema_type, framework_slug, lot_slug):
         MANIFESTS[schema_type]['manifest']
     )
 
-    builder = loader.get_builder(framework_slug, MANIFESTS[schema_type]['manifest']).filter({'lot': lot_slug})
+    builder = loader.get_manifest(framework_slug, MANIFESTS[schema_type]['manifest']).filter(
+        {'lot': lot_slug},
+        static=True
+    )
     return {q['id']: q for q in sum((s.questions for s in builder.sections), [])}
 
 
@@ -291,17 +294,11 @@ def multiquestion(question):
     if question._data['type'] == 'dynamic_list':
         return dynamic_list(question)
     else:
-        return _flat_multiquestion(question)
+        return _flat_multiquestion(question), _flat_multiquestion_required(question)
 
 
 def dynamic_list(question):
-    return {
-        question['id']: {
-            "type": "array",
-            "minItems": 0,
-            "items": _nested_multiquestion(question)[question['id']]
-        }
-    }
+    return _nested_multiquestion(question)
 
 
 def _complement_values(question, values):
@@ -351,27 +348,59 @@ def _flat_multiquestion(question):
 
 
 def _nested_multiquestion(question):
-    properties = _flat_multiquestion(question)
-
     object_schema = {
         "type": "object",
         "additionalProperties": False,
-        "properties": properties
+        "properties": _flat_multiquestion(question),
+        "required": _nested_multiquestion_required(question),
     }
-
-    object_schema["required"] = sorted(sum([
-        q.required_form_fields for q in question.questions if not q.get('optional')
-    ], []))
 
     for nested_question in question.questions:
         if nested_question.get('followup'):
             object_schema = merge_schemas(object_schema, _followup(nested_question))
 
-            # If we have a follow up question then the list of required fields has two different cases. This constraint
-            # is taken care of by the follow up schema generator so we do not want a required field here
-            object_schema.pop("required")
+    return {
+        question['id']: {
+            "type": "array",
+            "minItems": 0,
+            "items": object_schema
+        }
+    }
 
-    return {question['id']: object_schema}
+
+def _flat_multiquestion_required(question):
+    if question.get('optional'):
+        return []
+
+    return _nested_multiquestion_required(question)
+
+
+def _nested_multiquestion_required(question):
+    """Returns a list of required nested properties for the multiquestion.
+
+    `.required_form_fields` returns the top-level schema property name for the
+    nested multiquestion, since that's the part that's influenced by the question's
+    `optional` flag and it returns the key we need to add to the top-level schema's
+    'required' list.
+
+    Nested properties are always required if the nested question is mandatory, even
+    when multiquestion itself is optional, since they're part of the nested schema.
+
+    """
+    required = []
+    followups = []
+
+    # Followup questions don't need to be in the 'required' properties list since even
+    # non-optional questions don't always have to be present if they're a followup.
+    # Both the question itself and the followups are covered by the oneOf subschemas.
+
+    for nested_question in question['questions']:
+        if not nested_question.get('followup'):
+            required.extend(nested_question.required_form_fields)
+        else:
+            followups.extend(nested_question['followup'].keys())
+
+    return sorted(set(required) - set(followups))
 
 
 QUESTION_TYPES = {
@@ -496,8 +525,14 @@ def build_any_of(any_of, fields):
 
 def build_schema_properties(schema, questions):
     for key, question in questions.items():
-        schema['properties'].update(build_question_properties(question))
-        schema['required'].extend(question.required_form_fields)
+        property_schema = build_question_properties(question)
+        if isinstance(property_schema, tuple):
+            property_schema, required_fields = build_question_properties(question)
+            schema['properties'].update(property_schema)
+            schema['required'].extend(required_fields)
+        else:
+            schema['properties'].update(property_schema)
+            schema['required'].extend(question.required_form_fields)
 
     schema['required'].sort()
 
