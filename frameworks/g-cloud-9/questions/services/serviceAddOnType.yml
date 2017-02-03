@@ -1,4 +1,3 @@
-name: Add-ons and extensions
 question: Is your service an add-on or extension to other software services?
 optional: true
 depends:
@@ -8,7 +7,7 @@ depends:
       - cloud-hosting
       - cloud-software
 
-type: checkboxes
+type: radios
 options:
   -
     label: "Yes"
@@ -16,3 +15,8 @@ options:
     label: "Yes, but can also be used as a standalone service"
   -
     label: "No"
+
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'

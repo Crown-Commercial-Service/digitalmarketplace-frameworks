@@ -1,0 +1,11 @@
+name: Add-ons and extensions
+questions:
+ - serviceAddOnType
+ - serviceAddOnDetails
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support

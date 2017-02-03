@@ -6,13 +6,10 @@ depends:
   -
     "on": lot
     being:
-      - cloud-hosting
       - cloud-software
-      - cloud-support
+
 type: checkboxes
 options:
-    -
-        label: 'Internet Explorer 6'
     -
         label: 'Internet Explorer 7'
     -
