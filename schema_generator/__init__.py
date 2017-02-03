@@ -2,6 +2,7 @@ import os
 import re
 import json
 from dmcontent import ContentLoader
+from .utils import merge_schemas
 
 
 MANIFESTS = {
@@ -286,6 +287,62 @@ def multiquestion(question):
     """
     Moves subquestions of multiquestions into fully fledged questions.
     """
+
+    if question._data['type'] == 'dynamic_list':
+        return dynamic_list(question)
+    else:
+        return _flat_multiquestion(question)
+
+
+def dynamic_list(question):
+    return {
+        question['id']: {
+            "type": "array",
+            "minItems": 0,
+            "items": _nested_multiquestion(question)[question['id']]
+        }
+    }
+
+
+def _complement_values(question, values):
+    if question['type'] == 'boolean':
+        options = [True, False]
+    elif question['type'] == 'radios':
+        options = [
+            option.get('value', option['label'])
+            for option in question['options']
+        ]
+    else:
+        raise ValueError('Followup questions are only supported for boolean and radios questions')
+
+    return sorted(set(options) - set(values))
+
+
+def _followup(question):
+    schemas = []
+    for followup_id, values in question['followup'].items():
+        schemas.append({
+            'oneOf': [
+                {
+                    "properties": {
+                        question['id']: {"enum": _complement_values(question, values)},
+                        followup_id: {"type": "null"}
+                    },
+                    "required": [question['id']]
+                },
+                {
+                    "properties": {
+                        question['id']: {"enum": values},
+                    },
+                    "required": [question['id'], followup_id]
+                },
+            ]
+        })
+
+    return {'allOf': schemas}
+
+
+def _flat_multiquestion(question):
     properties = {}
     for nested_question in question['questions']:
         properties.update(build_question_properties(nested_question))
@@ -293,55 +350,28 @@ def multiquestion(question):
     return properties
 
 
-def followup(question):
-    return {
-        'oneOf': [
-            {
-                "properties": {
-                    question['id']: {"enum": [False]},
-                    question['followup']: {"type": "null"}
-                },
-                "required": [question['id']]
-            },
-            {
-                "properties": {
-                    question['id']: {"enum": [True]},
-                    question['followup']: {"type": "string", "minLength": 1}
-                },
-                "required": [question['id'], question['followup']]
-            },
-        ]
+def _nested_multiquestion(question):
+    properties = _flat_multiquestion(question)
+
+    object_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": properties
     }
 
-
-def dynamic_list(question):
-    properties = multiquestion(question)
-
-    property_schema = {
-        "type": "array",
-        "minItems": 0,
-        "items": {
-            "type": "object",
-            "additionalProperties": False,
-            "properties": properties
-        }
-    }
-
-    required_fields = [q['id'] for q in question.questions if not q.get('optional')]
-    if required_fields:
-        property_schema["items"]["required"] = required_fields
+    object_schema["required"] = sorted(sum([
+        q.required_form_fields for q in question.questions if not q.get('optional')
+    ], []))
 
     for nested_question in question.questions:
         if nested_question.get('followup'):
-            if 'allOf' not in property_schema['items']:
-                property_schema['items']['allOf'] = []
-            property_schema['items']['allOf'].append(followup(nested_question))
+            object_schema = merge_schemas(object_schema, _followup(nested_question))
 
             # If we have a follow up question then the list of required fields has two different cases. This constraint
             # is taken care of by the follow up schema generator so we do not want a required field here
-            property_schema["items"].pop("required")
+            object_schema.pop("required")
 
-    return {question['id']: property_schema}
+    return {question['id']: object_schema}
 
 
 QUESTION_TYPES = {
