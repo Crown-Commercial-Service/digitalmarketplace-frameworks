@@ -1,6 +1,7 @@
 name: "Protection of data at rest"
 question: "How do you protect data at rest?"
 question_advice: "Read about the different approaches to protecting data at rest. ???? WHERERE ????"
+optional: true
 depends:
   -
     "on": lot
@@ -20,8 +21,3 @@ options:
         label: "Encryption of all physical media"
     -
         label: "'Scale, obfuscating techniques, or data storage sharding'"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

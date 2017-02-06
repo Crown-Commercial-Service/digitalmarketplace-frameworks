@@ -1,5 +1,6 @@
 name: "Backup recovery"
 question: "How do users recover backups?"
+optional: true
 depends:
   -
     "on": lot
@@ -12,8 +13,3 @@ options:
         label: "Users can recover backups themselves, for example through a web interface"
     -
         label: "Users contact the support team"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

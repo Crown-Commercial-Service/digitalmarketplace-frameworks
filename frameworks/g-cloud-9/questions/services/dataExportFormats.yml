@@ -1,5 +1,6 @@
 name: Data export formats
 question: What open formats can users export their data in?
+optional: true
 depends:
   -
     "on": lot
@@ -11,5 +12,3 @@ options:
         label: 'CSV'
     -
         label: 'ODF'
-
-

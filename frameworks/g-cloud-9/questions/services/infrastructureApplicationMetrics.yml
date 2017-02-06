@@ -1,5 +1,6 @@
 name: "Infrastructure or application metrics"
 question: "What infrastructure or application metrics do you provide?"
+optional: true
 depends:
   -
     "on": lot
@@ -18,8 +19,3 @@ options:
         label: "Network"
     -
         label: "Other"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

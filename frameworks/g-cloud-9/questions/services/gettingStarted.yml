@@ -1,7 +1,7 @@
 name: "Getting started"
 question: "How do you help users start using your service?"
 question_advice: "Incude whether you provide onsite training, online training, or user documentation."
-hint: "x-word limit"
+hint: "200-word limit"
 depends:
   -
     "on": lot
@@ -15,3 +15,9 @@ validations:
   -
     name: answer_required
     message: "You need to answer this question."
+  -
+    name: under_200_words
+    message: "Your answer must be no longer than 200 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no longer than 2,000 characters."

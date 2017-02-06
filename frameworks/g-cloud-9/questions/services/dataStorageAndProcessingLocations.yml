@@ -1,5 +1,6 @@
 name: "Data storage and processing locations"
 question: "Where is data stored and processed?"
+optional: true
 depends:
   -
     "on": lot
@@ -17,8 +18,3 @@ options:
         label: "EU-US Privacy Shield agreement locations"
     -
         label: "Other locations"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

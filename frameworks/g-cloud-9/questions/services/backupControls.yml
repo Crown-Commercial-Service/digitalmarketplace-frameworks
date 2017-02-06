@@ -1,7 +1,7 @@
 name: "Backup controls"
 question: "How do users control what backups are performed?"
 question_advice: "Include, for example, whether users can back up different things on a different schedule."
-hint: "x-word limit"
+hint: "200-word limit"
 depends:
   -
     "on": lot
@@ -14,3 +14,9 @@ validations:
   -
     name: answer_required
     message: "You need to answer this question."
+  -
+    name: under_200_words
+    message: "Your answer must be no longer than 200 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no longer than 2,000 characters."

@@ -1,5 +1,5 @@
 name: "Supplier type"
-question: "Are you reselling another organisation's services?"
+question: "Are you reselling another organisation’s services?"
 depends:
   -
     "on": lot
@@ -10,16 +10,16 @@ depends:
 type: radios
 options:
     -
-      label: "I'm not a reseller"
+      label: "I’m not a reseller"
       filter_label: "Not a reseller"
     -
-      label: "I'm a reseller providing extra features and support not available from the original supplier"
+      label: "I’m a reseller providing extra features and support not available from the original supplier"
       filter_label: "Reseller with extra features and/or support"
     -
-      label: "I'm a reseller providing extra support"
+      label: "I’m a reseller providing extra support"
       filter_label: "Reseller with extra support"
     -
-      label: "I'm a reseller not providing extra features or support"
+      label: "I’m a reseller not providing extra features or support"
       filter_label: "Reseller without extra features or support"
 
 validations:

@@ -1,5 +1,6 @@
 name: "Reporting types"
 question: "How do you provide infrastructure or application metrics?"
+optional: true
 depends:
   -
     "on": lot
@@ -17,5 +18,3 @@ options:
         label: "Regular reports"
     -
         label: "Reports on request"
-
-optional: true

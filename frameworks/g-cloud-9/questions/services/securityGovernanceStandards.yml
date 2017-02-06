@@ -1,5 +1,6 @@
 name: "Security governance standards"
 question: "What security governance standards do you comply with?"
+optional: true
 depends:
   -
     "on": lot
@@ -15,8 +16,3 @@ options:
         label: "ISO/IEC 27001"
     -
         label: "Other"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

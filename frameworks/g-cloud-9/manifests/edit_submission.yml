@@ -4,10 +4,14 @@
   questions:
     - lotName
 -
-  name: About your service
+  name: Service name
   editable: true
   questions:
     - serviceName
+-
+  name: About your service
+  editable: true
+  questions:
     - serviceDescription
     - serviceCategoriesSoftware
     - serviceCategoriesHosting

@@ -1,5 +1,6 @@
 name: "API automation tools"
-question: "Which standard automation tools work with your service's API?"
+question: "Which standard automation tools work with your service’s API?"
+optional: true
 depends:
   -
     "on": lot
@@ -22,8 +23,3 @@ options:
         label: "Terraform"
     -
         label: "Puppet"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

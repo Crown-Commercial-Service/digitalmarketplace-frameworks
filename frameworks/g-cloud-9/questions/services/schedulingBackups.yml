@@ -1,5 +1,6 @@
 name: "Scheduling backups"
 question: "How do users schedule backups?"
+optional: true
 depends:
   -
     "on": lot
@@ -17,8 +18,3 @@ options:
     -
         label: "Supplier controls the whole backup schedule"
         filter_label: "Supplier-controlled"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

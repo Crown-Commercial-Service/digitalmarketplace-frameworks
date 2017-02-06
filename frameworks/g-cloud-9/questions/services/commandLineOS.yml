@@ -1,5 +1,6 @@
 name: "Command line interface type"
 question: "What kind of command line interface do you provide for your service?"
+optional: true
 depends:
   -
     "on": lot
@@ -14,8 +15,3 @@ options:
         label: "Windows"
     -
         label: "Mac"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

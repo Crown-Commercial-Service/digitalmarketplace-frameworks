@@ -1,5 +1,6 @@
 name: "Other WANs"
 question: "List any other WANs your service is connected to."
+optional: true
 depends:
   -
     "on": lot
@@ -12,9 +13,6 @@ type: list
 
 validations:
   -
-    name: answer_required
-    message: "You need to answer this question."
-  -
     name: under_10_words
     message: "Each WAN must be no more than 10 words."
   -
@@ -23,5 +21,3 @@ validations:
   -
     name: under_character_limit
     message: "Each WAN must be no more than 100 characters."
-
-optional: true

@@ -1,5 +1,6 @@
 name: "Government WANs"
 question: "What government wide area networks (WANs) is the service directly connected to?"
+optional: true
 depends:
   -
     "on": lot
@@ -19,8 +20,3 @@ options:
         label: "Joint Academic Network (JANET)"
     -
         label: "Scottish Wide Area Network (SWAN)"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

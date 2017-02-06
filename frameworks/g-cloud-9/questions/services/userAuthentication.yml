@@ -1,5 +1,6 @@
 name: User authentication
 question: How do you authenticate users when they access the service?
+optional: true
 depends:
   -
     "on": lot
@@ -14,9 +15,3 @@ options:
   - label: Limited access over ‘community network’ (for example PSN)
   - label: Dedicated link
   - label: Username or password
-
-validations:
-  -
-    name: answer_required
-    message: 'You need to answer this question.'
-

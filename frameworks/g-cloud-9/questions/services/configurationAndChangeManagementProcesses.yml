@@ -1,5 +1,6 @@
 name: "Configuration and change management approach"
 question: "Describe your configuration and change management processes."
+hint: "200-word limit"
 question_advice: >
     Include details of how:
 
@@ -18,3 +19,9 @@ validations:
   -
     name: answer_required
     message: "You need to answer this question."
+  -
+    name: under_200_words
+    message: "Your answer must be no longer than 200 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no longer than 2,000 characters."

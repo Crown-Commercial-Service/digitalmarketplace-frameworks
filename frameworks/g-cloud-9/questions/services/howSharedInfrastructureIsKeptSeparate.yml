@@ -1,6 +1,6 @@
 name: "How different organisations sharing the same infrastructure are kept apart"
 question: "Describe how different organisations sharing the same infrastrcture are kept apart."
-hint: "x-word limit"
+hint: "200-word limit"
 depends:
   -
     "on": lot
@@ -14,3 +14,9 @@ validations:
   -
     name: answer_required
     message: "You need to answer this question."
+  -
+    name: under_200_words
+    message: "Your answer must be no longer than 200 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no longer than 2,000 characters."

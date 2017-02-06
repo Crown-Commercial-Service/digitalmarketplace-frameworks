@@ -1,5 +1,6 @@
 name: "Audit data formats"
 question: "What formats do you use to provide audit data?"
+optional: true
 depends:
   -
     "on": lot
@@ -7,7 +8,7 @@ depends:
       - cloud-hosting
       - cloud-software
 
-list_item_name: "audit data formats"
+list_item_name: "audit data format"
 type: list
 
 validations:
@@ -23,5 +24,3 @@ validations:
   -
     name: under_character_limit
     message: "Each audit data format must be no more than 100 characters."
-
-optional: true

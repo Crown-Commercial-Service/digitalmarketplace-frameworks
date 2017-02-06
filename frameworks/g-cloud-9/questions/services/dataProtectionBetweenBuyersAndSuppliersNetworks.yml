@@ -1,5 +1,6 @@
 name: "Data protection between the buyer's and supplier's networks"
 question: "How do you protect data between the buyer's network and your network?"
+optional: true
 depends:
   -
     "on": lot
@@ -19,8 +20,3 @@ options:
         label: "Bonded fibre optic connections"
     -
         label: "Legacy SSL and TLS (under 1.2)"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

@@ -1,12 +1,13 @@
 id: serviceCategories
 name: 'Service categories'
 question: 'Which categories does your service fit under?'
+hint: 'You can choose multiple categories.'
+optional: true
 depends:
   -
     "on": lot
     being:
       - cloud-hosting
-hint: 'You can choose multiple categories.'
 type: checkboxes
 options:
   -
@@ -18,7 +19,3 @@ options:
   -
     label: Or maybe hosting doesn't have categories at all?
     value: hosting_category_three
-validations:
-  -
-    name: answer_required
-    message: 'You need to answer this question.'

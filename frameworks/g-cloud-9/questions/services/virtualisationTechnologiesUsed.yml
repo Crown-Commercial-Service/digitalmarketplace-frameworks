@@ -8,7 +8,7 @@ depends:
       - cloud-software
 
 
-list_item_name: "virtualisation technologies"
+list_item_name: "virtualisation technology"
 type: list
 
 validations:

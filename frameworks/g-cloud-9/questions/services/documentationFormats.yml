@@ -1,5 +1,6 @@
 name: "Documentation formats"
 question: "What formats do you provide documentation in?"
+optional: true
 depends:
   -
     "on": lot
@@ -17,8 +18,3 @@ options:
         label: "PDF"
     -
         label: "Other"
-
-validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."

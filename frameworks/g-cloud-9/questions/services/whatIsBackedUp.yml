@@ -1,6 +1,7 @@
-name: "What's backed up"
+name: "What’s backed up"
 question: "What can the service back up?"
 question_advice: "Examples include files, virtual machines, or databases."
+optional: true
 depends:
   -
     "on": lot
@@ -20,5 +21,3 @@ validations:
   -
     name: under_character_limit
     message: "Each backup item must be no more than 100 characters."
-
-optional: true

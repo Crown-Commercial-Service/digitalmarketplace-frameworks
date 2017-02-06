@@ -1,7 +1,7 @@
 question: 'Does your service have any constraints that buyers should know about?'
 name: 'Service constraints'
 question_advice: Constraints might include planned maintenance arrangements or support being limited to specific hardware configurations.
-hint: 'Maximum 10 words per constraint. Maximum 10 constraints.)'
+hint: '(Maximum 10 words per constraint. Maximum 10 constraints.)'
 depends:
   -
     "on": lot
