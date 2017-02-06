@@ -1,7 +1,7 @@
 name: "Guaranteed availability"
 question: "Describe the level of availability you guarantee."
 question_advice: "Include any service level agreements (SLAs) you have for availability and how users are refunded if you don't meet guaranteed levels of availability."
-hint: "200-word limit"
+hint: "50-word limit"
 depends:
   -
     "on": lot
@@ -17,7 +17,7 @@ validations:
     message: "You need to answer this question."
   -
     name: under_200_words
-    message: "Your answer must be no longer than 200 words."
+    message: "Your answer must be no longer than 50 words."
   -
     name: under_character_limit
-    message: "Your answer must be no longer than 2,000 characters."
+    message: "Your answer must be no longer than 500 characters."

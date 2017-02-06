@@ -1,7 +1,7 @@
 name: "Information security policies and processes"
 question: "What information security policies and processes do you follow?"
 question_advice: "Include your reporting structure and how you ensure policies are followed."
-hint: "200-word limit"
+hint: "50-word limit"
 depends:
   -
     "on": lot
@@ -17,7 +17,7 @@ validations:
     message: "You need to answer this question."
   -
     name: under_200_words
-    message: "Your answer must be no longer than 200 words."
+    message: "Your answer must be no longer than 50 words."
   -
     name: under_character_limit
-    message: "Your answer must be no longer than 2,000 characters."
+    message: "Your answer must be no longer than 500 characters."
