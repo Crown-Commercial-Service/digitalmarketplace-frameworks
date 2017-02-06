@@ -1,0 +1,21 @@
+name: "Protective monitoring approach"
+question: "Describe your protective monitoring processes."
+question_advice: >
+    Include:
+
+      - how you identify potential compromises
+      - how you respond when you find a potential compromise
+      - how quickly you respond to incidents
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

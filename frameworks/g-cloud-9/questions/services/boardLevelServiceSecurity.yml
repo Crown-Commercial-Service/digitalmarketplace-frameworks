@@ -1,0 +1,15 @@
+name: "Named, board-level person responsible for service security"
+question: "Does your organisation have a named person with board-level (or equivalent) authorisation who's responsible for the security of all of your services?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: boolean
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

@@ -1,0 +1,23 @@
+name: "Scaling approach"
+question: "Describe how your service scales."
+question_advice: "Include the conditions that make your service scale up or down and how users can change them."
+hint: "50-word limit"
+optional: true
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this questions."
+  -
+    name: under_200_words
+    message: "Your answer must be no longer than 50 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no longer than 500 characters."

@@ -1,5 +1,5 @@
-question: 'Provide a product summary.'
-name: 'Product description'
+question: 'Provide a service summary.'
+name: 'Service description'
 depends:
   -
     "on": lot

@@ -1,7 +1,7 @@
-question: 'List the product benefits.'
-name: 'Product benefits'
+question: 'List the service benefits.'
+name: 'Service benefits'
 question_advice: >
-    Include the benefits that show how your product helps users improve their working processes.
+    Include the benefits that show how your service helps users improve their working processes.
     Use active phrases, for example ‘publish content from multiple devices’ or ‘quickly manage content on the move’.
 hint: (Maximum 10 words per benefit. Maximum 10 benefits.)
 depends:
@@ -11,7 +11,7 @@ depends:
       - cloud-hosting
       - cloud-software
       - cloud-support
-list_item_name: 'product benefit'
+list_item_name: 'service benefit'
 type: list
 validations:
   -

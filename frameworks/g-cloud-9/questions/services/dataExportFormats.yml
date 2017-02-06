@@ -1,0 +1,14 @@
+name: Data export formats
+question: What open formats can users export their data in?
+optional: true
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-software
+type: checkboxes
+options:
+    -
+        label: 'CSV'
+    -
+        label: 'ODF'

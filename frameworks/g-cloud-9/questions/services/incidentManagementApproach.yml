@@ -1,0 +1,28 @@
+name: "Incident management approach"
+question: "Describe your incident management processes."
+hint: "50-word limit"
+question_advice: >
+    Include:
+
+      - whether you have pre-defined processes for common events
+      - how users report incidents
+      - how you provide incident reports
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."
+  -
+    name: under_200_words
+    message: "Your answer must be no longer than 50 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no longer than 500 characters."

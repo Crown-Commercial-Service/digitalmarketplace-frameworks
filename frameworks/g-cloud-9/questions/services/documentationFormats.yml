@@ -1,0 +1,20 @@
+name: "Documentation formats"
+question: "What formats do you provide documentation in?"
+optional: true
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: checkboxes
+options:
+    -
+        label: "HTML"
+    -
+        label: "ODF"
+    -
+        label: "PDF"
+    -
+        label: "Other"

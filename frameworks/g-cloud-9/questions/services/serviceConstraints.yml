@@ -1,0 +1,26 @@
+question: 'Does your service have any constraints that buyers should know about?'
+name: 'Service constraints'
+question_advice: Constraints might include planned maintenance arrangements or support being limited to specific hardware configurations.
+hint: '(Maximum 10 words per constraint. Maximum 10 constraints.)'
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+list_item_name: 'service constraints'
+type: list
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_10_words
+    message: 'Each constraint must be no more than 10 words.'
+  -
+    name: max_items_limit
+    message: 'You must have 10 or fewer constraints.'
+  -
+    name: under_character_limit
+    message: 'Each constraint must be no more than 100 characters.'

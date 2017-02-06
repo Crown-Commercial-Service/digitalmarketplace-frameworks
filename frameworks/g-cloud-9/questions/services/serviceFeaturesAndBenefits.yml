@@ -1,0 +1,7 @@
+question: 'Service features and benefits'
+name: 'Service features and benefits'
+optional: false
+type: multiquestion
+questions:
+  - serviceFeatures
+  - serviceBenefits

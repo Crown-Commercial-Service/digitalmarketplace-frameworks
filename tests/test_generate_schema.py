@@ -164,7 +164,7 @@ def test_parse_question_limits_char_count(num):
     question = {"validations": [
         {
             "name": "under_character_limit",
-            "message": str(num)
+            "message": "The answer must be no more than {:,} characters.".format(num)
         }
     ]}
     result = parse_question_limits(question)

@@ -1,0 +1,15 @@
+name: "Onsite support"
+question: "Do you provide onsite support?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: boolean
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

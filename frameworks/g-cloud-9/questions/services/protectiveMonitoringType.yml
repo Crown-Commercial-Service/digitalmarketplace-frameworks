@@ -1,0 +1,22 @@
+name: "Protective monitoring type"
+question: "Which protective monitoring processes does your organisation comply with?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+    -
+        label: "Conforms to a recognised standard, for example CSA CCM v3.0 or SSAE-16 / ISAE 3402"
+    -
+        label: "Supplier-defined controls"
+    -
+        label: "Undisclosed"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

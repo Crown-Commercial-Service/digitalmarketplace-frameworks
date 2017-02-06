@@ -1,0 +1,20 @@
+name: "Data storage and processing locations"
+question: "Where is data stored and processed?"
+optional: true
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: checkboxes
+options:
+    -
+        label: "United Kingdom"
+    -
+        label: "European Economic Area (EEA)"
+    -
+        label: "EU-US Privacy Shield agreement locations"
+    -
+        label: "Other locations"

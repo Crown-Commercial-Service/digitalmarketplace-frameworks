@@ -1,0 +1,26 @@
+name: "How long is audit data stored for"
+question: "How long do you store audit data for?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+    -
+        label: "User-defined"
+    -
+        label: "Less than 1 month"
+    -
+        label: "At least 1 month and up to 6 months"
+    -
+        label: "At least 6 months and up to 12 months"
+    -
+        label: "At least 12 months"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

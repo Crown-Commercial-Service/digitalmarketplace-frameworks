@@ -1,0 +1,16 @@
+name: "Phone support"
+question: "Do you provide phone support?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: boolean
+followup: phoneSupportHours
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

@@ -1,0 +1,8 @@
+question: Web interface accessibility
+name: Web interface accessibility
+optional: false
+type: multiquestion
+questions:
+  - webInterfaceAccessibilityStandards
+  - webInterfaceAccessibilityDescription
+  - webInterfaceAccessibilityTesting

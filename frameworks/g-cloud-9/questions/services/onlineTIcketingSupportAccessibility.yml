@@ -1,0 +1,28 @@
+name: "Online ticketing support accessibility"
+question: "Does your online ticketing support comply with the Web Content Accessibility Guidelines 2.0?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+    -
+        label: "AAA"
+        filter_label: "AAA"
+    -
+        label: "AA"
+        filter_label: "AA"
+    -
+        label: "A"
+        filter_label: "A"
+    -
+        label: "No"
+        filter_label: "No"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

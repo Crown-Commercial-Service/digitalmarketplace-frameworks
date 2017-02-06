@@ -1,0 +1,23 @@
+name: "Information security policies and processes"
+question: "What information security policies and processes do you follow?"
+question_advice: "Include your reporting structure and how you ensure policies are followed."
+hint: "50-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."
+  -
+    name: under_200_words
+    message: "Your answer must be no longer than 50 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no longer than 500 characters."

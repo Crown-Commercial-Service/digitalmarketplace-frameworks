@@ -1,0 +1,17 @@
+name: "Command line interface type"
+question: "What kind of command line interface do you provide for your service?"
+optional: true
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+    -
+        label: "Linux"
+    -
+        label: "Windows"
+    -
+        label: "Mac"

@@ -1,0 +1,28 @@
+name: "Using the API"
+question: "Describe what users can and can’t do using your API."
+question_advice: >
+    Include:
+
+      - how users can set up the service through the API
+      - how users can make changes through the API
+      - any limitations to how users can set up or make changes through the API
+hint: "50-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."
+  -
+    name: under_200_words
+    message: "Your answer must be no longer than 50 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no longer than 500 characters."

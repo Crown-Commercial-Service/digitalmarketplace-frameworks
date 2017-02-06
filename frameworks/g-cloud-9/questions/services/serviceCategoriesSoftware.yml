@@ -1,12 +1,13 @@
-id: productCategories
-name: 'Product categories'
-question: 'Which categories does your product fit under?'
+id: serviceCategories
+name: 'Service categories'
+question: 'Which categories does your service fit under?'
+hint: 'You can choose multiple categories.'
+optional: true
 depends:
   -
     "on": lot
     being:
       - cloud-software
-hint: 'You can choose multiple categories.'
 type: checkboxes
 options:
   -
@@ -16,7 +17,3 @@ options:
     label: '...all funky and new'
     value: software_category_two
     description: A huge expandable tree that rules from the centre of the ultraworld
-validations:
-  -
-    name: answer_required
-    message: 'You need to answer this question.'

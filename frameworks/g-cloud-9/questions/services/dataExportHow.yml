@@ -1,0 +1,19 @@
+name: Data export description
+question: How do users export their data?
+hint: "50-word limit"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-software
+type: textbox_large
+validations:
+  -
+    name: answer_required
+    message: "You must answer this question."
+  -
+    name: under_200_words
+    message: "Your answer must be no longer than 50 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no longer than 500 characters."

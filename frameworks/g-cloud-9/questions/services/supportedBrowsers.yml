@@ -1,0 +1,33 @@
+name: Supported browsers
+question: 'What browsers does your service work with?'
+hint: 'Choose all that apply.'
+optional: true
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+type: checkboxes
+options:
+    -
+        label: 'Internet Explorer 6'
+    -
+        label: 'Internet Explorer 7'
+    -
+        label: 'Internet Explorer 8'
+    -
+        label: 'Internet Explorer 9'
+    -
+        label: 'Internet Explorer 10+'
+    -
+        label: 'Microsoft Edge'
+    -
+        label: Firefox
+    -
+        label: Chrome
+    -
+        label: Safari
+    -
+        label: Opera

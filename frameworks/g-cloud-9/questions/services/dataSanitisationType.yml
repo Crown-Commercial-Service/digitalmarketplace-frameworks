@@ -1,0 +1,24 @@
+name: "Data sanitisation type"
+question: "Do you have a data sanitisation process?"
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+    -
+        label: "Explicit overwriting of storage before reallocation"
+    -
+        label: "Assurances media can't be directly 'addressed'"
+    -
+        label: "Hardware containing data is completely destroyed"
+    -
+        label: "No data sanitisation process"
+
+validations:
+  -
+    name: answer_required
+    message: "You need to answer this question."

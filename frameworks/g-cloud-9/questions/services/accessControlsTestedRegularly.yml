@@ -1,0 +1,18 @@
+name: Access control testing
+question: How often do you test your access controls?
+type: radios
+options:
+    - label: At least every 6 months
+    - label: At least once a year
+    - label: Less than once a year
+    - label: Never
+depends:
+  -
+    "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'

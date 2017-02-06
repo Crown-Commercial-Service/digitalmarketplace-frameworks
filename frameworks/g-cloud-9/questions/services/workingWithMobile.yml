@@ -1,0 +1,15 @@
+name: Working with mobile
+question: Has your service been designed to work with mobile?
+depends:
+  - "on": "lot"
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: boolean
+
+validations:
+   -
+     name: answer_required
+     message: 'You need to answer this question.'
