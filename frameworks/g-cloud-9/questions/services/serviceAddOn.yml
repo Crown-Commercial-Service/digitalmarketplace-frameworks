@@ -1,4 +1,6 @@
+question: Add-ons and extensions
 name: Add-ons and extensions
+type: multiquestion
 questions:
  - serviceAddOnType
  - serviceAddOnDetails
