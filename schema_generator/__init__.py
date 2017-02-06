@@ -374,14 +374,15 @@ def parse_question_limits(question, for_items=False):
     )
     char_length_validator = next(
         iter(filter(None, (
-            re.search('(\d+)', validator['message'])
+            re.search(r'([\d,]+)', validator['message'])
             for validator in question.get('validations', [])
             if validator['name'] == 'under_character_limit'
         ))),
         None
     )
 
-    char_length = question.get('max_length') or (char_length_validator and char_length_validator.group(1))
+    char_length = question.get('max_length') or (char_length_validator and
+                                                 char_length_validator.group(1).replace(',', ''))
     word_length = question.get('max_length_in_words') or (word_length_validator and word_length_validator.group(1))
 
     if char_length:
