@@ -1,6 +1,6 @@
 name: "Getting started"
 question: "How do you help users start using your service?"
-question_advice: "Incude whether you provide onsite training, online training, or user documentation."
+question_advice: "Include whether you provide onsite training, online training, or user documentation."
 hint: "50-word limit"
 depends:
   -
