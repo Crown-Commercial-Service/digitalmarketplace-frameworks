@@ -1,5 +1,5 @@
 -
-  name: Apply for an opportunity
+  name: Apply for this opportunity
   editable: True
   questions:
     - availability
