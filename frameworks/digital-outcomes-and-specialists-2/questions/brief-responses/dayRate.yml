@@ -1,7 +1,6 @@
 name: Day rate
 question: What’s the specialist’s day rate?
-hint: Enter a number, not a range.
-
+question_advice: "{% if 'budgetRange' in brief %}<h2>Buyer's maximum day rate:</h2><p>{{ brief.budgetRange }}</p>{% endif %}<h2>Your maximum day rate:</h2><p>£{{ max_day_rate }}</p>"
 type: pricing
 fields:
   price: dayRate
@@ -15,7 +14,7 @@ validations:
     message: 'You need to answer this question.'
   - name: not_money_format
     field: dayRate
-    message: "Day rate must be a number, without units, eg 99.95"
+    message: "Day rate must be in numbers and decimal points only, for example 99.95."
   - name: max_less_than_min
     field: dayRate
     message: "This can't be more than the maximum day rate you've already provided."
