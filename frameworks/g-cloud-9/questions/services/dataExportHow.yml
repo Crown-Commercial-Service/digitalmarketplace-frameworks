@@ -12,7 +12,7 @@ validations:
     name: answer_required
     message: "You must answer this question."
   -
-    name: under_200_words
+    name: under_50_words
     message: "Your answer must be no longer than 50 words."
   -
     name: under_character_limit

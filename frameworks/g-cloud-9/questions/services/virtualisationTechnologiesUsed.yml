@@ -19,9 +19,6 @@ validations:
     name: under_10_words
     message: "Each virtualisation technology must be no more than 10 words."
   -
-    name: under_20_words
-    message: "API type must be no more than 20 words."
-  -
     name: max_items_limit
     message: "You must have 10 or fewer virtualisation technology."
   -
