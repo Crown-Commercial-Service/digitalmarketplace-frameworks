@@ -143,7 +143,7 @@
   editable: True
   prefill: True
   description: >
-    The Crown Commercial Service will use the information you provide on this page to process your application and manage your participation in G-Cloud&nbsp;9. 
+    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application. 
 
     For a group of economic operators, this will be the name of the lead organisation (or the separate entity such as a special purpose vehicle if you have already created one).
     If you’re submitting a response on behalf of another organisation, use their company name and details, not yours.
@@ -157,7 +157,7 @@
   editable: True
   prefill: True
   description: >
-    The Crown Commercial Service will use this information to process your application and manage your participation in G-Cloud&nbsp;9.
+    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application. If your application is successful, it will carry out checks on your company.
   questions:
     - firstRegistered
     - currentRegisteredCountry
@@ -184,7 +184,9 @@
   editable: True
   prefill: True
   description: >
-    The Crown Commercial Service will use the information you provide to report overall statistics about the successful suppliers on G-Cloud&nbsp;9.
+    The government [aims to spend £1 in every £3 with small-to-medium enterprises (SMEs)s](https://www.gov.uk/government/news/big-opportunities-for-small-firms-government-set-to-spend-1-in-every-3-with-small-businesses) by 2020.
+    
+    The Crown Commercial Service will use the information you provide about the size of your company to report overall statistics about the successful suppliers on G-Cloud&nbsp;9.  
   questions:
     - organisationSize
 -

@@ -1,3 +1,6 @@
+name: Understand application process
 question: >
-  Have you read and understood the guidance on [how to apply](https://www.gov.uk/guidance/g-cloud-suppliers-guide) to G-Cloud&nbsp;9 using the Digital Marketplace?
+  Do you understand the application process for G-Cloud&nbsp;9 on the Digital Marketplace?
+hint: >
+  You can read about how to apply in the [G-Cloud suppliers’ guide](https://www.gov.uk/guidance/g-cloud-suppliers-guide#how-to-apply).
 type: boolean
