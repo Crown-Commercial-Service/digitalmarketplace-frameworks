@@ -1,16 +1,19 @@
 -
   name: Service attributes
   editable: false
+  edit_questions: false
   questions:
     - lotName
 -
   name: Service name
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - serviceName
 -
   name: About your service
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - serviceDescription
     - serviceCategoriesSoftware
@@ -19,19 +22,22 @@
     - serviceFeaturesAndBenefits
 -
   name: Service scope
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - serviceConstraints
     - buyerResponsibilities
 -
   name: Reselling
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - reselling
 
 -
   name: User support
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - emailSupport
     - onlineTicketingSupport
@@ -47,7 +53,8 @@
 
 -
   name: How users work with your service
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - webInterface
     - webInterfaceAccessibilityStandards
@@ -60,7 +67,8 @@
 
 -
   name: Analytics
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - infrastructureApplicationMetrics
     - metricsTypes
@@ -68,7 +76,8 @@
 
 -
   name: Scaling
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - scalingType
     - scalingApproach
@@ -77,7 +86,8 @@
 
 -
   name: Backups and recovery
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - whatIsBackedUp
     - backupControls
@@ -87,7 +97,8 @@
 
 -
   name: Onboarding and offboarding
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - gettingStarted
     - documentationFormats
@@ -95,7 +106,8 @@
 
 -
   name: Data export
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - dataExportHow
     - dataExportFormats
@@ -103,7 +115,8 @@
 
 -
   name: Government networks
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - governmentWANS
     - otherNetworks
@@ -111,20 +124,23 @@
 
 -
   name: Energy efficiency
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - energyEfficientDatacentres
 
 -
   name: Data-in-transit protection
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - dataProtectionBetweenBuyersAndSuppliersNetworks
     - dataProtectionWithinSuppliersNetwork
 
 -
   name: Asset protection
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - dataStorageAndProcessingLocations
     - userControlOverDataStorageAndProcessingLocations
@@ -137,7 +153,8 @@
 
 -
   name: Availability and resilience
-  editable: true
+  editable: false
+  edit_questions: true
   description: >
     Read about the government’s
     [https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience](2nd
@@ -149,7 +166,8 @@
 
 -
   name: Separation between users
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - virtualisationUsedForSeparation
     - virtualisationTechnologiesUsed
@@ -157,7 +175,8 @@
 
 -
   name: Identity and authentication
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - userAuthentication
     - accessRestrictionsManagementAndSupport
@@ -166,7 +185,8 @@
 
 -
   name: Audit information for users
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - accessToAuditInformationAboutBuyersUsersActions
     - accessToAuditInformationAboutSuppliersUsersActions
@@ -174,7 +194,8 @@
 
 -
   name: Pricing
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - price
     - educationPricing
@@ -182,13 +203,15 @@
 
 -
   name: Standards and certifications
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - placeholderStandardsAndCertifications
 
 -
   name: Governance
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - boardLevelServiceSecurity
     - securityGovernanceStandards
@@ -197,7 +220,8 @@
 
 -
   name: Operational security
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - configurationAndChangeManagementType
     - configurationAndChangeManagementProcesses
@@ -210,12 +234,14 @@
 
 -
   name: Personnel security
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - staffSecurityClearanceChecks
 
 -
   name: Secure development
-  editable: true
+  editable: false
+  edit_questions: true
   questions:
     - secureDevelopment

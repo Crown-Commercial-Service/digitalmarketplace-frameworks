@@ -1,4 +1,4 @@
-name: "Access to audit information about suppliers' users' actions"
+name: "Access to audit information about suppliers’ users’ actions"
 question: "How do buyers access audit information about the actions your organisation has taken?"
 depends:
   -

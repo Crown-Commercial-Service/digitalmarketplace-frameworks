@@ -1,4 +1,4 @@
-name: "Data protection within the supplier's network"
+name: "Data protection within the supplier’s network"
 question: "How do you protect data within your network?"
 optional: true
 depends:
