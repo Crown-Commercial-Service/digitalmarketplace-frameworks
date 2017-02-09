@@ -32,6 +32,7 @@
   questions:
     - termsOfParticipation
     - termsAndConditions
+    - canProvideFromDayOne
     - 10WorkingDays
     - MI
     
@@ -107,11 +108,11 @@
     
     If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your bid will be accepted.
   questions:
-    - canProvideFromDayOne
     - environmentallyFriendly
     - equalityAndDiversity
     - employersInsurance
-
+    - transparentContracting
+    - publishContracts
 -
   name: How you apply
   editable: True
@@ -133,11 +134,10 @@
     You must confirm the accuracy of the information in this declaration and in your service descriptions. We might ask for proof after you’ve submitted your application.
 
   questions:
-    - requisiteAuthority
     - accurateInformation
-    - proofOfClaims
-    - skillsAndResources
+    - informationChanges
     - accuratelyDescribed
+    - proofOfClaims
 -
   name: About your organisation
   editable: True
