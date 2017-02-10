@@ -1,7 +1,7 @@
-question: 'List the service features.'
-name: 'Service features'
+name: Service features
+question: List the service features.
 question_advice: Include the technical features of your service, for example ‘real-time reporting’ or ‘remote access’.
-hint: '(Maximum 10 words per feature. Maximum 10 features.)'
+hint: (Maximum 10 words per feature. Maximum 10 features.)
 depends:
   -
     "on": lot
@@ -9,18 +9,18 @@ depends:
       - cloud-hosting
       - cloud-software
       - cloud-support
-list_item_name: 'service feature'
+list_item_name: service feature
 type: list
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
-  -
-    name: under_10_words
-    message: 'Each feature must be no more than 10 words.'
+    message: You need to answer this question.
   -
     name: max_items_limit
-    message: 'You must have 10 or fewer features.'
+    message: You can have no more than 10 features.
+  -
+    name: under_10_words
+    message: Each feature must be no more than 10 words.
   -
     name: under_character_limit
-    message: 'Each feature must be no more than 100 characters.'
+    message: Each feature must be no more than 100 characters.

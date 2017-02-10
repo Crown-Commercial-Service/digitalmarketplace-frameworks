@@ -1,5 +1,5 @@
-question: 'Provide a service summary.'
 name: 'Service description'
+question: 'Provide a summary describing what your service is for.'
 depends:
   -
     "on": lot

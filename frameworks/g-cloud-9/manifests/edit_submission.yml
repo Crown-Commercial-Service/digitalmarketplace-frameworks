@@ -6,7 +6,7 @@
     - lotName
 -
   name: Service name
-  editable: true
+  editable: false
   edit_questions: true
   questions:
     - serviceName
@@ -19,6 +19,11 @@
     - serviceCategoriesSoftware
     - serviceCategoriesHosting
     - serviceCategoriesSupport
+-
+  name: Service features and benefits
+  editable: false
+  edit_questions: true
+  questions:
     - serviceFeaturesAndBenefits
 -
   name: Service scope
@@ -28,7 +33,6 @@
     - serviceAddOn
     - cloudDeploymentModel
     - serviceConstraints
-    - buyerResponsibilities
     - systemRequirements
 -
   name: Reselling

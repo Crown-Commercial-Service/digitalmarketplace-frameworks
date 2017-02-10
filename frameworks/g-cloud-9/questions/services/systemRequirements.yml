@@ -1,26 +1,27 @@
 name: System requirements
 question: What system requirements does your service have?
 question_advice: >
-  Examples of systems requirements might be whether buyers must have up-to-date software
-  licences or anti-virus technology for virtual machines. These should be high-level
-  requirements rather than a detailed specification.
-
-hint: 'Maximum 10.'
+  Examples of systems requirements might be whether buyers have up-to-date softwre licences or anti-virus technology
+  for virtual machines.
+hint: (Maximum 10 words per requirement. Maximum 10 requirements.)
 depends:
   -
     "on": lot
     being:
       - cloud-hosting
       - cloud-software
-list_item_name: 'service constraints'
+list_item_name: system requirement
 type: list
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: You need to answer this question.
   -
     name: max_items_limit
-    message: 'You must have 10 or fewer requirements.'
+    message: You can have no more than 10 system requirements.
+  -
+    name: under_10_words
+    message: Each system requirement must be no more than 10 words.
   -
     name: under_character_limit
-    message: 'Each constraint must be no more than 100 characters.'
+    message: Each system requirement must be no more than 100 characters.
