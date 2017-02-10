@@ -6,7 +6,7 @@
     - lotName
 -
   name: Service name
-  editable: false
+  editable: true
   edit_questions: true
   questions:
     - serviceName
