@@ -7,9 +7,10 @@ depends:
   - "on": lot
     being:
       - cloud-hosting
-
-type: checkboxes
+type: checkbox_tree
 options:
-  - label: Hosting type 1
-  - label: Hosting type 2
-  - label: Or maybe hosting doesn’t have categories at all?
+  - label: subcat 1
+    value: hosting_subcat_1
+    options:
+      - label: subcat 2
+        value: hosting_subcat_2

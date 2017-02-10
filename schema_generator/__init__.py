@@ -155,6 +155,29 @@ def checkbox_property(question):
     }}
 
 
+def checkbox_tree_property(question):
+    """
+    Convert a checkbox tree question into JSON Schema by flattening the tree structure
+    """
+    def flatten(options):
+        for option in options:
+            yield option
+            for option in flatten(option.get('options', [])):
+                yield option
+
+    return {question['id']: {
+        "type": "array",
+        "uniqueItems": True,  # TODO
+        "minItems": 0 if question.get('optional') else 1,
+        "items": {
+            "enum": [
+                option.get('value', option['label'])
+                for option in flatten(question['options'])
+            ]
+        }
+    }}
+
+
 def radios_property(question):
     return {question['id']: {
         "enum": [
@@ -440,6 +463,7 @@ QUESTION_TYPES = {
     'pricing': pricing_property,
     'number': number_property,
     'multiquestion': multiquestion,
+    'checkbox_tree': checkbox_tree_property,
 }
 
 
