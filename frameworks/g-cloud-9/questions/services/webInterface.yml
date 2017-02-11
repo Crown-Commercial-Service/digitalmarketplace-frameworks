@@ -1,8 +1,8 @@
-name: "Web interface"
-question: "Is there a web interface for your service?"
+name: Web interface
+question: Is there a web interface for your service?
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software
@@ -10,6 +10,5 @@ depends:
 type: boolean
 
 validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."
+  - name: answer_required
+    message: You need to answer this question.

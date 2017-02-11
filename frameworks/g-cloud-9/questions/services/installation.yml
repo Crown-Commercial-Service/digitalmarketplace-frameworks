@@ -1,0 +1,13 @@
+name: Installation
+question: Does the service need to be installed?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

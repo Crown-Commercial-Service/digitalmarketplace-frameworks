@@ -1,9 +1,9 @@
-name: "Security governance approach"
-question: "Describe how you approach security governance."
-hint: "50-word limit"
+name: Security governance approach
+question: Describe how you approach security governance.
+hint: 50-word limit
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software
@@ -11,12 +11,9 @@ depends:
 type: textbox_large
 
 validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."
-  -
-    name: under_50_words
-    message: "Your answer must be no longer than 50 words."
-  -
-    name: under_character_limit
-    message: "Your answer must be no longer than 500 characters."
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_50_words
+    message: Your answer must be no longer than 50 words.
+  - name: under_character_limit
+    message: Your answer must be no longer than 500 characters.

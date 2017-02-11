@@ -1,22 +1,18 @@
+name: Service add-on type
 question: Is your service an add-on or extension to other software services?
-optional: true
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software
 
 type: radios
 options:
-  -
-    label: "Yes"
-  -
-    label: "Yes, but can also be used as a standalone service"
-  -
-    label: "No"
+  - label: "Yes"
+  - label: Yes, but can also be used as a standalone service
+  - label: "No"
 
 validations:
-  -
-    name: answer_required
-    message: 'You need to answer this question.'
+  - name: answer_required
+    message: You need to answer this question.

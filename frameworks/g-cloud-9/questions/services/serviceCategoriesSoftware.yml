@@ -1,19 +1,18 @@
 id: serviceCategories
-name: 'Service categories'
-question: 'Which categories does your service fit under?'
-hint: 'You can choose multiple categories.'
+name: Service categories
+question: Which categories does your service fit under?
+hint: You can choose multiple categories.
+
 optional: true
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-software
+
 type: checkboxes
 options:
-  -
-    label: 'This will be...'
+  - label: This will be...
     value: software_category_one
-  -
-    label: '...all funky and new'
+  - label: ...all funky and new
     value: software_category_two
     description: A huge expandable tree that rules from the centre of the ultraworld

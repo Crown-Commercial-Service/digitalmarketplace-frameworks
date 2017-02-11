@@ -1,23 +1,18 @@
-name: 'Cloud deployment model'
-question: 'Is the service a public, private, community or hybrid cloud service?'
+name: Cloud deployment model
+question: Is the service a public, private, community or hybrid cloud service?
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
-      - cloud-hosting
       - cloud-software
-      - cloud-support
+
 type: radios
 options:
-    -
-        label: 'Public cloud'
-    -
-        label: 'Community cloud'
-    -
-        label: 'Private cloud'
-    -
-        label: 'Hybrid cloud'
+  - label: Public cloud
+  - label: Community cloud
+  - label: Private cloud
+  - label: Hybrid cloud
+
 validations:
-  -
-    name: answer_required
-    message: 'You need to answer this question.'
+  - name: answer_required
+    message: You need to answer this question.

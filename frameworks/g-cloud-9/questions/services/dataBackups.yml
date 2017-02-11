@@ -1,0 +1,13 @@
+name: Data backups
+question: Does your service back up data?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

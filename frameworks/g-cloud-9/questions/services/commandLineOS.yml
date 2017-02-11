@@ -1,17 +1,18 @@
-name: "Command line interface type"
-question: "What kind of command line interface do you provide for your service?"
-optional: true
+name: Command line interface compatability
+question: Which operating systems does your command line interface work with?
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
 
 type: checkboxes
 options:
-    -
-        label: "Linux"
-    -
-        label: "Windows"
-    -
-        label: "Mac"
+  - label: Linux or Unix
+  - label: Windows
+  - label: Mac OS
+  - label: Other
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

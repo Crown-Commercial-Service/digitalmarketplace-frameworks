@@ -1,0 +1,14 @@
+name: Public sector networks
+question: Public sector networks
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hardware
+      - cloud-software
+
+type: multiquestion
+questions:
+  - publicSectorNetworks
+  - publicSectorNetworkTypes
+  - otherNetworks

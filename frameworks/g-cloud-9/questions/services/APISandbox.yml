@@ -1,0 +1,13 @@
+name: API Sandbox
+question: Is there a sandbox or test environment for your API?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

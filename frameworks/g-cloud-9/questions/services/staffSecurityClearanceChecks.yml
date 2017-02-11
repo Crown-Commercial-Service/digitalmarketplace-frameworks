@@ -1,22 +1,18 @@
-name: "Staff security clearance checks"
-question: "How do you manage staff security clearance checks?"
+name: Staff security clearance checks
+question: How do you manage staff security clearance checks?
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software
 
 type: radios
 options:
-    -
-        label: "Staff screening performed with conforms to BS7858:2012"
-    -
-        label: "Staff screening performed but doesn't conform with BS7858:2012"
-    -
-        label: "Staff screening not performed"
+  - label: Staff screening performed with conforms to BS7858:2012
+  - label: Staff screening performed but doesn’t conform with BS7858:2012
+  - label: Staff screening not performed
 
 validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."
+  - name: answer_required
+    message: You need to answer this question.

@@ -1,14 +1,19 @@
 name: Data export formats
 question: What open formats can users export their data in?
-optional: true
+question_advice: >
+  Read about the [open standards requirements for government documents](https://www.gov.uk/government/publications/open-standards-for-government/viewing-government-documents).
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-software
+
 type: checkboxes
 options:
-    -
-        label: 'CSV'
-    -
-        label: 'ODF'
+  - label: CSV
+  - label: ODF
+  - label: Other
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

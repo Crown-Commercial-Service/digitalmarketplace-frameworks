@@ -1,26 +1,20 @@
-name: "Equipment disposal approach"
-question: "How do you dispose of equipment?"
+name: Equipment disposal approach
+question: How do you dispose of equipment?
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software
 
 type: radios
 options:
-    -
-        label: "Complying with a recognised standard, for example CSA CCM v.30 or ISO/IEC 27001"
-    -
-        label: "Complying with NCSC or CESG Assured Service (Destruction) scheme"
-    -
-        label: "In-house destruction process"
-    -
-        label: "A third-party destruction service"
-    -
-        label: "Undisclosed"
+  - label: Complying with a recognised standard, for example CSA CCM v.30 or ISO/IEC 27001
+  - label: Complying with CAS(Sanitisation)
+  - label: In-house destruction process
+  - label: A third-party destruction service
+  - label: Undisclosed
 
 validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."
+  - name: answer_required
+    message: You need to answer this question.

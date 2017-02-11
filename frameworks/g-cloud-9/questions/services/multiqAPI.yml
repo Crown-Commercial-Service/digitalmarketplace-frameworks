@@ -1,0 +1,18 @@
+name: API
+question: API
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - API
+  - usingTheAPI
+  - APIAutomationTools
+  - otherAPIAutomationTools
+  - APIDocumentation
+  - APIDocumentatonFormats
+  - APISandbox

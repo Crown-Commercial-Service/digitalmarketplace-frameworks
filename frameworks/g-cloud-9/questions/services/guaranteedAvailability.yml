@@ -1,10 +1,12 @@
-name: "Guaranteed availability"
-question: "Describe the level of availability you guarantee."
-question_advice: "Include any service level agreements (SLAs) you have for availability and how users are refunded if you don't meet guaranteed levels of availability."
-hint: "50-word limit"
+name: Guaranteed availability
+question: Describe the level of availability you guarantee.
+question_advice: >
+  Include any service level agreements (SLAs) you have for availability and how users are refunded if you don’t meet
+  guaranteed levels of availability.
+hint: 50-word limit
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software
@@ -12,12 +14,9 @@ depends:
 type: textbox_large
 
 validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."
-  -
-    name: under_50_words
-    message: "Your answer must be no longer than 50 words."
-  -
-    name: under_character_limit
-    message: "Your answer must be no longer than 500 characters."
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_50_words
+    message: Your answer must be no longer than 50 words.
+  - name: under_character_limit
+    message: Your answer must be no longer than 500 characters.

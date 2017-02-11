@@ -1,19 +1,18 @@
-name: "Scaling type"
-question: "How does your service scale?"
-optional: true
+name: Scaling type
+question: How does your service scale?
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
 
 type: checkboxes
 options:
-    -
-        label: "Scales automatically"
-    -
-        label: "Users control scaling"
-    -
-        label: "Users have to contact the support team to scale"
-    -
-        label: "Doesn’t scale"
+  - label: Scales automatically
+  - label: Scales with user intervention
+  - label: Users have to contact the support team to scale
+  - label: Doesn’t scale
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
