@@ -1,6 +1,7 @@
 -
   name: Providing suitable services
   editable: True
+  prefill: False
   description: >
     You must make this declaration to apply to G-Cloud&nbsp;9. You can come back and change your answers at any time before
     5pm BST, 11 April 2017. [might want to remove]
@@ -20,6 +21,7 @@
 -
   name: What it means to be on G-Cloud&nbsp;9
   editable: True
+  prefill: False
   description: >
     If you make an application to G-Cloud&nbsp;9, you’re agreeing to the terms and conditions in the legal documentation.
 
@@ -30,12 +32,14 @@
   questions:
     - termsOfParticipation
     - termsAndConditions
+    - canProvideFromDayOne
     - 10WorkingDays
     - MI
     
 -
   name: Grounds for mandatory exclusion
   editable: True
+  prefill: True
   description: >
     You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your application to be
     considered eligible. If you can’t answer ‘no’ to every question in this
@@ -56,6 +60,7 @@
 -
   name: Grounds for discretionary exclusion
   editable: True
+  prefill: True
   description: >
     You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
     for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted. If
@@ -96,20 +101,22 @@
 
   name: Working with government
   editable: True
+  prefill: True
   description: >
     You must be able to truthfully answer ‘yes’ to every question under ‘Working with government’ for your bid to be
     considered eligible.
     
     If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your bid will be accepted.
   questions:
-    - canProvideFromDayOne
     - environmentallyFriendly
     - equalityAndDiversity
     - employersInsurance
-
+    - transparentContracting
+    - publishContracts
 -
   name: How you apply
   editable: True
+  prefill: False
   description: >
     You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
 
@@ -122,20 +129,21 @@
 -
   name: Application accuracy
   editable: True
+  prefill: False
   description: >
     You must confirm the accuracy of the information in this declaration and in your service descriptions. We might ask for proof after you’ve submitted your application.
 
   questions:
-    - requisiteAuthority
     - accurateInformation
-    - proofOfClaims
-    - skillsAndResources
+    - informationChanges
     - accuratelyDescribed
+    - proofOfClaims
 -
   name: About your organisation
   editable: True
+  prefill: True
   description: >
-    The Crown Commercial Service will use the information you provide on this page to process your application and manage your participation in G-Cloud&nbsp;9. 
+    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application. 
 
     For a group of economic operators, this will be the name of the lead organisation (or the separate entity such as a special purpose vehicle if you have already created one).
     If you’re submitting a response on behalf of another organisation, use their company name and details, not yours.
@@ -147,8 +155,9 @@
 -
   name: Organisation registration
   editable: True
+  prefill: True
   description: >
-    The Crown Commercial Service will use this information to process your application and manage your participation in G-Cloud&nbsp;9.
+    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application. If your application is successful, it will carry out checks on your company.
   questions:
     - firstRegistered
     - currentRegisteredCountry
@@ -164,6 +173,7 @@
 
   name: How you’ll deliver your services
   editable: True
+  prefill: True   
   description: >
     The Crown Commercial Service will use this information to manage your participation in G-Cloud&nbsp;9. 
   questions:
@@ -172,14 +182,18 @@
 
   name: Organisation’s size
   editable: True
+  prefill: True
   description: >
-    The Crown Commercial Service will use the information you provide to report overall statistics about the successful suppliers on G-Cloud&nbsp;9.
+    The government [aims to spend £1 in every £3 with small-to-medium enterprises (SMEs)s](https://www.gov.uk/government/news/big-opportunities-for-small-firms-government-set-to-spend-1-in-every-3-with-small-businesses) by 2020.
+    
+    The Crown Commercial Service will use the information you provide about the size of your company to report overall statistics about the successful suppliers on G-Cloud&nbsp;9.  
   questions:
     - organisationSize
 -
 
   name: Trading status
   editable: True
+  prefill: True
   description: >
     The Crown Commercial Service will use the information to understand the different types of suppliers providing G-Cloud&nbsp;9 services.
   questions:
@@ -189,6 +203,7 @@
 
   name: Contact details
   editable: True
+  prefill: True  
   description: >
      The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.  
   questions:

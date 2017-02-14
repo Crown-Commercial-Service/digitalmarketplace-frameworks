@@ -14,6 +14,9 @@
       "editable": {
         "type": "boolean"
       },
+      "prefill": {
+        "type": "boolean"
+      },
       "edit_questions": {
         "type": "boolean"
       },

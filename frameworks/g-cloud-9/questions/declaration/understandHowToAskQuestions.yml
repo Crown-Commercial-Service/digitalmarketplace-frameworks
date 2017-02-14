@@ -1,2 +1,7 @@
-question: Do you understand that you must log in to your Digital Marketplace supplier account to ask questions about the G-Cloud&nbsp;9 application process?
+name: Asking questions
+question: >
+  Do you understand that you can ask ‘clarification’ questions on the [G-Cloud&nbsp;9 updates page](https://www.digitalmarketplace.service.gov.uk/suppliers/frameworks/g-cloud-9/updates) in your Digital Marketplace account?
+hint: >
+  You can ask clarification questions about G-Cloud&nbsp;9 until 28 March 2017. All questions and answers will be posted regularly on the G-Cloud 9 updates page. You will be notified by email when new clarification questions and answers are available.
+
 type: boolean
