@@ -295,8 +295,10 @@ def multiquestion(question):
         return _dynamic_list(question)
     else:
         property_schema, schema_addition = _flat_multiquestion(question)
-        required_schema = {"required": _flat_multiquestion_required(question)}
-        schema_addition = merge_schemas(schema_addition, required_schema)
+        required_fields = _flat_multiquestion_required(question)
+        if required_fields:
+            required_schema = {"required": _flat_multiquestion_required(question)}
+            schema_addition = merge_schemas(schema_addition, required_schema)
 
         return property_schema, schema_addition
 
@@ -350,7 +352,7 @@ def _followup(question):
 
 def _flat_multiquestion(question):
     properties = {}
-    for nested_question in question['questions']:
+    for nested_question in question.questions:
         properties.update(build_question_properties(nested_question))
 
     schema_addition = {}
