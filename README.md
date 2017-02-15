@@ -30,6 +30,7 @@ Question keys
 * `type` type of the question input, used to find the related toolkit form template (required)
 * `name` short question name to use in summary tables instead of the full question. Also used to
   generate the URL slug for addressable questions. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
+* `slug` can be used to manually override the slug used for this question.
 * `empty_message` a message to display instead of "Answer required" if question wasn't answered
 * `hint` hint text to display after the question, eg advice about how to best format you answer. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `optional` if set to `true` makes the question optional
@@ -86,12 +87,18 @@ Manifest files define a tree-like structure for content.  A manifest is a list o
 Each section contains:
 
 * `name` name of the section (required). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
+* `slug` can be used to manually override the slug used for this section. 
 * `editable` controls whether section allows updates for the questions, boolean value
 * `edit_questions` controls whether individual questions can be edited separately (only supported by `multiquestion` questions)
 * `description` text to display after the section name. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `summary_page_description` text to display between the summary table heading and the table body
 * `step` decides how sections are grouped on (brief) overview pages
 * `questions` a list of section questions (required)
+
+Manually specified slugs
+------------------------
+
+It is broadly a good idea to manually specify slugs where possible as doing so means that e.g. URLs that use slugs aren't subject to change if we make changes to our auto-slugification code.
 
 Template Fields
 ---------------
