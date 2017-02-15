@@ -1,6 +1,6 @@
 name: Protection of data at rest
 question: How do you protect data at rest?
-question_advice: Read about the different approaches to protecting data at rest.
+question_advice: Read about the different approaches to protecting data at rest. WHERERERE?
 
 depends:
   - "on": lot

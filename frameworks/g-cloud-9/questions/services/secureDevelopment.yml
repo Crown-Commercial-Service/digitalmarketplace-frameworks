@@ -15,8 +15,11 @@ depends:
 type: radios
 options:
   - label: Independent review of processes
+    value: independent_review
   - label: Conforms to a recognised standard, but self-assessed
+    value: recognised_standard
   - label: Supplier-defined process
+    value: supplier_defined
 
 validations:
   - name: answer_required

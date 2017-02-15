@@ -11,4 +11,4 @@ type: multiquestion
 questions:
   - publicSectorNetworks
   - publicSectorNetworkTypes
-  - otherNetworks
+  - publicSectorNetworksOther

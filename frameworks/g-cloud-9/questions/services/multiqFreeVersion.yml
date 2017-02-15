@@ -9,6 +9,6 @@ depends:
 
 type: multiquestion
 questions:
-  - trialOption
-  - describeFreeVersion
+  - freeVersionTrialOption
+  - freeVersionDescription
   - freeVersionLink

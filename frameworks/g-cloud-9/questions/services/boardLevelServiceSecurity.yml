@@ -4,8 +4,7 @@ question: >
   security of all of your services?
 
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software

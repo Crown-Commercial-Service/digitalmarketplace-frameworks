@@ -10,8 +10,11 @@ depends:
 type: radios
 options:
   - label: Complies with a recognised standard, for example CSA CCM v3.0 or SSAE-16 / ISAE 3402
+    value: recognised_standard
   - label: Supplier-defined controls
+    value: supplier_defined
   - label: Managed by a third party
+    value: third_party
 
 validations:
   - name: answer_required

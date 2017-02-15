@@ -8,6 +8,6 @@ depends:
 
 type: multiquestion
 questions:
-  - scalability
-  - scalingCosts
-  - independenceOfResources
+  - scalingSoftwareScalability
+  - scalingSoftwareCost
+  - scalingSoftwareIndependence

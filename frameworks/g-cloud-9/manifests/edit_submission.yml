@@ -39,7 +39,7 @@
   editable: false
   edit_questions: true
   questions:
-    - supplierType
+    - resellerType
 
 -
   name: User support
@@ -173,7 +173,7 @@
   questions:
     - multiqUserAuthenticationHosting
     - multiqUserAuthenticationSoftware
-    - accessRestrictionsManagementAndSupport
+    - accessRestrictionManagementAndSupport
     - accessRestrictionTesting
     - multiqManagementAccess
     - devicesUsersManageTheServiceThrough

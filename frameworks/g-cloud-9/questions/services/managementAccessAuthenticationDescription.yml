@@ -1,12 +1,5 @@
-name: Free version
-question: Describe the free version of your service.
-question_advice: >
-  Include:
-
-  - what’s included
-  - what isn’t included
-  - if there’s a limited time period
-hint: 50-word limit
+name: Describe management authentication
+question: Describe how you authenticate management access to your service.
 
 depends:
   - "on": lot

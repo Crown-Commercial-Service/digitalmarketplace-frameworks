@@ -12,7 +12,4 @@ depends:
 type: checkboxes
 options:
   - label: This will be...
-    value: software_category_one
   - label: ...all funky and new
-    value: software_category_two
-    description: A huge expandable tree that rules from the centre of the ultraworld

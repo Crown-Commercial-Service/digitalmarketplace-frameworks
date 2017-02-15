@@ -10,4 +10,4 @@ type: multiquestion
 questions:
   - commandLineInterface
   - commandLineOS
-  - usingTheCommandLineInterface
+  - commandLineUsage

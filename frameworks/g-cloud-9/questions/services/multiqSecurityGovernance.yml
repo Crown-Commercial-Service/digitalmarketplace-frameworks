@@ -11,5 +11,5 @@ type: multiquestion
 questions:
   - securityGovernanceAccreditation
   - securityGovernanceStandards
-  - otherSecurityGovernanceStandards
+  - securityGovernanceStandardsOther
   - securityGovernanceApproach

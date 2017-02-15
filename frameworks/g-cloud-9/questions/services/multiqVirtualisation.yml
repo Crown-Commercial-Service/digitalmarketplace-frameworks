@@ -9,8 +9,8 @@ depends:
 type: multiquestion
 questions:
   - virtualisationUsedForSeparation
-  - whoImplementsVirtualisation
+  - virtualisationImplementedBy
   - virtualisationTechnologiesUsed
-  - otherVirtualisationTechnologyUsed
-  - thirdPartyVirtualisationProvider
-  - howSharedInfrastructureIsKeptSeparate
+  - virtualisationTechnologiesUsedOther
+  - virtualisationThirdPartyProvider
+  - virtualisationSeparation

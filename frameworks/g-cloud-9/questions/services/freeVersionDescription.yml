@@ -1,5 +1,12 @@
-name: Describe management authentication
-question: Describe how you authentication management access to your service.
+name: Free version
+question: Describe the free version of your service.
+question_advice: >
+  Include:
+
+    - what’s included
+    - what isn’t included
+    - if there’s a limited time period
+hint: 50-word limit
 
 depends:
   - "on": lot
@@ -16,4 +23,3 @@ validations:
     message: Your description must be no more than 50 words.
   - name: under_character_limit
     message: Your description must be no more than 500 characters.
-

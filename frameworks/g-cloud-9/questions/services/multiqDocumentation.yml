@@ -9,6 +9,6 @@ depends:
 
 type: multiquestion
 questions:
-  - serviceDocumentation
+  - documentationService
   - documentationFormats
-  - otherDocumentationFormats
+  - documentationFormatsOther

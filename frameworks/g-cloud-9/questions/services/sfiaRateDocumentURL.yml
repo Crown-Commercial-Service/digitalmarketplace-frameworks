@@ -2,7 +2,7 @@ name: Skills Framework for the Information Age rate card
 question: Skills Framework for the Information Age (SFIA) rate card
 hint: Please upload your SFIA rate card if you have one. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)
 
-optional: yes
+optional: true
 depends:
   - "on": lot
     being:

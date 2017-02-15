@@ -12,8 +12,5 @@ depends:
 type: checkboxes
 options:
   - label: Hosting type 1
-    value: hosting_category_one
   - label: Hosting type 2
-    value: hosting_category_two
   - label: Or maybe hosting doesn’t have categories at all?
-    value: hosting_category_three

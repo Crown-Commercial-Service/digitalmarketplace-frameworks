@@ -9,5 +9,5 @@ depends:
 
 type: multiquestion
 questions:
-  - authenticateManagementAccess
-  - describeManagementAuthentication
+  - managementAccessAuthentication
+  - managementAccessAuthenticationDescription

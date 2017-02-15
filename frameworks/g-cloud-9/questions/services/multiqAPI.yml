@@ -10,9 +10,9 @@ depends:
 type: multiquestion
 questions:
   - API
-  - usingTheAPI
+  - APIUsage
   - APIAutomationTools
-  - otherAPIAutomationTools
+  - APIAutomationToolsOther
   - APIDocumentation
   - APIDocumentatonFormats
   - APISandbox

@@ -10,4 +10,4 @@ depends:
 type: multiquestion
 questions:
   - protectionOfDataAtRest
-  - otherProtectionOfDataAtRest
+  - protectionOfDataAtRestOther

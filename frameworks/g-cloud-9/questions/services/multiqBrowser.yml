@@ -8,5 +8,5 @@ depends:
 
 type: multiquestion
 questions:
-  - browserAccess
-  - supportedBrowsers
+  - browsersAccess
+  - browsersSupported

@@ -9,4 +9,4 @@ depends:
 type: multiquestion
 questions:
   - customisationAvailable
-  - whatCanBeCustomised
+  - customisationDescription

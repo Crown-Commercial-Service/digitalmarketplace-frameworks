@@ -10,7 +10,7 @@ type: checkboxes
 options:
   - label: iOS
   - label: Linux or Unix
-  - label: Mac OS
+  - label: MacOS
   - label: Android
   - label: Windows
   - label: Windows Phone

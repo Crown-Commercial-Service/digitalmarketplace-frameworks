@@ -8,5 +8,5 @@ depends:
 
 type: multiquestion
 questions:
-  - workingWithMobile
-  - mobileAndDesktopDifferences
+  - mobile
+  - mobileDifferences

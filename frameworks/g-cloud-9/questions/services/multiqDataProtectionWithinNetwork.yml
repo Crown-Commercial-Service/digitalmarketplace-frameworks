@@ -9,5 +9,5 @@ depends:
 
 type: multiquestion
 questions:
-  - dataProtectionWithinSuppliersNetwork
-  - otherProtectionWithinNetwork
+  - dataProtectionWithinNetwork
+  - dataProtectionWithinNetworkOther

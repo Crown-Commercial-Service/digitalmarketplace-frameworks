@@ -9,7 +9,7 @@ depends:
 type: multiquestion
 questions:
   - webInterface
-  - usingTheWebInterface
+  - webInterfaceUsage
   - webInterfaceAccessibility
   - webInterfaceAccessibilityDescription
   - webInterfaceTesting

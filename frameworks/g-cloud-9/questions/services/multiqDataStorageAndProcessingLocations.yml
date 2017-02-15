@@ -9,6 +9,6 @@ depends:
 
 type: multiquestion
 questions:
-  - knowledgeOfDataStorageAndProcessingLocations
+  - dataStorageAndProcessingKnowledge
   - dataStorageAndProcessingLocations
-  - userControlOverDataStorageAndProcessingLocations
+  - dataStorageAndProcessingUserControl

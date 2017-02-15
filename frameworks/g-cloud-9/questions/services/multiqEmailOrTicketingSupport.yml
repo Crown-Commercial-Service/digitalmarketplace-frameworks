@@ -10,7 +10,7 @@ depends:
 type: multiquestion
 questions:
   - emailOrTicketingSupport
-  - supportResponseTimes
-  - onlineTicketingSupport
-  - userCanManageTicketPriority
-  - onlineTicketingSupportAccessibility
+  - emailOrTicketingSupportResponseTimes
+  - emailOrTicketingSupportTicketing
+  - emailOrTicketingSupportPriority
+  - emailOrTicketingSupportAccessibility

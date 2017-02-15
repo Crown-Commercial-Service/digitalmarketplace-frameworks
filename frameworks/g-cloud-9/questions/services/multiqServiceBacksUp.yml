@@ -8,7 +8,7 @@ depends:
 
 type: multiquestion
 questions:
-  - dataBackups
-  - datacentreSetup
-  - schedulingBackups
-  - backupRecovery
+  - serviceBackups
+  - serviceBackupsDatacentre
+  - serviceBackupsScheduling
+  - serviceBackupsRecovery

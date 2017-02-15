@@ -10,7 +10,7 @@ type: checkboxes
 options:
   - label: Linux or Unix
   - label: Windows
-  - label: Mac OS
+  - label: MacOS
   - label: Other
 
 validations:
