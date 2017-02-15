@@ -292,7 +292,7 @@ def multiquestion(question):
     """
 
     if question._data['type'] == 'dynamic_list':
-        return dynamic_list(question)
+        return _dynamic_list(question)
     else:
         property_schema, schema_addition = _flat_multiquestion(question)
         required_schema = {"required": _flat_multiquestion_required(question)}
@@ -300,8 +300,15 @@ def multiquestion(question):
 
         return property_schema, schema_addition
 
-def dynamic_list(question):
-    return _nested_multiquestion(question)
+
+def _dynamic_list(question):
+    return {
+        question['id']: {
+            "type": "array",
+            "minItems": 0 if question.get('optional') else 1,
+            "items": _nested_multiquestion(question)[question['id']]
+        }
+    }
 
 
 def _complement_values(question, values):
@@ -367,13 +374,7 @@ def _nested_multiquestion(question):
     if not object_schema["required"]:
         object_schema.pop("required")
 
-    return {
-        question['id']: {
-            "type": "array",
-            "minItems": 0,
-            "items": object_schema
-        }
-    }
+    return {question['id']: object_schema}
 
 
 def _flat_multiquestion_required(question):
@@ -422,7 +423,6 @@ QUESTION_TYPES = {
     'pricing': pricing_property,
     'number': number_property,
     'multiquestion': multiquestion,
-    'dynamic_list': dynamic_list,
 }
 
 
