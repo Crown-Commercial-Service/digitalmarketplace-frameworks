@@ -71,8 +71,7 @@ Question keys
 * `dynamic_field` defines the field in the filter context that will be used to generate dynamic list questions (eg when passing
   a brief as filter context setting `dynamic_field` to `brief.niceToHaveRequirements` will generate questions for nice-to-have
   requirements) (only valid for `dynamic_list` questions)
-* `followup` sets the name of the question that will be required/shown if the current question is answered with "Yes" (only valid
-  for `boolean` questions)
+* `followup` is a dictionary where each key is the name of the question that will be required/shown and the value for the key is a list of question answers that should display the follow up (only valid for `boolean` and `radios` questions)
 
 
 Manifest files and section keys
