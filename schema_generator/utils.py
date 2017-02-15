@@ -7,10 +7,9 @@ def merge_schemas(a, b):
     result = a.copy()
     for key, val in b.items():
         if isinstance(result.get(key), dict):
-            result[key] = merge_schemas(a[key], b[key])
+            result[key] = merge_schemas(a[key], val)
         elif isinstance(result.get(key), list):
-            result[key] = result[key].copy()
-            result[key].extend(val)
+            result[key] = result[key] + val
         else:
             result[key] = val
 

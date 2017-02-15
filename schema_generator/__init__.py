@@ -294,8 +294,11 @@ def multiquestion(question):
     if question._data['type'] == 'dynamic_list':
         return dynamic_list(question)
     else:
-        return _flat_multiquestion(question), _flat_multiquestion_required(question)
+        property_schema, schema_addition = _flat_multiquestion(question)
+        required_schema = {"required": _flat_multiquestion_required(question)}
+        schema_addition = merge_schemas(schema_addition, required_schema)
 
+        return property_schema, schema_addition
 
 def dynamic_list(question):
     return _nested_multiquestion(question)
@@ -343,20 +346,26 @@ def _flat_multiquestion(question):
     for nested_question in question['questions']:
         properties.update(build_question_properties(nested_question))
 
-    return properties
+    schema_addition = {}
+    for nested_question in question.questions:
+        if nested_question.get('followup'):
+            schema_addition = merge_schemas(schema_addition, _followup(nested_question))
+
+    return properties, schema_addition
 
 
 def _nested_multiquestion(question):
-    object_schema = {
+    properties, schema_addition = _flat_multiquestion(question)
+
+    object_schema = merge_schemas({
         "type": "object",
         "additionalProperties": False,
-        "properties": _flat_multiquestion(question),
+        "properties": properties,
         "required": _nested_multiquestion_required(question),
-    }
+    }, schema_addition)
 
-    for nested_question in question.questions:
-        if nested_question.get('followup'):
-            object_schema = merge_schemas(object_schema, _followup(nested_question))
+    if not object_schema["required"]:
+        object_schema.pop("required")
 
     return {
         question['id']: {
@@ -525,9 +534,9 @@ def build_schema_properties(schema, questions):
     for key, question in questions.items():
         property_schema = build_question_properties(question)
         if isinstance(property_schema, tuple):
-            property_schema, required_fields = build_question_properties(question)
+            property_schema, schema_addition = property_schema
             schema['properties'].update(property_schema)
-            schema['required'].extend(required_fields)
+            schema = merge_schemas(schema, schema_addition)
         else:
             schema['properties'].update(property_schema)
             schema['required'].extend(question.required_form_fields)
@@ -537,7 +546,7 @@ def build_schema_properties(schema, questions):
     return schema
 
 
-def add_multiquestion_anyof(schema, questions):
+def _multiquestion_anyof(questions):
     any_ofs = {}
 
     for key, question in questions.items():
@@ -550,11 +559,10 @@ def add_multiquestion_anyof(schema, questions):
                     question_fields.append(q.id)
             any_ofs[question.id] = build_any_of(question.get('any_of'), question_fields)
 
-    if any_ofs:
-        schema['anyOf'] = [any_ofs[key] for key in sorted(any_ofs.keys())]
+    return {"anyOf": [any_ofs[key] for key in sorted(any_ofs.keys())]} if any_ofs else {}
 
 
-def add_multiquestion_dependencies(schema, questions):
+def _multiquestion_dependencies(questions):
     dependencies = {}
     for key, question in questions.items():
         if question.type == 'multiquestion' and question.get('any_of'):
@@ -564,8 +572,7 @@ def add_multiquestion_dependencies(schema, questions):
                 if len(question.form_fields) > 1
             })
 
-    if dependencies:
-        schema['dependencies'] = dependencies
+    return {'dependencies': dependencies} if dependencies else {}
 
 
 def generate_schema(path, schema_type, schema_name, framework_slug, lot_slug):
@@ -573,9 +580,9 @@ def generate_schema(path, schema_type, schema_name, framework_slug, lot_slug):
     drop_non_schema_questions(questions)
     schema = empty_schema(schema_name)
 
-    build_schema_properties(schema, questions)
-    add_multiquestion_anyof(schema, questions)
-    add_multiquestion_dependencies(schema, questions)
+    schema = build_schema_properties(schema, questions)
+    schema = merge_schemas(schema, _multiquestion_anyof(questions))
+    schema = merge_schemas(schema, _multiquestion_dependencies(questions))
 
     with open(os.path.join(path, '{}-{}-{}.json'.format(schema_type, framework_slug, lot_slug)), 'w') as f:
         json.dump(schema, f, sort_keys=True, indent=2, separators=(',', ': '))
