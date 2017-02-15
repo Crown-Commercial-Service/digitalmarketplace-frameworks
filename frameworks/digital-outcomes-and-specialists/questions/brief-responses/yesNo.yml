@@ -1,6 +1,9 @@
 question: '{{ item }}'
 type: boolean
-followup: evidence
+followup:
+  evidence:
+    - true
+
 validations:
   - name: answer_required
     message: 'You must answer ‘yes’ or ‘no’ to this question.'
