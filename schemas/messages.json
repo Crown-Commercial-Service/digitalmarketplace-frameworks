@@ -39,6 +39,7 @@
     },
     "urls": {
       "properties": {
+        "call_off_contract_url": {"type": "string"},
         "framework_url": {"type": "string"},
         "framework_agreement_url": {"type": "string"},
         "framework_agreement_pdf_url": {"type": "string"},
