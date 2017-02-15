@@ -1,11 +1,9 @@
-name: Web chat accessibility testing
-question: Describe any web chat testing that you’ve done with assistive technology users.
+name: How the quality assurance and performance testing works
+question: Describe how you help buyers do quality assurance and performance testing.
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-support
       - cloud-support
 
 type: textbox_large

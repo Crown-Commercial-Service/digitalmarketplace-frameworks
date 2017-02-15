@@ -1,11 +1,9 @@
-name: Phone support
-question: Do you provide phone support?
+name: Training tied to specific services
+question: Is your training for specific cloud hosting or software services?
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-software
       - cloud-support
 
 type: boolean

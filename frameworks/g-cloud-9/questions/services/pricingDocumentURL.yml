@@ -7,6 +7,7 @@ depends:
     being:
       - cloud-hosting
       - cloud-software
+      - cloud-support
 
 type: upload
 

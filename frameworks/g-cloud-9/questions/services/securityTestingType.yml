@@ -1,0 +1,18 @@
+name: Security testing type
+question: What kind of security testing do you provide?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: checkboxes
+options:
+  - label: Penetration testing
+  - label: IT Health Checks
+  - label: Risk analysis
+  - label: Other
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

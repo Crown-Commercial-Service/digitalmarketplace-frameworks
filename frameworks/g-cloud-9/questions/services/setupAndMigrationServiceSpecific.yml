@@ -1,11 +1,9 @@
-name: Phone support
-question: Do you provide phone support?
+name: Setup or migration tied to specific services
+question: Is your migration service for specific hosting or software services?
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-software
       - cloud-support
 
 type: boolean

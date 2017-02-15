@@ -1,0 +1,14 @@
+name: Ongoing support
+question: Ongoing support
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: multiquestion
+questions:
+  - ongoingSupport
+  - ongoingSupportServices
+  - ongoingSupportDescription
+  - ongoingSupportServicesList

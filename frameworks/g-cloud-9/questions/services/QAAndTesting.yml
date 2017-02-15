@@ -1,11 +1,9 @@
-name: Phone support
-question: Do you provide phone support?
+name: Quality assurance and performance testing service
+question: Do you provide quality assurance and performance testing?
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-software
       - cloud-support
 
 type: boolean

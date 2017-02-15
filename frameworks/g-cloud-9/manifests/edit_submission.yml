@@ -1,17 +1,16 @@
--
-  name: Service attributes
+- name: Service attributes
   editable: false
   edit_questions: false
   questions:
     - lotName
--
-  name: Service name
+
+- name: Service name
   editable: false
   edit_questions: true
   questions:
     - serviceName
--
-  name: About your service
+
+- name: About your service
   editable: false
   edit_questions: true
   questions:
@@ -19,14 +18,50 @@
     - serviceCategoriesSoftware
     - serviceCategoriesHosting
     - serviceCategoriesSupport
--
-  name: Service features and benefits
+
+- name: Service features and benefits
   editable: false
   edit_questions: true
   questions:
     - multiqServiceFeaturesAndBenefits
--
-  name: Service scope
+
+- name: Planning
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqPlanning
+
+- name: Setup and migration
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqSetupAndMigration
+
+- name: Quality assurance and performance testing
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqQAAndTesting
+
+- name: Security testing
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqSecurityTesting
+
+- name: Training
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqTraining
+
+- name: Ongoing support
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqOngoingSupport
+
+- name: Service scope
   editable: false
   edit_questions: true
   questions:
@@ -34,15 +69,14 @@
     - cloudDeploymentModel
     - serviceConstraints
     - systemRequirements
--
-  name: Reselling
+
+- name: Reselling
   editable: false
   edit_questions: true
   questions:
     - resellerType
 
--
-  name: User support
+- name: User support
   editable: false
   edit_questions: true
   questions:
@@ -53,8 +87,7 @@
     - supportLevels
     - supportAvailableToThirdParty
 
--
-  name: How users work with your service
+- name: How users work with your service
   editable: false
   edit_questions: true
   questions:
@@ -67,8 +100,7 @@
     - multiqCommandLineInterface
     - multiqCustomisation
 
--
-  name: Analytics
+- name: Analytics
   editable: false
   edit_questions: true
   questions:
@@ -79,16 +111,14 @@
     - metricsTypes
     - reportingTypesMetrics
 
--
-  name: Scaling
+- name: Scaling
   editable: false
   edit_questions: true
   questions:
     - multiqScalingHosting
     - multiqScalingSoftware
 
--
-  name: Backups and recovery
+- name: Backups and recovery
   editable: false
   edit_questions: true
   questions:
@@ -96,8 +126,7 @@
     - backupControls
     - multiqServiceBacksUp
 
--
-  name: Onboarding and offboarding
+- name: Onboarding and offboarding
   editable: false
   edit_questions: true
   questions:
@@ -106,8 +135,7 @@
     - endOfContractDataExtraction
     - endOfContractProcess
 
--
-  name: Data importing and exporting
+- name: Data importing and exporting
   editable: false
   edit_questions: true
   questions:
@@ -115,30 +143,26 @@
     - multiqDataExportFormats
     - multiqDataImportFormats
 
--
-  name: Public sector networks
+- name: Public sector networks
   editable: false
   edit_questions: true
   questions:
     - multiqPublicSectorNetworks
 
--
-  name: Energy efficiency
+- name: Energy efficiency
   editable: false
   edit_questions: true
   questions:
     - energyEfficientDatacentres
 
--
-  name: Data-in-transit protection
+- name: Data-in-transit protection
   editable: false
   edit_questions: true
   questions:
     - multiqDataProtectionBetweenNetworks
     - multiqDataProtectionWithinNetwork
 
--
-  name: Asset protection
+- name: Asset protection
   editable: false
   edit_questions: true
   questions:
@@ -150,8 +174,7 @@
     - dataSanitisationTypeSoftware
     - equipmentDisposalApproach
 
--
-  name: Availability and resilience
+- name: Availability and resilience
   editable: false
   edit_questions: true
   questions:
@@ -159,15 +182,13 @@
     - approachToResilience
     - outageReporting
 
--
-  name: Separation between users
+- name: Separation between users
   editable: false
   edit_questions: true
   questions:
     - multiqVirtualisation
 
--
-  name: Identity and authentication
+- name: Identity and authentication
   editable: false
   edit_questions: true
   questions:
@@ -178,8 +199,7 @@
     - multiqManagementAccess
     - devicesUsersManageTheServiceThrough
 
--
-  name: Audit information for users
+- name: Audit information for users
   editable: false
   edit_questions: true
   questions:
@@ -187,8 +207,7 @@
     - multiqAccessSuppliersAudit
     - howLongSystemLogsStored
 
--
-  name: Pricing
+- name: Pricing
   editable: false
   edit_questions: true
   questions:
@@ -196,15 +215,13 @@
     - educationPricing
     - multiqFreeVersion
 
--
-  name: Standards and certifications
+- name: Standards and certifications
   editable: false
   edit_questions: true
   questions:
     - placeholderStandardsAndCertifications
 
--
-  name: Governance
+- name: Governance
   editable: false
   edit_questions: true
   questions:
@@ -212,8 +229,14 @@
     - multiqSecurityGovernance
     - informationSecurityPoliciesAndProcesses
 
--
-  name: Operational security
+- name: Security
+  editable: false
+  edit_questions: true
+  questions:
+    - securityStaff
+    - securityStaffClearances
+
+- name: Operational security
   editable: false
   edit_questions: true
   questions:
@@ -226,22 +249,19 @@
     - incidentManagementType
     - incidentManagementApproach
 
--
-  name: Personnel security
+- name: Personnel security
   editable: false
   edit_questions: true
   questions:
     - staffSecurityClearanceChecks
 
--
-  name: Secure development
+- name: Secure development
   editable: false
   edit_questions: true
   questions:
     - secureDevelopment
 
--
-  name: Documents
+- name: Documents
   editable: false
   edit_questions: true
   questions:

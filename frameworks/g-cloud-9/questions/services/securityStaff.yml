@@ -1,11 +1,9 @@
-name: Phone support
-question: Do you provide phone support?
+name: Staff with clearance
+question: Is your service provided by staff with government security clearance?
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-software
       - cloud-support
 
 type: boolean

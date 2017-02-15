@@ -1,16 +1,10 @@
-name: Web chat support accessibility description
-question: Describe how your web chat is accessible.
-question_advice: >
-  Include details of what users can and can’t do.
-  [EN 301 549 9: Web](http://mandate376.standards.eu/standard/technical-requirements/#9) includes the features and
-  constraints you should describe.
+name: How the planning service works
+question: Describe how you help buyers plan how they’ll implement cloud hosting or software services.
 hint: 50-word limit
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-software
       - cloud-support
 
 type: textbox_large

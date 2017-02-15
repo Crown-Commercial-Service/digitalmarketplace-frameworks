@@ -1,11 +1,9 @@
-name: Phone support
-question: Do you provide phone support?
+name: Security testing service
+question: Do you provide security testing?
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-software
       - cloud-support
 
 type: boolean

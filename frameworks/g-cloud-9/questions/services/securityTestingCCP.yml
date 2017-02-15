@@ -1,11 +1,9 @@
-name: Phone support
-question: Do you provide phone support?
+name: Certified Professional (CCP) risk analysts
+question: Are your risk analysts Certified Professional (CCP) scheme-accredited?
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-software
       - cloud-support
 
 type: boolean
