@@ -325,13 +325,12 @@ def _followup(question):
                         question['id']: {"enum": _complement_values(question, values)},
                         followup_id: {"type": "null"}
                     },
-                    "required": [question['id']]
                 },
                 {
                     "properties": {
                         question['id']: {"enum": values},
                     },
-                    "required": [question['id'], followup_id]
+                    "required": [followup_id]
                 },
             ]
         })
@@ -395,9 +394,8 @@ def _nested_multiquestion_required(question):
     # Both the question itself and the followups are covered by the oneOf subschemas.
 
     for nested_question in question['questions']:
-        if not nested_question.get('followup'):
-            required.extend(nested_question.required_form_fields)
-        else:
+        required.extend(nested_question.required_form_fields)
+        if nested_question.get('followup'):
             followups.extend(nested_question['followup'].keys())
 
     return sorted(set(required) - set(followups))
