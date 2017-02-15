@@ -1,5 +1,6 @@
 -
   name: Providing suitable services
+  slug: providing-suitable-services
   editable: True
   prefill: False
   description: >
@@ -20,6 +21,7 @@
 
 -
   name: What it means to be on G-Cloud&nbsp;9
+  slug: what-it-means-to-be-on-g-cloud-9
   editable: True
   prefill: False
   description: >
@@ -38,6 +40,7 @@
     
 -
   name: Grounds for mandatory exclusion
+  slug: grounds-for-mandatory-exclusion
   editable: True
   prefill: True
   description: >
@@ -59,6 +62,7 @@
 
 -
   name: Grounds for discretionary exclusion
+  slug: grounds-for-discretionary-exclusion
   editable: True
   prefill: True
   description: >
@@ -100,6 +104,7 @@
 -
 
   name: Working with government
+  slug: working-with-government
   editable: True
   prefill: True
   description: >
@@ -115,6 +120,7 @@
     - publishContracts
 -
   name: How you apply
+  slug: how-you-apply
   editable: True
   prefill: False
   description: >
@@ -128,6 +134,7 @@
     - understandHowToAskQuestions
 -
   name: Application accuracy
+  slug: application-accuracy
   editable: True
   prefill: False
   description: >
@@ -140,6 +147,7 @@
     - proofOfClaims
 -
   name: About your organisation
+  slug: about-your-organisation
   editable: True
   prefill: True
   description: >
@@ -154,6 +162,7 @@
 
 -
   name: Organisation registration
+  slug: organisation-registration
   editable: True
   prefill: True
   description: >
@@ -172,6 +181,7 @@
 -
 
   name: How you’ll deliver your services
+  slug: how-youll-deliver-your-services
   editable: True
   prefill: True   
   description: >
@@ -181,6 +191,7 @@
 -
 
   name: Organisation’s size
+  slug: organisations-size
   editable: True
   prefill: True
   description: >
@@ -192,6 +203,7 @@
 -
 
   name: Trading status
+  slug: trading-status
   editable: True
   prefill: True
   description: >
@@ -202,6 +214,7 @@
 -
 
   name: Contact details
+  slug: contact-details
   editable: True
   prefill: True  
   description: >
