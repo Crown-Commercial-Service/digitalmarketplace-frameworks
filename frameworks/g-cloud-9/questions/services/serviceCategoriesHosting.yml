@@ -2,15 +2,34 @@ id: serviceCategories
 name: Service categories
 question: Which categories does your service fit under?
 hint: You can choose multiple categories.
-
 depends:
   - "on": lot
     being:
       - cloud-hosting
 type: checkbox_tree
 options:
-  - label: subcat 1
-    value: hosting_subcat_1
-    options:
-      - label: subcat 2
-        value: hosting_subcat_2
+- {label: 'Archiving, backup and disaster recovery'}
+- {label: Compute and application hosting}
+- {label: Container service}
+- {label: Content delivery network}
+- {label: Load balancing}
+- {label: Logging and analysis}
+- {label: Message queuing and processing}
+- {label: Networking (including Network as a Service)}
+- {label: Platform as a Service (PaaS)}
+- {label: Search}
+- label: Database
+  options:
+  - {label: Data warehousing}
+  - {label: NoSQL}
+  - {label: Relational}
+- label: Security
+  options:
+  - {label: Distributed Denial of Service Attack (DDOS) protection}
+  - {label: Firewall}
+  - {label: Intrusion detection}
+  - {label: Protective monitoring}
+- label: Storage
+  options:
+  - {label: Disk (block) storage}
+  - {label: Object storage}
