@@ -41,7 +41,7 @@
     },
     "followup": {
       "properties": {
-        "type": {"enum": ["boolean", "radios"]}
+        "type": {"enum": ["boolean", "radios", "checkboxes"]}
       }
     }
   },
