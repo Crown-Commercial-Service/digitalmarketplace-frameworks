@@ -6,14 +6,20 @@ depends:
     being:
       - cloud-hosting
       - cloud-software
+followup:
+  dataProtectionWithinNetworkOther:
+    - other
 
 type: checkboxes
 options:
-  - label: Private WAN service
   - label: TLS (Version 1.2 or above)
+    value: tls
   - label: IPsec or TLS VPN gateway
+    value: ipsec_or_vpn
   - label: Legacy SSL and TLS (under 1.2)
+    value: ssl
   - label: Other
+    value: other
 
 validations:
   - name: answer_required

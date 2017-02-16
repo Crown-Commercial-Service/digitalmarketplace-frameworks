@@ -1,0 +1,17 @@
+id: dataSanitisation
+name: Data sanitisation process
+question: Do you have a data sanitisation process?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  dataSanitisationType:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

@@ -9,9 +9,13 @@ depends:
 type: checkboxes
 options:
   - label: Penetration testing
+    value: penetration_testing
   - label: IT Health Checks
+    value: it_health_check
   - label: Risk analysis
+    value: risk_analysis
   - label: Other
+    value: other
 
 validations:
   - name: answer_required

@@ -1,11 +1,15 @@
 name: API documentation
 question: Do you provide API documentation for your service?
 
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-hosting
       - cloud-software
+followup:
+  APIDocumentationFormats:
+    - true
 
 type: boolean
 

@@ -1,6 +1,7 @@
 name: Services the training service works with
 question: Which cloud hosting or software services is your training for?
 
+hidden: true
 depends:
   - "on": lot
     being:

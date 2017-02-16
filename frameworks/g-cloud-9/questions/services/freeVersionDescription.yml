@@ -6,15 +6,17 @@ question_advice: >
     - what’s included
     - what isn’t included
     - if there’s a limited time period
-hint: 50-word limit
 
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-hosting
       - cloud-software
+      - cloud-support
 
 type: textbox_large
+max_length_in_words: 50
 
 validations:
   - name: answer_required

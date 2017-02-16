@@ -1,21 +1,32 @@
 name: Protection of data at rest
 question: How do you protect data at rest?
-question_advice: Read about the different approaches to protecting data at rest. WHERERERE?
+question_advice: >
+  Read about the different approaches to [protecting data at
+  rest](https://www.gov.uk/government/publications/implementing-the-cloud-security-principles/implementing-the-cloud-security-principles#data-at-rest-protection).
 
 depends:
   - "on": lot
     being:
       - cloud-hosting
       - cloud-software
+followup:
+  protectionOfDataAtRestOther:
+    - other
 
 type: checkboxes
 options:
   - label: Physical access control, complying with CSA CCM v3.0
+    value: csa_ccm
   - label: Physical access control, complying with SSAE-16 / ISAE 3402
+    value: ssae_isae
   - label: Physical access control, complying with another standard
+    value: other_standard
   - label: Encryption of all physical media
+    value: encrypted_media
   - label: Scale, obfuscating techniques, or data storage sharding
+    value: scale_obfuscation_sharding
   - label: Other
+    value: other
 
 validations:
   - name: answer_required

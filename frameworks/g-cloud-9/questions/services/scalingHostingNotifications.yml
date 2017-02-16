@@ -1,10 +1,15 @@
+id: scalingNotifications
 name: Scaling notifications
 question: Do you notify users about if usage nears service limits?
 
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-hosting
+followup:
+  scalingReporting:
+    - true
 
 type: boolean
 

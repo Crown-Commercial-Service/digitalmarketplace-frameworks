@@ -1,6 +1,7 @@
 name: Services the setup or migration service works with
-question: Which cloud hosting services or cloud software do you work with?
+question: Which cloud services do you work with?
 
+hidden: true
 depends:
   - "on": lot
     being:

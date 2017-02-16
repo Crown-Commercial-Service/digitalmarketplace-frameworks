@@ -1,10 +1,14 @@
 name: Training tied to specific services
 question: Is your training for specific cloud hosting or software services?
 
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-support
+followup:
+  trainingServiceSpecificList:
+    - true
 
 type: boolean
 

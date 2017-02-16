@@ -10,9 +10,13 @@ depends:
 type: radios
 options:
     - label: At least every 6 months
+      value: at_least_every_6_months
     - label: At least once a year
+      value: at_least_once_a_year
     - label: Less than once a year
+      value: less_than_once_a_year
     - label: Never
+      value: never
 
 validations:
   - name: answer_required

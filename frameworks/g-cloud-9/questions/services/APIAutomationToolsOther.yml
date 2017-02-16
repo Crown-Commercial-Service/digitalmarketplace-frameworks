@@ -1,6 +1,7 @@
 name: Other API automation tools
 question: List any other automation tools your service’s API uses.
 
+hidden: true
 optional: true
 depends:
   - "on": lot
@@ -19,4 +20,3 @@ validations:
     message: You must have 10 or fewer API automation tools.
   - name: under_character_limit
     message: Each API automation tool must be no more than 100 characters.
-

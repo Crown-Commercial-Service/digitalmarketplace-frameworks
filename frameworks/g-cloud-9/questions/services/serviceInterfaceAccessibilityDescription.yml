@@ -4,7 +4,6 @@ question_advice: >
   Include details of what users can and can’t do.
   [EN 301 549 9: Web](http://mandate376.standards.eu/standard/technical-requirements/#9) includes the features and
   constraints you should describe.
-hint: 50-word limit
 
 depends:
   - "on": lot
@@ -12,11 +11,12 @@ depends:
       - cloud-software
 
 type: textbox_large
+max_length_in_words: 100
 
 validations:
   - name: answer_required
     message: You need to answer this question.
-  - name: under_50_words
-    message: Your description must be no more than 50 words.
+  - name: under_100_words
+    message: Your description must be no more than 100 words.
   - name: under_character_limit
-    message: Your description must be no more than 500 characters.
+    message: Your description must be no more than 1000 characters.

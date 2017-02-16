@@ -6,15 +6,24 @@ depends:
     being:
       - cloud-hosting
       - cloud-software
+followup:
+  dataProtectionBetweenNetworksOther:
+    - other
 
 type: checkboxes
 options:
   - label: Private network or public sector network
+    value: private_or_psn
   - label: TLS (Version 1.2 or above)
+    value: tls
   - label: IPsec or TLS VPN gateway
+    value: ipsec_or_vpn
   - label: Bonded fibre optic connections
+    value: bonded_fibre
   - label: Legacy SSL and TLS (under 1.2)
+    value: legacy_ssl
   - label: Other
+    value: other
 
 validations:
   - name: answer_required

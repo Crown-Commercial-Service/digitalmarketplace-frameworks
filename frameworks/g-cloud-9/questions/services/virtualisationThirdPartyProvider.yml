@@ -1,6 +1,7 @@
 name: Third-party virtualisation provider
 question: Which third-party service provider are you using for virtualisation?
 
+hidden: true
 depends:
   - "on": lot
     being:

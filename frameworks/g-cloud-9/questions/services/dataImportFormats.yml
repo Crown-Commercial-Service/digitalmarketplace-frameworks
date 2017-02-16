@@ -7,12 +7,18 @@ depends:
   - "on": lot
     being:
       - cloud-software
+followup:
+  dataImportFormatsOther:
+    - other
 
 type: checkboxes
 options:
   - label: CSV
+    value: csv
   - label: ODF
+    value: odf
   - label: Other
+    value: other
 
 validations:
   - name: answer_required

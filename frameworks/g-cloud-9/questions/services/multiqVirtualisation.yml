@@ -8,7 +8,7 @@ depends:
 
 type: multiquestion
 questions:
-  - virtualisationUsedForSeparation
+  - virtualisation
   - virtualisationImplementedBy
   - virtualisationTechnologiesUsed
   - virtualisationTechnologiesUsedOther

@@ -1,6 +1,7 @@
 name: Supported services
 question: List the cloud hosting or software services you support
 
+hidden: true
 depends:
   - "on": lot
     being:

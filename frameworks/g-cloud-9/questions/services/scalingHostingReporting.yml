@@ -1,6 +1,8 @@
+id: scalingReporting
 name: Usage reporting
 question: How are users notified if usage nears service limits?
 
+hidden: true
 depends:
   - "on": lot
     being:
@@ -9,6 +11,10 @@ depends:
 type: checkboxes
 options:
   - label: API
+    value: api
   - label: Email
+    value: email
   - label: SMS
+    value: sms
   - label: Other
+    value: other

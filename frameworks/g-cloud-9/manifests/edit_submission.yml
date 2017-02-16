@@ -74,7 +74,7 @@
   editable: false
   edit_questions: true
   questions:
-    - resellerType
+    - multiqReselling
 
 - name: User support
   editable: false
@@ -96,7 +96,8 @@
     - multiqMobile
     - multiqWebInterface
     - multiqServiceInterface
-    - multiqAPI
+    - multiqAPIHosting
+    - multiqAPISoftware
     - multiqCommandLineInterface
     - multiqCustomisation
 
@@ -104,12 +105,8 @@
   editable: false
   edit_questions: true
   questions:
-    - metricsAvailable
-    - analyticsAvailable
-    - infrastructureApplicationMetrics
-    - otherMetrics
-    - metricsTypes
-    - reportingTypesMetrics
+    - multiqMetricsHosting
+    - multiqMetricsSoftware
 
 - name: Scaling
   editable: false
@@ -122,8 +119,6 @@
   editable: false
   edit_questions: true
   questions:
-    - whatIsBackedUp
-    - backupControls
     - multiqServiceBacksUp
 
 - name: Onboarding and offboarding
@@ -166,12 +161,12 @@
   editable: false
   edit_questions: true
   questions:
-    - multiqDataStorageAndProcessingLocations
+    - multiqDataStorageAndProcessing
     - datacentreSecurityStandards
     - multiqPenetrationTesting
     - multiqProtectionOfDataAtRest
-    - dataSanitisationType
-    - dataSanitisationTypeSoftware
+    - multiqDataSanitisationHosting
+    - multiqDataSanitisationSoftware
     - equipmentDisposalApproach
 
 - name: Availability and resilience
@@ -219,7 +214,12 @@
   editable: false
   edit_questions: true
   questions:
-    - placeholderStandardsAndCertifications
+    - multiqStandardsISOIEC27001
+    - multiqStandardsISO28000
+    - multiqStandardsCSASTAR
+    - creditOrDebitCardInformation
+    - multiqStandardsPCI
+    - standardsOther
 
 - name: Governance
   editable: false

@@ -1,6 +1,8 @@
+id: scalingType
 name: Scaling type
 question: How does your service scale?
 
+hidden: true
 depends:
   - "on": lot
     being:
@@ -9,9 +11,11 @@ depends:
 type: checkboxes
 options:
   - label: Scales automatically
+    value: automatic
   - label: Scales with user intervention
+    value: user_intervention
   - label: Users have to contact the support team to scale
-  - label: Doesn’t scale
+    value: support_request
 
 validations:
   - name: answer_required

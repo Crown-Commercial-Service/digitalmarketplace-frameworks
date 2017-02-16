@@ -1,10 +1,14 @@
 name: Setup or migration tied to specific services
-question: Is your migration service for specific hosting or software services?
+question: Is your migration service for specific cloud services?
 
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-support
+followup:
+  setupAndMigrationServiceSpecificList:
+    - true
 
 type: boolean
 

@@ -1,3 +1,4 @@
+id: multiqScaling
 name: Scaling
 question: Scaling
 
@@ -8,6 +9,4 @@ depends:
 
 type: multiquestion
 questions:
-  - scalingSoftwareScalability
-  - scalingSoftwareCost
   - scalingSoftwareIndependence

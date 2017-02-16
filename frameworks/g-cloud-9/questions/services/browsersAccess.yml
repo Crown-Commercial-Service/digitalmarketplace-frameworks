@@ -5,6 +5,9 @@ depends:
   - "on": lot
     being:
       - cloud-software
+followup:
+  browsersSupported:
+    - true
 
 type: boolean
 

@@ -1,6 +1,7 @@
-name: How long buyers’ users’ audit data is stored
-question: How long do you store buyers’ users’ audit data for?
+name: How long buyer audit data is stored
+question: How long do you store users’ audit data for?
 
+hidden: true
 depends:
   - "on": lot
     being:
@@ -10,10 +11,15 @@ depends:
 type: radios
 options:
   - label: User-defined
+    value: user_defined
   - label: At least 12 months
+    value: at_least_12_months
   - label: Between 6 months and 12 months
+    value: 6_to_12_months
   - label: Between 1 month and 6 months
+    value: 1_to_6_months
   - label: Less than 1 month
+    value: less_than_1_month
 
 validations:
   - name: answer_required

@@ -1,0 +1,13 @@
+id: multiqDataSanitisation
+name: Data sanitisation process
+question: Data sanitisation process
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+  - dataSanitisationSoftware
+  - dataSanitisationTypeSoftware

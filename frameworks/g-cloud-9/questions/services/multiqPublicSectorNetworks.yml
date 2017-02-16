@@ -10,5 +10,5 @@ depends:
 type: multiquestion
 questions:
   - publicSectorNetworks
-  - publicSectorNetworkTypes
+  - publicSectorNetworksTypes
   - publicSectorNetworksOther

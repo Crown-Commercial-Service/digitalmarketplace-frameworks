@@ -1,5 +1,5 @@
-name: Service back ups
-question: Service back ups
+name: Backup and recovery
+question: Backup and recovery
 
 depends:
   - "on": lot
@@ -8,7 +8,9 @@ depends:
 
 type: multiquestion
 questions:
-  - serviceBackups
-  - serviceBackupsDatacentre
-  - serviceBackupsScheduling
-  - serviceBackupsRecovery
+  - backup
+  - backupWhatData
+  - backupControls
+  - backupDatacentre
+  - backupScheduling
+  - backupRecovery

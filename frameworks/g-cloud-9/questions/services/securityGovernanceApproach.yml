@@ -1,7 +1,7 @@
 name: Security governance approach
 question: Describe how you approach security governance.
-hint: 50-word limit
 
+hidden: true
 depends:
   - "on": lot
     being:
@@ -9,11 +9,12 @@ depends:
       - cloud-software
 
 type: textbox_large
+max_length_in_words: 100
 
 validations:
   - name: answer_required
     message: You need to answer this question.
-  - name: under_50_words
-    message: Your answer must be no longer than 50 words.
+  - name: under_100_words
+    message: Your answer must be no longer than 100 words.
   - name: under_character_limit
-    message: Your answer must be no longer than 500 characters.
+    message: Your answer must be no longer than 1000 characters.

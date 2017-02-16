@@ -5,6 +5,11 @@ depends:
   - "on": lot
     being:
       - cloud-hosting
+followup:
+  commandLineOS:
+    - true
+  commandLineUsage:
+    - true
 
 type: boolean
 
