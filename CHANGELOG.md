@@ -2,6 +2,14 @@
 
 Records breaking changes from major version bumps
 
+## 6.0.0
+
+PR: [#381](https://github.com/alphagov/digitalmarketplace-frameworks/pull/381)
+
+### What changed
+
+New `followup` key structure requires digitalmarketplace-content-loader@3.0.0
+
 ## 5.0.0
 
 PR: [#330](https://github.com/alphagov/digitalmarketplace-frameworks/pull/330)
