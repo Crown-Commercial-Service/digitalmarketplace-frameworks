@@ -316,13 +316,13 @@ def _dynamic_list(question):
 def _complement_values(question, values):
     if question['type'] == 'boolean':
         options = [True, False]
-    elif question['type'] == 'radios':
+    elif question['type'] in ['radios', 'checkboxes']:
         options = [
             option.get('value', option['label'])
             for option in question['options']
         ]
     else:
-        raise ValueError('Followup questions are only supported for boolean and radios questions')
+        raise ValueError('Followup questions are only supported for questions with options')
 
     return sorted(set(options) - set(values))
 
@@ -330,17 +330,28 @@ def _complement_values(question, values):
 def _followup(question):
     schemas = []
     for followup_id, values in question['followup'].items():
+        if question.type == 'checkboxes':
+            should_not_have_followup = {
+                "items": {"enum": _complement_values(question, values)}
+            }
+            should_have_followup = {
+                "not": {"items": {"enum": _complement_values(question, values)}}
+            }
+        else:
+            should_not_have_followup = {"enum": _complement_values(question, values)}
+            should_have_followup = {"enum": values}
+
         schemas.append({
             'oneOf': [
                 {
                     "properties": {
-                        question['id']: {"enum": _complement_values(question, values)},
+                        question['id']: should_not_have_followup,
                         followup_id: {"type": "null"}
                     },
                 },
                 {
                     "properties": {
-                        question['id']: {"enum": values},
+                        question['id']: should_have_followup,
                     },
                     "required": [
                         question['id'],
