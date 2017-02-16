@@ -342,7 +342,10 @@ def _followup(question):
                     "properties": {
                         question['id']: {"enum": values},
                     },
-                    "required": [followup_id]
+                    "required": [
+                        question['id'],
+                        followup_id
+                    ]
                 },
             ]
         })
