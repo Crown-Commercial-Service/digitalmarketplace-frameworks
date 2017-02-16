@@ -327,9 +327,10 @@ def _complement_values(question, values):
     return sorted(set(options) - set(values))
 
 
-def _followup(question):
+def _followup(question, root):
     schemas = []
     for followup_id, values in question['followup'].items():
+        followup_q = root.get_question(followup_id)
         if question.type == 'checkboxes':
             should_not_have_followup = {
                 "items": {"enum": _complement_values(question, values)}
@@ -353,10 +354,7 @@ def _followup(question):
                     "properties": {
                         question['id']: should_have_followup,
                     },
-                    "required": [
-                        question['id'],
-                        followup_id
-                    ]
+                    "required": question.required_form_fields + followup_q.required_form_fields
                 },
             ]
         })
@@ -372,7 +370,10 @@ def _flat_multiquestion(question):
     schema_addition = {}
     for nested_question in question.questions:
         if nested_question.get('followup'):
-            schema_addition = merge_schemas(schema_addition, _followup(nested_question))
+            schema_addition = merge_schemas(
+                schema_addition,
+                _followup(nested_question, question)
+            )
 
     return properties, schema_addition
 
