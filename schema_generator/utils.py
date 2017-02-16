@@ -1,6 +1,6 @@
 def merge_schemas(a, b):
     if not (isinstance(a, dict) and isinstance(b, dict)):
-        raise ValueError("Error merging '{}' and '{}'".format(
+        raise TypeError("Error merging unsupported types '{}' and '{}'".format(
             type(a).__name__, type(b).__name__
         ))
 
