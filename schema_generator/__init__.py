@@ -92,7 +92,7 @@ def load_questions(schema_type, framework_slug, lot_slug):
 
     builder = loader.get_manifest(framework_slug, MANIFESTS[schema_type]['manifest']).filter(
         {'lot': lot_slug},
-        static=True
+        dynamic=False
     )
     return {q['id']: q for q in sum((s.questions for s in builder.sections), [])}
 
