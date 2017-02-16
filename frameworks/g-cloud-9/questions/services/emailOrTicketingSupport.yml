@@ -1,0 +1,19 @@
+name: Email or ticketing support
+question: Do you provide email or online ticketing support?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: radios
+options:
+  - label: "Yes"
+  - label: Yes, at extra cost
+  - label: "No"
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

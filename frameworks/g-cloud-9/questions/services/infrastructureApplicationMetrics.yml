@@ -1,21 +1,15 @@
-name: "Infrastructure or application metrics"
-question: "What infrastructure or application metrics do you provide?"
-optional: true
+name: Infrastructure or application metrics
+question: What infrastructure or application metrics do you provide?
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
 
 type: checkboxes
 options:
-    -
-        label: "CPU"
-    -
-        label: "Disk"
-    -
-        label: "Memory"
-    -
-        label: "Network"
-    -
-        label: "Other"
+  - label: CPU
+  - label: Disk
+  - label: Memory
+  - label: Network
+  - label: Other

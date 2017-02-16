@@ -1,0 +1,19 @@
+name: How the planning service works
+question: Describe how you help buyers plan how they’ll implement cloud hosting or software services.
+hint: 50-word limit
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: textbox_large
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_50_words
+    message: Your description must be no more than 50 words.
+  - name: under_character_limit
+    message: Your description must be no more than 500 characters.
+

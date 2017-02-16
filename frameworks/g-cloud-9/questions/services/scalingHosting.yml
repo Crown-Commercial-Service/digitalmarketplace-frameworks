@@ -1,0 +1,13 @@
+name: Scaling available
+question: Does your service scale?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

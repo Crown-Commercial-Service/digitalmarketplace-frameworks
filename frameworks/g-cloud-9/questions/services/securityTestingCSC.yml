@@ -1,0 +1,15 @@
+name: Cyber Security Consultancy-certified
+question: Is your organisation Cyber Security Consultancy-certified?
+question_advice: >
+  Read about [Certified Cyber Security Consultancy](https://www.ncsc.gov.uk/scheme/certified-cyber-consultancy).
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

@@ -1,0 +1,19 @@
+name: End-of-contract process
+question: Describe what happens at the end of the contraact.
+question_advice: Describe what’s included in the price of the contract and what’s an additional cost.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_50_words
+    message: Your description must be no more than 50 words.
+  - name: under_character_limit
+    message: Your description must be no more than 500 characters.
+

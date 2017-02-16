@@ -1,21 +1,16 @@
 id: serviceCategories
-name: 'Service categories'
-question: 'Which categories does your service fit under?'
-hint: 'You can choose multiple categories.'
+name: Service categories
+question: Which categories does your service fit under?
+hint: You can choose multiple categories.
+
 optional: true
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
+
 type: checkboxes
 options:
-  -
-    label: Hosting type 1
-    value: hosting_category_one
-  -
-    label: Hosting type 2
-    value: hosting_category_two
-  -
-    label: Or maybe hosting doesn't have categories at all?
-    value: hosting_category_three
+  - label: Hosting type 1
+  - label: Hosting type 2
+  - label: Or maybe hosting doesn’t have categories at all?

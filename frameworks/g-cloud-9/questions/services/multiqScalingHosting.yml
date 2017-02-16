@@ -1,0 +1,14 @@
+name: Scaling
+question: Scaling
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - scalingHosting
+  - scalingHostingType
+  - scalingHostingNotifications
+  - scalingHostingReporting

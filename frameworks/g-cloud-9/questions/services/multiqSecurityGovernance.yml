@@ -1,0 +1,15 @@
+name: Security governance
+question: Security governance
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - securityGovernanceAccreditation
+  - securityGovernanceStandards
+  - securityGovernanceStandardsOther
+  - securityGovernanceApproach

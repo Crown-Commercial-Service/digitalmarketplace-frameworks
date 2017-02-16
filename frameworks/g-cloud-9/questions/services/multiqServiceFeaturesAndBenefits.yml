@@ -1,0 +1,13 @@
+question: Service features and benefits
+name: Service features and benefits
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - serviceFeatures
+  - serviceBenefits

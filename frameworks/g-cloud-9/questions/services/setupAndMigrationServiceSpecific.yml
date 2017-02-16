@@ -1,0 +1,13 @@
+name: Setup or migration tied to specific services
+question: Is your migration service for specific hosting or software services?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

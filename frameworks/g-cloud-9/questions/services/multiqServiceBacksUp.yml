@@ -1,0 +1,14 @@
+name: Service back ups
+question: Service back ups
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - serviceBackups
+  - serviceBackupsDatacentre
+  - serviceBackupsScheduling
+  - serviceBackupsRecovery

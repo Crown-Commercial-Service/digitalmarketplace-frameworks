@@ -1,0 +1,14 @@
+name: Free or trial versions
+question: Free or trial versions
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - freeVersionTrialOption
+  - freeVersionDescription
+  - freeVersionLink

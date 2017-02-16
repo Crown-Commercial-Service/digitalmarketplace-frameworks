@@ -5,9 +5,19 @@
     - id
     - lotName
 -
-  name: About your service
-  editable: True
+  name: Service name
+  editable: true
   questions:
     - serviceName
+-
+  name: About your service
+  editable: true
+  questions:
     - serviceDescription
-    - serviceFeaturesAndBenefits
+
+-
+  name: Service features and benefits
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqServiceFeaturesAndBenefits

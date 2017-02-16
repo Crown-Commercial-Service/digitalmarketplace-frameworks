@@ -1,17 +1,16 @@
--
-  name: Service attributes
+- name: Service attributes
   editable: false
   edit_questions: false
   questions:
     - lotName
--
-  name: Service name
-  editable: true
+
+- name: Service name
+  editable: false
   edit_questions: true
   questions:
     - serviceName
--
-  name: About your service
+
+- name: About your service
   editable: false
   edit_questions: true
   questions:
@@ -19,207 +18,225 @@
     - serviceCategoriesSoftware
     - serviceCategoriesHosting
     - serviceCategoriesSupport
-    - serviceFeaturesAndBenefits
--
-  name: Service scope
-  editable: false
-  edit_questions: true
-  questions:
-    - serviceConstraints
-    - buyerResponsibilities
--
-  name: Reselling
-  editable: false
-  edit_questions: true
-  questions:
-    - reselling
 
--
-  name: User support
+- name: Service features and benefits
   editable: false
   edit_questions: true
   questions:
-    - emailSupport
-    - onlineTicketingSupport
-    - onlineTIcketingSupportAccessibility
-    - supportResponseTimes
-    - phoneSupport
-    - phoneSupportAvailability
-    - webChatSupport
-    - webChatSupportAvailability
-    - webChatSupportAccessibility
+    - multiqServiceFeaturesAndBenefits
+
+- name: Planning
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqPlanning
+
+- name: Setup and migration
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqSetupAndMigration
+
+- name: Quality assurance and performance testing
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqQAAndTesting
+
+- name: Security testing
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqSecurityTesting
+
+- name: Training
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqTraining
+
+- name: Ongoing support
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqOngoingSupport
+
+- name: Service scope
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqServiceAddOn
+    - cloudDeploymentModel
+    - serviceConstraints
+    - systemRequirements
+
+- name: Reselling
+  editable: false
+  edit_questions: true
+  questions:
+    - resellerType
+
+- name: User support
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqEmailOrTicketingSupport
+    - multiqPhoneSupport
+    - multiqWebChatSupport
     - onsiteSupport
     - supportLevels
+    - supportAvailableToThirdParty
 
--
-  name: How users work with your service
+- name: How users work with your service
   editable: false
   edit_questions: true
   questions:
-    - webInterface
-    - webInterfaceAccessibilityStandards
-    - API
-    - APIAutomationTools
-    - usingTheAPI
-    - commandLineInterface
-    - commandLineOS
-    - usingTheCommandLineInterface
+    - multiqBrowser
+    - multiqInstallation
+    - multiqMobile
+    - multiqWebInterface
+    - multiqServiceInterface
+    - multiqAPI
+    - multiqCommandLineInterface
+    - multiqCustomisation
 
--
-  name: Analytics
+- name: Analytics
   editable: false
   edit_questions: true
   questions:
+    - metricsAvailable
+    - analyticsAvailable
     - infrastructureApplicationMetrics
+    - otherMetrics
     - metricsTypes
-    - reportingTypes
+    - reportingTypesMetrics
 
--
-  name: Scaling
+- name: Scaling
   editable: false
   edit_questions: true
   questions:
-    - scalingType
-    - scalingApproach
-    - scalingReporting
-    - scalingPricingStructure
+    - multiqScalingHosting
+    - multiqScalingSoftware
 
--
-  name: Backups and recovery
+- name: Backups and recovery
   editable: false
   edit_questions: true
   questions:
     - whatIsBackedUp
     - backupControls
-    - backupLocations
-    - schedulingBackups
-    - backupRecovery
+    - multiqServiceBacksUp
 
--
-  name: Onboarding and offboarding
+- name: Onboarding and offboarding
   editable: false
   edit_questions: true
   questions:
     - gettingStarted
-    - documentationFormats
+    - multiqDocumentation
     - endOfContractDataExtraction
+    - endOfContractProcess
 
--
-  name: Data export
+- name: Data importing and exporting
   editable: false
   edit_questions: true
   questions:
     - dataExportHow
-    - dataExportFormats
-    - dataExportFormatsOther
+    - multiqDataExportFormats
+    - multiqDataImportFormats
 
--
-  name: Government networks
+- name: Public sector networks
   editable: false
   edit_questions: true
   questions:
-    - governmentWANS
-    - otherNetworks
-    - otherWANs
+    - multiqPublicSectorNetworks
 
--
-  name: Energy efficiency
+- name: Energy efficiency
   editable: false
   edit_questions: true
   questions:
     - energyEfficientDatacentres
 
--
-  name: Data-in-transit protection
+- name: Data-in-transit protection
   editable: false
   edit_questions: true
   questions:
-    - dataProtectionBetweenBuyersAndSuppliersNetworks
-    - dataProtectionWithinSuppliersNetwork
+    - multiqDataProtectionBetweenNetworks
+    - multiqDataProtectionWithinNetwork
 
--
-  name: Asset protection
+- name: Asset protection
   editable: false
   edit_questions: true
   questions:
-    - dataStorageAndProcessingLocations
-    - userControlOverDataStorageAndProcessingLocations
+    - multiqDataStorageAndProcessingLocations
     - datacentreSecurityStandards
-    - penetrationTesting
-    - protectionOfDataAtRest
+    - multiqPenetrationTesting
+    - multiqProtectionOfDataAtRest
     - dataSanitisationType
-    - dataSanitisationApproach
+    - dataSanitisationTypeSoftware
     - equipmentDisposalApproach
 
--
-  name: Availability and resilience
+- name: Availability and resilience
   editable: false
   edit_questions: true
-  description: >
-    Read about the government’s
-    [https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience](2nd
-    cloud security principle: ‘Asset protection and resilience’).
   questions:
     - guaranteedAvailability
     - approachToResilience
     - outageReporting
 
--
-  name: Separation between users
+- name: Separation between users
   editable: false
   edit_questions: true
   questions:
-    - virtualisationUsedForSeparation
-    - virtualisationTechnologiesUsed
-    - howSharedInfrastructureIsKeptSeparate
+    - multiqVirtualisation
 
--
-  name: Identity and authentication
+- name: Identity and authentication
   editable: false
   edit_questions: true
   questions:
-    - userAuthentication
-    - accessRestrictionsManagementAndSupport
-    - accessControlsTestedRegularly
-    - devicesForManagement
+    - multiqUserAuthenticationHosting
+    - multiqUserAuthenticationSoftware
+    - accessRestrictionManagementAndSupport
+    - accessRestrictionTesting
+    - multiqManagementAccess
+    - devicesUsersManageTheServiceThrough
 
--
-  name: Audit information for users
+- name: Audit information for users
   editable: false
   edit_questions: true
   questions:
-    - accessToAuditInformationAboutBuyersUsersActions
-    - accessToAuditInformationAboutSuppliersUsersActions
-    - auditDataFormats
+    - multiqAccessBuyersAudit
+    - multiqAccessSuppliersAudit
+    - howLongSystemLogsStored
 
--
-  name: Pricing
+- name: Pricing
   editable: false
   edit_questions: true
   questions:
     - price
     - educationPricing
-    - trialOption
+    - multiqFreeVersion
 
--
-  name: Standards and certifications
+- name: Standards and certifications
   editable: false
   edit_questions: true
   questions:
     - placeholderStandardsAndCertifications
 
--
-  name: Governance
+- name: Governance
   editable: false
   edit_questions: true
   questions:
     - boardLevelServiceSecurity
-    - securityGovernanceStandards
-    - securityGovernanceApproach
+    - multiqSecurityGovernance
     - informationSecurityPoliciesAndProcesses
 
--
-  name: Operational security
+- name: Security
+  editable: false
+  edit_questions: true
+  questions:
+    - securityStaff
+    - securityStaffClearances
+
+- name: Operational security
   editable: false
   edit_questions: true
   questions:
@@ -232,16 +249,23 @@
     - incidentManagementType
     - incidentManagementApproach
 
--
-  name: Personnel security
+- name: Personnel security
   editable: false
   edit_questions: true
   questions:
     - staffSecurityClearanceChecks
 
--
-  name: Secure development
+- name: Secure development
   editable: false
   edit_questions: true
   questions:
     - secureDevelopment
+
+- name: Documents
+  editable: false
+  edit_questions: true
+  questions:
+    - serviceDefinitionDocumentURL
+    - termsAndConditionsDocumentURL
+    - pricingDocumentURL
+    - sfiaRateDocumentURL

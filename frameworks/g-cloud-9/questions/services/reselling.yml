@@ -1,7 +1,0 @@
-name: Reselling
-question: Reselling
-optional: false
-type: multiquestion
-questions:
-  - supplierType
-  - resellerRelationship

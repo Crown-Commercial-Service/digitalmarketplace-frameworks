@@ -1,0 +1,13 @@
+name: Training
+question: Do you provide training for cloud software and hosting services?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

@@ -1,0 +1,13 @@
+name: Staff with clearance
+question: Is your service provided by staff with government security clearance?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

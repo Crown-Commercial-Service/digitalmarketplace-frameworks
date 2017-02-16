@@ -1,28 +1,26 @@
-name: "Support levels"
-question: "Describe your support levels"
+name: Support levels
+question: Describe your support levels
 question_advice: >
     Describe:
 
       - the support levels you provide
       - how much the different support levels you provide cost
       - whether you provide a technical account manager or cloud support engineer
-hint: "50-word limit"
+hint: 50-word limit
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software
+      - cloud-support
 
 type: textbox_large
 
 validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."
-  -
-    name: under_50_words
-    message: "Your answer must be no longer than 50 words."
-  -
-    name: under_character_limit
-    message: "Your answer must be no longer than 500 characters."
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_50_words
+    message: Your answer must be no longer than 50 words.
+  - name: under_character_limit
+    message: Your answer must be no longer than 500 characters.

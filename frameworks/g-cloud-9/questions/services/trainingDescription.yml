@@ -1,0 +1,18 @@
+name: How the training service works
+question: Describe the training you provide.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: textbox_large
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_50_words
+    message: Your description must be no more than 50 words.
+  - name: under_character_limit
+    message: Your description must be no more than 500 characters.
+

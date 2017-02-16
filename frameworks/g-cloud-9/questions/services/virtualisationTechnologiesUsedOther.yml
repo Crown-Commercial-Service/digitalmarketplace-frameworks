@@ -1,0 +1,17 @@
+name: Other virtualisation technology used
+question: Which other virtualisation technology do you use?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: text
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_10_words
+    message: Your description must be no more than 10 words.
+  - name: under_character_limit
+    message: Your description must be no more than 100 characters.

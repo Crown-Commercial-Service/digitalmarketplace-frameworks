@@ -1,17 +1,23 @@
 name: User authentication
 question: How do you authenticate users when they access the service?
-optional: true
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software
+
 type: checkboxes
+
 options:
   - label: 2-factor authentication
   - label: Public key authentication (including by TLS client certificate)
   - label: Identity federation with existing provider (for example Google apps)
-  - label: Limited access over ‘community network’ (for example PSN)
-  - label: Dedicated link
+  - label: Limited access over government network (for example PSN)
+  - label: Dedicated link (for example VPN or bonded fibre)
   - label: Username or password
+  - label: Other
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

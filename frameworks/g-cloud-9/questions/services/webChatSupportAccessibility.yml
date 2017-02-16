@@ -1,24 +1,20 @@
-name: "Web chat support accessibility"
-question: "Does your webchat comply with the Web Content Accessibility Guidelines 2.0?"
+name: Web chat support accessibility
+question: What accessibility standards does your web chat meet?
+
 depends:
-  -
-    "on": lot
+  - "on": lot
     being:
       - cloud-hosting
       - cloud-software
+      - cloud-support
 
 type: radios
 options:
-    -
-        label: "AAA"
-    -
-        label: "AA"
-    -
-        label: "A"
-    -
-        label: "No"
+  - label: WCAG 2.0 AAA
+  - label: "WCAG 2.0 AA or EN 301 549 9: Web"
+  - label: WCAG 2.0 A
+  - label: None or don’t know
 
 validations:
-  -
-    name: answer_required
-    message: "You need to answer this question."
+  - name: answer_required
+    message: You need to answer this question.

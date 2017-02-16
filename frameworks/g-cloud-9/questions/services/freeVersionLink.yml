@@ -1,0 +1,15 @@
+name: Free version link
+question: Provide a link to the free version of your service.
+
+optional: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: text
+
+validations:
+  - name: under_character_limit
+    message: Your link must be no more than 1000 characters.

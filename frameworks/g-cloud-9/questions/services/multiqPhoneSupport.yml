@@ -1,0 +1,14 @@
+name: Phone support
+question: Phone support
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: multiquestion
+questions:
+  - phoneSupport
+  - phoneSupportAvailability

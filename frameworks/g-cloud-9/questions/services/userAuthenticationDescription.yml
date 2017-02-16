@@ -1,0 +1,19 @@
+name: Describe user authentication
+question: Describe how you authenticate users when they access the service.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_50_words
+    message: Your description must be no more than 50 words.
+  - name: under_character_limit
+    message: Your description must be no more than 500 characters.
+
