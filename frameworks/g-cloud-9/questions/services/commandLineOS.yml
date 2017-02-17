@@ -1,4 +1,4 @@
-name: Command line interface compatability
+name: Command line interface compatibility
 question: Which operating systems does your command line interface work with?
 
 depends:

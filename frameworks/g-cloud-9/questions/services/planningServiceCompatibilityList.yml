@@ -16,4 +16,3 @@ validations:
     message: You must have 10 or fewer hosting or software services.
   - name: under_character_limit
     message: Each hosting or software service must be no more than 100 characters.
-
