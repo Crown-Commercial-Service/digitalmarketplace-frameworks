@@ -407,6 +407,96 @@ def test_multiquestion():
     assert schema_addition == {'required': ['subquestion1', 'subquestion2']}
 
 
+def test_followup():
+    question = ContentQuestion({
+        "id": "multiq",
+        "type": "multiquestion",
+        "questions": [
+            {
+                'id': 'subquestion1',
+                'name': 'Subquestion 1',
+                'question': 'This is subquestion 1',
+                'type': 'boolean',
+                'followup': {
+                    'subquestion2': [True]
+                }
+            },
+            {
+                'id': 'subquestion2',
+                'name': 'Subquestion 2',
+                'question': 'This is subquestion 2',
+                'type': 'text'
+            }
+        ]
+    })
+
+    result, schema_addition = multiquestion(question)
+    assert 'subquestion1' in result.keys()
+    assert 'subquestion2' in result.keys()
+
+    assert schema_addition == {
+        'allOf': [
+            {'oneOf': [
+                {'properties': {
+                    'subquestion1': {'enum': [False]},
+                    'subquestion2': {'type': 'null'}
+                }},
+                {
+                    'properties': {'subquestion1': {'enum': [True]}},
+                    'required': ['subquestion1', 'subquestion2']
+                }
+            ]}
+        ],
+        'required': ['subquestion1']
+    }
+
+
+def test_checkboxes_followup():
+    question = ContentQuestion({
+        "id": "multiq",
+        "type": "multiquestion",
+        "questions": [
+            {
+                'id': 'subquestion1',
+                'name': 'Subquestion 1',
+                'question': 'This is subquestion 1',
+                'type': 'checkboxes',
+                'options': [{'label': 'AA', 'value': 'a'}, {'label': 'BB', 'value': 'b'}],
+                'followup': {
+                    'subquestion2': ['a']
+                }
+            },
+            {
+                'id': 'subquestion2',
+                'name': 'Subquestion 2',
+                'optional': True,
+                'question': 'This is subquestion 2',
+                'type': 'text'
+            }
+        ]
+    })
+
+    result, schema_addition = multiquestion(question)
+    assert 'subquestion1' in result.keys()
+    assert 'subquestion2' in result.keys()
+
+    assert schema_addition == {
+        'allOf': [
+            {'oneOf': [
+                {'properties': {
+                    'subquestion1': {'items': {'enum': ['b']}},
+                    'subquestion2': {'type': 'null'}
+                }},
+                {
+                    'properties': {'subquestion1': {'not': {'items': {'enum': ['b']}}}},
+                    'required': ['subquestion1']
+                }
+            ]}
+        ],
+        'required': ['subquestion1']
+    }
+
+
 def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):
     """
     This test checks that when building a schema, all files are
