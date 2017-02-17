@@ -1,7 +1,7 @@
 name: System requirements
 question: What system requirements does your service have?
 question_advice: >
-  Examples of systems requirements might be whether buyers have specific softwre licences or anti-virus technology
+  Examples of systems requirements might be whether buyers have specific software licences or anti-virus technology
   for virtual machines.
 hint: 10 words for each requirement, 10 requirements maximum.
 

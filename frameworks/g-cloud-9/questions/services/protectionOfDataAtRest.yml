@@ -10,7 +10,7 @@ depends:
 
 type: checkboxes
 options:
-  - label: Physical access control, cmomplying with CSA CCM v3.0
+  - label: Physical access control, complying with CSA CCM v3.0
   - label: Physical access control, complying with SSAE-16 / ISAE 3402
   - label: Physical access control, complying with another standard
   - label: Encryption of all physical media

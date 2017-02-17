@@ -10,5 +10,5 @@ type: multiquestion
 questions:
   - planningService
   - planningServiceDescription
-  - planningServiceCompatability
-  - planningServiceCompatabilityList
+  - planningServiceCompatibility
+  - planningServiceCompatibilityList
