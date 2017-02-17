@@ -180,19 +180,15 @@
     - dunsNumber
     - registeredVATNumber
 -
-  name: Established outside the UK
-  slug: established-outside-the-uk
+  name: Where your business was established
+  slug: where-your-business-was-established
   editable: True
   prefill: True
   description: |
     The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application.
     If your application is successful, it will carry out checks on your company.
   questions:
-    - establishedInTheUK
-    - appropriateTradeRegisters
-    - appropriateTradeRegistersNumber
-    - licenceOrMemberRequired
-    - licenceOrMemberRequiredDetails
+    - multiqEstablishedInTheUK
 -
 
   name: How you’ll deliver your services
