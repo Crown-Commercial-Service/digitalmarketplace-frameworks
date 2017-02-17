@@ -382,33 +382,119 @@ def test_number_property_limits(max_value, min_value, integer_only):
 
 
 def test_multiquestion():
-    question = {}
-    question['questions'] = []
-    question['questions'].append({
-        'id': 'subquestion1',
-        'name': 'Subquestion 1',
-        'question': 'This is subquestion 1',
-        'type': 'boolean'
+    question = ContentQuestion({
+        "type": "multiquestion",
+        "questions": [
+            {
+                'id': 'subquestion1',
+                'name': 'Subquestion 1',
+                'question': 'This is subquestion 1',
+                'type': 'boolean'
+            },
+            {
+                'id': 'subquestion2',
+                'name': 'Subquestion 2',
+                'question': 'This is subquestion 2',
+                'type': 'text'
+            }
+        ]
     })
-    question['questions'].append({
-        'id': 'subquestion2',
-        'name': 'Subquestion 2',
-        'question': 'This is subquestion 2',
-        'type': 'text'
-    })
-    result = multiquestion(question)
+
+    result, schema_addition = multiquestion(question)
     assert 'subquestion1' in result.keys()
     assert 'subquestion2' in result.keys()
 
-    # check that the multiquestion function gets called by
-    # build_question_properties based on the value of type,
-    # and throws an error if it isn't.
-    with pytest.raises(KeyError):
-        build_question_properties(question)
+    assert schema_addition == {'required': ['subquestion1', 'subquestion2']}
 
-    question['type'] = 'multiquestion'
-    bqp_result = build_question_properties(question)
-    assert result == bqp_result
+
+def test_followup():
+    question = ContentQuestion({
+        "id": "multiq",
+        "type": "multiquestion",
+        "questions": [
+            {
+                'id': 'subquestion1',
+                'name': 'Subquestion 1',
+                'question': 'This is subquestion 1',
+                'type': 'boolean',
+                'followup': {
+                    'subquestion2': [True]
+                }
+            },
+            {
+                'id': 'subquestion2',
+                'name': 'Subquestion 2',
+                'question': 'This is subquestion 2',
+                'type': 'text'
+            }
+        ]
+    })
+
+    result, schema_addition = multiquestion(question)
+    assert 'subquestion1' in result.keys()
+    assert 'subquestion2' in result.keys()
+
+    assert schema_addition == {
+        'allOf': [
+            {'oneOf': [
+                {'properties': {
+                    'subquestion1': {'enum': [False]},
+                    'subquestion2': {'type': 'null'}
+                }},
+                {
+                    'properties': {'subquestion1': {'enum': [True]}},
+                    'required': ['subquestion1', 'subquestion2']
+                }
+            ]}
+        ],
+        'required': ['subquestion1']
+    }
+
+
+def test_checkboxes_followup():
+    question = ContentQuestion({
+        "id": "multiq",
+        "type": "multiquestion",
+        "questions": [
+            {
+                'id': 'subquestion1',
+                'name': 'Subquestion 1',
+                'question': 'This is subquestion 1',
+                'type': 'checkboxes',
+                'options': [{'label': 'AA', 'value': 'a'}, {'label': 'BB', 'value': 'b'}],
+                'followup': {
+                    'subquestion2': ['a']
+                }
+            },
+            {
+                'id': 'subquestion2',
+                'name': 'Subquestion 2',
+                'optional': True,
+                'question': 'This is subquestion 2',
+                'type': 'text'
+            }
+        ]
+    })
+
+    result, schema_addition = multiquestion(question)
+    assert 'subquestion1' in result.keys()
+    assert 'subquestion2' in result.keys()
+
+    assert schema_addition == {
+        'allOf': [
+            {'oneOf': [
+                {'properties': {
+                    'subquestion1': {'items': {'enum': ['b']}},
+                    'subquestion2': {'type': 'null'}
+                }},
+                {
+                    'properties': {'subquestion1': {'not': {'items': {'enum': ['b']}}}},
+                    'required': ['subquestion1']
+                }
+            ]}
+        ],
+        'required': ['subquestion1']
+    }
 
 
 def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):

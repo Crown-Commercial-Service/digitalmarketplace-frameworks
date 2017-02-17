@@ -41,7 +41,7 @@
     },
     "followup": {
       "properties": {
-        "type": {"enum": ["boolean"]}
+        "type": {"enum": ["boolean", "radios", "checkboxes"]}
       }
     }
   },
@@ -254,7 +254,10 @@
       "items": {"type": "string"}
     },
     "followup": {
-      "type": "string"
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9]+$": {"type": "array"}
+      }
     },
     "dynamic_field": {
       "type": "string"

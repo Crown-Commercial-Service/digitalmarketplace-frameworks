@@ -2,6 +2,7 @@ import os
 import re
 import json
 from dmcontent import ContentLoader
+from .utils import merge_schemas
 
 
 MANIFESTS = {
@@ -89,7 +90,10 @@ def load_questions(schema_type, framework_slug, lot_slug):
         MANIFESTS[schema_type]['manifest']
     )
 
-    builder = loader.get_builder(framework_slug, MANIFESTS[schema_type]['manifest']).filter({'lot': lot_slug})
+    builder = loader.get_manifest(framework_slug, MANIFESTS[schema_type]['manifest']).filter(
+        {'lot': lot_slug},
+        dynamic=False
+    )
     return {q['id']: q for q in sum((s.questions for s in builder.sections), [])}
 
 
@@ -286,62 +290,142 @@ def multiquestion(question):
     """
     Moves subquestions of multiquestions into fully fledged questions.
     """
-    properties = {}
-    for nested_question in question['questions']:
-        properties.update(build_question_properties(nested_question))
 
-    return properties
+    if question._data['type'] == 'dynamic_list':
+        return _dynamic_list(question)
+    else:
+        property_schema, schema_addition = _flat_multiquestion(question)
+        required_fields = _flat_multiquestion_required(question)
+        if required_fields:
+            required_schema = {"required": _flat_multiquestion_required(question)}
+            schema_addition = merge_schemas(schema_addition, required_schema)
+
+        return property_schema, schema_addition
 
 
-def followup(question):
+def _dynamic_list(question):
     return {
-        'oneOf': [
-            {
-                "properties": {
-                    question['id']: {"enum": [False]},
-                    question['followup']: {"type": "null"}
-                },
-                "required": [question['id']]
-            },
-            {
-                "properties": {
-                    question['id']: {"enum": [True]},
-                    question['followup']: {"type": "string", "minLength": 1}
-                },
-                "required": [question['id'], question['followup']]
-            },
-        ]
-    }
-
-
-def dynamic_list(question):
-    properties = multiquestion(question)
-
-    property_schema = {
-        "type": "array",
-        "minItems": 0,
-        "items": {
-            "type": "object",
-            "additionalProperties": False,
-            "properties": properties
+        question['id']: {
+            "type": "array",
+            "minItems": 0 if question.get('optional') else 1,
+            "items": _nested_multiquestion(question)[question['id']]
         }
     }
 
-    required_fields = [q['id'] for q in question.questions if not q.get('optional')]
-    if required_fields:
-        property_schema["items"]["required"] = required_fields
 
+def _complement_values(question, values):
+    if question['type'] == 'boolean':
+        options = [True, False]
+    elif question['type'] in ['radios', 'checkboxes']:
+        options = [
+            option.get('value', option['label'])
+            for option in question['options']
+        ]
+    else:
+        raise ValueError('Followup questions are only supported for questions with options')
+
+    return sorted(set(options) - set(values))
+
+
+def _followup(question, root):
+    schemas = []
+    for followup_id, values in question['followup'].items():
+        followup_q = root.get_question(followup_id)
+        if question.type == 'checkboxes':
+            should_not_have_followup = {
+                "items": {"enum": _complement_values(question, values)}
+            }
+            should_have_followup = {
+                "not": {"items": {"enum": _complement_values(question, values)}}
+            }
+        else:
+            should_not_have_followup = {"enum": _complement_values(question, values)}
+            should_have_followup = {"enum": values}
+
+        schemas.append({
+            'oneOf': [
+                {
+                    "properties": {
+                        question['id']: should_not_have_followup,
+                        followup_id: {"type": "null"}
+                    },
+                },
+                {
+                    "properties": {
+                        question['id']: should_have_followup,
+                    },
+                    "required": question.required_form_fields + followup_q.required_form_fields
+                },
+            ]
+        })
+
+    return {'allOf': schemas}
+
+
+def _flat_multiquestion(question):
+    properties = {}
+    for nested_question in question.questions:
+        properties.update(build_question_properties(nested_question))
+
+    schema_addition = {}
     for nested_question in question.questions:
         if nested_question.get('followup'):
-            if 'allOf' not in property_schema['items']:
-                property_schema['items']['allOf'] = []
-            property_schema['items']['allOf'].append(followup(nested_question))
+            schema_addition = merge_schemas(
+                schema_addition,
+                _followup(nested_question, question)
+            )
 
-            # If we have a follow up question then the list of required fields has two different cases. This constraint
-            # is taken care of by the follow up schema generator so we do not want a required field here
-            property_schema["items"].pop("required")
+    return properties, schema_addition
 
-    return {question['id']: property_schema}
+
+def _nested_multiquestion(question):
+    properties, schema_addition = _flat_multiquestion(question)
+
+    object_schema = merge_schemas({
+        "type": "object",
+        "additionalProperties": False,
+        "properties": properties,
+        "required": _nested_multiquestion_required(question),
+    }, schema_addition)
+
+    if not object_schema["required"]:
+        object_schema.pop("required")
+
+    return {question['id']: object_schema}
+
+
+def _flat_multiquestion_required(question):
+    if question.get('optional'):
+        return []
+
+    return _nested_multiquestion_required(question)
+
+
+def _nested_multiquestion_required(question):
+    """Returns a list of required nested properties for the multiquestion.
+
+    `.required_form_fields` returns the top-level schema property name for the
+    nested multiquestion, since that's the part that's influenced by the question's
+    `optional` flag and it returns the key we need to add to the top-level schema's
+    'required' list.
+
+    Nested properties are always required if the nested question is mandatory, even
+    when multiquestion itself is optional, since they're part of the nested schema.
+
+    """
+    required = []
+    followups = []
+
+    # Followup questions don't need to be in the 'required' properties list since even
+    # non-optional questions don't always have to be present if they're a followup.
+    # Both the question itself and the followups are covered by the oneOf subschemas.
+
+    for nested_question in question['questions']:
+        required.extend(nested_question.required_form_fields)
+        if nested_question.get('followup'):
+            followups.extend(nested_question['followup'].keys())
+
+    return sorted(set(required) - set(followups))
 
 
 QUESTION_TYPES = {
@@ -356,7 +440,6 @@ QUESTION_TYPES = {
     'pricing': pricing_property,
     'number': number_property,
     'multiquestion': multiquestion,
-    'dynamic_list': dynamic_list,
 }
 
 
@@ -466,15 +549,21 @@ def build_any_of(any_of, fields):
 
 def build_schema_properties(schema, questions):
     for key, question in questions.items():
-        schema['properties'].update(build_question_properties(question))
-        schema['required'].extend(question.required_form_fields)
+        property_schema = build_question_properties(question)
+        if isinstance(property_schema, tuple):
+            property_schema, schema_addition = property_schema
+            schema['properties'].update(property_schema)
+            schema = merge_schemas(schema, schema_addition)
+        else:
+            schema['properties'].update(property_schema)
+            schema['required'].extend(question.required_form_fields)
 
     schema['required'].sort()
 
     return schema
 
 
-def add_multiquestion_anyof(schema, questions):
+def _multiquestion_anyof(questions):
     any_ofs = {}
 
     for key, question in questions.items():
@@ -487,11 +576,10 @@ def add_multiquestion_anyof(schema, questions):
                     question_fields.append(q.id)
             any_ofs[question.id] = build_any_of(question.get('any_of'), question_fields)
 
-    if any_ofs:
-        schema['anyOf'] = [any_ofs[key] for key in sorted(any_ofs.keys())]
+    return {"anyOf": [any_ofs[key] for key in sorted(any_ofs.keys())]} if any_ofs else {}
 
 
-def add_multiquestion_dependencies(schema, questions):
+def _multiquestion_dependencies(questions):
     dependencies = {}
     for key, question in questions.items():
         if question.type == 'multiquestion' and question.get('any_of'):
@@ -501,8 +589,7 @@ def add_multiquestion_dependencies(schema, questions):
                 if len(question.form_fields) > 1
             })
 
-    if dependencies:
-        schema['dependencies'] = dependencies
+    return {'dependencies': dependencies} if dependencies else {}
 
 
 def generate_schema(path, schema_type, schema_name, framework_slug, lot_slug):
@@ -510,9 +597,9 @@ def generate_schema(path, schema_type, schema_name, framework_slug, lot_slug):
     drop_non_schema_questions(questions)
     schema = empty_schema(schema_name)
 
-    build_schema_properties(schema, questions)
-    add_multiquestion_anyof(schema, questions)
-    add_multiquestion_dependencies(schema, questions)
+    schema = build_schema_properties(schema, questions)
+    schema = merge_schemas(schema, _multiquestion_anyof(questions))
+    schema = merge_schemas(schema, _multiquestion_dependencies(questions))
 
     with open(os.path.join(path, '{}-{}-{}.json'.format(schema_type, framework_slug, lot_slug)), 'w') as f:
         json.dump(schema, f, sort_keys=True, indent=2, separators=(',', ': '))
