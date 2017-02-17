@@ -4,9 +4,6 @@
   editable: True
   prefill: False
   description: |
-    You must make this declaration to apply to G-Cloud&nbsp;9. You can come back and change your answers at any time before
-    5pm BST, 11 April 2017. **[might want to remove]**
-
     You must answer these questions to confirm that your services are suitable for G-Cloud&nbsp;9.
 
     You must be able to truthfully answer ‘yes’ to every question for your application to be considered eligible.
@@ -15,8 +12,9 @@
     If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted. 
 
   questions:
-    - unfairCompetition
-    - skillsAndResources
+    - servicesHaveOrSupport
+    - servicesDoNotInclude
+    - payForWhatUse
     - offerServicesYourselves
     - fullAccountability
 
@@ -36,6 +34,7 @@
     - termsOfParticipation
     - termsAndConditions
     - canProvideFromDayOne
+    - unfairCompetition    
     - 10WorkingDays
     - MI
     
@@ -68,8 +67,9 @@
   prefill: True
   description: |
     You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
-    for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted. If
-    you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
+    for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
+    
+    If you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
     you provide to consider whether or not you will be able to proceed any further with this procurement.
 
@@ -179,6 +179,15 @@
     - companyRegistrationNumber
     - dunsNumber
     - registeredVATNumber
+-
+  name: Established outside the UK
+  slug: established-outside-the-uk
+  editable: True
+  prefill: True
+  description: |
+    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application.
+    If your application is successful, it will carry out checks on your company.
+  questions:
     - establishedInTheUK
     - appropriateTradeRegisters
     - appropriateTradeRegistersNumber

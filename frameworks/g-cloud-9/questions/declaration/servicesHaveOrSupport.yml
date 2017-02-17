@@ -1,0 +1,11 @@
+question: |
+  Depending on the lots you’re submitting services to, do you confirm that the services you are submitting to G-Cloud 8 have or support:
+  
+  - on-demand self-service. Your cloud services, eg server time or network storage, must be automatically available without interaction between the supplier and the buyer. (Lots 1, 2, 3.)
+  - broad network access. Your cloud services must be easily accessible over the network and across a wide range of platforms (eg mobile phones, tablets, laptops and workstations) and a mix of applications that are both thin (the bulk of data processing occurs on the server) and thick (most processing occurs on the local platform). (Lots 1, 2, 3.)
+  - resource pooling. Your computing resources (eg storage, processing, memory and network bandwidth) must be pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand. (Lots 1, 2, 3.)
+  - rapid elasticity. Your cloud services must be quickly, and sometimes automatically, scaled to serve the required number of users, according to demand. (Lots 1, 2, 3.)
+  - measured service. Your resource use (eg storage, processing, bandwidth and number of active user accounts) must be monitored, controlled and reported to the buyer. (Lots 1, 2, 3.)
+  - the delivery of cloud services. Your service is provided to help or enable the delivery of cloud services. Your service complies with the definition in 2.4 in the in the [framework agreement (ZIP, 2.4MB)](/suppliers/frameworks/g-cloud-8/files/g-cloud-8-supplier-pack.zip)?. (Lot 4.)
+
+type: boolean
