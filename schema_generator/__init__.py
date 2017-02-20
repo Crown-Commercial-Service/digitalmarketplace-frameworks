@@ -145,7 +145,7 @@ def checkbox_property(question):
         "type": "array",
         "uniqueItems": True,
         "minItems": 0 if question.get('optional') else 1,
-        "maxItems": len(question['options']),
+        "maxItems": question.get('number_of_items', len(question['options'])),
         "items": {
             "enum": [
                 option.get('value', option['label'])
@@ -165,17 +165,23 @@ def checkbox_tree_property(question):
             for option in flatten(option.get('options', [])):
                 yield option
 
-    return {question['id']: {
+    # items may not be unique, so using a set not a list
+    all_items = {option.get('value', option['label']) for option in flatten(question['options'])}
+
+    schema_fragment = {question['id']: {
         "type": "array",
         "uniqueItems": True,  # TODO
         "minItems": 0 if question.get('optional') else 1,
         "items": {
-            "enum": [
-                option.get('value', option['label'])
-                for option in flatten(question['options'])
-            ]
+            "enum": sorted(all_items)
         }
     }}
+
+    # add maxitems conditionally: a restriction based on the number of items in the tree isn't very useful
+    if question.get('number_of_items'):
+        schema_fragment[question['id']]['maxItems'] = question.get('number_of_items')
+
+    return schema_fragment
 
 
 def radios_property(question):

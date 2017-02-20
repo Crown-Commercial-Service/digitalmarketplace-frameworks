@@ -320,3 +320,7 @@ options:
   - {label: Transportation dispatch}
   - {label: Trucking solutions}
   - {label: Warehouse management}
+number_of_items: 10
+validations:
+  - name: max_items_limit
+    message: No more than 10 categories can be selected, including top-level categories

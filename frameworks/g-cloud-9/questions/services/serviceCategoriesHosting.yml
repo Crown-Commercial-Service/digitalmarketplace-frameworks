@@ -33,3 +33,7 @@ options:
   options:
   - {label: Disk (block) storage}
   - {label: Object storage}
+number_of_items: 10
+validations:
+  - name: max_items_limit
+    message: No more than 10 categories can be selected
