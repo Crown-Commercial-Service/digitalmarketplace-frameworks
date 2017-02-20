@@ -1,4 +1,14 @@
 name: Where your business was established
 question: Was your business established in the UK?
+
 type: boolean
-hint: If you answer ‘yes’ to this question, please move on to question [[organisationSize]].
+
+followup:
+  appropriateTradeRegisters:
+    - False
+  appropriateTradeRegistersNumber:
+    - False
+  licenceOrMemberRequired:
+    - False
+  licenceOrMemberRequiredDetails:
+    - False
