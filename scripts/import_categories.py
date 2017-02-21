@@ -52,14 +52,14 @@ if __name__ == '__main__':
     output_file = arguments.get('<output-yaml-file>')
     if output_file:
         with open(output_file, 'r') as yaml_file:
-            original_question_data = yaml.safe_load(yaml_file)
+            question_data = yaml.safe_load(yaml_file)
     else:
-        original_question_data = {}
+        question_data = {}
 
-    original_question_data['options'] = sorted(primary_by_label.values())
+    question_data['options'] = sorted(primary_by_label.values())
 
     if output_file:
         with open(output_file, 'w') as h_yaml:
-            yaml.safe_dump(original_question_data, h_yaml)
+            yaml.safe_dump(question_data, h_yaml)
     else:
-        yaml.safe_dump(original_question_data, sys.stdout)
+        yaml.safe_dump(question_data, sys.stdout)
