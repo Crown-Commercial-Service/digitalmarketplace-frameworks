@@ -39,6 +39,7 @@ Question keys
     * `value` value submitted to the server when the option is selected
     * `filter_label` [currently unused] text displayed in the buyer frontend filters list instead of label
     * `description` additional text displayed after the option label (used for `lot` question)
+    * `options` for 'checkbox_tree' questions, a list of nested options, each one consisting of the same keys
 * `validations` a list of validation errors related to the field. Each validation consists of:
     * `name` the error message key that should match the validation error returned by the API (required)
     * `message` text of the message that will be displayed by the frontend app (required)
