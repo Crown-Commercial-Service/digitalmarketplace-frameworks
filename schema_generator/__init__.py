@@ -170,7 +170,7 @@ def checkbox_tree_property(question):
 
     schema_fragment = {question['id']: {
         "type": "array",
-        "uniqueItems": True,  # TODO
+        "uniqueItems": True,
         "minItems": 0 if question.get('optional') else 1,
         "items": {
             "enum": sorted(all_items)
