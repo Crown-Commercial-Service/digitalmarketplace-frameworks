@@ -9,8 +9,14 @@ We expect to see three columns, labelled as follows:
  "Primary category" - more broad categorisation
  "Secondary category" - more specific categorisation (if any)
 
+Example data file <<END
+Top level (lot),Primary category,Secondary category
+Cloud Hosting,"Archiving, backup and disaster recovery",
+Cloud Software,Accounting and finance,Accounts payable
+END
+
 Usage:
-    scripts/import-categories.py <input-csv-file> <lot> [<output-yaml-file>]
+    scripts/import-categories.py <input-csv-file> <lot> [<output-yaml-file>] [-h|--help]
 
 """
 
