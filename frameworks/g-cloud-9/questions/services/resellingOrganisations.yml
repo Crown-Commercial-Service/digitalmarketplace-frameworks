@@ -1,6 +1,5 @@
 name: Reselling organisation’s services
 question: Which organisation’s services do you resell?
-hint: 10-word limit
 
 hidden: true
 depends:
@@ -11,6 +10,7 @@ depends:
       - cloud-support
 
 type: text
+max_length_in_words: 10
 
 validations:
   - name: answer_required

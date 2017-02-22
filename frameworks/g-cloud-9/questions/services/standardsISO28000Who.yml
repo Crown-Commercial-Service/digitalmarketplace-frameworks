@@ -1,6 +1,5 @@
 name: Who accredited the ISO 28000:2007
 question: Who accredited the ISO 28000:2007 certification?
-hint: 10-word limit
 
 hidden: true
 depends:
@@ -10,6 +9,7 @@ depends:
       - cloud-software
 
 type: text
+max_length_in_words: 10
 
 validations:
   - name: answer_required

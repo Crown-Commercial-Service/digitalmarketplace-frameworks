@@ -11,7 +11,7 @@ options:
   - label: Public cloud
     value: public
   - label: Private cloud
-    value: label
+    value: private
   - label: Community cloud
     value: community
   - label: Hybrid cloud

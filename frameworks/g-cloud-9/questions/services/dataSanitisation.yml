@@ -1,4 +1,3 @@
-id: dataSanitisation
 name: Data sanitisation process
 question: Do you have a data sanitisation process?
 
@@ -6,6 +5,7 @@ depends:
   - "on": lot
     being:
       - cloud-hosting
+      - cloud-software
 followup:
   dataSanitisationType:
     - true

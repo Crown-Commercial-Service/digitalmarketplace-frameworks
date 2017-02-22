@@ -16,6 +16,6 @@ options:
   - label: Real-time dashboards
     value: real_time
   - label: Regular reports
-    value: regular_reporting
+    value: regular_reports
   - label: Reports on request
     value: on_request

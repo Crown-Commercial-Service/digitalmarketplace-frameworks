@@ -1,5 +1,6 @@
 name: PCI DSS accreditation date
 question: When was the certification accredited?
+hint: eg 31/12/2016
 
 hidden: true
 depends:
@@ -14,4 +15,4 @@ validations:
   - name: answer_required
     message: You need to answer this question.
   - name: under_character_limit
-    message: Your description must be no more than 50 characters.
+    message: Your accreditation date must be no more than 50 characters.

@@ -14,8 +14,8 @@ options:
   - label: iOS
     value: ios
   - label: Linux or Unix
-    value: linux
-  - label: MacOS
+    value: linux_or_unix
+  - label: macOS
     value: macos
   - label: Windows
     value: windows

@@ -165,8 +165,7 @@
     - datacentreSecurityStandards
     - multiqPenetrationTesting
     - multiqProtectionOfDataAtRest
-    - multiqDataSanitisationHosting
-    - multiqDataSanitisationSoftware
+    - multiqDataSanitisation
     - equipmentDisposalApproach
 
 - name: Availability and resilience
