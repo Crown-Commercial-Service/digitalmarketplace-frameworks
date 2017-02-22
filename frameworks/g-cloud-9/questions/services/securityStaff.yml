@@ -5,6 +5,9 @@ depends:
   - "on": lot
     being:
       - cloud-support
+followup:
+  securityStaffClearances:
+    - true
 
 type: boolean
 

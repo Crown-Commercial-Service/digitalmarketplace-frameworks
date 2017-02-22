@@ -1,10 +1,13 @@
-name: Security testing service
-question: Do you provide security testing?
+name: Scaling available
+question: Does your service scale?
 
 depends:
   - "on": lot
     being:
-      - cloud-support
+      - cloud-hosting
+followup:
+  scalingType:
+    - true
 
 type: boolean
 

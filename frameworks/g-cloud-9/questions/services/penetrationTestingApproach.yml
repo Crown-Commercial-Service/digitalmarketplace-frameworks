@@ -10,9 +10,9 @@ depends:
 
 type: radios
 options:
-  - label: ’IT Health Check’ performed by a CHECK service provider
+  - label: ‘IT Health Check’ performed by a CHECK service provider
     value: it_health_check_check_provider
-  - label: ’IT Health Check’ performed by a Tigerscheme qualified provider or a CREST-approved service provider
+  - label: ‘IT Health Check’ performed by a Tigerscheme qualified provider or a CREST-approved service provider
     value: it_health_check_tigerscheme_or_crest_provider
   - label: Another external penetration testing organisation
     value: other_penetration_testing_organisation

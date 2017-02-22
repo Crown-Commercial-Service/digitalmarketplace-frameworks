@@ -1,0 +1,12 @@
+name: Staff with clearance
+question: Staff with clearance
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: multiquestion
+questions:
+  - securityStaff
+  - securityStaffClearances

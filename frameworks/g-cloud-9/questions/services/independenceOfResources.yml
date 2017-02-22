@@ -1,10 +1,10 @@
-id: scalingIndependence
 name: Independence of resources
 question: How do you guarantee users aren’t affected by the demand other users are placing on your service?
 
 depends:
   - "on": lot
     being:
+      - cloud-hosting
       - cloud-software
 
 type: textbox_large

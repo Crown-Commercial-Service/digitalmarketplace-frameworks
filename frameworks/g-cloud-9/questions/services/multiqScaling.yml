@@ -1,12 +1,12 @@
-id: multiqScaling
 name: Scaling
 question: Scaling
 
 depends:
   - "on": lot
     being:
-      - cloud-software
+      - cloud-hosting
 
 type: multiquestion
 questions:
-  - scalingSoftwareIndependence
+  - scaling
+  - scalingType

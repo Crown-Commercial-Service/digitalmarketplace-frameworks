@@ -1,17 +1,12 @@
-id: scaling
-name: Scaling available
-question: Does your service scale?
+name: Usage notifications
+question: Do you notify users about if usage nears service limits?
 
 depends:
   - "on": lot
     being:
       - cloud-hosting
 followup:
-  scalingType:
-    - true
-  scalingIndependence:
-    - true
-  scalingNotifications:
+  usageNotificationsHow:
     - true
 
 type: boolean

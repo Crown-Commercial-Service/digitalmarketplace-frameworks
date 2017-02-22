@@ -3,6 +3,7 @@ question: What formats do you provide documentation in?
 question_advice: >
   Read about the [open standard requirements for Government documents](https://www.gov.uk/government/publications/open-standards-for-government/viewing-government-documents).
 
+hidden: true
 depends:
   - "on": lot
     being:

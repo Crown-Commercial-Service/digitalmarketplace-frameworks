@@ -43,12 +43,6 @@
   questions:
     - multiqQAAndTesting
 
-- name: Security testing
-  editable: false
-  edit_questions: true
-  questions:
-    - multiqSecurityTesting
-
 - name: Training
   editable: false
   edit_questions: true
@@ -112,8 +106,9 @@
   editable: false
   edit_questions: true
   questions:
-    - multiqScalingHosting
-    - multiqScalingSoftware
+    - multiqScaling
+    - independenceOfResources
+    - multiqUsageNotifications
 
 - name: Backups and recovery
   editable: false
@@ -232,8 +227,7 @@
   editable: false
   edit_questions: true
   questions:
-    - securityStaff
-    - securityStaffClearances
+    - multiqSecurityStaff
 
 - name: Operational security
   editable: false
