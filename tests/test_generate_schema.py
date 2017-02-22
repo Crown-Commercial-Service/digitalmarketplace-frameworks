@@ -62,8 +62,11 @@ def checkboxes():
 
 
 @st.composite
-def nested_checkboxes(draw, options_list_strategy=None, optional_keys=st.lists(st.sampled_from(['value', 'description']))):
-    option = { 'label':  st.text() }
+def nested_checkboxes(draw, options_list_strategy=None,
+                      optional_keys=st.lists(st.sampled_from(['value', 'description']))):
+    option = {
+        'label':  st.text()
+    }
     for k in draw(optional_keys):
         option[k] = st.text()
 
@@ -81,6 +84,7 @@ def nested_checkboxes_list():
         st.lists(nested_checkboxes()),
         create_options_with_children
     )
+
 
 def test_drop_non_schema_questions():
     questions = load_questions('services', 'g-cloud-7', 'scs')
