@@ -6,14 +6,14 @@ depends:
     being:
       - cloud-hosting
       - cloud-software
-
-type: boolean
-
+      - cloud-support
 followup:
   freeVersionDescription:
     - True
   freeVersionLink:
     - True
+
+type: boolean
 
 validations:
   - name: answer_required

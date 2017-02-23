@@ -5,7 +5,13 @@ depends:
   - "on": lot
     being:
       - cloud-hosting
-      - cloud-software
+followup:
+  webInterfaceUsage:
+    - true
+  webInterfaceAccessibility:
+    - true
+  webInterfaceAccessibilityTesting:
+    - true
 
 type: boolean
 

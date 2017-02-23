@@ -5,6 +5,11 @@ depends:
   - "on": lot
     being:
       - cloud-support
+followup:
+  trainingDescription:
+    - true
+  trainingServiceSpecific:
+    - true
 
 type: boolean
 

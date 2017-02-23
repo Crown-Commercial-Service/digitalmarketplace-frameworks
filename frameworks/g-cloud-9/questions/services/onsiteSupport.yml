@@ -10,8 +10,11 @@ depends:
 type: radios
 options:
   - label: "Yes"
+    value: "yes"
   - label: Yes, at extra cost
+    value: yes_extra_cost
   - label: "No"
+    value: "no"
 
 validations:
   - name: answer_required

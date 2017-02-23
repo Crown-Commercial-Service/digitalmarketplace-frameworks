@@ -5,6 +5,7 @@ hint: >
   Refer to the G-Cloud guidance for more information on what to include. This document will not be indexed by search
   on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)
 
+optional: true
 depends:
   - "on": lot
     being:

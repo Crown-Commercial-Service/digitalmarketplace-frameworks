@@ -12,6 +12,5 @@ type: multiquestion
 questions:
   - emailOrTicketingSupport
   - emailOrTicketingSupportResponseTimes
-  - emailOrTicketingSupportTicketing
   - emailOrTicketingSupportPriority
   - emailOrTicketingSupportAccessibility

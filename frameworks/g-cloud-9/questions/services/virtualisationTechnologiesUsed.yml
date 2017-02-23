@@ -1,21 +1,32 @@
 name: Virtualisation technologies used
 question: What virtualisation technologies are used?
 
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-hosting
       - cloud-software
+followup:
+  virtualisationTechnologiesUsedOther:
+    - other
 
 type: radios
 options:
   - label: VMware
+    value: vmware
   - label: Hyper-V
+    value: hyperv
   - label: Citrix XenServer
+    value: citrix
   - label: Oracle VM
+    value: oracle
   - label: Red Hat Virtualisation
+    value: redhat
   - label: KVM hypervisor
+    value: kvm
   - label: Other
+    value: other
 
 validations:
   - name: answer_required

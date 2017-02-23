@@ -1,6 +1,7 @@
 name: Compatible operating systems
 question: Which operation systems does your service work with?
 
+hidden: true
 depends:
   - "on": lot
     being:
@@ -8,13 +9,20 @@ depends:
 
 type: checkboxes
 options:
-  - label: iOS
-  - label: Linux or Unix
-  - label: MacOS
   - label: Android
+    value: android
+  - label: iOS
+    value: ios
+  - label: Linux or Unix
+    value: linux_or_unix
+  - label: macOS
+    value: macos
   - label: Windows
+    value: windows
   - label: Windows Phone
+    value: windows_phone
   - label: Other
+    value: other
 
 validations:
   - name: answer_required

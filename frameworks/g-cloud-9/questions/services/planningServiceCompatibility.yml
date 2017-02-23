@@ -1,10 +1,14 @@
 name: Planning for specific services
 question: Is your planning service for specific hosting or software services?
 
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-support
+followup:
+  planningServiceCompatibilityList:
+    - true
 
 type: boolean
 

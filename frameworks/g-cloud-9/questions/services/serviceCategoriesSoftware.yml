@@ -3,7 +3,6 @@ name: Service categories
 question: Which categories does your service fit under?
 hint: You can choose multiple categories.
 
-optional: true
 depends:
   - "on": lot
     being:

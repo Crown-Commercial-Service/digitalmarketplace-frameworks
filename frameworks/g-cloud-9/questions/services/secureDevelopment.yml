@@ -3,8 +3,8 @@ question: How does your organisation demonstrate that it adheres to best practic
 question_advice: >
   [CESG CPA Build Standard](https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions),
   [ISO/IEC 27034](https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions),
-  [ISO/IEC 27001](https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions], or
-  (CSA CCM v3.0)[https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions]
+  [ISO/IEC 27001](https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions), or
+  [CSA CCM v3.0](https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions)
 
 depends:
   - "on": lot

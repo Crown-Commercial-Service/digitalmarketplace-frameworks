@@ -1,10 +1,15 @@
 name: Services supported
 question: Which services do you support?
 
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-support
+followup:
+  ongoingSupportServicesList:
+    - supplier
+    - third_party
 
 type: checkboxes
 options:

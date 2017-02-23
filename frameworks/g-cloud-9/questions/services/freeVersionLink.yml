@@ -2,11 +2,13 @@ name: Free version link
 question: Provide a link to the free version of your service.
 
 optional: true
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-hosting
       - cloud-software
+      - cloud-support
 
 type: text
 

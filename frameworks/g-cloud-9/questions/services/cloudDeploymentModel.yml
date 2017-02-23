@@ -9,9 +9,13 @@ depends:
 type: radios
 options:
   - label: Public cloud
-  - label: Community cloud
+    value: public
   - label: Private cloud
+    value: private
+  - label: Community cloud
+    value: community
   - label: Hybrid cloud
+    value: hybrid
 
 validations:
   - name: answer_required

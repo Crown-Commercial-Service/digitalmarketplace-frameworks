@@ -2,6 +2,7 @@ name: Data export formats
 question: What other formats can users export their data in?
 
 optional: true
+hidden: true
 depends:
   - "on": lot
     being:

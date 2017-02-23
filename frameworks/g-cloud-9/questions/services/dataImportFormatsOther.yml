@@ -2,6 +2,7 @@ name: Other data import formats
 question: What other formats can users upload their data in?
 
 optional: true
+hidden: true
 depends:
   - "on": lot
     being:

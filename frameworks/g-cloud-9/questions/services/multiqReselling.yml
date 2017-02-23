@@ -1,0 +1,14 @@
+name: Supplier type
+question: Supplier type
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: multiquestion
+questions:
+  - resellingType
+  - resellingOrganisations

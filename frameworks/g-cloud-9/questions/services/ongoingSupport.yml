@@ -11,6 +11,11 @@ depends:
   - "on": lot
     being:
       - cloud-support
+followup:
+  ongoingSupportDescription:
+    - true
+  ongoingSupportServices:
+    - true
 
 type: boolean
 

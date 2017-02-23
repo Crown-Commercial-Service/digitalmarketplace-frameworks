@@ -6,6 +6,9 @@ depends:
     being:
       - cloud-hosting
       - cloud-software
+followup:
+  publicSectorNetworksTypes:
+    - true
 
 type: boolean
 

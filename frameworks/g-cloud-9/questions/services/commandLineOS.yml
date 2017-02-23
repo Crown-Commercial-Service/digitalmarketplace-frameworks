@@ -1,6 +1,7 @@
 name: Command line interface compatibility
 question: Which operating systems does your command line interface work with?
 
+hidden: true
 depends:
   - "on": lot
     being:
@@ -9,9 +10,13 @@ depends:
 type: checkboxes
 options:
   - label: Linux or Unix
+    value: linux_or_unix
   - label: Windows
-  - label: MacOS
+    value: windows
+  - label: macOS
+    value: macos
   - label: Other
+    value: other
 
 validations:
   - name: answer_required

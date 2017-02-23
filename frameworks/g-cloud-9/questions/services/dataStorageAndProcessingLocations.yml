@@ -1,6 +1,7 @@
 name: Data storage and processing locations
 question: Where is data stored and processed?
 
+hidden: true
 depends:
   - "on": lot
     being:
@@ -10,9 +11,14 @@ depends:
 type: checkboxes
 options:
   - label: United Kingdom
+    value: uk
   - label: European Economic Area (EEA)
+    value: eea
   - label: EU-US Privacy Shield agreement locations
+    value: privacy_shield
   - label: Other locations
+    value: other
+
 
 validations:
   - name: answer_required

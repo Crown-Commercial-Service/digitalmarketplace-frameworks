@@ -1,0 +1,25 @@
+id: metricsWhat
+name: Infrastructure or application metrics
+question: What infrastructure or application metrics do you provide?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  metricsWhatOther:
+    - other
+
+type: checkboxes
+options:
+  - label: CPU
+    value: cpu
+  - label: Disk
+    value: disk
+  - label: Memory
+    value: memory
+  - label: Network
+    value: network
+  - label: Other
+    value: other

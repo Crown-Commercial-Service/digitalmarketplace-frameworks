@@ -7,12 +7,25 @@ depends:
       - cloud-hosting
       - cloud-software
       - cloud-support
+followup:
+  webChatSupportAvailability:
+    - "yes"
+    - yes_extra_cost
+  webChatSupportAccessibility:
+    - "yes"
+    - yes_extra_cost
+  webChatSupportAccessibilityTesting:
+    - "yes"
+    - yes_extra_cost
 
 type: radios
 options:
   - label: "Yes"
+    value: "yes"
   - label: Yes, at an extra cost
+    value: yes_extra_cost
   - label: "No"
+    value: "no"
 
 validations:
   - name: answer_required

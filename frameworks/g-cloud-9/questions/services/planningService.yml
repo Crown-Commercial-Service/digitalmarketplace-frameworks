@@ -6,6 +6,11 @@ depends:
   - "on": lot
     being:
       - cloud-support
+followup:
+  planningServiceDescription:
+    - true
+  planningServiceCompatibility:
+    - true
 
 type: boolean
 

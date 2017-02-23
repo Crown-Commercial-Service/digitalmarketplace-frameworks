@@ -1,3 +1,4 @@
+id: multiqUserAuthentication
 name: User authentication
 question: User authentication
 
@@ -9,5 +10,5 @@ depends:
 type: multiquestion
 questions:
   - userAuthenticationNeeded
-  - userAuthentication
+  - userAuthenticationSoftware
   - userAuthenticationDescription

@@ -1,17 +1,19 @@
 id: dataSanitisationType
 name: Data sanitisation type
-question: Do you have a data sanitisation process?
+question: What type of data sanitisation process do you have?
 
+hidden: true
 depends:
   - "on": lot
     being:
       - cloud-software
 
-type: radios
+type: checkboxes
 options:
   - label: Explicit overwriting of storage before reallocation
-  - label: Assurances media can’t be directly ’addressed’
-  - label: No data sanitisation process
+    value: overwriting
+  - label: Deleted data can’t be directly accessed
+    value: no_access
 
 validations:
   - name: answer_required

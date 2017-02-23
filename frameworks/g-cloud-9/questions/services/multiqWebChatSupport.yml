@@ -13,5 +13,5 @@ questions:
   - webChatSupport
   - webChatSupportAvailability
   - webChatSupportAccessibility
-  - webChatAccessibilityDescription
-  - webChatAccessibilityTesting
+  - webChatSupportAccessibilityDescription
+  - webChatSupportAccessibilityTesting

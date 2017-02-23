@@ -1,6 +1,7 @@
 name: Other documentation formats
 question: What other formats do you provide documentation in?
 
+hidden: true
 depends:
   - "on": lot
     being:

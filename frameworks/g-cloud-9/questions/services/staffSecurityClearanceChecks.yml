@@ -10,8 +10,11 @@ depends:
 type: radios
 options:
   - label: Staff screening performed with conforms to BS7858:2012
+    value: "staff_screening_to_bs7858_2012"
   - label: Staff screening performed but doesn’t conform with BS7858:2012
+    value: "staff_screening_not_bs7858_2012"
   - label: Staff screening not performed
+    value: none
 
 validations:
   - name: answer_required

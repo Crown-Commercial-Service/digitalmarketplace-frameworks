@@ -6,6 +6,11 @@ depends:
     being:
       - cloud-hosting
       - cloud-software
+followup:
+  securityGovernanceStandards:
+    - true
+  securityGovernanceApproach:
+    - false
 
 type: boolean
 

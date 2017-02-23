@@ -1,6 +1,7 @@
 name: API Sandbox
 question: Is there a sandbox or test environment for your API?
 
+hidden: true
 depends:
   - "on": lot
     being:
