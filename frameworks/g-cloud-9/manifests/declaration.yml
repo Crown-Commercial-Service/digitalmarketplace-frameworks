@@ -201,8 +201,8 @@
     - subcontracting
 -
 
-  name: Organisation’s size
-  slug: organisations-size
+  name: Organisation size
+  slug: organisation-size
   editable: True
   prefill: True
   description: |
