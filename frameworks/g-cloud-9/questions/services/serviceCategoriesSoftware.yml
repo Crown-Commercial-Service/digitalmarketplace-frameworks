@@ -1,12 +1,10 @@
+depends:
+- being: [cloud-software]
+  'on': lot
+hint: You can choose multiple categories.
 id: serviceCategories
 name: Service categories
-question: Which categories does your service fit under?
-hint: You can choose multiple categories.
-depends:
-  - "on": lot
-    being:
-      - cloud-software
-type: checkbox_tree
+number_of_items: 10
 options:
 - label: Accounting and finance
   options:
@@ -34,10 +32,21 @@ options:
   - {label: Tax management}
 - label: Analytics and business intelligence
   options:
+  - {label: Analytics}
   - {label: Business intelligence}
   - {label: 'Data mining, analysis tools and analytics'}
   - {label: Data visualisation}
   - {label: Reporting and dashboards}
+- label: Application security
+  options:
+  - {label: Anti-spam and CAPTCHA}
+  - {label: Audit tools}
+  - {label: 'Authentication, identity and access management'}
+  - {label: Encryption}
+  - {label: Log management}
+  - {label: Remote access}
+  - {label: Secure content and threat management}
+  - {label: Security risk management}
 - label: Collaborative working
   options:
   - {label: Blogging}
@@ -66,6 +75,7 @@ options:
   - {label: Accessibility checking}
   - {label: Blogging}
   - {label: Content management system (CMS)}
+  - {label: Design}
   - {label: Diagram and wireframe}
   - {label: Digital publishing}
   - {label: Online forums}
@@ -168,13 +178,13 @@ options:
   - {label: Online meetings}
   - {label: Password management}
   - {label: Performance management}
+  - {label: Post (mailing services)}
   - {label: Presentations and slides (office productivity)}
   - {label: Printing}
   - {label: Security}
   - {label: SMS}
   - {label: Spreadsheets (office productivity)}
   - {label: Systems monitoring}
-  - {label: Post (mailing services)}
   - {label: Telecoms expense management}
   - {label: Telephony (including VOIP and SIP connectivity)}
   - {label: Unified communications}
@@ -208,16 +218,16 @@ options:
   - {label: Display advertising}
   - {label: Email marketing}
   - {label: Forms and surveys}
+  - {label: Marketing}
   - {label: Marketing analytics}
   - {label: Marketing automation}
   - {label: Marketing data}
   - {label: Mobile marketing}
   - {label: Online display advertising}
-  - {label: Search marketing}
-  - {label: Social marketing}
   - {label: Personalisation and behavioral targeting}
   - {label: Public relations}
   - {label: Search marketing}
+  - {label: Social marketing}
   - {label: Social media marketing}
   - {label: Social media monitoring}
   - {label: Webinars}
@@ -228,9 +238,8 @@ options:
   - {label: Business performance management}
   - {label: Business process management (BPM)}
   - {label: Business process modelling (BPM)}
-  - {label: Workflow}
-  - {label: 'Carbon, energy and sustainability management'}
   - {label: Business transformation and organisational change management}
+  - {label: 'Carbon, energy and sustainability management'}
   - {label: Complex event processing}
   - {label: Contract management}
   - {label: Digital asset management}
@@ -240,12 +249,14 @@ options:
   - {label: Field service management}
   - {label: 'Governance, risk management and compliance (GRC)'}
   - {label: Inventory management}
+  - {label: Operations management}
   - {label: Order management}
   - {label: Procurement}
   - {label: Product lifecycle management}
   - {label: Scheduling and appointments}
   - {label: Supply chain management}
   - {label: Visitor management}
+  - {label: Workflow}
 - label: Project management and planning
   options:
   - {label: Agile project management and issue tracking}
@@ -260,6 +271,7 @@ options:
   - {label: eCommerce and shopping cart}
   - {label: Payment gateway}
   - {label: Recurring billing and subscription management}
+  - {label: Sales}
   - {label: Sales and operations planning}
   - {label: Sales intelligence tracking}
   - {label: Sales performance management}
@@ -271,6 +283,7 @@ options:
   - {label: Campus management}
   - {label: Classroom management}
   - {label: eLearning}
+  - {label: Examination or applicant testing}
   - {label: Library automation}
   - {label: Online courses}
   - {label: Online grading}
@@ -278,25 +291,14 @@ options:
   - {label: School administration}
   - {label: Student management}
   - {label: Synchronous learning}
-  - {label: Examination or applicant testing}
-- label: Security
-  options:
-  - {label: Anti-spam and CAPTCHA}
-  - {label: Audit}
-  - {label: 'Authentication, identity and access management'}
-  - {label: Encryption}
-  - {label: Log management}
-  - {label: Remote access}
-  - {label: Secure content and threat management}
-  - {label: Security risk management}
-- label: Software development
+- label: Software development tools
   options:
   - {label: Accessibility}
   - {label: Agile project management and issue tracking}
-  - {label: Application development}
   - {label: Bug tracking}
-  - {label: Build tool}
+  - {label: Build tools}
   - {label: Code generation}
+  - {label: Development tools}
   - {label: Form building}
   - {label: Integrated development environment (IDE)}
   - {label: Mobile development}
@@ -317,10 +319,12 @@ options:
   - {label: Inventory management}
   - {label: Marine}
   - {label: Shipping}
+  - {label: Transport and logistics}
   - {label: Transportation dispatch}
   - {label: Trucking solutions}
   - {label: Warehouse management}
-number_of_items: 10
+question: Which categories does your service fit under?
+type: checkbox_tree
 validations:
-  - name: max_items_limit
-    message: No more than 10 categories can be selected, including top-level categories
+- {message: 'No more than 10 categories can be selected, including top-level categories',
+  name: max_items_limit}
