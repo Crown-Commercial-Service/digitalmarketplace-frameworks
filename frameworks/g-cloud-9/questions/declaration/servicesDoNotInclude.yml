@@ -1,5 +1,6 @@
-question: |
-  Do you confirm that the services you are submitting to G-Cloud 9 do not include
+name: Services in scope for G-Cloud
+question: >
+  Do you confirm that the services you’re submitting to G-Cloud 9 do not include:
    - services that aren’t cloud-related
    - recruitment services or contractor services (contingent labour)
    - ‘colocation’ services, for example equipment the buyer rents from a supplier’s datacentre 
