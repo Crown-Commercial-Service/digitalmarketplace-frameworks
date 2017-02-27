@@ -1,5 +1,6 @@
-question: |
-  Depending on the lots you’re submitting services to, please confirm that the services you are submitting to G-Cloud 9 have or support:
+name: Services are cloud-related
+question: >
+  Depending on the lots you’re submitting services to, please confirm that the services you’re submitting to G-Cloud 9 have or support:
   
   - on-demand self-service. Your cloud services must be automatically available without needing interaction between the supplier and the buyer, for example server time or network storage. (Lot 1 - cloud software and lot 2 - cloud hosting.)
   - broad network access. Your cloud services must be easily accessible over the network and across a wide range of platforms, for example mobile phones, tablets, laptops and workstations. (Lot 1 - cloud software and lot 2 - cloud hosting.)
