@@ -1,10 +1,10 @@
 name: Approach to secure software development best practice
 question: How does your organisation demonstrate that it adheres to best practice in secure software development?
 question_advice: >
-  [CESG CPA Build Standard](https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions),
-  [ISO/IEC 27034](https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions),
-  [ISO/IEC 27001](https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions), or
-  [CSA CCM v3.0](https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions)
+  <a href="https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions" target="_blank">CESG CPA Build Standard</a>,
+  <a href="https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions" target="_blank">ISO/IEC 27034</a>,
+  <a href="https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions" target="_blank">ISO/IEC 27001</a>, or
+  <a href="https://www.ncsc.gov.uk/guidance/cloud-security-standards-and-definitions" target="_blank">CSA CCM v3.0</a>
 
 depends:
   - "on": lot

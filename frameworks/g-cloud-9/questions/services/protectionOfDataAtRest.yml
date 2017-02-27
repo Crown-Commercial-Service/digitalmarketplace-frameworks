@@ -1,8 +1,8 @@
 name: Protection of data at rest
 question: How do you protect data at rest?
 question_advice: >
-  Read about the different approaches to [protecting data at
-  rest](https://www.gov.uk/government/publications/implementing-the-cloud-security-principles/implementing-the-cloud-security-principles#data-at-rest-protection).
+  Read about the different approaches to <a href="https://www.gov.uk/government/publications/implementing-the-cloud-security-principles/implementing-the-cloud-security-principles#data-at-rest-protection" target="_blank">protecting data at
+  rest</a>.
 
 depends:
   - "on": lot

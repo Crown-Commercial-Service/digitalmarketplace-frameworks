@@ -2,7 +2,7 @@ name: Web interface accessibility description
 question: Describe how your web interface is accessible.
 question_advice: >
   Include details of what users can and can’t do.
-  [EN 301 549 9: Web](http://mandate376.standards.eu/standard/technical-requirements/#9) includes the features and
+  <a href="http://mandate376.standards.eu/standard/technical-requirements/#9" target="_blank">EN 301 549 9: Web</a> includes the features and
   constraints you should describe.
 
 hidden: true
