@@ -4,7 +4,7 @@ depends:
 hint: You can choose multiple categories.
 id: serviceCategories
 name: Service categories
-number_of_items: 10
+number_of_items: 20
 options:
 - label: Accounting and finance
   options:
@@ -326,5 +326,5 @@ options:
 question: Which categories does your service fit under?
 type: checkbox_tree
 validations:
-- {message: 'No more than 10 categories can be selected, including top-level categories',
+- {message: 'No more than 20 categories can be selected, including top-level categories',
   name: max_items_limit}

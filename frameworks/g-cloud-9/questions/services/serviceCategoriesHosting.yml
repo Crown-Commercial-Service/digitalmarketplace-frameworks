@@ -4,7 +4,7 @@ depends:
 hint: You can choose multiple categories.
 id: serviceCategories
 name: Service categories
-number_of_items: 20
+number_of_items: 10
 options:
 - {label: 'Archiving, backup and disaster recovery'}
 - {label: Compute and application hosting}
@@ -31,4 +31,4 @@ options:
 question: Which categories does your service fit under?
 type: checkbox_tree
 validations:
-- {message: No more than 20 categories can be selected, name: max_items_limit}
+- {message: No more than 10 categories can be selected, name: max_items_limit}
