@@ -95,27 +95,6 @@
     - multiqCommandLineInterface
     - multiqCustomisation
 
-- name: Analytics
-  editable: false
-  edit_questions: true
-  questions:
-    - multiqMetricsHosting
-    - multiqMetricsSoftware
-
-- name: Scaling
-  editable: false
-  edit_questions: true
-  questions:
-    - multiqScaling
-    - independenceOfResources
-    - multiqUsageNotifications
-
-- name: Backups and recovery
-  editable: false
-  edit_questions: true
-  questions:
-    - multiqServiceBacksUp
-
 - name: Onboarding and offboarding
   editable: false
   edit_questions: true
@@ -133,17 +112,32 @@
     - multiqDataExportFormats
     - multiqDataImportFormats
 
+- name: Backups and recovery
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqServiceBacksUp
+
+- name: Analytics
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqMetricsHosting
+    - multiqMetricsSoftware
+
+- name: Scaling
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqScaling
+    - independenceOfResources
+    - multiqUsageNotifications
+
 - name: Public sector networks
   editable: false
   edit_questions: true
   questions:
     - multiqPublicSectorNetworks
-
-- name: Energy efficiency
-  editable: false
-  edit_questions: true
-  questions:
-    - energyEfficientDatacentres
 
 - name: Data-in-transit protection
   editable: false
@@ -177,6 +171,45 @@
   questions:
     - multiqVirtualisation
 
+- name: Governance
+  editable: false
+  edit_questions: true
+  questions:
+    - boardLevelServiceSecurity
+    - multiqSecurityGovernance
+    - informationSecurityPoliciesAndProcesses
+
+- name: Operational security
+  editable: false
+  edit_questions: true
+  questions:
+    - configurationAndChangeManagementType
+    - configurationAndChangeManagementProcesses
+    - vulnerabilityManagementType
+    - vulnerabilityManagementApproach
+    - protectiveMonitoringType
+    - protectiveMonitoringApproach
+    - incidentManagementType
+    - incidentManagementApproach
+
+- name: Security
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqSecurityStaff
+
+- name: Personnel security
+  editable: false
+  edit_questions: true
+  questions:
+    - staffSecurityClearanceChecks
+
+- name: Secure development
+  editable: false
+  edit_questions: true
+  questions:
+    - secureDevelopment
+
 - name: Identity and authentication
   editable: false
   edit_questions: true
@@ -196,14 +229,6 @@
     - multiqAccessSuppliersAudit
     - howLongSystemLogsStored
 
-- name: Pricing
-  editable: false
-  edit_questions: true
-  questions:
-    - price
-    - educationPricing
-    - multiqFreeVersion
-
 - name: Standards and certifications
   editable: false
   edit_questions: true
@@ -215,44 +240,19 @@
     - multiqStandardsPCI
     - standardsOther
 
-- name: Governance
+- name: Energy efficiency
   editable: false
   edit_questions: true
   questions:
-    - boardLevelServiceSecurity
-    - multiqSecurityGovernance
-    - informationSecurityPoliciesAndProcesses
-
-- name: Security
+    - energyEfficientDatacentres
+    
+- name: Pricing
   editable: false
   edit_questions: true
   questions:
-    - multiqSecurityStaff
-
-- name: Operational security
-  editable: false
-  edit_questions: true
-  questions:
-    - configurationAndChangeManagementType
-    - configurationAndChangeManagementProcesses
-    - vulnerabilityManagementType
-    - vulnerabilityManagementApproach
-    - protectiveMonitoringType
-    - protectiveMonitoringApproach
-    - incidentManagementType
-    - incidentManagementApproach
-
-- name: Personnel security
-  editable: false
-  edit_questions: true
-  questions:
-    - staffSecurityClearanceChecks
-
-- name: Secure development
-  editable: false
-  edit_questions: true
-  questions:
-    - secureDevelopment
+    - price
+    - educationPricing
+    - multiqFreeVersion
 
 - name: Documents
   editable: false
