@@ -1,10 +1,12 @@
 name: Services in scope for G-Cloud
 question: >
   Do you confirm that the services you’re submitting to G-Cloud 9 do not include:
-   - services that aren’t cloud-related
-   - recruitment services or contractor services (contingent labour)
-   - ‘colocation’ services, for example equipment the buyer rents from a supplier’s datacentre 
-   - hardware
-   - bespoke development
+
+    - services that aren’t cloud-related
+    - recruitment or contractor (contingent labour) services or services that are inside IR35
+    - ‘colocation’ services, for example equipment the buyer rents from a supplier’s datacentre
+    - hardware
+    - bespoke design or development
+    - any cyber security services that could be assured by the following National Cyber Security Centre (NCSC) schemes: Cyber Security Consultancy, CHECK, Cyber Incident Response (CIR), Tailored Assurance Service
 
 type: boolean

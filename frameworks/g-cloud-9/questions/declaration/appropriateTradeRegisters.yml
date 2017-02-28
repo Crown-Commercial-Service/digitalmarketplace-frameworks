@@ -1,3 +1,4 @@
+name: Registration with appropriate trade registers
 question: If your business was not established in the UK, is it registered with the appropriate professional or trade register(s) in the EU member state where it’s established?
 type: boolean
 hint: >
@@ -7,5 +8,3 @@ validations:
     name: answer_required
     message: >
       You need to answer this question because you answered ‘no’ to [[establishedInTheUK]].
-      
-hidden: true
