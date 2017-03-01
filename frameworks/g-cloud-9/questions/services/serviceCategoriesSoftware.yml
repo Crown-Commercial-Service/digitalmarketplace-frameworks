@@ -8,7 +8,6 @@ number_of_items: 20
 options:
 - label: Accounting and finance
   options:
-  - {label: Accounting}
   - {label: Accounts payable}
   - {label: Accounts receivable}
   - {label: Asset management}
@@ -30,6 +29,7 @@ options:
   - {label: Purchasing}
   - {label: Revenue cycle management}
   - {label: Tax management}
+  - {label: Accounting and finance - other}
 - label: Analytics and business intelligence
   options:
   - {label: Analytics}
@@ -89,13 +89,13 @@ options:
   - {label: Constituent engagement}
   - {label: Contact management}
   - {label: Customer helpdesk (service desk)}
-  - {label: Customer relationship management (CRM)}
   - {label: Customer service and support}
   - {label: Feedback and reviews management}
   - {label: Forms and surveys}
   - {label: Live chat}
   - {label: Partner relationship management (PRM)}
   - {label: Virtual agents}
+  - {label: Customer relationship management (CRM) - other}
 - label: Electronic document and records management (EDRM)
   options:
   - {label: 'Backup, recovery and archival'}
@@ -191,6 +191,7 @@ options:
   - {label: Video conferencing}
   - {label: Virtual private network (VPN)}
   - {label: Word processing (office productivity)}
+  - {label: Information and communications technology (ICT) - other}
 - label: Legal and enforcement
   options:
   - {label: Electronic discovery (legal)}
@@ -201,11 +202,6 @@ options:
   - {label: Legal case management}
   - {label: Legal document management}
   - {label: Trust accounting}
-- label: Libraries
-  options:
-  - {label: eLearning}
-  - {label: Library automation}
-  - {label: Library management}
 - label: Marketing
   options:
   - {label: Advertising}
@@ -218,7 +214,6 @@ options:
   - {label: Display advertising}
   - {label: Email marketing}
   - {label: Forms and surveys}
-  - {label: Marketing}
   - {label: Marketing analytics}
   - {label: Marketing automation}
   - {label: Marketing data}
@@ -231,9 +226,11 @@ options:
   - {label: Social media marketing}
   - {label: Social media monitoring}
   - {label: Webinars}
+  - {label: Marketing - other}
 - label: Operations management
   options:
   - {label: Applications}
+  - {label: Building information modelling (BIM)}
   - {label: Business management}
   - {label: Business performance management}
   - {label: Business process management (BPM)}
@@ -249,7 +246,6 @@ options:
   - {label: Field service management}
   - {label: 'Governance, risk management and compliance (GRC)'}
   - {label: Inventory management}
-  - {label: Operations management}
   - {label: Order management}
   - {label: Procurement}
   - {label: Product lifecycle management}
@@ -257,6 +253,7 @@ options:
   - {label: Supply chain management}
   - {label: Visitor management}
   - {label: Workflow}
+  - {label: Operations management - other}
 - label: Project management and planning
   options:
   - {label: Agile project management and issue tracking}
@@ -271,11 +268,11 @@ options:
   - {label: eCommerce and shopping cart}
   - {label: Payment gateway}
   - {label: Recurring billing and subscription management}
-  - {label: Sales}
   - {label: Sales and operations planning}
   - {label: Sales intelligence tracking}
   - {label: Sales performance management}
-- label: Schools and education
+  - {label: Sales - other}
+- label: Schools, education and libraries
   options:
   - {label: Academic}
   - {label: Alumni management}
@@ -285,6 +282,7 @@ options:
   - {label: eLearning}
   - {label: Examination or applicant testing}
   - {label: Library automation}
+  - {label: Library management}
   - {label: Online courses}
   - {label: Online grading}
   - {label: School accounting}
@@ -319,10 +317,10 @@ options:
   - {label: Inventory management}
   - {label: Marine}
   - {label: Shipping}
-  - {label: Transport and logistics}
   - {label: Transportation dispatch}
   - {label: Trucking solutions}
   - {label: Warehouse management}
+  - {label: Transport and logistics - other}
 question: Which categories does your service fit under?
 type: checkbox_tree
 validations:

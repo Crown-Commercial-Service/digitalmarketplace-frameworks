@@ -62,7 +62,11 @@ if __name__ == '__main__':
     else:
         question_data = {}
 
-    question_data['options'] = sorted(primary_by_label.values())
+    question_data['options'] = sorted(primary_by_label.values(), key=lambda o: o['label'])
+    for option in question_data['options']:
+        children = option.get('options')
+        # sort with 'other' last
+        children.sort(key=lambda o: ('other' in o['label'].lower().split(), o['label'].lower()))
 
     if output_file:
         with open(output_file, 'w') as h_yaml:
