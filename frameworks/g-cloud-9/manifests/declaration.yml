@@ -79,12 +79,12 @@
     CCS can also exclude you if you are guilty of serious
     misrepresentation in providing any information referred to within
     regulations
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank">23</a>,
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank">24</a>,
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank">25</a>,
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank">26</a> or
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank">27</a>
-    of the <a href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank">Public Contracts Regulations 2015</a>
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank" rel="noopener noreferrer">23 (new tab)</a>,
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">24 (new tab)</a>,
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank" rel="noopener noreferrer">25 (new tab)</a>,
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank" rel="noopener noreferrer">26 (new tab)</a> or
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank" rel="noopener noreferrer">27 (new tab)</a>
+    of the <a href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank" rel="noopener noreferrer">Public Contracts Regulations 2015 (new tab)</a>
     or if you fail to provide any such information it requests.
   questions:
     - taxEvasion
@@ -210,7 +210,7 @@
   editable: True
   prefill: True
   description: |
-    The government <a href="https://www.gov.uk/government/news/big-opportunities-for-small-firms-government-set-to-spend-1-in-every-3-with-small-businesses" target="_blank">aims to spend £1 in every £3 with small-to-medium enterprises (SMEs)s</a> by 2020.
+    The government <a href="https://www.gov.uk/government/news/big-opportunities-for-small-firms-government-set-to-spend-1-in-every-3-with-small-businesses" target="_blank" rel="noopener noreferrer">aims to spend £1 in every £3 with small-to-medium enterprises (SMEs)s (new tab)</a> by 2020.
     
     The Crown Commercial Service will use the information you provide about the size of your company to report overall statistics about the successful suppliers on G-Cloud&nbsp;9.  
   questions:
