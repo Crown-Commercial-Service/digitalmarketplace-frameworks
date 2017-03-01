@@ -82,7 +82,8 @@ def nested_checkboxes_list():
 
     return st.recursive(
         st.lists(nested_checkboxes()),
-        create_options_with_children
+        create_options_with_children,
+        max_leaves=15
     )
 
 
@@ -240,14 +241,15 @@ def test_checkbox_tree_property(id, options, number_of_items):
 
     enum = result[id]['items']['enum']
 
-    def recursive_check(options):
-        for option in options:
-            if 'value' in option:
-                assert option['value'] in enum
-            else:
-                assert option['label'] in enum
+    def recursive_check(opts):
+        for option in opts:
             if 'options' in option:
                 recursive_check(option['options'])
+            else:
+                if 'value' in option:
+                    assert option['value'] in enum
+                else:
+                    assert option['label'] in enum
 
     recursive_check(options)
 

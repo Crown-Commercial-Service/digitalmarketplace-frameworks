@@ -157,13 +157,17 @@ def checkbox_property(question):
 
 def checkbox_tree_property(question):
     """
-    Convert a checkbox tree question into JSON Schema by flattening the tree structure
+    Convert a checkbox tree question into JSON Schema by flattening the tree structure. Only leaf
+    nodes can be selected.
     """
     def flatten(options):
         for option in options:
-            yield option
-            for option in flatten(option.get('options', [])):
+            children = option.get('options', [])
+            if not children:
                 yield option
+            else:
+                for child in flatten(children):
+                    yield child
 
     # items may not be unique, so using a set not a list
     all_items = {option.get('value', option['label']) for option in flatten(question['options'])}
