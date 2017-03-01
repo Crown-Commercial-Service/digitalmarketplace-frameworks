@@ -89,13 +89,13 @@ options:
   - {label: Constituent engagement}
   - {label: Contact management}
   - {label: Customer helpdesk (service desk)}
+  - {label: Customer relationship management (CRM)}
   - {label: Customer service and support}
   - {label: Feedback and reviews management}
   - {label: Forms and surveys}
   - {label: Live chat}
   - {label: Partner relationship management (PRM)}
   - {label: Virtual agents}
-  - {label: Customer relationship management (CRM) - other}
 - label: Electronic document and records management (EDRM)
   options:
   - {label: 'Backup, recovery and archival'}
@@ -324,5 +324,4 @@ options:
 question: Which categories does your service fit under?
 type: checkbox_tree
 validations:
-- {message: 'No more than 20 categories can be selected.',
-  name: max_items_limit}
+- {message: No more than 20 categories can be selected., name: max_items_limit}
