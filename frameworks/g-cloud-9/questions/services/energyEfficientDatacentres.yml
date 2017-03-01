@@ -1,7 +1,7 @@
 name: Energy-efficient datacentres
 question: Do your datacentres adhere to the EU code of conduct for energy-efficient datacentres?
 question_advice: >
-  Read about the [EU code of conduct for energy-efficient datacentres](http://iet.jrc.ec.europa.eu/energyefficiency/ict-codes-conduct/data-centres-energy-efficiency).
+  Read about the <a href="http://iet.jrc.ec.europa.eu/energyefficiency/ict-codes-conduct/data-centres-energy-efficiency" target="_blank">EU code of conduct for energy-efficient datacentres</a>.
 
 depends:
   - "on": lot
