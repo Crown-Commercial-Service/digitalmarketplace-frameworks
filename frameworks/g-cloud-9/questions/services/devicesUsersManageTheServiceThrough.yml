@@ -1,7 +1,7 @@
 name: Devices users manage the service through
 question: Which devices can be used to manage the service?
 question_advice: >
-  Read about the <a href="https://www.ncsc.gov.uk/guidance/systems-administration-architectures" target="_blank">systems administration models</a>
+  Read about the <a href="https://www.ncsc.gov.uk/guidance/systems-administration-architectures" target="_blank" rel="noopener noreferrer">systems administration models (new tab)</a>
   that can be used to design the administration approach for IT systems.
 
 depends:
