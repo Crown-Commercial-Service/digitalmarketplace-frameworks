@@ -66,10 +66,11 @@ if __name__ == '__main__':
     for option in question_data['options']:
         children = option.get('options')
         # sort with 'other' last
-        children.sort(key=lambda o: ('other' in o['label'].lower().split(), o['label'].lower()))
+        if children:
+            children.sort(key=lambda o: ('other' in o['label'].lower().split(), o['label'].lower()))
 
     if output_file:
         with open(output_file, 'w') as h_yaml:
-            yaml.safe_dump(question_data, h_yaml)
+            yaml.safe_dump(question_data, h_yaml, default_flow_style=False)
     else:
-        yaml.safe_dump(question_data, sys.stdout)
+        yaml.safe_dump(question_data, sys.stdout, default_flow_style=False)
