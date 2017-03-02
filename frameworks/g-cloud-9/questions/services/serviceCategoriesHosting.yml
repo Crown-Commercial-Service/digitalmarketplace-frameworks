@@ -31,4 +31,4 @@ options:
 question: Which categories does your service fit under?
 type: checkbox_tree
 validations:
-- {message: No more than 10 categories can be selected, name: max_items_limit}
+- {message: No more than 10 categories can be selected., name: max_items_limit}
