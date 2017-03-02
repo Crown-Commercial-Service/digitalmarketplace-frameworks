@@ -52,7 +52,7 @@ if __name__ == '__main__':
                     primary['options'].append(secondary)
 
     if not primary_by_label:
-        print "No data found in that lot"
+        print("No data found in that lot")
         sys.exit(1)
 
     output_file = arguments.get('<output-yaml-file>')
