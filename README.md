@@ -39,6 +39,7 @@ Question keys
     * `value` value submitted to the server when the option is selected
     * `filter_label` [currently unused] text displayed in the buyer frontend filters list instead of label
     * `description` additional text displayed after the option label (used for `lot` question)
+    * `options` for 'checkbox_tree' questions, a list of nested options, each one consisting of the same keys
 * `validations` a list of validation errors related to the field. Each validation consists of:
     * `name` the error message key that should match the validation error returned by the API (required)
     * `message` text of the message that will be displayed by the frontend app (required)
@@ -52,7 +53,10 @@ Question keys
     * `max_value` integer, sets the maximum value for number questions (default 100)
     * `integer_only` boolean, when `true` makes the number question accept only integer values instead of numbers
     * `format` sets JSON schema 'format' property for text questions (eg `email`, `uri`)
-* `number_of_items` sets the maximum number of items for list questions (and changes "Add another (N remaining)" list button, defaults to 10)
+* `number_of_items` sets the maximum number of items
+    * for list questions, the add button becomes "Add another (N remaining)", and the default is 10
+    * for checkboxes and checkbox tree questions, by default any number can be checked, but this sets a maximum number
+      enforced by schema validation in the API
 * `list_item_name` [currently unused] text displayed in the "Add another ..." button and item names by the list-entry inputs
 * `assuranceApproach` contains the name of the set of possible assurance answers for the question. Assurance answer sets are
   listed in the supplier frontend.

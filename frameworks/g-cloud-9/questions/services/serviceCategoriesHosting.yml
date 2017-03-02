@@ -1,15 +1,36 @@
+depends:
+- "on": lot
+  being:
+    - cloud-hosting
+hint: You can choose multiple categories.
 id: serviceCategories
 name: Service categories
-question: Which categories does your service fit under?
-hint: You can choose multiple categories.
-
-depends:
-  - "on": lot
-    being:
-      - cloud-hosting
-
-type: checkboxes
+number_of_items: 10
 options:
-  - label: Hosting type 1
-  - label: Hosting type 2
-  - label: Or maybe hosting doesn’t have categories at all?
+- label: Archiving, backup and disaster recovery
+- label: Compute and application hosting
+- label: Container service
+- label: Content delivery network
+- label: Data warehousing
+- label: Database - noSQL
+- label: Database - relational
+- label: Database - other
+- label: Distributed denial of service attack (DDOS) protection
+- label: Firewall
+- label: Infrastructure and platform security
+- label: Intrusion detection
+- label: Load balancing
+- label: Logging and analysis
+- label: Message queuing and processing
+- label: Networking (including network as a service)
+- label: Platform as a service (PaaS)
+- label: Protective monitoring
+- label: Search
+- label: Storage - disk (block)
+- label: Storage - object store
+- label: Storage - other
+question: Which categories does your service fit under?
+type: checkbox_tree
+validations:
+- message: No more than 10 categories can be selected.
+  name: max_items_limit

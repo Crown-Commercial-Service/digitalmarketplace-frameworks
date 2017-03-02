@@ -13,7 +13,7 @@ from dmcontent import ContentQuestion
 from hypothesis.settings import Settings
 from hypothesis import given, assume, strategies as st
 from schema_generator import text_property, uri_property, parse_question_limits, \
-    checkbox_property, number_property, multiquestion, \
+    checkbox_property, checkbox_tree_property, number_property, multiquestion, \
     build_question_properties, empty_schema, load_questions, \
     drop_non_schema_questions, radios_property, list_property, boolean_list_property, \
     boolean_property, price_string, pricing_property, generate_schema, SCHEMAS
@@ -56,9 +56,35 @@ def radios():
 
 def checkboxes():
     return st.dictionaries(
-        keys=st.sampled_from(['label', 'value']),
+        keys=st.sampled_from(['label', 'value', 'description']),
         values=st.text(),
     ).filter(lambda c: 'label' in c)
+
+
+@st.composite
+def nested_checkboxes(draw, options_list_strategy=None,
+                      optional_keys=st.lists(st.sampled_from(['value', 'description']))):
+    option = {
+        'label':  st.text()
+    }
+    for k in draw(optional_keys):
+        option[k] = st.text()
+
+    if options_list_strategy is not None:
+        option['options'] = options_list_strategy
+
+    return draw(st.fixed_dictionaries(option))
+
+
+def nested_checkboxes_list():
+    def create_options_with_children(list_strategy):
+        return st.lists(nested_checkboxes(options_list_strategy=list_strategy))
+
+    return st.recursive(
+        st.lists(nested_checkboxes()),
+        create_options_with_children,
+        max_leaves=15
+    )
 
 
 def test_drop_non_schema_questions():
@@ -193,6 +219,39 @@ def test_checkbox_property(id, options):
                for option in options if 'value' in option)
     assert all(option['label'] in enum
                for option in options if 'value' not in option)
+
+
+@given(st.text(), nested_checkboxes_list(), st.integers())
+def test_checkbox_tree_property(id, options, number_of_items):
+    assume(len(id) > 0)
+    assume(number_of_items > 0)
+
+    question = {
+        "id": id,
+        "options": options,
+        "number_of_items": number_of_items
+    }
+    result = checkbox_tree_property(question)
+    assert result[id]['minItems'] == 1
+
+    question['optional'] = True
+    result = checkbox_tree_property(question)
+    assert result[id]['minItems'] == 0
+    assert result[id]['maxItems'] == number_of_items
+
+    enum = result[id]['items']['enum']
+
+    def recursive_check(opts):
+        for option in opts:
+            if 'options' in option:
+                recursive_check(option['options'])
+            else:
+                if 'value' in option:
+                    assert option['value'] in enum
+                else:
+                    assert option['label'] in enum
+
+    recursive_check(options)
 
 
 @given(st.text(), st.lists(radios()))

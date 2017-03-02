@@ -17,7 +17,6 @@
     - serviceDescription
     - serviceCategoriesSoftware
     - serviceCategoriesHosting
-    - serviceCategoriesSupport
 
 - name: Service features and benefits
   editable: false

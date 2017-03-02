@@ -145,7 +145,7 @@ def checkbox_property(question):
         "type": "array",
         "uniqueItems": True,
         "minItems": 0 if question.get('optional') else 1,
-        "maxItems": len(question['options']),
+        "maxItems": question.get('number_of_items', len(question['options'])),
         "items": {
             "enum": [
                 option.get('value', option['label'])
@@ -153,6 +153,39 @@ def checkbox_property(question):
             ]
         }
     }}
+
+
+def checkbox_tree_property(question):
+    """
+    Convert a checkbox tree question into JSON Schema by flattening the tree structure. Only leaf
+    nodes can be selected.
+    """
+    def flatten(options):
+        for option in options:
+            children = option.get('options', [])
+            if not children:
+                yield option
+            else:
+                for child in flatten(children):
+                    yield child
+
+    # items may not be unique, so using a set not a list
+    all_items = {option.get('value', option['label']) for option in flatten(question['options'])}
+
+    schema_fragment = {question['id']: {
+        "type": "array",
+        "uniqueItems": True,
+        "minItems": 0 if question.get('optional') else 1,
+        "items": {
+            "enum": sorted(all_items)
+        }
+    }}
+
+    # add maxitems conditionally: a restriction based on the number of items in the tree isn't very useful
+    if question.get('number_of_items'):
+        schema_fragment[question['id']]['maxItems'] = question.get('number_of_items')
+
+    return schema_fragment
 
 
 def radios_property(question):
@@ -440,6 +473,7 @@ QUESTION_TYPES = {
     'pricing': pricing_property,
     'number': number_property,
     'multiquestion': multiquestion,
+    'checkbox_tree': checkbox_tree_property,
 }
 
 
