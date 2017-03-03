@@ -22,14 +22,14 @@ Usage:
 
 from docopt import docopt
 import yaml
-from collections import defaultdict
+from collections import OrderedDict
 import csv
 import sys
 
 
 if __name__ == '__main__':
     arguments = docopt(__doc__)
-    primary_by_label = defaultdict(dict)
+    primary_by_label = OrderedDict()
     lot_filter = arguments['<lot>']
 
     csv_path = arguments['<input-csv-file>']
@@ -40,8 +40,9 @@ if __name__ == '__main__':
             if lot == lot_filter:
                 primary_label = row['Primary category'].strip()
                 secondary_label = row['Secondary category'].strip()
-                primary = primary_by_label[primary_label]
+                primary = primary_by_label.get(primary_label, dict())
                 if not primary:
+                    primary_by_label[primary_label] = primary
                     primary['label'] = primary_label
                     if secondary_label:
                         primary['options'] = list()
@@ -62,7 +63,9 @@ if __name__ == '__main__':
     else:
         question_data = {}
 
-    question_data['options'] = sorted(primary_by_label.values(), key=lambda o: o['label'])
+    # not sorting top level categories - order in source is not alphabetical, and this is on purpose
+    question_data['options'] = primary_by_label.values()
+
     for option in question_data['options']:
         children = option.get('options')
         # sort with 'other' last
