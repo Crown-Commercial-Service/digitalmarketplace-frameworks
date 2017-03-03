@@ -191,17 +191,12 @@
     - incidentManagementType
     - incidentManagementApproach
 
-- name: Security
-  editable: false
-  edit_questions: true
-  questions:
-    - multiqSecurityStaff
-
 - name: Personnel security
   editable: false
   edit_questions: true
   questions:
     - staffSecurityClearanceChecks
+    - multiqSecurityStaff
 
 - name: Secure development
   editable: false
@@ -237,14 +232,14 @@
     - multiqStandardsCSASTAR
     - creditOrDebitCardInformation
     - multiqStandardsPCI
-    - standardsOther
+    - multiqAccreditationsOther
 
 - name: Energy efficiency
   editable: false
   edit_questions: true
   questions:
     - energyEfficientDatacentres
-    
+
 - name: Pricing
   editable: false
   edit_questions: true

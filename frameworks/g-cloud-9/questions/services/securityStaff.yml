@@ -1,15 +1,23 @@
-name: Staff with clearance
-question: Is your service provided by staff with government security clearance?
+name: Security clearances
+question: >
+  If the role requires it, what level of security clearance are you prepared to make sure your staff have?
+question_advice: Read the <a href="https://www.gov.uk/guidance/security-vetting-and-clearance" target="_blank" rel="noopener noreferrer">government guidance on security vetting and clearance (new tab)</a>.
 
 depends:
   - "on": lot
     being:
       - cloud-support
-followup:
-  securityStaffClearances:
-    - true
 
-type: boolean
+type: radio
+options:
+  - label: Up to Developed Vetting (DV)
+    value: dv
+  - label: Up to Security Clearance (SC)
+    value: sc
+  - label: Up to Baseline Personnel Security Standard (BPSS)
+    value: bpss
+  - label: None
+    value: none
 
 validations:
   - name: answer_required
