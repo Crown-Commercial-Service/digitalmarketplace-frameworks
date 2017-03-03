@@ -1,7 +1,7 @@
 depends:
-- "on": lot
-  being:
-    - cloud-hosting
+- being:
+  - cloud-hosting
+  'on': lot
 hint: You can choose multiple categories.
 id: serviceCategories
 name: Service categories
@@ -12,9 +12,9 @@ options:
 - label: Container service
 - label: Content delivery network
 - label: Data warehousing
-- label: Database - noSQL
-- label: Database - relational
-- label: Database - other
+- label: NoSQL database
+- label: Relational database
+- label: Other database services
 - label: Distributed denial of service attack (DDOS) protection
 - label: Firewall
 - label: Infrastructure and platform security
@@ -26,9 +26,9 @@ options:
 - label: Platform as a service (PaaS)
 - label: Protective monitoring
 - label: Search
-- label: Storage - disk (block)
-- label: Storage - object store
-- label: Storage - other
+- label: Block storage
+- label: Object storage
+- label: Other storage services
 question: Which categories does your service fit under?
 type: checkbox_tree
 validations:

@@ -1,7 +1,7 @@
 depends:
-- "on": lot
-  being:
-    - cloud-software
+- being:
+  - cloud-software
+  'on': lot
 hint: You can choose multiple categories.
 id: serviceCategories
 name: Service categories
@@ -30,7 +30,7 @@ options:
   - label: Purchasing
   - label: Revenue cycle management
   - label: Tax management
-  - label: Accounting and finance - other
+  - label: Other accounting and finance services
 - label: Analytics and business intelligence
   options:
   - label: Analytics
@@ -89,14 +89,15 @@ options:
   - label: Call centre
   - label: Constituent engagement
   - label: Contact management
+  - label: CRM system
   - label: Customer helpdesk (service desk)
-  - label: Customer relationship management (CRM)
   - label: Customer service and support
   - label: Feedback and reviews management
   - label: Forms and surveys
   - label: Live chat
   - label: Partner relationship management (PRM)
   - label: Virtual agents
+  - label: Other CRM services
 - label: Electronic document and records management (EDRM)
   options:
   - label: Backup, recovery and archival
@@ -192,7 +193,7 @@ options:
   - label: Video conferencing
   - label: Virtual private network (VPN)
   - label: Word processing (office productivity)
-  - label: Information and communications technology (ICT) - other
+  - label: Other information and communications technology (ICT) services
 - label: Legal and enforcement
   options:
   - label: Electronic discovery (legal)
@@ -227,7 +228,7 @@ options:
   - label: Social media marketing
   - label: Social media monitoring
   - label: Webinars
-  - label: Marketing - other
+  - label: Other marketing services
 - label: Operations management
   options:
   - label: Applications
@@ -254,7 +255,7 @@ options:
   - label: Supply chain management
   - label: Visitor management
   - label: Workflow
-  - label: Operations management - other
+  - label: Other operations management services
 - label: Project management and planning
   options:
   - label: Agile project management and issue tracking
@@ -272,7 +273,7 @@ options:
   - label: Sales and operations planning
   - label: Sales intelligence tracking
   - label: Sales performance management
-  - label: Sales - other
+  - label: Other sales services
 - label: Schools, education and libraries
   options:
   - label: Academic
@@ -321,7 +322,7 @@ options:
   - label: Transportation dispatch
   - label: Trucking solutions
   - label: Warehouse management
-  - label: Transport and logistics - other
+  - label: Other transport and logistics services
 question: Which categories does your service fit under?
 type: checkbox_tree
 validations:
