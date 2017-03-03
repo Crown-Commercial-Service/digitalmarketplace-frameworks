@@ -1,7 +1,5 @@
 name: Service interface testing
 question: Describe any interface testing you’ve done with users of assistive technology.
-
-hidden: true
 depends:
   - "on": lot
     being:

@@ -7,7 +7,7 @@ depends:
       - cloud-software
 followup:
   serviceInterfaceAccessibilityDescription:
-    - true
+    - none
 
 type: radios
 options:
