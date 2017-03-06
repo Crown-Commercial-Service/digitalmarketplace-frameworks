@@ -22,7 +22,8 @@
   editable: false
   edit_questions: true
   questions:
-    - multiqServiceFeaturesAndBenefits
+    - multiqServiceFeaturesAndBenefitsHostingAndSoftware
+    - multiqServiceFeaturesAndBenefitsSupport
 
 - name: Planning
   editable: false
@@ -66,7 +67,8 @@
   questions:
     - multiqServiceAddOn
     - cloudDeploymentModel
-    - serviceConstraints
+    - serviceConstraintsHostingAndSoftware
+    - serviceConstraintsSupport
     - systemRequirements
 
 - name: Reselling

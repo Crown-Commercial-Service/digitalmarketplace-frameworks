@@ -1,3 +1,4 @@
+id: serviceConstraints
 name: Service constraints
 question: Does your service have any constraints that buyers should know about?
 question_advice: Constraints might include planned maintenance arrangements or support being limited to specific hardware configurations.
@@ -7,7 +8,6 @@ depends:
     being:
       - cloud-hosting
       - cloud-software
-      - cloud-support
 
 type: textbox_large
 max_length_in_words: 100

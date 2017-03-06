@@ -1,13 +1,14 @@
+id: serviceFeatures
 name: Service features
 question: List the service features.
-question_advice: Include the technical features of your service, for example ‘real-time reporting’ or ‘remote access’.
+question_advice: >
+  Include the features that best describe your service, for example ‘system design and assurance’ or ‘help choosing
+  systems and vendors’.
 hint: 10 words for each feature, 10 features maximum.
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-software
       - cloud-support
 
 type: list

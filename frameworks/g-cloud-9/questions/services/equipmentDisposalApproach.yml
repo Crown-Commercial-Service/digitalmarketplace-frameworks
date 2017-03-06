@@ -14,7 +14,7 @@ depends:
 
 type: radios
 options:
-  - label: Complying with a recognised standard, for example CSA CCM v.30, CAS(Sanitisation) or ISO/IEC 27001
+  - label: Complying with a recognised standard, for example CSA CCM v.30, CAS (Sanitisation) or ISO/IEC 27001
     value: recognised_standard
   - label: In-house destruction process
     value: in_house

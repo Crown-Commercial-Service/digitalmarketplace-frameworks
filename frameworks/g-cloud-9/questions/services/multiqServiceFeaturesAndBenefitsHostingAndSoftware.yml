@@ -1,3 +1,4 @@
+id: multiqServiceFeaturesAndBenefits
 question: Service features and benefits
 name: Service features and benefits
 
@@ -6,9 +7,8 @@ depends:
     being:
       - cloud-hosting
       - cloud-software
-      - cloud-support
 
 type: multiquestion
 questions:
-  - serviceFeatures
-  - serviceBenefits
+  - serviceFeaturesHostingAndSoftware
+  - serviceBenefitsHostingAndSoftware

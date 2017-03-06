@@ -1,3 +1,4 @@
+id: serviceBenefits
 name: Service benefits
 question: List the service benefits.
 question_advice: >
@@ -10,7 +11,6 @@ depends:
     being:
       - cloud-hosting
       - cloud-software
-      - cloud-support
 
 type: list
 list_item_name: service benefit
