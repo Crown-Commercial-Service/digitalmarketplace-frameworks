@@ -17,9 +17,13 @@ options:
     value: cpu
   - label: Disk
     value: disk
+  - label: HTTP request and response status
+    value: http
   - label: Memory
     value: memory
   - label: Network
     value: network
+  - label: Number of active instances
+    value: num_instances
   - label: Other
     value: other

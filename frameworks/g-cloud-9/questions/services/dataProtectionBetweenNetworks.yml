@@ -1,5 +1,9 @@
 name: Data protection between the buyer’s and supplier’s networks
 question: How do you protect data between the buyer’s network and your network?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-1-data-transit-protection" target="_blank"
+  rel="noopener noreferrer">1st cloud security principle: ’Data-in-transit protection’ (link opens in a new tab)</a>.
 
 depends:
   - "on": lot

@@ -14,8 +14,6 @@ options:
     value: automatic
   - label: Scales with user intervention
     value: user_intervention
-  - label: Users have to contact the support team to scale
-    value: support_request
 
 validations:
   - name: answer_required

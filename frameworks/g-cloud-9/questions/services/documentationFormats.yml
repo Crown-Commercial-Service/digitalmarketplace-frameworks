@@ -1,7 +1,7 @@
 name: Documentation formats
 question: What formats do you provide documentation in?
 question_advice: >
-  Read about the <a href="https://www.gov.uk/government/publications/open-standards-for-government/viewing-government-documents" target="_blank" rel="noopener noreferrer">open standard requirements for Government documents (new tab)</a>.
+  Read about the <a href="https://www.gov.uk/government/publications/open-standards-for-government/viewing-government-documents" target="_blank" rel="noopener noreferrer">open standard requirements for government documents (link opens in a new tab)</a>.
 
 hidden: true
 depends:

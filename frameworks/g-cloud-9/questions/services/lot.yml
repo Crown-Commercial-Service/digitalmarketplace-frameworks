@@ -20,6 +20,6 @@ options:
   - label: Cloud support
     value: cloud-support
     description: |
-      Cloud support services help buyers set up and maintain their cloud software or hosting services.
+      Cloud support services help buyers set up and maintain their cloud hosting or software services.
 
       On G-Cloud 8, cloud support was known as ‘Specialist Cloud Services’.

@@ -1,7 +1,7 @@
 name: Government security clearances
 question: >
   If the role requires it, what level of security clearance are you prepared to make sure your staff have?
-question_advice: Read the <a href="https://www.gov.uk/guidance/security-vetting-and-clearance" target="_blank" rel="noopener noreferrer">government guidance on security vetting and clearance (new tab)</a>.
+question_advice: Read the <a href="https://www.gov.uk/guidance/security-vetting-and-clearance" target="_blank" rel="noopener noreferrer">government guidance on security vetting and clearance (link opens in a new tab)</a>.
 
 depends:
   - "on": lot

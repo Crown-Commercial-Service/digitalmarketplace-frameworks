@@ -1,6 +1,10 @@
 id: userAuthentication
 name: User authentication
 question: How do you authenticate users when they access the service?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-10-identity-and-authentication" target="_blank"
+  rel="noopener noreferrer">10th cloud security principle ‘Identity and authentication’ (link opens in a new tab)</a>.
 
 hidden: true
 depends:

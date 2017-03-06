@@ -1,19 +1,16 @@
-name: Any other security accreditations
-question: What other security accreditations do you have?
+name: Other security testing accreditations
+question: What other security accreditations do your testers have?
 
 hidden: true
 depends:
   - "on": lot
     being:
-      - cloud-hosting
-      - cloud-software
+      - cloud-support
 
-list_item_name: security accreditation
 type: list
+list_item_name: security accreditation
 
 validations:
-  - name: answer_required
-    message: You need to answer this question.
   - name: under_10_words
     message: You can’t write more than 10 words for each security accreditation.
   - name: max_items_limit

@@ -1,8 +1,10 @@
-name: Protection of data at rest
+name: Data-at-rest protection
 question: How do you protect data at rest?
 question_advice: >
-  Read about the different approaches to <a href="https://www.gov.uk/government/publications/implementing-the-cloud-security-principles/implementing-the-cloud-security-principles#data-at-rest-protection" target="_blank">protecting data at
-  rest</a>.
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience#rest"
+  target="_blank" rel="noopener noreferrer">2nd cloud security principle: ‘Asset protection and resilience’ (link opens
+  in a new tab)</a>.
 
 depends:
   - "on": lot

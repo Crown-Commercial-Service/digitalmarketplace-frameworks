@@ -1,5 +1,5 @@
 name: Scaling available
-question: Does your service scale?
+question: Does your service scale without the user having to contact your support team?
 
 depends:
   - "on": lot

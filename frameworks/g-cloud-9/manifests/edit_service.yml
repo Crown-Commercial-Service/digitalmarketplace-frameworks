@@ -20,4 +20,5 @@
   editable: false
   edit_questions: true
   questions:
-    - multiqServiceFeaturesAndBenefits
+    - multiqServiceFeaturesAndBenefitsHostingAndSoftware
+    - multiqServiceFeaturesAndBenefitsSupport
