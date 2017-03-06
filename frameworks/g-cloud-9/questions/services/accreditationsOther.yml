@@ -7,7 +7,7 @@ depends:
       - cloud-hosting
       - cloud-software
 followup:
-  accreditationsOther:
+  accreditationsOtherList:
     - true
 
 type: boolean
