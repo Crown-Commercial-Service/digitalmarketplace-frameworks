@@ -4,7 +4,7 @@ question_advice: >
   Include details of what users can and can’t do.
   <a href="http://mandate376.standards.eu/standard/technical-requirements/#9" target="_blank" rel="noopener noreferrer">EN 301 549 9: Web (new tab)</a> includes the features and
   constraints you should describe.
-
+hidden: true
 depends:
   - "on": lot
     being:
