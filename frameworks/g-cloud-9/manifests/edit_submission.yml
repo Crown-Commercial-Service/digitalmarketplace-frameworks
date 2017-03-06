@@ -196,7 +196,7 @@
   edit_questions: true
   questions:
     - staffSecurityClearanceChecks
-    - multiqSecurityStaff
+    - governmentSecurityClearances
 
 - name: Secure development
   editable: false
