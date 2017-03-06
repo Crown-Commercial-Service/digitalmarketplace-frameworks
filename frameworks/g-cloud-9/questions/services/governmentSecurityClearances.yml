@@ -6,6 +6,8 @@ question_advice: Read the <a href="https://www.gov.uk/guidance/security-vetting-
 depends:
   - "on": lot
     being:
+      - cloud-hosting
+      - cloud-software
       - cloud-support
 
 type: radios
