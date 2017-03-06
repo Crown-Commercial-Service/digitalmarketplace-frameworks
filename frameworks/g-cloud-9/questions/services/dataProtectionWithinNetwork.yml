@@ -1,5 +1,9 @@
 name: Data protection within the supplier’s network
 question: How do you protect data within your network?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-1-data-transit-protection" target="_blank"
+  rel="noopener noreferrer">1st cloud security principle: ’Data-in-transit protection’ (link opens in a new tab)</a>.
 
 depends:
   - "on": lot

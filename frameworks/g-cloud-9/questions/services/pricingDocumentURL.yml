@@ -1,6 +1,6 @@
 name: Pricing document
-question: Pricing document
-hint: Please upload your pricing document. This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)
+question: Add your pricing document
+hint: This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)
 
 depends:
   - "on": lot

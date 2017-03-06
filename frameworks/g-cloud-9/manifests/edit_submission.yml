@@ -42,6 +42,12 @@
   questions:
     - multiqQAAndTesting
 
+- name: Security testing
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqSecurityTesting
+
 - name: Training
   editable: false
   edit_questions: true
@@ -191,7 +197,7 @@
     - incidentManagementType
     - incidentManagementApproach
 
-- name: Personnel security
+- name: Staff security
   editable: false
   edit_questions: true
   questions:
@@ -230,7 +236,6 @@
     - multiqStandardsISOIEC27001
     - multiqStandardsISO28000
     - multiqStandardsCSASTAR
-    - creditOrDebitCardInformation
     - multiqStandardsPCI
     - multiqAccreditationsOther
 

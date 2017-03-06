@@ -1,5 +1,9 @@
 name: Access to audit information about users’ actions
 question: How do buyers access audit information about the actions their users have taken?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-13-audit-information-users" target="_blank"
+  rel="noopener noreferrer">13th cloud security principle: ‘Audit information for users’ (link opens in a new tab)</a>.
 
 depends:
   - "on": lot

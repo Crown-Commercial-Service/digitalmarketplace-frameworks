@@ -18,4 +18,4 @@ validations:
   - name: max_items_limit
     message: You must have 10 or fewer backup items.
   - name: under_character_limit
-    message: Each backup item must be no more than 100 characters.
+    message: You can’t write more than 100 characters for each backup item.

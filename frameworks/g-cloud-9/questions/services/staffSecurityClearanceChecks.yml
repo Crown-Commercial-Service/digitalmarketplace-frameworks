@@ -1,5 +1,9 @@
 name: Staff security clearance checks
 question: How do you manage staff security clearance checks?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-6-personnel-security" target="_blank" rel="noopener
+  noreferrer">6th cloud security principle: ‘Personnel security’ (link opens in a new tab)</a>.
 
 depends:
   - "on": lot

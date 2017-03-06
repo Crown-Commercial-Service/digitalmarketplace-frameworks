@@ -1,5 +1,5 @@
 name: Usage notifications
-question: Do you notify users about if usage nears service limits?
+question: Do you notify users if usage nears service limits?
 
 depends:
   - "on": lot

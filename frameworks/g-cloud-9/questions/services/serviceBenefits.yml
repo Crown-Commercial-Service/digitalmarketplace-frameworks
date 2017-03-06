@@ -21,6 +21,6 @@ validations:
   - name: max_items_limit
     message: You can have no more than 10 benefits.
   - name: under_10_words
-    message: Each benefit must be no more than 10 words.
+    message: You can’t write more than 10 words for each benefit.
   - name: under_character_limit
-    message: Each benefit must be no more than 100 characters.
+    message: You can’t write more than 100 characters for each benefit.

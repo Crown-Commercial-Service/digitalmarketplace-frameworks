@@ -1,0 +1,17 @@
+name: Security testing
+question: Security testing
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: multiquestion
+questions:
+  - securityTesting
+  - securityTestingWhat
+  - securityTestingWhatOther
+  - securityTestingAccredited
+  - securityTestingAccreditations
+  - securityTestingAccreditationsOther
+  - securityTestingCCP

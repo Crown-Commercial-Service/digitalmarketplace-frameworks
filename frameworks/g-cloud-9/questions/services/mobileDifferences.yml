@@ -1,7 +1,6 @@
 name: Mobile and desktop differences
 question: Describe any differences between the mobile and desktop service.
 
-optional: true
 hidden: true
 depends:
   - "on": lot

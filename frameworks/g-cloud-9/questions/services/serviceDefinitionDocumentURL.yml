@@ -1,9 +1,9 @@
 name: Service definition document
-question: Service definition document
+question: Add your service definition document
 question_advice: Read the suppliers’ guide for guidance on what to include.
 hint: >
-  Refer to the G-Cloud guidance for more information on what to include. This document will not be indexed by search
-  on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)
+  This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A
+  (eg .pdf, .odt). (Maximum file size 5MB.)
 
 optional: true
 depends:
