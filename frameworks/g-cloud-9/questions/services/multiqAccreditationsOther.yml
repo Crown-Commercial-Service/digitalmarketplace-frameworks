@@ -1,0 +1,13 @@
+name: Other security accreditations
+question: Other security accreditations
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - accreditationsOther
+  - accreditationsOtherList

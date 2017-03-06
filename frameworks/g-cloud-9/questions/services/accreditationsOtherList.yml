@@ -1,7 +1,7 @@
-name: Other security accreditations
+name: Any other security accreditations
 question: What other security accreditations do you have?
 
-optional: true
+hidden: true
 depends:
   - "on": lot
     being:
