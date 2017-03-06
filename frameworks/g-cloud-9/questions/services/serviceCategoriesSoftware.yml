@@ -2,7 +2,6 @@ depends:
 - being:
   - cloud-software
   'on': lot
-hint: You can choose multiple categories.
 id: serviceCategories
 name: Service categories
 number_of_items: 20
@@ -326,5 +325,5 @@ options:
 question: Which categories does your service fit under?
 type: checkbox_tree
 validations:
-- message: No more than 20 categories can be selected.
+- message: You can’t choose more than 20 categories.
   name: max_items_limit
