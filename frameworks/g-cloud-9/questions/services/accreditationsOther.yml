@@ -1,12 +1,14 @@
 name: Other security accreditations
 question: Do you have any other security accreditations that cover this service?
 
-optional: true
 depends:
   - "on": lot
     being:
       - cloud-hosting
       - cloud-software
+followup:
+  accreditationsOther:
+    - true
 
 type: boolean
 
