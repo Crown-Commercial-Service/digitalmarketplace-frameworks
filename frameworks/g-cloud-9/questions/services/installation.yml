@@ -1,5 +1,5 @@
 name: Installation
-question: Does the service need to be installed?
+question: Is there an application that users install to use your service?
 
 depends:
   - "on": lot
