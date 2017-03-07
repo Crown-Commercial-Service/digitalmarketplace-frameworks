@@ -16,8 +16,6 @@ options:
     value: ansible
   - label: Chef
     value: chef
-  - label: CloudFormation
-    value: cloudformation
   - label: OpenStack
     value: openstack
   - label: SaltStack
