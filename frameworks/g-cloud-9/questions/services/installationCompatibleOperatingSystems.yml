@@ -1,5 +1,5 @@
 name: Compatible operating systems
-question: Which operation systems does your service work with?
+question: Which operating systems does your service work with?
 
 hidden: true
 depends:
