@@ -6,7 +6,8 @@
     {"$ref": "#/definitions/dates"},
     {"$ref": "#/definitions/frameworkStates"},
     {"$ref": "#/definitions/urls"},
-    {"$ref": "#/definitions/contract_variation"}
+    {"$ref": "#/definitions/contract_variation"},
+    {"$ref": "#/definitions/advice"}
   ],
   "definitions": {
     "dates": {
@@ -48,6 +49,12 @@
       "required": [
         "supplier_guide_url"
       ],
+      "additionalProperties": false
+    },
+    "advice": {
+      "properties": {
+        "use_of_service_data": {"type": "string"}
+      },
       "additionalProperties": false
     },
     "contract_variation": {
