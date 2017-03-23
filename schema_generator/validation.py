@@ -147,6 +147,10 @@ def text_property(question):
     return {question['id']: data}
 
 
+def date_property(question):
+    return {question['id']: {"type": "string", "format": "date"}}
+
+
 def uri_property(question):
     return {question['id']: {
         "type": "string",
@@ -491,6 +495,7 @@ QUESTION_TYPES = {
     'number': number_property,
     'multiquestion': multiquestion,
     'checkbox_tree': checkbox_tree_property,
+    'date': date_property
 }
 
 
