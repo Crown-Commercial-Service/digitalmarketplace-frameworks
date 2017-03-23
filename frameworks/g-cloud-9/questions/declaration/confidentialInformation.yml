@@ -4,3 +4,7 @@ question: >
 
     - obtained confidential information that may give you undue advantages in the procurement procedure
 type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

@@ -8,3 +8,6 @@ question: >
     - the delivery of cloud services. Your service must enable the delivery of cloud services. Your service complies with the definition of cloud support in the <a href="/suppliers/frameworks/g-cloud-9" target="_blank" rel="noopener noreferrer">framework agreement (link opens in a new tab)</a> (Lot 3 - cloud support.)
 
 type: boolean
+assessment:
+  passIfIn:
+    - True

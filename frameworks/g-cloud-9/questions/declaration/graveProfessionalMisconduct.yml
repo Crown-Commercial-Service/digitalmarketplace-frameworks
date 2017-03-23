@@ -4,3 +4,7 @@ question: >
 
     - been guilty of grave professional misconduct
 type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

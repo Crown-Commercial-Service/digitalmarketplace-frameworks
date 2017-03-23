@@ -14,3 +14,6 @@ question: >
       - Tailored Assurance Service
 
 type: boolean
+assessment:
+  passIfIn:
+    - True
