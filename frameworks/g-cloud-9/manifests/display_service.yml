@@ -1,5 +1,280 @@
--
-  name: Description
+- name: Planning
   questions:
-    - serviceName
-    - serviceDescription
+    - planningService
+    - planningServiceDescription
+    - planningServiceCompatibility
+    - planningServiceCompatibilityList
+
+- name: Setup and migration
+  questions:
+    - setupAndMigrationService
+    - setupAndMigrationServiceDescription
+    - setupAndMigrationServiceSpecific
+    - setupAndMigrationServiceSpecificList
+
+- name: Quality assurance and performance testing
+  questions:
+    - QAAndTesting
+    - QAAndTestingDescription
+
+- name: Security testing
+  questions:
+    - securityTesting
+    - securityTestingWhat
+    - securityTestingWhatOther
+    - securityTestingAccredited
+    - securityTestingAccreditations
+    - securityTestingAccreditationsOther
+    - securityTestingCCP
+
+- name: Training
+  questions:
+    - training
+    - trainingDescription
+    - trainingServiceSpecific
+    - trainingServiceSpecificList
+
+- name: Ongoing support
+  questions:
+    - ongoingSupport
+    - ongoingSupportServices
+    - ongoingSupportDescription
+
+- name: Service scope
+  questions:
+    - serviceAddOnType
+    - serviceAddOnDetails
+    - cloudDeploymentModel
+    - serviceConstraintsHostingAndSoftware
+    - serviceConstraintsSupport
+    - systemRequirements
+
+- name: Reselling
+  questions:
+    - resellingType
+    - resellingOrganisations
+
+- name: User support
+  questions:
+    - emailOrTicketingSupport
+    - emailOrTicketingSupportResponseTimes
+    - emailOrTicketingSupportPriority
+    - emailOrTicketingSupportAccessibility
+    - phoneSupport
+    - phoneSupportAvailability
+    - webChatSupport
+    - webChatSupportAvailability
+    - webChatSupportAccessibility
+    - webChatSupportAccessibilityDescription
+    - webChatSupportAccessibilityTesting
+    - onsiteSupport
+    - supportLevels
+    - supportAvailableToThirdParty
+
+- name: How users work with your service
+  questions:
+    - browsersAccess
+    - browsersSupported
+    - installation
+    - installationCompatibleOperatingSystems
+    - mobile
+    - mobileDifferences
+    - webInterface
+    - webInterfaceUsage
+    - webInterfaceAccessibility
+    - webInterfaceAccessibilityDescription
+    - webInterfaceAccessibilityTesting
+    - serviceInterfaceAccessibility
+    - serviceInterfaceAccessibilityDescription
+    - serviceInterfaceTesting
+    - APIHosting
+    - APISoftware
+    - APIUsage
+    - APIAutomationTools
+    - APIAutomationToolsOther
+    - APIDocumentation
+    - APIDocumentationFormats
+    - APISandbox
+    - commandLineInterface
+    - commandLineOS
+    - commandLineUsage
+    - customisationAvailable
+    - customisationDescription
+
+
+- name: Onboarding and offboarding
+  questions:
+    - gettingStarted
+    - documentation
+    - documentationFormats
+    - documentationFormatsOther
+    - endOfContractDataExtraction
+    - endOfContractProcess
+
+- name: Data importing and exporting
+  questions:
+    - dataExportHow
+    - dataExportFormats
+    - dataExportFormatsOther
+    - dataImportFormats
+    - dataImportFormatsOther
+
+- name: Backups and recovery
+  questions:
+    - backup
+    - backupWhatData
+    - backupControls
+    - backupDatacentre
+    - backupScheduling
+    - backupRecovery
+
+- name: Analytics
+  questions:
+    - metricsHosting
+    - metricsSoftware
+    - metricsSoftwareDescription
+    - metricsHostingWhat
+    - metricsHostingWhatOther
+    - metricsHostingHow
+    - metricsSoftwareHow
+
+- name: Scaling
+  questions:
+    - scaling
+    - scalingType
+    - independenceOfResources
+    - usageNotifications
+    - usageNotificationsHow
+
+- name: Public sector networks
+  questions:
+    - publicSectorNetworks
+    - publicSectorNetworksTypes
+    - publicSectorNetworksOther
+
+- name: Data-in-transit protection
+  questions:
+    - dataProtectionBetweenNetworks
+    - dataProtectionBetweenNetworksOther
+    - dataProtectionWithinNetwork
+    - dataProtectionWithinNetworkOther
+
+- name: Asset protection
+  questions:
+    - dataStorageAndProcessing
+    - dataStorageAndProcessingLocations
+    - dataStorageAndProcessingUserControl
+    - datacentreSecurityStandards
+    - penetrationTesting
+    - penetrationTestingApproach
+    - protectionOfDataAtRest
+    - protectionOfDataAtRestOther
+    - dataSanitisation
+    - dataSanitisationTypeHosting
+    - dataSanitisationTypeSoftware
+    - equipmentDisposalApproach
+
+- name: Availability and resilience
+  questions:
+    - guaranteedAvailability
+    - approachToResilience
+    - outageReporting
+
+- name: Separation between users
+  questions:
+    - virtualisation
+    - virtualisationImplementedBy
+    - virtualisationTechnologiesUsed
+    - virtualisationTechnologiesUsedOther
+    - virtualisationThirdPartyProvider
+    - virtualisationSeparation
+
+- name: Governance
+  questions:
+    - boardLevelServiceSecurity
+    - securityGovernanceAccreditation
+    - securityGovernanceStandards
+    - securityGovernanceStandardsOther
+    - securityGovernanceApproach
+    - informationSecurityPoliciesAndProcesses
+
+- name: Operational security
+  questions:
+    - configurationAndChangeManagementType
+    - configurationAndChangeManagementProcesses
+    - vulnerabilityManagementType
+    - vulnerabilityManagementApproach
+    - protectiveMonitoringType
+    - protectiveMonitoringApproach
+    - incidentManagementType
+    - incidentManagementApproach
+
+- name: Staff security
+  questions:
+    - staffSecurityClearanceChecks
+    - governmentSecurityClearances
+
+- name: Secure development
+  questions:
+    - secureDevelopment
+
+- name: Identity and authentication
+  questions:
+    - userAuthenticationHosting
+    - userAuthenticationDescription
+    - userAuthenticationNeeded
+    - userAuthenticationSoftware
+    - userAuthenticationDescription
+    - accessRestrictionManagementAndSupport
+    - accessRestrictionTesting
+    - managementAccessAuthentication
+    - managementAccessAuthenticationDescription
+    - devicesUsersManageTheServiceThrough
+
+- name: Audit information for users
+  questions:
+    - auditBuyersActions
+    - auditBuyersActionsStorage
+    - auditSuppliersActions
+    - auditSuppliersActionsStorage
+    - howLongSystemLogsStored
+
+- name: Standards and certifications
+  questions:
+    - standardsISOIEC27001
+    - standardsISOIEC27001Who
+    - standardsISOIEC27001When
+    - standardsISOIEC27001Exclusions
+    - standardsISO28000
+    - standardsISO28000Who
+    - standardsISO28000When
+    - standardsISO28000Exclusions
+    - standardsCSASTAR
+    - standardsCSASTARWhen
+    - standardsCSASTARLevel
+    - standardsCSASTARExclusions
+    - standardsPCI
+    - standardsPCIWho
+    - standardsPCIWhen
+    - standardsPCIExclusions
+    - accreditationsOther
+    - accreditationsOtherList
+
+- name: Energy efficiency
+  questions:
+    - energyEfficientDatacentres
+
+- name: Pricing
+  questions:
+    - price
+    - educationPricing
+    - freeVersionTrialOption
+    - freeVersionDescription
+    - freeVersionLink
+
+- name: Documents
+  questions:
+    - serviceDefinitionDocumentURL
+    - termsAndConditionsDocumentURL
+    - pricingDocumentURL
+    - sfiaRateDocumentURL
