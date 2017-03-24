@@ -13,3 +13,6 @@ question: >
     - sexual orientation
 
 type: boolean
+assessment:
+  passIfIn:
+    - True

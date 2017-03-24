@@ -3,3 +3,6 @@ question: >
   Please confirm that your organisation will take direct contractual responsibility and full accountability for 
   delivering the services you’re offering on the framework.
 type: boolean
+assessment:
+  passIfIn:
+    - True

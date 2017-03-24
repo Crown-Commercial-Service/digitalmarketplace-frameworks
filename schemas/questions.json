@@ -268,6 +268,21 @@
     },
     "hidden": {
       "type": "boolean"
+    },
+    "assessment": {
+      "type": "object",
+      "properties": {
+        "passIfIn": {
+          "type": "array"
+        },
+        "discretionary": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "passIfIn"
+      ]
     }
   },
   "additionalProperties": false,

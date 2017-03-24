@@ -4,3 +4,7 @@ question: >
 
     - been made bankrupt or the subject of insolvency or winding-up proceedings
 type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

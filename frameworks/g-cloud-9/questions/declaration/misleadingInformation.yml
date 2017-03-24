@@ -4,3 +4,7 @@ question: >
 
     - provided misleading information that may have an influence on decisions concerning framework exclusion, selection or award
 type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

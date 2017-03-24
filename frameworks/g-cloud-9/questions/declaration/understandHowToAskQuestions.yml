@@ -5,3 +5,6 @@ hint: >
   You can ask clarification questions about G-Cloud&nbsp;9 until 5pm BST 28 March 2017. All questions and answers will be posted regularly on the G-Cloud 9 updates page. You will be notified by email when new clarification questions and answers are available.
 
 type: boolean
+assessment:
+  passIfIn:
+    - True

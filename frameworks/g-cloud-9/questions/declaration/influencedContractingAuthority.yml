@@ -4,3 +4,7 @@ question: >
 
     - unduly influenced the decision-making process of the contracting authority
 type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

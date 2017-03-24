@@ -11,3 +11,6 @@ question: >
     - an offence under section 2 or section 4 of the Modern Slavery Act 2015
 type: boolean
 hint: Answer ‘yes’ if anyone who represents, supervises or has control in your organisation or a partner or parent organisation has been convicted of any of the above.
+assessment:
+  passIfIn:
+    - False

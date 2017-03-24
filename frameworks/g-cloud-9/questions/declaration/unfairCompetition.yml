@@ -9,3 +9,6 @@ question: >
     - canvassed, or attempted to buy information from, any government agent about this procurement
 
 type: boolean
+assessment:
+  passIfIn:
+    - True

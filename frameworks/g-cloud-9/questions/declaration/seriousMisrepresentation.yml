@@ -4,3 +4,7 @@ question: >
 
     - been guilty of serious misrepresentation of the information required for the fulfilment of the selection criteria
 type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True
