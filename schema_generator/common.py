@@ -14,3 +14,14 @@ def merge_schemas(a, b):
             result[key] = val
 
     return result
+
+
+def empty_schema(schema_name):
+    return {
+        "title": "{} Schema".format(schema_name),
+        "$schema": "http://json-schema.org/schema#",
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {},
+        "required": [],
+    }
