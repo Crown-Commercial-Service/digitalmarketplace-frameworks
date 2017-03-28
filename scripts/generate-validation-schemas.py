@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-"""Generate JSON schemas from the frameworks questions content.
+"""Generate validation JSON schemas from the frameworks questions content.
 
 Usage:
-    generate-schemas.py --output-path=<output_path>
+    generate-validation-schemas.py --output-path=<output_path>
 
 """
 import os
