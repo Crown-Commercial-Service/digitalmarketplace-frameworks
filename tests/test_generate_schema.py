@@ -12,7 +12,6 @@ import pytest
 from dmcontent import ContentQuestion
 from hypothesis.settings import Settings
 from hypothesis import given, assume, strategies as st
-from schema_generator.common import empty_schema
 from schema_generator.validation import (
     SCHEMAS,
     boolean_list_property,
@@ -21,9 +20,11 @@ from schema_generator.validation import (
     checkbox_property,
     checkbox_tree_property,
     drop_non_schema_questions,
+    empty_schema,
     generate_schema_todir,
     list_property,
     load_questions,
+    merge_schemas,
     multiquestion,
     number_property,
     parse_question_limits,
