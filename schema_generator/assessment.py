@@ -36,6 +36,7 @@ def generate_schema(framework_slug, question_set, manifest_name):
 
     return {
         "$schema": "http://json-schema.org/draft-04/schema#",
+        "title": "{} Declaration Assessment Schema (Definite Pass Schema)".format(framework_slug),
         "type": "object",
         "allOf": [
             {"$ref": "#/definitions/baseline"},
@@ -44,6 +45,7 @@ def generate_schema(framework_slug, question_set, manifest_name):
         "definitions": {
             "baseline": {
                 "$schema": "http://json-schema.org/draft-04/schema#",
+                "title": "{} Declaration Assessment Schema (Baseline Schema)".format(framework_slug),
                 "type": "object",
                 "properties": baseline_properties,
             },
