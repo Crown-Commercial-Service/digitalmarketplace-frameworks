@@ -6,6 +6,12 @@ import pytest
 from schema_generator.assessment import generate_schema
 
 
+# we define a basic, assessment-passing, g9 declaration here (though interestingly it doesn't include informational
+# fields so it wouldn't actually pass the *validation* schema). this could be fleshed out to enable it to be used as a
+# common "example" valid declaration from other apps: having it live here in this repository and regularly checked
+# in these tests ensures that it is always up to date with what is defined in the framework's yaml files... future work
+# to look at.
+
 # a callable so we can be sure we get a clean copy
 _definite_pass_g9_declaration = lambda: {
     # discretionary
@@ -67,6 +73,9 @@ def _empty_context_manager():
     # a definite pass
     ({}, False, True,),
     ({}, True, True,),
+    # pass with arbitrary other, hopefully ignored, fields
+    ({"bullockbefriendingBard": "Bous Stephanoumenos"}, False, True,),
+    ({"bullockbefriendingBard": "Bous Stephanoumenos"}, True, True,),
     # definite fails
     ({"readUnderstoodGuidance": False}, False, False,),
     ({"readUnderstoodGuidance": False}, True, False,),
@@ -77,6 +86,9 @@ def _empty_context_manager():
     ({"graveProfessionalMisconduct": True}, True, True,),
 ))
 def test_g9_declaration_assessment(declaration_update, use_baseline, should_pass):
+    # these test(s) are a bit funny in that they all make the same call to the function-under-test and then
+    # assert a different thing about the return value, so we could improve on run time if necessary by only performing
+    # the call once if necessary...
     schema = generate_schema("g-cloud-9", "declaration", "declaration")
     if use_baseline:
         schema = schema["definitions"]["baseline"]
