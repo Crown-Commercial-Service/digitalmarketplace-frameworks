@@ -1,5 +1,6 @@
 -
-  name: Search filters
+  name: Categories
+  slug: categories
   questions:
     - serviceCategoriesSoftware
     - serviceCategoriesHosting
