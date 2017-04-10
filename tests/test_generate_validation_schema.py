@@ -12,11 +12,28 @@ import pytest
 from dmcontent import ContentQuestion
 from hypothesis.settings import Settings
 from hypothesis import given, assume, strategies as st
-from schema_generator import text_property, uri_property, parse_question_limits, \
-    checkbox_property, checkbox_tree_property, number_property, multiquestion, \
-    build_question_properties, empty_schema, load_questions, \
-    drop_non_schema_questions, radios_property, list_property, boolean_list_property, \
-    boolean_property, price_string, pricing_property, generate_schema, SCHEMAS
+from schema_generator.validation import (
+    SCHEMAS,
+    boolean_list_property,
+    boolean_property,
+    build_question_properties,
+    checkbox_property,
+    checkbox_tree_property,
+    drop_non_schema_questions,
+    empty_schema,
+    generate_schema_todir,
+    list_property,
+    load_questions,
+    merge_schemas,
+    multiquestion,
+    number_property,
+    parse_question_limits,
+    price_string,
+    pricing_property,
+    radios_property,
+    text_property,
+    uri_property,
+)
 
 Settings.default.database = None
 
@@ -568,7 +585,7 @@ def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):
     test_directory = str(tmpdir.mkdir("schemas"))
 
     for schema in g_cloud_schemas:
-        generate_schema(test_directory, 'services', *schema)
+        generate_schema_todir(test_directory, 'services', *schema)
     g_cloud_path = "./frameworks/g-cloud-7"
     g_cloud_opened_files = set(x for x in opened_files
                                if x.startswith(g_cloud_path) and
@@ -585,7 +602,7 @@ def test_generate_dos_schema_opens_files(opened_files, tmpdir):
     test_directory = str(tmpdir.mkdir("schemas"))
 
     for schema in dos_schemas:
-        generate_schema(test_directory, 'services', *schema)
+        generate_schema_todir(test_directory, 'services', *schema)
     dos_path = "./frameworks/digital-outcomes-and-specialists"
     dos_opened_files = set(x for x in opened_files
                            if x.startswith(dos_path) and os.path.isfile(x))
@@ -601,7 +618,7 @@ def test_generate_dos_brief_opens_files(opened_files, tmpdir):
     test_directory = str(tmpdir.mkdir("briefs"))
 
     for schema in dos_schemas:
-        generate_schema(test_directory, 'briefs', *schema)
+        generate_schema_todir(test_directory, 'briefs', *schema)
     dos_path = "./frameworks/digital-outcomes-and-specialists"
     dos_opened_files = set(x for x in opened_files
                            if x.startswith(dos_path) and os.path.isfile(x))

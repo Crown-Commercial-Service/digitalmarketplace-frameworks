@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-"""Generate JSON schemas from the frameworks questions content.
+"""Generate validation JSON schemas from the frameworks questions content.
 
 Usage:
-    generate-schemas.py --output-path=<output_path>
+    generate-validation-schemas.py --output-path=<output_path>
 
 """
 import os
@@ -10,7 +10,7 @@ import sys
 sys.path.insert(0, '.')
 
 from docopt import docopt
-from schema_generator import generate_schema, SCHEMAS
+from schema_generator.validation import generate_schema_todir, SCHEMAS
 
 
 if __name__ == '__main__':
@@ -21,4 +21,4 @@ if __name__ == '__main__':
         os.makedirs(OUTPUT_DIR)
     for schema_type in SCHEMAS:
         for schema in SCHEMAS[schema_type]:
-            generate_schema(OUTPUT_DIR, schema_type, *schema)
+            generate_schema_todir(OUTPUT_DIR, schema_type, *schema)
