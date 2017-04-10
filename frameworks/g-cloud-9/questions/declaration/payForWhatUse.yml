@@ -6,6 +6,3 @@ question: >
     - not pay for services in advance
 
 type: boolean
-assessment:
-  passIfIn:
-    - True
