@@ -53,7 +53,7 @@
       "enum": [
         "boolean", "text", "radios", "list", "boolean_list", "checkboxes", "service_id",
         "pricing", "upload", "number", "textbox_large", "multiquestion", "dynamic_list", "email",
-        "checkbox_tree"
+        "checkbox_tree", "date"
       ]
     },
     "question_advice": {

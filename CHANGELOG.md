@@ -2,6 +2,14 @@
 
 Records breaking changes from major version bumps
 
+## 7.0.0
+
+PR: [#413](https://github.com/alphagov/digitalmarketplace-frameworks/pull/413)
+
+###
+
+New `date` field type. Creation and implementation.
+
 ## 6.0.0
 
 PR: [#381](https://github.com/alphagov/digitalmarketplace-frameworks/pull/381)
