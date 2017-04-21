@@ -1,0 +1,24 @@
+question: 'How are applications sharing the same infrastructure kept apart?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: checkboxes
+options:
+  -
+    label: 'Virtualisation technologies (eg a hypervisor) provide separation between users'
+  -
+    label: 'Other software provides separation between users'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

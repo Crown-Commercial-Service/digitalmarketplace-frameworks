@@ -1,0 +1,26 @@
+question: 'How do you protect data at rest?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: checkboxes
+options:
+    -
+        label: Physical access control
+    -
+        label: Scale, obfuscation techniques or data storage sharding
+    -
+        label: Encryption of all physical media
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

@@ -1,4 +1,5 @@
-question: 'How quickly do you respond to user questions?'
+question: 'Describe your end-of-contract data sanitisation process.'
+hint: Include details of certification and standards.
 depends:
   -
     "on": lot
@@ -9,6 +10,8 @@ depends:
       - paas
       - IaaS
       - iaas
+      - SCS
+      - scs
 type: textbox_large
 hint: '50-word limit'
 max_length_in_words: 50

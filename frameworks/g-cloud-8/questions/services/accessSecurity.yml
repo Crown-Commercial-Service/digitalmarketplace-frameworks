@@ -1,0 +1,31 @@
+question: 'What authentication schemes can be used to access interfaces?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+assuranceApproach: 3answers-type1
+type: checkboxes
+options:
+    -
+        label: 2 factor authentication
+    -
+        label: TLS client certification
+    -
+        label: Identity federation with existing provider (eg Google apps)
+    -
+        label: Limited access over community network (eg PSN)
+    -
+        label: Username/password
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

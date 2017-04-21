@@ -1,0 +1,24 @@
+question: 'Do you provide analytics reports?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: checkboxes
+options:
+    -
+        label: Real-time dashboards
+    -
+        label: Regular published reports
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

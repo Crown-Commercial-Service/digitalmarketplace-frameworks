@@ -2,31 +2,36 @@ question: 'Service type'
 type: radios
 options:
   -
-    label: Infrastructure as a Service (IaaS)
-    value: iaas
-    description: >
-      Infrastructure is the hardware that makes software work. It’s the
-      networks, hosting facilities and servers that platforms and software
-      depend on. IaaS is infrastructure you can order and run entirely over
-      the internet, without having to pay for your own hardware.
-  -
-    label: Software as a Service (SaaS)
+    label: Software
     value: saas
-    description: >
-      SaaS is an application or service that can be run over the internet or
-      in the cloud. Examples of SaaS include web-based email services,
-      customer relationship management (CRM) software and analytics tools.
+    description: |
+      <div class="explanation-list">
+        <p class="lead">When you provide software through G-Cloud:</p>
+        <ul class="list-bullet">
+          <li>it should be hosted in the cloud</li>
+          <li>buyers only pay for what they use</li>
+        </ul>
+      </div>
   -
-    label: Platform as a Service (PaaS)
+    label: Hosting
     value: paas
-    description: >
-      PaaS is a software platform that provides a basis for building other
-      services and applications. With PaaS, you can set up, order, pay for
-      and manage platforms in the cloud.
+    description: |
+      <div class="explanation-list">
+        <p class="lead">When you provide hosting through G-Cloud, buyers:</p>
+        <ul class="list-bullet">
+          <li>can use it to deploy, manage and run software</li>
+          <li>can use it to provision and use processing, storage or</li> networking resources
+          <li>only need to pay for what they use</li>
+        </ul>
+      </div>
   -
-    label: Specialist Cloud Services (SCS)
-    value: scs
-    description: >
-      Specialist Cloud Services support your transition to SaaS, PaaS and
-      IaaS. Examples of SCS include cloud strategy, data transfer between
-      providers, or day-to-day support of cloud-based services.
+    label: Setup, support and testing
+    value: iaas
+    description: |
+      <div class="explanation-list">
+        <p class="lead">Use G-Cloud to help:</p>
+        <ul class="list-bullet">
+          <li>set up and support software and hosting, eg help with migrating data</li>
+          <li>test software and hosting, for example penetration testing and IT health checks</li>
+        </ul>
+      </div>

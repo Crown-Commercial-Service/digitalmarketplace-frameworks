@@ -1,0 +1,26 @@
+question: 'Do you have a data sanitisation process?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: radios
+options:
+  -
+    label: 'No'
+  -
+    label: 'Assurances media can’t be directly addressed'
+  -
+    label: 'Explicit overwriting of storage before reallocation'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

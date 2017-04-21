@@ -1,0 +1,30 @@
+question: 'How do you protect data while it’s in transit?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: checkboxes
+options:
+  -
+    label: Private WAN service
+  -
+    label: Legacy SSL and TLS (under 1.2)*
+  -
+    label: TLS (Version 1.2 or above)
+  -
+    label: IPsec or TLS VPN gateway
+  -
+    label: Bonded fibre optic connections
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

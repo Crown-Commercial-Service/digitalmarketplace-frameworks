@@ -1,0 +1,28 @@
+question: 'What government wide area network (WAN) is the service directly connected to?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: checkboxes
+options:
+    -
+        label: Public Services Network (PSN)
+    -
+        label: Police National Network (PNN)
+    -
+        label: New NHS Network (N3)
+    -
+        label: Joint Academic Network (JANET)
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

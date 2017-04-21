@@ -1,0 +1,26 @@
+question: 'How do you manage physical resilience and availability?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: checkboxes
+options:
+  -
+    label: 'The service provider commits to a service level agreement (SLA)'
+  -
+    label: 'Review of historical data'
+  -
+    label: 'Analysis of the design'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

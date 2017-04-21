@@ -1,0 +1,26 @@
+question: 'How do you dispose of equipment?'
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+type: radios
+options:
+  -
+    label: 'Proprietary techniques used'
+  -
+    label: 'A recognised standard for equipment disposal is followed'
+  -
+    label: 'A third-party destruction service is used'
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: assurance_required
+    message: 'You need to confirm how you can back up your response.'

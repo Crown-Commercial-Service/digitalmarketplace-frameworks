@@ -1,0 +1,20 @@
+question: 'Do you provide network metrics?'
+hint: Network metrics can include bandwidth data.
+depends:
+  -
+    "on": lot
+    being:
+      - SaaS
+      - saas
+      - PaaS
+      - paas
+      - IaaS
+      - iaas
+      - SCS
+      - scs
+type: boolean
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+followup: analyticsNetworkMetricsDetail

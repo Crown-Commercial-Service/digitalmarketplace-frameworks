@@ -1,4 +1,4 @@
-question: 'How quickly do you respond to user questions?'
+question: 'Describe how users access audit information.'
 depends:
   -
     "on": lot
@@ -9,6 +9,8 @@ depends:
       - paas
       - IaaS
       - iaas
+      - SCS
+      - scs
 type: textbox_large
 hint: '50-word limit'
 max_length_in_words: 50
