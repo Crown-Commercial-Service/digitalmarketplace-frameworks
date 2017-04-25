@@ -47,14 +47,14 @@ def _checkbox_tree_transformation_generator(checkbox_tree_question):
         ]
 
 
-transformation_generators = {
+TRANSFORMATION_GENERATORS = {
     'checkbox_tree': _checkbox_tree_transformation_generator
 }
 
 
 def get_transformations(framework_slug):
-    for question in _get_questions_by_type(framework_slug, transformation_generators.keys()):
-        for transformer in transformation_generators[question.type](question):
+    for question in _get_questions_by_type(framework_slug, TRANSFORMATION_GENERATORS.keys()):
+        for transformer in TRANSFORMATION_GENERATORS[question.type](question):
             yield transformer
 
 
