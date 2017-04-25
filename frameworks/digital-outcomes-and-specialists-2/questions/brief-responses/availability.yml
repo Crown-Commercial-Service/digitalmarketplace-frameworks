@@ -4,9 +4,9 @@ hint: 'eg 31/12/2020'
 question_advice: >
   The buyer needs
   {%- if brief.lotSlug == "digital-outcomes" %}
-  the team to start: {{ brief.startDate }}
+  the team to start: {{ brief.startDate|datetodatetimeformat }}
   {%- elif brief.lotSlug == "digital-specialists" %}
-  the specialist to start: {{ brief.startDate }}
+  the specialist to start: {{ brief.startDate|datetodatetimeformat }}
   {%- else %}
   participants: {{ brief.researchDates }}
   {%- endif %}
