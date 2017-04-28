@@ -26,18 +26,22 @@ def test_checkbox_tree_transformation_generator():
     }
     result = _checkbox_tree_transformation_generator(Hierarchy(question))
 
-    assert OrderedDict((
-        ('field', 'someQuestion'),
-        ('any_of', [
-            'sub cat 1.1', 'sc1-2'
-        ]),
-        ('append_value', ['cat 1'])
-    )) in result
+    assert {
+        'append_conditionally': OrderedDict((
+            ('field', 'someQuestion'),
+            ('any_of', [
+                'sub cat 1.1', 'sc1-2'
+            ]),
+            ('append_value', ['cat 1'])
+        ))
+    } in result
 
-    assert OrderedDict((
-        ('field', 'someQuestion'),
-        ('any_of', [
-            'sub cat 2.1', 'sub cat 2.2'
-        ]),
-        ('append_value', ['cat 2'])
-    )) in result
+    assert {
+        'append_conditionally': OrderedDict((
+            ('field', 'someQuestion'),
+            ('any_of', [
+                'sub cat 2.1', 'sub cat 2.2'
+            ]),
+            ('append_value', ['cat 2'])
+        ))
+    } in result
