@@ -39,12 +39,14 @@ def _checkbox_tree_transformation_generator(checkbox_tree_question):
     update_ancestors_dict(checkbox_tree_question.options, leaf_values_by_ancestor_set, parents=frozenset())
 
     return [
-        OrderedDict((
-            ('field', checkbox_tree_question.id),
-            ('any_of', child_values),
-            ('append_value', sorted(ancestor_values)),
-        )) for ancestor_values, child_values in leaf_values_by_ancestor_set.items()
-        ]
+        {
+            'append_conditionally': OrderedDict((
+                ('field', checkbox_tree_question.id),
+                ('any_of', child_values),
+                ('append_value', sorted(ancestor_values)),
+            ))
+        } for ancestor_values, child_values in leaf_values_by_ancestor_set.items()
+    ]
 
 
 TRANSFORMATION_GENERATORS = {
