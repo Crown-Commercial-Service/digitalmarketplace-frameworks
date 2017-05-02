@@ -29,13 +29,16 @@ def _checkbox_tree_transformation_generator(checkbox_tree_question):
             children = option.get('options', [])
             if not children:
                 if parents:
+                    if parents not in leaf_values_dict:
+                        leaf_values_dict[parents] = list()
+                        # list of child-values preserves order from the source yaml, for the benefit of
+                        # git history in output file
+
                     leaf_values_dict[parents].append(utils.get_option_value(option))
             else:
                 update_ancestors_dict(children, leaf_values_dict, parents.union([utils.get_option_value(option)]))
 
-    leaf_values_by_ancestor_set = defaultdict(list)
-    # list of child-values preserves order from the source yaml, for the benefit of git history in output file
-
+    leaf_values_by_ancestor_set = OrderedDict()  # again, preserve order from source yaml
     update_ancestors_dict(checkbox_tree_question.options, leaf_values_by_ancestor_set, parents=frozenset())
 
     return [
