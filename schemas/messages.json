@@ -7,7 +7,8 @@
     {"$ref": "#/definitions/frameworkStates"},
     {"$ref": "#/definitions/urls"},
     {"$ref": "#/definitions/contract_variation"},
-    {"$ref": "#/definitions/advice"}
+    {"$ref": "#/definitions/advice"},
+    {"$ref": "#/definitions/descriptions"}
   ],
   "definitions": {
     "dates": {
@@ -53,7 +54,28 @@
     },
     "advice": {
       "properties": {
-        "use_of_service_data": {"type": "string"}
+        "use_of_service_data": {"type": "string"},
+        "lots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "slug": {
+                "type": "string"
+              },
+              "body": {
+                "type": "string"
+              },
+              "advice": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "slug",
+              "body"
+            ]
+          }
+        }
       },
       "additionalProperties": false
     },
@@ -107,6 +129,12 @@
         "call_off_contract_changes"
       ],
       "additionalProperties": false
+    },
+    "descriptions": {
+      "properties": {
+        "framework": {"type": "string"}
+      },
+      "required": ["framework"]
     }
   }
 }
