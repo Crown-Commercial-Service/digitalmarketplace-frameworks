@@ -81,6 +81,27 @@
           },
           "options": {
             "$ref": "#/properties/options"
+          },
+          "derived_from": {
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string"
+              },
+              "any_of": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {"type": "boolean"},
+                    {"type": "string"}
+                  ]
+                }
+              }
+            },
+            "required": [
+              "question",
+              "any_of"
+            ]
           }
         },
         "additionalProperties": false,

@@ -1,0 +1,46 @@
+id: serviceCategories
+name: Service categories
+question: Which categories does your service fit under?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: checkboxes
+number_of_items: 6
+options:
+  - label: Planning
+    derived_from:
+      question: setupAndMigrationService
+      any_of:
+        - true
+  - label: Setup and migration
+    derived_from:
+      question: setupAndMigrationService
+      any_of:
+        - true
+  - label: Quality assurance and performance testing
+    derived_from:
+      question: QAAndTesting
+      any_of:
+        - true
+  - label: Security testing
+    derived_from:
+      question: securityTesting
+      any_of:
+        - true
+  - label: Training
+    derived_from:
+      question: training
+      any_of:
+        - true
+  - label: Ongoing support
+    derived_from:
+      question: ongoingSupport
+      any_of:
+        - true
+
+validations:
+  - message: You can’t choose more than 6 categories.
+    name: max_items_limit

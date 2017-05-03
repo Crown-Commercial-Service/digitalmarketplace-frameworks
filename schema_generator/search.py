@@ -52,8 +52,26 @@ def _checkbox_tree_transformation_generator(checkbox_tree_question):
     ]
 
 
+def _derived_options_transformation_generator(checkbox_question):
+    retval = [
+        {
+            'append_conditionally': OrderedDict((
+                ('field', option['derived_from']['question']),
+                ('target_field', checkbox_question.id),
+                ('any_of', option['derived_from']['any_of']),
+                ('append_value', [option['label']]),
+            ))
+        }
+        for option in checkbox_question.get('options')
+        if option.get('derived_from', None) is not None
+    ]
+
+    return retval
+
+
 TRANSFORMATION_GENERATORS = {
-    'checkbox_tree': _checkbox_tree_transformation_generator
+    'checkbox_tree': _checkbox_tree_transformation_generator,
+    'checkboxes': _derived_options_transformation_generator
 }
 
 
