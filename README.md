@@ -172,7 +172,7 @@ To make a new version:
 - update `VERSION.txt` with the new version number
 - commit this change; the first line of the commit message **must** be in the
   format `Bump version to X.X.X`
-- create a pull request for the version bump
+- include the commit in the pull request containing your changes/fixes.
 
 When the pull request is merged a Jenkins job will be run to tag the new
 version.
