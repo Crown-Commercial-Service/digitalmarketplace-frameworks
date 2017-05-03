@@ -24,7 +24,7 @@ Terminology
 Question keys
 -------------
 
-* `question` name of the question, displayed in forms and summary tables (required). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
+* `question` full text of the question, usually including a question mark, displayed in forms and summary tables (required). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `question_advice` a note about the question asked, usually giving some more information about what it means
    and why it is being asked. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `type` type of the question input, used to find the related toolkit form template (required)
