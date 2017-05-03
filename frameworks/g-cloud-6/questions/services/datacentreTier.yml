@@ -13,28 +13,20 @@ type: radios
 options:
     -
         label: 'TIA-942 Tier 1'
-        filter_label: 'TIA-942 Tier 1 datacentre'
     -
         label: 'TIA-942 Tier 2'
-        filter_label: 'TIA-942 Tier 2 datacentre'
     -
         label: 'TIA-942 Tier 3'
-        filter_label: 'TIA-942 Tier 3 datacentre'
     -
         label: 'TIA-942 Tier 4'
-        filter_label: 'TIA-942 Tier 4 datacentre'
     -
         label: 'Uptime Institute Tier 1'
-        filter_label: 'Uptime Institute Tier 1 datacentre'
     -
         label: 'Uptime Institute Tier 2'
-        filter_label: 'Uptime Institute Tier 2 datacentre'
     -
         label: 'Uptime Institute Tier 3'
-        filter_label: 'Uptime Institute Tier 3 datacentre'
     -
         label: 'Uptime Institute Tier 4'
-        filter_label: 'Uptime Institute Tier 4 datacentre'
     -
         label: 'None of the above'
 validations:
