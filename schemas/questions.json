@@ -73,6 +73,9 @@
           "filter_label": {
             "type": "string"
           },
+          "filter_ignore": {
+            "type": "boolean"
+          },
           "description": {
             "type": "string"
           },
@@ -114,6 +117,9 @@
       "type": "string"
     },
     "id": {
+      "type": "string"
+    },
+    "filter_label": {
       "type": "string"
     },
     "questions": {
