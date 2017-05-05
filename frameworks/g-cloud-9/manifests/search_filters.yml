@@ -7,7 +7,6 @@
     - serviceCategoriesSupport
 -
   name: User support
-  slug: user-support
   questions:
     - emailSupport
     - phoneSupport
