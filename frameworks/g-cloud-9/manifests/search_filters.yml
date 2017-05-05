@@ -8,7 +8,7 @@
 -
   name: User support
   questions:
-    - emailSupport
+    - emailOrTicketingSupport
     - phoneSupport
     - webChatSupport
 -
