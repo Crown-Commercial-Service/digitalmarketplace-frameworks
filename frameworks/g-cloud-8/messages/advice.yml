@@ -1,0 +1,12 @@
+lots:
+  - slug: saas
+    body: Find applications or services that are run over the internet or in the cloud
+    advice: eg accounting tools or email
+  - slug: paas
+    body: Find platforms that provide a basis for building other services and applications
+  - slug: iaas
+    body: Find networks, hosting facilities and servers on which platforms and software depend
+    advice: eg hosting or content delivery
+  - slug: scs
+    body: Find help with cloud management and deployment
+    advice: eg IT health checks or data migrations
