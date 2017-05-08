@@ -5,3 +5,17 @@
     - serviceCategoriesSoftware
     - serviceCategoriesHosting
     - serviceCategoriesSupport
+-
+  name: User support
+  questions:
+    - emailOrTicketingSupport
+    - phoneSupport
+    - webChatSupport
+-
+  name: Government security clearances
+  questions:
+     - governmentSecurityClearances
+-
+  name: Security certification
+  questions:
+    - standardsCSASTAR

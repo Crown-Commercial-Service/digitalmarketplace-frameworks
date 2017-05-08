@@ -2,7 +2,7 @@ name: CSA STAR certification
 question: >
   Do you have a current CSA Security, Trust & Assurance Registry (STAR) certification that covers the security of
   your service?
-
+filter_label: CSA STAR
 depends:
   - "on": lot
     being:

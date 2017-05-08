@@ -24,12 +24,13 @@ Terminology
 Question keys
 -------------
 
-* `question` name of the question, displayed in forms and summary tables (required). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
+* `question` full text of the question, usually including a question mark, displayed in forms and summary tables (required). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `question_advice` a note about the question asked, usually giving some more information about what it means
    and why it is being asked. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `type` type of the question input, used to find the related toolkit form template (required)
 * `name` short question name to use in summary tables instead of the full question. Also used to
   generate the URL slug for addressable questions. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
+* `filter_label` for boolean questions, a text label to use for filtering services where the question was answered 'yes'. If not present `name` or `question` will be used instead.
 * `slug` can be used to manually override the slug used for this question.
 * `empty_message` a message to display instead of "Answer required" if question wasn't answered
 * `hint` hint text to display after the question, eg advice about how to best format you answer. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
@@ -37,7 +38,8 @@ Question keys
 * `options` a list of possible values for the types that support them. Each option consists of:
     * `label` text displayed on the option label (required)
     * `value` value submitted to the server when the option is selected
-    * `filter_label` [currently unused] text displayed in the buyer frontend filters list instead of label
+    * `filter_label` text displayed in the buyer frontend filters list instead of label
+    * `filter_ignore` set to true if you don't want this option to appear, when the question is used in a buyer frontend filter
     * `description` additional text displayed after the option label (used for `lot` question)
     * `options` for 'checkbox_tree' questions, a list of nested options, each one consisting of the same keys
     * `derived_from`: (this sub-key is used to describe transformations to data required when indexing services)
@@ -170,7 +172,7 @@ To make a new version:
 - update `VERSION.txt` with the new version number
 - commit this change; the first line of the commit message **must** be in the
   format `Bump version to X.X.X`
-- create a pull request for the version bump
+- include the commit in the pull request containing your changes/fixes.
 
 When the pull request is merged a Jenkins job will be run to tag the new
 version.

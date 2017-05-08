@@ -119,8 +119,27 @@
         "filter_serviceCategories": {
           "type": "string",
           "index": "not_analyzed"
+        },
+        "filter_emailOrTicketingSupport": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_phoneSupport": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_webChatSupport": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_governmentSecurityClearances": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_standardsCSASTAR": {
+          "type": "string",
+          "index": "not_analyzed"
         }
-
       }
     }
   }
