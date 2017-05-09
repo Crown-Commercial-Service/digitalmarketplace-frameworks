@@ -17,12 +17,16 @@ type: radios
 options:
   - label: I’m not a reseller
     value: not_reseller
+    filter_label: Supplier is not a reseller
   - label: I’m a reseller providing extra features and support not available from the original supplier
     value: reseller_extra_features_and_support
+    filter_label: Reseller providing extra features and support
   - label: I’m a reseller providing extra support
     value: reseller_extra_support
+    filter_label: Reseller providing extra support
   - label: I’m a reseller not providing extra features or support
     value: reseller_no_extras
+    filter_label: Reseller (no extras)
 
 validations:
   - name: answer_required
