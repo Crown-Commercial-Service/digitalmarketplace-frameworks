@@ -1,5 +1,6 @@
 name: PCI certification
 question: Do you have a current Payment Card Industry Data Security Standard (PCI DSS) certification?
+filter_label: PCI DSS (payment card security)
 
 depends:
   - "on": lot
