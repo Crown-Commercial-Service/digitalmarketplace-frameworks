@@ -1,6 +1,6 @@
 name: Education pricing
 question: Do you offer special pricing for educational organisations?
-filter_label: Discount for educational organisations
+filter_label: discount for educational organisations
 
 depends:
   - "on": lot
