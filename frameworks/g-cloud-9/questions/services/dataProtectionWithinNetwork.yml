@@ -18,12 +18,15 @@ type: checkboxes
 options:
   - label: TLS (Version 1.2 or above)
     value: tls
+    filter_label: TLS (version 1.2 or above)
   - label: IPsec or TLS VPN gateway
     value: ipsec_or_vpn
   - label: Legacy SSL and TLS (under 1.2)
     value: ssl
+    filter_label: legacy SSL and TLS (under version 1.2)
   - label: Other
     value: other
+    filter_ignore: true
 
 validations:
   - name: answer_required

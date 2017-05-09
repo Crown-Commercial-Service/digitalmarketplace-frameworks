@@ -1,5 +1,6 @@
 name: Trial option
 question: Do you provide a free trial option for your service?
+filter_label: free trial
 
 depends:
   - "on": lot

@@ -16,10 +16,13 @@ type: radios
 options:
   - label: Staff screening performed with conforms to BS7858:2012
     value: "staff_screening_to_bs7858_2012"
+    filter_label: conforms to BS7858:2012
   - label: Staff screening performed but doesn’t conform with BS7858:2012
     value: "staff_screening_not_bs7858_2012"
+    filter_label: other security clearance
   - label: Staff screening not performed
     value: none
+    filter_ignore: true
 
 validations:
   - name: answer_required

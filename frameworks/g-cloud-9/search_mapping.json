@@ -120,6 +120,14 @@
           "type": "string",
           "index": "not_analyzed"
         },
+        "filter_cloudDeploymentModel": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_resellingType": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
         "filter_emailOrTicketingSupport": {
           "type": "string",
           "index": "not_analyzed"
@@ -132,11 +140,123 @@
           "type": "string",
           "index": "not_analyzed"
         },
-        "filter_governmentSecurityClearances": {
+        "filter_onsiteSupport": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_supportAvailableToThirdParty": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_browsersAccess": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_installation": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_mobile": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_APISoftware": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_metricsSoftwareHow": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_metricsHostingWhat": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_metricsHostingHow": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_scalingType": {
+          "type": "string",
+          "index": "not_analyzed"
+        }, 
+        "filter_usageNotifications": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_backup": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_backupDatacentre": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_publicSectorNetworksTypes": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_dataProtectionBetweenNetworks": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_dataProtectionWithinNetwork": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_dataStorageAndProcessingLocations": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_userAuthenticationSoftware": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_userAuthenticationHosting": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_managementAccessAuthentication": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_standardsISOIEC27001": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_standardsISO28000": {
           "type": "string",
           "index": "not_analyzed"
         },
         "filter_standardsCSASTAR": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_standardsPCI": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_securityGovernanceStandards": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_datacentreSecurityStandards": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_staffSecurityClearanceChecks": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_governmentSecurityClearances": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_educationPricing": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_freeVersionTrialOption": {
           "type": "string",
           "index": "not_analyzed"
         }

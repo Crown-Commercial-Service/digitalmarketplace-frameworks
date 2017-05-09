@@ -6,16 +6,102 @@
     - serviceCategoriesHosting
     - serviceCategoriesSupport
 -
+  name: Cloud deployment model
+  questions:
+    - cloudDeploymentModel
+- 
+  name: Supplier type
+  questions:
+    - resellingType
+-
   name: User support
   questions:
     - emailOrTicketingSupport
     - phoneSupport
     - webChatSupport
+    - onsiteSupport
+    - supportAvailableToThirdParty
 -
-  name: Government security clearances
+  name: Using the service
   questions:
-     - governmentSecurityClearances
+    - browsersAccess
+    - installation
+    - mobile
+    - APISoftware
+-
+  name: Infrastructure or application metrics
+  questions:
+    - metricsHostingWhat
+-
+  name: Scaling
+  questions:
+    - scalingType
+-
+  name: Usage notifications
+  questions:
+    - usageNotifications
+-
+  name: Backup and recovery
+  questions:
+    - backup
+-
+  name: Datacentre setup
+  questions:
+    - backupDatacentre
+-
+  name: Public sector networks the service is connected to
+  questions:
+    - publicSectorNetworksTypes
+-
+  name: Data protection between buyer and supplier networks
+  questions:
+    - dataProtectionBetweenNetworks
+-
+  name: Data protection within supplier network
+  questions:
+    - dataProtectionWithinNetwork
+-
+  name: Data storage and processing locations
+  questions:
+    - dataStorageAndProcessingLocations
+-
+  name: User authentication
+  questions:
+    - userAuthenticationSoftware
+-
+  name: User authentication
+  questions:
+    - userAuthenticationHosting
+-
+  name: Management access authentication
+  questions:
+    - managementAccessAuthentication
 -
   name: Security certification
   questions:
+    - standardsISOIEC27001
+    - standardsISO28000
     - standardsCSASTAR
+    - standardsPCI
+-
+  name: Security governance standards
+  questions:
+    - securityGovernanceStandards
+-
+  name: Datacentre security standard
+  questions:
+    - datacentreSecurityStandards
+-
+  name: Staff security clearance
+  questions:
+    - staffSecurityClearanceChecks
+-
+  name: Minimum government security clearance
+  questions:
+     - governmentSecurityClearances
+-
+  name: Pricing options
+  questions:
+    - educationPricing
+    - freeVersionTrialOption
+

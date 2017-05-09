@@ -25,3 +25,4 @@ options:
     value: swan
   - label: Other
     value: other
+    filter_ignore: true 
