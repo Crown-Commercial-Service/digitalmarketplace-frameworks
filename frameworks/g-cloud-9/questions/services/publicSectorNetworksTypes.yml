@@ -15,13 +15,19 @@ type: checkboxes
 options:
   - label: Public Services Network (PSN)
     value: psn
+    filter_label: Public Services Network (PSN)
   - label: Police National Network (PNN)
     value: pnn
+    filter_label: Police National Network (PNN)
   - label: New NHS Network (N3)
     value: n3
+    filter_label: New NHS Network (N3)
   - label: Joint Academic Network (JANET)
     value: janet
+    filter_label: Joint Academic Network (JANET)
   - label: Scottish Wide Area Network (SWAN)
     value: swan
+    filter_label: Scottish Wide Area Network (SWAN)
   - label: Other
     value: other
+    filter_ignore: true 
