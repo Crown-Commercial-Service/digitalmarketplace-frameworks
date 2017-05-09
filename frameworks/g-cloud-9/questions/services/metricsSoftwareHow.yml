@@ -13,9 +13,13 @@ type: checkboxes
 options:
   - label: Through an API
     value: api
+    filter_label: API access
   - label: Real-time dashboards
     value: real_time
+    filter_label: Real-time dashboards
   - label: Regular reports
     value: regular_reports
+    filter_label: Regular reports
   - label: Reports on request
     value: on_request
+    filter_label: Reports on request
