@@ -1,5 +1,6 @@
 name: Support available to third parties
 question: Can third parties engaged by the buyer access the support features of your service?
+filter_label: Support available to third parties
 
 depends:
   - "on": lot
