@@ -5,6 +5,18 @@
     - serviceCategoriesSoftware
     - serviceCategoriesHosting
     - serviceCategoriesSupport
+- 
+  name: Supplier type
+  questions:
+    - resellingType
+-
+  name: Staff security clearance
+  questions:
+    - staffSecurityClearanceChecks
+-
+  name: Pricing options
+  questions:
+    - educationPricing
 -
   name: User support
   questions:
