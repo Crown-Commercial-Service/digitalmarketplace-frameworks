@@ -12,12 +12,16 @@ type: checkboxes
 options:
   - label: United Kingdom
     value: uk
+    filter_label: United Kingdom
   - label: European Economic Area (EEA)
     value: eea
+    filter_label: European Economic Area (EEA)
   - label: EU-US Privacy Shield agreement locations
     value: privacy_shield
+    filter_label: EU-US Privacy Shield agreement locations
   - label: Other locations
     value: other
+    filter_ignore: true
 
 
 validations:
