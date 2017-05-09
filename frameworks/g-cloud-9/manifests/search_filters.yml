@@ -18,16 +18,64 @@
   questions:
     - educationPricing
 -
+  name: Cloud deployment model
+  questions:
+    - cloudDeploymentModel
+-
   name: User support
   questions:
     - emailOrTicketingSupport
     - phoneSupport
     - webChatSupport
+    - onsiteSupport
+    - supportAvailableToThirdParty
 -
-  name: Government security clearances
+  name: Using the service
   questions:
-     - governmentSecurityClearances
+    - browsersAccess
+    - installation
+    - mobile
+    - APISoftware
+-
+  name: Service usage metrics
+  questions:
+    - metricsSoftwareHow
+-
+  name: Public sector networks the service is connected to
+  questions:
+    - publicSectorNetworksTypes
+-
+  name: Data protection between buyer and supplier networks
+  questions:
+    - dataProtectionBetweenNetworks
+-
+  name: Data protection within supplier network
+  questions:
+    - dataProtectionWithinNetwork
+-
+  name: Data storage and processing locations
+  questions:
+    - dataStorageAndProcessingLocations
+-
+  name: User authentication
+  questions:
+    - userAuthenticationSoftware
+-
+  name: Management access authentication
+  questions:
+    - managementAccessAuthentication
 -
   name: Security certification
   questions:
+    - standardsISOIEC27001
+    - standardsISO28000
     - standardsCSASTAR
+    - standardsPCI
+-
+  name: Datacentre security standard
+  questions:
+    - datacentreSecurityStandards
+-
+  name: Minimum government security clearance
+  questions:
+     - governmentSecurityClearances
