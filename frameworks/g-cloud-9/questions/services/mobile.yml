@@ -1,5 +1,6 @@
 name: Working with mobile
 question: Has your service been designed to work on mobile devices?
+filter_label: Designed for use on mobile devices
 
 depends:
   - "on": lot
