@@ -1,5 +1,6 @@
 name: Browser access
 question: Is your service accessed through a browser?
+filter_label: Web browser interface
 
 depends:
   - "on": lot
