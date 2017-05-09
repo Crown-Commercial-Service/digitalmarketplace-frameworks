@@ -116,11 +116,7 @@
         "serviceCategories": {
           "type": "string"
         },
-        "filter_educationPricing": {
-          "type": "string",
-          "index": "not_analyzed"
-        },
-        "filter_staffSecurityClearanceChecks": {
+        "filter_serviceCategories": {
           "type": "string",
           "index": "not_analyzed"
         },
@@ -128,7 +124,15 @@
           "type": "string",
           "index": "not_analyzed"
         },
-        "filter_serviceCategories": {
+        "filter_staffSecurityClearanceChecks": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_educationPricing": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_cloudDeploymentModel": {
           "type": "string",
           "index": "not_analyzed"
         },
@@ -144,11 +148,79 @@
           "type": "string",
           "index": "not_analyzed"
         },
-        "filter_governmentSecurityClearances": {
+        "filter_onsiteSupport": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_supportAvailableToThirdParty": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_browsersAccess": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_installation": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_mobile": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_APISoftware": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_metricsSoftwareHow": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_publicSectorNetworksTypes": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_dataProtectionBetweenNetworks": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_dataProtectionWithinNetwork": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_dataStorageAndProcessingLocations": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_userAuthenticationSoftware": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_managementAccessAuthentication": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_standardsISOIEC27001": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_standardsISO28000": {
           "type": "string",
           "index": "not_analyzed"
         },
         "filter_standardsCSASTAR": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_standardsPCI": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_datacentreSecurityStandards": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "filter_governmentSecurityClearances": {
           "type": "string",
           "index": "not_analyzed"
         }
