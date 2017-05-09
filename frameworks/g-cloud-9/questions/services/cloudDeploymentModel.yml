@@ -10,16 +10,16 @@ type: radios
 options:
   - label: Public cloud
     value: public
-    filter_label: Public cloud
+    filter_label: public cloud
   - label: Private cloud
     value: private
-    filter_label: Private cloud
+    filter_label: private cloud
   - label: Community cloud
     value: community
-    filter_label: Community cloud
+    filter_label: community cloud
   - label: Hybrid cloud
     value: hybrid
-    filter_label: Hybrid cloud
+    filter_label: hybrid cloud
 
 validations:
   - name: answer_required
