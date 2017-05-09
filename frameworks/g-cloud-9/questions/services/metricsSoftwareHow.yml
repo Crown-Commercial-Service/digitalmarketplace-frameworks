@@ -16,10 +16,10 @@ options:
     filter_label: API access
   - label: Real-time dashboards
     value: real_time
-    filter_label: Real-time dashboards
+    filter_label: real-time dashboards
   - label: Regular reports
     value: regular_reports
-    filter_label: Regular reports
+    filter_label: regular reports
   - label: Reports on request
     value: on_request
-    filter_label: Reports on request
+    filter_label: reports on request
