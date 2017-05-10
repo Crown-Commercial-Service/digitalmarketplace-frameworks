@@ -12,8 +12,10 @@ type: checkboxes
 options:
   - label: Scales automatically
     value: automatic
+    filter_label: automatic
   - label: Scales with user intervention
     value: user_intervention
+    filter_label: manual through user interface
 
 validations:
   - name: answer_required
