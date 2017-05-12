@@ -1,5 +1,6 @@
 name: Backup and recovery
 question: Does your service provide backup and recovery?
+filter_label: backup and recovery available
 
 depends:
   - "on": lot
