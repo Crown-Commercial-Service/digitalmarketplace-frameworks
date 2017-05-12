@@ -5,22 +5,14 @@
     - serviceCategoriesSoftware
     - serviceCategoriesHosting
     - serviceCategoriesSupport
-- 
-  name: Supplier type
-  questions:
-    - resellingType
--
-  name: Staff security clearance
-  questions:
-    - staffSecurityClearanceChecks
--
-  name: Pricing options
-  questions:
-    - educationPricing
 -
   name: Cloud deployment model
   questions:
     - cloudDeploymentModel
+- 
+  name: Supplier type
+  questions:
+    - resellingType
 -
   name: User support
   questions:
@@ -40,6 +32,30 @@
   name: Service usage metrics
   questions:
     - metricsSoftwareHow
+-
+  name: Infrastructure or application metrics
+  questions:
+    - metricsHostingWhat
+-
+  name: Infrastructure or application metrics reporting
+  questions:
+    - metricsHostingHow
+-
+  name: Scaling
+  questions:
+    - scalingType
+-
+  name: Usage notifications
+  questions:
+    - usageNotifications
+-
+  name: Backup and recovery
+  questions:
+    - backup
+-
+  name: Datacentre setup
+  questions:
+    - backupDatacentre
 -
   name: Public sector networks the service is connected to
   questions:
@@ -61,6 +77,10 @@
   questions:
     - userAuthenticationSoftware
 -
+  name: User authentication
+  questions:
+    - userAuthenticationHosting
+-
   name: Management access authentication
   questions:
     - managementAccessAuthentication
@@ -72,10 +92,22 @@
     - standardsCSASTAR
     - standardsPCI
 -
+  name: Security governance standards
+  questions:
+    - securityGovernanceStandards
+-
   name: Datacentre security standard
   questions:
     - datacentreSecurityStandards
 -
+  name: Staff security clearance
+  questions:
+    - staffSecurityClearanceChecks
+-
   name: Minimum government security clearance
   questions:
      - governmentSecurityClearances
+-
+  name: Pricing options
+  questions:
+    - educationPricing
