@@ -1,4 +1,4 @@
-name: Service interface testing
+name: Accessibility testing
 question: Describe any interface testing you’ve done with users of assistive technology.
 depends:
   - "on": lot

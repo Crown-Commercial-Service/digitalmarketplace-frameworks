@@ -1,4 +1,4 @@
-name: Describe management authentication
+name: Description of management access authentication
 question: Describe how you authenticate management access to your service.
 
 hidden: true

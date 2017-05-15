@@ -1,4 +1,4 @@
-name: Services the setup or migration service works with
+name: List of supported services
 question: Which cloud services do you work with?
 
 hidden: true

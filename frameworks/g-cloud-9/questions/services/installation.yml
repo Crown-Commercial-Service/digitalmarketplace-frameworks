@@ -1,4 +1,4 @@
-name: Installation
+name: Application to install
 question: Is there an application that users install to use your service?
 filter_label: application to install
 
