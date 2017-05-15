@@ -1,4 +1,4 @@
-name: Credit or debit card information handled
+name: Credit or debit card handling
 question: Does your service handle credit or debit card information?
 
 depends:
