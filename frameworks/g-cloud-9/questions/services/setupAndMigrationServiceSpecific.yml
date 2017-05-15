@@ -1,4 +1,4 @@
-name: Migration service is for specific cloud services
+name: Setup or migration service is for specific cloud services
 question: Is your migration service for specific cloud services?
 
 hidden: true
