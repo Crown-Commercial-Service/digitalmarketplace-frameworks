@@ -1,4 +1,4 @@
-name: How long buyer audit data is stored
+name: How long user audit data is stored for
 question: How long do you store users’ audit data for?
 
 hidden: true
