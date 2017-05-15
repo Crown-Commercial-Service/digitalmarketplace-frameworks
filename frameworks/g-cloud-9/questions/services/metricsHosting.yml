@@ -1,5 +1,5 @@
 id: metrics
-name: Metrics available
+name: Infrastructure or application metrics
 question: Do you provide infrastructure or application metrics?
 
 depends:
