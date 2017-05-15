@@ -1,4 +1,4 @@
-name: Installation
+name: Application to install
 question: Does the service need to be installed?
 
 depends:
