@@ -130,6 +130,22 @@ These are the fields that are turned into TemplateFields when the YAML files are
 *Note:*
 *All markdown formatting, HTML tags, or jinja passed in as part of the content of variables will be escaped.*
 
+Search mappings
+---------------
+
+Each G-Cloud framework should provide a `search_mapping.json` file, this is a template for the
+generation of a mapping for the Search API to pass to ElasticSearch.
+
+The intention is that the mapping should eventually be generated entirely from the `search_filters`
+manifest, but that is not yet the case. The script `generate-search-config.py` creates a search
+mapping based on this template.
+
+For each field (question) that needs to be indexed, there must be a `filter_` property added to the
+`mappings` key. Note that if a question's `id` has been overridden (i.e. the `id` is no longer the
+same as the filename, then the _overridden_ `id` should be used here. (Compare with the manifest,
+where in all cases the filename should be used to specify the question.)
+
+
 Development
 -----------
 

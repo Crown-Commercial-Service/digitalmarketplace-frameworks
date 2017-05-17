@@ -164,15 +164,11 @@
           "type": "string",
           "index": "not_analyzed"
         },
-        "filter_metricsSoftwareHow": {
+        "filter_metricsHow": {
           "type": "string",
           "index": "not_analyzed"
         },
         "filter_metricsHostingWhat": {
-          "type": "string",
-          "index": "not_analyzed"
-        },
-        "filter_metricsHostingHow": {
           "type": "string",
           "index": "not_analyzed"
         },
@@ -208,11 +204,7 @@
           "type": "string",
           "index": "not_analyzed"
         },
-        "filter_userAuthenticationSoftware": {
-          "type": "string",
-          "index": "not_analyzed"
-        },
-        "filter_userAuthenticationHosting": {
+        "filter_userAuthentication": {
           "type": "string",
           "index": "not_analyzed"
         },

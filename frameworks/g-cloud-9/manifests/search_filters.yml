@@ -28,6 +28,9 @@
     - installation
     - mobile
     - APISoftware
+- name: Service usage metrics
+  questions:
+    - metricsSoftwareHow
 -
   name: Infrastructure or application metrics
   questions:

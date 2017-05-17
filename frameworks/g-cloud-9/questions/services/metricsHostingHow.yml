@@ -7,7 +7,6 @@ depends:
   - "on": lot
     being:
       - cloud-hosting
-      - cloud-software
 
 type: checkboxes
 options:
