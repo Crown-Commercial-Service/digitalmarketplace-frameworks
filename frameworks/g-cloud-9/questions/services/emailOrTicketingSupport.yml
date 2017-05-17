@@ -20,9 +20,13 @@ options:
   - label: "Yes"
     value: "yes"
     filter_label: "Email/online ticketing"
+    derived_from:
+      question: emailOrTicketingSupport
+      any_of:
+        - yes_extra_cost
   - label: Yes, at extra cost
     value: yes_extra_cost
-    filter_label: "Email/online ticketing (extra cost)"
+    filter_ignore: true
   - label: "No"
     value: "no"
     filter_ignore: true
