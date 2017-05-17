@@ -18,9 +18,18 @@ options:
   - label: Up to Security Clearance (SC)
     value: sc
     filter_label: Security Clearance (SC)
+    derived_from:
+      question: governmentSecurityClearances
+      any_of:
+        - dv
   - label: Up to Baseline Personnel Security Standard (BPSS)
     value: bpss
     filter_label: Baseline Personnel Security Standard (BPSS)
+    derived_from:
+      question: governmentSecurityClearances
+      any_of:
+        - dv
+        - sc
   - label: None
     value: none
     filter_ignore: true

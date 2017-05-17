@@ -14,8 +14,17 @@ options:
     value: uk
   - label: European Economic Area (EEA)
     value: eea
+    derived_from:
+      question: dataStorageAndProcessingLocations
+      any_of:
+        - uk
   - label: EU-US Privacy Shield agreement locations
     value: privacy_shield
+    derived_from:
+      question: dataStorageAndProcessingLocations
+      any_of:
+        - uk
+        - eea
   - label: Other locations
     value: other
     filter_ignore: true
