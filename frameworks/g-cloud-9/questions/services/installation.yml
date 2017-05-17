@@ -1,5 +1,6 @@
 name: Installation
 question: Is there an application that users install to use your service?
+filter_label: application to install
 
 depends:
   - "on": lot

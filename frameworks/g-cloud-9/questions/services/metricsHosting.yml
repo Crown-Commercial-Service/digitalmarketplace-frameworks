@@ -6,7 +6,6 @@ depends:
   - "on": lot
     being:
       - cloud-hosting
-      - cloud-software
 followup:
   metricsWhat:
     - true

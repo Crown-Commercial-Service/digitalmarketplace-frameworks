@@ -16,10 +16,13 @@ type: radios
 options:
   - label: Complies with a recognised standard, for example CSA CCM v3.0 or SSAE-16 / ISAE 3402
     value: recognised_standard
+    filter_label: complies with a recognised standard (for example CSA CCM version 3.0)
   - label: Supplier-defined controls
     value: supplier_defined
+    filter_ignore: true
   - label: Managed by a third party
     value: third_party
+    filter_ignore: true
 
 validations:
   - name: answer_required

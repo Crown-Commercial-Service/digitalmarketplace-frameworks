@@ -18,6 +18,7 @@ options:
     value: privacy_shield
   - label: Other locations
     value: other
+    filter_ignore: true
 
 
 validations:
