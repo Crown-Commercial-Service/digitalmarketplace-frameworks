@@ -22,7 +22,7 @@ type: radios
 options:
   - label: "Yes"
     value: "yes"
-    filter_label: "Web chat"
+    filter_label: "web chat"
     derived_from:
       question: webChatSupport
       any_of:
