@@ -1,5 +1,5 @@
 id: metrics
-name: Metrics
+name: Service useage metrics
 question: Do you provide service usage metrics?
 
 depends:

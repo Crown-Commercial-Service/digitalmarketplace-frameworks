@@ -1,4 +1,4 @@
-name: Service add-on type
+name: Software add-on or extension
 question: Is your service an add-on or extension to other software services?
 
 depends:

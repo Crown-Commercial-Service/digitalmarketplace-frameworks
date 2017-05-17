@@ -1,4 +1,4 @@
-name: Web interface
+name: Web browser interface
 question: Is there a web interface for your service?
 
 depends:
