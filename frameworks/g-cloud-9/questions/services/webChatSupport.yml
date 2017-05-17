@@ -23,9 +23,13 @@ options:
   - label: "Yes"
     value: "yes"
     filter_label: "Web chat"
+    derived_from:
+      question: webChatSupport
+      any_of:
+        - yes_extra_cost
   - label: Yes, at an extra cost
     value: yes_extra_cost
-    filter_label: "Web chat (extra cost)"
+    filter_ignore: true
   - label: "No"
     value: "no"
     filter_ignore: true
