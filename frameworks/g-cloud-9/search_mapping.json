@@ -168,7 +168,7 @@
           "type": "string",
           "index": "not_analyzed"
         },
-        "filter_metricsHostingWhat": {
+        "filter_metricsWhat": {
           "type": "string",
           "index": "not_analyzed"
         },
