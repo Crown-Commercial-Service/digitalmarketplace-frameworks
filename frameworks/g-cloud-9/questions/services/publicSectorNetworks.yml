@@ -4,7 +4,6 @@ question: Does your service connect to any public sector networks?
 depends:
   - "on": lot
     being:
-      - cloud-hosting
       - cloud-software
 followup:
   publicSectorNetworksTypes:
