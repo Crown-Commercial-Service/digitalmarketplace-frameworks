@@ -5,28 +5,6 @@
     - planningServiceCompatibility
     - planningServiceCompatibilityList
 
-- name: Setup and migration
-  questions:
-    - setupAndMigrationService
-    - setupAndMigrationServiceDescription
-    - setupAndMigrationServiceSpecific
-    - setupAndMigrationServiceSpecificList
-
-- name: Quality assurance and performance testing
-  questions:
-    - QAAndTesting
-    - QAAndTestingDescription
-
-- name: Security testing
-  questions:
-    - securityTesting
-    - securityTestingWhat
-    - securityTestingWhatOther
-    - securityTestingAccredited
-    - securityTestingAccreditations
-    - securityTestingAccreditationsOther
-    - securityTestingCCP
-
 - name: Training
   questions:
     - training
@@ -34,11 +12,12 @@
     - trainingServiceSpecific
     - trainingServiceSpecificList
 
-- name: Ongoing support
+- name: Setup and migration
   questions:
-    - ongoingSupport
-    - ongoingSupportServices
-    - ongoingSupportDescription
+    - setupAndMigrationService
+    - setupAndMigrationServiceDescription
+    - setupAndMigrationServiceSpecific
+    - setupAndMigrationServiceSpecificList
 
 - name: Service scope
   questions:
@@ -49,10 +28,11 @@
     - serviceConstraintsSupport
     - systemRequirements
 
-- name: Reselling
+- name: Ongoing support
   questions:
-    - resellingType
-    - resellingOrganisations
+    - ongoingSupport
+    - ongoingSupportServices
+    - ongoingSupportDescription
 
 - name: User support
   questions:
@@ -71,7 +51,16 @@
     - supportLevels
     - supportAvailableToThirdParty
 
-- name: How users work with your service
+- name: Onboarding and offboarding
+  questions:
+    - gettingStarted
+    - documentation
+    - documentationFormats
+    - documentationFormatsOther
+    - endOfContractDataExtraction
+    - endOfContractProcess
+
+- name: Using the service
   questions:
     - browsersAccess
     - browsersSupported
@@ -101,32 +90,13 @@
     - customisationAvailable
     - customisationDescription
 
-
-- name: Onboarding and offboarding
+- name: Scaling
   questions:
-    - gettingStarted
-    - documentation
-    - documentationFormats
-    - documentationFormatsOther
-    - endOfContractDataExtraction
-    - endOfContractProcess
-
-- name: Data importing and exporting
-  questions:
-    - dataExportHow
-    - dataExportFormats
-    - dataExportFormatsOther
-    - dataImportFormats
-    - dataImportFormatsOther
-
-- name: Backups and recovery
-  questions:
-    - backup
-    - backupWhatData
-    - backupControls
-    - backupDatacentre
-    - backupScheduling
-    - backupRecovery
+    - scaling
+    - scalingType
+    - independenceOfResources
+    - usageNotifications
+    - usageNotificationsHow
 
 - name: Analytics
   questions:
@@ -138,26 +108,30 @@
     - metricsHostingHow
     - metricsSoftwareHow
 
-- name: Scaling
+- name: Quality assurance and performance testing
   questions:
-    - scaling
-    - scalingType
-    - independenceOfResources
-    - usageNotifications
-    - usageNotificationsHow
+    - QAAndTesting
+    - QAAndTestingDescription
 
-- name: Public sector networks
+- name: Security testing
   questions:
-    - publicSectorNetworks
-    - publicSectorNetworksTypes
-    - publicSectorNetworksOther
+    - securityTesting
+    - securityTestingWhat
+    - securityTestingWhatOther
+    - securityTestingAccredited
+    - securityTestingAccreditations
+    - securityTestingAccreditationsOther
+    - securityTestingCCP
 
-- name: Data-in-transit protection
+- name: Resellers
   questions:
-    - dataProtectionBetweenNetworks
-    - dataProtectionBetweenNetworksOther
-    - dataProtectionWithinNetwork
-    - dataProtectionWithinNetworkOther
+    - resellingType
+    - resellingOrganisations
+
+- name: Staff security
+  questions:
+    - staffSecurityClearanceChecks
+    - governmentSecurityClearances
 
 - name: Asset protection
   questions:
@@ -174,49 +148,35 @@
     - dataSanitisationTypeSoftware
     - equipmentDisposalApproach
 
+- name: Backup and recovery
+  questions:
+    - backup
+    - backupWhatData
+    - backupControls
+    - backupDatacentre
+    - backupScheduling
+    - backupRecovery
+
+- name: Data importing and exporting
+  questions:
+    - dataExportHow
+    - dataExportFormats
+    - dataExportFormatsOther
+    - dataImportFormats
+    - dataImportFormatsOther
+
+- name: Data-in-transit protection
+  questions:
+    - dataProtectionBetweenNetworks
+    - dataProtectionBetweenNetworksOther
+    - dataProtectionWithinNetwork
+    - dataProtectionWithinNetworkOther
+
 - name: Availability and resilience
   questions:
     - guaranteedAvailability
     - approachToResilience
     - outageReporting
-
-- name: Separation between users
-  questions:
-    - virtualisation
-    - virtualisationImplementedBy
-    - virtualisationTechnologiesUsed
-    - virtualisationTechnologiesUsedOther
-    - virtualisationThirdPartyProvider
-    - virtualisationSeparation
-
-- name: Governance
-  questions:
-    - boardLevelServiceSecurity
-    - securityGovernanceAccreditation
-    - securityGovernanceStandards
-    - securityGovernanceStandardsOther
-    - securityGovernanceApproach
-    - informationSecurityPoliciesAndProcesses
-
-- name: Operational security
-  questions:
-    - configurationAndChangeManagementType
-    - configurationAndChangeManagementProcesses
-    - vulnerabilityManagementType
-    - vulnerabilityManagementApproach
-    - protectiveMonitoringType
-    - protectiveMonitoringApproach
-    - incidentManagementType
-    - incidentManagementApproach
-
-- name: Staff security
-  questions:
-    - staffSecurityClearanceChecks
-    - governmentSecurityClearances
-
-- name: Secure development
-  questions:
-    - secureDevelopment
 
 - name: Identity and authentication
   questions:
@@ -259,6 +219,45 @@
     - standardsPCIExclusions
     - accreditationsOther
     - accreditationsOtherList
+
+- name: Security governance
+  questions:
+    - boardLevelServiceSecurity
+    - securityGovernanceAccreditation
+    - securityGovernanceStandards
+    - securityGovernanceStandardsOther
+    - securityGovernanceApproach
+    - informationSecurityPoliciesAndProcesses
+
+- name: Operational security
+  questions:
+    - configurationAndChangeManagementType
+    - configurationAndChangeManagementProcesses
+    - vulnerabilityManagementType
+    - vulnerabilityManagementApproach
+    - protectiveMonitoringType
+    - protectiveMonitoringApproach
+    - incidentManagementType
+    - incidentManagementApproach
+
+- name: Secure development
+  questions:
+    - secureDevelopment
+
+- name: Public sector networks
+  questions:
+    - publicSectorNetworks
+    - publicSectorNetworksTypes
+    - publicSectorNetworksOther
+
+- name: Separation between users
+  questions:
+    - virtualisation
+    - virtualisationImplementedBy
+    - virtualisationTechnologiesUsed
+    - virtualisationTechnologiesUsedOther
+    - virtualisationThirdPartyProvider
+    - virtualisationSeparation
 
 - name: Energy efficiency
   questions:
