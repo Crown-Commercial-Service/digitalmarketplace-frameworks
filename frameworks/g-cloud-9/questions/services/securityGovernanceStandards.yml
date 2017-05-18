@@ -19,6 +19,7 @@ options:
     value: iso_iec_27001
   - label: Other
     value: other
+    filter_ignore: true
 
 validations:
   - name: answer_required
