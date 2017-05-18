@@ -59,7 +59,7 @@ def _derived_options_transformation_generator(checkbox_question):
                 ('field', option['derived_from']['question']),
                 ('target_field', checkbox_question.id),
                 ('any_of', option['derived_from']['any_of']),
-                ('append_value', [option['label']]),
+                ('append_value', [utils.get_option_value(option)]),
             ))
         }
         for option in checkbox_question.get('options')
