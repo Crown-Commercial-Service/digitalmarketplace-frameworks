@@ -50,10 +50,6 @@
   questions:
     - backup
 -
-  name: Datacentre setup
-  questions:
-    - backupDatacentre
--
   name: Public sector networks the service is connected to
   questions:
     - publicSectorNetworksTypes
