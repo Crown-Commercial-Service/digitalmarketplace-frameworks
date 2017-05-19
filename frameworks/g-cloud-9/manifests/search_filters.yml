@@ -32,9 +32,6 @@
   name: Service usage metrics
   questions:
     - metricsSoftwareHow
-- 
-  name: Service usage metrics
-  questions:
     - metricsHostingHow
 -
   name: Infrastructure or application metrics
@@ -76,9 +73,6 @@
   name: User authentication
   questions:
     - userAuthenticationSoftware
--
-  name: User authentication
-  questions:
     - userAuthenticationHosting
 -
   name: Management access authentication
