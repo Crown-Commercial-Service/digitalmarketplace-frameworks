@@ -30,6 +30,7 @@ options:
     value: username_or_password
   - label: Other
     value: other
+    filter_ignore: true
 
 validations:
   - name: answer_required

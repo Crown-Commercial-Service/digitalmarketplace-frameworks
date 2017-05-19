@@ -29,6 +29,7 @@ options:
     filter_label: bonded fibre optic connections
   - label: Legacy SSL and TLS (under 1.2)
     value: legacy_ssl
+    filter_ignore: true
     filter_label: legacy SSL and TLS (under version 1.2)
   - label: Other
     value: other

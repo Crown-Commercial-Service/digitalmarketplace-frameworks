@@ -23,6 +23,7 @@ options:
     value: ipsec_or_vpn
   - label: Legacy SSL and TLS (under 1.2)
     value: ssl
+    filter_ignore: true
     filter_label: legacy SSL and TLS (under version 1.2)
   - label: Other
     value: other
