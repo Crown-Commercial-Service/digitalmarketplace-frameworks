@@ -15,7 +15,7 @@ options:
     filter_label: automatic
   - label: Scales with user intervention
     value: user_intervention
-    filter_label: manual through user interface
+    filter_label: manual through user intervention
 
 validations:
   - name: answer_required
