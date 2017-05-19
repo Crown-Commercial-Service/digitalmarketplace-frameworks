@@ -50,7 +50,7 @@
   questions:
     - backup
 -
-  name: Public sector networks the service is connected to
+  name: Connected public sector networks
   questions:
     - publicSectorNetworksTypes
 -
