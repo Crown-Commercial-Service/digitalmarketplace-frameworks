@@ -1,5 +1,6 @@
 name: Usage notifications
 question: Do you notify users if usage nears service limits?
+filter_label: notifies users if usage nears service limits
 
 depends:
   - "on": lot

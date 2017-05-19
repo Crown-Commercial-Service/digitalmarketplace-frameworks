@@ -19,7 +19,7 @@ type: radios
 options:
   - label: "Yes"
     value: "yes"
-    filter_label: "email/online ticketing"
+    filter_label: "email or online ticketing"
     derived_from:
       question: emailOrTicketingSupport
       any_of:

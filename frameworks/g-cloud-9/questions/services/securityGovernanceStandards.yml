@@ -13,7 +13,7 @@ followup:
 
 type: checkboxes
 options:
-  - label: CSA CCM v3.0
+  - label: CSA CCM version 3.0
     value: csa_ccm
   - label: ISO/IEC 27001
     value: iso_iec_27001
