@@ -32,9 +32,6 @@
   name: Service usage metrics
   questions:
     - metricsSoftwareHow
-- 
-  name: Service usage metrics
-  questions:
     - metricsHostingHow
 -
   name: Infrastructure or application metrics
@@ -53,11 +50,7 @@
   questions:
     - backup
 -
-  name: Datacentre setup
-  questions:
-    - backupDatacentre
--
-  name: Public sector networks the service is connected to
+  name: Connected public sector networks
   questions:
     - publicSectorNetworksTypes
 -
@@ -76,9 +69,6 @@
   name: User authentication
   questions:
     - userAuthenticationSoftware
--
-  name: User authentication
-  questions:
     - userAuthenticationHosting
 -
   name: Management access authentication
