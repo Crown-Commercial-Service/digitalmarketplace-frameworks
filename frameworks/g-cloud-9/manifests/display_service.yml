@@ -273,7 +273,7 @@
 
 - name: Documents
   questions:
-    - serviceDefinitionDocumentURL
-    - termsAndConditionsDocumentURL
     - pricingDocumentURL
     - sfiaRateDocumentURL
+    - serviceDefinitionDocumentURL
+    - termsAndConditionsDocumentURL
