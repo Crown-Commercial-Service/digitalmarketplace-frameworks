@@ -29,7 +29,7 @@
     - mobile
     - APISoftware
 - 
-  name: Service usage metrics
+  name: Metrics reporting
   questions:
     - metricsSoftwareHow
     - metricsHostingHow
