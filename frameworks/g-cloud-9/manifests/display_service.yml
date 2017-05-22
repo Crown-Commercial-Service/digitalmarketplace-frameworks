@@ -19,6 +19,27 @@
     - setupAndMigrationServiceSpecific
     - setupAndMigrationServiceSpecificList
 
+- name: Quality assurance and performance testing
+  questions:
+    - QAAndTesting
+    - QAAndTestingDescription
+
+- name: Security testing
+  questions:
+    - securityTesting
+    - securityTestingWhat
+    - securityTestingWhatOther
+    - securityTestingAccredited
+    - securityTestingAccreditations
+    - securityTestingAccreditationsOther
+    - securityTestingCCP
+
+- name: Ongoing support
+  questions:
+    - ongoingSupport
+    - ongoingSupportServices
+    - ongoingSupportDescription
+
 - name: Service scope
   questions:
     - serviceAddOnType
@@ -27,12 +48,6 @@
     - serviceConstraintsHostingAndSoftware
     - serviceConstraintsSupport
     - systemRequirements
-
-- name: Ongoing support
-  questions:
-    - ongoingSupport
-    - ongoingSupportServices
-    - ongoingSupportDescription
 
 - name: User support
   questions:
@@ -107,21 +122,6 @@
     - metricsHostingWhatOther
     - metricsHostingHow
     - metricsSoftwareHow
-
-- name: Quality assurance and performance testing
-  questions:
-    - QAAndTesting
-    - QAAndTestingDescription
-
-- name: Security testing
-  questions:
-    - securityTesting
-    - securityTestingWhat
-    - securityTestingWhatOther
-    - securityTestingAccredited
-    - securityTestingAccreditations
-    - securityTestingAccreditationsOther
-    - securityTestingCCP
 
 - name: Resellers
   questions:
