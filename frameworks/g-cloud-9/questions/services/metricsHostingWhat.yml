@@ -28,7 +28,7 @@ options:
     filter_label: network
   - label: Number of active instances
     value: num_instances
-    filter-label: number of active instances
+    filter_label: number of active instances
   - label: Other
     value: other
     filter_ignore: true
