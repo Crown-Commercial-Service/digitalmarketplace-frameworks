@@ -40,14 +40,14 @@ Question keys
     * `value` value submitted to the server when the option is selected
     * `filter_label` text displayed in the buyer frontend filters list instead of label
     * `filter_ignore` set to true if you don't want this option to appear, when the question is used in a buyer frontend filter
-    * `description` additional text displayed after the option label (used for `lot` question)
+    * `description` additional text displayed after the option label (used for `lot` question). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
     * `options` for 'checkbox_tree' questions, a list of nested options, each one consisting of the same keys
     * `derived_from`: (this sub-key is used to describe transformations to data required when indexing services)
         * `question`: which question id to check answers against values
         * `any_of`: a list of possible answers to the derived question which will cause this option's label to be indexed under this question's id
 * `validations` a list of validation errors related to the field. Each validation consists of:
     * `name` the error message key that should match the validation error returned by the API (required)
-    * `message` text of the message that will be displayed by the frontend app (required)
+    * `message` text of the message that will be displayed by the frontend app (required). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
 * `depends` describes the service conditions that must be met for question to be displayed. Right now, only used to list the
   lots the question applies to. Each depend rule consists of:
     * `"on"` service data key name to use for comparison (e.g. "lot" for lots)
@@ -95,7 +95,7 @@ Manifest files define a tree-like structure for content.  A manifest is a list o
 Each section contains:
 
 * `name` name of the section (required). This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
-* `slug` can be used to manually override the slug used for this section. 
+* `slug` can be used to manually override the slug used for this section.
 * `editable` controls whether section allows updates for the questions, boolean value
 * `edit_questions` controls whether individual questions can be edited separately (only supported by `multiquestion` questions)
 * `description` text to display after the section name. This field is a [TemplateField](https://github.com/alphagov/digitalmarketplace-content-loader/blob/474d9adce0f422700cbf2dfc8815a7503ab368bc/dmcontent/utils.py#L8).
