@@ -180,10 +180,10 @@
 
 - name: Identity and authentication
   questions:
-    - userAuthenticationHosting
-    - userAuthenticationDescription
     - userAuthenticationNeeded
+    - userAuthenticationHosting
     - userAuthenticationSoftware
+    - userAuthenticationDescription
     - accessRestrictionManagementAndSupport
     - accessRestrictionTesting
     - managementAccessAuthentication
