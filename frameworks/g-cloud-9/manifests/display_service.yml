@@ -184,7 +184,6 @@
     - userAuthenticationDescription
     - userAuthenticationNeeded
     - userAuthenticationSoftware
-    - userAuthenticationDescription
     - accessRestrictionManagementAndSupport
     - accessRestrictionTesting
     - managementAccessAuthentication
