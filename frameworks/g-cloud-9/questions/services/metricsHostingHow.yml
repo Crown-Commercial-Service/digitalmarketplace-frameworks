@@ -12,7 +12,7 @@ type: checkboxes
 options:
   - label: Through an API
     value: api
-    filter_label: through an API
+    filter_label: API access
   - label: Real-time dashboards
     value: real_time
     filter_label: real-time dashboards
