@@ -145,6 +145,16 @@ For each field (question) that needs to be indexed, there must be a `filter_` pr
 same as the filename, then the _overridden_ `id` should be used here. (Compare with the manifest,
 where in all cases the filename should be used to specify the question.)
 
+=======
+We are using Elasticsearch multifields to support service aggregations by specific attributes (eg lot and category).
+We use a `raw` multifield so that tokenization is not performed on the values to make aggregation possible with natural
+strings (e.g. `billing and invoicing`), but cannot use the magical `filter_<field>` fields currently used for filtering
+because they enforce some transformations on the data indexed (lowercasing and stripping non-alphanumeric characters).
+This transformation makes it difficult to cleanly tie the aggregated data back to lot/category names, and we should
+look to move away from the `filter_` fields and towards multifields in the future, for reasons of simplification and
+(arguably) performance.
+
+=======
 
 Development
 -----------

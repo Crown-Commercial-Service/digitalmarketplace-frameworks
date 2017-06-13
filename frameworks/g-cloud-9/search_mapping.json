@@ -11,7 +11,10 @@
         },
         "lot": {
           "type": "string",
-          "index": "not_analyzed"
+          "index": "not_analyzed",
+          "fields": {
+            "raw": {"type": "string", "index": "not_analyzed"}
+          }
         },
         "lotName": {
           "type": "string",
@@ -116,9 +119,11 @@
           "type": "boolean",
           "index": "not_analyzed"
         },
-
         "serviceCategories": {
-          "type": "string"
+          "type": "string",
+          "fields": {
+            "raw": {"type": "string", "index": "not_analyzed"}
+          }
         },
         "filter_serviceCategories": {
           "type": "string",
