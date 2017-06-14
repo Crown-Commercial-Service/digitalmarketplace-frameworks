@@ -20,7 +20,6 @@
 
 - name: Team capabilities
   editable: False
-  edit_questions: True
   questions:
     - performanceAnalysis
     - security
@@ -38,7 +37,6 @@
 
 - name: Individual specialist roles
   editable: False
-  edit_questions: True
   questions:
     - agileCoach
     - businessAnalyst
