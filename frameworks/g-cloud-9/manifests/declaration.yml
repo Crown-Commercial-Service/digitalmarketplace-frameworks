@@ -9,7 +9,7 @@
     You must be able to truthfully answer ‘yes’ to every question for your application to be considered eligible.
     The Crown Commercial Service may ask for proof after you’ve submitted your application.
 
-    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted. 
+    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted.
 
   questions:
     - servicesHaveOrSupport
@@ -34,23 +34,23 @@
     - termsOfParticipation
     - termsAndConditions
     - canProvideFromDayOne
-    - unfairCompetition    
+    - unfairCompetition
     - 10WorkingDays
     - MI
-    
+
 -
   name: Grounds for mandatory exclusion
   slug: grounds-for-mandatory-exclusion
   editable: True
   prefill: True
   description: |
-    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your 
-    application to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very 
+    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your
+    application to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very
     unlikely that your application will be accepted.
 
-    In questions [[conspiracy]] to [[organisedCrime]], ‘anyone who represents, supervises or has control in your 
+    In questions {{ content.get_question('conspiracy').number }} to {{ content.get_question('organisedCrime').number }}, ‘anyone who represents, supervises or has control in your
     organisation or a partner or parent organisation’ includes members of your group of economic operators, their
-    proposed subcontractors, and any directors, partners, or any other person who has powers of representation, 
+    proposed subcontractors, and any directors, partners, or any other person who has powers of representation,
     decision or control. Check that your organisation complies with <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the Public Contracts
     Regulations 2015</a>.
   questions:
@@ -68,14 +68,14 @@
   description: |
     You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
     for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
-    
+
     If you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
     you provide to consider whether or not you will be able to proceed any further with this procurement.
 
-    In questions [[taxEvasion]] to [[misleadingInformation]], ‘a partner organisation’ includes members
+    In questions {{ content.get_question('taxEvasion').number }} to {{ content.get_question('misleadingInformation').number }}, ‘a partner organisation’ includes members
     of your group of economic operators or their proposed subcontractors.
-    
+
     CCS can also exclude you if you are guilty of serious
     misrepresentation in providing any information referred to within
     regulations
@@ -113,7 +113,7 @@
   description: |
     You must be able to truthfully answer ‘yes’ to every question under ‘Working with government’ for your bid to be
     considered eligible.
-    
+
     If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your bid will be accepted.
   questions:
     - environmentallyFriendly
@@ -141,7 +141,7 @@
   editable: True
   prefill: False
   description: |
-    You must confirm the accuracy of the information in this declaration and in your service descriptions. We might 
+    You must confirm the accuracy of the information in this declaration and in your service descriptions. We might
     ask for proof after you’ve submitted your application.
 
   questions:
@@ -155,9 +155,9 @@
   editable: True
   prefill: True
   description: |
-    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application. 
+    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application.
 
-    For a group of economic operators, this will be the name of the lead organisation (or the separate entity such as a 
+    For a group of economic operators, this will be the name of the lead organisation (or the separate entity such as a
     special purpose vehicle if you have already created one).
     If you’re submitting a response on behalf of another organisation, use their company name and details, not yours.
   questions:
@@ -198,9 +198,9 @@
   name: How you’ll deliver your services
   slug: how-youll-deliver-your-services
   editable: True
-  prefill: True   
+  prefill: True
   description: |
-    The Crown Commercial Service will use this information to manage your participation in G-Cloud&nbsp;9. 
+    The Crown Commercial Service will use this information to manage your participation in G-Cloud&nbsp;9.
   questions:
     - subcontracting
 -
@@ -211,8 +211,8 @@
   prefill: True
   description: |
     The government <a href="https://www.gov.uk/government/news/big-opportunities-for-small-firms-government-set-to-spend-1-in-every-3-with-small-businesses" target="_blank" rel="noopener noreferrer">aims to spend £1 in every £3 with small-to-medium enterprises (SMEs)s (new tab)</a> by 2020.
-    
-    The Crown Commercial Service will use the information you provide about the size of your company to report overall statistics about the successful suppliers on G-Cloud&nbsp;9.  
+
+    The Crown Commercial Service will use the information you provide about the size of your company to report overall statistics about the successful suppliers on G-Cloud&nbsp;9.
   questions:
     - organisationSize
 -
@@ -231,9 +231,9 @@
   name: Contact details
   slug: contact-details
   editable: True
-  prefill: True  
+  prefill: True
   description: |
-     The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.  
+     The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.
   questions:
     - primaryContact
     - primaryContactEmail

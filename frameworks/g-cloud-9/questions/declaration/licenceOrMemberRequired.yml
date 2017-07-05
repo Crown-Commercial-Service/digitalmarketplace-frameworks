@@ -7,6 +7,6 @@ options:
   - label: a member of a relevant organisation
   - label: none of the above
 validations:
-  - 
+  -
     name: answer_required
-    message: You need to answer this question because you answered ‘no’ to [[establishedInTheUK]].
+    message: You need to answer this question because you answered ‘no’ to {{ content.get_question('establishedInTheUK').number }}.

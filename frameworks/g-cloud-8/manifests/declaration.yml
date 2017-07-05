@@ -4,7 +4,7 @@
   description: |
     You must make this declaration to apply to G-Cloud 8. You can come back and change your answers at any time before
     5pm BST, 23 June 2016.
-    
+
     You must be able to truthfully answer ‘yes’ to every question under ‘Essentials’
     for your bid to be considered eligible. If you can’t answer ‘yes’ to every
     question in this section, it’s very unlikely that your bid will be accepted.
@@ -30,10 +30,10 @@
     to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very unlikely that
     your bid will be accepted.
 
-    In questions [[conspiracyCorruptionBribery]] to [[organisedCrime]], ‘anyone who represents your organisation’ 
+    In questions {{ content.get_question('conspiracyCorruptionBribery').number }} to {{ content.get_question('organisedCrime').number }}, ‘anyone who represents your organisation’
     includes members of your group of economic operators, their proposed subcontractors, and any directors, partners,
     or any other person who has powers of representation, decision or control.
-    
+
     Check that your organisation complies with [Regulation 57(1) of the Public
     Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made).
   questions:
@@ -47,12 +47,12 @@
   description: |
     You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
     for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
-    
+
     If you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
     you provide to consider whether or not you will be able to proceed any further with this procurement.
 
-    In questions [[taxEvasion]] to [[misleadingInformation]], ‘partner organisations’ include members
+    In questions {{ content.get_question('taxEvasion').number }} to {{ content.get_question('misleadingInformation').number }}, ‘partner organisations’ include members
     of your group of economic operators or their proposed subcontractors.
 
     CCS can also exclude you if you are guilty of serious misrepresentation in providing any information referred
@@ -87,11 +87,11 @@
   name: About you
   editable: True
   description: |
-    The Crown Commercial Service will use the information you provide under ‘About you’ to process your application 
+    The Crown Commercial Service will use the information you provide under ‘About you’ to process your application
     and manage your participation in the G-Cloud 8 framework.
-    
-    You can answer ‘yes’ or ‘no’ to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
-  questions:    
+
+    You can answer ‘yes’ or ‘no’ to questions {{ content.get_question('cyberEssentials').number }} and {{ content.get_question('cyberEssentialsPlus').number }}.
+  questions:
     - primaryContact
     - primaryContactEmail
     - nameOfOrganisation

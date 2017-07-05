@@ -1,5 +1,5 @@
 question: |
-  Please confirm if, to provide the services specified in this procurement, it’s a legal requirement in the state 
+  Please confirm if, to provide the services specified in this procurement, it’s a legal requirement in the state
   where you’re established to be:
 type: radios
 options:
@@ -8,4 +8,4 @@ options:
   - label: none of the above
 validations:
   - name: answer_required
-    message: You need to answer this question because you answered ‘no’ to [[establishedInTheUK]].
+    message: You need to answer this question because you answered ‘no’ to {{ content.get_question('establishedInTheUK').number }}.

@@ -1,9 +1,9 @@
-question: Describe your trading status if you answered ‘other’ to [[tradingStatus]].
+question: Describe your trading status if you answered ‘other’ to {{ content.get_question('tradingStatus').number }}.
 type: text
 validations:
   -
     name: answer_required
-    message: You need to answer this question because you answered ‘other’ to [[tradingStatus]].
+    message: You need to answer this question because you answered ‘other’ to {{ content.get_question('tradingStatus').number }}').number }}.
   -
     name: under_character_limit
     message: "Your answer must be no more than than 5000 characters."
