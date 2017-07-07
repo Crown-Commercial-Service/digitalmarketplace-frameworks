@@ -153,10 +153,6 @@
           "type": "string",
           "index": "not_analyzed"
         },
-        "filter_supportAvailableToThirdParty": {
-          "type": "string",
-          "index": "not_analyzed"
-        },
         "filter_browsersAccess": {
           "type": "string",
           "index": "not_analyzed"
