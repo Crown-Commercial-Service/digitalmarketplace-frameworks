@@ -20,7 +20,6 @@
     - phoneSupport
     - webChatSupport
     - onsiteSupport
-    - supportAvailableToThirdParty
 -
   name: Using the service
   questions:
