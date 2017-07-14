@@ -17,8 +17,7 @@
 
 -
   name: Service features and benefits
-  editable: false
-  edit_questions: true
+  editable: true
   questions:
     - multiqServiceFeaturesAndBenefitsHostingAndSoftware
     - multiqServiceFeaturesAndBenefitsSupport
