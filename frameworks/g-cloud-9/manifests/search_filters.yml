@@ -95,7 +95,7 @@
 -
   name: Minimum government security clearance
   questions:
-     - governmentSecurityClearances
+     - governmentSecurityClearancesFilter
 -
   name: Pricing options
   questions:
