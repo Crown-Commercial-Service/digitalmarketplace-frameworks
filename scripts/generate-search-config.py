@@ -40,6 +40,7 @@ if __name__ == '__main__':
 
     with open(os.path.join(base_dir, 'VERSION.txt'), 'r') as version_handle:
         extra_meta = OrderedDict((
+            ('_', 'DO NOT UPDATE BY HAND'),
             ('version', version_handle.read().strip()),
             ('generated_from_framework', framework_slug),
             ('generated_by', os.path.abspath(__file__)),
