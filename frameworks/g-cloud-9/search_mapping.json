@@ -1,4 +1,24 @@
 {
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "stemming_analyzer": {
+          "tokenizer": "standard",
+          "filter": ["standard", "lowercase", "possessive_english_stemmer", "light_english_stemmer"]
+        }
+      },
+      "filter": {
+        "light_english_stemmer": {
+          "type": "stemmer",
+          "name": "light_english"
+        },
+        "possessive_english_stemmer": {
+          "type": "stemmer",
+          "name": "possessive_english"
+        }
+      }
+    }
+  },
   "mappings": {
     "services": {
       "_meta": {
@@ -29,13 +49,16 @@
         },
         "serviceDescription": {
           "term_vector" : "with_positions_offsets",
-          "type": "string"
+          "type": "string",
+          "analyzer": "stemming_analyzer"
         },
         "serviceBenefits": {
-          "type": "string"
+          "type": "string",
+          "analyzer": "stemming_analyzer"
         },
         "serviceFeatures": {
-          "type": "string"
+          "type": "string",
+          "analyzer": "stemming_analyzer"
         },
         "supplierName": {
           "type": "string"
@@ -46,6 +69,7 @@
         },
         "serviceCategories": {
           "type": "string",
+          "analyzer": "stemming_analyzer",
           "fields": {
             "raw": {"type": "string", "index": "not_analyzed"}
           }
