@@ -16,7 +16,11 @@ MANIFESTS = {
     'brief-responses': {
         'question_set': 'brief-responses',
         'manifest': 'edit_brief_response'
-    }
+    },
+    'brief-awards': {
+        'question_set': 'briefs',
+        'manifest': 'award_brief'
+    },
 }
 
 
@@ -77,6 +81,20 @@ SCHEMAS = {
          'digital-outcomes-and-specialists-2', 'digital-specialists'),
         ('Digital Outcomes and Specialists 2 User research participants Brief Response',
          'digital-outcomes-and-specialists-2', 'user-research-participants')
+    ],
+    'brief-awards': [
+        ('Digital Outcomes and Specialists Digital outcomes Brief Award',
+         'digital-outcomes-and-specialists', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists Digital specialists Brief Award',
+         'digital-outcomes-and-specialists', 'digital-specialists'),
+        ('Digital Outcomes and Specialists User research participants Brief Award',
+         'digital-outcomes-and-specialists', 'user-research-participants'),
+        ('Digital Outcomes and Specialists 2 Digital outcomes Brief Award',
+         'digital-outcomes-and-specialists-2', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists 2 Digital specialists Brief Award',
+         'digital-outcomes-and-specialists-2', 'digital-specialists'),
+        ('Digital Outcomes and Specialists 2 User research participants Brief Award',
+         'digital-outcomes-and-specialists-2', 'user-research-participants'),
     ]
 }
 
