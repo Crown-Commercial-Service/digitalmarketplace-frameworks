@@ -3,7 +3,7 @@ Digital Marketplace content
 YAML definitions of the Digital Marketplace’s procurement frameworks.
 
 The content here is pulled in to the frontend applications to display forms, and is also used to generate the JSON
-schemas used by the API for validation (by running the `scripts/generate-schemas.py` script).
+schemas used by the API for validation (by running the `scripts/generate-validation-schemas.py` script).
 
 <p align="center">
   <img src="images/frameworks-content-triangle.png?raw=true" alt="Diagram showing how frameworks content is used by our apps">
@@ -169,7 +169,7 @@ Then, whenever the framework content is changed:
 
 - on each frontend app, rebuild the app's `content` directory to include the new content by running `make frontend_build` (NB this step also required before deployment to PaaS via `cf push`)
 - alternatively, run `npm run frontend-build:watch` to automatically rebuild the framework content whenever a framework YML file changes
-- generate schemas into the API's `json_schema` directory using the `scripts/generate-schemas.py` script in this repo.
+- generate schemas into the API's `json_schema` directory using the `scripts/generate-validation-schemas.py` script in this repo.
 
 Running the tests
 -----------------
