@@ -1,0 +1,15 @@
+name: What's the value?
+question: What's the value?
+hint: 'eg 99.95'
+type: pricing
+fields:
+  price: awardedContractValue
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_money_format
+    field: awardedContractValue
+    message: "Value must be in numbers and decimal points only, for example 99.95."
+
+empty_message: Set value
