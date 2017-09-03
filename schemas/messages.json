@@ -45,7 +45,10 @@
         "framework_url": {"type": "string"},
         "framework_agreement_url": {"type": "string"},
         "framework_agreement_pdf_url": {"type": "string"},
-        "supplier_guide_url": {"type": "string"}
+        "supplier_guide_url": {"type": "string"},
+        "customer_benefits_record_form_url": {"type": "string"},
+        "customer_benefits_record_form_email": {"type": "string"},
+        "buyers_guide_compare_services_url": {"type": "string"}
       },
       "required": [
         "supplier_guide_url"
