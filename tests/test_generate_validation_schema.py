@@ -620,6 +620,7 @@ def test_generate_dos_brief_opens_files(opened_files, tmpdir):
     for schema in dos_schemas:
         generate_schema_todir(test_directory, 'briefs', *schema)
         generate_schema_todir(test_directory, 'brief-awards', *schema)
+        generate_schema_todir(test_directory, 'brief-cancel', *schema)
     dos_path = "./frameworks/digital-outcomes-and-specialists"
     dos_opened_files = set(x for x in opened_files if x.startswith(dos_path) and os.path.isfile(x))
     dos_expected_files = set([
@@ -628,6 +629,7 @@ def test_generate_dos_brief_opens_files(opened_files, tmpdir):
             "questions/briefs" in x
             or x.endswith("manifests/edit_brief.yml")
             or x.endswith("manifests/award_brief.yml")
+            or x.endswith("manifests/cancel_brief.yml")
         )
         and not x.endswith("lot.yml")
     ])
