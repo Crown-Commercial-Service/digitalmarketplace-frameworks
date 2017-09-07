@@ -1,0 +1,8 @@
+type: radios
+options:
+  - label: The requirement has been cancelled
+  - label: There were no suitable suppliers
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

@@ -21,6 +21,10 @@ MANIFESTS = {
         'question_set': 'briefs',
         'manifest': 'award_brief'
     },
+    'brief-cancel': {
+        'question_set': 'briefs',
+        'manifest': 'cancel_brief'
+    },
 }
 
 
@@ -94,6 +98,20 @@ SCHEMAS = {
         ('Digital Outcomes and Specialists 2 Digital specialists Brief Award',
          'digital-outcomes-and-specialists-2', 'digital-specialists'),
         ('Digital Outcomes and Specialists 2 User research participants Brief Award',
+         'digital-outcomes-and-specialists-2', 'user-research-participants'),
+    ],
+    'brief-cancel': [
+        ('Digital Outcomes and Specialists Digital outcomes Brief Cancel',
+         'digital-outcomes-and-specialists', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists Digital specialists Brief Cancel',
+         'digital-outcomes-and-specialists', 'digital-specialists'),
+        ('Digital Outcomes and Specialists User research participants Brief Cancel',
+         'digital-outcomes-and-specialists', 'user-research-participants'),
+        ('Digital Outcomes and Specialists 2 Digital outcomes Brief Cancel',
+         'digital-outcomes-and-specialists-2', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists 2 Digital specialists Brief Cancel',
+         'digital-outcomes-and-specialists-2', 'digital-specialists'),
+        ('Digital Outcomes and Specialists 2 User research participants Brief Cancel',
          'digital-outcomes-and-specialists-2', 'user-research-participants'),
     ]
 }

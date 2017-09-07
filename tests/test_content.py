@@ -12,6 +12,7 @@ MANIFEST_QUESTION_SET = {
     "display_brief": "briefs",
     "edit_brief": "briefs",
     "award_brief": "briefs",
+    "cancel_brief": "briefs",
 
     "display_brief_response": "brief-responses",
     "legacy_display_brief_response": "brief-responses",
