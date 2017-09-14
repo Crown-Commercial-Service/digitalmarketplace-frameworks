@@ -28,13 +28,22 @@
     "frameworkStates": {
       "properties": {
         "coming": {
-          "type": "object"
+          "type": ["object", "string"]
         },
         "open": {
-          "type": "object"
+          "type": ["object", "string"]
         },
         "pending": {
-          "type": "object"
+          "type": ["object", "string"]
+        },
+        "standstill": {
+          "type": ["object", "string"]
+        },
+        "live": {
+          "type": ["object", "string"]
+        },
+        "expired": {
+          "type": ["object", "string"]
         }
       },
       "additionalProperties": false
