@@ -1,0 +1,38 @@
+coming: |
+  ‘G-Cloud’ is opening for applications.
+
+  You will be able to apply to sell:
+
+  <ul class="list-bullet">
+    <li>cloud hosting</li>
+    <li>software</li>
+    <li>technical support</li>
+  </ul>
+
+open: |
+  ‘G-Cloud’ is open for applications.
+
+  You can apply to sell:
+
+  <ul class="list-bullet">
+    <li>cloud hosting</li>
+    <li>software</li>
+    <li>technical support</li>
+  </ul>
+
+pending: &can_not_apply |
+  ‘G-Cloud’ is closed for applications.
+
+  You will be able to apply to sell:
+
+  <ul class="list-bullet">
+    <li>cloud hosting</li>
+    <li>software</li>
+    <li>technical support</li>
+  </ul>
+
+standstill: *can_not_apply
+
+live: *can_not_apply
+
+expired: *can_not_apply
