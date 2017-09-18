@@ -1,6 +1,6 @@
 name: What's the value?
 question: What's the value?
-hint: 'eg 99.95'
+hint: 'eg 9900.95 for 9900 pounds and 95 pence'
 type: pricing
 fields:
   price: awardedContractValue
@@ -10,6 +10,6 @@ validations:
     message: 'You need to answer this question.'
   - name: not_money_format
     field: awardedContractValue
-    message: "Value must be in numbers and decimal points only, for example 99.95."
+    message: "Value must be in numbers and decimal points only, for example 9900.95 for 9900 pounds and 95 pence."
 
 empty_message: Set value
