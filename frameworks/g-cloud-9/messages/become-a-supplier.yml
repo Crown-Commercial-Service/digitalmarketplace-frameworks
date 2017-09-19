@@ -1,6 +1,6 @@
 coming: |
   <div class="explanation-list">
-    ‘G-Cloud’ is opening for applications.<br />
+    G-Cloud is opening for applications.<br />
     You will be able to apply to sell:
     <ul class="list-bullet">
       <li>cloud hosting</li>
@@ -11,7 +11,7 @@ coming: |
 
 open: |
  <div class="explanation-list">
-    ‘G-Cloud’ is open for applications.<br />
+    G-Cloud is open for applications.<br />
     You can apply to sell:
     <ul class="list-bullet">
       <li>cloud hosting</li>
@@ -22,7 +22,7 @@ open: |
 
 pending: &can_not_apply |
   <div class="explanation-list">
-    ‘G-Cloud’ is closed for applications.<br />
+    G-Cloud is closed for applications.<br />
     You will be able to apply to sell:
     <ul class="list-bullet">
       <li>cloud hosting</li>
