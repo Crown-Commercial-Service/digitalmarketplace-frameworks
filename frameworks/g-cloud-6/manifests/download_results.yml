@@ -1,0 +1,4 @@
+- name: body
+  questions:
+    - serviceSummary
+    - priceString
