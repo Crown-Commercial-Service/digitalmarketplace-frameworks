@@ -1,4 +1,4 @@
-- name: Body
+- name: Service data for results download
   questions:
     - serviceName
     - serviceDescription
