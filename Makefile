@@ -4,19 +4,19 @@ VIRTUALENV_ROOT := $(shell [ -z $$VIRTUAL_ENV ] && echo $$(pwd)/venv || echo $$V
 virtualenv:
 	[ -z $$VIRTUAL_ENV ] && [ ! -d venv ] && virtualenv venv || true
 
-requirements_for_test: virtualenv requirements_for_test.txt
-	${VIRTUALENV_ROOT}/bin/pip install -r requirements_for_test.txt
+requirements-dev: virtualenv requirements-dev.txt
+	${VIRTUALENV_ROOT}/bin/pip install -r requirements-dev.txt
 
-test: show_environment test_pep8 test_python
+test: show-environment test-flake8 test-python
 
-test_pep8: virtualenv
-	${VIRTUALENV_ROOT}/bin/pep8 .
+test-flake8: virtualenv
+	${VIRTUALENV_ROOT}/bin/flake8 .
 
-test_python: virtualenv
-	${VIRTUALENV_ROOT}/bin/py.test ${PYTEST_ARGS}
+test-python: virtualenv
+	${VIRTUALENV_ROOT}/bin/py.test ${PYTEST-ARGS}
 
-show_environment:
+show-environment:
 	@echo "Environment variables in use:"
 	@env | grep DM_ || true
 
-.PHONY: virtualenv requirements_for_test test_pep8 test_python show_environment
+.PHONY: virtualenv requirements-for-test test-flake8 test-python show-environment

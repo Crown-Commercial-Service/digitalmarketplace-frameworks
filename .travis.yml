@@ -3,7 +3,7 @@ sudo: false
 python:
   - "3.4"
 install:
-  - pip install -r requirements_for_test.txt
+  - pip install -r requirements-dev.txt
 script:
   - make test
 notifications:
