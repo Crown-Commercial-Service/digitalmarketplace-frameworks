@@ -29,6 +29,7 @@ MANIFEST_QUESTION_SET = {
     "edit_service_as_admin": "services",
     "edit_submission": "services",
     "search_filters": "services",
+    "download_results": "services"
 }
 
 # `item` property wouldn't usually be part of a brief response but is included here as the dynamic list child question

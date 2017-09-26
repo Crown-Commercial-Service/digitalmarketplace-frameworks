@@ -1,0 +1,4 @@
+- name: Service data for results download
+  questions:
+    - serviceSummary
+    - priceString
