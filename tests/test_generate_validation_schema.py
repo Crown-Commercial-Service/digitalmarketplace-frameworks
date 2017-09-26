@@ -16,7 +16,6 @@ from schema_generator.validation import (
     SCHEMAS,
     boolean_list_property,
     boolean_property,
-    build_question_properties,
     checkbox_property,
     checkbox_tree_property,
     drop_non_schema_questions,
@@ -24,7 +23,6 @@ from schema_generator.validation import (
     generate_schema_todir,
     list_property,
     load_questions,
-    merge_schemas,
     multiquestion,
     number_property,
     parse_question_limits,
@@ -82,7 +80,7 @@ def checkboxes():
 def nested_checkboxes(draw, options_list_strategy=None,
                       optional_keys=st.lists(st.sampled_from(['value', 'description']))):
     option = {
-        'label':  st.text()
+        'label': st.text()
     }
     for k in draw(optional_keys):
         option[k] = st.text()

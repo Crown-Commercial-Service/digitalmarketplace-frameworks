@@ -15,7 +15,6 @@ Usage:
 """
 import yaml
 import os
-import shutil
 import sys
 from docopt import docopt
 

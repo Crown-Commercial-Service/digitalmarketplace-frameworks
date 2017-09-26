@@ -5,7 +5,6 @@ Usage:
     generate-assessment-schema.py <framework_slug>
 
 """
-import os
 import sys
 sys.path.insert(0, '.')
 
