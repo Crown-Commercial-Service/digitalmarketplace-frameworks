@@ -13,7 +13,7 @@ def test_checkbox_tree_transformation_generator():
                 'options': [
                     {'label': 'sub cat 1.1'},
                     {'label': 'sub cat 1.2', 'value': 'sc1-2'},
-                    ]
+                ]
             },
             {
                 'label': 'cat 2',

@@ -3,7 +3,7 @@ from __future__ import print_function
 import os.path
 import sys
 import json
-from collections import defaultdict, OrderedDict
+from collections import OrderedDict
 
 from dmcontent import ContentLoader, utils
 

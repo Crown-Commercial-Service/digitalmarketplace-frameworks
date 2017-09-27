@@ -12,56 +12,59 @@ from schema_generator.assessment import generate_schema
 # in these tests ensures that it is always up to date with what is defined in the framework's yaml files... future work
 # to look at.
 
-# a callable so we can be sure we get a clean copy
-_definite_pass_g9_declaration = lambda: {
-    # discretionary
-    "GAAR": False,
-    "bankrupt": False,
-    "confidentialInformation": False,
-    "conflictOfInterest": False,
-    "distortedCompetition": False,
-    "distortingCompetition": False,
-    "environmentalSocialLabourLaw": False,
-    "graveProfessionalMisconduct": False,
-    "influencedContractingAuthority": False,
-    "misleadingInformation": False,
-    "seriousMisrepresentation": False,
-    "significantOrPersistentDeficiencies": False,
-    "taxEvasion": False,
-    "unspentTaxConvictions": False,
-    "witheldSupportingDocuments": False,
 
-    # mandatory
-    "10WorkingDays": True,
-    "MI": True,
-    "accurateInformation": True,
-    "accuratelyDescribed": True,
-    "canProvideFromDayOne": True,
-    "conspiracy": False,
-    "corruptionBribery": False,
-    "employersInsurance": u"Not applicable - your organisation does not need employer\u2019s liability insurance "
-                          u"because your organisation employs only the owner or close family members.",
-    "environmentallyFriendly": True,
-    "equalityAndDiversity": True,
-    "fraudAndTheft": False,
-    "fullAccountability": True,
-    "helpBuyersComplyTechnologyCodesOfPractice": True,
-    "informationChanges": True,
-    "offerServicesYourselves": True,
-    "organisedCrime": False,
-    "payForWhatUse": True,
-    "proofOfClaims": True,
-    "publishContracts": True,
-    "readUnderstoodGuidance": True,
-    "servicesDoNotInclude": True,
-    "servicesHaveOrSupport": True,
-    "termsAndConditions": True,
-    "termsOfParticipation": True,
-    "terrorism": False,
-    "understandHowToAskQuestions": True,
-    "understandTool": True,
-    "unfairCompetition": True,
-}
+def _definite_pass_g9_declaration():
+    return {
+        # discretionary
+        "GAAR": False,
+        "bankrupt": False,
+        "confidentialInformation": False,
+        "conflictOfInterest": False,
+        "distortedCompetition": False,
+        "distortingCompetition": False,
+        "environmentalSocialLabourLaw": False,
+        "graveProfessionalMisconduct": False,
+        "influencedContractingAuthority": False,
+        "misleadingInformation": False,
+        "seriousMisrepresentation": False,
+        "significantOrPersistentDeficiencies": False,
+        "taxEvasion": False,
+        "unspentTaxConvictions": False,
+        "witheldSupportingDocuments": False,
+
+        # mandatory
+        "10WorkingDays": True,
+        "MI": True,
+        "accurateInformation": True,
+        "accuratelyDescribed": True,
+        "canProvideFromDayOne": True,
+        "conspiracy": False,
+        "corruptionBribery": False,
+        "employersInsurance": (
+            u"Not applicable - your organisation does not need employer\u2019s liability insurance because your "
+            u"organisation employs only the owner or close family members."
+        ),
+        "environmentallyFriendly": True,
+        "equalityAndDiversity": True,
+        "fraudAndTheft": False,
+        "fullAccountability": True,
+        "helpBuyersComplyTechnologyCodesOfPractice": True,
+        "informationChanges": True,
+        "offerServicesYourselves": True,
+        "organisedCrime": False,
+        "payForWhatUse": True,
+        "proofOfClaims": True,
+        "publishContracts": True,
+        "readUnderstoodGuidance": True,
+        "servicesDoNotInclude": True,
+        "servicesHaveOrSupport": True,
+        "termsAndConditions": True,
+        "termsOfParticipation": True,
+        "terrorism": False,
+        "understandHowToAskQuestions": True,
+        "understandTool": True,
+        "unfairCompetition": True,
+    }
 
 
 @contextmanager
