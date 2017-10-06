@@ -29,6 +29,11 @@
           "type": "string",
           "index": "not_analyzed"
         },
+        "service_id_hash": {
+          "type": "string",
+          "index": "not_analyzed",
+          "include_in_all": false
+        },
         "lot": {
           "type": "string",
           "index": "not_analyzed",
