@@ -2,6 +2,12 @@
 
 Records breaking changes from major version bumps
 
+## 9.0.0
+
+Upgraded the services mapping for G-Cloud 9 (and implicitly future iterations) to be compatible with Elasticsearch 5.x.
+This new mapping is incompatible with Elasticsearch 1.x, so any search-api instances using this version of the
+frameworks repository need to be deployed with an ES5 backend.
+
 ## 8.0.0 (equivalent to 7.1.0)
 
 Applies a 'datetodatetimeformat' filter to some of the content in DOS2, which requires updated content-loader and dmutils.
