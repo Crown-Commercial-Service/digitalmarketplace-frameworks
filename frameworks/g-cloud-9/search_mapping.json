@@ -26,190 +26,151 @@
       "dynamic": "strict",
       "properties": {
         "id": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "service_id_hash": {
-          "type": "string",
-          "index": "not_analyzed",
+          "type": "keyword",
           "include_in_all": false
         },
         "lot": {
-          "type": "string",
-          "index": "not_analyzed",
+          "type": "keyword",
           "fields": {
-            "raw": {"type": "string", "index": "not_analyzed"}
+            "raw": {"type": "keyword"}
           }
         },
         "lotName": {
-          "type": "string",
-          "index": "analyzed"
+          "type": "text"
         },
         "frameworkName": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "serviceName": {
-          "type": "string"
+          "type": "text"
         },
         "serviceDescription": {
           "term_vector" : "with_positions_offsets",
-          "type": "string",
+          "type": "text",
           "analyzer": "stemming_analyzer"
         },
         "serviceBenefits": {
-          "type": "string",
+          "type": "text",
           "analyzer": "stemming_analyzer"
         },
         "serviceFeatures": {
-          "type": "string",
+          "type": "text",
           "analyzer": "stemming_analyzer"
         },
         "supplierName": {
-          "type": "string"
+          "type": "text"
         },
         "filter_lot": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "serviceCategories": {
-          "type": "string",
+          "type": "text",
           "analyzer": "stemming_analyzer",
           "fields": {
-            "raw": {"type": "string", "index": "not_analyzed"}
+            "raw": {"type": "keyword"}
           }
         },
         "filter_serviceCategories": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_cloudDeploymentModel": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_resellingType": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_emailOrTicketingSupport": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_phoneSupport": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_webChatSupport": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_onsiteSupport": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_browsersAccess": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_installation": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_mobile": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_APISoftware": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_metricsHow": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_metricsWhat": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_scalingType": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         }, 
         "filter_usageNotifications": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_backup": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_backupDatacentre": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_publicSectorNetworksTypes": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_dataProtectionBetweenNetworks": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_dataProtectionWithinNetwork": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_dataStorageAndProcessingLocations": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_userAuthentication": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_managementAccessAuthentication": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_standardsISOIEC27001": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_standardsISO28000": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_standardsCSASTAR": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_standardsPCI": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_securityGovernanceStandards": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_datacentreSecurityStandards": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_staffSecurityClearanceChecks": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_governmentSecurityClearances": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_educationPricing": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         },
         "filter_freeVersionTrialOption": {
-          "type": "string",
-          "index": "not_analyzed"
+          "type": "keyword"
         }
       }
     }
