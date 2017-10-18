@@ -347,6 +347,32 @@ def test_price_string():
         assert m is not None
 
 
+def test_price_string_with_decimal_restriction():
+    price_string_validator = re.compile(price_string(False, True)['pattern'])
+    valid_prices = [
+        '0.79',
+        '1',
+        '150',
+        '150.00',
+        '219.28',
+        '12345678901234',
+    ]
+    for price in valid_prices:
+        m = re.search(price_string_validator, price)
+        assert m is not None
+
+    invalid_prices = [
+        '0',
+        '0.00',
+        '150.1',
+        '150.000',
+        '150.00875',
+    ]
+    for price in invalid_prices:
+        m = re.search(price_string_validator, price)
+        assert m is None
+
+
 def test_price_string_empty():
     price_string_validator = re.compile(price_string(True)['pattern'])
     m = re.search(price_string_validator, '')
@@ -356,6 +382,7 @@ def test_price_string_empty():
 def test_pricing_property_minmax_price():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "minimum_price": "priceMin",
             "maximum_price": "priceMax"
@@ -370,6 +397,7 @@ def test_pricing_property_minmax_price():
 def test_pricing_property_minmax_price_optional():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "minimum_price": "priceMin",
             "maximum_price": "priceMax"
@@ -388,6 +416,7 @@ def test_pricing_property_minmax_price_optional():
 def test_pricing_property_price_unit_and_interval():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "price_unit": "priceUnit",
             "price_interval": "priceInterval"
@@ -402,6 +431,7 @@ def test_pricing_property_price_unit_and_interval():
 def test_pricing_property_price_unit_and_interval_optional():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "price_unit": "priceUnit",
             "price_interval": "priceInterval"
@@ -420,6 +450,7 @@ def test_pricing_property_price_unit_and_interval_optional():
 def test_hours_for_price():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "hours_for_price": "pfh"
         }
