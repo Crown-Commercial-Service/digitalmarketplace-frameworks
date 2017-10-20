@@ -271,8 +271,13 @@ def boolean_list_property(question):
     }}
 
 
-def price_string(optional):
-    pattern = r"^\d{1,15}(?:\.\d{1,5})?$"
+def price_string(optional, decimal_place_restriction=False):
+    pattern = r"^\d{1,15}(?:\.\d{1,5})?$"  # up to 5 decimal places allowed eg 0, 90, 90.1, 90.12345
+    # restricted to positive numbers with 0dp or 2dp only eg 90 or 90.12
+    restricted_pattern = r"^[1-9](?:\d{1,14})?(?:\.\d{2})?$|^0\.(?!00)\d{2}$"
+
+    if decimal_place_restriction:
+        pattern = restricted_pattern
     if optional:
         pattern = r"^$|" + pattern
     return {
@@ -285,15 +290,18 @@ def pricing_property(question):
     pricing = {}
     if 'price' in question.fields:
         pricing[question.fields['price']] = price_string(
-            'price' in question.get('optional_fields', [])
+            'price' in question.get('optional_fields', []),
+            question.decimal_place_restriction
         )
     if 'minimum_price' in question.fields:
         pricing[question.fields['minimum_price']] = price_string(
-            'minimum_price' in question.get('optional_fields', [])
+            'minimum_price' in question.get('optional_fields', []),
+            question.decimal_place_restriction
         )
     if 'maximum_price' in question.fields:
         pricing[question.fields['maximum_price']] = price_string(
-            'maximum_price' in question.get('optional_fields', [])
+            'maximum_price' in question.get('optional_fields', []),
+            question.decimal_place_restriction
         )
     if 'price_unit' in question.fields:
         pricing[question.fields['price_unit']] = {

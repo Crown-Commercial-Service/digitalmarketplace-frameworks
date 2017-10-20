@@ -68,6 +68,7 @@ Question keys
 * `questions` a list of nested questions (only valid for `multiquestion` questions)
 * `any_of` groups nested questions for "anyOf" validations and helps us return a helpful validation message (only valid for `multiquestion` questions)
 * `fields` a mapping of toolkit form field key to the service data key used for multi-input field types (only valid for `pricing`)
+* `decimal_place_restriction` only allow positive numbers with 0 or 2 decimal places to mimic pounds and optional pence (only valid for `pricing`)
 * `max_length_in_words` sets the limit on question value length in words
 * `smaller` allows for smaller textboxes
 * `unit` a one-character string. The unit for smaller textboxes accepting a unit (ie, pricing or number entry textboxes)

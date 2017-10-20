@@ -330,21 +330,44 @@ def test_boolean_list_property(id):
     assert result[id]['minItems'] == 0
 
 
-def test_price_string():
+@pytest.mark.parametrize("price", [
+    '0',
+    '0.0',
+    '1',
+    '1.0',
+    '150',
+    '150.0',
+    '12345678901234',
+    '12345678901234.12345'
+])
+def test_price_string_finds_valid_prices(price):
     price_string_validator = re.compile(price_string(False)['pattern'])
-    valid_prices = [
-        '0',
-        '0.0',
-        '1',
-        '1.0',
-        '150',
-        '150.0',
-        '12345678901234',
-        '12345678901234.12345'
-    ]
-    for price in valid_prices:
-        m = re.search(price_string_validator, price)
-        assert m is not None
+    assert re.search(price_string_validator, price) is not None
+
+
+@pytest.mark.parametrize("price", [
+    '0.79',
+    '1',
+    '150',
+    '150.00',
+    '219.28',
+    '12345678901234',
+])
+def test_price_string_with_decimal_restriction_finds_valid_prices(price):
+    price_string_validator = re.compile(price_string(False, True)['pattern'])
+    assert re.search(price_string_validator, price) is not None
+
+
+@pytest.mark.parametrize("price", [
+    '0',
+    '0.00',
+    '150.1',
+    '150.000',
+    '150.00875',
+])
+def test_price_string_with_decimal_restriction_does_not_find_invalid_prices(price):
+    price_string_validator = re.compile(price_string(False, True)['pattern'])
+    assert re.search(price_string_validator, price) is None
 
 
 def test_price_string_empty():
@@ -356,6 +379,7 @@ def test_price_string_empty():
 def test_pricing_property_minmax_price():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "minimum_price": "priceMin",
             "maximum_price": "priceMax"
@@ -370,6 +394,7 @@ def test_pricing_property_minmax_price():
 def test_pricing_property_minmax_price_optional():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "minimum_price": "priceMin",
             "maximum_price": "priceMax"
@@ -388,6 +413,7 @@ def test_pricing_property_minmax_price_optional():
 def test_pricing_property_price_unit_and_interval():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "price_unit": "priceUnit",
             "price_interval": "priceInterval"
@@ -402,6 +428,7 @@ def test_pricing_property_price_unit_and_interval():
 def test_pricing_property_price_unit_and_interval_optional():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "price_unit": "priceUnit",
             "price_interval": "priceInterval"
@@ -420,6 +447,7 @@ def test_pricing_property_price_unit_and_interval_optional():
 def test_hours_for_price():
     manifest = {
         "id": "Test",
+        "type": "pricing",
         "fields": {
             "hours_for_price": "pfh"
         }

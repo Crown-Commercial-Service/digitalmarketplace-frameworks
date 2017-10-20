@@ -24,6 +24,11 @@
         "type": {"enum": ["pricing"]}
       }
     },
+    "decimal_place_restriction": {
+      "properties": {
+        "type": {"enum": ["pricing"]}
+      }
+    },
     "before_summary_value": {
       "properties": {
         "type": {"enum": ["checkboxes"]}
@@ -235,6 +240,9 @@
         "price_unit": {"type": "string"},
         "hours_for_price": {"type": "string"}
       }
+    },
+    "decimal_place_restriction": {
+      "type": "boolean"
     },
     "max_length_in_words": {
       "type": "integer"
