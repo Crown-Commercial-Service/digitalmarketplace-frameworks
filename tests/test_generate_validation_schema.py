@@ -330,47 +330,44 @@ def test_boolean_list_property(id):
     assert result[id]['minItems'] == 0
 
 
-def test_price_string():
+@pytest.mark.parametrize("price", [
+    '0',
+    '0.0',
+    '1',
+    '1.0',
+    '150',
+    '150.0',
+    '12345678901234',
+    '12345678901234.12345'
+])
+def test_price_string_finds_valid_prices(price):
     price_string_validator = re.compile(price_string(False)['pattern'])
-    valid_prices = [
-        '0',
-        '0.0',
-        '1',
-        '1.0',
-        '150',
-        '150.0',
-        '12345678901234',
-        '12345678901234.12345'
-    ]
-    for price in valid_prices:
-        m = re.search(price_string_validator, price)
-        assert m is not None
+    assert re.search(price_string_validator, price) is not None
 
 
-def test_price_string_with_decimal_restriction():
+@pytest.mark.parametrize("price", [
+    '0.79',
+    '1',
+    '150',
+    '150.00',
+    '219.28',
+    '12345678901234',
+])
+def test_price_string_with_decimal_restriction_finds_valid_prices(price):
     price_string_validator = re.compile(price_string(False, True)['pattern'])
-    valid_prices = [
-        '0.79',
-        '1',
-        '150',
-        '150.00',
-        '219.28',
-        '12345678901234',
-    ]
-    for price in valid_prices:
-        m = re.search(price_string_validator, price)
-        assert m is not None
+    assert re.search(price_string_validator, price) is not None
 
-    invalid_prices = [
-        '0',
-        '0.00',
-        '150.1',
-        '150.000',
-        '150.00875',
-    ]
-    for price in invalid_prices:
-        m = re.search(price_string_validator, price)
-        assert m is None
+
+@pytest.mark.parametrize("price", [
+    '0',
+    '0.00',
+    '150.1',
+    '150.000',
+    '150.00875',
+])
+def test_price_string_with_decimal_restriction_does_not_find_invalid_prices(price):
+    price_string_validator = re.compile(price_string(False, True)['pattern'])
+    assert re.search(price_string_validator, price) is None
 
 
 def test_price_string_empty():
