@@ -4,6 +4,7 @@ import os.path
 import sys
 import json
 from collections import OrderedDict
+from itertools import chain
 
 from dmcontent import ContentLoader, utils
 
@@ -87,7 +88,10 @@ def generate_search_mapping(framework_slug, file_handle, mapping_type, extra_met
         mapping_json = json.load(h_template, object_pairs_hook=OrderedDict)  # preserve template order for git history
 
     mapping_json['mappings'][mapping_type]['_meta'].update(extra_meta)
-    mapping_json['mappings'][mapping_type]['_meta']['transformations'] = list(get_transformations(framework_slug))
+    mapping_json['mappings'][mapping_type]['_meta']['transformations'] = list(chain(
+        mapping_json['mappings'][mapping_type]['_meta'].pop("transformations", ()),
+        get_transformations(framework_slug),
+    ))
 
     json.dump(mapping_json, file_handle, indent=2, separators=(',', ': '))
     print('', file=file_handle)
