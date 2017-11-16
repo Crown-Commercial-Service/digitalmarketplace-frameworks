@@ -24,3 +24,5 @@ validations:
     message: Your document exceeds the 5MB limit. Please reduce file size.
   - name: file_can_be_saved
     message: Your document failed to upload. Please try again.
+
+empty_message: You haven’t added a service definition document
