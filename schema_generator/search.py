@@ -13,14 +13,15 @@ _base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def _get_questions_by_type(framework_slug, doc_type, question_types):
+    manifest_name = '{}_search_filters'.format(doc_type)
     loader = ContentLoader(_base_dir)
     loader.load_manifest(
         framework_slug,
         doc_type,
-        'search_filters'
+        manifest_name,
     )
 
-    manifest = loader.get_manifest(framework_slug, 'search_filters')
+    manifest = loader.get_manifest(framework_slug, manifest_name)
     return (q for q in sum((s.questions for s in manifest.sections), []) if q.type in question_types)
 
 

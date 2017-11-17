@@ -12,6 +12,7 @@ MANIFEST_QUESTION_SET = {
     "display_brief": "briefs",
     "edit_brief": "briefs",
     "award_brief": "briefs",
+    "briefs_search_filters": "briefs",
 
     "display_brief_response": "brief-responses",
     "legacy_display_brief_response": "brief-responses",
@@ -28,8 +29,8 @@ MANIFEST_QUESTION_SET = {
     "edit_service": "services",
     "edit_service_as_admin": "services",
     "edit_submission": "services",
-    "search_filters": "services",
-    "download_results": "services"
+    "services_search_filters": "services",
+    "download_results": "services",
 }
 
 # `item` property wouldn't usually be part of a brief response but is included here as the dynamic list child question
