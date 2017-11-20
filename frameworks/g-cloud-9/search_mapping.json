@@ -45,7 +45,7 @@
   "mappings": {
     "services": {
       "_meta": {
-        "dmSortClause": [
+        "dm_sort_clause": [
           "_score",
           {
             "sortonly_serviceIdHash": "desc"
