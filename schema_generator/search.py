@@ -12,11 +12,11 @@ from dmcontent import ContentLoader, utils
 _base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def _get_questions_by_type(framework_slug, question_types):
+def _get_questions_by_type(framework_slug, doc_type, question_types):
     loader = ContentLoader(_base_dir)
     loader.load_manifest(
         framework_slug,
-        'services',
+        doc_type,
         'search_filters'
     )
 
@@ -77,30 +77,44 @@ TRANSFORMATION_GENERATORS = {
 }
 
 
-def get_transformations(framework_slug):
-    for question in _get_questions_by_type(framework_slug, TRANSFORMATION_GENERATORS.keys()):
+def get_transformations(framework_slug, doc_type):
+    for question in _get_questions_by_type(framework_slug, doc_type, TRANSFORMATION_GENERATORS.keys()):
         for transformer in TRANSFORMATION_GENERATORS[question.type](question):
             yield transformer
 
 
-def generate_search_mapping(framework_slug, file_handle, mapping_type, extra_meta={}):
-    with open(os.path.join(_base_dir, 'frameworks', framework_slug, 'search_mapping.json'), 'r') as h_template:
+def generate_search_mapping(framework_slug, doc_type, file_handle, mapping_type, extra_meta={}):
+    with open(os.path.join(
+        _base_dir,
+        "frameworks",
+        framework_slug,
+        "search_mappings",
+        "{}.json".format(doc_type),
+    ), 'r') as h_template:
         mapping_json = json.load(h_template, object_pairs_hook=OrderedDict)  # preserve template order for git history
 
-    mapping_json['mappings'][mapping_type]['_meta'].update(extra_meta)
-    mapping_json['mappings'][mapping_type]['_meta']['transformations'] = list(chain(
-        mapping_json['mappings'][mapping_type]['_meta'].pop("transformations", ()),
-        get_transformations(framework_slug),
+    original_meta = mapping_json['mappings'][mapping_type].get("_meta", {})
+
+    # starting our final _meta dict from scratch so we can ensure extra_meta gets the top spot, in ordered output
+    mapping_json['mappings'][mapping_type]['_meta'] = OrderedDict((
+        *((k, v) for k, v in extra_meta.items()),
+        # we want entries from original_meta to come *after* entries from extra_meta, but want to extra_meta entries
+        # to override original_meta, so ignore original_meta entries which are already in extra_meta
+        *((k, v) for k, v in original_meta.items() if k not in extra_meta),
+        ("transformations", list(chain(
+            extra_meta.get("transformations", ()),
+            original_meta.get("transformations", ()),
+            get_transformations(framework_slug, doc_type),
+        ))),
     ))
 
     json.dump(mapping_json, file_handle, indent=2, separators=(',', ': '))
     print('', file=file_handle)
 
 
-def generate_config(framework_slug, extra_meta, output_dir=None):
-    mapping_type_name = 'services'
+def generate_config(framework_slug, doc_type, extra_meta, output_dir=None):
     if output_dir:
-        with open(os.path.join(output_dir, 'services.json'), 'w') as h_services_mapping:
-            generate_search_mapping(framework_slug, h_services_mapping, mapping_type_name, extra_meta)
+        with open(os.path.join(output_dir, '{}.json'.format(doc_type)), 'w') as base_mapping:
+            generate_search_mapping(framework_slug, base_mapping, doc_type, extra_meta)
     else:
-        generate_search_mapping(framework_slug, sys.stdout, mapping_type_name, extra_meta)
+        generate_search_mapping(framework_slug, doc_type, sys.stdout, doc_type, extra_meta)

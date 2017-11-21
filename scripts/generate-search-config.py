@@ -3,20 +3,19 @@
 
 At the time of writing, most of the search mapping is written by hand, in
 the search_mapping.json template file. This script adds to that template
-and writes it to a services.json file in the directory provided, which
+and writes it to a <doc_type>.json file in the directory provided, which
 should be reference the 'mappings' directory in a checkout of the Search API.
 
 To preview the mapping that will be generated, do not specify the output path.
 
-Note that the Search API only supports one mapping at a time, which will be
-used for any index relating to any G-Cloud framework. Therefore, care should
-be taken with the release process to ensure that indexing for the currently-
-live framework continues as expected, especially if the new framework's
-mapping is not backward-compatible with the old one.
+Note that most of the digital marketplace code only supports one mapping per
+doc type at a time. Therefore, care should be taken with the release process
+to ensure that indexing for the currently-live framework continues as expected,
+especially if the new framework's mapping is not backward-compatible with the old one.
 
 
 Usage:
-    generate-validation-schemas.py [--help] <framework_slug> [--output-path=<output_path>]
+    generate-validation-schemas.py [--help] <framework_slug> <doc_type> [--output-path=<output_path>]
 
 """
 import os
@@ -37,6 +36,7 @@ if __name__ == '__main__':
         sys.exit('Specified output directory does not exist.')
 
     framework_slug = arguments['<framework_slug>']
+    doc_type = arguments['<doc_type>']
 
     with open(os.path.join(base_dir, 'VERSION.txt'), 'r') as version_handle:
         extra_meta = OrderedDict((
@@ -47,4 +47,4 @@ if __name__ == '__main__':
             ('generated_time', datetime.utcnow().isoformat()),
         ))
 
-    generate_config(framework_slug, extra_meta, output_dir)
+    generate_config(framework_slug, doc_type, extra_meta, output_dir)
