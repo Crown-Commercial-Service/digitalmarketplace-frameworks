@@ -163,8 +163,9 @@ Development
 A local checkout of the frameworks repo can be shared with locally-running services (i.e. frontend applications)
 as follows:
 
-- from this repo, run `node_modules/bower/bin/bower link`
-- from each app, run `node_modules/bower/bin/bower link digitalmarketplace-frameworks`
+- install bower globally (if you didn't already): `npm install -g bower`
+- from this repo, run `bower link`
+- from each app, run `bower link digitalmarketplace-frameworks`
 
 Then, whenever the framework content is changed:
 
