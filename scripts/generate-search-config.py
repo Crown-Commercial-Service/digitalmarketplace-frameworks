@@ -4,7 +4,7 @@
 At the time of writing, most of the search mapping is written by hand, in
 the search_mapping.json template file. This script adds to that template
 and writes it to a <doc_type>.json file in the directory provided, which
-should be reference the 'mappings' directory in a checkout of the Search API.
+should usually be the 'mappings' directory in a checkout of the Search API.
 
 To preview the mapping that will be generated, do not specify the output path.
 
