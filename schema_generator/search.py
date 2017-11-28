@@ -115,7 +115,7 @@ def generate_search_mapping(framework_slug, doc_type, file_handle, mapping_type,
 
 def generate_config(framework_slug, doc_type, extra_meta, output_dir=None):
     if output_dir:
-        with open(os.path.join(output_dir, '{}.json'.format(doc_type)), 'w') as base_mapping:
-            generate_search_mapping(framework_slug, base_mapping, doc_type, extra_meta)
+        with open(os.path.join(output_dir, '{}-{}.json'.format(doc_type, framework_slug)), 'w') as base_mapping:
+            generate_search_mapping(framework_slug, doc_type, base_mapping, doc_type, extra_meta)
     else:
         generate_search_mapping(framework_slug, doc_type, sys.stdout, doc_type, extra_meta)
