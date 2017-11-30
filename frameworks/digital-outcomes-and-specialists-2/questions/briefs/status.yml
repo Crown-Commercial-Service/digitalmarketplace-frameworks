@@ -1,0 +1,9 @@
+name: Status
+id: status
+type: radios
+options:
+  - label: "live"
+  - label: "closed"
+  - label: "awarded"
+  - label: "unsuccessful"
+  - label: "cancelled" 

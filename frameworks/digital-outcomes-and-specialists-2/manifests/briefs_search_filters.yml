@@ -1,4 +1,8 @@
 -
+  name: Status
+  questions:
+    - status
+-
   name: Location
   slug: location
   questions:
