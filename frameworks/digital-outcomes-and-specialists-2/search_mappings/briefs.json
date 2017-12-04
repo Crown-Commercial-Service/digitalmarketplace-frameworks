@@ -136,6 +136,10 @@
         "dmtext_status": {
           "type": "keyword"
         },
+        "dmfilter_status": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
         "sortonly_statusOrder": {
           "type": "byte"
         },
