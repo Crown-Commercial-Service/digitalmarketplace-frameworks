@@ -133,6 +133,10 @@
         "dmtext_summary": {
           "type": "keyword"
         },
+        "dmfilter_status": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
         "dmtext_status": {
           "type": "keyword"
         },
