@@ -6,9 +6,7 @@
   name: Location
   slug: location
   questions:
-    - locationOutcomes
-    - locationParticipants
-    - locationSpecialists
+    - locationAllLots
 -
   name: Specialist role
   questions:
