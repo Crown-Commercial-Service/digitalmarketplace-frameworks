@@ -2,6 +2,14 @@
 
 Records breaking changes from major version bumps
 
+## 10.0.0
+
+The `search_filters.yml` manifest has been renamed to `<doc type>_search_filters.yml`. Code which referenced a
+`search_filters.yml` prevously should probably now reference `services_search_filters.yml`.
+
+Also changes the mapping json `_meta` key `dmSortClause` to `dm_sort_clause` which it was supposed to be all along except
+the wrong version got merged (oops).
+
 ## 9.0.0
 
 Upgraded the services mapping for G-Cloud 9 (and implicitly future iterations) to be compatible with Elasticsearch 5.x.

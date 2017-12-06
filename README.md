@@ -134,28 +134,37 @@ These are the fields that are turned into TemplateFields when the YAML files are
 Search mappings
 ---------------
 
-Each G-Cloud framework should provide a `search_mapping.json` file, this is a template for the
-generation of a mapping for the Search API to pass to ElasticSearch.
+A framework can provide a number of "template search mappings" in files named `search_mappings/<doc_type>.json` with
+`doc_type` being the name used for the object type by the search api (usually a plural by convention, e.g. `services`,
+`briefs`). These are templates for the generation of mappings for the Search API to pass to ElasticSearch.
 
-The intention is that the mapping should eventually be generated entirely from the `search_filters`
-manifest, but that is not yet the case. The script `generate-search-config.py` creates a search
-mapping based on this template.
+The intention is that the mapping should eventually be generated entirely from the `<doc_type>_search_filters`
+manifest, but that is not yet the case. The script `generate-search-config.py` creates a complete search
+mapping from `<doc_type>_search_filters` based on this template.
 
-For each field (question) that needs to be indexed, there must be a `filter_` property added to the
-`mappings` key. Note that if a question's `id` has been overridden (i.e. the `id` is no longer the
-same as the filename, then the _overridden_ `id` should be used here. (Compare with the manifest,
+For each field (question) that needs to be used in (e.g. facet) filtering, there must be a corresponding
+`dmfilter_` property added to the `mappings` key. Note that if a question's `id` has been overridden (i.e. the
+`id` is no longer the same as the filename, then the _overridden_ `id` should be used here. (Compare with the manifest,
 where in all cases the filename should be used to specify the question.)
 
-=======
-We are using Elasticsearch multifields to support service aggregations by specific attributes (eg lot and category).
-We use a `raw` multifield so that tokenization is not performed on the values to make aggregation possible with natural
-strings (e.g. `billing and invoicing`), but cannot use the magical `filter_<field>` fields currently used for filtering
-because they enforce some transformations on the data indexed (lowercasing and stripping non-alphanumeric characters).
-This transformation makes it difficult to cleanly tie the aggregated data back to lot/category names, and we should
-look to move away from the `filter_` fields and towards multifields in the future, for reasons of simplification and
-(arguably) performance.
+For each field (question) that should have an aggregation available for it, there must similarly be a corresponding
+`dmagg_` property.
 
-=======
+For each field (question) that should be text-searchable, there must be a corresponding
+`dmtext_` property. This also denotes which fields will be returned by the search API in a search result.
+
+Care should be taken to perform the appropriate amount of normalization or analysis as desired for each variant of a
+field.
+
+As things currently are, at indexing time, a question value will be "broadcast" to all prefixed ES fields with a
+matching "field name" as that question's `id`. The mapping's "field name" taken to be the substring following the
+underscore. This allows arbitrary prefixed copies of fields to be added for various auxiliary uses that might be
+needed (e.g. sorting).
+
+The problem of course with this scheme is we end up with redundant copies of a field - we can't reuse the same copy for
+both filtering and sorting if we wanted to. So in the future we'd hope to be moving towards a prefixless scheme which
+allowed arbitrary sets of, possibly overlapping, "uses" to be assigned to field variants. This sounds a bit like what
+ES multi-fields are for, but unfortunately those don't turn out to be quite flexible enough for our needs.
 
 Development
 -----------
