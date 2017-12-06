@@ -178,7 +178,7 @@ as follows:
 
 Then, whenever the framework content is changed:
 
-- on each frontend app, rebuild the app's `content` directory to include the new content by running `make frontend_build` (NB this step also required before deployment to PaaS via `cf push`)
+- on each frontend app, rebuild the app's `content` directory to include the new content by running `make frontend_build`
 - alternatively, run `npm run frontend-build:watch` to automatically rebuild the framework content whenever a framework YML file changes
 - generate schemas into the API's `json_schema` directory using the `scripts/generate-validation-schemas.py` script in this repo.
 
