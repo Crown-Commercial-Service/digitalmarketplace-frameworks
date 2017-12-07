@@ -17,3 +17,4 @@ options:
   - label: Northern Ireland
   - label: International (outside the UK)
   - label: Off-site
+    value: Offsite
