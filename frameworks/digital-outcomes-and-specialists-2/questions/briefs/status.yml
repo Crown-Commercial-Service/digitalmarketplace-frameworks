@@ -7,6 +7,3 @@ options:
     label: open
     value: live
   - label: closed
-  - label: awarded
-  - label: unsuccessful
-  - label: cancelled

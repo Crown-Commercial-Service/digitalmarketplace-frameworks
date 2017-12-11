@@ -37,6 +37,17 @@
             }
           },
           {
+            "update_conditionally": {
+              "field": "status",
+              "any_of": [
+                "awarded",
+                "unsuccessful",
+                "cancelled"
+              ],
+              "update_value": "closed"
+            }
+          },
+          {
             "append_conditionally": {
               "field": "status",
               "target_field": "statusOrder",
