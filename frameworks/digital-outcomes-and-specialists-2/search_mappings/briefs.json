@@ -37,6 +37,17 @@
             }
           },
           {
+            "set_conditionally": {
+              "field": "status",
+              "any_of": [
+                "awarded",
+                "unsuccessful",
+                "cancelled"
+              ],
+              "set_value": "closed"
+            }
+          },
+          {
             "append_conditionally": {
               "field": "status",
               "target_field": "statusOrder",
@@ -135,6 +146,10 @@
         },
         "dmtext_status": {
           "type": "keyword"
+        },
+        "dmfilter_status": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
         },
         "sortonly_statusOrder": {
           "type": "byte"
