@@ -37,14 +37,14 @@
             }
           },
           {
-            "update_conditionally": {
+            "set_conditionally": {
               "field": "status",
               "any_of": [
                 "awarded",
                 "unsuccessful",
                 "cancelled"
               ],
-              "update_value": "closed"
+              "set_value": "closed"
             }
           },
           {
