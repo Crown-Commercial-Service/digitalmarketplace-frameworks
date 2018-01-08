@@ -1,0 +1,26 @@
+id: priceWeighting
+question: 'Price'
+question_advice: Price is evaluated on how close each supplier’s quote is to the cheapest quote.
+hint: 'This can be between 20% and 85%'
+
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+
+type: number
+unit: "%"
+unit_in_full: "percent"
+unit_position: "after"
+limits:
+  min_value: 20
+  max_value: 85
+  integer_only: true
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_a_number
+    message: 'Weighting must be a number between 20 and 85.'
+  - name: total_should_be_100
+    message: 'Total must add up to 100%.'

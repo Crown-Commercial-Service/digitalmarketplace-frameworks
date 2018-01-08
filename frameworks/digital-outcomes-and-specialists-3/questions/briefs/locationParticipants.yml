@@ -1,0 +1,34 @@
+name: Location
+question: Where the research will take place
+id: location
+question_advice: |
+  This should be the primary location where they’ll be working.
+
+  Suppliers have said where they can recruit participants.
+
+  [View locations (PDF, 262KB)](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/maps/regions--former-government-office-regions--gors---effective-at-31st-december--2011.pdf)
+depends:
+type: radios
+options:
+  - label: "Scotland"
+  - label: "North East England"
+  - label: "North West England"
+  - label: "Yorkshire and the Humber"
+  - label: "East Midlands"
+  - label: "West Midlands"
+  - label: "East of England"
+  - label: "Wales"
+  - label: "London"
+  - label: "South East England"
+  - label: "South West England"
+  - label: "Northern Ireland"
+  - label: "International (outside the UK)"
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+empty_message: Choose location

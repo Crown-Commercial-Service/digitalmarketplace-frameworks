@@ -1,0 +1,22 @@
+name: Day rate
+question: What’s the specialist’s day rate?
+question_advice: "{% if 'budgetRange' in brief %}<h2>Buyer's maximum day rate:</h2><p>{{ brief.budgetRange }}</p>{% endif %}<h2>Your maximum day rate:</h2><p>£{{ max_day_rate }}</p>"
+type: pricing
+fields:
+  price: dayRate
+
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_money_format
+    field: dayRate
+    message: "Day rate must be in numbers and decimal points only, for example 99.95."
+  - name: max_less_than_min
+    field: dayRate
+    message: "This can't be more than the maximum day rate you've already provided."
+
+empty_message: Set rate

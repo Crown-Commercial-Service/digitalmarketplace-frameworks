@@ -1,0 +1,109 @@
+name: Specialist role
+question: Type of specialist you need
+question_advice: You can only post requirements for 1 specialist role at a time, eg if you want to find 3 developers, you must post 3 separate requirements – 1 for each developer.
+type: radios
+options:
+  -
+    label: Agile coach
+    value: agileCoach
+    description: >
+      Help individuals, teams and managers be as effective as possible by embedding an agile culture.
+  -
+    label: Business analyst
+    value: businessAnalyst
+    description: >
+      Analyse a service or organisation’s business processes and systems. Specify, collect and present findings.
+  -
+    label: Communications manager
+    value: communicationsManager
+    description: >
+      Develop user-focused messages, measurement techniques and communication approaches.
+      Establish integrated communication plans across a range of digital channels
+      to ensure that communication is ongoing, open and clear.
+  -
+    label: Content designer
+    value: contentDesigner
+    description: >
+      Ensure content is as clear and simple as possible to meet user needs.
+  -
+    label: Cyber security consultant
+    value: securityConsultant
+    description: >
+      Minimise the chance of data or information systems security breaches.
+      Ensure information is protected against unauthorised or unintended access.
+      Put systems in place to prevent data destruction or disruption.
+  -
+    label: Delivery manager
+    value: deliveryManager
+    description: >
+      Set up a team for successful delivery.
+      Remove obstacles, track progress, facilitate meetings and help the team organise itself.
+  -
+    label: Designer
+    value: designer
+    description: >
+      Provide user-centred interaction design, service design and graphic design expertise.
+  -
+    label: Developer
+    value: developer
+    description: >
+      Build software that supports user needs. Continually improve the service by
+      identifying new tools and techniques, removing technical bottlenecks, and adapting and maintaining code.
+  -
+    label: Performance analyst
+    value: performanceAnalyst
+    description: >
+      Specify, collect and present the key performance data and analysis for a service.
+  -
+    label: Portfolio manager
+    value: portfolioManager
+    description: >
+      Lead a digital portfolio of projects and programmes.
+  -
+    label: Product manager
+    value: productManager
+    description: >
+      Lead the delivery and continuous improvement of one or more digital products or platforms.
+  -
+    label: Programme manager
+    value: programmeManager
+    description: >
+      Manage and organise groups of related projects so they work together to achieve a strategic objective.
+  -
+    label: Quality assurance analyst
+    value: qualityAssurance
+    description: >
+      Ensure the quality of the digital service by testing it manually and writing automated tests
+      covering a range of conditions.
+  -
+    label: Service manager
+    value: serviceManager
+    description: >
+      Develop and deliver an effective user-focused digital service.
+      Manage the full product lifecycle, including user research, design, delivery and continuous improvement.
+  -
+    label: Technical Architect
+    value: technicalArchitect
+    description: >
+      Break down complex problems and identify steps towards solutions. Coach individuals and engage with
+      non-technical people at all levels of seniority. Write code as a senior member of the development team.
+  -
+    label: User researcher
+    value: userResearcher
+    description: >
+      Design, conduct and analyse user research using a range of techniques,
+      eg one-to-one interviews or usability tests.
+  -
+    label: Web operations engineer
+    value: webOperations
+    description: >
+      Run the production systems to help the development team build software that is easy to operate, scale and secure.
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+empty_message: Choose specialist role

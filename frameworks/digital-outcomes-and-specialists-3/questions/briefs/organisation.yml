@@ -1,0 +1,19 @@
+name: Organisation the work is for
+question: Organisation the work is for
+question_advice: 'eg National Audit Office or Lewisham Council'
+hint: 100 characters maximum
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your organisation name must be no more than 100 characters."
+empty_message: Add organisation

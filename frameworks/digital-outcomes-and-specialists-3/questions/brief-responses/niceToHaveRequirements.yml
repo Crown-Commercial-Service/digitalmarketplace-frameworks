@@ -1,0 +1,28 @@
+name: Nice-to-have skills and experience
+question: Do you have any of the nice-to-have skills or experience?
+optional: true
+question_advice: |
+  All nice-to-have skills and experience are optional.
+
+  The buyer will assess and score your evidence to shortlist the best suppliers.
+
+  <h3>Evidence structure</h3>
+  <div class="explanation-list">
+    <p class="lead">When you write your evidence, you should be specific about:</p>
+
+    <ul class="list-bullet">
+      <li>what the situation was</li>
+      <li>the work {% if brief.lotSlug == 'digital-outcomes' %}the team{% elif brief.lotSlug == 'digital-specialists' %}the specialist{% elif brief.lotSlug == 'user-research-participants' %}you{% endif %} did</li>
+      <li>what the results were</li>
+    </ul>
+  </div>
+
+  You should only provide one example for each nice-to-have requirement (unless the buyer specifies otherwise).
+
+  You can reuse examples across different essential or nice-to-have requirements if you need to.
+
+type: dynamic_list
+dynamic_field: 'brief.niceToHaveRequirements'
+questions:
+  - yesNo
+  - followupEvidence
