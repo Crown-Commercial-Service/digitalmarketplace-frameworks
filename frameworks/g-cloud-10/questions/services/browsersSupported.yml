@@ -1,0 +1,33 @@
+name: Supported browsers
+question: What browsers does your service work with?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: checkboxes
+options:
+  - label: Internet Explorer 7
+    value: ie7
+  - label: Internet Explorer 8
+    value: ie8
+  - label: Internet Explorer 9
+    value: ie9
+  - label: Internet Explorer 10+
+    value: ie10+
+  - label: Microsoft Edge
+    value: edge
+  - label: Firefox
+    value: firefox
+  - label: Chrome
+    value: chrome
+  - label: Safari 9+
+    value: safari
+  - label: Opera
+    value: opera
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

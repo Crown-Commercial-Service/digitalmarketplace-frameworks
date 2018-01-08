@@ -1,0 +1,13 @@
+name: Audit for buyers’ users’ actions
+question: Audit for buyers’ users’ actions
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - auditBuyersActions
+  - auditBuyersActionsStorage

@@ -1,0 +1,16 @@
+name: Virtualisation
+question: Virtualisation
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - virtualisation
+  - virtualisationImplementedBy
+  - virtualisationTechnologiesUsed
+  - virtualisationTechnologiesUsedOther
+  - virtualisationThirdPartyProvider
+  - virtualisationSeparation

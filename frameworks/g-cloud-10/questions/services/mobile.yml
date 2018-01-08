@@ -1,0 +1,17 @@
+name: Designed for use on mobile devices
+question: Has your service been designed to work on mobile devices?
+filter_label: mobile devices
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+followup:
+  mobileDifferences:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

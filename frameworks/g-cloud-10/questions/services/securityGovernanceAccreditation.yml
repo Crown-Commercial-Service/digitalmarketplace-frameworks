@@ -1,0 +1,19 @@
+name: Security governance accreditation
+question: Is your security governance accredited to a standard?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  securityGovernanceStandards:
+    - true
+  securityGovernanceApproach:
+    - false
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

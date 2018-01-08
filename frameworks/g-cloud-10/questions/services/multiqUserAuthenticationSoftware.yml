@@ -1,0 +1,14 @@
+id: multiqUserAuthentication
+name: User authentication
+question: User authentication
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+  - userAuthenticationNeeded
+  - userAuthenticationSoftware
+  - userAuthenticationDescription

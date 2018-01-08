@@ -1,0 +1,6 @@
+name: Service description accuracy
+question: Will all the service descriptions you’re submitting for G-Cloud&nbsp;9 on the Digital Marketplace be accurate and true representations?
+type: boolean
+assessment:
+  passIfIn:
+    - True

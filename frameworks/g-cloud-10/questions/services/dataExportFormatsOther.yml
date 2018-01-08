@@ -1,0 +1,20 @@
+name: Other data export formats
+question: What other formats can users export their data in?
+
+optional: true
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: list
+list_item_name: data format
+
+validations:
+  - name: under_10_words
+    message: You can’t write more than 10 words for each data format.
+  - name: max_items_limit
+    message: You must have 10 or fewer data formats.
+  - name: under_character_limit
+    message: You can’t write more than 100 characters for each data format.

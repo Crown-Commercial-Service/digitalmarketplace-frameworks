@@ -1,0 +1,17 @@
+name: Accredited security testers
+question: Is your penetration testing or IT Health Check performed by accredited security testers?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  securityTestingAccreditations:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

@@ -1,0 +1,13 @@
+name: Services are cloud-related
+question: >
+  Depending on the lots you’re submitting services to, please confirm that the services you’re submitting to G-Cloud 9 have or support:
+
+    - on-demand self-service. Your cloud services must be automatically available without needing interaction between the supplier and the buyer, for example server time or network storage. (Lot 1 - cloud hosting and lot 2 - cloud software.)
+    - broad network access. Your cloud services must be easily accessible over the network and across a wide range of platforms, for example mobile phones, tablets, laptops and workstations. (Lot 1 - cloud hosting and lot 2 - cloud software.)
+    - measured service. Your resource use must be monitored, controlled and reported to the buyer, for example storage, processing, bandwidth and number of active user accounts. (Lot 1 - cloud hosting and lot 2 - cloud software.)
+    - the delivery of cloud services. Your service must enable the delivery of cloud services. Your service complies with the definition of cloud support in the <a href="/suppliers/frameworks/g-cloud-9" target="_blank" rel="noopener noreferrer">framework agreement (link opens in a new tab)</a> (Lot 3 - cloud support.)
+
+type: boolean
+assessment:
+  passIfIn:
+    - True

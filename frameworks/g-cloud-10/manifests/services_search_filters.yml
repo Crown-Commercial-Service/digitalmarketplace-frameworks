@@ -1,0 +1,104 @@
+-
+  name: Categories
+  slug: categories
+  questions:
+    - serviceCategoriesSoftware
+    - serviceCategoriesHosting
+    - serviceCategoriesSupport
+-
+  name: Cloud deployment model
+  questions:
+    - cloudDeploymentModel
+- 
+  name: Supplier type
+  questions:
+    - resellingType
+-
+  name: User support
+  questions:
+    - emailOrTicketingSupport
+    - phoneSupport
+    - webChatSupport
+    - onsiteSupport
+-
+  name: Using the service
+  questions:
+    - browsersAccess
+    - installation
+    - mobile
+    - APISoftware
+- 
+  name: Metrics reporting
+  questions:
+    - metricsSoftwareHow
+    - metricsHostingHow
+-
+  name: Infrastructure or application metrics
+  questions:
+    - metricsHostingWhat
+-
+  name: Scaling
+  questions:
+    - scalingType
+-
+  name: Usage notifications
+  questions:
+    - usageNotifications
+-
+  name: Backup and recovery
+  questions:
+    - backup
+-
+  name: Connected public sector networks
+  questions:
+    - publicSectorNetworksTypes
+-
+  name: Data protection between buyer and supplier networks
+  questions:
+    - dataProtectionBetweenNetworks
+-
+  name: Data protection within supplier network
+  questions:
+    - dataProtectionWithinNetwork
+-
+  name: Data storage and processing locations
+  questions:
+    - dataStorageAndProcessingLocations
+-
+  name: User authentication
+  questions:
+    - userAuthenticationSoftware
+    - userAuthenticationHosting
+-
+  name: Management access authentication
+  questions:
+    - managementAccessAuthentication
+-
+  name: Security certification
+  questions:
+    - standardsISOIEC27001
+    - standardsISO28000
+    - standardsCSASTAR
+    - standardsPCI
+-
+  name: Security governance standards
+  questions:
+    - securityGovernanceStandards
+-
+  name: Datacentre security standard
+  questions:
+    - datacentreSecurityStandards
+-
+  name: Staff security clearance
+  questions:
+    - staffSecurityClearanceChecks
+-
+  name: Minimum government security clearance
+  questions:
+     - governmentSecurityClearancesFilter
+-
+  name: Pricing options
+  questions:
+    - educationPricing
+    - freeVersionTrialOption
+

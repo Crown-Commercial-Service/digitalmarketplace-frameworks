@@ -1,0 +1,12 @@
+name: Licence or organisation membership requirement
+question: >
+  Please confirm if, to provide the services specified in this procurement, it’s a legal requirement in the state where you’re established to be:
+type: radios
+options:
+  - label: licensed
+  - label: a member of a relevant organisation
+  - label: none of the above
+validations:
+  - 
+    name: answer_required
+    message: You need to answer this question because you answered ‘no’ to [[establishedInTheUK]].

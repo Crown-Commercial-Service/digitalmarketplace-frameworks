@@ -1,0 +1,22 @@
+name: ISO 28000:2007 certification
+question: Do you have a current ISO 28000:2007 certification that covers the security of your supply chain?
+filter_label: ISO 28000:2007 (supply chain security)
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  standardsISO28000Who:
+    - true
+  standardsISO28000When:
+    - true
+  standardsISO28000Exclusions:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

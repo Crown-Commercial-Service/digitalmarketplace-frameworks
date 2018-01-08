@@ -1,0 +1,25 @@
+name: Who implements virtualisation
+question: Who implements the virtualisation technology?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  virtualisationTechnologiesUsed:
+    - supplier
+  virtualisationThirdPartyProvider:
+    - third_party
+
+type: radios
+options:
+  - label: Supplier
+    value: supplier
+  - label: Third-party
+    value: third_party
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

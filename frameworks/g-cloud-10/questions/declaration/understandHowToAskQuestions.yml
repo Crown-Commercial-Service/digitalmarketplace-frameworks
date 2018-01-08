@@ -1,0 +1,10 @@
+name: Asking questions
+question: >
+  Do you understand that you must ask ‘clarification’ questions on the <a href="https://www.digitalmarketplace.service.gov.uk/suppliers/frameworks/g-cloud-9/updates" target="_blank" rel="noopener noreferrer">G-Cloud&nbsp;9 updates page (link opens in a new tab)</a> in your Digital Marketplace account?
+hint: >
+  You can ask clarification questions about G-Cloud&nbsp;9 until 5pm BST 28 March 2017. All questions and answers will be posted regularly on the G-Cloud 9 updates page. You will be notified by email when new clarification questions and answers are available.
+
+type: boolean
+assessment:
+  passIfIn:
+    - True

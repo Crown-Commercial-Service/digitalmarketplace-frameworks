@@ -1,0 +1,25 @@
+name: Security testing service
+question: Do you provide security testing?
+question_advice: |
+  Security testing services include penetration testing, IT Health Checks and risk analysis.
+
+  Don’t submit your services to G-Cloud if they’ve been assured by these National Cyber Security Centre (NCSC) schemes:
+
+    - Cyber Security Consultancy
+    - Penetration Testing (CHECK)
+    - Cyber Incident Response (CIR)
+    - Tailored Assurance Service
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  securityTestingWhat:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

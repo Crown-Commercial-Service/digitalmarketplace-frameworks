@@ -1,0 +1,25 @@
+name: Accessibility standards
+question: What accessibility standards does your service meet?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+followup:
+  serviceInterfaceAccessibilityDescription:
+    - none
+
+type: radios
+options:
+  - label: WCAG 2.0 AAA
+    value: wcag_aaa
+  - label: WCAG 2.0 AA or EN 301 549
+    value: wcag_aa
+  - label: WCAG 2.0 A
+    value: wcag_a
+  - label: None or don’t know
+    value: none
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

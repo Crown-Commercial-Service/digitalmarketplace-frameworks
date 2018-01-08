@@ -1,0 +1,7 @@
+name: Terms and conditions
+question: >
+  Do you accept the terms and conditions in the <a href="/suppliers/frameworks/g-cloud-9" target="_blank" rel="noopener noreferrer">framework agreement and call-off contract documents (link opens in a new tab)</a>?
+type: boolean
+assessment:
+  passIfIn:
+    - True

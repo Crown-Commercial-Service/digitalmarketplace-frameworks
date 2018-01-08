@@ -1,0 +1,16 @@
+coming:
+  heading: 'G&#x2011;Cloud&nbsp;9 is coming soon'
+  messages:
+    - 'Provide cloud hosting, software and support.'
+    - 'You need a supplier account so we can email you as soon as G&#x2011;Cloud opens for applications.'
+
+open:
+  heading: 'G&#x2011;Cloud&nbsp;9 is open for applications'
+  messages:
+    - 'You need an account to apply.'
+    - 'The application deadline is 5pm&nbsp;BST, 11 April 2017.'
+
+pending:
+  heading: 'G&#x2011;Cloud&nbsp;9 is closed for applications'
+  messages:
+    - 'Applications are being reviewed.'

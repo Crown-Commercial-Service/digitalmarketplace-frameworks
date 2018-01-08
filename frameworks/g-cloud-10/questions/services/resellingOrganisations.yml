@@ -1,0 +1,21 @@
+name: Organisation whose services are being resold
+question: Which organisation’s services do you resell?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: text
+max_length_in_words: 10
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_10_words
+    message: Your answer must be no longer than 10 words.
+  - name: under_character_limit
+    message: Your answer must be no longer than 100 characters.

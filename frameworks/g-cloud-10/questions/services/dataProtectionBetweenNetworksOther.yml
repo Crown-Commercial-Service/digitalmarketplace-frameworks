@@ -1,0 +1,20 @@
+name: Other protection between networks
+question: Describe how else you protect data between the buyer’s network and your network.
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 100
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_100_words
+    message: Your description must be no more than 100 words.
+  - name: under_character_limit
+    message: Your description must be no more than 1000 characters.

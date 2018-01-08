@@ -1,0 +1,11 @@
+name: DUNS number
+question: What is your organisation’s DUNS number?
+type: text
+hint: >
+  The trading organisation applying to sell services through G-Cloud&nbsp;9 must have its own 9-digit DUNS number.
+  <a href="http://www.dnb.co.uk/dandb-duns-number" target="_blank" rel="noopener noreferrer">Find out how to get a DUNS number (link opens in a new tab).</a>
+
+validations:
+  -
+    name: invalid_format
+    message: "You must enter a valid DUNS number."

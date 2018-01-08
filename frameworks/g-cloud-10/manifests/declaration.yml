@@ -1,0 +1,241 @@
+-
+  name: Providing suitable services
+  slug: providing-suitable-services
+  editable: True
+  prefill: False
+  description: |
+    You must answer these questions to confirm that your services are suitable for G-Cloud&nbsp;9.
+
+    You must be able to truthfully answer ‘yes’ to every question for your application to be considered eligible.
+    The Crown Commercial Service may ask for proof after you’ve submitted your application.
+
+    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted. 
+
+  questions:
+    - servicesHaveOrSupport
+    - servicesDoNotInclude
+    - payForWhatUse
+    - offerServicesYourselves
+    - fullAccountability
+
+-
+  name: What it means to be on G-Cloud&nbsp;9
+  slug: what-it-means-to-be-on-g-cloud-9
+  editable: True
+  prefill: False
+  description: |
+    If you make an application to G-Cloud&nbsp;9, you’re agreeing to the terms and conditions in the legal documentation.
+
+    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
+
+    If you can’t answer ‘yes’ to every question on this page, it’s very unlikely that your application will be accepted.
+
+  questions:
+    - termsOfParticipation
+    - termsAndConditions
+    - canProvideFromDayOne
+    - unfairCompetition    
+    - 10WorkingDays
+    - MI
+    
+-
+  name: Grounds for mandatory exclusion
+  slug: grounds-for-mandatory-exclusion
+  editable: True
+  prefill: True
+  description: |
+    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your 
+    application to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very 
+    unlikely that your application will be accepted.
+
+    In questions [[conspiracy]] to [[organisedCrime]], ‘anyone who represents, supervises or has control in your 
+    organisation or a partner or parent organisation’ includes members of your group of economic operators, their
+    proposed subcontractors, and any directors, partners, or any other person who has powers of representation, 
+    decision or control. Check that your organisation complies with <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the Public Contracts
+    Regulations 2015</a>.
+  questions:
+    - conspiracy
+    - corruptionBribery
+    - fraudAndTheft
+    - terrorism
+    - organisedCrime
+
+-
+  name: Grounds for discretionary exclusion
+  slug: grounds-for-discretionary-exclusion
+  editable: True
+  prefill: True
+  description: |
+    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
+    for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
+    
+    If you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
+    you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
+    you provide to consider whether or not you will be able to proceed any further with this procurement.
+
+    In questions [[taxEvasion]] to [[misleadingInformation]], ‘a partner organisation’ includes members
+    of your group of economic operators or their proposed subcontractors.
+    
+    CCS can also exclude you if you are guilty of serious
+    misrepresentation in providing any information referred to within
+    regulations
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank" rel="noopener noreferrer">23 (new tab)</a>,
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">24 (new tab)</a>,
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank" rel="noopener noreferrer">25 (new tab)</a>,
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank" rel="noopener noreferrer">26 (new tab)</a> or
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank" rel="noopener noreferrer">27 (new tab)</a>
+    of the <a href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank" rel="noopener noreferrer">Public Contracts Regulations 2015 (new tab)</a>
+    or if you fail to provide any such information it requests.
+  questions:
+    - taxEvasion
+    - environmentalSocialLabourLaw
+    - bankrupt
+    - graveProfessionalMisconduct
+    - distortingCompetition
+    - conflictOfInterest
+    - distortedCompetition
+    - significantOrPersistentDeficiencies
+    - seriousMisrepresentation
+    - witheldSupportingDocuments
+    - influencedContractingAuthority
+    - confidentialInformation
+    - misleadingInformation
+    - mitigatingFactors
+    - unspentTaxConvictions
+    - GAAR
+    - mitigatingFactors2
+-
+
+  name: Working with government
+  slug: working-with-government
+  editable: True
+  prefill: True
+  description: |
+    You must be able to truthfully answer ‘yes’ to every question under ‘Working with government’ for your bid to be
+    considered eligible.
+    
+    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your bid will be accepted.
+  questions:
+    - environmentallyFriendly
+    - equalityAndDiversity
+    - employersInsurance
+    - helpBuyersComplyTechnologyCodesOfPractice
+    - publishContracts
+-
+  name: How you apply
+  slug: how-you-apply
+  editable: True
+  prefill: False
+  description: |
+    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
+
+    If you can’t answer ‘yes’ to every question on this page, it’s very unlikely that your application will be accepted.
+
+  questions:
+    - readUnderstoodGuidance
+    - understandTool
+    - understandHowToAskQuestions
+-
+  name: Application accuracy
+  slug: application-accuracy
+  editable: True
+  prefill: False
+  description: |
+    You must confirm the accuracy of the information in this declaration and in your service descriptions. We might 
+    ask for proof after you’ve submitted your application.
+
+  questions:
+    - accurateInformation
+    - informationChanges
+    - accuratelyDescribed
+    - proofOfClaims
+-
+  name: About your organisation
+  slug: about-your-organisation
+  editable: True
+  prefill: True
+  description: |
+    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application. 
+
+    For a group of economic operators, this will be the name of the lead organisation (or the separate entity such as a 
+    special purpose vehicle if you have already created one).
+    If you’re submitting a response on behalf of another organisation, use their company name and details, not yours.
+  questions:
+    - nameOfOrganisation
+    - tradingNames
+    - registeredAddress
+
+-
+  name: Organisation registration
+  slug: organisation-registration
+  editable: True
+  prefill: True
+  description: |
+    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application.
+    If your application is successful, it will carry out checks on your company.
+  questions:
+    - firstRegistered
+    - currentRegisteredCountry
+    - companyRegistrationNumber
+    - dunsNumber
+    - registeredVATNumber
+-
+  name: Established outside the UK
+  slug: established-outside-the-uk
+  editable: True
+  prefill: True
+  description: |
+    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;9 application.
+    If your application is successful, it will carry out checks on your company.
+  questions:
+    - establishedInTheUK
+    - appropriateTradeRegisters
+    - appropriateTradeRegistersNumber
+    - licenceOrMemberRequired
+    - licenceOrMemberRequiredDetails
+-
+
+  name: How you’ll deliver your services
+  slug: how-youll-deliver-your-services
+  editable: True
+  prefill: True   
+  description: |
+    The Crown Commercial Service will use this information to manage your participation in G-Cloud&nbsp;9. 
+  questions:
+    - subcontracting
+-
+
+  name: Organisation size
+  slug: organisation-size
+  editable: True
+  prefill: True
+  description: |
+    The government <a href="https://www.gov.uk/government/news/big-opportunities-for-small-firms-government-set-to-spend-1-in-every-3-with-small-businesses" target="_blank" rel="noopener noreferrer">aims to spend £1 in every £3 with small-to-medium enterprises (SMEs)s (new tab)</a> by 2020.
+    
+    The Crown Commercial Service will use the information you provide about the size of your company to report overall statistics about the successful suppliers on G-Cloud&nbsp;9.  
+  questions:
+    - organisationSize
+-
+
+  name: Trading status
+  slug: trading-status
+  editable: True
+  prefill: True
+  description: |
+    The Crown Commercial Service will use the information to understand the different types of suppliers providing G-Cloud&nbsp;9 services.
+  questions:
+    - tradingStatus
+    - tradingStatusOther
+-
+
+  name: Contact details
+  slug: contact-details
+  editable: True
+  prefill: True  
+  description: |
+     The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.  
+  questions:
+    - primaryContact
+    - primaryContactEmail
+    - contactNameContractNotice
+    - contactEmailContractNotice
