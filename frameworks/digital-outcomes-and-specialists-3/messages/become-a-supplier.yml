@@ -1,0 +1,41 @@
+coming: |
+  <div class="explanation-list">
+    Digital Outcomes and Specialists is opening for applications.<br />
+    You will be able to apply to sell:
+    <ul class="list-bullet">
+      <li>digital outcomes, for example a team to build a service</li>
+      <li>digital specialists, for example an individual developer or user researcher</li>
+      <li>user research studios</li>
+      <li>user research participants</li>
+    </ul>
+  </div>
+
+open: |
+  <div class="explanation-list">
+    Digital Outcomes and Specialists is open for applications.<br />
+    You can apply to sell:
+    <ul class="list-bullet">
+      <li>digital outcomes, for example a team to build a service</li>
+      <li>digital specialists, for example an individual developer or user researcher</li>
+      <li>user research studios</li>
+      <li>user research participants</li>
+    </ul>
+  </div>
+
+pending: &can_not_apply |
+  <div class="explanation-list">
+    Digital Outcomes and Specialists is closed for applications.<br />
+    You will be able to apply to sell:
+    <ul class="list-bullet">
+      <li>digital outcomes, for example a team to build a service</li>
+      <li>digital specialists, for example an individual developer or user researcher</li>
+      <li>user research studios</li>
+      <li>user research participants</li>
+    </ul>
+  </div>
+
+standstill: *can_not_apply
+
+live: *can_not_apply
+
+expired: *can_not_apply

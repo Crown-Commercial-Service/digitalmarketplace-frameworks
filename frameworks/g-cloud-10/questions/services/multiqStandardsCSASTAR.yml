@@ -1,0 +1,15 @@
+name: CSA STAR certification
+question: CSA STAR certification
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - standardsCSASTAR
+  - standardsCSASTARWhen
+  - standardsCSASTARLevel
+  - standardsCSASTARExclusions

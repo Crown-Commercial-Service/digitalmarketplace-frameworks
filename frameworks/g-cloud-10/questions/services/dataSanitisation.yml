@@ -1,0 +1,22 @@
+name: Data sanitisation process
+question: Do you have a data sanitisation process?
+question_advice: >
+   Read about the government’s <a
+   href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience#sanitisation"
+   target="_blank" rel="noopener noreferrer">2nd cloud security principle: ‘Asset protection and resilience’ (link opens
+   in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  dataSanitisationType:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

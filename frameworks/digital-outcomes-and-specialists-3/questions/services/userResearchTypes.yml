@@ -1,0 +1,21 @@
+question: What types of user research can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: Creating personas
+    description: Create personas based on the characteristics of a group of users who use a service in a similar way.
+  - label: Quantitative research
+    description: Design, conduct and analyse surveys and online panels to understand user attitudes and behaviours on a service or product.
+  - label: Usability testing
+    description: Evaluate the usability of a product by testing it with representative users.
+  - label: User journey mapping
+    description: Create and work with user journey maps to help understand the user experience of a service throughout its lifecycle, across all channels and for each interaction.
+  - label: User needs and insights
+    description: Design, conduct and analyse user research to identify users of a service and their needs.
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

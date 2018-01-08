@@ -1,0 +1,16 @@
+question: Content designer
+name: Content designer
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+any_of: specialist
+questions:
+  - contentDesignerLocations
+  - contentDesignerDayRate
+
+empty_message: You haven’t added a content designer
+
+hint: Ensure content is as clear and simple as possible to meet user needs.

@@ -1,0 +1,4 @@
+name: Technology code of practice
+question: >
+  Will you comply with the government’s latest <a href="https://www.gov.uk/service-manual/technology/code-of-practice.html" target="_blank" rel="noopener noreferrer">technology code of practice (link opens in a new tab)</a>?
+type: boolean

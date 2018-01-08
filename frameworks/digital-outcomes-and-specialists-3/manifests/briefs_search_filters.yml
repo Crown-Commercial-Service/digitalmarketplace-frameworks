@@ -1,0 +1,13 @@
+-
+  name: Status
+  questions:
+    - status
+-
+  name: Location
+  slug: location
+  questions:
+    - locationAllLots
+-
+  name: Specialist role
+  questions:
+    - specialistRole

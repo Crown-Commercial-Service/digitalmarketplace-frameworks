@@ -1,0 +1,7 @@
+name: Publishing contracts
+question: >
+  Are you prepared to <a href="https://www.gov.uk/government/publications/procurement-policy-note-1315-increasing-the-transparency-of-contract-information" target="_blank" rel="noopener noreferrer">publish contracts according to government policy (link opens in a new tab)</a>?
+type: boolean
+assessment:
+  passIfIn:
+    - True

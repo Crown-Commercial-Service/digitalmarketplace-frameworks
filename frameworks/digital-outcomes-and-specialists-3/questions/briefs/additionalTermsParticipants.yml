@@ -1,0 +1,25 @@
+id: additionalTerms
+name: Additional terms and conditions
+question: Additional terms and conditions
+question_advice: |
+  You should use the [standard contract](https://www.gov.uk/government/publications/digital-outcomes-and-specialists-call-off-contract) unless your organisation needs to include additional terms and conditions.
+
+  Read about [how the terms and conditions work](https://www.gov.uk/guidance/terms-and-conditions-of-digital-marketplace-frameworks).
+
+  The suppliers have already agreed that:
+
+  - their prices must include all incentives, recruitment, and travel and subsistence costs paid to participants
+  - you don’t pay for participants who don’t attend on the day
+  - they are responsible for paying participants directly
+optional: true
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'
+empty_message: Add terms and conditions

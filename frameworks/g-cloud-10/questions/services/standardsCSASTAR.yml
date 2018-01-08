@@ -1,0 +1,23 @@
+name: CSA STAR certification
+question: >
+  Do you have a current CSA Security, Trust & Assurance Registry (STAR) certification that covers the security of
+  your service?
+filter_label: CSA STAR (service security)
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  standardsCSASTARWhen:
+    - true
+  standardsCSASTARLevel:
+    - true
+  standardsCSASTARExclusions:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

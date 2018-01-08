@@ -1,0 +1,20 @@
+name: Information security policies and processes
+question: What information security policies and processes do you follow?
+question_advice: Include your reporting structure and how you ensure policies are followed.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 200
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_200_words
+    message: Your answer must be no longer than 200 words.
+  - name: under_character_limit
+    message: Your answer must be no longer than 2000 characters.

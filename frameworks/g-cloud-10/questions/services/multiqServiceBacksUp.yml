@@ -1,0 +1,16 @@
+name: Backup and recovery
+question: Backup and recovery
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - backup
+  - backupWhatData
+  - backupControls
+  - backupDatacentre
+  - backupScheduling
+  - backupRecovery

@@ -1,0 +1,20 @@
+name: Other documentation formats
+question: What other formats do you provide documentation in?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: list
+list_item_name: documentation format
+
+validations:
+  - name: under_10_words
+    message: You can’t write more than 10 words for each documentation format.
+  - name: max_items_limit
+    message: You must have 10 or fewer documentation formats.
+  - name: under_character_limit
+    message: You can’t write more than 100 characters for each documentation format.

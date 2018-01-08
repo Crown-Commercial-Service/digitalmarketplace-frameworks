@@ -1,0 +1,36 @@
+name: Email or online ticketing support
+question: Do you provide email or online ticketing support?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+followup:
+  emailOrTicketingSupportResponseTimes:
+    - "yes"
+    - yes_extra_cost
+  emailOrTicketingSupportPriority:
+    - "yes"
+    - yes_extra_cost
+
+type: radios
+options:
+  - label: "Yes"
+    value: "yes"
+    filter_label: "email or online ticketing"
+    derived_from:
+      question: emailOrTicketingSupport
+      any_of:
+        - yes_extra_cost
+  - label: Yes, at extra cost
+    value: yes_extra_cost
+    filter_ignore: true
+  - label: "No"
+    value: "no"
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

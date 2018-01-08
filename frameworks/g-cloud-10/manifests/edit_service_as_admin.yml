@@ -1,0 +1,228 @@
+- name: Service attributes
+  editable: false
+  questions:
+    - id
+    - lotName
+
+- name: About your service
+  editable: true
+  questions:
+    - serviceName
+    - serviceDescription
+    - serviceCategoriesSoftware
+    - serviceCategoriesHosting
+
+- name: Service features and benefits
+  editable: true
+  questions:
+    - multiqServiceFeaturesAndBenefitsHostingAndSoftware
+    - multiqServiceFeaturesAndBenefitsSupport
+
+- name: Planning
+  editable: true
+  questions:
+    - multiqPlanning
+
+- name: Setup and migration
+  editable: true
+  questions:
+    - multiqSetupAndMigration
+
+- name: Quality assurance and performance testing
+  editable: true
+  questions:
+    - multiqQAAndTesting
+
+- name: Security testing
+  editable: true
+  questions:
+    - multiqSecurityTesting
+
+- name: Training
+  editable: true
+  questions:
+    - multiqTraining
+
+- name: Ongoing support
+  editable: true
+  questions:
+    - multiqOngoingSupport
+
+- name: Service scope
+  editable: true
+  questions:
+    - multiqServiceAddOn
+    - cloudDeploymentModel
+    - serviceConstraintsHostingAndSoftware
+    - serviceConstraintsSupport
+    - systemRequirements
+
+- name: Reselling
+  editable: true
+  questions:
+    - multiqReselling
+
+- name: User support
+  editable: true
+  questions:
+    - multiqEmailOrTicketingSupport
+    - multiqPhoneSupport
+    - multiqWebChatSupport
+    - onsiteSupport
+    - supportLevels
+    - supportAvailableToThirdParty
+
+- name: How users work with your service
+  editable: true
+  questions:
+    - multiqBrowser
+    - multiqInstallation
+    - multiqMobile
+    - multiqWebInterface
+    - multiqServiceInterface
+    - multiqAPIHosting
+    - multiqAPISoftware
+    - multiqCommandLineInterface
+    - multiqCustomisation
+
+- name: Onboarding and offboarding
+  editable: true
+  questions:
+    - gettingStarted
+    - multiqDocumentation
+    - endOfContractDataExtraction
+    - endOfContractProcess
+
+- name: Data importing and exporting
+  editable: true
+  questions:
+    - dataExportHow
+    - multiqDataExportFormats
+    - multiqDataImportFormats
+
+- name: Backups and recovery
+  editable: true
+  questions:
+    - multiqServiceBacksUp
+
+- name: Analytics
+  editable: true
+  questions:
+    - multiqMetricsHosting
+    - multiqMetricsSoftware
+
+- name: Scaling
+  editable: true
+  questions:
+    - multiqScaling
+    - independenceOfResources
+    - multiqUsageNotifications
+
+- name: Public sector networks
+  editable: true
+  questions:
+    - multiqPublicSectorNetworks
+
+- name: Data-in-transit protection
+  editable: true
+  questions:
+    - multiqDataProtectionBetweenNetworks
+    - multiqDataProtectionWithinNetwork
+
+- name: Asset protection
+  editable: true
+  questions:
+    - multiqDataStorageAndProcessing
+    - datacentreSecurityStandards
+    - multiqPenetrationTesting
+    - multiqProtectionOfDataAtRest
+    - multiqDataSanitisation
+    - equipmentDisposalApproach
+
+- name: Availability and resilience
+  editable: true
+  questions:
+    - guaranteedAvailability
+    - approachToResilience
+    - outageReporting
+
+- name: Separation between users
+  editable: true
+  questions:
+    - multiqVirtualisation
+
+- name: Governance
+  editable: true
+  questions:
+    - boardLevelServiceSecurity
+    - multiqSecurityGovernance
+    - informationSecurityPoliciesAndProcesses
+
+- name: Operational security
+  editable: true
+  questions:
+    - configurationAndChangeManagementType
+    - configurationAndChangeManagementProcesses
+    - vulnerabilityManagementType
+    - vulnerabilityManagementApproach
+    - protectiveMonitoringType
+    - protectiveMonitoringApproach
+    - incidentManagementType
+    - incidentManagementApproach
+
+- name: Staff security
+  editable: true
+  questions:
+    - staffSecurityClearanceChecks
+    - governmentSecurityClearances
+
+- name: Secure development
+  editable: true
+  questions:
+    - secureDevelopment
+
+- name: Identity and authentication
+  editable: true
+  questions:
+    - multiqUserAuthenticationHosting
+    - multiqUserAuthenticationSoftware
+    - accessRestrictionManagementAndSupport
+    - accessRestrictionTesting
+    - multiqManagementAccess
+    - devicesUsersManageTheServiceThrough
+
+- name: Audit information for users
+  editable: true
+  questions:
+    - multiqAccessBuyersAudit
+    - multiqAccessSuppliersAudit
+    - howLongSystemLogsStored
+
+- name: Standards and certifications
+  editable: true
+  questions:
+    - multiqStandardsISOIEC27001
+    - multiqStandardsISO28000
+    - multiqStandardsCSASTAR
+    - multiqStandardsPCI
+    - multiqAccreditationsOther
+
+- name: Energy efficiency
+  editable: true
+  questions:
+    - energyEfficientDatacentres
+
+- name: Pricing
+  editable: true
+  questions:
+    - price
+    - educationPricing
+    - multiqFreeVersion
+
+- name: Documents
+  editable: true
+  questions:
+    - serviceDefinitionDocumentURL
+    - termsAndConditionsDocumentURL
+    - pricingDocumentURL
+    - sfiaRateDocumentURL

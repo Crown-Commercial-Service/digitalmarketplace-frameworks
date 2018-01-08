@@ -1,0 +1,8 @@
+name: Buyers pay for what they use
+question: >
+  Please confirm that, unless they agree otherwise, buyers will:
+
+    - only pay for what they use
+    - not pay for services in advance
+
+type: boolean

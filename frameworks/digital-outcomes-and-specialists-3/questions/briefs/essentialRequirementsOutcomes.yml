@@ -1,0 +1,33 @@
+name: 'Essential skills and experience'
+id: essentialRequirements
+question: 'Essential skills and experience'
+question_advice: |
+  When suppliers apply they declare which of your essential skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
+
+  List all the specific skills or experience the supplier must have,<br />
+  eg have experience designing services for users with low digital literacy.
+
+  **The supplier must:**
+
+list_item_name: 'essential requirement'
+number_of_items: 20
+type: list
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_30_words
+    message: 'Criteria must be no more than 30 words.'
+  -
+    name: max_items_limit
+    message: 'You must have 20 or fewer criteria.'
+  -
+    name: under_character_limit
+    message: 'Criteria must be no more than 300 characters.'
+empty_message: Add essential skills or experience

@@ -1,0 +1,4 @@
+name: Where your business was established
+question: Was your business established in the UK?
+type: boolean
+hint: If you answer ‘yes’ to this question, you don’t need to answer any other questions on this page.

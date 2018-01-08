@@ -1,0 +1,16 @@
+id: multiqAPI
+name: API
+question: API
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+  - APISoftware
+  - APIUsage
+  - APIDocumentation
+  - APIDocumentationFormats
+  - APISandbox

@@ -1,0 +1,22 @@
+name: Earliest start date
+question: When is the earliest {% if brief.lotSlug == "digital-outcomes" %}the team can start?{% elif brief.lotSlug == "digital-specialists" %}the specialist can start work?{% else %}you can recruit participants?{% endif %}
+hint: 'eg 31/12/2020'
+question_advice: >
+  The buyer needs
+  {%- if brief.lotSlug == "digital-outcomes" %}
+  the team to start: {{ brief.startDate|datetodatetimeformat }}
+  {%- elif brief.lotSlug == "digital-specialists" %}
+  the specialist to start: {{ brief.startDate|datetodatetimeformat }}
+  {%- else %}
+  participants: {{ brief.researchDates }}
+  {%- endif %}
+type: text
+smaller: true
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_character_limit
+    message: "Your start date must be no more than 100 characters."
+empty_message: Set date

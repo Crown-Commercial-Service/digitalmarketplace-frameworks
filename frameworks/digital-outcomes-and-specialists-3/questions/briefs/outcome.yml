@@ -1,0 +1,17 @@
+name: Problem to be solved
+question: Problem to be solved
+question_advice: eg patients can’t access their medical records
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+  -
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'
+empty_message: Describe problem

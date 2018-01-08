@@ -1,0 +1,35 @@
+name: Location
+question: Where you want the specialist to work
+id: location
+question_advice: |
+  This should be the primary location where they’ll be working.
+
+  Suppliers have said where they’ll provide specialists.
+
+  [View locations (PDF, 262KB)](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/maps/regions--former-government-office-regions--gors---effective-at-31st-december--2011.pdf)
+depends:
+type: radios
+options:
+  - label: "Scotland"
+  - label: "North East England"
+  - label: "North West England"
+  - label: "Yorkshire and the Humber"
+  - label: "East Midlands"
+  - label: "West Midlands"
+  - label: "East of England"
+  - label: "Wales"
+  - label: "London"
+  - label: "South East England"
+  - label: "South West England"
+  - label: "Northern Ireland"
+  - label: "No specific location, eg they can work remotely"
+    value: "Offsite"
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+empty_message: Choose location

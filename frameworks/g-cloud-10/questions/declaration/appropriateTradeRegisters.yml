@@ -1,0 +1,10 @@
+name: Registration with appropriate trade registers
+question: If your business was not established in the UK, is it registered with the appropriate professional or trade register(s) in the EU member state where it’s established?
+type: boolean
+hint: >
+  Check that your organisation complies with <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/58/made" target="_blank" rel="noopener noreferrer">Schedule 5, Regulation 58(5) (link opens in a new tab)</a> of the Public Contracts Regulations 2015.
+validations:
+  - 
+    name: answer_required
+    message: >
+      You need to answer this question because you answered ‘no’ to [[establishedInTheUK]].

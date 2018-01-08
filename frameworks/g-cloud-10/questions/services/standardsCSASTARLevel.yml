@@ -1,0 +1,26 @@
+name: CSA STAR certification level
+question: What level is the certification?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+  - label: "Level 1: CSA STAR Self-Assessment"
+    value: level_1_csa_star_self_assessment
+  - label: "Level 2: CSA STAR Attestation"
+    value: level_2_csa_star_attestation
+  - label: "Level 3: CSA STAR Certification"
+    value: level_3_csa_star_certification
+  - label: "Level 4: CSA C-STAR Assessment"
+    value: level_4_csa_cstar_assessment
+  - label: "Level 5: CSA STAR Continuous Monitoring"
+    value: level_5_csa_star_continuous_monitoring
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

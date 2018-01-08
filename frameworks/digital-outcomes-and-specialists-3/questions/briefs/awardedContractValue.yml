@@ -1,0 +1,16 @@
+name: What's the value?
+question: What's the value?
+hint: 'eg 9900.95 for 9900 pounds and 95 pence'
+type: pricing
+decimal_place_restriction: true
+fields:
+  price: awardedContractValue
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_money_format
+    field: awardedContractValue
+    message: "Enter your value in pounds and pence using numbers and decimals only, for example 9900.05 for 9900 pounds and 5 pence."
+
+empty_message: Set value

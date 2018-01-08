@@ -1,0 +1,24 @@
+name: Phone support availability
+question: When can users get phone support?
+question_advice: Choose the closest match to your phone support hours.
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: radios
+options:
+  - label: 24 hours, 7 days a week
+    value: "24_7"
+  - label: 9 to 5 (UK time), 7 days a week
+    value: 9_to_5_7_days
+  - label: 9 to 5 (UK time), Monday to Friday
+    value: 9_to_5_mon_to_fri
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

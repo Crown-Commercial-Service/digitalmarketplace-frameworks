@@ -1,0 +1,29 @@
+name: Technical competence criteria
+question: Technical competence criteria
+question_advice: |
+  Technical competence is how well the supplier can do the work you need them to do.
+
+  Evaluate specialists’ technical competence using criteria for:
+
+  - essential skills and experience
+  - nice-to-have skills and experience
+
+  ##Giving points for individual criteria (optional)
+  You can give points to individual criteria, eg ‘have experience designing services for users with low digital literacy – 15 points’. If you choose to add points, you must do it for all individual criteria.
+
+  The points you give for nice-to-have skills and experience must be lower than the points you give for
+  essential skills and experience.
+  Read [how to score individual criteria](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria).
+
+
+optional: false
+type: multiquestion
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+questions:
+  - essentialRequirementsSpecialists
+  - niceToHaveRequirementsSpecialists
+
+empty_message: Set technical competence criteria
