@@ -1,7 +1,7 @@
 question: What is your organisation’s DUNS number?
 type: text
 hint: >
-  The trading organisation applying to sell services through Digital Outcomes and Specialists&nbsp;2 must have its own 9-digit DUNS number.
+  The trading organisation applying to sell services through Digital Outcomes and Specialists&nbsp;3 must have its own 9-digit DUNS number.
   [Find out how to get a DUNS number.](http://www.dnb.co.uk/dandb-duns-number)
 
 validations:
