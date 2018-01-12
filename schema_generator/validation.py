@@ -53,6 +53,17 @@ SCHEMAS = {
         ('G-Cloud 9 Cloud Hosting Product', 'g-cloud-9', 'cloud-hosting'),
         ('G-Cloud 9 Cloud Software Product', 'g-cloud-9', 'cloud-software'),
         ('G-Cloud 9 Cloud Support Product', 'g-cloud-9', 'cloud-support'),
+        ('Digital Outcomes and Specialists 3 Digital outcomes Service',
+         'digital-outcomes-and-specialists-3', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists 3 Digital specialists Service',
+         'digital-outcomes-and-specialists-3', 'digital-specialists'),
+        ('Digital Outcomes and Specialists 3 User research studios Service',
+         'digital-outcomes-and-specialists-3', 'user-research-studios'),
+        ('Digital Outcomes and Specialists 3 User research participants Service',
+         'digital-outcomes-and-specialists-3', 'user-research-participants'),
+        ('G-Cloud 10 Cloud Hosting Product', 'g-cloud-10', 'cloud-hosting'),
+        ('G-Cloud 10 Cloud Software Product', 'g-cloud-10', 'cloud-software'),
+        ('G-Cloud 10 Cloud Support Product', 'g-cloud-10', 'cloud-support'),
     ],
     'briefs': [
         ('Digital Outcomes and Specialists Digital outcomes Brief',
@@ -66,7 +77,13 @@ SCHEMAS = {
         ('Digital Outcomes and Specialists 2 Digital specialists Brief',
          'digital-outcomes-and-specialists-2', 'digital-specialists'),
         ('Digital Outcomes and Specialists 2 User research participants Brief',
-         'digital-outcomes-and-specialists-2', 'user-research-participants')
+         'digital-outcomes-and-specialists-2', 'user-research-participants'),
+        ('Digital Outcomes and Specialists 3 Digital outcomes Brief',
+         'digital-outcomes-and-specialists-3', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists 3 Digital specialists Brief',
+         'digital-outcomes-and-specialists-3', 'digital-specialists'),
+        ('Digital Outcomes and Specialists 3 User research participants Brief',
+         'digital-outcomes-and-specialists-3', 'user-research-participants'),
     ],
     'brief-responses': [
         ('Digital Outcomes and Specialists Digital outcomes Brief Response',
@@ -80,7 +97,13 @@ SCHEMAS = {
         ('Digital Outcomes and Specialists 2 Digital specialists Brief Response',
          'digital-outcomes-and-specialists-2', 'digital-specialists'),
         ('Digital Outcomes and Specialists 2 User research participants Brief Response',
-         'digital-outcomes-and-specialists-2', 'user-research-participants')
+         'digital-outcomes-and-specialists-2', 'user-research-participants'),
+        ('Digital Outcomes and Specialists 3 Digital outcomes Brief Response',
+         'digital-outcomes-and-specialists-3', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists 3 Digital specialists Brief Response',
+         'digital-outcomes-and-specialists-3', 'digital-specialists'),
+        ('Digital Outcomes and Specialists 3 User research participants Brief Response',
+         'digital-outcomes-and-specialists-3', 'user-research-participants'),
     ],
     'brief-awards': [
         ('Digital Outcomes and Specialists Digital outcomes Brief Award',
@@ -95,6 +118,12 @@ SCHEMAS = {
          'digital-outcomes-and-specialists-2', 'digital-specialists'),
         ('Digital Outcomes and Specialists 2 User research participants Brief Award',
          'digital-outcomes-and-specialists-2', 'user-research-participants'),
+        ('Digital Outcomes and Specialists 3 Digital outcomes Brief Award',
+         'digital-outcomes-and-specialists-3', 'digital-outcomes'),
+        ('Digital Outcomes and Specialists 3 Digital specialists Brief Award',
+         'digital-outcomes-and-specialists-3', 'digital-specialists'),
+        ('Digital Outcomes and Specialists 3 User research participants Brief Award',
+         'digital-outcomes-and-specialists-3', 'user-research-participants'),
     ]
 }
 
