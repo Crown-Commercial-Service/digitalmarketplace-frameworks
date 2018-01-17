@@ -1,8 +1,0 @@
-name: Town or city
-question: Town or city
-type: text
-
-validations:
-  -
-    name: answer_required
-    message: 'You need to enter the town or city.'

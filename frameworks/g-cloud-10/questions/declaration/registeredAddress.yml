@@ -1,9 +1,0 @@
-name: Registered office address
-question: What is your organisation’s registered office address?
-hint: If you’re successful, this will be included in your framework agreement.
-optional: false
-type: multiquestion
-questions:
-  - registeredAddressBuilding
-  - registeredAddressTown
-  - registeredAddressPostcode

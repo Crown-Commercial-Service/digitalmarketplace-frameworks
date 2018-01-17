@@ -149,36 +149,7 @@
     - informationChanges
     - accuratelyDescribed
     - proofOfClaims
--
-  name: About your organisation
-  slug: about-your-organisation
-  editable: True
-  prefill: True
-  description: |
-    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;10 application.
 
-    For a group of economic operators, this will be the name of the lead organisation (or the separate entity such as a 
-    special purpose vehicle if you have already created one).
-    If you’re submitting a response on behalf of another organisation, use their company name and details, not yours.
-  questions:
-    - nameOfOrganisation
-    - tradingNames
-    - registeredAddress
-
--
-  name: Organisation registration
-  slug: organisation-registration
-  editable: True
-  prefill: True
-  description: |
-    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;10 application.
-    If your application is successful, it will carry out checks on your company.
-  questions:
-    - firstRegistered
-    - currentRegisteredCountry
-    - companyRegistrationNumber
-    - dunsNumber
-    - registeredVATNumber
 -
   name: Established outside the UK
   slug: established-outside-the-uk
@@ -188,7 +159,6 @@
     The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;10 application.
     If your application is successful, it will carry out checks on your company.
   questions:
-    - establishedInTheUK
     - appropriateTradeRegisters
     - appropriateTradeRegistersNumber
     - licenceOrMemberRequired
@@ -203,29 +173,7 @@
     The Crown Commercial Service will use this information to manage your participation in G-Cloud&nbsp;10.
   questions:
     - subcontracting
--
 
-  name: Organisation size
-  slug: organisation-size
-  editable: True
-  prefill: True
-  description: |
-    The government <a href="https://www.gov.uk/government/news/big-opportunities-for-small-firms-government-set-to-spend-1-in-every-3-with-small-businesses" target="_blank" rel="noopener noreferrer">aims to spend £1 in every £3 with small-to-medium enterprises (SMEs)s (new tab)</a> by 2020.
-    
-    The Crown Commercial Service will use the information you provide about the size of your company to report overall statistics about the successful suppliers on G-Cloud&nbsp;10.
-  questions:
-    - organisationSize
--
-
-  name: Trading status
-  slug: trading-status
-  editable: True
-  prefill: True
-  description: |
-    The Crown Commercial Service will use the information to understand the different types of suppliers providing G-Cloud&nbsp;10 services.
-  questions:
-    - tradingStatus
-    - tradingStatusOther
 -
 
   name: Contact details
