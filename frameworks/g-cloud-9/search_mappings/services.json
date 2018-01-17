@@ -1,5 +1,8 @@
 {
   "settings": {
+    "index": {
+      "max_result_window": 20000
+    },
     "analysis": {
       "analyzer": {
         "stemming_analyzer": {
