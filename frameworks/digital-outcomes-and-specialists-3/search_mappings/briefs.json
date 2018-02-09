@@ -124,6 +124,9 @@
         "dmtext_applicationsClosedAt": {
           "type": "keyword"
         },
+        "dmtext_clarificationQuestionsClosedAt": {
+          "type": "keyword"
+        },
         "dmtext_cancelledAt": {
           "type": "keyword"
         },
