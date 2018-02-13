@@ -102,6 +102,15 @@
         "variation_description_in_place": {
           "type": "string"
         },
+        "variation_description_not_in_place_but_agreed": {
+          "type": "string"
+        },
+        "variation_comes_in_effect_description": {
+          "type": "string"
+        },
+        "variation_agreement_label": {
+          "type": "string"
+        },
         "confirmation_message": {
           "type": "string"
         },

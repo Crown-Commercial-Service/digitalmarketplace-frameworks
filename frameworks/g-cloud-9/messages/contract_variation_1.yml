@@ -1,0 +1,467 @@
+variation_description_not_in_place: |
+    The Crown Commercial Service (CCS) has made some minor changes to the framework agreement and call-off contract (reference RM1557ix) because of the new General Data Protection Regulation (GDPR).<br/><br/>
+    You must accept these changes for your company and have the legal authority to do so.
+
+variation_not_yet_agreed_extra: |
+    To put these changes into effect, we need you to review and accept them here.
+    You can [download a PDF version of these changes](/suppliers/frameworks/g-cloud-9/files/g-cloud-9-contract-variation.pdf).
+
+variation_description_not_in_place_but_agreed: |
+    You have accepted the Crown Commercial Service’s changes to the framework agreement and call-off contract  (reference RM1557ix). These changes are listed here.<br/><br/>
+    They will come into effect when CCS has countersigned them. We’ll let you know when this happens.
+
+variation_description_in_place: |
+    You have accepted the Crown Commercial Service’s changes to the framework agreement and call-off contract (reference RM1557ix). These changes are listed here. <br/><br/>
+    CCS has countersigned the changes.
+
+variation_comes_in_effect_description: We’ll tell you when CCS has countersigned the changes and they come into effect.
+
+variation_agreement_label: I have the legal authority to accept these changes and agree that the company will be bound by them.
+
+confirmation_message: You have accepted the proposed changes. They will come into effect when CCS has countersigned them. We’ll let you know when this happens.
+
+framework_agreement_changes:
+    - 
+      clause: '8.57'
+      change: |
+            <span class="visuallyhidden">start insertion</span><ins>a)</ins><span class="visuallyhidden">end insertion</span>
+            The provisions of these Data protection and disclosure clauses 8.57 to 8.62 (inclusive) will apply during the Term 
+            and for as long as the Supplier holds CCS Personal Data. <br/> <br/>
+            <span class="visuallyhidden">start insertion</span><ins>
+                b) The Parties will comply with the Data Protection Legislation for the purposes of which CCS is the Controller and the Supplier the Processor. 
+                The only processing the Supplier is authorised to do (unless otherwise required by Law) in respect of its contractual relationship with the Authority 
+                under this Framework Agreement is: <br/><br/>
+            </ins><span class="visuallyhidden">end insertion</span>
+            <ul>
+              <li> 
+                <span class="visuallyhidden">start insertion</span><ins> 
+                  restricted to operations that are strictly necessary for the management/administration of this Framework Agreement; and
+                </ins><span class="visuallyhidden">end insertion</span>
+              </li>
+              <li> 
+                <span class="visuallyhidden">start insertion</span><ins> 
+                  is limited to Personal Data relating to CCS and Buyer personnel, such as contact details, strictly required for the fulfilment of the Supplier’s obligation under this Framework Agreement.
+                </ins><span class="visuallyhidden">end insertion</span>
+            </ul>
+    - 
+      clause: '8.58'
+      change: |
+            <span class="visuallyhidden">start insertion</span><ins>a)</ins><span class="visuallyhidden">end insertion</span>
+              The Supplier must comply with any notification requirements under the
+              <span class="visuallyhidden">start deletion</span><del>Data Protection Act (DPA)</del><span class="visuallyhidden">end deletion</span>
+              Data Protection Legislation and both Parties will observe their obligations under it. <br/> <br/>
+            <span class="visuallyhidden">start insertion</span>
+                <ins>
+                    b) The Supplier will notify CCS immediately if it receives any communication from a third party relating to the Parties’ obligations under the Data Protection Legislation, or becomes aware of a Data Loss Event and will provide CCS with full and ongoing assistance in relation to each Party’s obligations under the Data Protection Legislation in accordance with any timescales reasonably required by CCS. <br/> <br/>
+                    c) The Supplier will provide all reasonable assistance to CCS to prepare any Data Protection Impact Assessment as may be required (including provision of detailed information and assessments in relation to processing operations, risks and measures) and must notify CCS immediately if it considers that CCS’s instructions infringe the Data Protection Legislation.
+                </ins>
+            <span class="visuallyhidden">end insertion</span>
+    -
+      clause: '8.59'
+      change: |
+            <span class="visuallyhidden">start deletion</span>
+                <del>
+                    If the Supplier is processing CCS’s or Buyers’ Personal Data, the Supplier must have appropriate technical and organisational processes to ensure its security. The Supplier must guard against unauthorised or unlawful processing, loss or destruction of the Personal Data. <br/><br/>
+                </del>
+            <span class="visuallyhidden">end deletion</span> 
+            <span class="visuallyhidden">start insertion</span>
+                <ins>
+                    a) The Supplier must have in place Protective Measures to guard against a Data Loss Event, which take into account the nature of the data, the harm that might result, the state of technology and the cost of implementing the measures. <br/><br/> 
+                    b) The Supplier will ensure that the Supplier Staff only process Personal Data in accordance with this Framework Agreement and take all reasonable steps to ensure the reliability and integrity of Supplier Staff with access to Personal Data.<br/><br/> 
+                    c) The Authority may amend this Framework Agreement on not less than 30 Working Days’ notice to the Supplier to ensure that it complies with any guidance issued by the Information Commissioner’s Office.
+                </ins>
+            <span class="visuallyhidden">end insertion</span>
+    -
+      clause: '8.60'
+      change: |
+        The Supplier will: <br/><br/>
+          <ul>
+            <li>
+              provide CCS and the Buyer with any information they may reasonably request to ensure the Supplier is complying with all of its obligations under the Data Protection Legislation which arise in connection with the Framework Agreement or under a Call-Off Contract
+            </li>
+            <li>
+            <span class="visuallyhidden">start deletion</span>
+                <del>
+                    promptly tell CCS and the Buyer about any breach of this data protection clause
+                </del> 
+            <span class="visuallyhidden">end deletion</span>
+            </li>
+            <li>
+              ensure that it doesn’t knowingly or negligently do or omit to do anything which places CCS or Buyers in breach of their Data Protection Legislation obligations
+            </li>
+            <li>
+              <span class="visuallyhidden">start deletion</span>
+                <del>
+                    not cause or permit to be processed, stored, accessed or otherwise transferred outside the European Economic Area any CCS or Buyer Personal Data without written approval
+                </del> 
+              <span class="visuallyhidden">end deletion</span>
+            </li>
+            <li>
+              <span class="visuallyhidden">start insertion</span><ins>
+                    not transfer Personal Data outside of the European Economic Area unless the prior written consent of CCS has been obtained, and <br><br/></ins>
+                    <p style="margin-left: 50px;"><ins>
+                      i) the CCS or the Supplier has provided appropriate safeguards in relation to the transfer (whether in accordance with GDPR Article 46 or LED Article 37) as determined by the CCS; <br><br/>
+                      ii) the Data Subject has enforceable rights and effective legal remedies; <br><br/>
+                      iii) the Supplier complies with its obligations under the Data Protection Legislation by providing an adequate level of protection to any Personal Data that is transferred (or, if it is not so bound, uses its best endeavours to assist the CCS in meeting its obligations); and <br><br/>
+                      iv) the Supplier complies with any reasonable instructions notified to it in advance by the CCS with respect to the processing of the Personal Data; <br><br/>
+                      </ins><span class="visuallyhidden">end insertion</span>
+                    </p>
+            </li>
+            <li>
+              <span class="visuallyhidden">start insertion</span><ins>
+                before allowing any Subprocessor to process any Personal Data related to this Framework Agreement, obtain the prior written consent of CCS and shall remain fully liable for the acts and omissions of any Subprocessor
+              </ins><span class="visuallyhidden">end insertion</span>
+            </li>
+            <li>
+              <span class="visuallyhidden">start insertion</span><ins>
+                maintain complete and accurate records and information to demonstrate its compliance with clauses 8.57 to 8.62
+              </ins><span class="visuallyhidden">end insertion</span>
+            </li>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Controller</strong> <br/>
+                Takes the meaning given in the Data Protection Legislation.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Data Loss Event</strong> <br/>
+                Any event that results, or may result, in unauthorised access to Personal Data held by the Supplier under this Framework Agreement, and/or actual or potential loss and/or destruction of Personal Data in breach of this Framework Agreement, including any Personal Data Breach.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Data Protection Impact Assessment</strong> <br/>
+                An assessment by the Controller of the impact of the envisaged processing on the protection of Personal Data.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+        <strong>
+          Data Protection Legislation <span class="visuallyhidden">start deletion</span><del>or DPA</del><span class="visuallyhidden">end deletion</span>
+        </strong> <br/>
+        <span class="visuallyhidden">start deletion</span><del>
+          The Data Protection Act 1998, the EU Data Protection Directive 95/46/EC, the Regulation of Investigatory Powers Act 2000, the Telecommunications (Lawful Business Practice) (Interception of Communications) Regulations 2000 (SI 2000/2699), the Electronic Communications Data Protection Directive 2002/58/EC, the Privacy and Electronic Communications (EC Directive) Regulations 2003 and all applicable laws and regulations about the processing of personal data and privacy, including if applicable legally binding guidance and codes of practice issued by the Information Commissioner.
+        </del><span class="visuallyhidden">end deletion</span> <br/><br/>
+        <span class="visuallyhidden">start insertion</span>
+          <ins>
+              Data Protection Legislation means:<br/><br/>
+              i)	all applicable Law about the processing of personal data and privacy; and <br/><br/>
+              ii)	The Data Protection Act 1998, the EU Data Protection Directive 95/46/EC, the Regulation of Investigatory Powers Act 2000, the Telecommunications (Lawful Business Practice) (Interception of Communications) Regulations 2000 (SI 2000/2699), the Electronic Communications Data Protection Directive 2002/58/EC, the Privacy and Electronic Communications (EC Directive) Regulations 2003 including if applicable legally binding guidance and codes of practice issued by the Information Commissioner; and  <br/><br/>
+              iii) to the extent that it relates to processing of personal data and privacy, any Laws that come into force which amend, supersede or replace existing Laws including  the GDPR, the (LED Law Enforcement Directive (Directive (EU) 2016/680) and any applicable national implementing Laws as amended from time to time including the DPA 2018 [subject to Royal Assent].<br/>
+          </ins>
+        <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Data Subject</strong> <br/>
+                Takes the meaning given in the Data Protection Legislation.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>DPA 2018</strong> <br/>
+                Data Protection Act 2018.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>GDPR</strong> <br/>
+                The General Data Protection Regulation (Regulation (EU) 2016/679).
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>LED</strong> 
+                Law Enforcement Directive (Directive (EU) 2016/680).
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <strong>Personal Data</strong> <br/>
+          <span class="visuallyhidden">start deletion</span>
+            <del>
+                As described in the Data Protection Act 1998 
+            </del>
+          <span class="visuallyhidden">end deletion</span>
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                Takes the meaning given in the Data Protection Legislation.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Processor</strong> <br/>
+                Takes the meaning given in the Data Protection Legislation.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Protective Measures</strong> <br/>
+                Appropriate technical and organisational measures which may include: pseudonymising and encrypting Personal Data, ensuring confidentiality, integrity, availability and resilience of systems and services, ensuring that availability of and access to Personal Data can be restored in a timely manner after an incident, and regularly assessing and evaluating the effectiveness of such measures adopted by it.
+
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 3 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Subprocessor</strong> <br/>
+                Any third party appointed to process Personal Data on behalf of the Supplier under this Framework Agreement.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+
+call_off_contract_changes:
+    - 
+      clause: 'Part A - Order Form - <strong>Additional buyer terms</strong>'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Personal Data and Data Subjects</strong> <br/>
+                Will Schedule 7  – Processing, Personal Data and Data Subjects be used Y/N
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    - 
+      clause: '2. Incorporation of terms'
+      change: |
+          <span class="visuallyhidden">start deletion</span>
+            <del>
+                8.57 to 8.62 (Data protection and disclosure) 
+            </del> 
+          <span class="visuallyhidden">end deletion</span> 
+    - 
+      clause: 'Clause 10.1'
+      change: |
+          Subject to clause 24.1 the Supplier must during and after the Term keep the Buyer fully indemnified against all Losses, damages, costs or expenses and other liabilities (including legal fees) arising from any breach of the Supplier's obligations under the 
+            <span class="visuallyhidden">start deletion</span>
+              <del>
+                  Data Protection Act (DPA)
+              </del> 
+            <span class="visuallyhidden">end deletion</span>
+            <span class="visuallyhidden">start insertion</span>
+              <ins>
+                  Data Protection Legislation
+              </ins> 
+            <span class="visuallyhidden">end insertion</span>
+          or under incorporated Framework Agreement clauses 8.83 to 8.91. The indemnity doesn’t apply to the extent that the Supplier breach is due to a Buyer’s instruction.
+           
+    - 
+      clause: 'New Clause 33'
+      change: |
+        <span class="visuallyhidden">start insertion</span>
+            <ins>
+                33. <br/>
+                  Data Protection Legislation (GDPR) <br/><br/>
+                33.1  <br/>
+                  The Parties will comply with the Data Protection Legislation and agree that the Buyer is the Controller and the Supplier is the Processor. The only processing the Supplier is authorised to do is listed at Schedule 7 unless Law requires otherwise (in which case the Supplier will promptly notify the Buyer of any additional processing if permitted by Law). <br/><br/>
+                33.2  <br/>
+                  The Supplier will provide all reasonable assistance to the Buyer to prepare any Data Protection Impact Assessment before commencing any processing (including provision of detailed information and assessments in relation to processing operations, risks and measures) and must notify the Buyer immediately if it considers that the Buyer’s instructions infringe the Data Protection Legislation. <br/><br/>
+                33.3  <br/>
+                  The Supplier must have in place Protective Measures, which have been reviewed and approved by the Buyer as appropriate, to guard against  a Data Loss Event, which take into account the nature of the data, the harm that might result, the state of technology and the cost of implementing the measures. <br/><br/>
+                33.4	<br/>
+                  The Supplier will ensure that the Supplier Personnel only process Personal Data in accordance with this Call-Off Contract and  take all reasonable steps to ensure the reliability and integrity of Supplier Personnel with access to Personal Data, including by ensuring they: <br/>
+                    i) are aware of and comply with the Supplier’s obligations under this Clause; <br/>
+                    ii) are subject to appropriate confidentiality undertakings with the Supplier or relevant Subprocessor <br/>
+                    iii) are informed of the confidential nature of the Personal Data and don’t publish, disclose or divulge it to any third party unless directed by the Buyer or in accordance with this Call-Off Contract <br/>
+                    iv) are given training in the use, protection and handling of Personal Data.<br/><br/>
+                33.5 <br/>
+                  The Supplier will not transfer Personal Data outside of the European Economic Area unless the prior written consent of the Buyer has been obtained. <br/>
+                    i)  the Buyer or the Supplier has provided appropriate safeguards in relation to the transfer (whether in accordance with GDPR Article 46 or LED Article 37) as determined by the Buyer; <br/>
+                    ii) the Data Subject has enforceable rights and effective legal remedies; <br/>
+                    iii) the Supplier complies with its obligations under the Data Protection Legislation by providing an adequate level of protection to any Personal Data that is transferred (or, if it is not so bound, uses its best endeavours to assist the Buyer in meeting its obligations); and <br/>
+                    iv) the Supplier complies with any reasonable instructions notified to it in advance by the Buyer with respect to the processing of the Personal Data. <br/><br/>
+                33.6 <br/>
+                  The Supplier will delete or return Buyer’s Personal Data (including copies) if requested in writing by the Buyer at the End or Expiry of this Call-Off Contract, unless required to retain the Personal Data by Law. <br/><br/>
+                33.7 <br/>
+                  The Supplier will notify the Buyer immediately if it receives any communication from a third party relating to the Parties’ obligations under the Data Protection Legislation, or it becomes aware of a Data Loss Event, and will provide the Buyer with full and ongoing assistance in relation to each Party’s obligations under the Data Protection Legislation in accordance with any timescales reasonably required by the Buyer. <br/><br/>
+                33.8 <br/>
+                  The Supplier will maintain complete and accurate records and information to demonstrate its compliance with this clause. This requirement does not apply where the Supplier employs fewer than 250 staff, unless: <br/>
+                    i) the Buyer determines that the processing is not occasional; <br/>
+                    ii) the Buyer determines the processing includes special categories of data as referred to in Article 9(1) of the GDPR or Personal Data relating to criminal convictions and offences referred to in Article 10 of the GDPR; and <br/>
+                    iii) the Buyer determines that the processing is likely to result in a risk to the rights and freedoms of Data Subjects. <br/><br/>
+                33.9 <br/>
+                  Before allowing any Subprocessor to process any Personal Data related to this Call-Off Contract, the Supplier must obtain the prior written consent of the Buyer, and shall remain fully liable for the acts and omissions of any Subprocessor. <br/><br/>
+                33.10 <br/>
+                  The Buyer may amend this Call-Off Contract on not less than 30 Working Days’ notice to the Supplier to ensure that it complies with any guidance issued by the Information Commissioner’s Office. <br/><br/>
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Controller</strong> <br/>
+                Takes the meaning given in the Data Protection Legislation.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Data Loss Event</strong> <br/>
+                Any event that results, or may result, in unauthorised access to Personal Data held by the Supplier under this Call-Off Contract, and/or actual or potential loss and/or destruction of Personal Data in breach of this Call-Off Contract, including any Personal Data Breach.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Data Protection Impact Assessment</strong> <br/>
+                An assessment by the Controller of the impact of the envisaged processing on the protection of Personal Data.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+        <strong>
+          Data Protection Legislation <span class="visuallyhidden">start deletion</span><del>or DPA</del><span class="visuallyhidden">end deletion</span>
+        </strong> <br/>
+        <span class="visuallyhidden">start deletion</span><del>
+          The Data Protection Act 1998, the EU Data Protection Directive 95/46/EC, the Regulation of Investigatory Powers Act 2000, the Telecommunications (Lawful Business Practice) (Interception of Communications) Regulations 2000 (SI 2000/2699), the Electronic Communications Data Protection Directive 2002/58/EC, the Privacy and Electronic Communications (EC Directive) Regulations 2003 and all applicable laws and regulations relating to processing of personal data and privacy, including if applicable legally binding guidance and codes of practice issued by the Information Commissioner.
+        </del><span class="visuallyhidden">end deletion</span> <br/><br/>
+        <span class="visuallyhidden">start insertion</span>
+          <ins>
+              Data Protection Legislation means: <br/><br/>
+              i)	all applicable Law about the processing of personal data and privacy; and <br/><br/>
+              ii)	The Data Protection Act 1998, the EU Data Protection Directive 95/46/EC, the Regulation of Investigatory Powers Act 2000, the Telecommunications (Lawful Business Practice) (Interception of Communications) Regulations 2000 (SI 2000/2699), the Electronic Communications Data Protection Directive 2002/58/EC, the Privacy and Electronic Communications (EC Directive) Regulations 2003 including if applicable legally binding guidance and codes of practice issued by the Information Commissioner; and  <br/><br/>
+              iii) to the extent that it relates to processing of personal data and privacy, any Laws that come into force which amend, supersede or replace existing Laws including  the GDPR, the (LED Law Enforcement Directive (Directive (EU) 2016/680) and any applicable national implementing Laws as amended from time to time including the DPA 2018 [subject to Royal Assent].<br/>
+          </ins>
+        <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Data Subject</strong> <br/>
+                Takes the meaning given in the Data Protection Legislation.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>DPA 2018</strong> <br/>
+                Data Protection Act 2018
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>GDPR</strong> <br/>
+                The General Data Protection Regulation (Regulation (EU) 2016/679).
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>LED</strong> <br/>
+                Law Enforcement Direction (Directive (EU) 2016/680).
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Personal Data</strong> <br/>
+                Takes the meaning given in the Data Protection Legislation.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Personal Data Breach</strong> <br/>
+                Takes the meaning given in the Data Protection Legislation.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Processor</strong> <br/>
+                Takes the meaning given in the Data Protection Legislation.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Protective Measures</strong>  <br/>
+                Appropriate technical and organisational measures which may include: pseudonymising and encrypting Personal Data, ensuring confidentiality, integrity, availability and resilience of systems and services, ensuring that availability of and access to Personal Data can be restored in a timely manner after an incident, and regularly assessing and evaluating the effectiveness of such measures adopted by it.
+
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Schedule 6 - Glossary and interpretations'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Subprocessor</strong> <br/>
+                Any third party appointed to process Personal Data on behalf of the Supplier under this Call-Off Contract.
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'New Schedule 7: Processing, Personal Data and Data Subjects'
+      change: |
+          <span class="visuallyhidden">start insertion</span>
+            <ins>
+                <strong>Subject matter of the processing:</strong> <br/>
+                [This should be a high level, short description of what the processing is about ie its subject matter]
+                <br/><br/>
+                <strong>Duration of the processing:</strong> <br/>
+                [Clearly set out the duration of the processing including dates]
+                <br/><br/>
+                <strong>Nature and purposes of the processing:</strong> <br/>
+                [Please be as specific as possible, but make sure that you cover all intended purposes. The nature of the processing means any operation such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction of data (whether or not by automated means) etc) The purpose might include eg: employment processing, statutory obligation, recruitment assessment etc]
+                <br/><br/>
+                <strong>Type of Personal Data:</strong> <br/>
+                [Examples here include: name, address, date of birth, NI number, telephone number, pay, images, biometric data etc]
+                <br/><br/>
+                <strong>Categories of Data Subject:</strong> <br/>
+                [Examples include: Staff (including volunteers, agents, and temporary workers), customers/ clients, suppliers, patients, students / pupils, members of the public, users of a particular website etc]
+                <br/><br/>
+                <strong>Plan for return or destruction of the data once the processing is complete UNLESS requirement under union or member state law to preserve that type of data:</strong> <br/>
+                [Describe how long the data will be retained for and how it will be be returned or destroyed]
+                <br/><br/>
+            </ins>
+          <span class="visuallyhidden">end insertion</span>
