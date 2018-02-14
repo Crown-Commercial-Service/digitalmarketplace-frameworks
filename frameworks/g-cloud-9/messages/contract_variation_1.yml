@@ -18,7 +18,7 @@ variation_comes_in_effect_description: We’ll tell you when CCS has countersign
 
 variation_agreement_label: I have the legal authority to accept these changes and agree that the company will be bound by them.
 
-confirmation_message: You have accepted the proposed changes. They will come into effect when CCS has countersigned them. We’ll let you know when this happens.
+confirmation_message: You’ve accepted the proposed changes. They’ll come into effect when CCS has countersigned them. We’ll let you know when this happens.
 
 framework_agreement_changes:
     - 
@@ -29,7 +29,7 @@ framework_agreement_changes:
             and for as long as the Supplier holds CCS Personal Data. <br/> <br/>
             <span class="visuallyhidden">start insertion</span><ins>
                 b) The Parties will comply with the Data Protection Legislation for the purposes of which CCS is the Controller and the Supplier the Processor. 
-                The only processing the Supplier is authorised to do (unless otherwise required by Law) in respect of its contractual relationship with the Authority 
+                The only processing the Supplier is authorised to do (unless otherwise required by Law) in respect of its contractual relationship with CCS 
                 under this Framework Agreement is: <br/><br/>
             </ins><span class="visuallyhidden">end insertion</span>
             <ul>
@@ -68,7 +68,7 @@ framework_agreement_changes:
                 <ins>
                     a) The Supplier must have in place Protective Measures to guard against a Data Loss Event, which take into account the nature of the data, the harm that might result, the state of technology and the cost of implementing the measures. <br/><br/> 
                     b) The Supplier will ensure that the Supplier Staff only process Personal Data in accordance with this Framework Agreement and take all reasonable steps to ensure the reliability and integrity of Supplier Staff with access to Personal Data.<br/><br/> 
-                    c) The Authority may amend this Framework Agreement on not less than 30 Working Days’ notice to the Supplier to ensure that it complies with any guidance issued by the Information Commissioner’s Office.
+                    c) CCS may amend this Framework Agreement on not less than 30 Working Days’ notice to the Supplier to ensure that it complies with any guidance issued by the Information Commissioner’s Office.
                 </ins>
             <span class="visuallyhidden">end insertion</span>
     -
@@ -100,10 +100,10 @@ framework_agreement_changes:
               <span class="visuallyhidden">start insertion</span><ins>
                     not transfer Personal Data outside of the European Economic Area unless the prior written consent of CCS has been obtained, and <br><br/></ins>
                     <p style="margin-left: 50px;"><ins>
-                      i) the CCS or the Supplier has provided appropriate safeguards in relation to the transfer (whether in accordance with GDPR Article 46 or LED Article 37) as determined by the CCS; <br><br/>
+                      i) CCS or the Supplier has provided appropriate safeguards in relation to the transfer (whether in accordance with GDPR Article 46 or LED Article 37) as determined by CCS; <br><br/>
                       ii) the Data Subject has enforceable rights and effective legal remedies; <br><br/>
-                      iii) the Supplier complies with its obligations under the Data Protection Legislation by providing an adequate level of protection to any Personal Data that is transferred (or, if it is not so bound, uses its best endeavours to assist the CCS in meeting its obligations); and <br><br/>
-                      iv) the Supplier complies with any reasonable instructions notified to it in advance by the CCS with respect to the processing of the Personal Data; <br><br/>
+                      iii) the Supplier complies with its obligations under the Data Protection Legislation by providing an adequate level of protection to any Personal Data that is transferred (or, if it is not so bound, uses its best endeavours to assist CCS in meeting its obligations); and <br><br/>
+                      iv) the Supplier complies with any reasonable instructions notified to it in advance by CCS with respect to the processing of the Personal Data; <br><br/>
                       </ins><span class="visuallyhidden">end insertion</span>
                     </p>
             </li>
@@ -294,7 +294,7 @@ call_off_contract_changes:
                     iii) are informed of the confidential nature of the Personal Data and don’t publish, disclose or divulge it to any third party unless directed by the Buyer or in accordance with this Call-Off Contract <br/>
                     iv) are given training in the use, protection and handling of Personal Data.<br/><br/>
                 33.5 <br/>
-                  The Supplier will not transfer Personal Data outside of the European Economic Area unless the prior written consent of the Buyer has been obtained. <br/>
+                  The Supplier will not transfer Personal Data outside of the European Economic Area unless the prior written consent of the Buyer has been obtained and <br/>
                     i)  the Buyer or the Supplier has provided appropriate safeguards in relation to the transfer (whether in accordance with GDPR Article 46 or LED Article 37) as determined by the Buyer; <br/>
                     ii) the Data Subject has enforceable rights and effective legal remedies; <br/>
                     iii) the Supplier complies with its obligations under the Data Protection Legislation by providing an adequate level of protection to any Personal Data that is transferred (or, if it is not so bound, uses its best endeavours to assist the Buyer in meeting its obligations); and <br/>
@@ -355,7 +355,7 @@ call_off_contract_changes:
               Data Protection Legislation means: <br/><br/>
               i)	all applicable Law about the processing of personal data and privacy; and <br/><br/>
               ii)	The Data Protection Act 1998, the EU Data Protection Directive 95/46/EC, the Regulation of Investigatory Powers Act 2000, the Telecommunications (Lawful Business Practice) (Interception of Communications) Regulations 2000 (SI 2000/2699), the Electronic Communications Data Protection Directive 2002/58/EC, the Privacy and Electronic Communications (EC Directive) Regulations 2003 including if applicable legally binding guidance and codes of practice issued by the Information Commissioner; and  <br/><br/>
-              iii) to the extent that it relates to processing of personal data and privacy, any Laws that come into force which amend, supersede or replace existing Laws including  the GDPR, the (LED Law Enforcement Directive (Directive (EU) 2016/680) and any applicable national implementing Laws as amended from time to time including the DPA 2018 [subject to Royal Assent].<br/>
+              iii) to the extent that it relates to processing of personal data and privacy, any Laws that come into force which amend, supersede or replace existing Laws including  the GDPR, the LED and any applicable national implementing Laws as amended from time to time including the DPA 2018 [subject to Royal Assent].<br/>
           </ins>
         <span class="visuallyhidden">end insertion</span>
     -
