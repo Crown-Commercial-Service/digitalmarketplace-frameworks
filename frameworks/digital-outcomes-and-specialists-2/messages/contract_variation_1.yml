@@ -1,0 +1,480 @@
+variation_description_not_in_place: |
+    The Crown Commercial Service (CCS) has made some minor changes to the framework agreement and call-off contract (reference RM1043iv) because of the new General Data Protection Regulation (GDPR).<br/><br/>
+    You must accept these changes for your organisation and have the legal authority to do so.
+
+variation_not_yet_agreed_extra: |
+    To put these changes into effect, we need you to review and accept them here.
+    You can [download a PDF version of these changes](/suppliers/frameworks/g-cloud-9/files/g-cloud-9-contract-variation.pdf).
+
+variation_description_not_in_place_but_agreed: |
+    You have accepted the Crown Commercial Service’s changes to the framework agreement and call-off contract  (reference RM1043iv). These changes are listed here.<br/><br/>
+    They will come into effect when CCS has countersigned them. You'll be notified when this happens.
+
+variation_description_in_place: |
+    You have accepted the Crown Commercial Service’s changes to the framework agreement and call-off contract (reference RM1043iv). These changes are listed here. <br/><br/>
+    CCS has countersigned the changes.
+
+variation_comes_in_effect_description: You'll be notified when CCS has countersigned the changes and they come into effect.
+
+variation_agreement_label: I have the legal authority to accept these changes and agree that the organisation will be bound by them.
+
+confirmation_message: You’ve accepted the changes. They’ll come into effect when CCS has countersigned them. You'll be notified when this happens.
+
+framework_agreement_changes:
+    - 
+      clause: '9.32.1'
+      change: |
+        The Supplier will comply with any notification requirements under the Data Protection <span class="visuallyhidden">start deletion</span><del> Act 1998 </del><span class="visuallyhidden">end deletion</span> <span class="visuallyhidden">start insertion</span><ins> Legislation and both Parties will observe their obligations under it.</ins><span class="visuallyhidden">end insertion</span>
+    - 
+      clause: '9.32.2'
+      change: |
+        <span class="visuallyhidden">start deletion</span><del> Each Party will:
+          <ul>
+            <li><del>treat all the other Party’s Confidential Information as confidential and safeguard it accordingly </del></li>
+            <li><del>not disclose the other Party’s Confidential Information to any other person without the prior and written consent of the other Party</del></li>
+          </ul>
+        </del><span class="visuallyhidden">end deletion</span><br/>
+        <p>
+          <span class="visuallyhidden">start insertion</span><ins>
+            The Parties will comply with the Data Protection Legislation and agree that CCS is the Controller and the Supplier the Processor. The only processing the Supplier is authorised to do (unless otherwise required by Law) in respect of its contractual relationship with CCS under this Framework Agreement is: <br/>
+            </ins><span class="visuallyhidden">end insertion</span>
+          </p>
+          <p style="margin-left: 50px;">
+            <span class="visuallyhidden">start insertion</span><ins>
+              i) restricted to operations that are strictly necessary for the management/administration of this Framework Agreement; and <br/>
+              ii) limited to Personal Data relating to CCS and Buyer personnel, such as contact details, strictly required for the fulfilment of the Supplier’s obligation under this Framework Agreement.
+            </ins><span class="visuallyhidden">end insertion</span>
+          </p>
+    -
+      clause: '9.32.3'
+      change: |
+        <span class="visuallyhidden">start deletion</span><del> The above clauses will not apply to any Confidential Information in the following circumstances:
+          <ul>
+            <li><del>it is public knowledge</del></li>
+            <li><del>it was in the possession of the receiving Party, without restriction as to its disclosure, before receiving it from the disclosing Party</del></li>
+            <li><del>it is received from a third party who lawfully acquired it and who is under no obligation restricting its disclosure</del></li>
+            <li><del>it is information independently developed without access to the Confidential Information</del></li>
+            <li><del>it must be disclosed following a statutory or legal obligation</del></li>
+            <li><del>it is disclosed on a confidential basis to a professional adviser</del></li>
+
+          </ul>
+        </del><span class="visuallyhidden">end deletion</span><br/>
+        <p>
+          <span class="visuallyhidden">start insertion</span><ins>
+            The Supplier will notify CCS immediately if it receives any communication from a third party relating to the Parties’ obligations under the Data Protection Legislation, or becomes aware of a Data Loss Event and will provide CCS with full and ongoing assistance in relation to each Party’s obligations under the Data Protection Legislation in accordance with any timescales reasonably required by CCS.
+            </ins><span class="visuallyhidden">end insertion</span>
+          </p>
+    -
+      clause: '9.32.4'
+      change: |
+        <span class="visuallyhidden">start deletion</span><del> 
+          It is recommended that Suppliers and Buyers sign a non-disclosure agreement before they share any Confidential Information.
+        </del><span class="visuallyhidden">end deletion</span><br/><br/>
+
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier will provide all reasonable assistance to CCS to prepare any Data Protection Impact Assessment as may be required (including provision of detailed information and assessments in relation to processing operations, risks and measures) and must notify CCS immediately if it considers that CCS’s instructions infringe the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '9.32.5'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier must have in place Protective Measures to guard against a Data Loss Event, which take into account: the nature of the data, the harm that might result, the state of technology and the cost of implementing the measures.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '9.32.6'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier will ensure that the Supplier Staff only process Personal Data in accordance with this Framework Agreement and take all reasonable steps to ensure the reliability and integrity of Supplier Staff with access to Personal Data.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '9.32.7'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          CCS may amend this Framework Agreement on not less than 30 Working Days’ notice to the Supplier to ensure that it complies with any guidance issued by the Information Commissioner’s Office.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '9.32.8'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier will:
+            <ul>
+              <li><ins>provide CCS and the Buyer with any information they may reasonably request to ensure the Supplier is complying with all of its obligations under the Data Protection Legislation which arise in connection with the Framework Agreement or under a Call-Off Contract</ins></li>
+              <li><ins>ensure that it doesn’t knowingly or negligently do or omit to do anything which places CCS or Buyers in breach of their Data Protection Legislation obligations</ins></li>
+              <li><ins>
+                not transfer Personal Data outside of the European Economic Area unless the prior written consent of CCS has been obtained, and <br/></ins>
+                <p style="margin-left: 50px;">
+                  <ins>
+                  i) CCS or the Supplier has provided appropriate safeguards in relation to the transfer (whether in accordance with GDPR Article 46 or LED Article 37) as determined by CCS;<br/>
+                  ii) the Data Subject has enforceable rights and effective legal remedies;<br/>
+                  iii) the Supplier complies with its obligations under the Data Protection Legislation by providing an adequate level of protection to any Personal Data that is transferred (or, if it is not so bound, uses its best endeavours to assist CCS in meeting its obligations); and<br/>
+                  iv) the Supplier complies with any reasonable instructions notified to it in advance by CCS with respect to the processing of the Personal Data</ins>
+                </p>
+              </li>
+              <li><ins>obtain the prior written consent of CCS before allowing any Subprocessor to process any Personal Data related to this Framework Agreement and shall remain fully liable for the acts and omissions of any Subprocessor</ins></li>
+              <li><ins>maintain complete and accurate records and information to demonstrate its compliance with clauses 9.32.1 to 9.32.8.</ins></li>
+            </ul>
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '9.32.9'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          Each Party will:
+            <ul>
+              <li><ins>treat all the other Party’s Confidential Information as confidential and safeguard it accordingly</ins></li>
+              <li><ins>not disclose the other Party’s Confidential Information to any other person without the prior and written consent of the other Party</ins></li>
+            </ul>
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '9.32.10'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          The above clauses will not apply to any Confidential Information in the following circumstances:
+            <ul>
+              <li><ins>it is public knowledge</ins></li>
+              <li><ins>it was in the possession of the receiving Party, without restriction as to its disclosure, before receiving it from the disclosing Party</ins></li>
+              <li><ins>it is received from a third party who lawfully acquired it and who is under no obligation restricting its disclosure</ins></li>
+              <li><ins>it is information independently developed without access to the Confidential Information</ins></li>
+              <li><ins>it must be disclosed following a statutory or legal obligation</ins></li>
+              <li><ins>it is disclosed on a confidential basis to a professional adviser</ins></li>
+            </ul>
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '9.32.11'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          It is recommended that Suppliers and Buyers sign a non-disclosure agreement before they share any Confidential Information.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Controller</strong><br/>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Data Loss Event</strong><br/>
+          Any event that results, or may result, in unauthorised access to Personal Data held by the Supplier under this Framework Agreement, and/or actual or potential loss and/or destruction of Personal Data in breach of this Framework Agreement, including any Personal Data Breach.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Data Protection Impact Assessment</strong><br/>
+          An assessment by the Controller of the impact of the envisaged processing on the protection of Personal Data.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Data Protection Legislation</strong><br/>
+          Data Protection Legislation means: <br/><br/>
+          i) all applicable Law about the processing of personal data and privacy; and <br/><br/>
+          ii) The Data Protection Act 1998, the EU Data Protection Directive 95/46/EC, the Regulation of Investigatory Powers Act 2000, the Telecommunications (Lawful Business Practice) (Interception of Communications) Regulations 2000 (SI 2000/2699), the Electronic Communications Data Protection Directive 2002/58/EC, the Privacy and Electronic Communications (EC Directive) Regulations 2003 including if applicable legally binding guidance and codes of practice issued by the Information Commissioner; and <br/><br/>
+          iii) to the extent that it relates to processing of personal data and privacy, any Laws that come into force which amend, supersede or replace existing Laws including the GDPR, the (LED Law Enforcement Directive (Directive (EU) 2016/680) and any applicable national implementing Laws as amended from time to time including the DPA 2018 [subject to Royal Assent].
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Data Subject</strong><br/>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>DPA 2018</strong><br/>
+          Data Protection Act 2018.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>GDPR</strong><br/>
+          The General Data Protection Regulation (Regulation (EU) 2016/679).
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>LED</strong><br/>
+          Law Enforcement Directive (Directive (EU) 2016/680).
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        Personal Data<br/>
+        <span class="visuallyhidden">start deletion</span><del>
+          As described in the Data Protection Act 1998 
+        </del><span class="visuallyhidden">end deletion</span>
+        <span class="visuallyhidden">start insertion</span><ins>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Personal Data Breach</strong><br/>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Processing</strong><br/>
+          This has the meaning given to it under the Data Protection Legislation but, for the purposes of this Framework Agreement and Call-Off Contract, it will include both manual and automatic processing. ‘Process’ and ‘processed’ will be interpreted accordingly.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Processor</strong><br/>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Protective Measures</strong><br/>
+          Appropriate technical and organisational measures which may include: pseudonymising and encrypting Personal Data, ensuring confidentiality, integrity, availability and resilience of systems and services, ensuring that availability of and access to Personal Data can be restored in a timely manner after an incident, and regularly assessing and evaluating the effectiveness of such measures adopted by it.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Section 10 - Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Subprocessor</strong><br/>
+          Any third party appointed to process Personal Data on behalf of the Supplier under this Framework Agreement.
+        </ins><span class="visuallyhidden">end insertion</span>
+
+call_off_contract_changes:
+    - 
+      clause: 'Part B - The Schedules <br/> <span class="visuallyhidden">start insertion</span><ins>New Schedule 9: Processing, Personal Data and Data Subjects</ins><span class="visuallyhidden">end insertion</span>'
+      change: |
+          <span class="visuallyhidden">start insertion</span><ins>
+            <strong>Subject matter of the processing: </strong>[This should be a high level, short description of what the processing is about ie its subject matter] <br/><br/>
+            <strong>Duration of the processing: </strong>[Clearly set out the duration of the processing including dates]<br/><br/>
+            <strong>Nature and purposes of the processing: </strong>[Please be as specific as possible, but make sure that you cover all intended purposes. 
+            <br/><br/>
+            The nature of the processing means any operation such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction of data (whether or not by automated means) etc. <br/><br/>
+            The purpose might include eg: employment processing, statutory obligation, recruitment assessment etc]<br/><br/>
+            <strong>Type of Personal Data: </strong>[Examples here include: name, address, date of birth, NI number, telephone number, pay, images, biometric data etc]<br/><br/>
+            <strong>Categories of Data Subject: </strong>[Examples include: Staff (including volunteers, agents and temporary workers), customers/clients, suppliers, patients, students/pupils, members of the public, users of a particular website etc]<br/><br/>
+            <strong>Plan for return or destruction of the data once the processing is complete UNLESS requirement under union or member state law to preserve that type of data: </strong>[Describe how long the data will be retained for, how it will be returned or destroyed]
+          </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: 'Part C - Terms and conditions <br/>13.8'
+      change: |
+        At the end of the term of the Call-Off Contract, the Buyer grants to the Supplier a licence to use the Project-Specific IPRs (excluding any information which is the Buyer’s Confidential Information or which is subject to the Data Protection 
+        <span class="visuallyhidden">start insertion</span><ins>Legislation</ins><span class="visuallyhidden">end insertion</span>
+        <span class="visuallyhidden">start deletion</span><del>Act (DPA))</del><span class="visuallyhidden">end deletion</span> 
+        on the terms of the Open Government Licence v3.0.
+    -
+      clause: '14.1'
+      change: |
+        <span class="visuallyhidden">start deletion</span><del>
+          The Supplier shall comply with any notification requirements under the DPA and both Parties will duly observe all their obligations under the DPA which arise in connection with the Framework Agreement or under the Call-Off Contract.
+        </del><span class="visuallyhidden">end deletion</span> 
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Parties will comply with the Data Protection Legislation and agree that the Buyer is the Controller and the Supplier is the Processor. The only processing the Supplier is authorised to do is listed at Schedule 9 unless Law requires otherwise (in which case the Supplier will promptly notify the Buyer of any additional processing if permitted by Law).
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '14.2'
+      change: |
+        <span class="visuallyhidden">start deletion</span><del>
+          Where the Supplier is processing Buyer Data or Other Contracting Bodies’ Personal Data, the Supplier shall ensure that it has in place appropriate technical and organisational measures to ensure the security of the Authority and Other Contracting Bodies’ Personal Data (and to guard against unauthorised or unlawful processing or accidental loss, destruction of or damage to the Buyer Data and the Other Contracting Bodies’ Personal Data.
+        </del><span class="visuallyhidden">end deletion</span> 
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier will provide all reasonable assistance to the Buyer to prepare any Data Protection Impact Assessment before commencing any processing (including provision of detailed information and assessments in relation to processing operations, risks and measures) and must notify the Buyer immediately if it considers that the Buyer’s instructions infringe the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '14.3'
+      change: |
+        <span class="visuallyhidden">start deletion</span><del>
+          The Supplier shall provide the Buyer and/or Other Contracting Body with such information as the Buyer and/or Other Contracting Body may reasonably request to satisfy itself that the Supplier is complying with its obligations under the DPA including;
+          <ul>
+            <li><del>to promptly notify the Buyer and/or Other Contracting Body of any breach of the security measures to be put in place pursuant to this Clause; and</del></li>
+            <li><del>to ensure that it does not knowingly or negligently do or omit to do anything which places the Buyer and/or Other Contracting Body in breach of its obligations under the DPA and</del></li>
+            <li><del>not to cause or permit to be processed, stored, accessed or otherwise transferred outside the European Economic Area any Buyer Data or Other Contracting Body Personal Data supplied to it by the Buyer or Other Contracting Body without approval.</del></li>
+          </ul>
+        </del><span class="visuallyhidden">end deletion</span> 
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier must have in place Protective Measures, which have been reviewed and approved by the Buyer as appropriate, to guard against a Data Loss Event, which take into account the nature of the data, the harm that might result, the state of technology and the cost of implementing the measures.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '<span class="visuallyhidden">start insertion</span><ins>14.4</ins><span class="visuallyhidden">end insertion</span>'
+      change: | 
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier will ensure that the Supplier Personnel only process Personal Data in accordance with this Call-Off Contract and take all reasonable steps to ensure the reliability and integrity of Supplier Personnel with access to Personal Data, including by ensuring they:<br/>
+          i) are aware of and comply with the Supplier’s obligations under this Clause;<br/>
+          ii) are subject to appropriate confidentiality undertakings with the Supplier or relevant Subprocessor <br/>
+          iii) are informed of the confidential nature of the Personal Data and don’t publish, disclose or divulge it to any third party unless directed by the Buyer or in accordance with this Call-Off Contract <br/>
+          iv) are given training in the use, protection and handling of Personal Data
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '<span class="visuallyhidden">start insertion</span><ins>14.5</ins><span class="visuallyhidden">end insertion</span>'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier will not transfer Personal Data outside of the European Economic Area unless the prior written consent of the Buyer has been obtained and the following conditions are met:<br/>
+          (i) the Buyer or the Supplier has provided appropriate safeguards in relation to the transfer (whether in accordance with GDPR Article 46 or LED Article 37) as determined by the Buyer;<br/>
+          (ii) the Data Subject has enforceable rights and effective legal remedies;<br/>
+          (iii) the Supplier complies with its obligations under the Data Protection Legislation by providing an adequate level of protection to any Personal Data that is transferred (or, if it is not so bound, uses its best endeavours to assist the Buyer in meeting its obligations); and<br/>
+          (iv) the Supplier complies with any reasonable instructions notified to it in advance by the Buyer with respect to the processing of the Personal Data
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '<span class="visuallyhidden">start insertion</span><ins>14.6</ins><span class="visuallyhidden">end insertion</span>'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier will delete or return the Buyer’s Personal Data (including copies) if requested in writing by the Buyer at the termination or expiry of this Call-Off Contract, unless required to retain the Personal Data by Law.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '<span class="visuallyhidden">start insertion</span><ins>14.7</ins><span class="visuallyhidden">end insertion</span>'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier will notify the Buyer immediately if it receives any communication from a third party relating to the Parties’ obligations under the Data Protection Legislation, or it becomes aware of a Data Loss Event, and will provide the Buyer with full and ongoing assistance in relation to each Party’s obligations under the Data Protection Legislation in accordance with any timescales reasonably required by the Buyer.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '<span class="visuallyhidden">start insertion</span><ins>14.8</ins><span class="visuallyhidden">end insertion</span>'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Supplier will maintain complete and accurate records and information to demonstrate its compliance with this clause. This requirement does not apply where the Supplier employs fewer than 250 staff, unless:<br/>
+          i) the Buyer determines that the processing is not occasional; <br/>
+          ii) the Buyer determines the processing includes special categories of data as referred to in Article 9(1) of the GDPR or Personal Data relating to criminal convictions and offences referred to in Article 10 of the GDPR; and <br/>
+          iii) the Buyer determines that the processing is likely to result in a risk to the rights and freedoms of Data Subjects.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '<span class="visuallyhidden">start insertion</span><ins>14.9</ins><span class="visuallyhidden">end insertion</span>'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          Before allowing any Subprocessor to process any Personal Data related to this Call-Off Contract, the Supplier must obtain the prior written consent of the Buyer, and shall remain fully liable for the acts and omissions of any Subprocessor.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '<span class="visuallyhidden">start insertion</span><ins>14.10</ins><span class="visuallyhidden">end insertion</span>'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          The Buyer may amend this Call-Off Contract on not less than 30 Working Days’ notice to the Supplier to ensure that it complies with any guidance issued by the Information Commissioner’s Office.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '15.9'
+      change: |
+        The Supplier will provide, at the request of CCS or the Buyer, any information relating to the Supplier’s compliance with its obligations under the Data Protection 
+        <span class="visuallyhidden">start deletion</span><del>
+          Act
+        </del><span class="visuallyhidden">end deletion</span>
+        <span class="visuallyhidden">start insertion</span><ins>
+          Legislation.
+        </ins><span class="visuallyhidden">end insertion</span> The Supplier will also ensure that it does not knowingly or negligently fail to do something that places CCS or any Buyer in breach of its obligations of the Data Protection 
+        <span class="visuallyhidden">start deletion</span><del>
+          Act
+        </del><span class="visuallyhidden">end deletion</span> 
+        <span class="visuallyhidden">start insertion</span><ins>
+          Legislation.
+        </ins><span class="visuallyhidden">end insertion</span> This is an absolute obligation and is not qualified by any other provision of the Call-Off Contract.
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Controller</strong><br/>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Data Loss Event</strong><br/>
+          Any event that results, or may result, in unauthorised access to Personal Data held by the Supplier under this Call-Off Contract, and/or actual or potential loss and/or destruction of Personal Data in breach of this Call-Off Contract, including any Personal Data Breach.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Data Protection Impact Assessment</strong><br/>
+          An assessment by the Controller of the impact of the envisaged processing on the protection of Personal Data.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Data Protection Legislation</strong><br/>
+          Data Protection Legislation means: <br/><br/>
+          i) all applicable Law about the processing of personal data and privacy; and <br/><br/>
+          ii) The Data Protection Act 1998, the EU Data Protection Directive 95/46/EC, the Regulation of Investigatory Powers Act 2000, the Telecommunications (Lawful Business Practice) (Interception of Communications) Regulations 2000 (SI 2000/2699), the Electronic Communications Data Protection Directive 2002/58/EC, the Privacy and Electronic Communications (EC Directive) Regulations 2003 including if applicable legally binding guidance and codes of practice issued by the Information Commissioner; and <br/><br/>
+          iii) to the extent that it relates to processing of personal data and privacy, any Laws that come into force which amend, supersede or replace existing Laws including the GDPR, the (LED Law Enforcement Directive (Directive (EU) 2016/680) and any applicable national implementing Laws as amended from time to time including the DPA 2018 [subject to Royal Assent].
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Data Subject</strong><br/>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>DPA 2018</strong><br/>
+          Data Protection Act 2018.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>GDPR</strong><br/>
+          The General Data Protection Regulation (Regulation (EU) 2016/679).
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>LED</strong><br/>
+          Law Enforcement Direction (Directive (EU) 2016/680).
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Personal Data</strong><br/>
+        </ins><span class="visuallyhidden">end insertion</span>
+        <span class="visuallyhidden">start deletion</span><del>
+          As described in the Data Protection Act 1998
+        </del><span class="visuallyhidden">end deletion</span>
+        <span class="visuallyhidden">start insertion</span><ins>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>    
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Personal Data Breach</strong><br/>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Processing</strong><br/>
+          This has the meaning given to it under the Data Protection Legislation but, for the purposes of this Framework Agreement and Call-Off Contract, it will include both manual and automatic processing. ‘Process’ and ‘processed’ will be interpreted accordingly.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Processor</strong><br/>
+          Takes the meaning given in the Data Protection Legislation.
+        </ins><span class="visuallyhidden">end insertion</span>    
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Protective Measures</strong><br/>
+          Appropriate technical and organisational measures which may include: pseudonymising and encrypting Personal Data, ensuring confidentiality, integrity, availability and resilience of systems and services, ensuring that availability of and access to Personal Data can be restored in a timely manner after an incident, and regularly assessing and evaluating the effectiveness of such measures adopted by it.
+        </ins><span class="visuallyhidden">end insertion</span>
+    -
+      clause: '44. Defined Terms'
+      change: |
+        <span class="visuallyhidden">start insertion</span><ins>
+          <strong>Subprocessor</strong><br/>
+          Any third party appointed to process Personal Data on behalf of the Supplier under this Call-Off Contract.
+        </ins><span class="visuallyhidden">end insertion</span>
