@@ -1,6 +1,6 @@
 variation_description_not_in_place: |
     The Crown Commercial Service (CCS) has made some minor changes to the framework agreement and call-off contract (reference RM1557ix) because of the new General Data Protection Regulation (GDPR).<br/><br/>
-    You must accept these changes for your company and have the legal authority to do so.
+    You must accept these changes for your organisation and have the legal authority to do so.
 
 variation_not_yet_agreed_extra: |
     To put these changes into effect, we need you to review and accept them here.
@@ -8,17 +8,17 @@ variation_not_yet_agreed_extra: |
 
 variation_description_not_in_place_but_agreed: |
     You have accepted the Crown Commercial Service’s changes to the framework agreement and call-off contract  (reference RM1557ix). These changes are listed here.<br/><br/>
-    They will come into effect when CCS has countersigned them. We’ll let you know when this happens.
+    They will come into effect when CCS has countersigned them. You'll be notified when this happens.
 
 variation_description_in_place: |
     You have accepted the Crown Commercial Service’s changes to the framework agreement and call-off contract (reference RM1557ix). These changes are listed here. <br/><br/>
     CCS has countersigned the changes.
 
-variation_comes_in_effect_description: We’ll tell you when CCS has countersigned the changes and they come into effect.
+variation_comes_in_effect_description: You'll be notified when CCS has countersigned the changes and they come into effect.
 
-variation_agreement_label: I have the legal authority to accept these changes and agree that the company will be bound by them.
+variation_agreement_label: I have the legal authority to accept these changes and agree that the organisation will be bound by them.
 
-confirmation_message: You’ve accepted the proposed changes. They’ll come into effect when CCS has countersigned them. We’ll let you know when this happens.
+confirmation_message: You’ve accepted the changes. They’ll come into effect when CCS has countersigned them. You'll be notified when this happens.
 
 framework_agreement_changes:
     - 
@@ -28,7 +28,7 @@ framework_agreement_changes:
             The provisions of these Data protection and disclosure clauses 8.57 to 8.62 (inclusive) will apply during the Term 
             and for as long as the Supplier holds CCS Personal Data. <br/> <br/>
             <span class="visuallyhidden">start insertion</span><ins>
-                b) The Parties will comply with the Data Protection Legislation for the purposes of which CCS is the Controller and the Supplier the Processor. 
+                b) The Parties will comply with the Data Protection Legislation and agree that CCS is the Controller and the Supplier the Processor. 
                 The only processing the Supplier is authorised to do (unless otherwise required by Law) in respect of its contractual relationship with CCS 
                 under this Framework Agreement is: <br/><br/>
             </ins><span class="visuallyhidden">end insertion</span>
