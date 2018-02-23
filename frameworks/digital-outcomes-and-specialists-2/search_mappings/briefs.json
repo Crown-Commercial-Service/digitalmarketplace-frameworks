@@ -4,6 +4,27 @@
       "max_result_window": 10000
     },
     "analysis": {
+      "analyzer": {
+        "stemming_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "standard",
+            "lowercase",
+            "possessive_english_stemmer",
+            "light_english_stemmer"
+          ]
+        }
+      },
+      "filter": {
+        "light_english_stemmer": {
+          "type": "stemmer",
+          "name": "light_english"
+        },
+        "possessive_english_stemmer": {
+          "type": "stemmer",
+          "name": "possessive_english"
+        }
+      },
       "char_filter": {
         "nonalpha_removal": {
           "type": "pattern_replace",
@@ -137,20 +158,32 @@
           "type": "keyword"
         },
         "dmtext_organisation": {
-          "type": "keyword"
+          "type": "text",
+          "analyzer": "stemming_analyzer"
         },
         "dmtext_title": {
-          "type": "keyword"
+          "type": "text",
+          "analyzer": "stemming_analyzer"
         },
         "dmtext_specialistRole": {
-          "type": "keyword"
+          "type": "text"
         },
         "dmfilter_specialistRole": {
           "type": "keyword",
           "normalizer": "filter_normalizer"
         },
         "dmtext_summary": {
-          "type": "keyword"
+          "term_vector": "with_positions_offsets",
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_essentialRequirements": {
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_niceToHaveRequirements": {
+          "type": "text",
+          "analyzer": "stemming_analyzer"
         },
         "dmtext_status": {
           "type": "keyword"
@@ -167,7 +200,7 @@
           "normalizer": "filter_normalizer"
         },
         "dmtext_location": {
-          "type": "keyword"
+          "type": "text"
         }
       }
     }
