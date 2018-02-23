@@ -21,7 +21,7 @@ index, and swapping the index aliases over when ready (for example when deployin
 a frontend that references the new search manifest).
 
 Usage:
-    generate-validation-schemas.py [--help] <framework_slug> <doc_type> [--output-path=<output_path>]
+    generate-search-config.py [--help] <framework_slug> <doc_type> [--output-path=<output_path>]
 
 """
 import os
