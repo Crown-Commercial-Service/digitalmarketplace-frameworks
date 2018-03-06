@@ -1,3 +1,4 @@
+name: Fraud convictions
 question: >
   Please confirm whether, within the past 5 years, anyone who represents, supervises or has control in your organisation or a partner or parent organisation has been convicted of any offence that relates to fraud affecting the European Communities’ financial interests as defined by article 1 of the Convention on the Protection of the Financial Interests of the European Communities, including:
 
@@ -12,3 +13,6 @@ question: >
     - the possession of articles for use in frauds within the meaning of section 6 of the Fraud Act 2006, or the making, adapting, supplying or offering to supply articles for use in frauds within the meaning of section 7 of that Act
 type: boolean
 hint: Answer ‘yes’ if anyone who represents, supervises or has control in your organisation or a partner or parent organisation has been convicted of any of the above.
+assessment:
+  passIfIn:
+    - False
