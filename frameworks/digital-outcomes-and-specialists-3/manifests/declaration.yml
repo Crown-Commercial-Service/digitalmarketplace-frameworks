@@ -1,48 +1,57 @@
 -
-  name: Essentials
+  name: Providing suitable services
+  slug: providing-suitable-services
   editable: True
-  description: >
-    You must make this declaration to apply to Digital Outcomes and
-    Specialists&nbsp;3. You can come back and change your answers at any time before
-    5pm GMT, 14 December 2016.
+  prefill: False
+  description: |
+    You must answer these questions to confirm that your services are suitable for Digital Outcomes and Specialists&nbsp;3.
 
+    You must be able to truthfully answer ‘yes’ to every question for your application to be considered eligible.
+    The Crown Commercial Service may ask for proof after you’ve submitted your application.
 
-    You must be able to truthfully answer ‘yes’ to every question under ‘Essentials’
-    for your bid to be considered eligible. If you can’t answer ‘yes’ to every
-    question in this section, it’s very unlikely that your bid will be accepted.
+    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted. 
+
   questions:
-    - termsOfParticipation
-    - termsAndConditions
-    - 10WorkingDays
-    - informationChanges
-    - requisiteAuthority
-    - accurateInformation
-    - unfairCompetition
-    - readUnderstoodGuidance
-    - understandTool
-    - understandHowToAskQuestions
-    - proofOfClaims
     - skillsAndResources
-    - accuratelyDescribed
-    - employersInsurance
     - offerServicesYourselves
     - fullAccountability
 
 -
-  name: Grounds for mandatory exclusion
+  name: What it means to be on Digital Outcomes and Specialists&nbsp;3
+  slug: what-it-means-to-be-on-digital-outcomes-and-specialists-3
   editable: True
-  description: >
-    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your bid to be
-    considered eligible. If you can’t answer ‘no’ to every question in this
-    section, it’s very unlikely that your bid will be accepted.
+  prefill: False
+  description: |
+    If you make an application to Digital Outcomes and Specialists&nbsp;3, you’re agreeing to the terms and conditions in the legal documentation.
 
+    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
 
-    In questions [[conspiracy]] to [[organisedCrime]], ‘anyone who represents, supervises or has control in your organisation
-    or a partner or parent organisation’ includes members of your group of economic 
-    operators, their proposed subcontractors, and any directors, partners, or 
-    any other person who has powers of representation, decision or control.
-    Check that your organisation complies with [Regulation 57(1) of the Public
-    Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made).
+    If you can’t answer ‘yes’ to every question on this page, it’s very unlikely that your application will be accepted.
+
+  questions:
+    - termsOfParticipation
+    - termsAndConditions
+    - canProvideFromDayOne
+    - evidence
+    - unfairCompetition    
+    - 10WorkingDays
+    - MI
+    
+-
+  name: Grounds for mandatory exclusion
+  slug: grounds-for-mandatory-exclusion
+  editable: True
+  prefill: True
+  description: |
+    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your 
+    application to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very 
+    unlikely that your application will be accepted.
+
+    In questions [[conspiracy]] to [[organisedCrime]], ‘anyone who represents, supervises or has control in your 
+    organisation or a partner or parent organisation’ includes members of your group of economic operators, their
+    proposed subcontractors, and any directors, partners, or any other person who has powers of representation, 
+    decision or control. Check that your organisation complies with <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the Public Contracts
+    Regulations 2015</a>.
   questions:
     - conspiracy
     - corruptionBribery
@@ -52,28 +61,29 @@
 
 -
   name: Grounds for discretionary exclusion
+  slug: grounds-for-discretionary-exclusion
   editable: True
-  description: >
+  prefill: True
+  description: |
     You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
-    for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted. If
-    you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
+    for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
+    
+    If you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
     you provide to consider whether or not you will be able to proceed any further with this procurement.
 
-
     In questions [[taxEvasion]] to [[misleadingInformation]], ‘a partner organisation’ includes members
     of your group of economic operators or their proposed subcontractors.
-
-
+    
     CCS can also exclude you if you are guilty of serious
     misrepresentation in providing any information referred to within
     regulations
-    [23](http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made),
-    [24](http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made),
-    [25](http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made),
-    [26](http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made) or
-    [27](http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made)
-    of the [Public Contracts Regulations 2015](http://www.legislation.gov.uk/uksi/2015/102/contents/made)
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank" rel="noopener noreferrer">23 (new tab)</a>,
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">24 (new tab)</a>,
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank" rel="noopener noreferrer">25 (new tab)</a>,
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank" rel="noopener noreferrer">26 (new tab)</a> or
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank" rel="noopener noreferrer">27 (new tab)</a>
+    of the <a href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank" rel="noopener noreferrer">Public Contracts Regulations 2015 (new tab)</a>
     or if you fail to provide any such information it requests.
   questions:
     - taxEvasion
@@ -94,51 +104,93 @@
     - GAAR
     - mitigatingFactors2
 -
+
   name: Working with government
+  slug: working-with-government
   editable: True
-  description: >
+  prefill: True
+  description: |
     You must be able to truthfully answer ‘yes’ to every question under ‘Working with government’ for your bid to be
-    considered eligible. If you can’t answer ‘yes’ to every question in this
-    section, it’s very unlikely that your bid will be accepted.
+    considered eligible.
+    
+    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your bid will be accepted.
   questions:
-    - MI
-    - canProvideFromDayOne
-    - evidence
     - environmentallyFriendly
-    - consistentDelivery
-    - skillsAndCapabilityAssessment
-    - continuousProfessionalDevelopment
-    - customerSatisfactionProcess
     - equalityAndDiversity
-    - civilServiceValues
--
-  name: Working with digital
-  editable: True
-  description: >
-    You must be able to truthfully answer ‘yes’ to questions [[technologyCodesOfPractice]] to [[safeguardPersonalData]] under ‘Working with digital’ for your bid to be
-    considered eligible. If you can’t answer ‘yes’, it’s very unlikely that your bid will be accepted. You can answer ‘yes’ or ‘no’ to questions [[cyberEssentials]] and [[cyberEssentialsPlus]].
-  questions:
-    - technologyCodesOfPractice
+    - employersInsurance
+    - helpBuyersComplyTechnologyCodesOfPractice
     - serviceStandard
-    - ongoingEngagement
     - transparentContracting
     - publishContracts
     - safeguardOfficialInformation
     - safeguardPersonalData
-    - cyberEssentials
-    - cyberEssentialsPlus
+    - skillsAndCapabilityAssessment
+    - continuousProfessionalDevelopment
+    - customerSatisfactionProcess
+    - civilServiceValues
 -
-  name: About you
+  name: How you apply
+  slug: how-you-apply
   editable: True
-  description: >
-    The Crown Commercial Service will use the information you provide under ‘About you’ to process your application and manage your participation in the Digital Outcomes and Specialists&nbsp;3 framework.
+  prefill: False
+  description: |
+    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
+
+    If you can’t answer ‘yes’ to every question on this page, it’s very unlikely that your application will be accepted.
+
   questions:
-    - primaryContact
-    - primaryContactEmail
+    - readUnderstoodGuidance
+    - understandTool
+    - understandHowToAskQuestions
+-
+  name: Application accuracy
+  slug: application-accuracy
+  editable: True
+  prefill: False
+  description: |
+    You must confirm the accuracy of the information in this declaration and in your service descriptions. We might 
+    ask for proof after you’ve submitted your application.
+
+  questions:
+    - accurateInformation
+    - informationChanges
+    - accuratelyDescribed
+    - proofOfClaims
+
+-
+  name: Established outside the UK
+  slug: established-outside-the-uk
+  editable: True
+  prefill: True
+  description: |
+    The Crown Commercial Service will use the information you provide on this page to process your Digital Outcomes and Specialists&nbsp;3 application.
+    If your application is successful, it will carry out checks on your company.
+  questions:
     - appropriateTradeRegisters
     - appropriateTradeRegistersNumber
     - licenceOrMemberRequired
     - licenceOrMemberRequiredDetails
+-
+
+  name: How you’ll deliver your services
+  slug: how-youll-deliver-your-services
+  editable: True
+  prefill: True   
+  description: |
+    The Crown Commercial Service will use this information to manage your participation in Digital Outcomes and Specialists&nbsp;3.
+  questions:
     - subcontracting
+
+-
+
+  name: Contact details
+  slug: contact-details
+  editable: True
+  prefill: True  
+  description: |
+     The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.  
+  questions:
+    - primaryContact
+    - primaryContactEmail
     - contactNameContractNotice
     - contactEmailContractNotice

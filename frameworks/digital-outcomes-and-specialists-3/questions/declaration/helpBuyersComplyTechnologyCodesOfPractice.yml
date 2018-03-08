@@ -1,0 +1,7 @@
+name: Technology Code of Practice
+question: >
+  Do you agree to help the government work in ways which are consistent with the <a href="https://www.gov.uk/service-manual/technology/code-of-practice.html" target="_blank" rel="noopener noreferrer">Technology Code of Practice (link opens in a new tab)</a>?
+type: boolean
+assessment:
+  passIfIn:
+    - True

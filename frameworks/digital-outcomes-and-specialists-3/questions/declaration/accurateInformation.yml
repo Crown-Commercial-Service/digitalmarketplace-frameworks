@@ -1,6 +1,7 @@
+name: Declaration accuracy
 question: >
-  Please confirm that:
-
-    - all the information in your application is accurate
-    - you will notify the Crown Commercial Service of any changes to the information you’ve provided as soon as possible
+  Are all the answers in your supplier declaration truthful?
 type: boolean
+assessment:
+  passIfIn:
+    - True

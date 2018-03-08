@@ -1,3 +1,4 @@
+name: Equality and diversity obligations
 question: >
   Please confirm that your organisation complies with legal equality and diversity obligations relating to:
 
@@ -12,3 +13,6 @@ question: >
     - sexual orientation
 
 type: boolean
+assessment:
+  passIfIn:
+    - True

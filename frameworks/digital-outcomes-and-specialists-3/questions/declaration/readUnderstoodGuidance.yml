@@ -1,3 +1,9 @@
+name: Understanding the application process
 question: >
-  Have you read and understood the guidance on [how to apply](https://www.gov.uk/guidance/digital-outcomes-and-specialists-suppliers-guide) to Digital Outcomes and Specialists&nbsp;3 using the Digital Marketplace?
+  Do you understand the application process for Digital Outcomes and Specialists&nbsp;3 on the Digital Marketplace?
+hint: >
+  You can read about how to apply in the <a href="https://www.gov.uk/guidance/digital-outcomes-and-specialists-suppliers-guide#how-to-apply" target="_blank" rel="noopener noreferrer">Digital Outcomes and Specialists suppliers’ guide (link opens in a new tab)</a>.
 type: boolean
+assessment:
+  passIfIn:
+    - True
