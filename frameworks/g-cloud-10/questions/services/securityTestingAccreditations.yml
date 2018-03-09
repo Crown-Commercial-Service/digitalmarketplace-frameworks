@@ -12,6 +12,10 @@ followup:
 
 type: checkboxes
 options:
+  - label: CHECK
+    value: check
+  - label: NCSC Certified Cyber Security Consultancy
+    value: cyber-security-consultancy
   - label: Tigerscheme
     value: tigerscheme
   - label: CREST
