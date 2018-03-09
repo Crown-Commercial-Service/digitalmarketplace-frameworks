@@ -104,8 +104,8 @@
     - unspentTaxConvictions
     - GAAR
     - mitigatingFactors2
--
 
+-
   name: Working with government
   slug: working-with-government
   editable: True
@@ -121,6 +121,7 @@
     - employersInsurance
     - helpBuyersComplyTechnologyCodesOfPractice
     - publishContracts
+
 -
   name: How you apply
   slug: how-you-apply
@@ -135,6 +136,7 @@
     - readUnderstoodGuidance
     - understandTool
     - understandHowToAskQuestions
+
 -
   name: Application accuracy
   slug: application-accuracy
@@ -151,20 +153,6 @@
     - proofOfClaims
 
 -
-  name: Established outside the UK
-  slug: established-outside-the-uk
-  editable: True
-  prefill: True
-  description: |
-    The Crown Commercial Service will use the information you provide on this page to process your G-Cloud&nbsp;10 application.
-    If your application is successful, it will carry out checks on your company.
-  questions:
-    - appropriateTradeRegisters
-    - appropriateTradeRegistersNumber
-    - licenceOrMemberRequired
-    - licenceOrMemberRequiredDetails
--
-
   name: How you’ll deliver your services
   slug: how-youll-deliver-your-services
   editable: True
@@ -175,7 +163,6 @@
     - subcontracting
 
 -
-
   name: Contact details
   slug: contact-details
   editable: True
