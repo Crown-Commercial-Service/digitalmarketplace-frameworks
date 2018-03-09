@@ -1,9 +1,0 @@
-name: Details of state requirements
-question: >
-  If you answered ‘licensed’ or ‘a member of a relevant organisation’ in [[licenceOrMemberRequired]], 
-  please give details of the state’s requirements and confirm whether you’ve met them.
-type: text
-validations:
-  - 
-    name: answer_required
-    message: You need to answer this question because you answered ‘licensed’ or ‘a member of a relevant organisation’ in [[licenceOrMemberRequired]].
