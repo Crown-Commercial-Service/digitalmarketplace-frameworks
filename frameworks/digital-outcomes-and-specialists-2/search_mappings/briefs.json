@@ -65,6 +65,29 @@
           {
             "set_conditionally": {
               "field": "status",
+              "target_field": "statusOpenClosed",
+              "any_of": [
+                "live"
+              ],
+              "set_value": "open"
+            }
+          },
+          {
+            "set_conditionally": {
+              "field": "status",
+              "target_field": "statusOpenClosed",
+              "any_of": [
+                "awarded",
+                "cancelled",
+                "closed",
+                "unsuccessful"
+              ],
+              "set_value": "closed"
+            }
+          },
+          {
+            "set_conditionally": {
+              "field": "status",
               "any_of": [
                 "awarded",
                 "unsuccessful",
@@ -189,6 +212,10 @@
           "type": "keyword"
         },
         "dmfilter_status": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_statusOpenClosed": {
           "type": "keyword",
           "normalizer": "filter_normalizer"
         },
