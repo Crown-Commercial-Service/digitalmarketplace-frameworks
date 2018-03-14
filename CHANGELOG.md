@@ -2,6 +2,13 @@
 
 Records breaking changes from major version bumps
 
+## 11.0.0
+
+Removed the transformation of the status field entirely. The DOS search filters
+now use the `statusOpenClosed` field for filtering.
+
+Add the `statusOpenClosed` field to DOS3 mappings as well.
+
 ## 10.0.0
 
 The `search_filters.yml` manifest has been renamed to `<doc type>_search_filters.yml`. Code which referenced a
