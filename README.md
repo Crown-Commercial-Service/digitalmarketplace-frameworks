@@ -169,18 +169,12 @@ ES multi-fields are for, but unfortunately those don't turn out to be quite flex
 Development
 -----------
 
-A local checkout of the frameworks repo can be shared with locally-running services (i.e. frontend applications)
-as follows:
+Whenever framework content is changed, you will need to do the following:
 
-- install bower globally (if you didn't already): `npm install -g bower`
-- from this repo, run `bower link`
-- from each app, run `bower link digitalmarketplace-frameworks`
-
-Then, whenever the framework content is changed:
-
-- on each frontend app, rebuild the app's `content` directory to include the new content by running `make frontend_build`
-- alternatively, run `npm run frontend-build:watch` to automatically rebuild the framework content whenever a framework YML file changes
-- generate schemas into the API's `json_schema` directory using the `scripts/generate-validation-schemas.py` script in this repo.
+- on each frontend app, temporarily point the `package.json` to your branch of this repository, and rebuild the app's
+  `content` directory to include the new content by running `make frontend_build`
+- generate schemas into the API's `json_schema` directory using the `scripts/generate-validation-schemas.py` script in
+  this repo.
 
 Running the tests
 -----------------
