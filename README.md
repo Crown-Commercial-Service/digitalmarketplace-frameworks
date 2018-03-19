@@ -170,17 +170,21 @@ Development
 -----------
 
 A local checkout of the frameworks repo can be shared with locally-running services (i.e. frontend applications)
-as follows:
+as follows, assuming you have a system-wide install of yarn available:
 
-- install bower globally (if you didn't already): `npm install -g bower`
-- from this repo, run `bower link`
-- from each app, run `bower link digitalmarketplace-frameworks`
+- from this repo, run `yarn link`
+- from each app, run `yarn link digitalmarketplace-frameworks`
 
-Then, whenever the framework content is changed:
+Your frontend apps will then be using your local copy of the framework data rather than the version specified
+in their `package.json` - for example, whenever you:
 
-- on each frontend app, rebuild the app's `content` directory to include the new content by running `make frontend_build`
-- alternatively, run `npm run frontend-build:watch` to automatically rebuild the framework content whenever a framework YML file changes
-- generate schemas into the API's `json_schema` directory using the `scripts/generate-validation-schemas.py` script in this repo.
+ - rebuild the app's `content` directory by running `make frontend_build`; or
+ - run `yarn run frontend-build:watch` to automatically rebuild the framework content whenever a framework YML file
+   changes.
+
+Don't forget that you may also need to generate schemas into the API's `json_schema` directory using the
+`scripts/generate-validation-schemas.py` script in this repo, or similarly update the Search API using the
+`scripts/generate-search-config.py` script.
 
 Running the tests
 -----------------
