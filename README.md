@@ -210,10 +210,11 @@ Releases of this project follow [semantic versioning](http://semver.org/), ie
 > - PATCH version when you make backwards-compatible bug fixes.
 
 To make a new version:
-- update `VERSION.txt` with the new version number
-- commit this change; the first line of the commit message **must** be in the
-  format `Bump version to X.X.X`
-- include the commit in the pull request containing your changes/fixes.
+- run `yarn version` to update the version number;
+- (note that yarn has been configured **not** to create a new tag when you run this command - see `.yarnrc`)
+- if you are making a major change, also update the change log;
+- commit `package.json` and `CHANGELOG.md` if appropriate - for a small PR, this could be in the same commit as other
+  changes you are making; for a larger PR you might want a separate commit with a message that summarises the entire PR.
 
 When the pull request is merged a Jenkins job will be run to tag the new
 version.
