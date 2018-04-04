@@ -1,0 +1,27 @@
+name: Security services
+question: Do you provide security services?
+question_advice: |
+  Cyber Scheme
+
+  Security services include:
+    - security strategy
+    - security risk management
+    - security design
+    - cyber security consultancy
+    - security testing
+    - security incident management
+    - security audit services
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  securityServicesWhat:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
