@@ -25,9 +25,9 @@ options:
       question: QAAndTesting
       any_of:
         - true
-  - label: Security testing
+  - label: Security services
     derived_from:
-      question: securityTesting
+      question: securityServices
       any_of:
         - true
   - label: Training
