@@ -3,3 +3,4 @@ __pycache__
 .hypothesis/eval_source
 venv*
 local.nix
+.cache
