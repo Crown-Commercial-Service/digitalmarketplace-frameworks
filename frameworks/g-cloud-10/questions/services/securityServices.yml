@@ -1,9 +1,8 @@
 name: Security services
 question: Do you provide security services?
 question_advice: |
-  Cyber Scheme
-
   Security services include:
+
     - security strategy
     - security risk management
     - security design
