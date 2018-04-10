@@ -36,7 +36,7 @@
 - name: Security services
   editable: true
   questions:
-    - multiqSecurityServices
+    - multiqSecurityTesting
 
 - name: Training
   editable: true

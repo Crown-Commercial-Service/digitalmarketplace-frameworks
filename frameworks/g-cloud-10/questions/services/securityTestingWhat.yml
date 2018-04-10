@@ -7,9 +7,9 @@ depends:
     being:
       - cloud-support
 followup:
-  securityServicesWhatOther:
+  securityTestingWhatOther:
     - other
-  securityTestingCertified:
+  securityTestingAccredited:
     - security_testing
   securityTestingCCP:
     - risk_analysis

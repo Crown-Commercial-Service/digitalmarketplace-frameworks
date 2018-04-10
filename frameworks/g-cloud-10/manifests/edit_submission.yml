@@ -47,7 +47,7 @@
   editable: false
   edit_questions: true
   questions:
-    - multiqSecurityServices
+    - multiqSecurityTesting
 
 - name: Training
   editable: false

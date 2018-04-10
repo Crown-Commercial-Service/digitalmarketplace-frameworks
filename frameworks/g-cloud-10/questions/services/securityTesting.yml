@@ -16,7 +16,7 @@ depends:
     being:
       - cloud-support
 followup:
-  securityServicesWhat:
+  securityTestingWhat:
     - true
 
 type: boolean

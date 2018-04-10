@@ -17,8 +17,8 @@ options:
     value: ie9
   - label: Internet Explorer 10
     value: ie10
-  - label: Internet Explorer 11+
-    value: ie11+
+  - label: Internet Explorer 11
+    value: ie11
   - label: Microsoft Edge
     value: edge
   - label: Firefox

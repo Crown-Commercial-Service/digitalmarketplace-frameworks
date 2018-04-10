@@ -7,7 +7,7 @@ depends:
     being:
       - cloud-support
 followup:
-  securityTestingCertificationsOther:
+  securityTestingAccreditationsOther:
     - other
 
 type: checkboxes

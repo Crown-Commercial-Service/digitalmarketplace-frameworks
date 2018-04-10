@@ -26,12 +26,12 @@
 
 - name: Security testing
   questions:
-    - securityServices
-    - securityServicesWhat
-    - securityServicesWhatOther
-    - securityTestingCertified
-    - securityTestingCertifications
-    - securityTestingCertificationsOther
+    - securityTesting
+    - securityTestingWhat
+    - securityTestingWhatOther
+    - securityTestingAccredited
+    - securityTestingAccreditations
+    - securityTestingAccreditationsOther
     - securityTestingCCP
 
 - name: Ongoing support
