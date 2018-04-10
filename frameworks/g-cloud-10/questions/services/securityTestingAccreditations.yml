@@ -1,5 +1,5 @@
-name: Security testing accreditations
-question: Which security accreditations do your security testers have?
+name: Security testing certifications
+question: Which security certifications do your security testers have?
 
 hidden: true
 depends:
@@ -12,10 +12,16 @@ followup:
 
 type: checkboxes
 options:
-  - label: Tigerscheme
-    value: tigerscheme
+  - label: GBEST
+    value: gbest
+  - label: CHECK
+    value: check
   - label: CREST
     value: crest
+  - label: Tigerscheme
+    value: tigerscheme
+  - label: Cyber Scheme
+    value: cyber_scheme
   - label: Other
     value: other
 

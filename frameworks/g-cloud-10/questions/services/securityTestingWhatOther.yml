@@ -1,5 +1,5 @@
-name: Other security testing
-question: What other kinds of security testing do you provide?
+name: Other security services
+question: What other kinds of security services do you provide?
 
 hidden: true
 depends:
@@ -8,12 +8,12 @@ depends:
       - cloud-support
 
 type: list
-list_item_name: kind of security testing
+list_item_name: kind of security services
 
 validations:
   - name: under_10_words
-    message: You can’t write more than 10 words for each kind of security testing.
+    message: You can’t write more than 10 words for each kind of security services.
   - name: max_items_limit
-    message: You must have 10 or fewer kinds of security testing.
+    message: You must have 10 or fewer kinds of security services.
   - name: under_character_limit
-    message: You can’t write more than 100 characters for each kind of security testing.
+    message: You can’t write more than 100 characters for each kind of security services.

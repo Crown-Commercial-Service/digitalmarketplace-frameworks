@@ -52,7 +52,6 @@ def _definite_pass_g9_declaration():
         "informationChanges": True,
         "offerServicesYourselves": True,
         "organisedCrime": False,
-        "payForWhatUse": True,
         "proofOfClaims": True,
         "publishContracts": True,
         "readUnderstoodGuidance": True,

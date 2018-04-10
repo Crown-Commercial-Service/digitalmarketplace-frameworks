@@ -1,5 +1,6 @@
-name: Accredited security testers
-question: Is your penetration testing or IT Health Check performed by accredited security testers?
+name: Certified security testers
+question: Is your security testing performed by certified security testers?
+hint: Security testing includes penetration testing and IT Health Checks.
 
 hidden: true
 depends:

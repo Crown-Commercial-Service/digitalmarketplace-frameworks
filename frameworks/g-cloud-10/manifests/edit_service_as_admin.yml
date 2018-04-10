@@ -33,7 +33,7 @@
   questions:
     - multiqQAAndTesting
 
-- name: Security testing
+- name: Security services
   editable: true
   questions:
     - multiqSecurityTesting

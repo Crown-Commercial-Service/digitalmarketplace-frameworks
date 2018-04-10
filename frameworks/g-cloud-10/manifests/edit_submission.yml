@@ -43,7 +43,7 @@
   questions:
     - multiqQAAndTesting
 
-- name: Security testing
+- name: Security services
   editable: false
   edit_questions: true
   questions:
