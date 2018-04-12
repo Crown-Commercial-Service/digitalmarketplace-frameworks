@@ -1,0 +1,18 @@
+-
+  name: Do not copy
+  questions:
+    - browsersSupported
+    - securityTesting
+    - securityTestingAccreditations
+    - securityTestingAccreditationsOther
+    - securityTestingAccredited
+    - securityTestingWhat
+    - securityTestingWhatOther
+    - termsAndConditionsDocumentURL
+    - pricingDocumentURL
+    - serviceDefinitionDocumentURL
+    - sfiaRateDocumentURL
+-
+  name: Previous framework
+  questions:
+    - previousFramework
