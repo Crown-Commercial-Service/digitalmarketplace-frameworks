@@ -1,5 +1,5 @@
-name: Other security accreditations
-question: Other security accreditations
+name: Other security certifications
+question: Other security certifications
 
 depends:
   - "on": lot

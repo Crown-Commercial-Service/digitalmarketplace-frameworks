@@ -1,5 +1,5 @@
-name: Other security accreditations
-question: Do you have any other security accreditations that cover this service?
+name: Other security certifications
+question: Do you have any other security certifications that cover this service?
 
 depends:
   - "on": lot
