@@ -1,5 +1,5 @@
-name: Security governance accreditation
-question: Is your security governance accredited to a standard?
+name: Security governance certified
+question: Is your security governance certified to a standard?
 
 depends:
   - "on": lot
