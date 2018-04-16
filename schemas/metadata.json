@@ -1,0 +1,24 @@
+{
+  "title": "Metadata",
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "anyOf": [
+    {"$ref": "#/definitions/copying-services"}
+  ],
+  "definitions": {
+    "copying-services": {
+      "properties": {
+        "source_framework": {"type": "string"},
+        "questions_to_copy": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      },
+      "required": [
+        "source_framework",
+        "questions_to_copy"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
