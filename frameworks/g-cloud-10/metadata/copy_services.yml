@@ -44,8 +44,7 @@ questions_to_copy:
   - dataProtectionWithinNetwork
   - dataProtectionWithinNetworkOther
   - dataSanitisation
-  - dataSanitisationTypeHosting
-  - dataSanitisationTypeSoftware
+  - dataSanitisationType
   - dataStorageAndProcessing
   - dataStorageAndProcessingLocations
   - dataStorageAndProcessingUserControl
@@ -80,13 +79,11 @@ questions_to_copy:
   - lotName
   - managementAccessAuthentication
   - managementAccessAuthenticationDescription
-  - metricsHosting
-  - metricsHostingHow
-  - metricsHostingWhat
-  - metricsHostingWhatOther
-  - metricsSoftware
-  - metricsSoftwareDescription
-  - metricsSoftwareHow
+  - metrics
+  - metricsHow
+  - metricsWhat
+  - metricsWhatOther
+  - metricsDescription
   - mobile
   - mobileDifferences
   - ongoingSupport
@@ -102,7 +99,10 @@ questions_to_copy:
   - planningServiceCompatibility
   - planningServiceCompatibilityList
   - planningServiceDescription
-  - price
+  - priceInterval
+  - priceMax
+  - priceMin
+  - priceUnit
   - protectionOfDataAtRest
   - protectionOfDataAtRestOther
   - protectiveMonitoringApproach
@@ -124,16 +124,11 @@ questions_to_copy:
   - securityTestingCCP
   - serviceAddOnDetails
   - serviceAddOnType
-  - serviceBenefitsHostingAndSoftware
-  - serviceBenefitsSupport
-  - serviceCategoriesHosting
-  - serviceCategoriesSoftware
-  - serviceCategoriesSupport
-  - serviceConstraintsHostingAndSoftware
-  - serviceConstraintsSupport
+  - serviceBenefits
+  - serviceCategories
+  - serviceConstraints
   - serviceDescription
-  - serviceFeaturesHostingAndSoftware
-  - serviceFeaturesSupport
+  - serviceFeatures
   - serviceInterfaceAccessibility
   - serviceInterfaceAccessibilityDescription
   - serviceInterfaceTesting
@@ -169,9 +164,8 @@ questions_to_copy:
   - usageNotifications
   - usageNotificationsHow
   - userAuthenticationDescription
-  - userAuthenticationHosting
+  - userAuthentication
   - userAuthenticationNeeded
-  - userAuthenticationSoftware
   - virtualisation
   - virtualisationImplementedBy
   - virtualisationSeparation
