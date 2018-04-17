@@ -24,7 +24,6 @@ questions_to_copy:
   - backupScheduling
   - backupWhatData
   - boardLevelServiceSecurity
-  - browsersAccess
   - cloudDeploymentModel
   - commandLineInterface
   - commandLineOS
@@ -121,7 +120,6 @@ questions_to_copy:
   - securityGovernanceApproach
   - securityGovernanceStandards
   - securityGovernanceStandardsOther
-  - securityTestingCCP
   - serviceAddOnDetails
   - serviceAddOnType
   - serviceBenefits
