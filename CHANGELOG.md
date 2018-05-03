@@ -2,6 +2,12 @@
 
 Records breaking changes from major version bumps
 
+## 12.0.0
+
+All the `messages/dates.yml` files for frameworks have been removed. These dates are now stored directly on the
+`framework` record in the API as datetimestamps. Any frontends that load `dates.yml` files will need to instead
+look for dates in the framework record(s).
+
 ## 11.0.0
 
 Removed the transformation of the status field entirely. The DOS search filters
