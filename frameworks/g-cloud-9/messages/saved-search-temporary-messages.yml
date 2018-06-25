@@ -1,0 +1,38 @@
+not_locked_pre_live:
+  heading: G&#x2011;Cloud&nbsp;10 services will replace existing services on Monday 2 July 2018
+  messages:
+    - Your search results will update automatically.
+    - If you end your search before 2 July your results will only include G&#x2011;Cloud 9 services.
+
+not_locked_post_live:
+  heading: G&#x2011;Cloud&nbsp;10 services replaced G&#x2011;Cloud&nbsp;9 services on Monday 2 July 2018
+  messages:
+    - Your search results may have changed.
+
+locked_pre_live:
+  heading: The G&#x2011;Cloud&nbsp;9 services you found will expire soon
+  messages:
+    - 'You can either:'
+    - >
+      <ul class="list-bullet-small">
+        <li>award a contract for a G-Cloud 9 service</li>
+        <li>start a new search for G-Cloud 10 services from Monday 2 July 2018</li>
+      </ul>
+    - Any existing contracts for G-Cloud 9 services are still valid.
+
+locked_post_live_during_interim:
+  heading: The G&#x2011;Cloud&nbsp;9 services you found will expire soon
+  messages:
+    - 'You can either:'
+    - >
+      <ul class="list-bullet-small">
+        <li>award a contract for a G-Cloud 9 service</li>
+        <li><a href="{{ search_url }}">start a new search for G-Cloud 10 services</a></li>
+      </ul>
+    - Any existing contracts for G-Cloud 9 services are still valid.
+
+locked_post_live_post_interim:
+  heading: The G-Cloud 9 services you found have expired
+  messages:
+    - If you did not award a contract by {{ expiration_date }}, you need to <a href="{{ search_url }}">start a new
+      search for G-Cloud 10 services</a>. If you did award a contract, please tell us the outcome.

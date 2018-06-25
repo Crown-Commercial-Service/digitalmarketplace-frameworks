@@ -3,7 +3,8 @@
   "$schema": "http://json-schema.org/schema#",
   "type": "object",
   "anyOf": [
-    {"$ref": "#/definitions/copying-services"}
+    {"$ref": "#/definitions/copying-services"},
+    {"$ref": "#/definitions/following-framework"}
   ],
   "definitions": {
     "copying-services": {
@@ -17,6 +18,15 @@
       "required": [
         "source_framework",
         "questions_to_copy"
+      ],
+      "additionalProperties": false
+    },
+    "following-framework": {
+      "properties": {
+        "slug": {"type": "string"}
+      },
+      "required": [
+        "slug"
       ],
       "additionalProperties": false
     }
