@@ -26,6 +26,7 @@ Usage:
 """
 import os
 import sys
+import json
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, base_dir)
 from datetime import datetime
@@ -44,10 +45,10 @@ if __name__ == '__main__':
     framework_slug = arguments['<framework_slug>']
     doc_type = arguments['<doc_type>']
 
-    with open(os.path.join(base_dir, 'VERSION.txt'), 'r') as version_handle:
+    with open(os.path.join(base_dir, 'package.json')) as version_handle:
         extra_meta = OrderedDict((
             ('_', 'DO NOT UPDATE BY HAND'),
-            ('version', version_handle.read().strip()),
+            ('version', json.load(version_handle)['version']),
             ('generated_from_framework', framework_slug),
             ('generated_by', os.path.abspath(__file__)),
             ('generated_time', datetime.utcnow().isoformat()),
