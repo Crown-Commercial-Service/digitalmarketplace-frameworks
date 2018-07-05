@@ -8,15 +8,11 @@ use_of_service_data: >
 
 lots:
   - slug: cloud-hosting
-    body: >
-      Find cloud platform or infrastructure services to help you:
-
-        - deploy, manage and run software
-        - provision and use processing, storage or networking resources
+    body: Platform or infrastructure services for running software, networking, or processing and storing data.
     advice: eg content delivery networks or load balancing services
   - slug: cloud-software
-    body: Find software applications that are accessed over the internet and hosted in the cloud.
+    body: Applications that are accessed over the internet and hosted in the cloud.
     advice: eg accounting tools or customer service management software
   - slug: cloud-support
-    body: Find cloud support services to help you set up and maintain your cloud software or hosting services.
+    body: Services to help you set up and maintain your cloud software or hosting services.
     advice: eg migration services or ongoing support
