@@ -9,7 +9,7 @@
     You must be able to truthfully answer ‘yes’ to every question for your application to be considered eligible.
     The Crown Commercial Service may ask for proof after you’ve submitted your application.
 
-    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted. 
+    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted.
 
   questions:
     - skillsAndResources
@@ -33,23 +33,23 @@
     - termsAndConditions
     - canProvideFromDayOne
     - evidence
-    - unfairCompetition    
+    - unfairCompetition
     - 10WorkingDays
     - MI
-    
+
 -
   name: Grounds for mandatory exclusion
   slug: grounds-for-mandatory-exclusion
   editable: True
   prefill: True
   description: |
-    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your 
-    application to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very 
+    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your
+    application to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very
     unlikely that your application will be accepted.
 
-    In questions [[conspiracy]] to [[organisedCrime]], ‘anyone who represents, supervises or has control in your 
+    In questions [[conspiracy]] to [[organisedCrime]], ‘anyone who represents, supervises or has control in your
     organisation or a partner or parent organisation’ includes members of your group of economic operators, their
-    proposed subcontractors, and any directors, partners, or any other person who has powers of representation, 
+    proposed subcontractors, and any directors, partners, or any other person who has powers of representation,
     decision or control. Check that your organisation complies with <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the Public Contracts
     Regulations 2015</a>.
   questions:
@@ -67,14 +67,14 @@
   description: |
     You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
     for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
-    
+
     If you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
     you provide to consider whether or not you will be able to proceed any further with this procurement.
 
     In questions [[taxEvasion]] to [[misleadingInformation]], ‘a partner organisation’ includes members
     of your group of economic operators or their proposed subcontractors.
-    
+
     CCS can also exclude you if you are guilty of serious
     misrepresentation in providing any information referred to within
     regulations
@@ -112,7 +112,7 @@
   description: |
     You must be able to truthfully answer ‘yes’ to every question under ‘Working with government’ for your bid to be
     considered eligible.
-    
+
     If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your bid will be accepted.
   questions:
     - environmentallyFriendly
@@ -150,7 +150,7 @@
   editable: True
   prefill: False
   description: |
-    You must confirm the accuracy of the information in this declaration and in your service descriptions. We might 
+    You must confirm the accuracy of the information in this declaration and in your service descriptions. We might
     ask for proof after you’ve submitted your application.
 
   questions:
@@ -163,19 +163,20 @@
   name: How you’ll deliver your services
   slug: how-youll-deliver-your-services
   editable: True
-  prefill: True   
+  prefill: True
   description: |
     The Crown Commercial Service will use this information to manage your participation in Digital Outcomes and Specialists&nbsp;3.
   questions:
     - subcontracting
+    - employmentStatus
 
 -
   name: Contact details
   slug: contact-details
   editable: True
-  prefill: True  
+  prefill: True
   description: |
-     The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.  
+     The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.
   questions:
     - primaryContact
     - primaryContactEmail
