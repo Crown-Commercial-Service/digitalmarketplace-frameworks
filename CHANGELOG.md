@@ -2,6 +2,11 @@
 
 Records breaking changes from major version bumps
 
+## 13.0.0
+
+Removed buyers guide links from the frameworks, as they are no longer framework-specific. The guide is tied
+to the direct award process as implemented for any G-Cloud-like framework on the Digital Marketplace.
+
 ## 12.0.0
 
 All the `messages/dates.yml` files for frameworks have been removed. These dates are now stored directly on the
