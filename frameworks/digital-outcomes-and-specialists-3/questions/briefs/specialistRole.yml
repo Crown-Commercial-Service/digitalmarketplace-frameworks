@@ -33,6 +33,23 @@ options:
       Ensure information is protected against unauthorised or unintended access.
       Put systems in place to prevent data destruction or disruption.
   -
+    label: Data architect
+    value: dataArchitect
+    description: >
+      Set the vision for the organisation’s use of data, through data design, to meet business needs.
+  -
+    label: Data engineer
+    value: dataEngineer
+    description: >
+      Design, build, test and maintain data management systems,
+      making sure they meet business requirements and user needs.
+  -
+    label: Data scientist
+    value: dataScientist
+    description: >
+      Identify complex business problems while working with policy and operations teams to understand
+      where data can add value.
+  -
     label: Delivery manager
     value: deliveryManager
     description: >
