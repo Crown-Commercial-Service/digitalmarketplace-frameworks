@@ -23,10 +23,19 @@
     },
     "following-framework": {
       "properties": {
-        "slug": {"type": "string"}
+        "slug": {"type": "string"},
+        "framework": {
+          "type": "object",
+          "properties": {
+            "slug": {"type": "string"},
+            "name": {"type": "string"},
+            "coming": {"type": "string"}
+          }
+        }
       },
-      "required": [
-        "slug"
+      "oneOf": [
+        {"required": ["slug"]},
+        {"required": ["framework"]}
       ],
       "additionalProperties": false
     }
