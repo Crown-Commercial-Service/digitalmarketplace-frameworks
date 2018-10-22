@@ -4,3 +4,5 @@ __pycache__
 venv*
 local.nix
 .cache
+# LibreOffice locks
+.~lock.*#
