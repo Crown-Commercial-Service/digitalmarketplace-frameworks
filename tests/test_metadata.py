@@ -23,7 +23,7 @@ def test_copying_services_metadata():
                 if filename.startswith('multiq'):
                     continue
                 with open(f'frameworks/{framework}/questions/services/{filename}') as f:
-                    contents = yaml.load(f)
+                    contents = yaml.safe_load(f)
                     if contents.get('id'):
                         names_ids_fields.add(contents['id'])
                     if contents.get('fields'):
