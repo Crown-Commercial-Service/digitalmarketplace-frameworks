@@ -4,7 +4,7 @@
   editable: True
   prefill: False
   description: |
-    You must answer these questions to confirm that your services are suitable for G-Cloud&nbsp;10.
+    You must answer these questions to confirm that your services are suitable for G-Cloud&nbsp;11.
 
     You must be able to truthfully answer ‘yes’ to every question for your application to be considered eligible.
     The Crown Commercial Service may ask for proof after you’ve submitted your application.
@@ -18,12 +18,12 @@
     - fullAccountability
 
 -
-  name: What it means to be on G-Cloud&nbsp;10
-  slug: what-it-means-to-be-on-g-cloud-10
+  name: What it means to be on G-Cloud&nbsp;11
+  slug: what-it-means-to-be-on-g-cloud-11
   editable: True
   prefill: False
   description: |
-    If you make an application to G-Cloud&nbsp;10, you’re agreeing to the terms and conditions in the legal documentation.
+    If you make an application to G-Cloud&nbsp;11, you’re agreeing to the terms and conditions in the legal documentation.
 
     You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
 
@@ -157,7 +157,7 @@
   editable: True
   prefill: True   
   description: |
-    The Crown Commercial Service will use this information to manage your participation in G-Cloud&nbsp;10.
+    The Crown Commercial Service will use this information to manage your participation in G-Cloud&nbsp;11.
   questions:
     - subcontracting
 

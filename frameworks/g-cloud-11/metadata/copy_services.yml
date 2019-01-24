@@ -1,4 +1,4 @@
-source_framework: g-cloud-9
+source_framework: g-cloud-10
 questions_to_copy:
   - accessRestrictionManagementAndSupport
   - accessRestrictionTesting
