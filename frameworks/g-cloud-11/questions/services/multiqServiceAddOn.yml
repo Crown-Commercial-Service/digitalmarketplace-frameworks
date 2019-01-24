@@ -1,0 +1,12 @@
+name: Add-ons and extensions
+question: Add-ons and extensions
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+ - serviceAddOnType
+ - serviceAddOnDetails

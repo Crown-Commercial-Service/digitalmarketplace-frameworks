@@ -1,0 +1,19 @@
+id: serviceName
+question: What’s your service called?
+name: Service name
+hint: Include your service name only. Don’t use extra keywords.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: text
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_character_limit
+    message: Your service name must be no more than 100 characters.

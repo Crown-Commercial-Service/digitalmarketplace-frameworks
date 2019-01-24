@@ -1,0 +1,19 @@
+name: User can manage status and priority of support tickets
+question: Can users manage the status and priority of their support tickets?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+followup:
+  emailOrTicketingSupportAccessibility:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

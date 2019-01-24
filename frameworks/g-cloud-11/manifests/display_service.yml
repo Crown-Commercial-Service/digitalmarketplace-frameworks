@@ -1,0 +1,278 @@
+- name: Planning
+  questions:
+    - planningService
+    - planningServiceDescription
+    - planningServiceCompatibility
+    - planningServiceCompatibilityList
+
+- name: Training
+  questions:
+    - training
+    - trainingDescription
+    - trainingServiceSpecific
+    - trainingServiceSpecificList
+
+- name: Setup and migration
+  questions:
+    - setupAndMigrationService
+    - setupAndMigrationServiceDescription
+    - setupAndMigrationServiceSpecific
+    - setupAndMigrationServiceSpecificList
+
+- name: Quality assurance and performance testing
+  questions:
+    - QAAndTesting
+    - QAAndTestingDescription
+
+- name: Security testing
+  questions:
+    - securityTesting
+    - securityTestingWhat
+    - securityTestingWhatOther
+    - securityTestingAccredited
+    - securityTestingAccreditations
+    - securityTestingAccreditationsOther
+    - securityTestingCCP
+
+- name: Ongoing support
+  questions:
+    - ongoingSupport
+    - ongoingSupportServices
+    - ongoingSupportDescription
+
+- name: Service scope
+  questions:
+    - serviceAddOnType
+    - serviceAddOnDetails
+    - cloudDeploymentModel
+    - serviceConstraintsHostingAndSoftware
+    - serviceConstraintsSupport
+    - systemRequirements
+
+- name: User support
+  questions:
+    - emailOrTicketingSupport
+    - emailOrTicketingSupportResponseTimes
+    - emailOrTicketingSupportPriority
+    - emailOrTicketingSupportAccessibility
+    - phoneSupport
+    - phoneSupportAvailability
+    - webChatSupport
+    - webChatSupportAvailability
+    - webChatSupportAccessibility
+    - webChatSupportAccessibilityDescription
+    - webChatSupportAccessibilityTesting
+    - onsiteSupport
+    - supportLevels
+    - supportAvailableToThirdParty
+
+- name: Onboarding and offboarding
+  questions:
+    - gettingStarted
+    - documentation
+    - documentationFormats
+    - documentationFormatsOther
+    - endOfContractDataExtraction
+    - endOfContractProcess
+
+- name: Using the service
+  questions:
+    - browsersAccess
+    - browsersSupported
+    - installation
+    - installationCompatibleOperatingSystems
+    - mobile
+    - mobileDifferences
+    - webInterface
+    - webInterfaceUsage
+    - webInterfaceAccessibility
+    - webInterfaceAccessibilityDescription
+    - webInterfaceAccessibilityTesting
+    - serviceInterfaceAccessibility
+    - serviceInterfaceAccessibilityDescription
+    - serviceInterfaceTesting
+    - APIHosting
+    - APISoftware
+    - APIUsage
+    - APIAutomationTools
+    - APIAutomationToolsOther
+    - APIDocumentation
+    - APIDocumentationFormats
+    - APISandbox
+    - commandLineInterface
+    - commandLineOS
+    - commandLineUsage
+    - customisationAvailable
+    - customisationDescription
+
+- name: Scaling
+  questions:
+    - scaling
+    - scalingType
+    - independenceOfResources
+    - usageNotifications
+    - usageNotificationsHow
+
+- name: Analytics
+  questions:
+    - metricsHosting
+    - metricsSoftware
+    - metricsSoftwareDescription
+    - metricsHostingWhat
+    - metricsHostingWhatOther
+    - metricsHostingHow
+    - metricsSoftwareHow
+
+- name: Resellers
+  questions:
+    - resellingType
+    - resellingOrganisations
+
+- name: Staff security
+  questions:
+    - staffSecurityClearanceChecks
+    - governmentSecurityClearances
+
+- name: Asset protection
+  questions:
+    - dataStorageAndProcessing
+    - dataStorageAndProcessingLocations
+    - dataStorageAndProcessingUserControl
+    - datacentreSecurityStandards
+    - penetrationTesting
+    - penetrationTestingApproach
+    - protectionOfDataAtRest
+    - protectionOfDataAtRestOther
+    - dataSanitisation
+    - dataSanitisationTypeHosting
+    - dataSanitisationTypeSoftware
+    - equipmentDisposalApproach
+
+- name: Backup and recovery
+  questions:
+    - backup
+    - backupWhatData
+    - backupControls
+    - backupDatacentre
+    - backupScheduling
+    - backupRecovery
+
+- name: Data importing and exporting
+  questions:
+    - dataExportHow
+    - dataExportFormats
+    - dataExportFormatsOther
+    - dataImportFormats
+    - dataImportFormatsOther
+
+- name: Data-in-transit protection
+  questions:
+    - dataProtectionBetweenNetworks
+    - dataProtectionBetweenNetworksOther
+    - dataProtectionWithinNetwork
+    - dataProtectionWithinNetworkOther
+
+- name: Availability and resilience
+  questions:
+    - guaranteedAvailability
+    - approachToResilience
+    - outageReporting
+
+- name: Identity and authentication
+  questions:
+    - userAuthenticationNeeded
+    - userAuthenticationHosting
+    - userAuthenticationSoftware
+    - userAuthenticationDescription
+    - accessRestrictionManagementAndSupport
+    - accessRestrictionTesting
+    - managementAccessAuthentication
+    - managementAccessAuthenticationDescription
+    - devicesUsersManageTheServiceThrough
+
+- name: Audit information for users
+  questions:
+    - auditBuyersActions
+    - auditBuyersActionsStorage
+    - auditSuppliersActions
+    - auditSuppliersActionsStorage
+    - howLongSystemLogsStored
+
+- name: Standards and certifications
+  questions:
+    - standardsISOIEC27001
+    - standardsISOIEC27001Who
+    - standardsISOIEC27001When
+    - standardsISOIEC27001Exclusions
+    - standardsISO28000
+    - standardsISO28000Who
+    - standardsISO28000When
+    - standardsISO28000Exclusions
+    - standardsCSASTAR
+    - standardsCSASTARWhen
+    - standardsCSASTARLevel
+    - standardsCSASTARExclusions
+    - standardsPCI
+    - standardsPCIWho
+    - standardsPCIWhen
+    - standardsPCIExclusions
+    - accreditationsOther
+    - accreditationsOtherList
+
+- name: Security governance
+  questions:
+    - boardLevelServiceSecurity
+    - securityGovernanceAccreditation
+    - securityGovernanceStandards
+    - securityGovernanceStandardsOther
+    - securityGovernanceApproach
+    - informationSecurityPoliciesAndProcesses
+
+- name: Operational security
+  questions:
+    - configurationAndChangeManagementType
+    - configurationAndChangeManagementProcesses
+    - vulnerabilityManagementType
+    - vulnerabilityManagementApproach
+    - protectiveMonitoringType
+    - protectiveMonitoringApproach
+    - incidentManagementType
+    - incidentManagementApproach
+
+- name: Secure development
+  questions:
+    - secureDevelopment
+
+- name: Public sector networks
+  questions:
+    - publicSectorNetworks
+    - publicSectorNetworksTypes
+    - publicSectorNetworksOther
+
+- name: Separation between users
+  questions:
+    - virtualisation
+    - virtualisationImplementedBy
+    - virtualisationTechnologiesUsed
+    - virtualisationTechnologiesUsedOther
+    - virtualisationThirdPartyProvider
+    - virtualisationSeparation
+
+- name: Energy efficiency
+  questions:
+    - energyEfficientDatacentres
+
+- name: Pricing
+  questions:
+    - price
+    - educationPricing
+    - freeVersionTrialOption
+    - freeVersionDescription
+    - freeVersionLink
+
+- name: Documents
+  questions:
+    - pricingDocumentURL
+    - sfiaRateDocumentURL
+    - serviceDefinitionDocumentURL
+    - termsAndConditionsDocumentURL

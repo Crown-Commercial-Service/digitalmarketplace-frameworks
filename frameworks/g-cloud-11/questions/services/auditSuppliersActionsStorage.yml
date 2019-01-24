@@ -1,0 +1,26 @@
+name: How long supplier audit data is stored for
+question: How long do you store your organisation’s audit data for?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+  - label: User-defined
+    value: user_defined
+  - label: At least 12 months
+    value: over_12_months
+  - label: Between 6 months and 12 months
+    value: 6_to_12_months
+  - label: Between 1 month and 6 months
+    value: 1_to_6_months
+  - label: Less than 1 month
+    value: under_1_month
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

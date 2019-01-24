@@ -1,0 +1,15 @@
+name: PCI certification
+question: PCI certification
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - standardsPCI
+  - standardsPCIWho
+  - standardsPCIWhen
+  - standardsPCIExclusions

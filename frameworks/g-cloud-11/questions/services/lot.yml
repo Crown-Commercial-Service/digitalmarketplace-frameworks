@@ -1,0 +1,25 @@
+question: Service type
+
+type: radios
+options:
+  - label: Cloud hosting
+    value: cloud-hosting
+    description: |
+      Cloud hosting services are cloud platform or infrastructure services that can help buyers:
+
+        - deploy, manage and run software
+        - provision and use processing, storage or networking resources
+
+      On G-Cloud 8, cloud hosting was known as ‘Platform as a Service’ and ‘Infrastructure as a Service’.
+  - label: Cloud software
+    value: cloud-software
+    description: |
+      Cloud software services are applications that are accessed over the internet and hosted in the cloud.
+
+      On G-Cloud 8, cloud software was known as ‘Software as a Service’.
+  - label: Cloud support
+    value: cloud-support
+    description: |
+      Cloud support services help buyers set up and maintain their cloud hosting or software services.
+
+      On G-Cloud 8, cloud support was known as ‘Specialist Cloud Services’.

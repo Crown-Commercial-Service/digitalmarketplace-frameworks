@@ -1,0 +1,20 @@
+name: API
+question: Is there an API for your service?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  APIUsage:
+    - true
+  APIAutomationTools:
+    - true
+  APIDocumentation:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

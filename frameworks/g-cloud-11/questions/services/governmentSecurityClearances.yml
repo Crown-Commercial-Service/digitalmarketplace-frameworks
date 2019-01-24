@@ -1,0 +1,26 @@
+name: Government security clearance
+question: >
+  If the role requires it, what level of security clearance are you prepared to make sure your staff have?
+question_advice: Read the <a href="https://www.gov.uk/guidance/security-vetting-and-clearance" target="_blank" rel="noopener noreferrer">government guidance on security vetting and clearance (link opens in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: radios
+options:
+  - label: Up to Developed Vetting (DV)
+    value: dv
+  - label: Up to Security Clearance (SC)
+    value: sc
+  - label: Up to Baseline Personnel Security Standard (BPSS)
+    value: bpss
+  - label: None
+    value: none
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

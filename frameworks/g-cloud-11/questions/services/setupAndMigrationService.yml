@@ -1,0 +1,19 @@
+name: Setup or migration service available
+question: Does your service help buyers migrate to the cloud or between cloud services?
+question_advice: Migration services should help organisations set up or move between cloud hosting or cloud software services.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  setupAndMigrationServiceDescription:
+    - true
+  setupAndMigrationServiceSpecific:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

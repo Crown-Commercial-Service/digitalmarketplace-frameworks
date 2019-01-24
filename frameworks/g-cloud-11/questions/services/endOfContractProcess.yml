@@ -1,0 +1,21 @@
+name: End-of-contract process
+question: Describe what happens at the end of the contract.
+question_advice: Describe what’s included in the price of the contract and what’s an additional cost.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 200
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_200_words
+    message: Your description must be no more than 200 words.
+  - name: under_character_limit
+    message: Your description must be no more than 2000 characters.
+

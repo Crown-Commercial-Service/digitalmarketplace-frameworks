@@ -1,0 +1,13 @@
+name: Protection of data at rest
+question: Protection of data at rest
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - protectionOfDataAtRest
+  - protectionOfDataAtRestOther

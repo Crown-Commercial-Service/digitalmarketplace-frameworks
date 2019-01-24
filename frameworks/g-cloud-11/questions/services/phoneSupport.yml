@@ -1,0 +1,19 @@
+name: Phone support
+filter_label: phone
+question: Do you provide phone support?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+followup:
+  phoneSupportAvailability:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

@@ -1,0 +1,15 @@
+name: User control over data storage and processing locations
+question: Can users specify where data is stored and processed?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

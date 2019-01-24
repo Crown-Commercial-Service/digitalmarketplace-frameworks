@@ -1,0 +1,14 @@
+name: Data sanitisation process
+question: Data sanitisation process
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - dataSanitisation
+  - dataSanitisationTypeHosting
+  - dataSanitisationTypeSoftware

@@ -1,0 +1,22 @@
+name: Guaranteed availability
+question: Describe the level of availability you guarantee.
+question_advice: >
+  Include any service level agreements (SLAs) you have for availability and how users are refunded if you don’t meet
+  guaranteed levels of availability.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 200
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_200_words
+    message: Your answer must be no longer than 200 words.
+  - name: under_character_limit
+    message: Your answer must be no longer than 2000 characters.

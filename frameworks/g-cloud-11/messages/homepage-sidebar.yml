@@ -1,0 +1,15 @@
+coming:
+  heading: 'G&#x2011;Cloud&nbsp;10 is opening in April&nbsp;2018'
+  messages:
+    - 'You’ll need to create a supplier account to apply.'
+
+open:
+  heading: 'G&#x2011;Cloud&nbsp;10 is open for applications'
+  messages:
+    - 'You need an account to apply.'
+    - 'The application deadline is 5pm&nbsp;BST, Wednesday 23 May 2018.'
+
+pending:
+  heading: 'G&#x2011;Cloud&nbsp;10 is closed for applications'
+  messages:
+    - 'Applications are being reviewed.'

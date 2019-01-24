@@ -1,0 +1,19 @@
+name: Services the training service works with
+question: Which cloud hosting or software services is your training for?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: list
+list_item_name: cloud hosting or software service
+
+validations:
+  - name: under_10_words
+    message: You can’t write more than 10 words for each cloud hosting or software service.
+  - name: max_items_limit
+    message: You must have 10 or fewer cloud hosting or software services.
+  - name: under_character_limit
+    message: You can’t write more than 100 characters for each cloud hosting or software service.

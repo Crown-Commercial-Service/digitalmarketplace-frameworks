@@ -1,0 +1,14 @@
+name: Data storage and processing locations
+question: Data storage and processing locations
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - dataStorageAndProcessing
+  - dataStorageAndProcessingLocations
+  - dataStorageAndProcessingUserControl

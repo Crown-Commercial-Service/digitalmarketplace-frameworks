@@ -1,0 +1,27 @@
+name: Approach to secure software development best practice
+question: How does your organisation demonstrate that it adheres to best practice in secure software development?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-7-secure-development" target="_blank"
+  rel="noopener noreferrer">7th cloud security principle: ‘Secure development’ (link opens in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+  - label: >
+      Independent review of processes (for example CESG CPA Build Standard, ISO/IEC 27034, ISO/IEC 27001 or CSA CCM
+      v3.0)
+    value: independent_review
+  - label: Conforms to a recognised standard, but self-assessed
+    value: recognised_standard
+  - label: Supplier-defined process
+    value: supplier_defined
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

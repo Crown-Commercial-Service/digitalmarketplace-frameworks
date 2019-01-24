@@ -1,0 +1,25 @@
+name: Incident management type
+question: Which incident management processes does your organisation comply with?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-5-operational-security#incident" target="_blank"
+  rel="noopener noreferrer">5th cloud security principle: ‘Operational security’ (link opens in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+  - label: Conforms to a recognised standard, for example, CSA CCM v3.0 or ISO/IEC 27035:2011 or SSAE-16 / ISAE 3402
+    value: recognised_standard
+  - label: Supplier-defined controls
+    value: supplier_defined
+  - label: Undisclosed
+    value: undisclosed
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

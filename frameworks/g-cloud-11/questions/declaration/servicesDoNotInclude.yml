@@ -1,0 +1,14 @@
+name: Services in scope for G-Cloud
+question: >
+  Do you confirm that the services you’re submitting to G-Cloud 10 do not include:
+
+    - services that aren’t cloud-related
+    - recruitment or contractor (contingent labour) services or services that are ’inside IR35’
+    - ‘colocation’ services, for example equipment the buyer rents from a supplier’s datacentre
+    - hardware
+    - bespoke design or development
+
+type: boolean
+assessment:
+  passIfIn:
+    - True

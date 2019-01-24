@@ -1,0 +1,265 @@
+- name: Service attributes
+  editable: false
+  edit_questions: false
+  questions:
+    - lotName
+
+- name: Service name
+  editable: false
+  edit_questions: true
+  questions:
+    - serviceName
+
+- name: About your service
+  editable: false
+  edit_questions: true
+  questions:
+    - serviceDescription
+    - serviceCategoriesSoftware
+    - serviceCategoriesHosting
+
+- name: Service features and benefits
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqServiceFeaturesAndBenefitsHostingAndSoftware
+    - multiqServiceFeaturesAndBenefitsSupport
+
+- name: Planning
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqPlanning
+
+- name: Setup and migration
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqSetupAndMigration
+
+- name: Quality assurance and performance testing
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqQAAndTesting
+
+- name: Security services
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqSecurityTesting
+
+- name: Training
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqTraining
+
+- name: Ongoing support
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqOngoingSupport
+
+- name: Service scope
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqServiceAddOn
+    - cloudDeploymentModel
+    - serviceConstraintsHostingAndSoftware
+    - serviceConstraintsSupport
+    - systemRequirements
+
+- name: Reselling
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqReselling
+
+- name: User support
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqEmailOrTicketingSupport
+    - multiqPhoneSupport
+    - multiqWebChatSupport
+    - onsiteSupport
+    - supportLevels
+    - supportAvailableToThirdParty
+
+- name: How users work with your service
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqBrowser
+    - multiqInstallation
+    - multiqMobile
+    - multiqWebInterface
+    - multiqServiceInterface
+    - multiqAPIHosting
+    - multiqAPISoftware
+    - multiqCommandLineInterface
+    - multiqCustomisation
+
+- name: Onboarding and offboarding
+  editable: false
+  edit_questions: true
+  questions:
+    - gettingStarted
+    - multiqDocumentation
+    - endOfContractDataExtraction
+    - endOfContractProcess
+
+- name: Data importing and exporting
+  editable: false
+  edit_questions: true
+  questions:
+    - dataExportHow
+    - multiqDataExportFormats
+    - multiqDataImportFormats
+
+- name: Backups and recovery
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqServiceBacksUp
+
+- name: Analytics
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqMetricsHosting
+    - multiqMetricsSoftware
+
+- name: Scaling
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqScaling
+    - independenceOfResources
+    - multiqUsageNotifications
+
+- name: Public sector networks
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqPublicSectorNetworks
+
+- name: Data-in-transit protection
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqDataProtectionBetweenNetworks
+    - multiqDataProtectionWithinNetwork
+
+- name: Asset protection
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqDataStorageAndProcessing
+    - datacentreSecurityStandards
+    - multiqPenetrationTesting
+    - multiqProtectionOfDataAtRest
+    - multiqDataSanitisation
+    - equipmentDisposalApproach
+
+- name: Availability and resilience
+  editable: false
+  edit_questions: true
+  questions:
+    - guaranteedAvailability
+    - approachToResilience
+    - outageReporting
+
+- name: Separation between users
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqVirtualisation
+
+- name: Governance
+  editable: false
+  edit_questions: true
+  questions:
+    - boardLevelServiceSecurity
+    - multiqSecurityGovernance
+    - informationSecurityPoliciesAndProcesses
+
+- name: Operational security
+  editable: false
+  edit_questions: true
+  questions:
+    - configurationAndChangeManagementType
+    - configurationAndChangeManagementProcesses
+    - vulnerabilityManagementType
+    - vulnerabilityManagementApproach
+    - protectiveMonitoringType
+    - protectiveMonitoringApproach
+    - incidentManagementType
+    - incidentManagementApproach
+
+- name: Staff security
+  editable: false
+  edit_questions: true
+  questions:
+    - staffSecurityClearanceChecks
+    - governmentSecurityClearances
+
+- name: Secure development
+  editable: false
+  edit_questions: true
+  questions:
+    - secureDevelopment
+
+- name: Identity and authentication
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqUserAuthenticationHosting
+    - multiqUserAuthenticationSoftware
+    - accessRestrictionManagementAndSupport
+    - accessRestrictionTesting
+    - multiqManagementAccess
+    - devicesUsersManageTheServiceThrough
+
+- name: Audit information for users
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqAccessBuyersAudit
+    - multiqAccessSuppliersAudit
+    - howLongSystemLogsStored
+
+- name: Standards and certifications
+  editable: false
+  edit_questions: true
+  questions:
+    - multiqStandardsISOIEC27001
+    - multiqStandardsISO28000
+    - multiqStandardsCSASTAR
+    - multiqStandardsPCI
+    - multiqAccreditationsOther
+
+- name: Energy efficiency
+  editable: false
+  edit_questions: true
+  questions:
+    - energyEfficientDatacentres
+
+- name: Pricing
+  editable: false
+  edit_questions: true
+  questions:
+    - price
+    - educationPricing
+    - multiqFreeVersion
+
+- name: Documents
+  editable: false
+  edit_questions: true
+  questions:
+    - serviceDefinitionDocumentURL
+    - termsAndConditionsDocumentURL
+    - pricingDocumentURL
+    - sfiaRateDocumentURL

@@ -1,0 +1,14 @@
+name: Planning
+question: Planning
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: multiquestion
+questions:
+  - planningService
+  - planningServiceDescription
+  - planningServiceCompatibility
+  - planningServiceCompatibilityList
