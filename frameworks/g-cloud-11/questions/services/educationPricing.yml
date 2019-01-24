@@ -1,0 +1,16 @@
+name: Discount for educational organisations
+question: Do you offer special pricing for educational organisations?
+filter_label: discount for educational organisations
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

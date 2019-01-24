@@ -1,0 +1,12 @@
+name: Mobile
+question: Mobile
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+  - mobile
+  - mobileDifferences

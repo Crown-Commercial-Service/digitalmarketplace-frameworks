@@ -1,0 +1,13 @@
+name: Penetration testing
+question: Penetration testing
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - penetrationTesting
+  - penetrationTestingApproach

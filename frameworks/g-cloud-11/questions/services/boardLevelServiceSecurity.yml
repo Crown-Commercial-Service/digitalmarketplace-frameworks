@@ -1,0 +1,20 @@
+name: Named board-level person responsible for service security
+question: >
+  Does your organisation have a named person with board-level (or equivalent) authorisation who’s responsible for the
+  security of all of your services?
+question_advice: >
+  Read about the government’s <a href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-4-governance-framework"
+  target="_blank" rel="noopener noreferrer">4th cloud security principle: ‘Governance framework’ (link opens in a new
+  tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

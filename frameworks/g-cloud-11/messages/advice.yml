@@ -1,0 +1,18 @@
+use_of_service_data: >
+  The service information you provide here:
+
+    - will be public
+    - may be used as filters
+    - will appear on your service description page
+    - should help buyers review and compare services
+
+lots:
+  - slug: cloud-hosting
+    body: Platform or infrastructure services for running software, networking, or processing and storing data.
+    advice: eg content delivery networks or load balancing services
+  - slug: cloud-software
+    body: Applications that are accessed over the internet and hosted in the cloud.
+    advice: eg accounting tools or customer service management software
+  - slug: cloud-support
+    body: Services to help you set up and maintain your cloud software or hosting services.
+    advice: eg migration services or ongoing support

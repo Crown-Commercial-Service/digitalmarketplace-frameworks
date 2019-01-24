@@ -1,0 +1,16 @@
+name: Email or ticketing support
+question: Email or ticketing support
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: multiquestion
+questions:
+  - emailOrTicketingSupport
+  - emailOrTicketingSupportResponseTimes
+  - emailOrTicketingSupportPriority
+  - emailOrTicketingSupportAccessibility

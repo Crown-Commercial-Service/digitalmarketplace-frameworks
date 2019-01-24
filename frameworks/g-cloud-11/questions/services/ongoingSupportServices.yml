@@ -1,0 +1,21 @@
+name: Types of service supported
+question: Which services do you support?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: checkboxes
+options:
+  - label: Buyer hosting or software
+    value: buyer
+  - label: Hosting or software provided by your organisation
+    value: supplier
+  - label: Hosting or software provided by a third-party organisation
+    value: third_party
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

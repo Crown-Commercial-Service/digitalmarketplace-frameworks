@@ -1,0 +1,32 @@
+name: Devices users manage the service through
+question: Which devices can be used to manage the service?
+question_advice: >
+  Read about the <a href="https://www.ncsc.gov.uk/guidance/systems-administration-architectures" target="_blank" rel="noopener noreferrer">systems administration models (link opens in a new tab)</a>
+  that can be used to design the administration approach for IT systems.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+  - label: Dedicated device on a segregated network (providers own provision)
+    value: dedicated_device_on_segregated_network
+  - label: Dedicated device on a government network (for example PSN)
+    value: dedicated_device_on_government_network
+  - label: Dedicated device over multiple services or networks
+    value: dedicated_device_over_multiple_networks
+  - label: >
+      Any device but through a bastion host (a bastion host is a server that provides access to a private network from
+      an external network such as the internet)
+    value: any_device_using_bastion_host
+
+  - label: >
+      Directly from any device which may also be used for normal business (for example web browsing or viewing external
+      email)
+    value: any_device
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

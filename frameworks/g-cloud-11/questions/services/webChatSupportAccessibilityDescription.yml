@@ -1,0 +1,26 @@
+name: How the web chat support is accessible
+question: Describe how your web chat is accessible.
+question_advice: >
+  Include details of what users can and can’t do.
+  <a href="http://mandate376.standards.eu/standard/technical-requirements/#9" target="_blank" rel="noopener noreferrer">EN 301 549 9: Web (link opens in a new tab)</a> includes the features and
+  constraints you should describe.
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: textbox_large
+max_length_in_words: 200
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_200_words
+    message: Your description must be no more than 200 words.
+  - name: under_character_limit
+    message: Your description must be no more than 2000 characters.
+

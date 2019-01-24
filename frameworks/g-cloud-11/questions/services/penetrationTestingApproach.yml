@@ -1,0 +1,34 @@
+name: Penetration testing approach
+question: What is your approach to penetration testing?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+  - label: ‘IT Health Check’ performed by a CHECK service provider
+    value: it_health_check_check_provider
+  - label: ‘IT Health Check’ performed by a Tigerscheme qualified provider or a CREST-approved service provider
+    value: it_health_check_tigerscheme_or_crest_provider
+    derived_from:
+      question: penetrationTestingApproach
+      any_of:
+        - it_health_check_check_provider
+  - label: Another external penetration testing organisation
+    value: other_penetration_testing_organisation
+    derived_from:
+      question: penetrationTestingApproach
+      any_of:
+        - it_health_check_check_provider
+        - it_health_check_tigerscheme_or_crest_provider
+  - label: In-house
+    value: in_house
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

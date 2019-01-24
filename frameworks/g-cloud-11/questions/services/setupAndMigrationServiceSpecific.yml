@@ -1,0 +1,17 @@
+name: Setup or migration service is for specific cloud services
+question: Is your migration service for specific cloud services?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  setupAndMigrationServiceSpecificList:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

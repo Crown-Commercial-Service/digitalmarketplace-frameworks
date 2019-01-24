@@ -1,0 +1,13 @@
+name: Management access
+question: Management access
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - managementAccessAuthentication
+  - managementAccessAuthenticationDescription

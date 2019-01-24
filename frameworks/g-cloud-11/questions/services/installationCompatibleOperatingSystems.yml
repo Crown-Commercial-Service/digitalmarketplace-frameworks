@@ -1,0 +1,29 @@
+name: Compatible operating systems
+question: Which operating systems does your service work with?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: checkboxes
+options:
+  - label: Android
+    value: android
+  - label: iOS
+    value: ios
+  - label: Linux or Unix
+    value: linux_or_unix
+  - label: macOS
+    value: macos
+  - label: Windows
+    value: windows
+  - label: Windows Phone
+    value: windows_phone
+  - label: Other
+    value: other
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

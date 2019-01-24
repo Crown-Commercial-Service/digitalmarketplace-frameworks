@@ -1,0 +1,6 @@
+name: Completing the declaration and adding a service
+question: Do you understand that you must complete your company details, make the supplier declaration and mark at least one service as complete before your application to G-Cloud&nbsp;11 can be considered?
+type: boolean
+assessment:
+  passIfIn:
+    - True

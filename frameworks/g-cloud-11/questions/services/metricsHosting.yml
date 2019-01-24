@@ -1,0 +1,19 @@
+id: metrics
+name: Infrastructure or application metrics
+question: Do you provide infrastructure or application metrics?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  metricsWhat:
+    - true
+  metricsHow:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
