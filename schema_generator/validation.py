@@ -64,6 +64,9 @@ SCHEMAS = {
         ('G-Cloud 10 Cloud Hosting Product', 'g-cloud-10', 'cloud-hosting'),
         ('G-Cloud 10 Cloud Software Product', 'g-cloud-10', 'cloud-software'),
         ('G-Cloud 10 Cloud Support Product', 'g-cloud-10', 'cloud-support'),
+        ('G-Cloud 11 Cloud Hosting Product', 'g-cloud-11', 'cloud-hosting'),
+        ('G-Cloud 11 Cloud Software Product', 'g-cloud-11', 'cloud-software'),
+        ('G-Cloud 11 Cloud Support Product', 'g-cloud-11', 'cloud-support'),
     ],
     'briefs': [
         ('Digital Outcomes and Specialists Digital outcomes Brief',
