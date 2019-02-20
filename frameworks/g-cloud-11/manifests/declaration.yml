@@ -173,3 +173,11 @@
     - primaryContactEmail
     - contactNameContractNotice
     - contactEmailContractNotice
+
+-
+  name: Modern slavery
+  slug: modern-slavery
+  editable: True
+  prefill: False
+  questions:
+    - multiqModernSlavery

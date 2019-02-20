@@ -1,0 +1,13 @@
+name: Modern slavery turnover
+question: Does your organisation turnover £36 million or more a year?
+
+type: boolean
+followup:
+  modernSlaveryReportingRequirements:
+    - true
+  mitigatingFactors3:
+    - true
+  modernSlaveryStatement:
+    - true
+  modernSlaveryStatementOptional:
+    - false
