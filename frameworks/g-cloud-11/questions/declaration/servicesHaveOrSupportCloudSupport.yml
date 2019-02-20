@@ -1,0 +1,17 @@
+name: Services are cloud-related (cloud support)
+question: >
+  If you're submitting a cloud support (lot 3) service, does your service both:
+
+    - enable the delivery of cloud services
+    - comply with the <a href="/suppliers/frameworks/g-cloud-11#legal-documents" target="_blank" rel="noopener noreferrer">definition of cloud support in the framework agreement</a>
+
+type: radios
+options:
+  - label: "Yes"
+  - label: "No"
+  - label: "My organisation isn't submitting cloud support (lot 3) services"
+
+assessment:
+  passIfIn:
+    - "Yes"
+    - "My organisation isn't submitting cloud support (lot 3) services"

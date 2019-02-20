@@ -12,7 +12,8 @@
     If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted. 
 
   questions:
-    - servicesHaveOrSupport
+    - servicesHaveOrSupportCloudHostingCloudSoftware
+    - servicesHaveOrSupportCloudSupport
     - servicesDoNotInclude
     - offerServicesYourselves
     - fullAccountability
