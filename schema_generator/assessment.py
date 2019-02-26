@@ -35,7 +35,7 @@ def generate_schema(framework_slug, question_set, manifest_name):
     }
 
     return {
-        "$schema": "http://json-schema.org/draft-04/schema#",
+        "$schema": "http://json-schema.org/draft-07/schema#",  # hardcoded to draft 7 because jsonschema > 3 supports it
         "title": "{} Declaration Assessment Schema (Definite Pass Schema)".format(framework_slug),
         "type": "object",
         "allOf": [

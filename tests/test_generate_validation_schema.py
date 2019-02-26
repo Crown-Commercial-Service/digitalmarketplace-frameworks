@@ -461,8 +461,7 @@ def test_hours_for_price():
 def test_number_property(id):
     actual = number_property({'id': id, 'type': 'number'})
     expected = {id: {
-        "exclusiveMaximum": True,
-        "maximum": 100,
+        "exclusiveMaximum": 100,
         "minimum": 0,
         "type": "number"
     }}
@@ -475,11 +474,10 @@ def test_number_property_limits(max_value, min_value, integer_only):
         'max_value': max_value, 'min_value': min_value, 'integer_only': integer_only
     }})
     expected = {"number-question": {
-        "exclusiveMaximum": False if integer_only else True,
-        "maximum": max_value,
         "minimum": min_value,
         "type": "integer" if integer_only else "number"
     }}
+    expected['number-question'].update({"maximum": max_value} if integer_only else {"exclusiveMaximum": max_value})
     assert actual == expected
 
 
