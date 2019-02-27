@@ -1,0 +1,12 @@
+name: DUNS Number and Company Registration Number
+question: >
+  Are the DUNS number and company registration number you have provided both for the same organisation that you’ve named in your application?
+
+hint: >
+  Your application might be delayed or rejected if you don’t provide the correct DUNS number and company registration number for the organisation you’ve named in your application.
+
+type: boolean
+assessment:
+  passIfIn:
+    - True
+  discretionary: False
