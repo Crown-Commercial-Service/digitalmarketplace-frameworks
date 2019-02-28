@@ -245,7 +245,7 @@
   editable: false
   edit_questions: true
   questions:
-    - energyEfficientDatacentres
+    - multiqEnergyEfficiency
 
 - name: Pricing
   editable: false
