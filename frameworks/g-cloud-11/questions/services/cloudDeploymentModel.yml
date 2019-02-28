@@ -6,7 +6,7 @@ depends:
     being:
       - cloud-software
 
-type: radios
+type: checkboxes
 options:
   - label: Public cloud
     value: public
