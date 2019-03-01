@@ -1,9 +1,7 @@
 name: Modern slavery statement required
 question: Upload a copy of your organisation’s slavery and human trafficking statement.
 
-hint: >
-  Read the Home Office guidance for information about [how to write a statement and what information it must include](/government/publications/transparency-in-supply-chains-a-practical-guide).
-  Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)
+hint: Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)
 
 hidden: true
 type: upload

@@ -1,13 +1,14 @@
-name: Web interface accessibility standard
-question: What accessibility standards does your web interface meet?
+name: Documentation accessibility standard
+question: What accessibility standards does your documentation meet?
 
 hidden: true
 depends:
   - "on": lot
     being:
       - cloud-hosting
+      - cloud-software
 followup:
-  webInterfaceAccessibilityDescription:
+  documentationAccessibilityDescription:
     - none_or_not_sure
 
 type: radios

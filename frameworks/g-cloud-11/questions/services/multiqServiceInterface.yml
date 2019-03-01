@@ -8,6 +8,8 @@ depends:
 
 type: multiquestion
 questions:
+  - serviceInterface
+  - serviceInterfaceDescription
   - serviceInterfaceAccessibility
   - serviceInterfaceAccessibilityDescription
   - serviceInterfaceTesting

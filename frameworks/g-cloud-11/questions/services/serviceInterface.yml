@@ -1,15 +1,16 @@
-name: Service documentation
-question: Do you provide documentation for your service?
+name: Service interface
+question: Is there a service interface?
 
 depends:
   - "on": lot
     being:
-      - cloud-hosting
       - cloud-software
 followup:
-  documentationFormats:
+  serviceInterfaceDescription:
     - true
-  documentationAccessibility:
+  serviceInterfaceAccessibility:
+    - true
+  serviceInterfaceTesting:
     - true
 
 type: boolean
