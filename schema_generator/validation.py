@@ -167,7 +167,7 @@ def merge_schemas(a, b):
 def empty_schema(schema_name):
     return {
         "title": "{} Schema".format(schema_name),
-        "$schema": "http://json-schema.org/schema#",
+        "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
         "additionalProperties": False,
         "properties": {},
@@ -390,12 +390,14 @@ def pricing_property(question):
 
 def number_property(question):
     limits = question.get('limits', {})
-    return {question['id']: {
-        "exclusiveMaximum": not limits.get('integer_only'),
-        "maximum": limits['max_value'] if limits.get('max_value') is not None else 100,
+    output = {question['id']: {
         "minimum": limits.get('min_value') or 0,
         "type": "integer" if limits.get('integer_only') else "number"
     }}
+    inclusive_max = bool(limits.get('integer_only'))
+    maximum = limits['max_value'] if limits.get('max_value') is not None else 100
+    output[question['id']].update({"maximum": maximum} if inclusive_max else {"exclusiveMaximum": maximum})
+    return output
 
 
 def multiquestion(question):

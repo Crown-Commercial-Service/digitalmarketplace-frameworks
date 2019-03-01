@@ -2,6 +2,13 @@
 
 Records breaking changes from major version bumps
 
+## 14.0.0
+
+Updated the `generate-validation-schemas` and `generate-assessment-schemas` scripts. These scripts now reflect the fact
+that we use JSON Draft 07 standard. The backwards incompatible change is that `exclusiveMaximum` is now an integer.
+Where we used both `exclusiveMaximum` and `maximum`, I've removed `maximum` in favour of solely using `exclusiveMaximum`
+to reduce the repetition. `maximum` by itself now signifies an inclusive maximum.
+ 
 ## 13.0.0
 
 Removed buyers guide links from the frameworks, as they are no longer framework-specific. The guide is tied
