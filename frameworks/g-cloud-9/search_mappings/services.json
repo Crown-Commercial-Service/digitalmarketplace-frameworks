@@ -69,8 +69,7 @@
           "type": "keyword"
         },
         "sortonly_serviceIdHash": {
-          "type": "keyword",
-          "include_in_all": false
+          "type": "keyword"
         },
         "dmagg_lot": {
           "type": "keyword"
