@@ -2,6 +2,14 @@
 
 Records breaking changes from major version bumps
 
+## 15.0.0
+
+Removed the `include_in_all` parameter from the `serviceIdHash` field in the
+search mappings, as `_all` has been deprecated in Elasticsearch 5.6 and will be
+removed in Elasticsearch 6. Consumers of the Elasticsearch search mappings will
+now need to ensure that searches do not include the `serviceIdHash` field to
+remain compliant.
+
 ## 14.0.0
 
 Updated the `generate-validation-schemas` and `generate-assessment-schemas` scripts. These scripts now reflect the fact
