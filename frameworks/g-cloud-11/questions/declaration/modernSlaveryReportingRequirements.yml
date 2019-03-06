@@ -2,7 +2,7 @@ name: Modern slavery reporting requirements
 question: Does your organisation comply with the annual reporting requirements of section 54 of The Modern Slavery Act (2015)?
 
 hint: >
-  You must publish a slavery and human trafficking statement to comply with the act. Read the Home Office guidance for information about [how to write a statement and what information it must include](/government/publications/transparency-in-supply-chains-a-practical-guide).
+  You must publish a slavery and human trafficking statement to comply with the act. Read the Home Office guidance for information about <a href="https://www.gov.uk/government/publications/transparency-in-supply-chains-a-practical-guide" target="_blank" rel="noopener noreferrer">how to write a statement and what information it must include (link opens in a new tab)</a>.
 
 hidden: true
 type: boolean
