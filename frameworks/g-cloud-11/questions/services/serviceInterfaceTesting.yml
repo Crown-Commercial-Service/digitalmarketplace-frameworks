@@ -5,6 +5,8 @@ depends:
     being:
       - cloud-software
 
+hidden: true
+
 type: textbox_large
 max_length_in_words: 200
 

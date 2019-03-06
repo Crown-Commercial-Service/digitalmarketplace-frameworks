@@ -8,6 +8,7 @@ depends:
 followup:
   serviceInterfaceAccessibilityDescription:
     - none
+hidden: true
 
 type: radios
 options:
