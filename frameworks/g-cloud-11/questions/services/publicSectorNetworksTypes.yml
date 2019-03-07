@@ -8,7 +8,7 @@ depends:
       - cloud-software
 followup:
   publicSectorNetworksOther:
-    - true
+    - other
 
 type: checkboxes
 options:
