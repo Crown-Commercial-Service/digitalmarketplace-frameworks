@@ -261,6 +261,7 @@
 - name: Energy efficiency
   questions:
     - energyEfficientDatacentres
+    - energyEfficientDatacentresDescription
 
 - name: Pricing
   questions:

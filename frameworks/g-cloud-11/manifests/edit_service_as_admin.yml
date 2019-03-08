@@ -210,7 +210,7 @@
 - name: Energy efficiency
   editable: true
   questions:
-    - energyEfficientDatacentres
+    - multiqEnergyEfficiency
 
 - name: Pricing
   editable: true
