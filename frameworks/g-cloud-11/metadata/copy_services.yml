@@ -67,8 +67,6 @@ questions_to_copy:
   - installationCompatibleOperatingSystems
   - lot
   - lotName
-  - managementAccessAuthentication
-  - managementAccessAuthenticationDescription
   - metrics
   - metricsHow
   - metricsWhat
