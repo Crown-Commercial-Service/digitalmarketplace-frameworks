@@ -4,7 +4,8 @@
   "type": "object",
   "anyOf": [
     {"$ref": "#/definitions/copying-services"},
-    {"$ref": "#/definitions/following-framework"}
+    {"$ref": "#/definitions/following-framework"},
+    {"$ref": "#/definitions/service-questions-to-scan-for-bad-words"}
   ],
   "definitions": {
     "copying-services": {
@@ -36,6 +37,18 @@
       "oneOf": [
         {"required": ["slug"]},
         {"required": ["framework"]}
+      ],
+      "additionalProperties": false
+    },
+    "service-questions-to-scan-for-bad-words": {
+      "properties": {
+        "service_questions": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      },
+      "required": [
+        "service_questions"
       ],
       "additionalProperties": false
     }
