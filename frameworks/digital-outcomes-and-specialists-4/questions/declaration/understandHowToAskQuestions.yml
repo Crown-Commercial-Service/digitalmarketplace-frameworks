@@ -1,0 +1,10 @@
+name: Asking questions
+question: >
+  Do you understand that you must ask ‘clarification’ questions on the <a href="https://www.digitalmarketplace.service.gov.uk/suppliers/frameworks/digital-outcomes-and-specialists-3/updates" target="_blank" rel="noopener noreferrer">Digital Outcomes and Specialists&nbsp;3 updates page (link opens in a new tab)</a> in your Digital Marketplace account?
+hint: >
+  You can ask clarification questions about Digital Outcomes and Specialists&nbsp;3 until 5pm BST 8 August 2018. All questions and answers will be posted regularly on the Digital Outcomes and Specialists&nbsp;3 updates page. You will be notified by email when new clarification questions and answers are available.
+
+type: boolean
+assessment:
+  passIfIn:
+    - True

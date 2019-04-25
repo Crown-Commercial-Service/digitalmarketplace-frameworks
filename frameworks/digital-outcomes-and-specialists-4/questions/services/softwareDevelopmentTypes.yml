@@ -1,0 +1,43 @@
+question: What types of software development can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: API development
+    description: Design and evolve secure APIs.
+  - label: Cloud-based service development
+    description: Understand how using the cloud might change an application’s architecture. Develop, deploy and maintain applications in the cloud where appropriate.
+  - label: Content management system
+    description: Build, maintain, customise and extend a CMS.
+  - label: Customer relationship management
+    description: Build, maintain, customise and extend a CRM system.
+  - label: Database development
+    description: Build and maintain a persistent storage solution to meet the needs of the project or service.
+  - label: Desktop application development
+    description: Build and maintain applications for desktop computers based on user needs.
+  - label: Front-end web application development
+    description: Build and maintain the user interface of a web application based on user needs.
+  - label: Game development
+    description: Develop games, eg for education or training.
+  - label: Geographic information systems (GIS) development
+    description: Build and maintain GIS systems using open standards.
+  - label: Machine learning
+    description: Understand a variety of machine learning techniques and apply them appropriately.
+  - label: Mainframe
+    description: Implement and update mainframe technologies. Migrate away from mainframe applications and tools when appropriate.
+  - label: Message queues
+    description: Design and implement systems using message queues. Understand the benefits of message queues and how they fit within a larger architecture.
+  - label: Mobile application development
+    description: Build and maintain applications for mobile devices based on user needs.
+  - label: Search
+    description: Develop search systems that index content so users can find it. Structure search tools based on source data.
+  - label: Systems integration
+    description: Implement or update an architecture across multiple systems. Integrate core legacy systems where necessary.
+  - label: Web application development
+    description: Build and maintain web applications using front-end and server-side technologies to create accessible, user-centred digital services.
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

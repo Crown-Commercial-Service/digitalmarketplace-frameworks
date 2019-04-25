@@ -1,0 +1,12 @@
+name: Employment status
+question: >
+  Please confirm that you are aware that staff delivering services under this framework must be either:
+
+    - your employees
+    - your subcontractors’ employees
+    - contractors employed by you
+
+type: boolean
+assessment:
+  passIfIn:
+    - True

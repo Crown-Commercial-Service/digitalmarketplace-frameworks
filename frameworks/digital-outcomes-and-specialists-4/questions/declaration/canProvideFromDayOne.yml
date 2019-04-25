@@ -1,0 +1,8 @@
+name: Providing services straight away
+question: >
+  If your application is successful, can you provide all the services you’re submitting to Digital Outcomes and Specialists&nbsp;3 from the first day you’re awarded a place on the framework?
+type: boolean
+hint: You must be ready to provide the services you’re submitting from October 2018.
+assessment:
+  passIfIn:
+    - True

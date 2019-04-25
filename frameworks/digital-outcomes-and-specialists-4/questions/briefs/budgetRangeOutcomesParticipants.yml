@@ -1,0 +1,25 @@
+name: Budget range
+id: budgetRange
+question: Budget range
+question_advice: |
+  Include how much you can spend.
+
+  Suppliers will find it helpful if you can provide a breakdown of costs.
+
+  You must have budget approval before you publish your requirements.
+
+  You should [talk to suppliers before you buy](https://www.gov.uk/guidance/talking-to-suppliers-before-you-buy-digital-marketplace-services)
+  so you know how much the work might cost.
+optional: true
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - user-research-participants
+validations:
+  -
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'
+empty_message: Set budget range

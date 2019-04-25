@@ -1,0 +1,126 @@
+-
+  name: Lab name
+  editable: False
+  questions:
+    - serviceName
+
+- name: Service essentials
+  editable: False
+  questions:
+    - helpGovernmentImproveServices
+    - bespokeSystemInformation
+    - dataProtocols
+    - openStandardsPrinciples
+
+- name: User research participants essentials
+  editable: False
+  questions:
+    - anonymousRecruitment
+    - manageIncentives
+
+- name: Team capabilities
+  editable: False
+  questions:
+    - performanceAnalysis
+    - security
+    - delivery
+    - softwareDevelopment
+    - supportAndOperations
+    - testingAndAuditing
+    - userExperienceAndDesign
+    - userResearch
+
+- name: Outcomes locations
+  editable: False
+  questions:
+    - outcomesLocations
+
+- name: Individual specialist roles
+  editable: False
+  questions:
+    - agileCoach
+    - businessAnalyst
+    - communicationsManager
+    - contentDesigner
+    - securityConsultant
+    - dataArchitect
+    - dataEngineer
+    - dataScientist
+    - deliveryManager
+    - designer
+    - developer
+    - performanceAnalyst
+    - portfolioManager
+    - productManager
+    - programmeManager
+    - qualityAssurance
+    - serviceManager
+    - technicalArchitect
+    - userResearcher
+    - webOperations
+
+- name: Lab address
+  editable: False
+  questions:
+    - labAddressBuilding
+    - labAddressTown
+    - labAddressPostcode
+
+- name: Transport
+  editable: False
+  questions:
+    - labPublicTransport
+    - labCarPark
+
+- name: Lab size
+  editable: False
+  questions:
+    - labSize
+
+- name: Viewing
+  editable: False
+  questions:
+    - labViewingArea
+    - labStreaming
+    - labDesktopStreaming
+    - labDeviceStreaming
+    - labEyeTracking
+    - labWiFi
+
+- name: Technical assistance
+  editable: False
+  questions:
+    - labTechAssistance
+
+- name: Hospitality
+  editable: False
+  questions:
+    - labHosting
+    - labWaitingArea
+
+- name: Facilities
+  editable: False
+  questions:
+    - labToilets
+    - labBabyChanging
+
+- name: Accessibility
+  editable: False
+  questions:
+    - labAccessibility
+
+- name: Price
+  editable: False
+  questions:
+    - labPrice
+
+- name: Recruitment approach
+  editable: False
+  questions:
+    - recruitMethods
+    - recruitFromList
+
+- name: Location
+  editable: False
+  questions:
+    - recruitLocations

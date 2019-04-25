@@ -1,0 +1,144 @@
+-
+  name: Lab name
+  editable: True
+  questions:
+    - serviceName
+
+- name: Service essentials
+  editable: True
+  description: >
+    You must be able to truthfully answer ‘yes’ to every question  for your
+    bid to be considered eligible. If you can’t answer ‘yes’ to every question
+    in this section, it’s very unlikely that your bid will be accepted.
+  questions:
+    - helpGovernmentImproveServices
+    - bespokeSystemInformation
+    - dataProtocols
+    - openStandardsPrinciples
+
+- name: User research participants essentials
+  editable: True
+  description: >
+    You must be able to truthfully answer ‘yes’ to every question for your bid
+    to be considered eligible. If you can’t answer ‘yes’ to every question in
+    this section, it’s very unlikely that your bid will be accepted.
+  questions:
+    - anonymousRecruitment
+    - manageIncentives
+
+- name: Team capabilities
+  summary_page_description: >
+    You must be able to provide at least one team capability to be eligible to
+    supply digital outcomes.
+  editable: False
+  edit_questions: True
+  questions:
+    - performanceAnalysis
+    - security
+    - delivery
+    - softwareDevelopment
+    - supportAndOperations
+    - testingAndAuditing
+    - userExperienceAndDesign
+    - userResearch
+
+- name: Outcomes locations
+  editable: true
+  questions:
+    - outcomesLocations
+
+- name: Individual specialist roles
+  summary_page_description: >
+    You must be able to provide at least one individual specialist role to be
+    eligible to supply digital specialists.
+  editable: False
+  edit_questions: True
+  questions:
+    - agileCoach
+    - businessAnalyst
+    - communicationsManager
+    - contentDesigner
+    - securityConsultant
+    - dataArchitect
+    - dataEngineer
+    - dataScientist
+    - deliveryManager
+    - designer
+    - developer
+    - performanceAnalyst
+    - portfolioManager
+    - productManager
+    - programmeManager
+    - qualityAssurance
+    - serviceManager
+    - technicalArchitect
+    - userResearcher
+    - webOperations
+
+- name: Lab address
+  editable: True
+  questions:
+    - labAddressBuilding
+    - labAddressTown
+    - labAddressPostcode
+
+- name: Transport
+  editable: True
+  description: >
+    Help buyers understand how easy it is for visitors to reach your studio.
+  questions:
+    - labPublicTransport
+    - labCarPark
+
+- name: Lab size
+  editable: True
+  questions:
+    - labSize
+
+- name: Viewing
+  editable: True
+  questions:
+    - labViewingArea
+    - labStreaming
+    - labDesktopStreaming
+    - labDeviceStreaming
+    - labEyeTracking
+    - labWiFi
+
+- name: Technical assistance
+  editable: True
+  questions:
+    - labTechAssistance
+
+- name: Hospitality
+  editable: True
+  questions:
+    - labHosting
+    - labWaitingArea
+
+- name: Facilities
+  editable: True
+  questions:
+    - labToilets
+    - labBabyChanging
+
+- name: Accessibility
+  editable: True
+  questions:
+    - labAccessibility
+
+- name: Price
+  editable: True
+  questions:
+    - labPrice
+
+- name: Recruitment approach
+  editable: True
+  questions:
+    - recruitMethods
+    - recruitFromList
+
+- name: Location
+  editable: True
+  questions:
+    - recruitLocations

@@ -1,0 +1,26 @@
+name: Essential skills and experience
+question: Give evidence of the essential skills and experience
+question_advice: |
+  The buyer will assess and score your evidence to shortlist the best suppliers.
+
+  You’ll need to meet or exceed their requirements to get through to the next stage.
+
+  <h3>Evidence structure</h3>
+  <div class="explanation-list">
+    <p class="lead">When you write your evidence, you should be specific about:</p>
+
+    <ul class="list-bullet">
+      <li>what the situation was</li>
+      <li>the work {% if brief.lotSlug == 'digital-outcomes' %}the team{% elif brief.lotSlug == 'digital-specialists' %}the specialist{% elif brief.lotSlug == 'user-research-participants' %}you{% endif %} did</li>
+      <li>what the results were</li>
+    </ul>
+  </div>
+
+  You should only provide one example for each essential requirement (unless the buyer specifies otherwise).
+
+  You can reuse examples across different essential or nice-to-have requirements if you need to.
+
+type: dynamic_list
+dynamic_field: 'brief.essentialRequirements'
+questions:
+  - evidence

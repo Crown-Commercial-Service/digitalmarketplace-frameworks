@@ -1,0 +1,16 @@
+question: Quality assurance analyst
+name: Quality assurance analyst
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+any_of: specialist
+questions:
+  - qualityAssuranceLocations
+  - qualityAssuranceDayRate
+
+empty_message: You haven’t added a quality assurance analyst
+
+hint: Ensure the quality of the digital service by testing it manually and writing automated tests covering a range of conditions.

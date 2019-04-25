@@ -1,0 +1,15 @@
+name: Expected contract length
+question: Expected contract length
+question_advice: Contracts can’t last for more than 2 years.
+type: text
+optional: true
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+validations:
+  -
+    name: under_character_limit
+    message: "Your answer must be no more than 100 characters."
+empty_message: Set expected contract length

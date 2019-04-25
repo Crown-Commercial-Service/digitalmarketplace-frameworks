@@ -1,0 +1,10 @@
+-
+  name: Apply for this opportunity
+  editable: True
+  questions:
+    - availability
+    - dayRate
+    - essentialRequirementsMet
+    - essentialRequirements
+    - niceToHaveRequirements
+    - respondToEmailAddress

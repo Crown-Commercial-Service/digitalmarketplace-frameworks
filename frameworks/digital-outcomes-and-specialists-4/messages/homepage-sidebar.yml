@@ -1,0 +1,16 @@
+coming:
+  heading: 'Digital Outcomes and Specialists&nbsp;3 coming soon'
+  messages:
+    - 'Provide digital outcomes and specialists, and user research studios and participants.'
+    - 'You need an account to receive notifications about when you can apply.'
+
+open:
+  heading: 'Digital Outcomes and Specialists&nbsp;3 is open for applications'
+  messages:
+    - 'You need an account to apply.'
+    - 'The application deadline is 5pm&nbsp;BST, 22 August 2018.'
+
+pending:
+  heading: 'Digital Outcomes and Specialists&nbsp;3 is closed for applications'
+  messages:
+    - 'Applications are being reviewed.'

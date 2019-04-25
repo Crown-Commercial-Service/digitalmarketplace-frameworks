@@ -1,0 +1,7 @@
+name: Status
+id: statusOpenClosed
+question: statusOpenClosed
+type: radios
+options:
+  - label: open
+  - label: closed

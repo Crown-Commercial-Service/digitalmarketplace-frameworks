@@ -1,0 +1,8 @@
+name: Providing management information (MI)
+question: >
+  Do you confirm that you’re prepared to provide all the monthly Digital Outcomes and Specialists&nbsp;3-related management information (MI)
+  to CCS as outlined in the <a href="/suppliers/frameworks/digital-outcomes-and-specialists-3" target="_blank" rel="noopener noreferrer">reporting template (link opens in a new tab)</a>?
+type: boolean
+assessment:
+  passIfIn:
+    - True

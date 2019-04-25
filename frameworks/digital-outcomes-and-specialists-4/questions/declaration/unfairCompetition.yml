@@ -1,0 +1,14 @@
+name: No unfair access to information
+question: >
+  Please confirm that no party has:
+
+    - colluded to set prices with other suppliers or buyers
+    - entered into any arrangement with another person so that person refrains from submitting an application
+    - given access to information relating to the application to another person, or offered or given payment to another person in exchange for information
+    - given inducement or valuable consideration to another person (except where such communication takes place with people who are also participants in the application, or where disclosure is made in confidence to obtain necessary information or security for the application)
+    - canvassed, or attempted to buy information from, any government agent about this procurement
+
+type: boolean
+assessment:
+  passIfIn:
+    - True

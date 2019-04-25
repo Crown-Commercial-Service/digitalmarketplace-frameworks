@@ -1,0 +1,180 @@
+-
+  name: Title
+  editable: True
+  step: 1
+  questions:
+    - titleSpecialists
+    - titleOutcomesParticipants
+-
+  name: Specialist role
+  editable: True
+  step: 1
+  questions:
+    - specialistRole
+-
+  name: Location
+  editable: True
+  step: 1
+  questions:
+    - locationOutcomes
+    - locationSpecialists
+    - locationParticipants
+-
+  name: Description of work
+  editable: True
+  step: 1
+  description: |
+    This will help suppliers decide whether to apply.
+  questions:
+    - organisation
+    - backgroundInformation
+    - outcome
+    - specialistWork
+    - endUsers
+    - earlyMarketEngagement
+    - workAlreadyDone
+    - phase
+    - existingTeamOutcomes
+    - existingTeamSpecialists
+    - researchRounds
+    - participantsPerRound
+    - researchDates
+    - researchFrequency
+    - researchOutOfHours
+    - researchAddress
+    - accessRestrictions
+    - participantSpecification
+    - participantAccessibilityNeeds
+    - researchPlan
+    - workplaceAddress
+    - workingArrangements
+    - securityClearance
+    - startDate
+    - contractLength
+    - additionalTermsOutcomesSpecialists
+    - additionalTermsParticipants
+    - budgetRangeOutcomesParticipants
+    - budgetRangeSpecialists
+    - summary
+
+-
+  name: Shortlist and evaluation process
+  editable: True
+  step: 2
+  description: |
+    There are 3 stages to finding the supplier that best meets your needs.
+
+    ##1\. View suppliers who applied
+    When suppliers apply, they declare which of your essential and nice&#8209;to&#8209;have skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
+
+    ##2\. Create a shortlist
+    Once you have a list of eligible suppliers, you can exclude the suppliers who:
+
+    - have the least nice&#8209;to&#8209;have skills and experience
+    - can’t start when you need them to
+
+    You may need to ask for evidence of skills and experience if you have too many suppliers.
+
+
+    ##3\. Evaluate your shortlist
+    Ask the shortlisted suppliers for:
+
+      - evidence of their skills and experience
+      - a proposal explaining how they plan to meet your requirements
+
+    You must tell suppliers how you’ll evaluate and assess them.
+
+  questions:
+    - numberOfSuppliersOutcomes
+    - weightingOutcomes
+    - technicalCompetenceCriteriaOutcomes
+    - culturalFitCriteriaOutcomes
+    - priceCriteria
+    - evaluationTypeOutcomes
+
+-
+  name: Shortlist and evaluation process
+  editable: True
+  step: 2
+  description: |
+    There are 3 stages to finding the specialist that best meets your needs.
+
+    ##1\. View specialists who applied
+    When specialists apply, they declare which of your essential and nice&#8209;to&#8209;have skills and experience they have. Specialists who don’t meet your essential skills and experience are excluded.
+
+    ##2\. Create a shortlist
+    Once you have a list of eligible specialists, you can exclude the specialists who:
+
+    - have the least nice&#8209;to&#8209;have skills and experience
+    - can’t start when you need them to
+
+    You may need to ask for evidence of skills and experience if you have too many specialists.
+
+
+    ##3\. Evaluate your shortlist
+    Ask the shortlisted specialists for evidence of their skills and experience.
+
+    You must tell specialists how you’ll evaluate and assess them.
+
+  questions:
+    - numberOfSuppliersSpecialists
+    - weightingSpecialists
+    - technicalCompetenceCriteriaSpecialists
+    - culturalFitCriteriaSpecialists
+    - evaluationTypeSpecialists
+
+-
+  name: Shortlist and evaluation process
+  editable: True
+  step: 2
+  description: |
+    There are 3 stages to finding the supplier that best meets your needs.
+
+    ##1\. View suppliers who applied
+    When suppliers apply, they declare which of your essential and nice&#8209;to&#8209;have skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.
+
+    ##2\. Create a shortlist
+    Once you have a list of eligible suppliers, you can exclude the suppliers who:
+
+    - have the least nice&#8209;to&#8209;have skills and experience
+    - can’t start when you need them to
+
+    You may need to ask for evidence of skills and experience if you have too many suppliers.
+
+
+    ##3\. Evaluate your shortlist
+    Ask the shortlisted suppliers for:
+
+      - evidence of their skills and experience
+      - a proposal explaining how they plan to recruit particpants
+
+    You must tell suppliers how you’ll evaluate and assess them.
+
+  questions:
+    - numberOfSuppliersParticipants
+    - weightingParticipants
+    - technicalCompetenceCriteriaParticipants
+    - evaluationTypeParticipants
+
+-
+  name: Set how long your requirements will be open for
+  editable: True
+  step: 3
+  questions:
+    - requirementsLengthSpecialists
+
+-
+  name: Describe question and answer session
+  editable: True
+  step: 3
+  description: |
+    While the application period is open, you need to reply to all questions suppliers ask about your requirements.
+
+    When a supplier asks a question, you’ll be sent an email to the email address you registered with.
+
+    You’ll need to post all questions and answers on the Digital Marketplace so that all suppliers can see them.
+
+    Providing a question and answer session means you can explain your needs and answer any questions quickly.
+  questions:
+    - questionAndAnswerSessionDetailsOutcomesParticipants
+    - questionAndAnswerSessionDetailsSpecialists
