@@ -1,0 +1,16 @@
+question: Data scientist
+name: Data scientist
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+any_of: specialist
+questions:
+  - dataScientistLocations
+  - dataScientistDayRate
+
+empty_message: You haven’t added a data scientist
+
+hint: Identify complex business problems while working with policy and operations teams to understand where data can add value.

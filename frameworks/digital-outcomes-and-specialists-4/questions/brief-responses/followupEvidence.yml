@@ -1,0 +1,12 @@
+question: 'Evidence of {{ item }}'
+id: evidence
+type: textbox_large
+max_length_in_words: 100
+hidden: True
+validations:
+  -
+    name: answer_required
+    message: 'You must provide evidence if you answer ‘yes’ to this question.'
+  -
+    name: under_100_words
+    message: 'Your answer must be no more than 100 words.'

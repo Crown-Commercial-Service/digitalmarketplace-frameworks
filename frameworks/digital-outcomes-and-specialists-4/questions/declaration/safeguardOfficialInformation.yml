@@ -1,0 +1,8 @@
+name: Safeguarding official information
+question: >
+  Do you agree to respect <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/715778/May-2018_Government-Security-Classifications-2.pdf" target="_blank" rel="noopener noreferrer">government security classifications (PDF, 528KB, link opens in a new tab)</a>
+  and protect official government information, eg by not revealing that government is the client when advertising for participants?
+type: boolean
+assessment:
+  passIfIn:
+    - True

@@ -1,0 +1,6 @@
+name: Skills and resources
+question: Does your organisation have the skills and resources to provide the services you’re submitting for Digital Outcomes and Specialists&nbsp;4?
+type: boolean
+assessment:
+  passIfIn:
+    - True

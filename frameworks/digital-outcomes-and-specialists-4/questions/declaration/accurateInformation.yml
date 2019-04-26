@@ -1,0 +1,7 @@
+name: Declaration accuracy
+question: >
+  Are all the answers in your supplier declaration truthful?
+type: boolean
+assessment:
+  passIfIn:
+    - True

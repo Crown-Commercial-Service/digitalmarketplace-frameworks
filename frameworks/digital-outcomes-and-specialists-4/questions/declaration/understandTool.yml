@@ -1,0 +1,6 @@
+name: Completing the declaration and adding a service
+question: Do you understand that you must make the supplier declaration and mark at least one service as complete before your application to Digital Outcomes and Specialists&nbsp;4 can be considered?
+type: boolean
+assessment:
+  passIfIn:
+    - True

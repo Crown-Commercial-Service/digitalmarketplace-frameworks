@@ -1,0 +1,18 @@
+name: Essential skills and experience
+question: Do you have all the essential skills and experience?
+question_advice: >
+  <ul class="list-bullet">
+    {% for requirement in brief.essentialRequirements %}
+      <li>{{ requirement }}</li>
+    {% endfor %}
+  </ul>
+
+type: boolean
+required_value: true
+validations:
+  -
+    name: not_required_value
+    message: 'To carry on with your application, you need to show you have all the essential skills and experience.'
+  -
+    name: answer_required
+    message: 'You must answer ‘yes’ or ‘no’ to this question.'

@@ -1,0 +1,16 @@
+question: User researcher
+name: User researcher
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+any_of: specialist
+questions:
+  - userResearcherLocations
+  - userResearcherDayRate
+
+empty_message: You haven’t added a user researcher
+
+hint: Design, conduct and analyse user research using a range of techniques, eg one-to-one interviews or usability tests.

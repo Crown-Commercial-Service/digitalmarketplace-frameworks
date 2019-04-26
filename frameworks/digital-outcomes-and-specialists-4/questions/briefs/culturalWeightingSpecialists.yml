@@ -1,0 +1,28 @@
+id: culturalWeighting
+question: 'Cultural fit'
+question_advice: >
+  Cultural fit is how well you and the specialist will work together.
+  If the specialist’s values and behaviour are similar to your organisation’s, they should be a good cultural fit.
+hint: 'This can be between 5% and 20%'
+
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+
+type: number
+unit: "%"
+unit_in_full: "percent"
+unit_position: "after"
+limits:
+  min_value: 5
+  max_value: 20
+  integer_only: true
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: not_a_number
+    message: 'Weighting must be a number between 5 and 20.'
+  - name: total_should_be_100
+    message: 'Total must add up to 100%.'

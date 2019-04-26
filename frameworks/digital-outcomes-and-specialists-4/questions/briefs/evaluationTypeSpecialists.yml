@@ -1,0 +1,45 @@
+name: Assessment methods
+id: evaluationType
+question: How you’ll assess specialists
+question_advice: |
+  You must ask all specialists that reach the assessment stage for a work history.
+
+  Choose additional ways to assess specialists.
+
+  You can only use the methods you choose here, eg if you don’t select an interview, you won’t be able to interview specialists.
+
+  Read about [assessment methods](https://www.gov.uk/guidance/ways-to-assess-digital-outcomes-and-specialists-suppliers).
+type: checkboxes
+optional: true
+
+before_summary_value:
+  - "Work history"
+
+options:
+  - label: "Reference"
+    description: >
+       A written reference is a good way of confirming whether a specialist has done the work they’ve said they’ve
+       done. You should always ask for references that relate to a specific timeframe, eg work they’ve done in the
+       last 2 years.
+  - label: "Interview"
+    description: >
+       An interview can help you understand whether a specialist or team has the skills needed to work on your project.
+        It will also help you see whether they will be a good fit for your existing team. You should follow an agreed
+        format in which you ask all specialists the same set of questions.
+  - label: "Scenario or test"
+    description: >
+       A scenario or test can help you confirm a supplier’s skill level and understanding in a controlled environment,
+       eg a coding test for a developer or the approach a product manager would take to solve an example problem.
+  - label: "Presentation"
+    description: >
+       A presentation can help you understand a specialist’s approach to delivering work,
+       eg a practical demonstration of a prototype or discovery kick-off meeting.
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'You need to answer this question.'
+empty_message: Choose assessment method

@@ -1,0 +1,17 @@
+name: Early market engagement
+question: Early market engagement
+question_advice: If you’ve done early market engagement, you must include a summary of any relevant findings.
+type: textbox_large
+optional: true
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+      - user-research-participants
+validations:
+  -
+    name: under_200_words
+    message: 'Your answer must be no more than 200 words.'
+empty_message: Describe early market engagement

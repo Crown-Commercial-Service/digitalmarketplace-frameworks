@@ -1,0 +1,16 @@
+question: Data engineer
+name: Data engineer
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+any_of: specialist
+questions:
+  - dataEngineerLocations
+  - dataEngineerDayRate
+
+empty_message: You haven’t added a data engineer
+
+hint: Design, build, test and maintain data management systems, making sure they meet business requirements and user needs.

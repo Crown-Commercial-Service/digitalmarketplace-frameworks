@@ -1,0 +1,76 @@
+-
+  name: Overview
+  questions:
+    - specialistRole
+    - summary
+    - startDate
+    - contractLength
+    - locationOutcomes
+    - locationSpecialists
+    - locationParticipants
+    - researchDates
+    - organisation
+    - budgetRangeOutcomesParticipants
+    - budgetRangeSpecialists
+-
+  name: About the work
+  questions:
+    - backgroundInformation
+    - outcome
+    - endUsers
+    - earlyMarketEngagement
+    - workAlreadyDone
+    - existingTeamOutcomes
+    - existingTeamSpecialists
+    - specialistWork
+    - phase
+-
+  name: About the research
+  questions:
+    - participantSpecification
+    - participantAccessibilityNeeds
+    - researchPlan
+    - researchAddress
+    - accessRestrictions
+    - researchRounds
+    - participantsPerRound
+    - researchFrequency
+    - researchOutOfHours
+-
+  name: Work setup
+  questions:
+    - workplaceAddress
+    - workingArrangements
+    - securityClearance
+-
+  name: Additional information
+  questions:
+    - additionalTermsOutcomesSpecialists
+    - additionalTermsParticipants
+-
+  name: Skills and experience
+  summary_page_description: Buyers will use the essential and nice-to-have skills and experience to help them evaluate suppliers’ technical competence.
+  questions:
+    - essentialRequirementsOutcomes
+    - essentialRequirementsSpecialists
+    - essentialRequirementsParticipants
+    - niceToHaveRequirementsOutcomes
+    - niceToHaveRequirementsSpecialists
+    - niceToHaveRequirementsParticipants
+-
+  name: How suppliers will be evaluated
+  questions:
+    - numberOfSuppliersOutcomes
+    - numberOfSuppliersSpecialists
+    - numberOfSuppliersParticipants
+    - successCriteriaOutcomes
+    - successCriteriaParticipants
+    - culturalFitCriteriaOutcomes
+    - culturalFitCriteriaSpecialists
+    - priceCriteria
+    - evaluationTypeOutcomes
+    - evaluationTypeSpecialists
+    - evaluationTypeParticipants
+    - weightingOutcomes
+    - weightingSpecialists
+    - weightingParticipants

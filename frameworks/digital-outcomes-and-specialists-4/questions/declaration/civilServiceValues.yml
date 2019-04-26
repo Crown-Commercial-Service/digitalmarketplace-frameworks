@@ -1,0 +1,7 @@
+name: Civil Service values
+question: >
+  Please confirm you will support the <a href="https://www.gov.uk/government/publications/civil-service-code/the-civil-service-code" target="_blank" rel="noopener noreferrer">Civil Service values (link opens in a new tab)</a> and, if asked, provide evidence of how you do it.
+type: boolean
+assessment:
+  passIfIn:
+    - True

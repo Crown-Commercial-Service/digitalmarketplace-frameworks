@@ -1,0 +1,27 @@
+question: Where will your designer work?
+question_advice: Choose all the locations where the specialist can work at buyers’ sites, and whether they can work offsite.
+hint: >
+    [View locations (PDF, 262KB)](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/maps/regions--former-government-office-regions--gors---effective-at-31st-december--2011.pdf)
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: checkboxes
+options:
+  - label: "Offsite"
+  - label: "Scotland"
+  - label: "North East England"
+  - label: "North West England"
+  - label: "Yorkshire and the Humber"
+  - label: "East Midlands"
+  - label: "West Midlands"
+  - label: "East of England"
+  - label: "Wales"
+  - label: "London"
+  - label: "South East England"
+  - label: "South West England"
+  - label: "Northern Ireland"
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
