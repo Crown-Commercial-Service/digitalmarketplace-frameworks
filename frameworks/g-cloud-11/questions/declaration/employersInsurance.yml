@@ -13,4 +13,5 @@ options:
 assessment:
   passIfIn:
     - "Yes – your organisation has, or will have in place, employer’s liability insurance of at least £5 million."
+    - "Yes – your organisation has, or will have in place, employer’s liability insurance of at least £5 million and you will provide certification before the framework is awarded."
     - "Not applicable - your organisation does not need employer’s liability insurance because your organisation employs only the owner or close family members."
