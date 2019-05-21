@@ -105,3 +105,16 @@ def test_g11_declaration_assessment(declaration_update, use_baseline, should_pas
 
     with (_empty_context_manager() if should_pass else pytest.raises(jsonschema.ValidationError)):
         jsonschema.validate(candidate, schema)
+
+
+@pytest.mark.parametrize('use_baseline', (True, False))
+def test_g11_declaration_assessment_passes_if_answer_missing(use_baseline):
+    schema = generate_schema("g-cloud-11", "declaration", "declaration")
+    if use_baseline:
+        schema = schema["definitions"]["baseline"]
+
+    candidate = _definite_pass_g11_declaration()
+    candidate.pop('modernSlaveryReportingRequirements')
+    candidate['modernSlaveryTurnover'] = False
+
+    jsonschema.validate(candidate, schema)
