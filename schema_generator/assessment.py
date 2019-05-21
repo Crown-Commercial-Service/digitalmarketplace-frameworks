@@ -19,11 +19,14 @@ def generate_schema(framework_slug, question_set, manifest_name):
         manifest_name,
     )
 
-    assessed_questions = tuple(
-        question
-        for question in chain.from_iterable(section.questions for section in manifest.sections)
-        if "passIfIn" in question.get("assessment", {})
-    )
+    assessed_questions = []
+    for question in chain.from_iterable(section.questions for section in manifest.sections):
+        if question.type == 'multiquestion':
+            for nested_question in question.questions:
+                if "passIfIn" in nested_question.get("assessment", {}):
+                    assessed_questions.append(nested_question)
+        elif "passIfIn" in question.get("assessment", {}):
+            assessed_questions.append(question)
 
     discretionary_properties = {
         question.id: _enum_for_question(question)

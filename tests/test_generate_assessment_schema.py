@@ -6,14 +6,14 @@ import pytest
 from schema_generator.assessment import generate_schema
 
 
-# we define a basic, assessment-passing, g9 declaration here (though interestingly it doesn't include informational
+# we define a basic, assessment-passing, g11 declaration here (though interestingly it doesn't include informational
 # fields so it wouldn't actually pass the *validation* schema). this could be fleshed out to enable it to be used as a
 # common "example" valid declaration from other apps: having it live here in this repository and regularly checked
 # in these tests ensures that it is always up to date with what is defined in the framework's yaml files... future work
 # to look at.
 
 
-def _definite_pass_g9_declaration():
+def _definite_pass_g11_declaration():
     return {
         # discretionary
         "GAAR": False,
@@ -26,6 +26,7 @@ def _definite_pass_g9_declaration():
         "graveProfessionalMisconduct": False,
         "influencedContractingAuthority": False,
         "misleadingInformation": False,
+        "modernSlaveryReportingRequirements": True,
         "seriousMisrepresentation": False,
         "significantOrPersistentDeficiencies": False,
         "taxEvasion": False,
@@ -50,6 +51,7 @@ def _definite_pass_g9_declaration():
         "fullAccountability": True,
         "helpBuyersComplyTechnologyCodesOfPractice": True,
         "informationChanges": True,
+        "modernSlaveryTurnover": True,
         "offerServicesYourselves": True,
         "organisedCrime": False,
         "proofOfClaims": True,
@@ -86,17 +88,33 @@ def _empty_context_manager():
     # discretionary
     ({"graveProfessionalMisconduct": True}, False, False,),
     ({"graveProfessionalMisconduct": True}, True, True,),
+    # Multiquestion discretionary
+    ({"modernSlaveryReportingRequirements": False}, True, True,),
+    ({"modernSlaveryReportingRequirements": False}, False, False,),
 ))
-def test_g9_declaration_assessment(declaration_update, use_baseline, should_pass):
+def test_g11_declaration_assessment(declaration_update, use_baseline, should_pass):
     # these test(s) are a bit funny in that they all make the same call to the function-under-test and then
     # assert a different thing about the return value, so we could improve on run time if necessary by only performing
     # the call once if necessary...
-    schema = generate_schema("g-cloud-9", "declaration", "declaration")
+    schema = generate_schema("g-cloud-11", "declaration", "declaration")
     if use_baseline:
         schema = schema["definitions"]["baseline"]
 
-    candidate = _definite_pass_g9_declaration()
+    candidate = _definite_pass_g11_declaration()
     candidate.update(declaration_update)
 
     with (_empty_context_manager() if should_pass else pytest.raises(jsonschema.ValidationError)):
         jsonschema.validate(candidate, schema)
+
+
+@pytest.mark.parametrize('use_baseline', (True, False))
+def test_g11_declaration_assessment_passes_if_answer_missing(use_baseline):
+    schema = generate_schema("g-cloud-11", "declaration", "declaration")
+    if use_baseline:
+        schema = schema["definitions"]["baseline"]
+
+    candidate = _definite_pass_g11_declaration()
+    candidate.pop('modernSlaveryReportingRequirements')
+    candidate['modernSlaveryTurnover'] = False
+
+    jsonschema.validate(candidate, schema)
