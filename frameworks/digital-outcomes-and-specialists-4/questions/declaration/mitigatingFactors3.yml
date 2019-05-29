@@ -1,0 +1,10 @@
+name: Mitigating factors for Modern Slavery reporting requirements
+question: >
+  If your organisation does not meet the requirements, please explain why.
+type: textbox_large
+
+hidden: true
+validations:
+  - 
+    name: answer_required
+    message: You need to answer this question
