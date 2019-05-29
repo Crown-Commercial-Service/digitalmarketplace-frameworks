@@ -1,6 +1,6 @@
 name: No unfair access to information
 question: >
-  Please confirm that no party has:
+  Has any party involved in the application done any of the following:
 
     - colluded to set prices with other suppliers or buyers
     - entered into any arrangement with another person so that person refrains from submitting an application
@@ -11,4 +11,4 @@ question: >
 type: boolean
 assessment:
   passIfIn:
-    - True
+    - False
