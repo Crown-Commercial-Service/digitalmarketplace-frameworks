@@ -169,6 +169,7 @@
   questions:
     - subcontracting
     - employmentStatus
+    - outsideIR35
 
 -
   name: Contact details
