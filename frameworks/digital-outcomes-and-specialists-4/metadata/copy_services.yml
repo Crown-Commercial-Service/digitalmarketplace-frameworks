@@ -15,6 +15,15 @@ questions_to_copy:
   - contentDesignerPriceMax
   - contentDesignerPriceMin
   - dataProtocols
+  - dataArchitectLocations
+  - dataArchitectPriceMax
+  - dataArchitectPriceMin
+  - dataEngineerLocations
+  - dataEngineerPriceMax
+  - dataEngineerPriceMin
+  - dataScientistLocations
+  - dataScientistPriceMax
+  - dataScientistPriceMin
   - deliveryManagerLocations
   - deliveryManagerPriceMax
   - deliveryManagerPriceMin

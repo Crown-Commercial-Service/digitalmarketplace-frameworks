@@ -10,6 +10,7 @@ any_of: specialist
 questions:
   - contentDesignerLocations
   - contentDesignerDayRate
+  - accessibleApplicationsSpecialists
 
 empty_message: You haven’t added a content designer
 
