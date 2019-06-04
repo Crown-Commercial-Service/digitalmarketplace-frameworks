@@ -24,110 +24,91 @@ MANIFESTS = {
 }
 
 
-SCHEMAS = {
-    'services': [
-        ('G-Cloud 7 SCS Service', 'g-cloud-7', 'scs'),
-        ('G-Cloud 7 IaaS Service', 'g-cloud-7', 'iaas'),
-        ('G-Cloud 7 PaaS Service', 'g-cloud-7', 'paas'),
-        ('G-Cloud 7 SaaS Service', 'g-cloud-7', 'saas'),
-        ('Digital Outcomes and Specialists Digital outcomes Service',
-         'digital-outcomes-and-specialists', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists Digital specialists Service',
-         'digital-outcomes-and-specialists', 'digital-specialists'),
-        ('Digital Outcomes and Specialists User research studios Service',
-         'digital-outcomes-and-specialists', 'user-research-studios'),
-        ('Digital Outcomes and Specialists User research participants Service',
-         'digital-outcomes-and-specialists', 'user-research-participants'),
-        ('G-Cloud 8 SCS Service', 'g-cloud-8', 'scs'),
-        ('G-Cloud 8 IaaS Service', 'g-cloud-8', 'iaas'),
-        ('G-Cloud 8 PaaS Service', 'g-cloud-8', 'paas'),
-        ('G-Cloud 8 SaaS Service', 'g-cloud-8', 'saas'),
-        ('Digital Outcomes and Specialists 2 Digital outcomes Service',
-         'digital-outcomes-and-specialists-2', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists 2 Digital specialists Service',
-         'digital-outcomes-and-specialists-2', 'digital-specialists'),
-        ('Digital Outcomes and Specialists 2 User research studios Service',
-         'digital-outcomes-and-specialists-2', 'user-research-studios'),
-        ('Digital Outcomes and Specialists 2 User research participants Service',
-         'digital-outcomes-and-specialists-2', 'user-research-participants'),
-        ('G-Cloud 9 Cloud Hosting Product', 'g-cloud-9', 'cloud-hosting'),
-        ('G-Cloud 9 Cloud Software Product', 'g-cloud-9', 'cloud-software'),
-        ('G-Cloud 9 Cloud Support Product', 'g-cloud-9', 'cloud-support'),
-        ('Digital Outcomes and Specialists 3 Digital outcomes Service',
-         'digital-outcomes-and-specialists-3', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists 3 Digital specialists Service',
-         'digital-outcomes-and-specialists-3', 'digital-specialists'),
-        ('Digital Outcomes and Specialists 3 User research studios Service',
-         'digital-outcomes-and-specialists-3', 'user-research-studios'),
-        ('Digital Outcomes and Specialists 3 User research participants Service',
-         'digital-outcomes-and-specialists-3', 'user-research-participants'),
-        ('G-Cloud 10 Cloud Hosting Product', 'g-cloud-10', 'cloud-hosting'),
-        ('G-Cloud 10 Cloud Software Product', 'g-cloud-10', 'cloud-software'),
-        ('G-Cloud 10 Cloud Support Product', 'g-cloud-10', 'cloud-support'),
-        ('G-Cloud 11 Cloud Hosting Product', 'g-cloud-11', 'cloud-hosting'),
-        ('G-Cloud 11 Cloud Software Product', 'g-cloud-11', 'cloud-software'),
-        ('G-Cloud 11 Cloud Support Product', 'g-cloud-11', 'cloud-support'),
+LEGACY_GCLOUD_LOTS = [
+    ('scs', 'SCS'), ('iaas', 'IaaS'), ('paas', 'PaaS'), ('saas', 'SaaS')
+]
+G_CLOUD_LOTS = [
+    ('cloud-hosting', 'Cloud Hosting'),
+    ('cloud-software', 'Cloud Software'),
+    ('cloud-support', 'Cloud Support')
+]
+DOS_LOTS = [
+    ('digital-outcomes', 'Digital outcomes'),
+    ('digital-specialists', 'Digital specialists'),
+    ('user-research-participants', 'User research participants'),
+    ('user-research-studios', 'User research studios')
+]
+
+
+FRAMEWORKS_AND_LOTS = {
+    "g-cloud": [
+        {'framework_slug': 'g-cloud-7', 'framework_name': "G-Cloud 7", 'lots': LEGACY_GCLOUD_LOTS},
+        {'framework_slug': 'g-cloud-8', 'framework_name': "G-Cloud 8", 'lots': LEGACY_GCLOUD_LOTS},
+        {'framework_slug': 'g-cloud-9', 'framework_name': "G-Cloud 9", 'lots': G_CLOUD_LOTS},
+        {'framework_slug': 'g-cloud-10', 'framework_name': "G-Cloud 9", 'lots': G_CLOUD_LOTS},
+        {'framework_slug': 'g-cloud-11', 'framework_name': "G-Cloud 9", 'lots': G_CLOUD_LOTS},
     ],
-    'briefs': [
-        ('Digital Outcomes and Specialists Digital outcomes Brief',
-         'digital-outcomes-and-specialists', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists Digital specialists Brief',
-         'digital-outcomes-and-specialists', 'digital-specialists'),
-        ('Digital Outcomes and Specialists User research participants Brief',
-         'digital-outcomes-and-specialists', 'user-research-participants'),
-        ('Digital Outcomes and Specialists 2 Digital outcomes Brief',
-         'digital-outcomes-and-specialists-2', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists 2 Digital specialists Brief',
-         'digital-outcomes-and-specialists-2', 'digital-specialists'),
-        ('Digital Outcomes and Specialists 2 User research participants Brief',
-         'digital-outcomes-and-specialists-2', 'user-research-participants'),
-        ('Digital Outcomes and Specialists 3 Digital outcomes Brief',
-         'digital-outcomes-and-specialists-3', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists 3 Digital specialists Brief',
-         'digital-outcomes-and-specialists-3', 'digital-specialists'),
-        ('Digital Outcomes and Specialists 3 User research participants Brief',
-         'digital-outcomes-and-specialists-3', 'user-research-participants'),
-    ],
-    'brief-responses': [
-        ('Digital Outcomes and Specialists Digital outcomes Brief Response',
-         'digital-outcomes-and-specialists', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists Digital specialists Brief Response',
-         'digital-outcomes-and-specialists', 'digital-specialists'),
-        ('Digital Outcomes and Specialists User research participants Brief Response',
-         'digital-outcomes-and-specialists', 'user-research-participants'),
-        ('Digital Outcomes and Specialists 2 Digital outcomes Brief Response',
-         'digital-outcomes-and-specialists-2', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists 2 Digital specialists Brief Response',
-         'digital-outcomes-and-specialists-2', 'digital-specialists'),
-        ('Digital Outcomes and Specialists 2 User research participants Brief Response',
-         'digital-outcomes-and-specialists-2', 'user-research-participants'),
-        ('Digital Outcomes and Specialists 3 Digital outcomes Brief Response',
-         'digital-outcomes-and-specialists-3', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists 3 Digital specialists Brief Response',
-         'digital-outcomes-and-specialists-3', 'digital-specialists'),
-        ('Digital Outcomes and Specialists 3 User research participants Brief Response',
-         'digital-outcomes-and-specialists-3', 'user-research-participants'),
-    ],
-    'brief-awards': [
-        ('Digital Outcomes and Specialists Digital outcomes Brief Award',
-         'digital-outcomes-and-specialists', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists Digital specialists Brief Award',
-         'digital-outcomes-and-specialists', 'digital-specialists'),
-        ('Digital Outcomes and Specialists User research participants Brief Award',
-         'digital-outcomes-and-specialists', 'user-research-participants'),
-        ('Digital Outcomes and Specialists 2 Digital outcomes Brief Award',
-         'digital-outcomes-and-specialists-2', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists 2 Digital specialists Brief Award',
-         'digital-outcomes-and-specialists-2', 'digital-specialists'),
-        ('Digital Outcomes and Specialists 2 User research participants Brief Award',
-         'digital-outcomes-and-specialists-2', 'user-research-participants'),
-        ('Digital Outcomes and Specialists 3 Digital outcomes Brief Award',
-         'digital-outcomes-and-specialists-3', 'digital-outcomes'),
-        ('Digital Outcomes and Specialists 3 Digital specialists Brief Award',
-         'digital-outcomes-and-specialists-3', 'digital-specialists'),
-        ('Digital Outcomes and Specialists 3 User research participants Brief Award',
-         'digital-outcomes-and-specialists-3', 'user-research-participants'),
+    "digital-outcomes-and-specialists": [
+        {
+            'framework_slug': 'digital-outcomes-and-specialists',
+            'framework_name': "Digital Outcomes and Specialists",
+            'lots': DOS_LOTS
+        },
+        {
+            'framework_slug': 'digital-outcomes-and-specialists-2',
+            'framework_name': "Digital Outcomes and Specialists 2",
+            'lots': DOS_LOTS
+        },
+        {
+            'framework_slug': 'digital-outcomes-and-specialists-3',
+            'framework_name': "Digital Outcomes and Specialists 3",
+            'lots': DOS_LOTS
+        },
+        {
+            'framework_slug': 'digital-outcomes-and-specialists-4',
+            'framework_name': "Digital Outcomes and Specialists 4",
+            'lots': DOS_LOTS
+        },
     ]
+}
+
+
+def _get_schema_title_and_slugs(schema_type, framework_family=None, exclude_lot=None):
+    titles_and_slugs = []
+    for family, framework_list in FRAMEWORKS_AND_LOTS.items():
+        if framework_family:
+            # Some schemas are only required for DOS frameworks
+            if framework_family != family:
+                continue
+
+        for framework in framework_list:
+            for lot_slug, lot_name in framework['lots']:
+                if exclude_lot:
+                    # Some lots don't have briefs/brief response/brief award schemas
+                    if exclude_lot == lot_slug:
+                        continue
+
+                titles_and_slugs.append(
+                    (
+                        "{} {} {}".format(framework['framework_name'], lot_name, schema_type),
+                        framework['framework_slug'],
+                        lot_slug
+                    )
+                )
+    return titles_and_slugs
+
+
+SCHEMAS = {
+    'services': _get_schema_title_and_slugs("Service"),
+    'briefs': _get_schema_title_and_slugs(
+        "Brief", "digital-outcomes-and-specialists", exclude_lot="user-research-studios"
+    ),
+    'brief-responses': _get_schema_title_and_slugs(
+        "Brief Response", "digital-outcomes-and-specialists", exclude_lot="user-research-studios"
+    ),
+    'brief-awards': _get_schema_title_and_slugs(
+        "Brief Award", "digital-outcomes-and-specialists", exclude_lot="user-research-studios"
+    )
 }
 
 
