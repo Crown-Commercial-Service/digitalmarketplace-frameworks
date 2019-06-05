@@ -4,6 +4,8 @@ question: |
 
   This includes publishing any software you build for the government under the appropriate open source licence.
 type: boolean
+required_value: true
+
 depends:
   - "on": "lot"
     being:
