@@ -1,6 +1,8 @@
 name: Share non-personal data
 question: Will you share non-personal user and service data to help the government continuously improve its services?
 type: boolean
+required_value: true
+
 depends:
   - "on": "lot"
     being:
