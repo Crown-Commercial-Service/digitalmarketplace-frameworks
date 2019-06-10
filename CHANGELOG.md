@@ -2,6 +2,11 @@
 
 Records breaking changes from major version bumps
 
+## 16.0.0
+
+Removes the Documents section from the `display_service` G-Cloud 10 and G-Cloud 11 manifests. This will be replaced
+by a separate document template in the Buyer FE, allowing a combination of service documents and declaration documents.
+
 ## 15.0.0
 
 Removed the `include_in_all` parameter from the `serviceIdHash` field in the
