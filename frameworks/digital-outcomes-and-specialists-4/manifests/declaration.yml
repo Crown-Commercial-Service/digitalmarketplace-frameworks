@@ -22,11 +22,14 @@
   editable: True
   prefill: False
   description: |
-    If you make an application to Digital Outcomes and Specialists&nbsp;4, you’re agreeing to the terms and conditions in the legal documentation.
+    If you make an application to Digital Outcomes and Specialists&nbsp;4, you need to agree to the terms and conditions in the legal documentation.
 
-    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
+    You also need to confirm that you’re not guilty of misconduct that affects the fairness of the procurement.
 
-    If you can’t answer ‘yes’ to every question on this page, it’s very unlikely that your application will be accepted.
+    It’s unlikely your application will be accepted if you:
+
+      - don’t agree (answer ‘no’) to the terms given in questions [[termsOfParticipation]], [[termsAndConditions]], [[canProvideFromDayOne]], [[evidence]], [[10WorkingDays]] and [[MI]]
+      - answer ‘yes’ to say you've been involved in the misconduct listed in question [[unfairCompetition]]
 
   questions:
     - termsOfParticipation
