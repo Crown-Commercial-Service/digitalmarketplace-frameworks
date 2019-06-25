@@ -163,6 +163,7 @@
               "under_50_words",
               "under_100_words",
               "under_200_words",
+              "under_word_limit",
               "under_character_limit",
               "total_should_be_100"
             ]
