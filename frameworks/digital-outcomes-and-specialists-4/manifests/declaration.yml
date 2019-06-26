@@ -28,8 +28,10 @@
 
     It’s unlikely your application will be accepted if you:
 
-      - don’t agree (answer ‘no’) to the terms given in questions [[termsOfParticipation]], [[termsAndConditions]], [[canProvideFromDayOne]], [[evidence]], [[10WorkingDays]] and [[MI]]
-      - answer ‘yes’ to say you've been involved in the misconduct listed in question [[unfairCompetition]]
+    <ul class="list-bullet">
+    <li>don’t agree (answer ‘no’) to the terms given in questions [[termsOfParticipation]], [[termsAndConditions]], [[canProvideFromDayOne]], [[evidence]], [[10WorkingDays]] and [[MI]]</li>
+    <li>answer ‘yes’ to say you've been involved in the misconduct listed in question [[unfairCompetition]]</li>
+    </ul>
 
   questions:
     - termsOfParticipation
