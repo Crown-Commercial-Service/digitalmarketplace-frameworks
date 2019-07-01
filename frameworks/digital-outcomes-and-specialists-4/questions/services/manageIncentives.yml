@@ -1,6 +1,7 @@
 name: Manage incentives
 question: Do you agree to manage any incentives to user research participants?
 type: boolean
+required_value: true
 depends:
   - "on": "lot"
     being:
