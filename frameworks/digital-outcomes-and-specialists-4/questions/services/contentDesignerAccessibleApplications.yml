@@ -13,3 +13,6 @@ depends:
 validations:
   - name: answer_required
     message: 'You need to answer this question.'
+  -
+    name: not_required_value
+    message: 'The specialist must be able to meet the accessibility regulations.'
