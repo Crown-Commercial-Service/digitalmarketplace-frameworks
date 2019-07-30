@@ -12,7 +12,7 @@ number_of_items: 6
 options:
   - label: Planning
     derived_from:
-      question: setupAndMigrationService
+      question: planningService
       any_of:
         - true
   - label: Setup and migration
