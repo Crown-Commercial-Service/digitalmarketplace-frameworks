@@ -1,6 +1,12 @@
+# Node stuff
+node_modules
+
+# Python stuff
 __pycache__
 *.pyc
 .hypothesis/eval_source
 venv*
-local.nix
 .cache
+
+# Nix stuff
+local.nix
