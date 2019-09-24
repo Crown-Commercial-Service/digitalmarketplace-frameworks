@@ -7,7 +7,7 @@ question_advice: |
   Include any important dates. You must say if you need the work to be done by a certain date.
   This will help suppliers understand any time constraints.
 type: textbox_large
-max_length_in_words: 100
+max_length_in_words: 200
 depends:
   - "on": "lot"
     being:
@@ -18,5 +18,5 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_100_words
-    message: 'Your answer must be no more than 100 words.'
+    message: 'Your answer must be no more than 200 words.'
 empty_message: Describe why the work is being done

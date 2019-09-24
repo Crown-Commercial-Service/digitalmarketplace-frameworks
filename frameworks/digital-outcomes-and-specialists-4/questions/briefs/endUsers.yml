@@ -11,7 +11,7 @@ question_advice: |
 
   eg As a carer, I need to know if I can get Carer’s Allowance, so that I know if I should apply for it or not.
 type: textbox_large
-max_length_in_words: 100
+max_length_in_words: 200
 depends:
   - "on": "lot"
     being:
@@ -22,5 +22,5 @@ validations:
     message: 'You need to answer this question.'
   -
     name: under_100_words
-    message: 'Your answer must be no more than 100 words.'
+    message: 'Your answer must be no more than 200 words.'
 empty_message: Describe the users and their needs
