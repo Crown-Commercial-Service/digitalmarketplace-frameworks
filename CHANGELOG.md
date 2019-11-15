@@ -2,6 +2,11 @@
 
 Records breaking changes from major version bumps
 
+## 17.0.0
+
+Removes the customer benefits record email from G-Cloud 11 manifest, as this is no longer used by CCS. This was only
+used in the G-Cloud Direct Award flow in the Buyer Frontend.
+
 ## 16.0.0
 
 Removes the Documents section from the `display_service` G-Cloud 10 and G-Cloud 11 manifests. This will be replaced
