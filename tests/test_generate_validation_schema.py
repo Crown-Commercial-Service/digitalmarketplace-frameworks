@@ -611,13 +611,17 @@ def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):
     for schema in g_cloud_schemas:
         generate_schema_todir(test_directory, 'services', *schema)
     g_cloud_path = "./frameworks/g-cloud-7"
-    g_cloud_opened_files = set(x for x in opened_files
-                               if x.startswith(g_cloud_path) and
-                               os.path.isfile(x))
-    g_cloud_expected_files = set([x for x in recursive_file_list(g_cloud_path)
-                                  if ("questions/services" in x or
-                                      x.endswith("manifests/edit_submission.yml")) and
-                                  not x.endswith("lot.yml") and not x.endswith("id.yml")])
+    g_cloud_opened_files = set(
+        x for x in opened_files if x.startswith(g_cloud_path) and os.path.isfile(x)
+    )
+    g_cloud_expected_files = set(
+        [
+            x for x in recursive_file_list(g_cloud_path)
+            if ("questions/services" in x or x.endswith("manifests/edit_submission.yml"))
+            and not x.endswith("lot.yml")
+            and not x.endswith("id.yml")
+        ]
+    )
     assert g_cloud_expected_files == g_cloud_opened_files
 
 
@@ -630,10 +634,13 @@ def test_generate_dos_schema_opens_files(opened_files, tmpdir):
     dos_path = "./frameworks/digital-outcomes-and-specialists"
     dos_opened_files = set(x for x in opened_files
                            if x.startswith(dos_path) and os.path.isfile(x))
-    dos_expected_files = set([x for x in recursive_file_list(dos_path)
-                              if ("questions/services" in x or
-                                  x.endswith("manifests/edit_submission.yml")) and
-                              not x.endswith("lot.yml")])
+    dos_expected_files = set(
+        [
+            x for x in recursive_file_list(dos_path)
+            if ("questions/services" in x or x.endswith("manifests/edit_submission.yml"))
+            and not x.endswith("lot.yml")
+        ]
+    )
     assert dos_expected_files == dos_opened_files
 
 
