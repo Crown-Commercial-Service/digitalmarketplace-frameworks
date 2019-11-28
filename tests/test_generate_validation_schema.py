@@ -90,12 +90,12 @@ def nested_checkboxes(draw, options_list_strategy=None,
 
 def nested_checkboxes_list():
     def create_options_with_children(list_strategy):
-        return st.lists(nested_checkboxes(options_list_strategy=list_strategy))
+        return st.lists(nested_checkboxes(options_list_strategy=list_strategy), max_size=25)
 
     return st.recursive(
         st.lists(nested_checkboxes()),
         create_options_with_children,
-        max_leaves=15
+        max_leaves=10
     )
 
 
