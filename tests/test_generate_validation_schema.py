@@ -10,7 +10,7 @@ except ImportError:
 import mock
 import pytest
 from dmcontent import ContentQuestion
-from hypothesis import given, assume, strategies as st
+from hypothesis import settings, given, assume, HealthCheck, strategies as st
 from schema_generator.validation import (
     SCHEMAS,
     boolean_list_property,
@@ -233,6 +233,7 @@ def test_checkbox_property(id, options):
                for option in options if 'value' not in option)
 
 
+@settings(suppress_health_check=[HealthCheck.too_slow])
 @given(st.text(), nested_checkboxes_list(), st.integers())
 def test_checkbox_tree_property(id, options, number_of_items):
     assume(len(id) > 0)
