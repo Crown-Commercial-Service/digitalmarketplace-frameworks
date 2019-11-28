@@ -10,7 +10,6 @@ except ImportError:
 import mock
 import pytest
 from dmcontent import ContentQuestion
-from hypothesis.settings import Settings
 from hypothesis import given, assume, strategies as st
 from schema_generator.validation import (
     SCHEMAS,
@@ -32,8 +31,6 @@ from schema_generator.validation import (
     text_property,
     uri_property,
 )
-
-Settings.default.database = None
 
 
 @pytest.fixture()
