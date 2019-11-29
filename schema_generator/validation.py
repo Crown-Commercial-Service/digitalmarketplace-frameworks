@@ -3,7 +3,6 @@ import re
 import json
 from dmcontent import ContentLoader
 
-
 MANIFESTS = {
     'services': {
         'question_set': 'services',
@@ -23,7 +22,6 @@ MANIFESTS = {
     },
 }
 
-
 LEGACY_GCLOUD_LOTS = [
     ('scs', 'SCS'), ('iaas', 'IaaS'), ('paas', 'PaaS'), ('saas', 'SaaS')
 ]
@@ -38,7 +36,6 @@ DOS_LOTS = [
     ('user-research-participants', 'User research participants'),
     ('user-research-studios', 'User research studios')
 ]
-
 
 FRAMEWORKS_AND_LOTS = {
     "g-cloud": [
@@ -547,7 +544,7 @@ def parse_question_limits(question, for_items=False):
     limits = {}
     word_length_validator = next(
         iter(filter(None, (
-            re.match('under_(\d+)_words', validator['name'])
+            re.match(r'under_(\d+)_words', validator['name'])
             for validator in question.get('validations', [])
         ))),
         None
@@ -561,8 +558,9 @@ def parse_question_limits(question, for_items=False):
         None
     )
 
-    char_length = question.get('max_length') or (char_length_validator and
-                                                 char_length_validator.group(1).replace(',', ''))
+    char_length = question.get('max_length') or (
+        char_length_validator and char_length_validator.group(1).replace(',', '')
+    )
     word_length = question.get('max_length_in_words') or (word_length_validator and word_length_validator.group(1))
 
     if char_length:

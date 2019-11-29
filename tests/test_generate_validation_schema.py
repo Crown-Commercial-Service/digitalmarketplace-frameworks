@@ -10,8 +10,7 @@ except ImportError:
 import mock
 import pytest
 from dmcontent import ContentQuestion
-from hypothesis.settings import Settings
-from hypothesis import given, assume, strategies as st
+from hypothesis import settings, given, assume, HealthCheck, strategies as st
 from schema_generator.validation import (
     SCHEMAS,
     boolean_list_property,
@@ -32,8 +31,6 @@ from schema_generator.validation import (
     text_property,
     uri_property,
 )
-
-Settings.default.database = None
 
 
 @pytest.fixture()
@@ -93,12 +90,12 @@ def nested_checkboxes(draw, options_list_strategy=None,
 
 def nested_checkboxes_list():
     def create_options_with_children(list_strategy):
-        return st.lists(nested_checkboxes(options_list_strategy=list_strategy))
+        return st.lists(nested_checkboxes(options_list_strategy=list_strategy), max_size=25)
 
     return st.recursive(
         st.lists(nested_checkboxes()),
         create_options_with_children,
-        max_leaves=15
+        max_leaves=10
     )
 
 
@@ -236,6 +233,7 @@ def test_checkbox_property(id, options):
                for option in options if 'value' not in option)
 
 
+@settings(suppress_health_check=[HealthCheck.too_slow])
 @given(st.text(), nested_checkboxes_list(), st.integers())
 def test_checkbox_tree_property(id, options, number_of_items):
     assume(len(id) > 0)
@@ -611,13 +609,17 @@ def test_generate_g_cloud_schema_opens_files(opened_files, tmpdir):
     for schema in g_cloud_schemas:
         generate_schema_todir(test_directory, 'services', *schema)
     g_cloud_path = "./frameworks/g-cloud-7"
-    g_cloud_opened_files = set(x for x in opened_files
-                               if x.startswith(g_cloud_path) and
-                               os.path.isfile(x))
-    g_cloud_expected_files = set([x for x in recursive_file_list(g_cloud_path)
-                                  if ("questions/services" in x or
-                                      x.endswith("manifests/edit_submission.yml")) and
-                                  not x.endswith("lot.yml") and not x.endswith("id.yml")])
+    g_cloud_opened_files = set(
+        x for x in opened_files if x.startswith(g_cloud_path) and os.path.isfile(x)
+    )
+    g_cloud_expected_files = set(
+        [
+            x for x in recursive_file_list(g_cloud_path)
+            if ("questions/services" in x or x.endswith("manifests/edit_submission.yml"))
+            and not x.endswith("lot.yml")
+            and not x.endswith("id.yml")
+        ]
+    )
     assert g_cloud_expected_files == g_cloud_opened_files
 
 
@@ -630,10 +632,13 @@ def test_generate_dos_schema_opens_files(opened_files, tmpdir):
     dos_path = "./frameworks/digital-outcomes-and-specialists"
     dos_opened_files = set(x for x in opened_files
                            if x.startswith(dos_path) and os.path.isfile(x))
-    dos_expected_files = set([x for x in recursive_file_list(dos_path)
-                              if ("questions/services" in x or
-                                  x.endswith("manifests/edit_submission.yml")) and
-                              not x.endswith("lot.yml")])
+    dos_expected_files = set(
+        [
+            x for x in recursive_file_list(dos_path)
+            if ("questions/services" in x or x.endswith("manifests/edit_submission.yml"))
+            and not x.endswith("lot.yml")
+        ]
+    )
     assert dos_expected_files == dos_opened_files
 
 
