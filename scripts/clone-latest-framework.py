@@ -16,9 +16,11 @@ Example:
 """
 import os
 import sys
+sys.path.insert(0, '.')
 import shutil
 import yaml
 from docopt import docopt
+from script_helpers.clone_helpers import get_nbsp_fw_name_from_slug, get_fw_name_from_slug
 
 
 METADATA_FILES = {
@@ -32,20 +34,6 @@ DATES_FILES = {
     'clarification_deadline': 'questions/declaration/understandHowToAskQuestions.yml',
     'go_live': 'questions/declaration/canProvideFromDayOne.yml'
 }
-
-
-def get_fw_name_from_slug(fw_slug):
-    # Hack for G-Cloud which helpfully contains a dash
-    # Hack for Digital Outcomes and Specialists which contains a lower-case 'and'
-    return fw_slug.replace('-', ' ').replace('g cloud', 'G-Cloud').title().replace('And', 'and')
-
-
-def get_nbsp_fw_name_from_slug(fw_slug):
-    # Some places use G-Cloud&bsp;11 for non-breaking spaces
-    # Get the last space and 'replace' it
-    name = get_fw_name_from_slug(fw_slug)
-    last_space_position = name.rindex(" ")
-    return name[:last_space_position] + "&nbsp;" + name[(last_space_position + 1):]
 
 
 def replace_framework_in_content(current_content, root, file):
