@@ -6,11 +6,13 @@
 - Update metadata
 - Update hardcoded content of framework name in declaration questions 'G-Cloud 11', 'G-Cloud&nsbp;11'
 - Update hardcoded content of framework slug in urls, declaration
-- Set any dates to a point in the far-future e.g. 1 Jan 2525
+- Set any dates to a point in the far-future e.g. 1 Jan 2525 (using <launch_year> to detect last year's dates)
 
 Usage:
-    clone-latest-framework.py --family=<framework_family> --iteration=<iteration_number>
+    clone-latest-framework.py --family=<framework_family> --iteration=<iteration_number> --launch-year=<launch_year>
 
+Example:
+    ./scripts/clone-latest-framework.py --family=g-cloud --iteration=12 --launch-year=2020
 """
 import os
 import sys
@@ -25,15 +27,25 @@ METADATA_FILES = {
     'bad_words': 'service_questions_to_scan_for_bad_words.yml'
 }
 
+DATES_FILES = {
+    'application_deadline': 'messages/homepage-sidebar.yml',
+    'clarification_deadline': 'questions/declaration/understandHowToAskQuestions.yml',
+    'go_live': 'questions/declaration/canProvideFromDayOne.yml'
+}
+
 
 def get_fw_name_from_slug(fw_slug):
     # Hack for G-Cloud which helpfully contains a dash
-    return fw_slug.replace('-', ' ').replace('g cloud', 'G-Cloud').title()
+    # Hack for Digital Outcomes and Specialists which contains a lower-case 'and'
+    return fw_slug.replace('-', ' ').replace('g cloud', 'G-Cloud').title().replace('And', 'and')
 
 
 def get_nbsp_fw_name_from_slug(fw_slug):
     # Some places use G-Cloud&bsp;11 for non-breaking spaces
-    return get_fw_name_from_slug(fw_slug).replace(" ", "&nbsp;")
+    # Get the last space and 'replace' it
+    name = get_fw_name_from_slug(fw_slug)
+    last_space_position = name.rindex(" ")
+    return name[:last_space_position] + "&nbsp;" + name[(last_space_position + 1):]
 
 
 def replace_framework_in_content(current_content, root, file):
@@ -46,6 +58,12 @@ def replace_framework_in_content(current_content, root, file):
     if previous_nbsp_name in current_content:
         updated_content = current_content.replace(previous_nbsp_name, new_nbsp_name)
         print(f"Replacing framework name (with nbsp) in {root}/{file}")
+        # Keep the changes for the next replacement
+        current_content = updated_content
+    if escaped_previous_nbsp_name in current_content:
+        # Hack for G-Cloud which has additional (unnecessary) escaping in some files
+        updated_content = current_content.replace(escaped_previous_nbsp_name, new_nbsp_name)
+        print(f"Replacing escaped framework name (with nbsp) in {root}/{file}")
         # Keep the changes for the next replacement
         current_content = updated_content
     if previous_fw_slug in current_content:
@@ -85,6 +103,7 @@ def update_metadata():
         }
 
     with open(copy_services_file, 'w') as f:
+        print(f"Writing content to {copy_services_file}")
         yaml.dump(new_content, f)
 
     # Set following_framework.yml content
@@ -99,8 +118,22 @@ def update_metadata():
             }
         }
     with open(following_fw_file, 'w') as f:
+        print(f"Writing content to {following_fw_file}")
         yaml.dump(new_content, f)
 
+
+def update_dates():
+    print("Setting important dates to 2525")
+    for key, file_path in DATES_FILES.items():
+        full_file_path = os.path.join("frameworks", new_fw_slug, file_path)
+
+        with open(full_file_path, 'r') as f:
+            current_content = f.read()
+            updated_content = current_content.replace(str(launch_year - 1), '2525')
+
+        with open(full_file_path, 'w') as f:
+            print(f"Writing content to {file_path}")
+            f.write(updated_content)
 
 def copy_fw_folder():
     previous_fw_folder = os.path.join("frameworks", previous_fw_slug)
@@ -122,6 +155,7 @@ if __name__ == '__main__':
         sys.exit('Invalid framework family - must be g-cloud or digital-outcomes-and-specialists')
 
     iteration_number = int(arguments['--iteration'])
+    launch_year = int(arguments['--launch-year'])
 
     # Set all the strings up front: framework slug, name and non-breaking-space name
     new_fw_slug = f"{framework_family}-{iteration_number}"
@@ -130,8 +164,11 @@ if __name__ == '__main__':
     previous_name = get_fw_name_from_slug(previous_fw_slug)
     new_name = get_fw_name_from_slug(new_fw_slug)
     previous_nbsp_name = get_nbsp_fw_name_from_slug(previous_fw_slug)
+    # Hack for G-Cloud (or should we say, 'G&#x2011;Cloud')
+    escaped_previous_nbsp_name = get_nbsp_fw_name_from_slug(previous_fw_slug).replace("-", "&#x2011;")
     new_nbsp_name = get_nbsp_fw_name_from_slug(new_fw_slug)
 
     copy_fw_folder()
     replace_hardcoded_framework_name_and_slug()
     update_metadata()
+    update_dates()
