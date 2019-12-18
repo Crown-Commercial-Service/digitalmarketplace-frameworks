@@ -14,7 +14,6 @@ Usage:
 Example:
     ./scripts/clone-latest-framework.py --family=g-cloud --iteration=12 --launch-year=2020
 """
-import os
 import sys
 sys.path.insert(0, '.')
 from docopt import docopt
@@ -22,7 +21,6 @@ from script_helpers.clone_helpers import FrameworkContentCloner
 
 
 if __name__ == '__main__':
-    current_dir = os.path.dirname(__file__)
     arguments = docopt(__doc__)
     framework_family = arguments['--family']
     if framework_family not in ('g-cloud', 'digital-outcomes-and-specialists'):
