@@ -1,3 +1,4 @@
+import pytest
 from script_helpers.clone_helpers import get_fw_name_from_slug, get_nbsp_fw_name_from_slug, FrameworkContentCloner
 
 
@@ -23,5 +24,16 @@ def test_framework_content_cloner_init():
     assert cloner._previous_nbsp_name == 'G-Cloud&nbsp;11'
     assert cloner._escaped_previous_nbsp_name == 'G&#x2011;Cloud&nbsp;11'
     assert cloner._new_nbsp_name == 'G-Cloud&nbsp;12'
+
+
+def test_framework_content_cloner_init_for_second_iteration():
+    cloner = FrameworkContentCloner('digital-outcomes-and-specialists', 2, 2017)
+    assert cloner._previous_fw_slug == 'digital-outcomes-and-specialists'
+
+
+def test_framework_content_cloner_init_fails_for_first_iteration():
+    with pytest.raises(ValueError) as exc:
+        FrameworkContentCloner('digital-outcomes-and-specialists', 1, 2016)
+    assert str(exc.value) == "Can't clone a framework on its first iteration"
 
 # TODO: add test coverage for file copying/replacement :)

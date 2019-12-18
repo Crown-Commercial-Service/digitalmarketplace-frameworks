@@ -36,7 +36,13 @@ class FrameworkContentCloner:
     def __init__(self, framework_family, iteration_number, launch_year):
         self._launch_year = launch_year
         self._new_fw_slug = f"{framework_family}-{iteration_number}"
-        self._previous_fw_slug = f"{framework_family}-{iteration_number - 1}"
+        if iteration_number == 2:
+            # Handle first iterations without numeric suffix (e.g. DOS 2 -> DOS)
+            self._previous_fw_slug = f"{framework_family}"
+        elif iteration_number < 2:
+            raise ValueError("Can't clone a framework on its first iteration")
+        else:
+            self._previous_fw_slug = f"{framework_family}-{iteration_number - 1}"
         self._following_fw_slug = f"{framework_family}-{iteration_number + 1}"
 
         self._previous_name = get_fw_name_from_slug(self._previous_fw_slug)
