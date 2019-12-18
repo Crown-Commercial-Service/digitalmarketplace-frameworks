@@ -63,27 +63,27 @@ class FrameworkContentCloner:
         except FileExistsError:
             print("Skipping - folder already exists")
 
-    def _replace_framework_in_content(self, current_content, root, file):
+    def _replace_framework_in_content(self, current_content, root, filename):
         updated_content = None
         if self._previous_name in current_content:
             updated_content = current_content.replace(self._previous_name, self._new_name)
-            print(f"Replacing framework name in {root}/{file}")
+            print(f"Replacing framework name in {root}/{filename}")
             # Keep the changes for the next replacement
             current_content = updated_content
         if self._previous_nbsp_name in current_content:
             updated_content = current_content.replace(self._previous_nbsp_name, self._new_nbsp_name)
-            print(f"Replacing framework name (with nbsp) in {root}/{file}")
+            print(f"Replacing framework name (with nbsp) in {root}/{filename}")
             # Keep the changes for the next replacement
             current_content = updated_content
         if self._escaped_previous_nbsp_name in current_content:
             # Hack for G-Cloud which has additional (unnecessary) escaping in some files
             updated_content = current_content.replace(self._escaped_previous_nbsp_name, self._new_nbsp_name)
-            print(f"Replacing escaped framework name (with nbsp) in {root}/{file}")
+            print(f"Replacing escaped framework name (with nbsp) in {root}/{filename}")
             # Keep the changes for the next replacement
             current_content = updated_content
         if self._previous_fw_slug in current_content:
             updated_content = current_content.replace(self._previous_fw_slug, self._new_fw_slug)
-            print(f"Replacing framework slug in {root}/{file}")
+            print(f"Replacing framework slug in {root}/{filename}")
 
         # If we return updated_content = None, we know that no changes have been made
         return updated_content
@@ -94,13 +94,13 @@ class FrameworkContentCloner:
             if 'metadata' in root:
                 # Metadata is updated separately
                 continue
-            for file in files:
-                with open(os.path.join(root, file), 'r') as f:
+            for filename in files:
+                with open(os.path.join(root, filename), 'r') as f:
                     current_content = f.read()
-                    updated_content = self._replace_framework_in_content(current_content, root, file)
+                    updated_content = self._replace_framework_in_content(current_content, root, filename)
                 # Only write if there's been a change
                 if updated_content:
-                    with open(os.path.join(root, file), 'w') as f:
+                    with open(os.path.join(root, filename), 'w') as f:
                         f.write(updated_content)
 
     def update_metadata(self):
