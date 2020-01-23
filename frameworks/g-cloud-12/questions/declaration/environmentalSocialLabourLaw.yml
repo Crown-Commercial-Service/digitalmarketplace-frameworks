@@ -1,0 +1,16 @@
+name: Violations of environmental, social or labour law
+question: >
+  Please confirm whether, within the past 3 years, your organisation or any of your partner organisations has:
+
+    - violated EU obligations referred to in <a href="http://www.legislation.gov.uk/uksi/2015/102/part/2/chapter/2/crossheading/conduct-of-the-procedure-choice-of-participants-and-award-of-contracts/made" target="_blank" rel="noopener noreferrer">Regulation 56(2) of the Public Contracts Regulations 2015 (link opens in a new tab)</a> in the fields of environmental, social and labour law
+
+hint:
+  For example, if any finding of unlawful discrimination has been made against the organisation by an Employment Tribunal or Employment Appeal Tribunal.
+  
+  Read more about <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/551130/List_of_Mandatory_and_Discretionary_Exclusions.pdf" target="_blank" rel="noopener noreferrer">your obligations in the field of environment, social and labour law (link opens in a new tab)</a>
+
+type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

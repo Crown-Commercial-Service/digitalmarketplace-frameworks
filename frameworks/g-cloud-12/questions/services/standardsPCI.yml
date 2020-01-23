@@ -1,0 +1,22 @@
+name: PCI certification
+question: Do you have a current Payment Card Industry Data Security Standard (PCI DSS) certification?
+filter_label: PCI DSS (payment card security)
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  standardsPCIWho:
+    - true
+  standardsPCIWhen:
+    - true
+  standardsPCIExclusions:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

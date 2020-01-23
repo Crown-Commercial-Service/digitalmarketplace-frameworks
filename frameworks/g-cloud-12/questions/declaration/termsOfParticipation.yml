@@ -1,0 +1,7 @@
+name: Invitation to apply
+question: >
+  Do you agree to comply with the terms of the <a href="/suppliers/frameworks/g-cloud-12#guidance" target="_blank" rel="noopener noreferrer">G-Cloud&nbsp;12 ‘invitation to apply’ (link opens in a new tab)</a>?
+type: boolean
+assessment:
+  passIfIn:
+    - True

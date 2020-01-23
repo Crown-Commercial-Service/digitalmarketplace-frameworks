@@ -1,0 +1,14 @@
+name: Training
+question: Training
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: multiquestion
+questions:
+  - training
+  - trainingDescription
+  - trainingServiceSpecific
+  - trainingServiceSpecificList

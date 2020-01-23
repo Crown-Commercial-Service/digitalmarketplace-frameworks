@@ -1,0 +1,18 @@
+name: Energy-efficient datacentres
+question: Do your datacentres adhere to the EU code of conduct for energy-efficient datacentres?
+question_advice: >
+  Read about the <a href="http://iet.jrc.ec.europa.eu/energyefficiency/ict-codes-conduct/data-centres-energy-efficiency" target="_blank" rel="noopener noreferrer">EU code of conduct for energy-efficient datacentres (link opens in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  energyEfficientDatacentresDescription:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

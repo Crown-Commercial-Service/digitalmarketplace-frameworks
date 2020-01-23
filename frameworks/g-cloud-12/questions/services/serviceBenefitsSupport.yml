@@ -1,0 +1,25 @@
+id: serviceBenefits
+name: Service benefits
+question: List the service benefits.
+question_advice: >
+  Include the benefits that show how your service helps users improve their working processes. Use active phrases, for
+  example ‘reduces deployment times’ or ‘reduces business risk and costs’.
+hint: 10 words for each benefit, 10 benefits maximum.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: list
+list_item_name: service benefit
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: max_items_limit
+    message: You can have no more than 10 benefits.
+  - name: under_10_words
+    message: You can’t write more than 10 words for each benefit.
+  - name: under_character_limit
+    message: You can’t write more than 100 characters for each benefit.

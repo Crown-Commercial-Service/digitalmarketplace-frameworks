@@ -1,0 +1,16 @@
+slug: iso-28000-2007-certification
+name: ISO 28000:2007 certification
+question: ISO 28000:2007 certification
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - standardsISO28000
+  - standardsISO28000Who
+  - standardsISO28000When
+  - standardsISO28000Exclusions

@@ -1,0 +1,17 @@
+name: Web browser interface
+question: Is your service accessed through a browser?
+filter_label: web browser interface
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+followup:
+  browsersSupported:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

@@ -1,0 +1,16 @@
+slug: iso-iec-27001-certification
+name: ISO/IEC 27001 certification
+question: ISO/IEC 27001 certification
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - standardsISOIEC27001
+  - standardsISOIEC27001Who
+  - standardsISOIEC27001When
+  - standardsISOIEC27001Exclusions

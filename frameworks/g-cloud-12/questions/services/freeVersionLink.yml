@@ -1,0 +1,17 @@
+name: Link to free trial
+question: Provide a link to the free version of your service.
+
+optional: true
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: text
+
+validations:
+  - name: under_character_limit
+    message: Your link must be no more than 1000 characters.

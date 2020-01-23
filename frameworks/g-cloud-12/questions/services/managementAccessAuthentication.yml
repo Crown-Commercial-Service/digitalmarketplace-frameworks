@@ -1,0 +1,38 @@
+name: Management access authentication
+question: How do you authenticate management access to your service?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  managementAccessAuthenticationDescription:
+    - other
+
+type: checkboxes
+options:
+  - label: 2-factor authentication
+    value: two_factor
+  - label: Public key authentication (including by TLS client certificate)
+    value: public_key
+    filter_label: public key authentication (including by TLS client certificate)
+  - label: Identity federation with existing provider (for example Google apps)
+    value: identity_federation
+    filter_label: identity federation with existing provider (for example Google Apps)
+  - label: Limited access over government network (for example PSN)
+    value: government_network
+    filter_label: limited access network (for example PSN)
+  - label: Dedicated link (for example VPN or bonded fibre)
+    value: dedicated_link
+    filter_label: dedicated link (for example VPN)
+  - label: Username or password
+    value: username_or_password
+    filter_label: username or password
+  - label: Other
+    value: other
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

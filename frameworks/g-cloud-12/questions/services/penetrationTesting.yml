@@ -1,0 +1,34 @@
+name: Penetration testing frequency
+question: How often do you do penetration testing?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  penetrationTestingApproach:
+    - at_least_every_6_months
+    - at_least_once_a_year
+    - less_than_once_a_year
+
+type: radios
+options:
+    - label: At least every 6 months
+      value: at_least_every_6_months
+    - label: At least once a year
+      value: at_least_once_a_year
+      derived_from:
+        question: penetrationTesting
+        any_of:
+          - at_least_every_6_months
+    - label: Less than once a year
+      value: less_than_once_a_year
+      filter_ignore: true
+    - label: Never
+      value: never
+      filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
