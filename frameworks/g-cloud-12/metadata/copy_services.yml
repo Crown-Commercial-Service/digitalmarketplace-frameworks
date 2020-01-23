@@ -1,8 +1,4 @@
 questions_to_copy:
-- accessRestrictionManagementAndSupport
-- accessRestrictionTesting
-- accreditationsOther
-- accreditationsOtherList
 - APIAutomationTools
 - APIAutomationToolsOther
 - APIDocumentation
@@ -11,6 +7,12 @@ questions_to_copy:
 - APISandbox
 - APISoftware
 - APIUsage
+- QAAndTesting
+- QAAndTestingDescription
+- accessRestrictionManagementAndSupport
+- accessRestrictionTesting
+- accreditationsOther
+- accreditationsOtherList
 - approachToResilience
 - auditBuyersActions
 - auditBuyersActionsStorage
@@ -23,6 +25,7 @@ questions_to_copy:
 - backupScheduling
 - backupWhatData
 - boardLevelServiceSecurity
+- cloudDeploymentModel
 - commandLineInterface
 - commandLineOS
 - commandLineUsage
@@ -30,7 +33,6 @@ questions_to_copy:
 - configurationAndChangeManagementType
 - customisationAvailable
 - customisationDescription
-- datacentreSecurityStandards
 - dataExportFormats
 - dataExportFormatsOther
 - dataExportHow
@@ -45,10 +47,19 @@ questions_to_copy:
 - dataStorageAndProcessing
 - dataStorageAndProcessingLocations
 - dataStorageAndProcessingUserControl
+- datacentreSecurityStandards
 - devicesUsersManageTheServiceThrough
+- documentation
+- documentationFormats
+- documentationFormatsOther
 - educationPricing
+- emailOrTicketingSupport
+- emailOrTicketingSupportAccessibility
+- emailOrTicketingSupportPriority
+- emailOrTicketingSupportResponseTimes
 - endOfContractDataExtraction
 - endOfContractProcess
+- energyEfficientDatacentres
 - equipmentDisposalApproach
 - freeVersionDescription
 - freeVersionLink
@@ -66,11 +77,13 @@ questions_to_copy:
 - installationCompatibleOperatingSystems
 - lot
 - lotName
+- managementAccessAuthentication   # This one caused the copying bug last time so let's be careful to test it
+- managementAccessAuthenticationDescription
 - metrics
+- metricsDescription
 - metricsHow
 - metricsWhat
 - metricsWhatOther
-- metricsDescription
 - mobile
 - mobileDifferences
 - ongoingSupport
@@ -94,8 +107,6 @@ questions_to_copy:
 - protectionOfDataAtRestOther
 - protectiveMonitoringApproach
 - protectiveMonitoringType
-- QAAndTesting
-- QAAndTestingDescription
 - resellingOrganisations
 - resellingType
 - scaling
@@ -112,6 +123,9 @@ questions_to_copy:
 - serviceConstraints
 - serviceDescription
 - serviceFeatures
+- serviceInterfaceAccessibility
+- serviceInterfaceAccessibilityDescription
+- serviceInterfaceTesting
 - serviceName
 - setupAndMigrationService
 - setupAndMigrationServiceDescription
@@ -143,8 +157,8 @@ questions_to_copy:
 - trainingServiceSpecificList
 - usageNotifications
 - usageNotificationsHow
-- userAuthenticationDescription
 - userAuthentication
+- userAuthenticationDescription
 - userAuthenticationNeeded
 - virtualisation
 - virtualisationImplementedBy
@@ -154,6 +168,11 @@ questions_to_copy:
 - virtualisationThirdPartyProvider
 - vulnerabilityManagementApproach
 - vulnerabilityManagementType
+- webChatSupport
+- webChatSupportAccessibility
+- webChatSupportAccessibilityDescription
+- webChatSupportAccessibilityTesting
+- webChatSupportAvailability
 - webInterface
 - webInterfaceAccessibility
 - webInterfaceAccessibilityDescription
