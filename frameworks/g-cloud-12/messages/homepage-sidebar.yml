@@ -1,0 +1,16 @@
+coming:
+  heading: 'G-Cloud&nbsp;12 is opening in March&nbsp;2525'
+  messages:
+    - 'Provide cloud hosting, software and support.'
+    - 'You’ll need to create a supplier account to apply.'
+
+open:
+  heading: 'G-Cloud&nbsp;12 is open for applications'
+  messages:
+    - 'You need an account to apply.'
+    - 'The application deadline is 5pm&nbsp;BST, Wednesday 22 May 2525.'
+
+pending:
+  heading: 'G-Cloud&nbsp;12 is closed for applications'
+  messages:
+    - 'Applications are being reviewed.'

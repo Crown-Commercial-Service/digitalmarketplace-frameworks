@@ -1,0 +1,28 @@
+name: Service definition document
+question: Add your service definition document
+question_advice: Read the suppliers’ guide for guidance on what to include.
+hint: >
+  This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A
+  (eg .pdf, .odt). (Maximum file size 5MB.)
+
+optional: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: upload
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: file_is_open_document_format
+    message: Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).
+  - name: file_is_less_than_5mb
+    message: Your document exceeds the 5MB limit. Please reduce file size.
+  - name: file_can_be_saved
+    message: Your document failed to upload. Please try again.
+
+empty_message: You haven’t added a service definition document

@@ -1,0 +1,29 @@
+name: Connected networks
+question: What public sector networks is the service directly connected to?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+followup:
+  publicSectorNetworksOther:
+    - other
+
+type: checkboxes
+options:
+  - label: Public Services Network (PSN)
+    value: psn
+  - label: Police National Network (PNN)
+    value: pnn
+  - label: NHS Network (N3)
+    value: n3
+  - label: Joint Academic Network (JANET)
+    value: janet
+  - label: Scottish Wide Area Network (SWAN)
+    value: swan
+  - label: Health and Social Care Network (HSCN)
+    value: hscn
+  - label: Other
+    value: other
+    filter_ignore: true 

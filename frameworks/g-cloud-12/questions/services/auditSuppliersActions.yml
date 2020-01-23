@@ -1,0 +1,31 @@
+name: Access to supplier activity audit information
+question: How do buyers access audit information about the actions your organisation has taken?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  auditSuppliersActionsStorage:
+    - real_time
+    - regular
+    - support_request
+    - supplier_controlled
+
+type: radios
+options:
+  - label: Users have access to real-time audit information
+    value: real_time
+  - label: Users receive audit information on a regular basis
+    value: regular
+  - label: Users contact the support team to get audit information
+    value: support_request
+  - label: You control when users can access audit information
+    value: supplier_controlled
+  - label: No audit information available
+    value: not_available
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

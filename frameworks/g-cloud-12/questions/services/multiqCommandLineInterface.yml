@@ -1,0 +1,13 @@
+name: Command line interface
+question: Command line interface
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - commandLineInterface
+  - commandLineOS
+  - commandLineUsage

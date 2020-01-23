@@ -1,0 +1,24 @@
+id: serviceFeatures
+name: Service features
+question: List the service features.
+question_advice: Include the technical features of your service, for example ‘real-time reporting’ or ‘remote access’.
+hint: 10 words for each feature, 10 features maximum.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: list
+list_item_name: service feature
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: max_items_limit
+    message: You can have no more than 10 features.
+  - name: under_10_words
+    message: You can’t write more than 10 words for each feature.
+  - name: under_character_limit
+    message: You can’t write more than 100 characters for each feature.

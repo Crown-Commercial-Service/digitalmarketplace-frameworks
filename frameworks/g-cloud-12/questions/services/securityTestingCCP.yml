@@ -1,0 +1,14 @@
+name: Certified Professional (CCP) risk analysts
+question: Are your risk analysts Certified Professional (CCP) scheme-accredited?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

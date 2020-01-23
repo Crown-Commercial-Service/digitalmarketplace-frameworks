@@ -1,0 +1,23 @@
+name: Virtualisation technology used to keep applications and users sharing the same infrastructure apart
+question: Do you rely on virtualisation technology to keep applications and users sharing the same infrastructure apart?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-3-separation-between-users" target="_blank"
+  rel="noopener noreferrer">3rd cloud security principle: ‘Separation between users’ (link opens in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  virtualisationImplementedBy:
+    - true
+  virtualisationSeparation:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.

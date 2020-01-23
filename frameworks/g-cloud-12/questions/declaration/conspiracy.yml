@@ -1,0 +1,15 @@
+name: Organised crime or conspiracy convictions
+question: >
+  In the last 5 years, has anyone who represents, supervises or has control in your organisation (or a partner or parent organisation) been convicted of:
+
+    - a participation offence as defined by section 45 of the Serious Crime Act 2015
+    - conspiracy within the meaning of section 1 or 1A of the Criminal Law Act 1977 article
+    - conspiracy within the meaning of 9 or 9A of the Criminal Attempts and Conspiracy (Northern Ireland) Order 1983 where
+      that conspiracy relates to participation in a criminal organisation as defined in article 2 of Council Framework
+      Decision 2008/841/JHA on the fight against organised crime
+
+type: boolean
+hint: Answer ‘yes’ if anyone who represents, supervises or has control in your organisation or a partner or parent organisation has been convicted of any of the above.
+assessment:
+  passIfIn:
+    - False

@@ -1,0 +1,12 @@
+name: Browsers
+question: Browsers
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+  - browsersAccess
+  - browsersSupported

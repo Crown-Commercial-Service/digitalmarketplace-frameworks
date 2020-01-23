@@ -1,0 +1,12 @@
+name: Energy efficiency
+question: Energy efficiency
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - energyEfficientDatacentres
+  - energyEfficientDatacentresDescription

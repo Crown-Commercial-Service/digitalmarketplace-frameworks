@@ -1,0 +1,12 @@
+name: Usage notifications
+question: Usage notifications
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - usageNotifications
+  - usageNotificationsHow

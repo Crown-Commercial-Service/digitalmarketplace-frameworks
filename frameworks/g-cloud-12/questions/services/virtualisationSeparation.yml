@@ -1,0 +1,20 @@
+name: How shared infrastructure is kept separate
+question: Describe how different organisations sharing the same infrastructure are kept apart.
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 100
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: under_100_words
+    message: Your answer must be no longer than 100 words.
+  - name: under_character_limit
+    message: Your answer must be no longer than 1000 characters.

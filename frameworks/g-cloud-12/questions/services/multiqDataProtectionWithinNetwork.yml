@@ -1,0 +1,13 @@
+name: Protection within your network
+question: Protection within your network
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - dataProtectionWithinNetwork
+  - dataProtectionWithinNetworkOther

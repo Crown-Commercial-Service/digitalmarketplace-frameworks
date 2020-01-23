@@ -1,0 +1,251 @@
+{
+  "settings": {
+    "index": {
+      "max_result_window": 50000
+    },
+    "analysis": {
+      "analyzer": {
+        "stemming_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "standard",
+            "lowercase",
+            "possessive_english_stemmer",
+            "light_english_stemmer"
+          ]
+        }
+      },
+      "filter": {
+        "light_english_stemmer": {
+          "type": "stemmer",
+          "name": "light_english"
+        },
+        "possessive_english_stemmer": {
+          "type": "stemmer",
+          "name": "possessive_english"
+        }
+      },
+      "char_filter": {
+        "nonalpha_removal": {
+          "type": "pattern_replace",
+          "pattern": "\\W+",
+          "replacement": ""
+        }
+      },
+      "normalizer": {
+        "filter_normalizer": {
+          "type": "custom",
+          "char_filter": [
+            "nonalpha_removal"
+          ],
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "services": {
+      "_meta": {
+        "dm_sort_clause": [
+          "_score",
+          {
+            "sortonly_serviceIdHash": "desc"
+          }
+        ],
+        "transformations": [
+          {
+            "hash_to": {
+              "field": "id",
+              "target_field": "serviceIdHash"
+            }
+          }
+        ]
+      },
+      "dynamic": "strict",
+      "properties": {
+        "dmtext_id": {
+          "type": "keyword"
+        },
+        "sortonly_serviceIdHash": {
+          "type": "keyword"
+        },
+        "dmagg_lot": {
+          "type": "keyword"
+        },
+        "dmtext_lot": {
+          "type": "keyword"
+        },
+        "dmtext_lotName": {
+          "type": "text"
+        },
+        "dmtext_frameworkName": {
+          "type": "keyword"
+        },
+        "dmtext_serviceName": {
+          "type": "text"
+        },
+        "dmtext_serviceDescription": {
+          "term_vector": "with_positions_offsets",
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_serviceBenefits": {
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_serviceFeatures": {
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_supplierName": {
+          "type": "text"
+        },
+        "dmfilter_lot": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmagg_serviceCategories": {
+          "type": "keyword"
+        },
+        "dmtext_serviceCategories": {
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmfilter_serviceCategories": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_cloudDeploymentModel": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_resellingType": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_emailOrTicketingSupport": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_phoneSupport": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_webChatSupport": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_onsiteSupport": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_browsersAccess": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_installation": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_mobile": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_APISoftware": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_metricsHow": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_metricsWhat": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_scalingType": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_usageNotifications": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_backup": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_backupDatacentre": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_publicSectorNetworksTypes": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_dataProtectionBetweenNetworks": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_dataProtectionWithinNetwork": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_dataStorageAndProcessingLocations": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_userAuthentication": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_managementAccessAuthentication": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_standardsISOIEC27001": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_standardsISO28000": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_standardsCSASTAR": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_standardsPCI": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_securityGovernanceStandards": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_datacentreSecurityStandards": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_staffSecurityClearanceChecks": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_governmentSecurityClearances": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_educationPricing": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_freeVersionTrialOption": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        }
+      }
+    }
+  }
+}
