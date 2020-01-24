@@ -16,6 +16,10 @@ DATES_FILES = {
     'go_live': 'questions/declaration/canProvideFromDayOne.yml'
 }
 
+FILE_PLACEHOLDER_FILES = {
+    'urls': 'messages/urls.yml'
+}
+
 
 def get_fw_name_from_slug(fw_slug):
     # Hack for G-Cloud which helpfully contains a dash
@@ -151,8 +155,25 @@ class FrameworkContentCloner:
                 print(f"Writing content to {file_path}")
                 f.write(updated_content)
 
+    def set_placeholders_for_file_urls(self):
+        print("Setting placeholder urls for as-yet unpublished files")
+        file_placeholder_file = os.path.join(
+            "frameworks", self._new_fw_slug, 'metadata', FILE_PLACEHOLDER_FILES['urls']
+        )
+        with open(file_placeholder_file) as f:
+            content = yaml.safe_load(f)
+            new_content = {
+                key: "{}/__placeholder__".format(value)
+                for key, value in content.items()
+            }
+
+        with open(file_placeholder_file, 'w') as f:
+            print(f"Writing content to {file_placeholder_file}")
+            yaml.dump(new_content, f)
+
     def clone(self):
         self.copy_fw_folder()
         self.replace_hardcoded_framework_name_and_slug()
         self.update_metadata()
         self.update_dates()
+        self.set_placeholders_for_file_urls()
