@@ -41,6 +41,7 @@ def _definite_pass_g11_declaration():
         "canProvideFromDayOne": True,
         "conspiracy": False,
         "corruptionBribery": False,
+        "dunsNumberCompanyRegistrationNumber": True,
         "employersInsurance": (
             u"Not applicable - your organisation does not need employer\u2019s liability insurance because your "
             u"organisation employs only the owner or close family members."
@@ -58,7 +59,8 @@ def _definite_pass_g11_declaration():
         "publishContracts": True,
         "readUnderstoodGuidance": True,
         "servicesDoNotInclude": True,
-        "servicesHaveOrSupport": True,
+        "servicesHaveOrSupportCloudHostingCloudSoftware": "Yes",
+        "servicesHaveOrSupportCloudSupport": "Yes",
         "termsAndConditions": True,
         "termsOfParticipation": True,
         "terrorism": False,
@@ -68,9 +70,20 @@ def _definite_pass_g11_declaration():
     }
 
 
+def _definite_pass_g12_declaration():
+    g11_decl = _definite_pass_g11_declaration()
+
+    # g12 hasn't (yet?) diverged enough to require a change
+    return g11_decl
+
+
 @contextmanager
 def _empty_context_manager():
     yield
+
+
+_g11 = ("g-cloud-11", _definite_pass_g11_declaration)
+_g12 = ("g-cloud-12", _definite_pass_g12_declaration)
 
 
 @pytest.mark.parametrize("declaration_update,use_baseline,should_pass", (
@@ -107,13 +120,14 @@ def test_g11_declaration_assessment(declaration_update, use_baseline, should_pas
         jsonschema.validate(candidate, schema)
 
 
-@pytest.mark.parametrize('use_baseline', (True, False))
-def test_g11_declaration_assessment_passes_if_answer_missing(use_baseline):
-    schema = generate_schema("g-cloud-11", "declaration", "declaration")
+@pytest.mark.parametrize('fw_slug,base_decl_factory', (_g11, _g12,))
+@pytest.mark.parametrize('use_baseline', (False, True,))
+def test_g11_declaration_assessment_passes_if_answer_missing(fw_slug, base_decl_factory, use_baseline):
+    schema = generate_schema(fw_slug, "declaration", "declaration")
     if use_baseline:
         schema = schema["definitions"]["baseline"]
 
-    candidate = _definite_pass_g11_declaration()
+    candidate = base_decl_factory()
     candidate.pop('modernSlaveryReportingRequirements')
     candidate['modernSlaveryTurnover'] = False
 

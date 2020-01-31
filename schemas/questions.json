@@ -313,6 +313,9 @@
         },
         "discretionary": {
           "type": "boolean"
+        },
+        "required": {
+          "type": "boolean"
         }
       },
       "additionalProperties": false,
