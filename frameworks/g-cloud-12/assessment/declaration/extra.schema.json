@@ -1,0 +1,14 @@
+{
+    "definitions": {
+        "baseline": {
+            "allOf": [
+                {
+                    "anyOf": [
+                        {"properties": {"servicesHaveOrSupportCloudHostingCloudSoftware": {"enum": ["Yes"]}}},
+                        {"properties": {"servicesHaveOrSupportCloudSupport": {"enum": ["Yes"]}}}
+                    ]
+                }
+            ]
+        }
+    }
+}

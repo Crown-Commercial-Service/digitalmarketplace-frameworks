@@ -1,6 +1,15 @@
 from itertools import chain
+import os.path
+import json
+
+# if we need more powerful merging strategies, we can switch to the jsonmerge package, but this is fine for now
+# and more straightforward
+from deepmerge import always_merger
 
 from dmcontent import ContentLoader
+
+
+_base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def _enum_for_question(question):
@@ -8,7 +17,7 @@ def _enum_for_question(question):
 
 
 def generate_schema(framework_slug, question_set, manifest_name):
-    loader = ContentLoader("./")
+    loader = ContentLoader(_base_dir)
     loader.load_manifest(
         framework_slug,
         question_set,
@@ -18,6 +27,19 @@ def generate_schema(framework_slug, question_set, manifest_name):
         framework_slug,
         manifest_name,
     )
+
+    try:
+        with open(os.path.join(
+            _base_dir,
+            "frameworks",
+            framework_slug,
+            "assessment",
+            manifest_name,
+            "extra.schema.json",
+        ), "r") as f:
+            extra_schema = json.load(f)
+    except FileNotFoundError:
+        extra_schema = {}
 
     assessed_questions = []
     for question in chain.from_iterable(section.questions for section in manifest.sections):
@@ -35,7 +57,7 @@ def generate_schema(framework_slug, question_set, manifest_name):
     # enforce that requirement, but it's a stronger guarantee we keep the content, the tests for this function
     # and the custom validation in the supplier frontend in agreement with each other.
 
-    return {
+    generated_schema = {
         "$schema": "http://json-schema.org/draft-07/schema#",  # hardcoded to draft 7 because jsonschema > 3 supports it
         "title": "{} Declaration Assessment Schema (Definite Pass Schema)".format(framework_slug),
         "type": "object",
@@ -56,3 +78,5 @@ def generate_schema(framework_slug, question_set, manifest_name):
             },
         },
     }
+
+    return always_merger.merge(generated_schema, extra_schema)

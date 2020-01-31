@@ -86,34 +86,88 @@ _g11 = ("g-cloud-11", _definite_pass_g11_declaration)
 _g12 = ("g-cloud-12", _definite_pass_g12_declaration)
 
 
-@pytest.mark.parametrize("declaration_update,use_baseline,should_pass", (
+@pytest.mark.parametrize("fw_slug,base_decl_factory,declaration_update,use_baseline,should_pass", (
     # a definite pass
-    ({}, False, True,),
-    ({}, True, True,),
+    _g11 + ({}, False, True,),
+    _g11 + ({}, True, True,),
+    _g12 + ({}, False, True,),
+    _g12 + ({}, True, True,),
     # pass with arbitrary other, hopefully ignored, fields
-    ({"bullockbefriendingBard": "Bous Stephanoumenos"}, False, True,),
-    ({"bullockbefriendingBard": "Bous Stephanoumenos"}, True, True,),
+    _g11 + ({"bullockbefriendingBard": "Bous Stephanoumenos"}, False, True,),
+    _g11 + ({"bullockbefriendingBard": "Bous Stephanoumenos"}, True, True,),
+    _g12 + ({"bullockbefriendingBard": "Bous Stephanoumenos"}, False, True,),
+    _g12 + ({"bullockbefriendingBard": "Bous Stephanoumenos"}, True, True,),
     # definite fails
-    ({"readUnderstoodGuidance": False}, False, False,),
-    ({"readUnderstoodGuidance": False}, True, False,),
-    ({"employersInsurance": "Through metempsychosis"}, False, False,),
-    ({"employersInsurance": "Through metempsychosis"}, True, False,),
+    _g11 + ({"readUnderstoodGuidance": False}, False, False,),
+    _g11 + ({"readUnderstoodGuidance": False}, True, False,),
+    _g11 + ({"employersInsurance": "Through metempsychosis"}, False, False,),
+    _g11 + ({"employersInsurance": "Through metempsychosis"}, True, False,),
+    _g12 + ({"readUnderstoodGuidance": False}, False, False,),
+    _g12 + ({"readUnderstoodGuidance": False}, True, False,),
+    _g12 + ({"employersInsurance": "Through metempsychosis"}, False, False,),
+    _g12 + ({"employersInsurance": "Through metempsychosis"}, True, False,),
     # discretionary
-    ({"graveProfessionalMisconduct": True}, False, False,),
-    ({"graveProfessionalMisconduct": True}, True, True,),
+    _g11 + ({"graveProfessionalMisconduct": True}, False, False,),
+    _g11 + ({"graveProfessionalMisconduct": True}, True, True,),
+    _g12 + ({"graveProfessionalMisconduct": True}, False, False,),
+    _g12 + ({"graveProfessionalMisconduct": True}, True, True,),
     # Multiquestion discretionary
-    ({"modernSlaveryReportingRequirements": False}, True, True,),
-    ({"modernSlaveryReportingRequirements": False}, False, False,),
+    _g11 + ({"modernSlaveryReportingRequirements": False}, True, True,),
+    _g11 + ({"modernSlaveryReportingRequirements": False}, False, False,),
+    _g12 + ({"modernSlaveryReportingRequirements": False}, True, True,),
+    _g12 + ({"modernSlaveryReportingRequirements": False}, False, False,),
+    # "extra" schema json
+    _g12 + ({"servicesHaveOrSupportCloudHostingCloudSoftware": "No"}, True, False,),
+    _g12 + ({"servicesHaveOrSupportCloudHostingCloudSoftware": "No"}, False, False,),
+    _g12 + ({"servicesHaveOrSupportCloudSupport": "No"}, True, False,),
+    _g12 + ({"servicesHaveOrSupportCloudSupport": "No"}, False, False,),
+    _g12 + ({
+        "servicesHaveOrSupportCloudHostingCloudSoftware": "My organisation isn't submitting cloud hosting (lot 1) or cloud software (lot 2) services",  # noqa
+        "servicesHaveOrSupportCloudSupport": "My organisation isn't submitting cloud support (lot 3) services",
+    }, True, False,),
+    _g12 + ({
+        "servicesHaveOrSupportCloudHostingCloudSoftware": "My organisation isn't submitting cloud hosting (lot 1) or cloud software (lot 2) services",  # noqa
+        "servicesHaveOrSupportCloudSupport": "My organisation isn't submitting cloud support (lot 3) services",
+    }, False, False,),
+    _g12 + ({
+        "servicesHaveOrSupportCloudHostingCloudSoftware": "My organisation isn't submitting cloud hosting (lot 1) or cloud software (lot 2) services",  # noqa
+    }, True, True,),
+    _g12 + ({
+        "servicesHaveOrSupportCloudHostingCloudSoftware": "My organisation isn't submitting cloud hosting (lot 1) or cloud software (lot 2) services",  # noqa
+    }, False, True,),
+    _g12 + ({
+        "servicesHaveOrSupportCloudSupport": "My organisation isn't submitting cloud support (lot 3) services",
+    }, True, True,),
+    _g12 + ({
+        "servicesHaveOrSupportCloudSupport": "My organisation isn't submitting cloud support (lot 3) services",
+    }, False, True,),
+    _g12 + ({
+        "servicesHaveOrSupportCloudHostingCloudSoftware": "No",
+        "servicesHaveOrSupportCloudSupport": "My organisation isn't submitting cloud support (lot 3) services",
+    }, True, False,),
+    _g12 + ({
+        "servicesHaveOrSupportCloudHostingCloudSoftware": "No",
+        "servicesHaveOrSupportCloudSupport": "My organisation isn't submitting cloud support (lot 3) services",
+    }, False, False,),
+    # ...whereas g11 doesn't have the extra schema to invalidate this candidate
+    _g11 + ({
+        "servicesHaveOrSupportCloudHostingCloudSoftware": "My organisation isn't submitting cloud hosting (lot 1) or cloud software (lot 2) services",  # noqa
+        "servicesHaveOrSupportCloudSupport": "My organisation isn't submitting cloud support (lot 3) services",
+    }, True, True,),
+    _g11 + ({
+        "servicesHaveOrSupportCloudHostingCloudSoftware": "My organisation isn't submitting cloud hosting (lot 1) or cloud software (lot 2) services",  # noqa
+        "servicesHaveOrSupportCloudSupport": "My organisation isn't submitting cloud support (lot 3) services",
+    }, False, True,),
 ))
-def test_g11_declaration_assessment(declaration_update, use_baseline, should_pass):
-    # these test(s) are a bit funny in that they all make the same call to the function-under-test and then
-    # assert a different thing about the return value, so we could improve on run time if necessary by only performing
-    # the call once if necessary...
-    schema = generate_schema("g-cloud-11", "declaration", "declaration")
+def test_g11_declaration_assessment(fw_slug, base_decl_factory, declaration_update, use_baseline, should_pass):
+    # these test(s) are a bit funny in that they all make the same call to the function-under-test (`generate_schema`)
+    # and then assert a different thing about the return value, so we could improve on run time if necessary by only
+    # performing the call once...
+    schema = generate_schema(fw_slug, "declaration", "declaration")
     if use_baseline:
         schema = schema["definitions"]["baseline"]
 
-    candidate = _definite_pass_g11_declaration()
+    candidate = base_decl_factory()
     candidate.update(declaration_update)
 
     with (_empty_context_manager() if should_pass else pytest.raises(jsonschema.ValidationError)):
