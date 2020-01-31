@@ -5,7 +5,6 @@ hint: >
   This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A
   (eg .pdf, .odt). (Maximum file size 5MB.)
 
-optional: true
 depends:
   - "on": lot
     being:
@@ -24,5 +23,3 @@ validations:
     message: Your document exceeds the 5MB limit. Please reduce file size.
   - name: file_can_be_saved
     message: Your document failed to upload. Please try again.
-
-empty_message: You haven’t added a service definition document
