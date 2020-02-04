@@ -15,3 +15,5 @@ assessment:
   passIfIn:
     - True
   discretionary: True
+  # actually dependent, but it is not the assessment schema's responsibility to enforce that dependency
+  required: False
