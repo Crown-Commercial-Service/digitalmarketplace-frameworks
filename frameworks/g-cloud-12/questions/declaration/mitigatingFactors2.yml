@@ -6,4 +6,4 @@ type: textbox_large
 validations:
   - 
     name: answer_required
-    message: You need to answer this question because you answered ‘yes’ to either [[unspentTaxConvictions]] or [[GAAR]].
+    message: Enter details of mitigating factors about either [[unspentTaxConvictions]] or [[GAAR]].
