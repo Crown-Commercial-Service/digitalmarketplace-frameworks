@@ -10,8 +10,8 @@ validations:
   - name: answer_required
     message: Select a file.
   - name: file_is_open_document_format
-    message: Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).
+    message: The file must be in an open format. Select an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).
   - name: file_is_less_than_5mb
-    message: Your document exceeds the 5MB limit. Please reduce file size.
+    message: The file must be smaller than 5MB.
   - name: file_can_be_saved
-    message: Your document failed to upload. Please try again.
+    message: The selected file could not be uploaded - try again.
