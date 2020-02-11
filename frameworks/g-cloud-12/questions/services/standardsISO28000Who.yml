@@ -15,6 +15,6 @@ validations:
   - name: answer_required
     message: Enter the accreditor name.
   - name: under_10_words
-    message: Your description must be no more than 10 words.
+    message: Accreditor name must be 10 words or fewer.
   - name: under_character_limit
-    message: Your description must be no more than 100 characters.
+    message: Accreditor name must be 100 characters or fewer.

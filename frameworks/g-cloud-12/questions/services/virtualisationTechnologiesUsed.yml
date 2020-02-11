@@ -32,8 +32,8 @@ validations:
   - name: answer_required
     message: Select what virtualisation technologies are used.
   - name: under_10_words
-    message: You can’t write more than 10 words for each virtualisation technology.
+    message: Each virtualisation technology must be 10 words or fewer.
   - name: max_items_limit
     message: You must have 10 or fewer virtualisation technology.
   - name: under_character_limit
-    message: You can’t write more than 100 characters for each virtualisation technology.
+    message: Each virtualisation technology must be 100 characters or fewer.

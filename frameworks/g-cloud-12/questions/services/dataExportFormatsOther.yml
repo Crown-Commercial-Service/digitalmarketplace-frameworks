@@ -15,8 +15,8 @@ validations:
   - name: answer_required
     message: Enter a format.
   - name: under_10_words
-    message: You can’t write more than 10 words for each data format.
+    message: Each data format must be 10 words or fewer.
   - name: max_items_limit
     message: You must have 10 or fewer data formats.
   - name: under_character_limit
-    message: You can’t write more than 100 characters for each data format.
+    message: Each data format must be 100 characters or fewer.

@@ -16,4 +16,4 @@ validations:
   - name: answer_required
     message: Enter the service name.
   - name: under_character_limit
-    message: Your service name must be no more than 100 characters.
+    message: Your service name must be 100 characters or fewer.
