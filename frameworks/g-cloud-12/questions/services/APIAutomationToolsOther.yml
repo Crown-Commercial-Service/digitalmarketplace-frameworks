@@ -12,8 +12,6 @@ list_item_name: API automation tool
 type: list
 
 validations:
-  - name: answer_required
-    message: You need to answer this question.
   - name: under_10_words
     message: You can’t write more than 10 words for each API automation tool.
   - name: max_items_limit
