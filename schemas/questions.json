@@ -148,6 +148,7 @@
             "enum": [
               "answer_required",
               "assurance_required",
+              "dependent_question_error",
               "file_can_be_saved",
               "file_is_less_than_5mb",
               "file_is_open_document_format",
