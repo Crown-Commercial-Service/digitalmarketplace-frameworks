@@ -14,6 +14,6 @@ validations:
   - name: answer_required
     message: Enter the other software services your service is an extension to.
   - name: under_50_words
-    message: Your description must be no more than 50 words.
+    message: Description must be 50 words or fewer.
   - name: under_character_limit
-    message: Your description must be no more than 500 characters.
+    message: Description must be 500 characters or fewer.
