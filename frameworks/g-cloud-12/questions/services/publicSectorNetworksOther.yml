@@ -12,7 +12,7 @@ list_item_name: public sector network
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Enter a network.
   - name: under_10_words
     message: You can’t write more than 10 words for each public sector network.
   - name: max_items_limit

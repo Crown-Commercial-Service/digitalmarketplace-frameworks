@@ -12,6 +12,8 @@ type: list
 list_item_name: data format
 
 validations:
+  - name: answer_required
+    message: Enter a format.
   - name: under_10_words
     message: You can’t write more than 10 words for each data format.
   - name: max_items_limit

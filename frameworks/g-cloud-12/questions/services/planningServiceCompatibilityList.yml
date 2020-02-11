@@ -11,6 +11,8 @@ type: list
 list_item_name: hosting or software service
 
 validations:
+  - name: answer_required
+    message: Enter a service.
   - name: under_10_words
     message: You can’t write more than 10 words for each hosting or software service.
   - name: max_items_limit

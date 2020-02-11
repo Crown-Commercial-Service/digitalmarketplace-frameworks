@@ -11,6 +11,8 @@ type: list
 list_item_name: security certification
 
 validations:
+  - name: answer_required
+    message: Enter a certification.
   - name: under_10_words
     message: You can’t write more than 10 words for each security certification.
   - name: max_items_limit
