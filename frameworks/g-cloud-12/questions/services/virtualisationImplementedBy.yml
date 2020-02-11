@@ -22,4 +22,4 @@ options:
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Select if virtualisation technology is implemented by you or a third party.

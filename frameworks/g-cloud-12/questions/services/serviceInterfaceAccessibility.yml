@@ -23,4 +23,4 @@ options:
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Select what accessibility standards your service meets.

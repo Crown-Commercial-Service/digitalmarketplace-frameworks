@@ -30,7 +30,7 @@ options:
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Select what virtualisation technologies are used.
   - name: under_10_words
     message: You can’t write more than 10 words for each virtualisation technology.
   - name: max_items_limit
