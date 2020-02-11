@@ -11,7 +11,7 @@ type: text
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Enter the provider name.
   - name: under_10_words
     message: Your description must be no more than 10 words.
   - name: under_character_limit
