@@ -26,3 +26,7 @@ options:
     value: puppet
   - label: Other
     value: other
+
+validations:
+  - name: answer_required
+    message: Select an automation tool.

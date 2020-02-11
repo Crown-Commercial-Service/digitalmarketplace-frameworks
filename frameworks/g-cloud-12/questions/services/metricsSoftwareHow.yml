@@ -23,3 +23,7 @@ options:
   - label: Reports on request
     value: on_request
     filter_label: reports on request
+
+validations:
+  - name: answer_required
+    message: Select a reporting method.
