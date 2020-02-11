@@ -15,6 +15,6 @@ validations:
   - name: answer_required
     message: Enter details of how users can control what backups are performed.
   - name: under_100_words
-    message: Your answer must be no longer than 100 words.
+    message: Description must be 100 words or fewer.
   - name: under_character_limit
-    message: Your answer must be no longer than 1000 characters.
+    message: Description must be 1000 characters or fewer.

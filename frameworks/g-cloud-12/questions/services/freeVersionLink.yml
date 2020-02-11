@@ -14,4 +14,4 @@ type: text
 
 validations:
   - name: under_character_limit
-    message: Your link must be no more than 1000 characters.
+    message: The link must be 1000 characters or fewer.
