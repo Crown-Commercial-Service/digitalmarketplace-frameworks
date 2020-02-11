@@ -13,7 +13,7 @@ max_length_in_words: 200
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Enter the parts of your service not covered by PCI DSS certification.
   - name: under_200_words
     message: Your description must be no more than 200 words.
   - name: under_character_limit

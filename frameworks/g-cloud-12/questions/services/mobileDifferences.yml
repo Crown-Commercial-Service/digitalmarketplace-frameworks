@@ -11,6 +11,8 @@ type: textbox_large
 max_length_in_words: 100
 
 validations:
+  - name: answer_required
+    message: Enter description.
   - name: under_100_words
     message: Your description must be no more than 100 words.
   - name: under_character_limit

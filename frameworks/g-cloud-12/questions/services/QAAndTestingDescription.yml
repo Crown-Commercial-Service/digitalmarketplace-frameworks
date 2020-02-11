@@ -12,7 +12,7 @@ max_length_in_words: 200
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Enter how you help buyers do quality assurance and performance testing.
   - name: under_200_words
     message: Your description must be no more than 200 words.
   - name: under_character_limit
