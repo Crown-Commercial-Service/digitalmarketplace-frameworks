@@ -13,4 +13,4 @@ type: boolean
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Select yes if your service scales without the user having to contact your support team.
