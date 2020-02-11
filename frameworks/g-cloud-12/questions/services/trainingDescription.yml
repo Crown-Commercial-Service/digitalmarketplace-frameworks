@@ -14,7 +14,6 @@ validations:
   - name: answer_required
     message: Enter description.
   - name: under_200_words
-    message: Your description must be no more than 200 words.
+    message: Description must be 200 words or fewer.
   - name: under_character_limit
-    message: Your description must be no more than 2000 characters.
-
+    message: Description must be 2000 characters or fewer.
