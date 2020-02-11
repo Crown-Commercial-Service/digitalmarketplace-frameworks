@@ -16,7 +16,7 @@ type: upload
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Select a file.
   - name: file_is_open_document_format
     message: Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).
   - name: file_is_less_than_5mb
