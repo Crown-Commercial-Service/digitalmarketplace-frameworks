@@ -117,10 +117,6 @@ _g12 = ("g-cloud-12", _definite_pass_g12_declaration)
     _g12 + ({"modernSlaveryReportingRequirements": False}, True, True,),
     _g12 + ({"modernSlaveryReportingRequirements": False}, False, False,),
     # "extra" schema json
-    _g12 + ({"servicesHaveOrSupportCloudHostingCloudSoftware": "No"}, True, False,),
-    _g12 + ({"servicesHaveOrSupportCloudHostingCloudSoftware": "No"}, False, False,),
-    _g12 + ({"servicesHaveOrSupportCloudSupport": "No"}, True, False,),
-    _g12 + ({"servicesHaveOrSupportCloudSupport": "No"}, False, False,),
     _g12 + ({
         "servicesHaveOrSupportCloudHostingCloudSoftware": "My organisation isn't submitting cloud hosting (lot 1) or cloud software (lot 2) services",  # noqa
         "servicesHaveOrSupportCloudSupport": "My organisation isn't submitting cloud support (lot 3) services",
