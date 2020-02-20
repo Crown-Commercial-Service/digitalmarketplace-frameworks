@@ -13,6 +13,6 @@ type: text
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Enter the accreditation date.
   - name: under_character_limit
-    message: Your accreditation date must be no more than 100 characters.
+    message: Your accreditation date must be 50 characters or fewer.

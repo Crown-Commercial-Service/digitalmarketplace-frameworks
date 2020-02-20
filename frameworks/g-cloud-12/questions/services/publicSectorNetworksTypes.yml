@@ -27,3 +27,7 @@ options:
   - label: Other
     value: other
     filter_ignore: true 
+
+validations:
+  - name: answer_required
+    message: Select a network.

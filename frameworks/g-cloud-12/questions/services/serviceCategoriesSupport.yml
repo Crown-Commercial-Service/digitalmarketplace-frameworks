@@ -42,5 +42,7 @@ options:
         - true
 
 validations:
+  - name: answer_required
+    message: Select a service category.
   - message: You can’t choose more than 6 categories.
     name: max_items_limit

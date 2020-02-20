@@ -15,4 +15,4 @@ type: boolean
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Select yes if your security testing is performed by certified security testers.

@@ -7,4 +7,4 @@ hidden: true
 validations:
   - 
     name: answer_required
-    message: You need to answer this question
+    message: Explain why your organisation does not meet the Modern Slavery Act reporting requirements.

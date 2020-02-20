@@ -14,7 +14,7 @@ max_length_in_words: 10
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Enter the organisation name.
   - name: under_10_words
     message: Your answer must be no longer than 10 words.
   - name: under_character_limit

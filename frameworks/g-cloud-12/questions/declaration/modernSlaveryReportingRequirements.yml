@@ -9,7 +9,7 @@ type: boolean
 
 validations:
   - name: answer_required
-    message: You need to answer this question.
+    message: Select yes if your organisation complies with the Modern Slavery Act reporting requirements.
 
 assessment:
   passIfIn:

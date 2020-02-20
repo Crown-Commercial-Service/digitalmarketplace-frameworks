@@ -17,3 +17,7 @@ options:
     value: sms
   - label: Other
     value: other
+
+validations:
+  - name: answer_required
+    message: Select a notification method.
