@@ -1,8 +1,16 @@
 name: Terms and conditions document
 question: Add your terms and conditions document
 hint: >
-  This document will not be indexed by search on the Digital Marketplace. Use an Open Document Format (ODF) or PDF/A
-  (eg .pdf, .odt). (Maximum file size 5MB.)
+  <p class="govuk-body">This document will not be indexed by search on the Digital Marketplace.</p>
+  <p class="govuk-body">Your document should:</p>
+  <ul class="govuk-list">
+    <li>be an Open Document Format (ODF) or PDF/A</li>
+    <li>have a maximum file size of 5MB</li>
+    <li>meet accessibility standards</li>
+  </ul>
+  <p class="govuk-body">
+    <a class="govuk-link" target="_blank" rel="noopener noreferrer" href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/accessible-pdfs">Read the guidance on accessible documents (link opens in a new tab)</a>.
+  </p>
 
 depends:
   - "on": lot
