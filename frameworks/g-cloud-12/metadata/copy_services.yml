@@ -25,6 +25,8 @@ questions_to_copy:
 - backupScheduling
 - backupWhatData
 - boardLevelServiceSecurity
+- browsersAccess
+- browsersSupported
 - cloudDeploymentModel
 - commandLineInterface
 - commandLineOS
@@ -50,6 +52,8 @@ questions_to_copy:
 - datacentreSecurityStandards
 - devicesUsersManageTheServiceThrough
 - documentation
+- documentationAccessibility
+- documentationAccessibilityDescription
 - documentationFormats
 - documentationFormatsOther
 - educationPricing
@@ -60,6 +64,7 @@ questions_to_copy:
 - endOfContractDataExtraction
 - endOfContractProcess
 - energyEfficientDatacentres
+- energyEfficientDatacentresDescription
 - equipmentDisposalApproach
 - freeVersionDescription
 - freeVersionLink
@@ -107,6 +112,9 @@ questions_to_copy:
 - protectionOfDataAtRestOther
 - protectiveMonitoringApproach
 - protectiveMonitoringType
+- publicSectorNetworks
+- publicSectorNetworksOther
+- publicSectorNetworksTypes
 - resellingOrganisations
 - resellingType
 - scaling
@@ -116,6 +124,11 @@ questions_to_copy:
 - securityGovernanceApproach
 - securityGovernanceStandards
 - securityGovernanceStandardsOther
+- securityTesting
+- securityTestingAccreditations
+- securityTestingAccreditationsOther
+- securityTestingAccredited
+- securityTestingCCP
 - serviceAddOnDetails
 - serviceAddOnType
 - serviceBenefits
