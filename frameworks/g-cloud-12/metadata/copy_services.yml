@@ -129,6 +129,8 @@ questions_to_copy:
 - securityTestingAccreditationsOther
 - securityTestingAccredited
 - securityTestingCCP
+- securityTestingWhat
+- securityTestingWhatOther
 - serviceAddOnDetails
 - serviceAddOnType
 - serviceBenefits
@@ -136,8 +138,10 @@ questions_to_copy:
 - serviceConstraints
 - serviceDescription
 - serviceFeatures
+- serviceInterface
 - serviceInterfaceAccessibility
 - serviceInterfaceAccessibilityDescription
+- serviceInterfaceDescription
 - serviceInterfaceTesting
 - serviceName
 - setupAndMigrationService
