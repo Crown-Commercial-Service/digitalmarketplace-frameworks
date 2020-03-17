@@ -88,6 +88,8 @@
     - webInterfaceAccessibility
     - webInterfaceAccessibilityDescription
     - webInterfaceAccessibilityTesting
+    - serviceInterface
+    - serviceInterfaceDescription
     - serviceInterfaceAccessibility
     - serviceInterfaceAccessibilityDescription
     - serviceInterfaceTesting
