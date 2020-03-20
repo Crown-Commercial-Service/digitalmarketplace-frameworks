@@ -6,10 +6,16 @@
   description: |
     You must answer these questions to confirm that your services are suitable for G-Cloud&nbsp;12.
 
-    You must be able to truthfully answer ‘yes’ to every question for your application to be considered eligible.
-    The Crown Commercial Service may ask for proof after you’ve submitted your application.
+    Except for questions [[servicesHaveOrSupportCloudHostingCloudSoftware]] and [[servicesHaveOrSupportCloudSupport]],
+    if you can’t answer ‘yes’ to every question in this section,
+    it’s very unlikely that your application will be accepted.
 
-    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted. 
+    You must answer ‘yes’ to at least one of questions
+    [[servicesHaveOrSupportCloudHostingCloudSoftware]] or [[servicesHaveOrSupportCloudSupport]]
+    or answer ‘yes’ to both.
+
+    You must be able to truthfully answer every question for your application to be considered eligible.
+    The Crown Commercial Service may ask for proof after you’ve submitted your application.
 
   questions:
     - servicesHaveOrSupportCloudHostingCloudSoftware
