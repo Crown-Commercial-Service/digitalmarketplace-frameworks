@@ -4,7 +4,7 @@ hint: 'eg 31/12/2020'
 type: date
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter a date.'
   - name: invalid_format
     message: "Your answer must be a valid date."
 
