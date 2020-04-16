@@ -22,5 +22,5 @@ validations:
     message: 'Enter a description of the users.'
   -
     name: under_200_words
-    message: 'Your answer must be no more than 200 words.'
+    message: 'Description must be 200 words or fewer.'
 empty_message: Describe the users and their needs

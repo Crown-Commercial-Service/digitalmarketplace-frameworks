@@ -18,5 +18,5 @@ validations:
     message: 'Enter a description.'
   -
     name: under_200_words
-    message: 'Your answer must be no more than 200 words.'
+    message: 'Description must be 200 words or fewer.'
 empty_message: Describe why the work is being done
