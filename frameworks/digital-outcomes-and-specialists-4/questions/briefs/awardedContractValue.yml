@@ -8,7 +8,7 @@ fields:
 
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter a contract value.'
   - name: not_money_format
     field: awardedContractValue
     message: "Enter your value in pounds and pence using numbers and decimals only, for example 9900.05 for 9900 pounds and 5 pence."
