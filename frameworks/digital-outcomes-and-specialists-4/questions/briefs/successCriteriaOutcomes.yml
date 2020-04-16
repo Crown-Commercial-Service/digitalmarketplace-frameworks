@@ -27,7 +27,7 @@ validations:
     message: 'Enter at least 1 criteria.'
   -
     name: under_30_words
-    message: 'Criteria must be no more than 30 words.'
+    message: 'Each criteria must be 30 words or fewer.'
   -
     name: max_items_limit
     message: 'You must have 20 or fewer criteria.'
