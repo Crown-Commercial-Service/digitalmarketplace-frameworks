@@ -14,5 +14,5 @@ validations:
     message: 'Enter an address.'
   -
     name: under_100_words
-    message: 'Your answer must be no more than 100 words.'
+    message: 'Address must be 100 words or fewer.'
 empty_message: Describe where the supplier will work

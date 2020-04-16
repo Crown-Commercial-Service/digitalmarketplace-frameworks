@@ -13,5 +13,5 @@ validations:
     message: 'Enter a description of the research frequency.'
   -
     name: under_100_words
-    message: 'Your answer must be no more than 100 words.'
+    message: 'Description must be 100 words or fewer.'
 empty_message: Describe how often research will happen

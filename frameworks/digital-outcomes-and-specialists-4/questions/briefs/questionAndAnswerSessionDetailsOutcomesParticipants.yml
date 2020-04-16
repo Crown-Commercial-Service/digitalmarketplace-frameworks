@@ -35,5 +35,5 @@ validations:
     message: 'Enter details of the session.'
   -
     name: under_100_words
-    message: 'Your question and answer session details must be no more than 100 words.'
+    message: 'Details must be 100 words or fewer.'
 empty_message: Add details
