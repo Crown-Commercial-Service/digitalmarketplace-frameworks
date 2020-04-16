@@ -23,6 +23,6 @@ validations:
   - name: answer_required
     message: 'Enter a weighting.'
   - name: not_a_number
-    message: 'Weighting must be a number between 5 and 20.'
+    message: 'Weighting must be between 5 and 20.'
   - name: total_should_be_100
     message: 'Total must add up to 100%.'

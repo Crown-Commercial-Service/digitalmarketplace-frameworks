@@ -26,6 +26,6 @@ validations:
   - name: answer_required
     message: 'Enter a weighting.'
   - name: not_a_number
-    message: 'Weighting must be a number between 10 and 70.'
+    message: 'Weighting must be between 10 and 70.'
   - name: total_should_be_100
     message: 'Total must add up to 100%.'
