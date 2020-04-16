@@ -38,5 +38,5 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Select an assessment method.'
 empty_message: Choose additional assessment methods
