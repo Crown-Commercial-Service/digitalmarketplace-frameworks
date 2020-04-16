@@ -15,5 +15,5 @@ validations:
     message: 'Enter a title.'
   -
     name: under_character_limit
-    message: "Your title must be no more than 100 characters."
+    message: "Title must be 100 characters or fewer."
 empty_message: Add title
