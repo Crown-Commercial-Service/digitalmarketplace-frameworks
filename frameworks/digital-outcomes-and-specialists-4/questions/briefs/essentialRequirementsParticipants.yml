@@ -29,5 +29,5 @@ validations:
     message: 'You must have 20 or fewer criteria.'
   -
     name: under_character_limit
-    message: 'Criteria must be no more than 300 characters.'
+    message: "Each requirement must be 300 characters or fewer."
 empty_message: Add essential skills or experience
