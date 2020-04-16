@@ -17,5 +17,5 @@ depends:
 validations:
   -
     name: under_50_words
-    message: 'Your answer must be no more than 50 words.'
+    message: 'Description must be 50 words or fewer.'
 empty_message: Add security clearance

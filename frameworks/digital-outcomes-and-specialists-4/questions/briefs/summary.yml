@@ -17,5 +17,5 @@ validations:
     message: 'Enter a summary of the work.'
   -
     name: under_50_words
-    message: 'Your answer must be no more than 50 words.'
+    message: 'Summary must be 50 words or fewer.'
 empty_message: Provide a summary of the work
