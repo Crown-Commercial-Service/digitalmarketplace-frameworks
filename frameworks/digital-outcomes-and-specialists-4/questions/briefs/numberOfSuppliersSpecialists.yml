@@ -18,7 +18,7 @@ depends:
       - digital-specialists
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter the number of suppliers.'
   - name: not_a_number
     message: 'You must evaluate at least 3, and no more than 15, specialists.'
 
