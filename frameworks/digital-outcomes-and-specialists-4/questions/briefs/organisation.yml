@@ -12,7 +12,7 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter an organisation.'
   -
     name: under_character_limit
     message: "Your organisation name must be no more than 100 characters."

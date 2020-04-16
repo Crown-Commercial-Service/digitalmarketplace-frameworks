@@ -12,7 +12,7 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter details of the number of research rounds.'
   -
     name: under_character_limit
     message: "Your answer must be no more than 100 characters."
