@@ -30,5 +30,5 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Select a location.'
 empty_message: Choose location

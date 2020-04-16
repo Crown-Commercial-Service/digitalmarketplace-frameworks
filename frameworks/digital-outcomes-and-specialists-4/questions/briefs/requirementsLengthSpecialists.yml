@@ -12,5 +12,5 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Select a time span.'
 empty_message: Set requirements length
