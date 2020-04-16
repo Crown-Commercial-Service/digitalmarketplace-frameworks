@@ -15,7 +15,7 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter a description.'
   -
     name: under_200_words
     message: 'Your answer must be no more than 200 words.'

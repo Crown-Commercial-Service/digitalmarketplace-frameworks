@@ -32,7 +32,7 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter details of the session.'
   -
     name: under_100_words
     message: 'Your question and answer session details must be no more than 100 words.'
