@@ -1,11 +1,11 @@
 name: What's the start date?
 question: What's the start date?
-hint: 'eg 31/12/2020'
+hint: 'For example, 31 5 2020'
 type: date
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter the start date.'
   - name: invalid_format
-    message: "Your answer must be a valid date."
+    message: "Enter a real start date."
 
 empty_message: Set contract start date

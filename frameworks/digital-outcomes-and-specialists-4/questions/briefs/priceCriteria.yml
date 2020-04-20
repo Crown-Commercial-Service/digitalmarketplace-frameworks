@@ -33,4 +33,4 @@ empty_message: Choose payment approach
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Select a payment approach.'
