@@ -178,7 +178,7 @@ as follows:
 Your frontend apps will then be using your local copy of the framework data rather than the version specified
 in their `package.json` - for example, whenever you:
 
- - rebuild the app's `content` directory by running `make frontend_build`; or
+ - rebuild the app's `content` directory by running `make frontend-build`; or
  - run `npm run frontend-build:watch` to automatically rebuild the framework content whenever a framework YML file
    changes.
 
