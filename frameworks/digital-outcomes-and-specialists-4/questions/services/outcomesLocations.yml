@@ -7,7 +7,6 @@ question: |
 
   You can update the locations where you can provide services when the framework is live.
 hint: >
-    [View locations (PDF, 262KB)](http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/maps/regions--former-government-office-regions--gors---effective-at-31st-december--2011.pdf)
     ‘Offsite’ means the specialist will not be working at the buyer’s own sites.
 depends:
   - "on": lot
