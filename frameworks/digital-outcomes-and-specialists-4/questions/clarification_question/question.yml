@@ -13,6 +13,6 @@ type: textbox_large
 max_length_in_words: 100
 validations:
   - name: answer_required
-    message: You must enter a question.
+    message: Enter a supplier question.
   - name: under_100_words
-    message: Your question must be no more than 100 words.
+    message: Supplier question must be 100 words or fewer.
