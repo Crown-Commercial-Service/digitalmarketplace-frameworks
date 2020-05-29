@@ -2,7 +2,7 @@ name: Assisted digital and accessibility requirements
 question: Assisted digital and accessibility requirements
 question_advice: >
   Describe any assisted digital, digital inclusion and accessibility needs participants should have,
-  eg users who rely on a screen reader, magnifier, mouth stick or head wand.
+  such as users who rely on a screen reader, magnifier, mouth stick or head wand.
 optional: true
 type: textbox_large
 max_length_in_words: 100

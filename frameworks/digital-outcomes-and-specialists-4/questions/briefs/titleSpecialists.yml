@@ -4,7 +4,9 @@ question: What you want to call your requirements
 question_advice: |
   This will help you refer to your requirements when talking to suppliers.
 
-  You can only post requirements for 1 specialist role at a time, eg if you want to find 3 developers, you must post 3 separate requirements – 1 for each developer.
+  You can only post requirements for 1 specialist role at a time, for example
+  if you want to find 3 developers, you must post 3 separate requirements – 1
+  for each developer.
 
 hint: 100 characters maximum
 type: text

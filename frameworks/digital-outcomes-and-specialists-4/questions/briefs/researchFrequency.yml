@@ -1,6 +1,7 @@
 name: How often research will happen
 question: How often research will happen
-question_advice: Include the days or dates you expect research to happen, eg Tuesdays, every 2 weeks.
+question_advice: >
+  Include the days or dates you expect research to happen, for example: Tuesdays, every 2 weeks.
 type: textbox_large
 max_length_in_words: 100
 depends:

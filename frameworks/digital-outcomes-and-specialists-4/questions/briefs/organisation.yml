@@ -1,6 +1,6 @@
 name: Organisation the work is for
 question: Organisation the work is for
-question_advice: 'eg National Audit Office or Lewisham Council'
+question_advice: 'For example: National Audit Office or Lewisham Council'
 hint: 100 characters maximum
 type: text
 depends:

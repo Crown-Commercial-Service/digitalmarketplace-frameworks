@@ -1,6 +1,6 @@
 name: Access restrictions at location
 question: Access restrictions at location
-question_advice: Describe any access restrictions that may affect participants at the research location, eg no wheelchair access.
+question_advice: Describe any access restrictions that may affect participants at the research location, such as no wheelchair access.
 optional: true
 type: textbox_large
 max_length_in_words: 100
