@@ -9,7 +9,7 @@ question_advice: |
 
   So that&hellip; (why does the user want to do this?)
 
-  eg As a carer, I need to know if I can get Carer’s Allowance, so that I know if I should apply for it or not.
+  For example: As a carer, I need to know if I can get Carer’s Allowance, so that I know if I should apply for it or not.
 type: textbox_large
 max_length_in_words: 200
 depends:

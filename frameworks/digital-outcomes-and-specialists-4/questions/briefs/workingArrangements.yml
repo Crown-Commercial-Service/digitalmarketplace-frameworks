@@ -7,7 +7,7 @@ question_advice: |
 
   Include any limits on expenses.
 
-  eg onsite 3 days a week for face-to-face team meetings.
+  For example: onsite 3 days a week for face-to-face team meetings
 
 type: textbox_large
 max_length_in_words: 100

@@ -2,9 +2,9 @@ name: How many suppliers to evaluate
 id: numberOfSuppliers
 question: How many suppliers to evaluate
 question_advice: |
-  You must evaluate at least 3 suppliers.
+  Enter how many suppliers you will evaluate. You must evaluate at least 3.
 
-   Read about [how many suppliers to evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
+  Read about [how many suppliers to evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
 
 type: number
 limits:

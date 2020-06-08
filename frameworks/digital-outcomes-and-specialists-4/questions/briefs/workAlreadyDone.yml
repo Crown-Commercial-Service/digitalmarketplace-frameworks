@@ -1,6 +1,6 @@
 name: Any work that’s already been done
 question: Any work that’s already been done
-question_advice: If you’ve already done some work, eg completed a discovery phase, you should describe it here.
+question_advice: If you’ve already done some work, for example, completed a discovery phase, you should describe it here.
 type: textbox_large
 optional: true
 max_length_in_words: 100

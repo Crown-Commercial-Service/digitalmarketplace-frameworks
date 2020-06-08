@@ -1,6 +1,9 @@
 name: Specialist role
 question: Type of specialist you need
-question_advice: You can only post requirements for 1 specialist role at a time, eg if you want to find 3 developers, you must post 3 separate requirements – 1 for each developer.
+question_advice: >
+  You can only post requirements for 1 specialist role at a time, for example
+  if you want to find 3 developers, you must post 3 separate requirements – 1
+  for each developer.
 type: radios
 options:
   -
@@ -109,7 +112,7 @@ options:
     value: userResearcher
     description: >
       Design, conduct and analyse user research using a range of techniques,
-      eg one-to-one interviews or usability tests.
+      such as one-to-one interviews or usability tests.
   -
     label: Web operations engineer
     value: webOperations

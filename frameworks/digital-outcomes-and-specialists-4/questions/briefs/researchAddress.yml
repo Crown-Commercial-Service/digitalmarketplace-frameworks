@@ -5,7 +5,7 @@ question_advice: |
 
    - the town or city where the research will happen
    - more than one address if appropriate
-   - a description of the research environment, eg whether the research will happen in a lab, at a participants home,
+   - a description of the research environment, such as whether the research will happen in a lab, at a participant’s home,
      or in a neutral location like a community centre
 type: textbox_large
 max_length_in_words: 100

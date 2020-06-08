@@ -10,10 +10,10 @@ options:
   - label: East Midlands
   - label: West Midlands
   - label: East of England
-  - label: Wales
   - label: London
   - label: South East England
   - label: South West England
+  - label: Wales
   - label: Northern Ireland
   - label: International (outside the UK)
   - label: Off-site

@@ -2,7 +2,7 @@ name: Location
 question: Where you want the specialist to work
 id: location
 question_advice: |
-  This should be the primary location where they’ll be working.
+  Select the primary location where they’ll be working.
 
   Suppliers have said where they’ll provide specialists.
 
@@ -16,12 +16,12 @@ options:
   - label: "East Midlands"
   - label: "West Midlands"
   - label: "East of England"
-  - label: "Wales"
   - label: "London"
   - label: "South East England"
   - label: "South West England"
+  - label: "Wales"
   - label: "Northern Ireland"
-  - label: "No specific location, eg they can work remotely"
+  - label: "No specific location, for example they can work remotely"
     value: "Offsite"
 depends:
   - "on": "lot"

@@ -3,7 +3,7 @@ question: What the specialist will work on
 question_advice: |
   List all the work you expect the specialist to do. They can only work on the things you include here.
 
-  eg
+  For example:
 
   1. Do the front-end development work on the ‘Check your state pension’ service.
   2. Implement toolkits and APIs to optimise the performance of the ‘Personal Tax Account’ service.

@@ -2,7 +2,7 @@ name: Maximum day rate
 id: budgetRange
 question: Maximum day rate
 question_advice: |
-  How much can you afford to spend per day.
+  How much can you afford to spend a day.
 
   You must have budget approval before you publish your requirements.
 
