@@ -7,7 +7,7 @@ question_advice: |
   List the skills and experience you’d like the supplier to have.
   For example: provide evidence of delivering at scale.
 
-  **The supplier can:**
+  ##The supplier can:
 
 list_item_name: 'nice-to-have requirement'
 number_of_items: 20
