@@ -41,7 +41,7 @@ def test_framework_content_cloner_init_fails_for_first_iteration():
 
 
 def test_replace_urls_with_placeholders():
-    cloner = FrameworkContentCloner('g-cloud-12', 12, 2020)
+    cloner = FrameworkContentCloner('g-cloud', 12, 2020)
     mock_file_contents = """
         my_url: "https://gov.uk/path/to/g-cloud-11.pdf"
         my_url2: "https://gov.uk/path/to/another/g-cloud-11.pdf"
@@ -50,8 +50,8 @@ def test_replace_urls_with_placeholders():
     with mock.patch.object(builtins, 'open', mock.mock_open(read_data=mock_file_contents)) as mock_open:
         cloner.set_placeholders_for_file_urls()
         assert mock_open.call_args_list == [
-            mock.call('frameworks/g-cloud-12-12/metadata/messages/urls.yml'),
-            mock.call('frameworks/g-cloud-12-12/metadata/messages/urls.yml', 'w')
+            mock.call('frameworks/g-cloud-12/messages/urls.yml'),
+            mock.call('frameworks/g-cloud-12/messages/urls.yml', 'w')
         ]
         # What yaml.dump() does under the hood...
         assert mock_open().write.call_args_list == [

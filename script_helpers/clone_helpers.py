@@ -158,7 +158,7 @@ class FrameworkContentCloner:
     def set_placeholders_for_file_urls(self):
         print("Setting placeholder urls for as-yet unpublished files")
         file_placeholder_file = os.path.join(
-            "frameworks", self._new_fw_slug, 'metadata', FILE_PLACEHOLDER_FILES['urls']
+            "frameworks", self._new_fw_slug, FILE_PLACEHOLDER_FILES['urls']
         )
         with open(file_placeholder_file) as f:
             content = yaml.safe_load(f)
