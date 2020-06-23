@@ -24,7 +24,6 @@ question_advice: |
   ##Add cultural fit criteria
   When you evaluate shortlisted specialists on cultural fit, you must use the criteria you list here.
 
-
   ##Suggested criteria
 
   - work as a team with our organisation and other suppliers
@@ -36,8 +35,7 @@ question_advice: |
   - be comfortable standing up for their discipline
   - can work with clients with low technical expertise
 
-
-  **The specialist should:**
+  ##The specialist should:
 
 type: list
 number_of_items: 20
