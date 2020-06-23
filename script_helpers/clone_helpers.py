@@ -107,8 +107,8 @@ class FrameworkContentCloner:
                     with open(os.path.join(root, filename), 'w') as f:
                         f.write(updated_content)
 
-    def update_metadata(self):
-        print("Setting metadata")
+    def update_copy_services_metadata(self):
+        print("Setting copy_services metadata")
         # Set copy_services.yml content
         copy_services_file = os.path.join(
             "frameworks", self._new_fw_slug, 'metadata', METADATA_FILES['copy_services']
@@ -125,6 +125,8 @@ class FrameworkContentCloner:
             print(f"Writing content to {copy_services_file}")
             yaml.dump(new_content, f)
 
+    def update_following_framework_metadata(self):
+        print("Setting following_framework metadata")
         # Set following_framework.yml content
         following_fw_file = os.path.join(
             "frameworks", self._new_fw_slug, 'metadata', METADATA_FILES['following_framework']
@@ -174,6 +176,7 @@ class FrameworkContentCloner:
     def clone(self):
         self.copy_fw_folder()
         self.replace_hardcoded_framework_name_and_slug()
-        self.update_metadata()
+        self.update_copy_services_metadata()
+        self.update_following_framework_metadata()
         self.update_dates()
         self.set_placeholders_for_file_urls()
