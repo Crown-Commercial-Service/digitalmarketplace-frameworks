@@ -37,8 +37,9 @@ def get_nbsp_fw_name_from_slug(fw_slug):
 
 class FrameworkContentCloner:
 
-    def __init__(self, framework_family, iteration_number, launch_year):
+    def __init__(self, framework_family, iteration_number, launch_year, *, question_copy_method=None):
         self._launch_year = launch_year
+        self._question_copy_method = question_copy_method if question_copy_method else 'exclude'
         self._new_fw_slug = f"{framework_family}-{iteration_number}"
         if iteration_number == 2:
             # Handle first iterations without numeric suffix (e.g. DOS 2 -> DOS)
@@ -107,24 +108,36 @@ class FrameworkContentCloner:
                     with open(os.path.join(root, filename), 'w') as f:
                         f.write(updated_content)
 
-    def update_metadata(self):
-        print("Setting metadata")
+    def update_copy_services_metadata(self):
+        print("Setting copy_services metadata")
         # Set copy_services.yml content
         copy_services_file = os.path.join(
             "frameworks", self._new_fw_slug, 'metadata', METADATA_FILES['copy_services']
         )
+        question_copy_method = f'questions_to_{self._question_copy_method}'
+
         with open(copy_services_file) as f:
             content = yaml.safe_load(f)
-            # TODO: preserve ordering
-            new_content = {
-                'source_framework': self._previous_fw_slug,
-                'questions_to_copy': content['questions_to_copy']
-            }
+
+            # G-Cloud 12 and earlier only have (deprecated) `questions_to_copy` available
+            # Don't re-use existing 'questions_to_copy' if it doesn't match the new method
+            if question_copy_method not in content:
+                new_content = {
+                    'source_framework': self._previous_fw_slug,
+                    question_copy_method: []
+                }
+            else:
+                new_content = {
+                    'source_framework': self._previous_fw_slug,
+                    question_copy_method: content[question_copy_method]
+                }
 
         with open(copy_services_file, 'w') as f:
             print(f"Writing content to {copy_services_file}")
             yaml.dump(new_content, f)
 
+    def update_following_framework_metadata(self):
+        print("Setting following_framework metadata")
         # Set following_framework.yml content
         following_fw_file = os.path.join(
             "frameworks", self._new_fw_slug, 'metadata', METADATA_FILES['following_framework']
@@ -158,7 +171,7 @@ class FrameworkContentCloner:
     def set_placeholders_for_file_urls(self):
         print("Setting placeholder urls for as-yet unpublished files")
         file_placeholder_file = os.path.join(
-            "frameworks", self._new_fw_slug, 'metadata', FILE_PLACEHOLDER_FILES['urls']
+            "frameworks", self._new_fw_slug, FILE_PLACEHOLDER_FILES['urls']
         )
         with open(file_placeholder_file) as f:
             content = yaml.safe_load(f)
@@ -174,6 +187,7 @@ class FrameworkContentCloner:
     def clone(self):
         self.copy_fw_folder()
         self.replace_hardcoded_framework_name_and_slug()
-        self.update_metadata()
+        self.update_copy_services_metadata()
+        self.update_following_framework_metadata()
         self.update_dates()
         self.set_placeholders_for_file_urls()

@@ -10,9 +10,11 @@
 
 Usage:
     clone-latest-framework.py --family=<framework_family> --iteration=<iteration_number> --launch-year=<launch_year>
+    [--question-copy-method=exclude|copy]
 
 Example:
     ./scripts/clone-latest-framework.py --family=g-cloud --iteration=12 --launch-year=2020
+    --question-copy-method=exclude
 """
 import sys
 sys.path.insert(0, '.')
@@ -28,6 +30,9 @@ if __name__ == '__main__':
 
     iteration_number = int(arguments['--iteration'])
     launch_year = int(arguments['--launch-year'])
+    question_copy_method = arguments.get('--question-copy-method')
 
-    cloner = FrameworkContentCloner(framework_family, iteration_number, launch_year)
+    cloner = FrameworkContentCloner(
+        framework_family, iteration_number, launch_year, question_copy_method=question_copy_method
+    )
     cloner.clone()
