@@ -15,9 +15,18 @@ def test_get_nbsp_fw_name_from_slug():
     assert get_nbsp_fw_name_from_slug('digital-outcomes-and-specialists-4') == 'Digital Outcomes and Specialists&nbsp;4'
 
 
-def test_framework_content_cloner_init():
-    cloner = FrameworkContentCloner('g-cloud', 12, 2020)
+@pytest.mark.parametrize(
+    'copy_method_kwarg, copy_method_expected',
+    [
+        ('copy', 'copy'),
+        ('exclude', 'exclude'),
+        (None, 'exclude')
+    ]
+)
+def test_framework_content_cloner_init(copy_method_kwarg, copy_method_expected):
+    cloner = FrameworkContentCloner('g-cloud', 12, 2020, question_copy_method=copy_method_kwarg)
     assert cloner._launch_year == 2020
+    assert cloner._question_copy_method == copy_method_expected
     assert cloner._new_fw_slug == 'g-cloud-12'
     assert cloner._previous_fw_slug == 'g-cloud-11'
     assert cloner._following_fw_slug == 'g-cloud-13'
@@ -66,5 +75,52 @@ def test_replace_urls_with_placeholders():
             mock.call("https://gov.uk/path/to/another/g-cloud-11.pdf/__placeholder__"),
             mock.call('\n')
         ]
+
+
+@pytest.mark.parametrize('copy_method', [None, 'exclude'])
+def test_update_copy_services_metadata_does_not_copy_if_mismatched_method(copy_method):
+    cloner = FrameworkContentCloner('g-cloud', 13, 2020, question_copy_method=copy_method)
+    mock_g12_copy_services_file = """
+        questions_to_copy:
+          - question1
+          - question2
+        source_framework: "g-cloud-11"
+    """
+    with mock.patch.object(builtins, 'open', mock.mock_open(read_data=mock_g12_copy_services_file)) as mock_open:
+        cloner.update_copy_services_metadata()
+        assert mock_open.call_args_list == [
+            mock.call('frameworks/g-cloud-13/metadata/copy_services.yml'),
+            mock.call('frameworks/g-cloud-13/metadata/copy_services.yml', 'w')
+        ]
+        # What yaml.dump() does under the hood...
+        expected_yaml_dump_calls = [
+            'questions_to_exclude', ':', ' [', ']', '\n',
+            'source_framework', ':', ' ', 'g-cloud-12', '\n'
+        ]
+        assert mock_open().write.call_args_list == [mock.call(x) for x in expected_yaml_dump_calls]
+
+
+def test_update_copy_services_metadata_clones_questions_if_matching_method():
+    cloner = FrameworkContentCloner('g-cloud', 13, 2020, question_copy_method='copy')
+    mock_g12_copy_services_file = """
+        questions_to_copy:
+          - question1
+          - question2
+        source_framework: "g-cloud-11"
+    """
+    with mock.patch.object(builtins, 'open', mock.mock_open(read_data=mock_g12_copy_services_file)) as mock_open:
+        cloner.update_copy_services_metadata()
+        assert mock_open.call_args_list == [
+            mock.call('frameworks/g-cloud-13/metadata/copy_services.yml'),
+            mock.call('frameworks/g-cloud-13/metadata/copy_services.yml', 'w')
+        ]
+        # What yaml.dump() does under the hood...
+        expected_yaml_dump_calls = [
+            'questions_to_copy', ':', '\n',
+            '-', ' ', 'question1', '\n',
+            '-', ' ', 'question2', '\n',
+            'source_framework', ':', ' ', 'g-cloud-12', '\n'
+        ]
+        assert mock_open().write.call_args_list == [mock.call(x) for x in expected_yaml_dump_calls]
 
 # TODO: add more test coverage for file copying/replacement :)

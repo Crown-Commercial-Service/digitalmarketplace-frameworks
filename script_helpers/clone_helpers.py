@@ -37,8 +37,9 @@ def get_nbsp_fw_name_from_slug(fw_slug):
 
 class FrameworkContentCloner:
 
-    def __init__(self, framework_family, iteration_number, launch_year):
+    def __init__(self, framework_family, iteration_number, launch_year, *, question_copy_method=None):
         self._launch_year = launch_year
+        self._question_copy_method = question_copy_method if question_copy_method else 'exclude'
         self._new_fw_slug = f"{framework_family}-{iteration_number}"
         if iteration_number == 2:
             # Handle first iterations without numeric suffix (e.g. DOS 2 -> DOS)
@@ -113,13 +114,23 @@ class FrameworkContentCloner:
         copy_services_file = os.path.join(
             "frameworks", self._new_fw_slug, 'metadata', METADATA_FILES['copy_services']
         )
+        question_copy_method = f'questions_to_{self._question_copy_method}'
+
         with open(copy_services_file) as f:
             content = yaml.safe_load(f)
-            # TODO: preserve ordering
-            new_content = {
-                'source_framework': self._previous_fw_slug,
-                'questions_to_copy': content['questions_to_copy']
-            }
+
+            # G-Cloud 12 and earlier only have (deprecated) `questions_to_copy` available
+            # Don't re-use existing 'questions_to_copy' if it doesn't match the new method
+            if question_copy_method not in content:
+                new_content = {
+                    'source_framework': self._previous_fw_slug,
+                    question_copy_method: []
+                }
+            else:
+                new_content = {
+                    'source_framework': self._previous_fw_slug,
+                    question_copy_method: content[question_copy_method]
+                }
 
         with open(copy_services_file, 'w') as f:
             print(f"Writing content to {copy_services_file}")
