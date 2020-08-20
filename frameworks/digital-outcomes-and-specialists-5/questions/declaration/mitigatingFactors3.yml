@@ -1,0 +1,17 @@
+name: Mitigating factors for Modern Slavery reporting requirements
+question: >
+  If your organisation does not meet the requirements, please explain why.
+type: textbox_large
+max_length_in_words: 500
+
+hidden: true
+validations:
+  -
+    name: answer_required
+    message: You need to answer this question because you answered ‘no’ to the Reporting Requirements question.
+  -
+    name: under_word_limit
+    message: "Your answer must be no more than 500 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no more than 5000 characters."

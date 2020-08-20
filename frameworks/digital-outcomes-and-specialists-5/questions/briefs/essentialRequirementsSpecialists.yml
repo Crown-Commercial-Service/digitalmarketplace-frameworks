@@ -1,0 +1,34 @@
+name: 'Essential skills and experience'
+id: essentialRequirements
+question: 'Essential skills and experience'
+question_advice: |
+  Suppliers who don’t have all the essential skills you list here will be automatically notified that their application was unsuccessful.
+
+  List all the specific skills or experience the specialist must have.
+
+  For example: have experience designing services for users with low digital literacy.
+
+  ##The specialist must:
+
+list_item_name: 'essential requirement'
+number_of_items: 20
+type: list
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+
+validations:
+  -
+    name: answer_required
+    message: 'Enter at least 1 requirement.'
+  -
+    name: under_30_words
+    message: 'Each requirement must be 30 words or fewer.'
+  -
+    name: max_items_limit
+    message: 'You can add up to 20 criteria.'
+  -
+    name: under_character_limit
+    message: "Each requirement must be 300 characters or fewer."
+empty_message: Add essential skills or experience

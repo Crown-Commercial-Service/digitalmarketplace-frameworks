@@ -1,0 +1,16 @@
+coming:
+  heading: 'Digital Outcomes and Specialists&nbsp;5 coming soon'
+  messages:
+    - 'Provide digital outcomes and specialists, and user research studios and participants.'
+    - 'You’ll need to create a supplier account to apply.'
+
+open:
+  heading: 'Digital Outcomes and Specialists&nbsp;5 is open for applications'
+  messages:
+    - 'You need an account to apply.'
+    - 'The application deadline is 5pm&nbsp;BST, 15 August 2525.'
+
+pending:
+  heading: 'Digital Outcomes and Specialists&nbsp;5 is closed for applications'
+  messages:
+    - 'Applications are being reviewed.'

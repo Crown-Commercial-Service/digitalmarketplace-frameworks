@@ -1,0 +1,31 @@
+question: What types of user experience and design can you provide?
+depends:
+  - "on": lot
+    being:
+      - digital-outcomes
+type: checkboxes
+options:
+  - label: Accessibility
+    description: Ensure a digital service considers the needs of all possible users so that no one is excluded.
+  - label: Animation
+    description: Create moving images and effects which can be used on websites, videos or games.
+  - label: Brand development
+    description: Understand and design how an organisation, service or product is perceived and communicates its brand, whenever and wherever users interact with it.
+  - label: Content design and copywriting
+    description: Write content for a site or service to clearly, simply and quickly communicate information to users.
+  - label: Cross-platform design
+    description: Create experiences that cover all user interactions when they use a product or service. This will cross many channels, involve online and offline products and services, and include digital and face-to-face interactions.
+  - label: Information architecture
+    description: Organise, structure and label content to help users find information and complete tasks.
+  - label: Interaction design
+    description: Design a digital service so that it’s as simple as possible for users. Create user journeys and interaction patterns.
+  - label: Prototyping
+    description: Create a basic version of a product that can be quickly tested and iterated with users.
+  - label: Service design
+    description: Design online and offline services based on user needs and behaviour.
+  - label: User experience and design strategy
+    description: Conduct long-term planning to align every user interaction with a vision for user experience.
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

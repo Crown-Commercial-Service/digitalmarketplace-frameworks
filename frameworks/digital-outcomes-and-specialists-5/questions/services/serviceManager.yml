@@ -1,0 +1,17 @@
+question: Service manager
+name: Service manager
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+any_of: specialist
+questions:
+  - serviceManagerLocations
+  - serviceManagerDayRate
+  - serviceManagerAccessibleApplications
+
+empty_message: You haven’t added a service manager
+
+hint: Develop and deliver an effective user-focused digital service. Manage the full product lifecycle, including user research, design, delivery and continuous improvement.

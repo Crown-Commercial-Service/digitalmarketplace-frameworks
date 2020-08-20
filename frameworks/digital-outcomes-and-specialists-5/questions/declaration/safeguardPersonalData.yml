@@ -1,0 +1,8 @@
+name: Safeguarding personal data
+question: >
+  Do you agree to protect personal data according to the government guidance on <a href="https://www.gov.uk/data-protection-your-business" target="_blank" rel="noopener noreferrer">data protection and your business (link opens in a new tab)</a>?
+type: boolean
+hint: If you provide access to user research studios, for example, please confirm that you don’t share research videos with third parties.
+assessment:
+  passIfIn:
+    - True

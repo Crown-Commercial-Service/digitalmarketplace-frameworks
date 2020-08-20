@@ -1,0 +1,16 @@
+question: Data architect
+name: Data architect
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+any_of: specialist
+questions:
+  - dataArchitectLocations
+  - dataArchitectDayRate
+
+empty_message: You haven’t added a data architect
+
+hint: Set the vision for the organisation’s use of data, through data design, to meet business needs.

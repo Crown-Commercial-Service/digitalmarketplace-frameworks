@@ -1,0 +1,15 @@
+name: Research plan
+question: Research plan
+question_advice: Describe your research plan and how it might change.
+optional: true
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: under_100_words
+    message: 'Description must be 100 words or fewer.'
+empty_message: Describe research plan

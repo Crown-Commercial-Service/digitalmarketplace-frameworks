@@ -1,0 +1,26 @@
+name: Who the users are and what they need to do
+question: Who the users are and what they need to do
+question_advice: |
+  You should use this format:
+
+  As a&hellip; (who is the user?)
+
+  I need to&hellip; (what does the user want to do?)
+
+  So that&hellip; (why does the user want to do this?)
+
+  For example: As a carer, I need to know if I can get Carer’s Allowance, so that I know if I should apply for it or not.
+type: textbox_large
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: answer_required
+    message: 'Enter a description of the users.'
+  -
+    name: under_200_words
+    message: 'Description must be 200 words or fewer.'
+empty_message: Describe the users and their needs

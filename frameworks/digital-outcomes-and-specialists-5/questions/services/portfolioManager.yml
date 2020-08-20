@@ -1,0 +1,16 @@
+question: Portfolio manager
+name: Portfolio manager
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+any_of: specialist
+questions:
+  - portfolioManagerLocations
+  - portfolioManagerDayRate
+
+empty_message: You haven’t added a portfolio manager
+
+hint: Lead a digital portfolio of projects and programmes.

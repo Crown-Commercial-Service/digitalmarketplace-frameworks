@@ -1,0 +1,22 @@
+name: Why the work is being done
+question: Why the work is being done
+question_advice: |
+  Describe the organisation or policy goal the work supports. For example: how
+  a new law changes the way users receive government payments.
+
+  Include any important dates. You must say if you need the work to be done by a certain date.
+  This will help suppliers understand any time constraints.
+type: textbox_large
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: answer_required
+    message: 'Enter a description.'
+  -
+    name: under_200_words
+    message: 'Description must be 200 words or fewer.'
+empty_message: Describe why the work is being done

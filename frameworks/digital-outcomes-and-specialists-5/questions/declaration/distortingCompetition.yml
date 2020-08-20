@@ -1,0 +1,8 @@
+name: Distorting competition with other economic operators
+question: >
+  In the last 3 years, has your organisation (or any partner organisation) entered into agreements with other economic operators with the aim of distorting competition?
+type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

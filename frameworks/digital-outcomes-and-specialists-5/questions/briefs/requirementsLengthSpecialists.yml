@@ -1,0 +1,16 @@
+name: Set how long your requirements will be open for
+question: Set how long your requirements will be open for
+id: requirementsLength
+type: radios
+options:
+  - label: "1 week"
+  - label: "2 weeks"
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'Select a time span.'
+empty_message: Set requirements length

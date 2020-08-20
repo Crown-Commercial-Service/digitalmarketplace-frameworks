@@ -1,0 +1,14 @@
+-
+  name: Your details
+  questions:
+    - dayRate
+    - availability
+    - respondToEmailAddress
+-
+  name: Your essential skills and experience
+  questions:
+    - essentialRequirements
+-
+  name: Your nice-to-have skills and experience
+  questions:
+    - niceToHaveRequirements

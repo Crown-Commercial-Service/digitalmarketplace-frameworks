@@ -1,0 +1,26 @@
+id: culturalWeighting
+question: 'Availability'
+question_advice: Availability is whether the supplier can recruit user research participants when you need them.
+hint: 'This can be between 10% and 70%'
+
+depends:
+  - "on": lot
+    being:
+      - user-research-participants
+
+type: number
+unit: "%"
+unit_in_full: "percent"
+unit_position: "after"
+limits:
+  min_value: 10
+  max_value: 70
+  integer_only: true
+
+validations:
+  - name: answer_required
+    message: 'Enter a weighting.'
+  - name: not_a_number
+    message: 'Weighting must be between 10 and 70.'
+  - name: total_should_be_100
+    message: 'Total must add up to 100%.'

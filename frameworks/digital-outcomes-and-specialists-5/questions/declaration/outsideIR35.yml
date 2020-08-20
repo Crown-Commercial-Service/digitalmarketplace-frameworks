@@ -1,0 +1,10 @@
+name: Working outside IR35
+question: >
+  Will you (or workers you provide) meet the rules of working off-payroll ('outside IR35')?
+hint:
+  Read the guidance about <a href="https://www.gov.uk/guidance/ir35-find-out-if-it-applies" target="_blank" rel="noopener noreferrer">what work counts as outside IR35 (link opens in a new tab)</a>?
+
+type: boolean
+assessment:
+  passIfIn:
+    - True

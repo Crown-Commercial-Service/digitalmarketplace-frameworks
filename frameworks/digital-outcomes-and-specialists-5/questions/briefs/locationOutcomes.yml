@@ -1,0 +1,34 @@
+name: Location
+question: Where you want the supplier to work
+id: location
+question_advice: |
+  Select the primary location where they’ll be working.
+
+  Suppliers have said where they’ll provide outcomes.
+
+depends:
+type: radios
+options:
+  - label: "Scotland"
+  - label: "North East England"
+  - label: "North West England"
+  - label: "Yorkshire and the Humber"
+  - label: "East Midlands"
+  - label: "West Midlands"
+  - label: "East of England"
+  - label: "London"
+  - label: "South East England"
+  - label: "South West England"
+  - label: "Wales"
+  - label: "Northern Ireland"
+  - label: "No specific location, for example they can work remotely"
+    value: "Offsite"
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: answer_required
+    message: 'Select a location.'
+empty_message: Choose location

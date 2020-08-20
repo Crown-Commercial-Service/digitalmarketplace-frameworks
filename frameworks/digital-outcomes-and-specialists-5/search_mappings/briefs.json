@@ -1,0 +1,224 @@
+{
+  "settings": {
+    "index": {
+      "max_result_window": 10000
+    },
+    "analysis": {
+      "analyzer": {
+        "stemming_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "standard",
+            "lowercase",
+            "possessive_english_stemmer",
+            "light_english_stemmer"
+          ]
+        }
+      },
+      "filter": {
+        "light_english_stemmer": {
+          "type": "stemmer",
+          "name": "light_english"
+        },
+        "possessive_english_stemmer": {
+          "type": "stemmer",
+          "name": "possessive_english"
+        }
+      },
+      "char_filter": {
+        "nonalpha_removal": {
+          "type": "pattern_replace",
+          "pattern": "\\W+",
+          "replacement": ""
+        }
+      },
+      "normalizer": {
+        "filter_normalizer": {
+          "type": "custom",
+          "char_filter": [
+            "nonalpha_removal"
+          ],
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "briefs": {
+      "_meta": {
+        "dm_sort_clause": [
+          "sortonly_statusOrder",
+          {
+              "sortonly_publishedAt": "desc"
+          },
+          "sortonly_idHash"
+        ],
+        "transformations": [
+          {
+            "hash_to": {
+              "field": "id",
+              "target_field": "idHash"
+            }
+          },
+          {
+            "set_conditionally": {
+              "field": "status",
+              "target_field": "statusOpenClosed",
+              "any_of": [
+                "live"
+              ],
+              "set_value": "open"
+            }
+          },
+          {
+            "set_conditionally": {
+              "field": "status",
+              "target_field": "statusOpenClosed",
+              "any_of": [
+                "awarded",
+                "cancelled",
+                "closed",
+                "unsuccessful"
+              ],
+              "set_value": "closed"
+            }
+          },
+          {
+            "append_conditionally": {
+              "field": "status",
+              "target_field": "statusOrder",
+              "any_of": [
+                "live"
+              ],
+              "append_value": [
+                0
+              ]
+            }
+          },
+          {
+            "append_conditionally": {
+              "field": "status",
+              "target_field": "statusOrder",
+              "any_of": [
+                "closed",
+                "awarded",
+                "cancelled",
+                "unsuccessful"
+              ],
+              "append_value": [
+                1
+              ]
+            }
+          },
+          {
+            "append_conditionally": {
+              "field": "status",
+              "target_field": "statusOrder",
+              "any_of": [
+                "draft",
+                "withdrawn"
+              ],
+              "append_value": [
+                2
+              ]
+            }
+          }
+        ]
+      },
+      "dynamic": "strict",
+      "properties": {
+        "dmtext_id": {
+          "type": "keyword"
+        },
+        "sortonly_idHash": {
+          "type": "keyword"
+        },
+        "dmfilter_lot": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmtext_lot": {
+          "type": "keyword"
+        },
+        "dmagg_lot": {
+          "type": "keyword"
+        },
+        "dmtext_withdrawnAt": {
+          "type": "keyword"
+        },
+        "dmtext_publishedAt": {
+          "type": "keyword"
+        },
+        "sortonly_publishedAt": {
+          "type": "date"
+        },
+        "dmtext_applicationsClosedAt": {
+          "type": "keyword"
+        },
+        "dmtext_clarificationQuestionsClosedAt": {
+          "type": "keyword"
+        },
+        "dmtext_cancelledAt": {
+          "type": "keyword"
+        },
+        "dmtext_unsuccessfulAt": {
+          "type": "keyword"
+        },
+        "dmtext_awardedBriefResponseId": {
+          "type": "keyword"
+        },
+        "dmtext_organisation": {
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_title": {
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_specialistRole": {
+          "type": "text"
+        },
+        "dmfilter_specialistRole": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmtext_summary": {
+          "term_vector": "with_positions_offsets",
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_essentialRequirements": {
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_niceToHaveRequirements": {
+          "type": "text",
+          "analyzer": "stemming_analyzer"
+        },
+        "dmtext_status": {
+          "type": "keyword"
+        },
+        "dmfilter_status": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmfilter_statusOpenClosed": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "sortonly_statusOrder": {
+          "type": "byte"
+        },
+        "dmfilter_location": {
+          "type": "keyword",
+          "normalizer": "filter_normalizer"
+        },
+        "dmtext_location": {
+          "type": "text"
+        }
+      }
+    }
+  }
+}

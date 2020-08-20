@@ -1,0 +1,23 @@
+name: What the specialist will work on
+question: What the specialist will work on
+question_advice: |
+  List all the work you expect the specialist to do. They can only work on the things you include here.
+
+  For example:
+
+  1. Do the front-end development work on the ‘Check your state pension’ service.
+  2. Implement toolkits and APIs to optimise the performance of the ‘Personal Tax Account’ service.
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'Enter a description of the work.'
+  -
+    name: under_100_words
+    message: 'Description must be 100 words or fewer.'
+empty_message: Add responsibilities

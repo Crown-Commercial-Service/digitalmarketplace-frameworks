@@ -1,0 +1,15 @@
+name: Designing and building accessible applications
+question: Will you design and build accessible applications that meet the 2018 accessibility regulations?
+hint:
+  Read guidance about how to meet the regulations and <a target="_blank" rel="noopener noreferrer" href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">design and build accessible services</a>.
+type: boolean
+required_value: true
+
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

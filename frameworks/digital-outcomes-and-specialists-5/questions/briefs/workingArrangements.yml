@@ -1,0 +1,26 @@
+name: Working arrangements
+question: Working arrangements
+question_advice: |
+  Describe how you want to work with the individual or team.
+
+  Explain why you want to work with them in this way.
+
+  Include any limits on expenses.
+
+  For example: onsite 3 days a week for face-to-face team meetings
+
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'Enter a description of the working arrangements.'
+  -
+    name: under_100_words
+    message: 'Description must be 100 words or fewer.'
+empty_message: Describe working arrangements

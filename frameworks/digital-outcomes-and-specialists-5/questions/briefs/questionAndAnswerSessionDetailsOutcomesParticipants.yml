@@ -1,0 +1,39 @@
+id: questionAndAnswerSessionDetails
+name: Question and answer session details
+question: Question and answer session details
+question_advice: |
+
+  You must give details of what type of session you want to hold, when it is and any details the attendees need.
+
+  - the type of session you want to run, such as webinar, phone conference or meeting
+  - the date and time of the session (this should happen within 1 week of publishing your requirements)
+
+  Depending on the type of session you choose, you could also include:
+
+  - software needed
+  - the url
+  - the phone number
+  - the access code
+  - the address (including postcode)
+  - anything else needed to take part
+
+  This information will only be available to eligible suppliers who have logged in.
+
+  You must post all questions and answers on the Digital Marketplace so all suppliers can see them.
+
+optional: true
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'Enter details of the session.'
+  -
+    name: under_100_words
+    message: 'Details must be 100 words or fewer.'
+empty_message: Add details

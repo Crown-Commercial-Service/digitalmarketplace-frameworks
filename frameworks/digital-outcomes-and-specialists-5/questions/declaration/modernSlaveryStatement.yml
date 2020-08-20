@@ -1,0 +1,17 @@
+name: Modern slavery statement required
+question: Upload a copy of your organisation’s slavery and human trafficking statement.
+
+hint: Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)
+
+hidden: true
+type: upload
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: file_is_open_document_format
+    message: Your document is not in an open format. Please save as an Open Document Format (ODF) or PDF/A (eg .pdf, .odt).
+  - name: file_is_less_than_5mb
+    message: Your document exceeds the 5MB limit. Please reduce file size.
+  - name: file_can_be_saved
+    message: Your document failed to upload. Please try again.

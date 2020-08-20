@@ -1,0 +1,41 @@
+name: Additional assessment methods
+id: evaluationType
+question: How you’ll assess suppliers
+question_advice: |
+  All suppliers will have to provide a written proposal. However, you can also choose additional ways to assess them, if you want to.
+
+  Choose additional ways to assess suppliers.
+
+  You can only use the methods you choose here, so if you don’t select a case study now, you won’t be able to ask for one later.
+
+  Read about [assessment methods](https://www.gov.uk/guidance/ways-to-assess-digital-outcomes-and-specialists-suppliers).
+type: checkboxes
+optional: true
+
+options:
+  - label: "Case study"
+    description: >
+       A case study is a good way to see the work suppliers have done before. It can help you understand whether the
+       people who’ll be working on your project have the right skills and experience.
+  - label: "Work history"
+    description: >
+       A work history lists the previous work a supplier has done. It should give you a view of the skills and
+       experience of the team members who’ll be working on your project.
+  - label: "Reference"
+    description: >
+       A written reference is a good way of confirming whether a supplier has done the work they’ve said they’ve done.
+       You should always ask for references that relate to a specific timeframe, such as work they’ve done in the last
+       2 years.
+  - label: "Presentation"
+    description: >
+       A presentation can help you understand a supplier’s approach to delivering an outcome, such as a practical
+       demonstration of a prototype or discovery kick-off meeting.
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: answer_required
+    message: 'Select an assessment method.'
+empty_message: Choose additional assessment methods

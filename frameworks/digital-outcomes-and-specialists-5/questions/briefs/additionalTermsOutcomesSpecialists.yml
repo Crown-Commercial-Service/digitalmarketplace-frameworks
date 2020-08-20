@@ -1,0 +1,20 @@
+id: additionalTerms
+name: Additional terms and conditions
+question: Additional terms and conditions
+question_advice: |
+  You should use the [standard contract](https://www.gov.uk/government/publications/digital-outcomes-and-specialists-5-call-off-contract) unless your organisation needs to include additional terms and conditions.
+
+  Read about [how the terms and conditions work](https://www.gov.uk/guidance/terms-and-conditions-of-digital-marketplace-frameworks).
+optional: true
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+validations:
+  -
+    name: under_100_words
+    message: 'Description must be 100 words or fewer.'
+empty_message: Add terms and conditions

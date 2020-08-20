@@ -1,0 +1,17 @@
+question: Designer
+name: Designer
+optional: true
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: multiquestion
+any_of: specialist
+questions:
+  - designerLocations
+  - designerDayRate
+  - designerAccessibleApplications
+
+empty_message: You haven’t added a designer
+
+hint: Provide user-centred interaction design, service design and graphic design expertise.
