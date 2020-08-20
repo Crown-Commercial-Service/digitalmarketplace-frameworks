@@ -5,8 +5,8 @@ import yaml
 
 
 def test_copying_services_metadata():
-    """Make sure that every key listed under copy_services.questions_to_copy points to a valid
-    question file, id, or field and that the referenced historical framework exists."""
+    """Make sure that every key listed under copy_services.questions_to_copy or copy_services.questions_to_exclude
+    points to a valid question file, id, or field and that the referenced historical framework exists. """
     copying_services_filenames = glob.glob('frameworks/*/metadata/copy_services.yml')
     assert len(copying_services_filenames) > 0
     for copying_services_filename in copying_services_filenames:
@@ -30,8 +30,12 @@ def test_copying_services_metadata():
                         names_ids_fields.update([v for v in contents.get('fields').values()])
                     names_ids_fields.add(filename[:-4])
 
-            for question in copying_services_data['questions_to_copy']:
-                assert question in names_ids_fields
+            if 'questions_to_exclude' in copying_services_data:
+                for question in copying_services_data['questions_to_exclude']:
+                    assert question in names_ids_fields
+            else:
+                for question in copying_services_data['questions_to_copy']:
+                    assert question in names_ids_fields
 
 
 def test_g11_service_questions_to_scan_for_bad_words_metadata():

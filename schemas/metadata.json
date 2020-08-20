@@ -14,11 +14,21 @@
         "questions_to_copy": {
           "type": "array",
           "items": {"type": "string"}
+        },
+        "questions_to_exclude": {
+          "type": "array",
+          "items": {"type": "string"}
         }
       },
-      "required": [
-        "source_framework",
-        "questions_to_copy"
+      "oneOf": [
+        {"required": [
+            "source_framework",
+            "questions_to_copy"
+          ]},
+        {"required": [
+            "source_framework",
+            "questions_to_exclude"
+          ]}
       ],
       "additionalProperties": false
     },

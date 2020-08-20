@@ -106,9 +106,9 @@ class TestUpdateCopyServicesMetadata:
             assert mock_open().write.call_args_list == [mock.call(x) for x in expected_yaml_dump_calls]
 
     def test_update_copy_services_metadata_clones_questions_if_matching_method(self):
-        cloner = FrameworkContentCloner('g-cloud', 13, 2020, question_copy_method='copy')
+        cloner = FrameworkContentCloner('g-cloud', 13, 2020, question_copy_method='exclude')
         mock_g12_copy_services_file = """
-            questions_to_copy:
+            questions_to_exclude:
               - question1
               - question2
             source_framework: "g-cloud-11"
@@ -121,7 +121,7 @@ class TestUpdateCopyServicesMetadata:
             ]
             # What yaml.dump() does under the hood...
             expected_yaml_dump_calls = [
-                'questions_to_copy', ':', '\n',
+                'questions_to_exclude', ':', '\n',
                 '-', ' ', 'question1', '\n',
                 '-', ' ', 'question2', '\n',
                 'source_framework', ':', ' ', 'g-cloud-12', '\n'
