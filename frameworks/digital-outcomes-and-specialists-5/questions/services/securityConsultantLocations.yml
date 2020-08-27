@@ -1,0 +1,27 @@
+question: Where will your cyber security consultant work?
+question_advice: Choose all the locations where the specialist can work at buyers’ sites, and whether they can work offsite.
+hint: >
+    ‘Offsite’ means the specialist will not be working at the buyer’s own sites. You can change where the specialist is available to work at any time during the framework.
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: checkboxes
+options:
+  - label: "Offsite"
+  - label: "Scotland"
+  - label: "North East England"
+  - label: "North West England"
+  - label: "Yorkshire and the Humber"
+  - label: "East Midlands"
+  - label: "West Midlands"
+  - label: "East of England"
+  - label: "Wales"
+  - label: "London"
+  - label: "South East England"
+  - label: "South West England"
+  - label: "Northern Ireland"
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'

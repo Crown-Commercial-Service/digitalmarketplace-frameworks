@@ -1,0 +1,9 @@
+name: Bankruptcy or insolvency
+question: >
+  In the last 3 years, has your organisation (or any partner organisation) been made bankrupt or the subject of insolvency or winding-up proceedings?
+
+type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

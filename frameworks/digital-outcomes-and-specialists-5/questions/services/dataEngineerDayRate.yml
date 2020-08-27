@@ -1,0 +1,30 @@
+question: How much do you charge per day for a data engineer (excluding VAT and expenses)?
+question_advice: You won’t be able to charge a higher rate when you apply for opportunities.
+depends:
+  - "on": lot
+    being:
+      - digital-specialists
+type: pricing
+fields:
+  minimum_price: dataEngineerPriceMin
+  maximum_price: dataEngineerPriceMax
+field_defaults:
+  price_unit: Person
+  price_interval: Day
+
+validations:
+  - name: answer_required
+    field: dataEngineerPriceMin
+    message: 'You need to answer this question.'
+  - name: not_money_format
+    field: dataEngineerPriceMin
+    message: "Minimum price must be a number, without units, eg 99.95"
+  - name: answer_required
+    field: dataEngineerPriceMax
+    message: 'You need to answer this question.'
+  - name: not_money_format
+    field: dataEngineerPriceMax
+    message: "Maximum price must be a number, without units, eg 99.95"
+  - name: max_less_than_min
+    field: dataEngineerPriceMax
+    message: "Minimum price must be less than maximum price"

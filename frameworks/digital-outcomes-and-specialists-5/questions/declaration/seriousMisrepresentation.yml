@@ -1,0 +1,8 @@
+name: Serious misrepresentation of information
+question: >
+  In the last 3 years, has your organisation (or any partner organisation) been guilty of serious misrepresentation of the information required for the fulfilment of the selection criteria?
+type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

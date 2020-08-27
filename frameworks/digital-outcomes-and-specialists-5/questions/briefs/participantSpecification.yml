@@ -1,0 +1,25 @@
+name: Description of your participants
+question: Description of your participants
+question_advice: |
+  Describe any skills, behaviour or attributes participants should, and should not, have.
+
+  Say if they must:
+
+   - be from a particular demographic, such as women under 30 years of age
+   - be from a specific target user group, such as small business owners
+   - have experience of a particular situation, such as users who have recently moved home
+   - have a specific level of digital skills or use of digital technology, such as users who have basic online skills
+   - meet specific research requirements, such as must not have participated in user research in the last 3 months or must be prepared to be recorded or filmed
+
+  Always try to recruit a representative sample of your users.
+type: textbox_large
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: under_200_words
+    message: 'Description must be 200 words or fewer.'
+empty_message: Describe participants

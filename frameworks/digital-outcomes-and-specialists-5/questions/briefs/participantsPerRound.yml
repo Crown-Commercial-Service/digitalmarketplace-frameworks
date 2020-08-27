@@ -1,0 +1,20 @@
+name: Number of participants a round
+question: Number of participants a round
+question_advice: |
+  Include details of any spare participants in each round.
+
+  A spare participant is someone who will be there to stand in for any cancellations.
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'Enter details of the number of participants.'
+  -
+    name: under_100_words
+    message: 'Details must be 100 words or fewer.'
+empty_message: Set number of participants

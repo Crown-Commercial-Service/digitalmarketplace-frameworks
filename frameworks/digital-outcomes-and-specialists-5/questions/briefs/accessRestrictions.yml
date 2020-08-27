@@ -1,0 +1,15 @@
+name: Access restrictions at location
+question: Access restrictions at location
+question_advice: Describe any access restrictions that may affect participants at the research location, such as no wheelchair access.
+optional: true
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: under_100_words
+    message: 'Description must be 100 words or fewer.'
+empty_message: Add restrictions

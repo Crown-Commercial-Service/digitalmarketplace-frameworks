@@ -1,0 +1,9 @@
+name: Professional misconduct
+question: >
+  In the last 3 years, has your organisation (or any partner organisation) been guilty of grave professional misconduct?
+
+type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

@@ -1,0 +1,21 @@
+name: Summary of the work
+question: Summary
+question_advice: >
+  This will appear on the supplier opportunities page on the Digital Marketplace.
+  It will help suppliers decide whether or not to view your requirements.
+type: textbox_large
+max_length_in_words: 50
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'Enter a summary of the work.'
+  -
+    name: under_50_words
+    message: 'Summary must be 50 words or fewer.'
+empty_message: Provide a summary of the work

@@ -1,0 +1,61 @@
+name: Cultural fit criteria
+id: culturalFitCriteria
+question: Cultural fit criteria
+question_advice: |
+
+  Cultural fit is about how well you and the specialist work together.
+
+  ##Cultural fit is:
+  - how the specialist works with other people
+  - how the specialist solves problems
+  - the specialist’s approach to making decisions
+  - how the specialist shares knowledge and experience
+  - the specialist’s attitude to making mistakes
+
+  ##Cultural fit isn’t:
+  - whether the specialist looks, talks or behaves in the same way as you
+  - about having agile skills – that’s technical competence
+
+  ##Giving points for individual criteria (optional)
+  You can give points to individual criteria, such as ‘transparent and collaborative when making decisions – 15 points’. If you choose to add points, you must do it for all individual criteria.
+
+  Read [how to score individual criteria](https://www.gov.uk/guidance/how-to-set-your-evaluation-criteria-when-buying-digital-outcomes-and-specialists-services#giving-points-to-individual-criteria)
+
+  ##Add cultural fit criteria
+  When you evaluate shortlisted specialists on cultural fit, you must use the criteria you list here.
+
+  ##Suggested criteria
+
+  - work as a team with our organisation and other suppliers
+  - be transparent and collaborative when making decisions
+  - have a no-blame culture and encourage people to learn from their mistakes
+  - take responsibility for their work
+  - share knowledge and experience with other team members
+  - challenge the status quo
+  - be comfortable standing up for their discipline
+  - can work with clients with low technical expertise
+
+  ##The specialist should:
+
+type: list
+number_of_items: 20
+depends:
+  - "on": "lot"
+    being:
+      - digital-specialists
+
+validations:
+  -
+    name: answer_required
+    message: 'Enter at least 1 criteria.'
+  -
+    name: under_30_words
+    message: 'Each criteria must be 30 words or fewer.'
+  -
+    name: max_items_limit
+    message: 'You can add up to 20 criteria.'
+  -
+    name: under_character_limit
+    message: "Each criteria must be 300 characters or fewer."
+
+empty_message: Choose cultural fit criteria

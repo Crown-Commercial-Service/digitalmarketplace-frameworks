@@ -1,0 +1,8 @@
+name: Digital Service Standard
+question: >
+  Are you aware of, and will you comply with, the <a href="https://www.gov.uk/service-manual/service-standard" target="_blank" rel="noopener noreferrer">Digital Service Standard (link opens in a new tab)</a>
+  and the government’s latest <a href="https://www.gov.uk/design-principles" target="_blank" rel="noopener noreferrer">service design principles (link opens in a new tab)</a>?
+type: boolean
+assessment:
+  passIfIn:
+    - True

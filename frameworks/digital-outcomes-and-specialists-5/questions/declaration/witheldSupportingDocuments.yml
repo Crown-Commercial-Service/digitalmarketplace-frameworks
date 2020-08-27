@@ -1,0 +1,9 @@
+name: Withholding information
+question: >
+  In the last 3 years, has your organisation (or any partner organisation) withheld information or failed to submit supporting documents required under <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/59/made" target="_blank" rel="noopener noreferrer">Regulation 59 of the Public Contracts Regulations 2015 (link opens in a new tab)</a>?
+
+type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

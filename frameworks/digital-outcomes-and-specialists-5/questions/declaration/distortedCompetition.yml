@@ -1,0 +1,8 @@
+name: Unfair prior involvement in the procurement process
+question: >
+  In the last 3 years, has your organisation (or any partner organisation) distorted competition prior involvement in the procurement procedure as described in <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/41/made" target="_blank" rel="noopener noreferrer">Regulation 41 of the Public Contracts Regulations 2015 (link opens in a new tab)</a>?
+type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

@@ -1,0 +1,13 @@
+name: Email address
+question: Email address the buyer should use to contact you
+question_advice: All communication about your application will be sent to this address.
+type: text
+hint: You can add more than one email address. Use a comma between each email address.
+limits:
+  format: email
+
+validations:
+  - name: answer_required
+    message: 'You need to answer this question.'
+  - name: invalid_format
+    message: "You must enter a valid email address."

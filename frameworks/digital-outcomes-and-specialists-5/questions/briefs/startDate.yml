@@ -1,0 +1,18 @@
+name: Latest start date
+question: Latest start date
+question_advice: |
+  Say when you need suppliers to start work. When you shortlist, you can exclude suppliers who can’t start by this date.
+hint: 'For example, 31 5 2020'
+type: date
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+validations:
+  - name: answer_required
+    message: 'Enter the start date.'
+  - name: invalid_format
+    message: "Enter a real start date."
+
+empty_message: Set latest start date

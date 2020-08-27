@@ -1,0 +1,25 @@
+name: How many suppliers to evaluate
+id: numberOfSuppliers
+question: How many suppliers to evaluate
+question_advice: |
+  Enter how many suppliers you will evaluate. You must evaluate at least 3.
+
+  Read about [how many suppliers to evaluate](https://www.gov.uk/guidance/how-to-shortlist-digital-outcomes-and-specialists-suppliers#how-many-suppliers-to-evaluate).
+
+type: number
+limits:
+  integer_only: true
+  min_value: 3
+  max_value: 15
+
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  - name: answer_required
+    message: 'Enter the number of suppliers.'
+  - name: not_a_number
+    message: 'Number of suppliers must be between 3 and 15.'
+
+empty_message: Set how many suppliers to evaluate

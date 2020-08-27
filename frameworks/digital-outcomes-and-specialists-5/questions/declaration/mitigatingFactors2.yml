@@ -1,0 +1,17 @@
+name: Mitigating factors for tax returns
+question: >
+  If you responded ‘yes’ to either question [[unspentTaxConvictions]] or question [[GAAR]], please provide details of 
+  any mitigating factors that you think should be taken into consideration.
+type: textbox_large
+max_length_in_words: 500
+
+validations:
+  - 
+    name: answer_required
+    message: You need to answer this question because you answered ‘yes’ to either [[unspentTaxConvictions]] or [[GAAR]].
+  -
+    name: under_word_limit
+    message: "Your answer must be no more than 500 words."
+  -
+    name: under_character_limit
+    message: "Your answer must be no more than 5000 characters."

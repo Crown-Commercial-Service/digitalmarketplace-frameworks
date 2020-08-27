@@ -1,0 +1,8 @@
+name: Conflict of interest
+question: >
+  In the last 3 years, has your organisation (or any partner organisation) had a conflict of interest as defined in <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">Regulation 24 of the Public Contracts Regulations 2015 (link opens in a new tab)</a>?
+type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

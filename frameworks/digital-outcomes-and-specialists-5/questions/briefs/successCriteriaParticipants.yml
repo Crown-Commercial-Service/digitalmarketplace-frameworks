@@ -1,0 +1,34 @@
+name: 'Proposal criteria'
+id: successCriteria
+question: 'Proposal criteria'
+question_advice: |
+  When you evaluate shortlisted suppliers on the technical competence of their proposal, you must use the criteria you list here.
+
+  Suggested criteria
+
+  - approach to recruiting specialist participants
+  - estimated timeframes for the work
+  - breakdown of recruitment costs and incentives
+  - how they’ve identified risks and dependencies and offered approaches to manage them
+
+type: list
+number_of_items: 20
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'Enter at least 1 criteria.'
+  -
+    name: under_30_words
+    message: 'Each criteria must be 30 words or fewer.'
+  -
+    name: max_items_limit
+    message: 'You can add up to 20 criteria.'
+  -
+    name: under_character_limit
+    message: "Each criteria must be 300 characters or fewer."
+
+empty_message: Choose evaluation criteria

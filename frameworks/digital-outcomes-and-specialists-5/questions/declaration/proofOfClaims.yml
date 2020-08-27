@@ -1,0 +1,6 @@
+name: Proof of claims about services
+question: Are you prepared to provide proof of any claims made about the services you’re submitting to Digital Outcomes and Specialists&nbsp;5?
+type: boolean
+assessment:
+  passIfIn:
+    - True

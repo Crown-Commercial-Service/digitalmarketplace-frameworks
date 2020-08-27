@@ -1,0 +1,18 @@
+name: Address where the work will take place
+question: Address where the work will take place
+question_advice: You must include a specific town or city. You can add more than one.
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'Enter an address.'
+  -
+    name: under_100_words
+    message: 'Address must be 100 words or fewer.'
+empty_message: Describe where the supplier will work

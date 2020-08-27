@@ -1,0 +1,8 @@
+name: Providing misleading information
+question: >
+  In the last 3 years, has your organisation (or any partner organisation) provided misleading information that may have an influence on decisions concerning framework exclusion, selection or award?
+type: boolean
+assessment:
+  passIfIn:
+    - False
+  discretionary: True

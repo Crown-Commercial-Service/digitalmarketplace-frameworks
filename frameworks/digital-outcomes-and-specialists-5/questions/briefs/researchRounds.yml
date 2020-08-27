@@ -1,0 +1,19 @@
+name: Number of research rounds
+question: Number of research rounds
+question_advice: |
+  Each round can have several participants.
+
+  A research round often lasts for a day.
+type: text
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+validations:
+  -
+    name: answer_required
+    message: 'Enter details of the number of research rounds.'
+  -
+    name: under_character_limit
+    message: "Details must be 100 characters or fewer."
+empty_message: Set number of rounds

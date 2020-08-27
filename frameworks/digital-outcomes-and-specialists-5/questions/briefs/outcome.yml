@@ -1,0 +1,18 @@
+name: Problem to be solved
+question: Problem to be solved
+question_advice: >
+  For example: patients can’t access their medical records
+type: textbox_large
+max_length_in_words: 200
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: answer_required
+    message: 'Enter a description of the problem.'
+  -
+    name: under_200_words
+    message: 'Description must be 200 words or fewer.'
+empty_message: Describe problem

@@ -1,0 +1,20 @@
+name: Existing team
+id: existingTeam
+question: Existing team
+question_advice: >
+  Describe the team the supplier will be working with and if it involves
+  working with another supplier.
+type: textbox_large
+max_length_in_words: 100
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+validations:
+  -
+    name: answer_required
+    message: 'Enter a description of the team.'
+  -
+    name: under_100_words
+    message: 'Description must be 100 words or fewer.'
+empty_message: Describe existing team

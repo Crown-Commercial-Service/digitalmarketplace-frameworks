@@ -1,0 +1,34 @@
+name: 'Nice-to-have skills and experience'
+id: niceToHaveRequirements
+question: 'Nice-to-have skills and experience'
+question_advice: |
+  If too many suppliers have all the essential skills and experience, use the nice-to-have skills and experience to exclude suppliers.
+
+  List the skills and experience you’d like the supplier to have.
+  For example: provide evidence of delivering at scale.
+
+  ##The supplier can:
+
+list_item_name: 'nice-to-have requirement'
+number_of_items: 20
+optional: true
+type: list
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+
+validations:
+  -
+    name: answer_required
+    message: 'Enter at least 1 requirement.'
+  -
+    name: under_30_words
+    message: 'Each requirement must be 30 words or fewer.'
+  -
+    name: max_items_limit
+    message: 'You can add up to 20 criteria.'
+  -
+    name: under_character_limit
+    message: "Each requirement must be 300 characters or fewer."
+empty_message: Add nice-to-have skills and experience
