@@ -67,6 +67,11 @@ FRAMEWORKS_AND_LOTS = {
             'framework_name': "Digital Outcomes and Specialists 4",
             'lots': DOS_LOTS
         },
+        {
+            'framework_slug': 'digital-outcomes-and-specialists-5',
+            'framework_name': "Digital Outcomes and Specialists 5",
+            'lots': DOS_LOTS
+        },
     ]
 }
 
