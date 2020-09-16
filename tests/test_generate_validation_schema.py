@@ -141,11 +141,9 @@ def test_uri_property(id_name):
         "format": "uri"}}
 
 
-@given(st.integers())
+@given(st.integers(min_value=1, max_value=65534))
 def test_parse_question_limits_word_count(num):
-    assume(num > 0)
     assume(not isnan(num))
-    assume(num < 65535)
 
     question = {"validations": [
         {
@@ -170,11 +168,9 @@ def test_parse_question_limits_word_count(num):
     assert m is None
 
 
-@given(st.integers())
+@given(st.integers(min_value=1, max_value=65534))
 def test_parse_question_limits_word_count_optional(num):
-    assume(num > 0)
     assume(not isnan(num))
-    assume(num < 65535)
 
     question = {
         "validations": [
@@ -194,9 +190,8 @@ def test_parse_question_limits_word_count_optional(num):
     assert m is not None
 
 
-@given(st.integers())
+@given(st.integers(min_value=1))
 def test_parse_question_limits_char_count(num):
-    assume(num > 0)
     assume(not isnan(num))
 
     question = {"validations": [
@@ -234,10 +229,9 @@ def test_checkbox_property(id, options):
 
 
 @settings(suppress_health_check=[HealthCheck.too_slow])
-@given(st.text(), nested_checkboxes_list(), st.integers())
+@given(st.text(), nested_checkboxes_list(), st.integers(min_value=1))
 def test_checkbox_tree_property(id, options, number_of_items):
     assume(len(id) > 0)
-    assume(number_of_items > 0)
 
     question = {
         "id": id,
