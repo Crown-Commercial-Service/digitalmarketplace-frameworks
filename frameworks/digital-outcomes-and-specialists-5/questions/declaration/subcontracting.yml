@@ -8,6 +8,9 @@ options:
   - label: as part of a consortium or special purpose vehicle, using third parties (subcontractors) to provide some services
 hint: Only include subcontractors whose products or services will be integral to the Digital Outcomes and Specialists&nbsp;5 services that you intend to provide.
 followup:
-  foo:
+  subcontracting30DayPayments:
+    - as a prime contractor, using third parties (subcontractors) to provide some services
+    - as part of a consortium or special purpose vehicle, using third parties (subcontractors) to provide some services
+  subcontractingInvoicesPaid:
     - as a prime contractor, using third parties (subcontractors) to provide some services
     - as part of a consortium or special purpose vehicle, using third parties (subcontractors) to provide some services

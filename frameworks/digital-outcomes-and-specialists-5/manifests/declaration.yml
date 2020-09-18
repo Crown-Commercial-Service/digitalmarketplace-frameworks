@@ -172,7 +172,7 @@
   description: |
     The Crown Commercial Service will use this information to manage your participation in Digital Outcomes and Specialists&nbsp;5.
   questions:
-    - subcontracting
+    - multiqSubcontracting
     - employmentStatus
     - outsideIR35
 
