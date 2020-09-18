@@ -1,6 +1,6 @@
 name: Subcontractors or consortia
 question: "Please confirm whether you will provide Digital Outcomes and Specialists&nbsp;5 services:"
-type: checkboxes
+type: radios
 options:
   - label: yourself without the use of third parties (subcontractors)
   - label: as a prime contractor, using third parties (subcontractors) to provide some services
