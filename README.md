@@ -169,18 +169,10 @@ ES multi-fields are for, but unfortunately those don't turn out to be quite flex
 Development
 -----------
 
-A local checkout of the frameworks repo can be shared with locally-running services (i.e. frontend applications)
-as follows:
+A local checkout of the frameworks repo can be shared with locally-running services (i.e. frontend applications). There are two ways of doing this:
 
-- from this repo, run `npm link`
-- from each app, run `npm link digitalmarketplace-frameworks`
-
-Your frontend apps will then be using your local copy of the framework data rather than the version specified
-in their `package.json` - for example, whenever you:
-
- - rebuild the app's `content` directory by running `make frontend-build`; or
- - run `npm run frontend-build:watch` to automatically rebuild the framework content whenever a framework YML file
-   changes.
+1. From this repo, run `npm link`; from each app, run `npm link digitalmarketplace-frameworks`. You can then run `npm run frontend-build:watch` to automatically rebuild the framework content whenever a framework YML file changes. Restart the app in dmrunner to pick up changes.
+2. From each app, run `npm install ../digitalmarketplace-frameworks`. Then rebuild the app.
 
 Don't forget that you may also need to generate schemas into the API's `json_schema` directory using the
 `scripts/generate-validation-schemas.py` script in this repo, or similarly update the Search API using the
