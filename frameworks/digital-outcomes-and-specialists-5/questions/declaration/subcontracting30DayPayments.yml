@@ -1,0 +1,6 @@
+name: Subcontracting 30 day payment terms
+question: Can you confirm that for public sector contracts awarded under the Public Contract Regulations 2015 you have systems in place to include (as a minimum) 30-day payment terms in all of your supply chain contracts and require that such terms are passed down through your supply chain?
+
+hint: Contracts awarded under the Public Contracts Regulations 2015 must comply with Regulation 113 for prompt payment of all subcontractors (https://www.legislation.gov.uk/uksi/2015/102/regulation/113/made) (opens in new tab). The Crown Commercial Service reserves the right to audit any supplier for compliance, where an awarded contract has a value of £2 million or more a year.
+
+type: boolean

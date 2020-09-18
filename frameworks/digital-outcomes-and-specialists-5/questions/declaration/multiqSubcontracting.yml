@@ -1,0 +1,8 @@
+id: multiqSubcontracting
+name: Subcontractors or consortia
+question: ""
+type: multiquestion
+questions:
+  - subcontracting
+  - subcontracting30DayPayments
+  - subcontractingInvoicesPaid
