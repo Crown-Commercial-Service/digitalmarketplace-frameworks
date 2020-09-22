@@ -42,9 +42,9 @@ FRAMEWORKS_AND_LOTS = {
         {'framework_slug': 'g-cloud-7', 'framework_name': "G-Cloud 7", 'lots': LEGACY_GCLOUD_LOTS},
         {'framework_slug': 'g-cloud-8', 'framework_name': "G-Cloud 8", 'lots': LEGACY_GCLOUD_LOTS},
         {'framework_slug': 'g-cloud-9', 'framework_name': "G-Cloud 9", 'lots': G_CLOUD_LOTS},
-        {'framework_slug': 'g-cloud-10', 'framework_name': "G-Cloud 9", 'lots': G_CLOUD_LOTS},
-        {'framework_slug': 'g-cloud-11', 'framework_name': "G-Cloud 9", 'lots': G_CLOUD_LOTS},
-        {'framework_slug': 'g-cloud-12', 'framework_name': "G-Cloud 9", 'lots': G_CLOUD_LOTS},
+        {'framework_slug': 'g-cloud-10', 'framework_name': "G-Cloud 10", 'lots': G_CLOUD_LOTS},
+        {'framework_slug': 'g-cloud-11', 'framework_name': "G-Cloud 11", 'lots': G_CLOUD_LOTS},
+        {'framework_slug': 'g-cloud-12', 'framework_name': "G-Cloud 12", 'lots': G_CLOUD_LOTS},
     ],
     "digital-outcomes-and-specialists": [
         {
@@ -65,6 +65,11 @@ FRAMEWORKS_AND_LOTS = {
         {
             'framework_slug': 'digital-outcomes-and-specialists-4',
             'framework_name': "Digital Outcomes and Specialists 4",
+            'lots': DOS_LOTS
+        },
+        {
+            'framework_slug': 'digital-outcomes-and-specialists-5',
+            'framework_name': "Digital Outcomes and Specialists 5",
             'lots': DOS_LOTS
         },
     ]
