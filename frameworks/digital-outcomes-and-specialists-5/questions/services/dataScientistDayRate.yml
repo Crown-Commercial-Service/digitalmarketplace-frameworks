@@ -1,4 +1,4 @@
-question: How much do you charge per day for a data scientist (excluding VAT and expenses)?
+question: How much do you charge a day for a data scientist (excluding VAT and expenses)?
 question_advice: You won’t be able to charge a higher rate when you apply for opportunities.
 depends:
   - "on": lot
