@@ -15,3 +15,5 @@ limits:
 validations:
   - name: answer_required
     message: You need to answer this question.
+  - name: not_a_number
+    message: Percentage of invoices paid must be a number between 0 and 100.
