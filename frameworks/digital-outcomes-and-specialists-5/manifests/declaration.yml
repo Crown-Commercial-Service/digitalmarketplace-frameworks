@@ -26,13 +26,7 @@
 
     You also need to confirm that you’re not guilty of misconduct that affects the fairness of the procurement.
 
-    It’s unlikely your application will be accepted if you:
-
-    <ul class="list-bullet">
-    <li>don’t agree (answer ‘no’) to the terms given in questions [[termsOfParticipation]], [[termsAndConditions]], [[canProvideFromDayOne]], [[evidence]], [[10WorkingDays]] and [[MI]]</li>
-    <li>answer ‘yes’ to say you've been involved in the misconduct listed in question [[unfairCompetition]]</li>
-    </ul>
-
+    If you cannot answer ‘yes’ to every question on this page, it is very unlikely that your application will be accepted.
   questions:
     - termsOfParticipation
     - termsAndConditions
@@ -68,7 +62,7 @@
   name: Grounds for discretionary exclusion
   slug: grounds-for-discretionary-exclusion
   editable: True
-  prefill: True
+  prefill: False
   description: |
     You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
     for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
