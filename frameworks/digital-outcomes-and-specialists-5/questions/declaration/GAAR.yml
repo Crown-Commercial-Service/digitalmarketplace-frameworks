@@ -4,7 +4,7 @@ question: >
 
     - HMRC successfully challenged it under the General Anti-Abuse Rule (GAAR) or Halifax abuse principle
     - a tax authority (in a jurisdiction in which your organisation is established) successfully challenged it under any tax rules or legislation that have an effect equivalent or similar to the GAAR or Halifax abuse principle
-    - an avoidance scheme that your organisation was involved with failed and was, or should have been, notified under the Disclosure of Tax Avoidance Scheme (DOTAS) or equivalent
+    - a failure to notify, or failure of an avoidance scheme in which you are or were involved, under the Disclosure of Tax Avoidance Scheme rules (DOTAS), VADR (Schedule 11A to the Value Added Tax Act 1994 (as amended by Schedule 1 to the Finance (no. 2) Act 2005)) or any equivalent or similar regime in a jurisdiction in which your organisation is established
 type: boolean
 assessment:
   passIfIn:

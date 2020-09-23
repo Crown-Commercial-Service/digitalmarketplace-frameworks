@@ -63,26 +63,27 @@
   editable: True
   prefill: False
   description: |
-    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
-    for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
+    You must truthfully answer ‘no’ to every question on this page for your application to be considered eligible. If
+    you cannot answer ‘no’, your application may not be accepted.
 
     If you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
     you provide to consider whether or not you will be able to proceed any further with this procurement.
 
+    CCS can also exclude you if you are guilty of serious misrepresentation in providing any information referred to in
+    the <a href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank" rel="noopener noreferrer">Public Contracts Regulations 2015 (opens in new tab)</a>:
+
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank" rel="noopener noreferrer">section 23 (opens in new tab)</a>
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">section 24 (opens in new tab)</a>
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank" rel="noopener noreferrer">section 25 (opens in new tab)</a>
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank" rel="noopener noreferrer">section 26 (opens in new tab)</a>
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank" rel="noopener noreferrer">section 27 (opens in new tab)</a>
+
+    CCS can also exclude you if you fail to provide any such information it requests.
+
     In questions [[taxEvasion]] to [[misleadingInformation]], ‘a partner organisation’ includes members
     of your group of economic operators or their proposed subcontractors.
 
-    CCS can also exclude you if you are guilty of serious
-    misrepresentation in providing any information referred to within
-    regulations
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank" rel="noopener noreferrer">23 (new tab)</a>,
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">24 (new tab)</a>,
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank" rel="noopener noreferrer">25 (new tab)</a>,
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank" rel="noopener noreferrer">26 (new tab)</a> or
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank" rel="noopener noreferrer">27 (new tab)</a>
-    of the <a href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank" rel="noopener noreferrer">Public Contracts Regulations 2015 (new tab)</a>
-    or if you fail to provide any such information it requests.
   questions:
     - taxEvasion
     - environmentalSocialLabourLaw
