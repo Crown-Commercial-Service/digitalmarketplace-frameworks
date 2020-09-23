@@ -170,6 +170,14 @@
     - outsideIR35
 
 -
+  name: Modern slavery
+  slug: modern-slavery
+  editable: True
+  prefill: False
+  questions:
+    - multiqModernSlavery
+
+-
   name: Contact details
   slug: contact-details
   editable: True
@@ -181,11 +189,3 @@
     - contactEmail
     - contactNameContractNotice
     - contactEmailContractNotice
-
--
-  name: Modern slavery
-  slug: modern-slavery
-  editable: True
-  prefill: False
-  questions:
-    - multiqModernSlavery
