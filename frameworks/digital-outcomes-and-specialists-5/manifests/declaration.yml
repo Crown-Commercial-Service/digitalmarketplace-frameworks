@@ -173,12 +173,12 @@
   name: Contact details
   slug: contact-details
   editable: True
-  prefill: True
+  prefill: False
   description: |
-     The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.
+     The Crown Commercial Service will use the contact information to contact your organisation if it has any questions about your application.
   questions:
-    - primaryContact
-    - primaryContactEmail
+    - contact
+    - contactEmail
     - contactNameContractNotice
     - contactEmailContractNotice
 
