@@ -1,5 +1,6 @@
 name: Standard data protocols
-question: Will you use standard, accessible data protocols to ensure interoperability across government services?
+question: >
+  Will you use standard, accessible data protocols to ensure interoperability across government services?
 type: boolean
 required_value: true
 
@@ -11,4 +12,4 @@ depends:
 
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: Select if you will use standard and accessible data protocols
