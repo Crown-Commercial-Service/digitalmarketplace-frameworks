@@ -40,17 +40,16 @@
   name: Grounds for mandatory exclusion
   slug: grounds-for-mandatory-exclusion
   editable: True
-  prefill: True
+  prefill: False
   description: |
-    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your
-    application to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very
-    unlikely that your application will be accepted.
+    You must truthfully answer ‘no’ to every question on this page for your application to be considered eligible.
+    If you cannot answer ‘no’, it is unlikely that your application will be accepted.
 
-    In questions [[conspiracy]] to [[organisedCrime]], ‘anyone who represents, supervises or has control in your
-    organisation or a partner or parent organisation’ includes members of your group of economic operators, their
-    proposed subcontractors, and any directors, partners, or any other person who has powers of representation,
-    decision or control. Check that your organisation complies with <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the Public Contracts
-    Regulations 2015</a>.
+    The term ‘anyone who represents, supervises or has control in your organisation (or partner or parent organisation)’
+    includes members of your group of economic operators, their proposed subcontractors, and any directors, partners, or
+    any other person who has powers of representation, decision or control. Check that your organisation complies with
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the
+    Public Contracts Regulations 2015 (opens in new tab)</a>.
   questions:
     - conspiracy
     - corruptionBribery
