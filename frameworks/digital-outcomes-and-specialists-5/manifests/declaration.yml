@@ -107,12 +107,11 @@
   name: Working with government
   slug: working-with-government
   editable: True
-  prefill: True
+  prefill: False
   description: |
-    You must be able to truthfully answer ‘yes’ to every question under ‘Working with government’ for your bid to be
-    considered eligible.
+    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
 
-    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your bid will be accepted.
+    If you can’t answer ‘yes’ to every question in this section, it is unlikely your application will be accepted.
   questions:
     - environmentallyFriendly
     - equalityAndDiversity
