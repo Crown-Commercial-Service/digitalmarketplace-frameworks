@@ -1,4 +1,5 @@
 import glob
+import re
 
 import mock
 import pytest
@@ -107,7 +108,8 @@ def test_render_question(framework, question_id, question_set, question):
 
 
 def strip_paragraph_wrapper(value):
-    if value.startswith('<p>'):
-        value = value[3:-4]
+    match = re.fullmatch(r"^(<p.*?>)(.+?)(</p>)", value)
+    if match:
+        return match.group(2)
 
     return value
