@@ -1,4 +1,14 @@
 -
+  name: How you apply
+  slug: how-you-apply
+  editable: True
+  prefill: False
+  description: |
+      You can read about how to apply in the <a href="https://www.gov.uk/guidance/digital-outcomes-and-specialists-suppliers-guide#how-to-apply" target="_blank" rel="noopener noreferrer">Digital Outcomes and Specialists suppliers’ guide (opens in new tab)</a>.
+  questions:
+    - readUnderstoodGuidance
+
+-
   name: Providing suitable services
   slug: providing-suitable-services
   editable: True
@@ -126,21 +136,6 @@
     - continuousProfessionalDevelopment
     - customerSatisfactionProcess
     - civilServiceValues
-
--
-  name: How you apply
-  slug: how-you-apply
-  editable: True
-  prefill: False
-  description: |
-    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
-
-    If you can’t answer ‘yes’ to every question on this page, it’s very unlikely that your application will be accepted.
-
-  questions:
-    - readUnderstoodGuidance
-    - understandTool
-    - understandHowToAskQuestions
 
 -
   name: Application accuracy
