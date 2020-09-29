@@ -1,0 +1,19 @@
+name: Subcontracting invoices paid
+question: In the past 12 months, what percentage of invoices did you pay in 60 days to those in your immediate supply chain?
+
+hidden: true
+
+type: number
+unit: "%"
+unit_in_full: "percent"
+unit_position: "after"
+limits:
+  min_value: 0
+  max_value: 100
+  integer_only: true
+
+validations:
+  - name: answer_required
+    message: You need to answer this question.
+  - name: not_a_number
+    message: Percentage of invoices paid must be a number between 0 and 100.
