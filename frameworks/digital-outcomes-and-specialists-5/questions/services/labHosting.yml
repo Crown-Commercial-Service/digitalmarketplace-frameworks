@@ -1,4 +1,4 @@
-question: Do you welcome and host participants?
+question: Do you meet participants on arrival and provide refreshments?
 
 depends:
   - "on": lot
@@ -7,8 +7,8 @@ depends:
 
 type: radios
 options:
-  - label: Yes – included as standard
-  - label: Yes – for an additional cost
+  - label: Yes, included as standard
+  - label: Yes, for an additional cost
   - label: "No"
 
 validations:
