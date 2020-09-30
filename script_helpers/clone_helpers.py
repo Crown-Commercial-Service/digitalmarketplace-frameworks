@@ -12,7 +12,7 @@ METADATA_FILES = {
 
 DATES_FILES = {
     'application_deadline': 'messages/homepage-sidebar.yml',
-    'clarification_deadline': 'questions/declaration/understandHowToAskQuestions.yml',
+    'clarification_deadline': 'questions/declaration/readUnderstoodGuidance.yml',
     'go_live': 'questions/declaration/canProvideFromDayOne.yml'
 }
 

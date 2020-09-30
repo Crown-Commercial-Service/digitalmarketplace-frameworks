@@ -1,7 +1,15 @@
 name: Modern slavery statement required
 question: Upload a copy of your organisation’s slavery and human trafficking statement.
+question_advice: |
+  Your statement should:
 
-hint: Use an Open Document Format (ODF) or PDF/A (eg .pdf, .odt). (Maximum file size 5MB.)
+  - be an Open Document Format (ODF) or PDF/A
+  - have a maximum file size of 5MB
+  - meet accessibility standards
+hint: |
+  <a href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/accessible-pdfs" target="_blank" rel="noopener noreferrer">Read the guidance on accessible documents (opens in a new tab)</a>.
+
+  <a href="https://www.gov.uk/government/publications/transparency-in-supply-chains-a-practical-guide" target="_blank" rel="noopener noreferrer">Read the Home Office guidance about how to write a statement and what information to include (opens in a new tab)</a>.
 
 hidden: true
 type: upload

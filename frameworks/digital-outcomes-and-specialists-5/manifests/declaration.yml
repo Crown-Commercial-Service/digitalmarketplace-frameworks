@@ -1,4 +1,14 @@
 -
+  name: How you apply
+  slug: how-you-apply
+  editable: True
+  prefill: False
+  description: |
+      You can read about how to apply in the <a href="https://www.gov.uk/guidance/digital-outcomes-and-specialists-suppliers-guide#how-to-apply" target="_blank" rel="noopener noreferrer">Digital Outcomes and Specialists suppliers’ guide (opens in new tab)</a>.
+  questions:
+    - readUnderstoodGuidance
+
+-
   name: Providing suitable services
   slug: providing-suitable-services
   editable: True
@@ -6,7 +16,7 @@
   description: |
     You must answer these questions to confirm that your services are suitable for Digital Outcomes and Specialists&nbsp;5.
 
-    You must be able to truthfully answer ‘yes’ to every question for your application to be considered eligible.
+    You must truthfully answer ‘yes’ to every question for your application to be considered eligible.
     The Crown Commercial Service may ask for proof after you’ve submitted your application.
 
     If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted.
@@ -26,13 +36,7 @@
 
     You also need to confirm that you’re not guilty of misconduct that affects the fairness of the procurement.
 
-    It’s unlikely your application will be accepted if you:
-
-    <ul class="list-bullet">
-    <li>don’t agree (answer ‘no’) to the terms given in questions [[termsOfParticipation]], [[termsAndConditions]], [[canProvideFromDayOne]], [[evidence]], [[10WorkingDays]] and [[MI]]</li>
-    <li>answer ‘yes’ to say you've been involved in the misconduct listed in question [[unfairCompetition]]</li>
-    </ul>
-
+    If you cannot answer ‘yes’ to every question on this page, it is very unlikely that your application will be accepted.
   questions:
     - termsOfParticipation
     - termsAndConditions
@@ -46,17 +50,16 @@
   name: Grounds for mandatory exclusion
   slug: grounds-for-mandatory-exclusion
   editable: True
-  prefill: True
+  prefill: False
   description: |
-    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your
-    application to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very
-    unlikely that your application will be accepted.
+    You must truthfully answer ‘no’ to every question on this page for your application to be considered eligible.
+    If you cannot answer ‘no’, it is unlikely that your application will be accepted.
 
-    In questions [[conspiracy]] to [[organisedCrime]], ‘anyone who represents, supervises or has control in your
-    organisation or a partner or parent organisation’ includes members of your group of economic operators, their
-    proposed subcontractors, and any directors, partners, or any other person who has powers of representation,
-    decision or control. Check that your organisation complies with <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the Public Contracts
-    Regulations 2015</a>.
+    The term ‘anyone who represents, supervises or has control in your organisation (or partner or parent organisation)’
+    includes members of your group of economic operators, their proposed subcontractors, and any directors, partners, or
+    any other person who has powers of representation, decision or control. Check that your organisation complies with
+    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the
+    Public Contracts Regulations 2015 (opens in new tab)</a>.
   questions:
     - conspiracy
     - corruptionBribery
@@ -68,28 +71,29 @@
   name: Grounds for discretionary exclusion
   slug: grounds-for-discretionary-exclusion
   editable: True
-  prefill: True
+  prefill: False
   description: |
-    You must be able to truthfully answer ‘no’ to every question under ‘Grounds for discretionary exclusion’
-    for your bid to be considered eligible. If you can’t answer ‘no’, your bid may not be accepted.
+    You must truthfully answer ‘no’ to every question on this page for your application to be considered eligible. If
+    you cannot answer ‘no’, your application may not be accepted.
 
     If you do answer ‘yes’, you must provide full details of any subsequent event or remedial action that
     you think the Crown Commercial Service (CCS) should take into consideration. CCS will use the information
     you provide to consider whether or not you will be able to proceed any further with this procurement.
 
+    CCS can also exclude you if you are guilty of serious misrepresentation in providing any information referred to in
+    the <a href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank" rel="noopener noreferrer">Public Contracts Regulations 2015 (opens in new tab)</a>:
+
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank" rel="noopener noreferrer">section 23 (opens in new tab)</a>
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">section 24 (opens in new tab)</a>
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank" rel="noopener noreferrer">section 25 (opens in new tab)</a>
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank" rel="noopener noreferrer">section 26 (opens in new tab)</a>
+      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank" rel="noopener noreferrer">section 27 (opens in new tab)</a>
+
+    CCS can also exclude you if you fail to provide any such information it requests.
+
     In questions [[taxEvasion]] to [[misleadingInformation]], ‘a partner organisation’ includes members
     of your group of economic operators or their proposed subcontractors.
 
-    CCS can also exclude you if you are guilty of serious
-    misrepresentation in providing any information referred to within
-    regulations
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank" rel="noopener noreferrer">23 (new tab)</a>,
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">24 (new tab)</a>,
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank" rel="noopener noreferrer">25 (new tab)</a>,
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank" rel="noopener noreferrer">26 (new tab)</a> or
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank" rel="noopener noreferrer">27 (new tab)</a>
-    of the <a href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank" rel="noopener noreferrer">Public Contracts Regulations 2015 (new tab)</a>
-    or if you fail to provide any such information it requests.
   questions:
     - taxEvasion
     - environmentalSocialLabourLaw
@@ -113,12 +117,11 @@
   name: Working with government
   slug: working-with-government
   editable: True
-  prefill: True
+  prefill: False
   description: |
-    You must be able to truthfully answer ‘yes’ to every question under ‘Working with government’ for your bid to be
-    considered eligible.
+    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
 
-    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your bid will be accepted.
+    If you can’t answer ‘yes’ to every question in this section, it is unlikely your application will be accepted.
   questions:
     - environmentallyFriendly
     - equalityAndDiversity
@@ -133,21 +136,6 @@
     - continuousProfessionalDevelopment
     - customerSatisfactionProcess
     - civilServiceValues
-
--
-  name: How you apply
-  slug: how-you-apply
-  editable: True
-  prefill: False
-  description: |
-    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
-
-    If you can’t answer ‘yes’ to every question on this page, it’s very unlikely that your application will be accepted.
-
-  questions:
-    - readUnderstoodGuidance
-    - understandTool
-    - understandHowToAskQuestions
 
 -
   name: Application accuracy
@@ -177,22 +165,22 @@
     - outsideIR35
 
 -
-  name: Contact details
-  slug: contact-details
-  editable: True
-  prefill: True
-  description: |
-     The Crown Commercial Service will use the primary contact information to contact your organisation if it has any questions about your application.
-  questions:
-    - primaryContact
-    - primaryContactEmail
-    - contactNameContractNotice
-    - contactEmailContractNotice
-
--
   name: Modern slavery
   slug: modern-slavery
   editable: True
   prefill: False
   questions:
     - multiqModernSlavery
+
+-
+  name: Contact details
+  slug: contact-details
+  editable: True
+  prefill: False
+  description: |
+     The Crown Commercial Service will use the contact information to contact your organisation if it has any questions about your application.
+  questions:
+    - contact
+    - contactEmail
+    - contactNameContractNotice
+    - contactEmailContractNotice

@@ -1,8 +1,11 @@
 name: Understanding the application process
-question: >
-  Do you understand the application process for Digital Outcomes and Specialists&nbsp;5 on the Digital Marketplace?
-hint: >
-  You can read about how to apply in the <a href="https://www.gov.uk/guidance/digital-outcomes-and-specialists-suppliers-guide#how-to-apply" target="_blank" rel="noopener noreferrer">Digital Outcomes and Specialists suppliers’ guide (link opens in a new tab)</a>.
+question: |
+  By starting an application for Digital Outcomes and Specialists&nbsp;5, do you understand:
+
+  - the application process
+  - that you must make the supplier declaration and mark at least one service as complete before your application can be considered
+  - that you can ask clarification questions only through the updates page in your Digital Marketplace account
+hint: You can ask clarification questions about Digital Outcomes and Specialists&nbsp;5 until 5pm BST on 30 October 2020. All questions and answers will be published regularly on the updates page. You will be notified by email when new questions and answers are available.
 type: boolean
 assessment:
   passIfIn:

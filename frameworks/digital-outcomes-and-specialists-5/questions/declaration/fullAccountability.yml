@@ -1,7 +1,7 @@
 name: Contractual responsibility and accountability
 question: >
-  Please confirm that your organisation will take direct contractual responsibility and full accountability for 
-  delivering the services you’re offering on the framework.
+  Will you or your organisation take direct contractual responsibility and full accountability for delivering the
+  services you’re offering?
 type: boolean
 assessment:
   passIfIn:
