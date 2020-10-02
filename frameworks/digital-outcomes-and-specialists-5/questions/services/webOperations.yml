@@ -10,7 +10,6 @@ any_of: specialist
 questions:
   - webOperationsLocations
   - webOperationsDayRate
-  - webOperationsAccessibleApplications
 
 empty_message: You haven’t added a web operations engineer
 

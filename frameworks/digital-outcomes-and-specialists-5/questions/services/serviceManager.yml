@@ -10,7 +10,6 @@ any_of: specialist
 questions:
   - serviceManagerLocations
   - serviceManagerDayRate
-  - serviceManagerAccessibleApplications
 
 empty_message: You haven’t added a service manager
 

@@ -10,7 +10,6 @@ any_of: specialist
 questions:
   - qualityAssuranceLocations
   - qualityAssuranceDayRate
-  - qualityAssuranceAccessibleApplications
 
 empty_message: You haven’t added a quality assurance analyst
 
