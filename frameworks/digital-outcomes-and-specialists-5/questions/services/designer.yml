@@ -10,7 +10,6 @@ any_of: specialist
 questions:
   - designerLocations
   - designerDayRate
-  - designerAccessibleApplications
 
 empty_message: You haven’t added a designer
 

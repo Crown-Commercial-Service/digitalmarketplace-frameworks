@@ -10,7 +10,6 @@ any_of: specialist
 questions:
   - technicalArchitectLocations
   - technicalArchitectDayRate
-  - technicalArchitectAccessibleApplications
 
 empty_message: You haven’t added a technical architect
 

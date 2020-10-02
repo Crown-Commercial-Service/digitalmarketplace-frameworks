@@ -1,12 +1,11 @@
-question: How much do you charge a day for a data architect (excluding VAT and expenses)?
-question_advice: You won’t be able to charge a higher rate when you apply for opportunities.
+question: What is the maximum you charge a day for a data architect (excluding VAT and expenses)?
+question_advice: The maximum price will be fixed for the duration of the framework agreement. You won’t be able to charge a higher rate when you apply for opportunities.
 depends:
   - "on": lot
     being:
       - digital-specialists
 type: pricing
 fields:
-  minimum_price: dataArchitectPriceMin
   maximum_price: dataArchitectPriceMax
 field_defaults:
   price_unit: Person
@@ -14,17 +13,8 @@ field_defaults:
 
 validations:
   - name: answer_required
-    field: dataArchitectPriceMin
-    message: 'You need to answer this question.'
-  - name: not_money_format
-    field: dataArchitectPriceMin
-    message: "Minimum price must be a number, without units, eg 99.95"
-  - name: answer_required
     field: dataArchitectPriceMax
-    message: 'You need to answer this question.'
+    message: Enter the amount you will charge for a data architect
   - name: not_money_format
     field: dataArchitectPriceMax
     message: "Maximum price must be a number, without units, eg 99.95"
-  - name: max_less_than_min
-    field: dataArchitectPriceMax
-    message: "Minimum price must be less than maximum price"

@@ -1,12 +1,11 @@
-question: How much do you charge a day for a communications manager (excluding VAT and expenses)?
-question_advice: You won’t be able to charge a higher rate when you apply for opportunities.
+question: What is the maximum you charge a day for a communications manager (excluding VAT and expenses)?
+question_advice: The maximum price will be fixed for the duration of the framework agreement. You won’t be able to charge a higher rate when you apply for opportunities.
 depends:
   - "on": lot
     being:
       - digital-specialists
 type: pricing
 fields:
-  minimum_price: communicationsManagerPriceMin
   maximum_price: communicationsManagerPriceMax
 field_defaults:
   price_unit: Person
@@ -14,17 +13,8 @@ field_defaults:
 
 validations:
   - name: answer_required
-    field: communicationsManagerPriceMin
-    message: 'You need to answer this question.'
-  - name: not_money_format
-    field: communicationsManagerPriceMin
-    message: "Minimum price must be a number, without units, eg 99.95"
-  - name: answer_required
     field: communicationsManagerPriceMax
-    message: 'You need to answer this question.'
+    message: Enter the amount you will charge for a communications manager
   - name: not_money_format
     field: communicationsManagerPriceMax
     message: "Maximum price must be a number, without units, eg 99.95"
-  - name: max_less_than_min
-    field: communicationsManagerPriceMax
-    message: "Minimum price must be less than maximum price"

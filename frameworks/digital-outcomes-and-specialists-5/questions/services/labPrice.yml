@@ -15,10 +15,10 @@ field_defaults:
 validations:
   - name: answer_required
     field: labTimeMin
-    message: 'You need to answer this question.'
+    message: 'Enter the minimum amount of time that your lab is available.'
   - name: answer_required
     field: labPriceMin
-    message: 'You need to answer this question.'
+    message: 'Enter the cost of using your lab.'
   - name: not_money_format
     field: labPriceMin
     message: "Minimum price must be a number, without units, eg 99.95"

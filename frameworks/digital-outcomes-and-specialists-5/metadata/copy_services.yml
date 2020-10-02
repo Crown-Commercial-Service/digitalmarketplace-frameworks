@@ -1,2 +1,10 @@
-questions_to_exclude: []
+questions_to_exclude:
+  - labDesktopStreaming
+  - labDeviceStreaming
+  - labEyeTracking
+  - labHosting
+  - labStreaming
+  - labTechAssistance
+  - labViewingArea
+  - labWaitingArea
 source_framework: digital-outcomes-and-specialists-4

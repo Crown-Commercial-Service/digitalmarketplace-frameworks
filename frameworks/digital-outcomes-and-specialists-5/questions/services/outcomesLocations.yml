@@ -1,8 +1,6 @@
 id: locations
 name: Where can you work on digital outcomes?
 question: |
-  Where can you work on digital outcomes?
-
   Choose all the locations where you can work at buyers’ sites, and whether you can work offsite.
 
   You can update the locations where you can provide services when the framework is live.
@@ -14,19 +12,19 @@ depends:
       - digital-outcomes
 type: checkboxes
 options:
-  - label: "Offsite"
-  - label: "Scotland"
-  - label: "North East England"
-  - label: "North West England"
-  - label: "Yorkshire and the Humber"
-  - label: "East Midlands"
-  - label: "West Midlands"
-  - label: "East of England"
-  - label: "Wales"
-  - label: "London"
-  - label: "South East England"
-  - label: "South West England"
-  - label: "Northern Ireland"
+  - label: Offsite
+  - label: North East England
+  - label: North West England
+  - label: Yorkshire and the Humber
+  - label: East Midlands
+  - label: West Midlands
+  - label: East of England
+  - label: London
+  - label: South East England
+  - label: South West England
+  - label: Scotland
+  - label: Wales
+  - label: Northern Ireland
 
 validations:
   - name: answer_required

@@ -1,4 +1,4 @@
-question: What types of testing and auditing can you provide?
+question: Types of testing and auditing you will provide
 depends:
   - "on": lot
     being:
@@ -6,7 +6,7 @@ depends:
 type: checkboxes
 options:
   - label: Accessibility testing
-    description: Test whether a product or service is easy to use for people using assistive technologies, eg screen readers, voice recognition software or trackball devices. Highlight problems and suggest changes where appropriate.
+    description: Test whether a product or service is easy to use for people using assistive technologies, such as screen readers, voice recognition software or trackball devices. Highlight problems and suggest changes where appropriate.
   - label: Application testing
     description: Ensure the integrity of the product by writing automated tests or conducting manual tests. Investigate the results, and report bugs or issues.
   - label: Data auditing
@@ -14,7 +14,7 @@ options:
   - label: Load and performance testing
     description: Test sites and applications under realistic loads (traffic) to make sure that they’re stable and work well for users.
   - label: Process auditing
-    description: Review how IT processes are managed, eg establish whether practices are compliant with payment card industry (PCI) standards. Highlight problems and suggest changes where appropriate.
+    description: Review how IT processes are managed, for example establish whether practices are compliant with payment card industry (PCI) standards. Highlight problems and suggest changes where appropriate.
   - label: Software auditing
     description: Provide independent examination of a software product or process to assess compliance with specifications, standards, contracts or other criteria. Highlight problems and suggest changes where appropriate.
   - label: System auditing

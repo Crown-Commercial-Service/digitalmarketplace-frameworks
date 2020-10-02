@@ -1,6 +1,7 @@
 name: Use of open standards
-question: |
-  Will you work according to the government’s [Open Standards Principles](https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles) and use the [open standards selected for use across government](http://standards.data.gov.uk/challenges/adopted)?
+question: >
+  Will you work according to the government’s <a target="_blank" rel="noopener noreferrer" href="https://www.gov.uk/government/publications/open-standards-principles/open-standards-principles">Open Standards Principles (opens in new tab)</a> and use the
+  <a target="_blank" rel="noopener noreferrer" href="http://standards.data.gov.uk/challenges/adopted">open standards selected for use across government (opens in new tab)</a>?
 hint: This includes publishing any software you build for the government under the appropriate open source licence.
 type: boolean
 required_value: true
@@ -13,4 +14,4 @@ depends:
 
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: Select if you will work according to the governments standards

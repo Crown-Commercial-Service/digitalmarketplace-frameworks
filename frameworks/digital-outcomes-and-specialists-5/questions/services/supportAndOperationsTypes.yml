@@ -21,7 +21,8 @@ options:
     description: Provide first or second-line technical support to either internal or external users.
   - label: Systems administration
     description: Install, support and maintain computer systems. Manage user and security policies.
-  - label: Tooling
+  - label: Tools
+    value: Tooling
     description: Set up and maintain tools for continuous integration and deployment of digital services.
 
 validations:
