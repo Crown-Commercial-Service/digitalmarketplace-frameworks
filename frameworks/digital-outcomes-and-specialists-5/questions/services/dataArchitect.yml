@@ -11,6 +11,6 @@ questions:
   - dataArchitectLocations
   - dataArchitectDayRate
 
-empty_message: You haven’t added a data architect
+empty_message: You have not added a data architect
 
 hint: Set the vision for the organisation’s use of data, through data design, to meet business needs.

@@ -10,4 +10,4 @@ any_of: capability
 questions:
   - supportAndOperationsTypes
 
-empty_message: You haven’t added any support and operations capabilities
+empty_message: You have not added any support and operations capabilities

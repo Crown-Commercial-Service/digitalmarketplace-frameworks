@@ -11,6 +11,6 @@ questions:
   - communicationsManagerLocations
   - communicationsManagerDayRate
 
-empty_message: You haven’t added a communications manager
+empty_message: You have not added a communications manager
 
 hint: Develop user-focused messages, measurement techniques and communication approaches. Establish integrated communication plans across a range of digital channels to ensure that communication is ongoing, open and clear.

@@ -11,6 +11,6 @@ questions:
   - dataEngineerLocations
   - dataEngineerDayRate
 
-empty_message: You haven’t added a data engineer
+empty_message: You have not added a data engineer
 
 hint: Design, build, test and maintain data management systems, making sure they meet business requirements and user needs.
