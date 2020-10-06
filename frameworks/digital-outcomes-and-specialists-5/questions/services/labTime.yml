@@ -1,0 +1,23 @@
+id: labTimeMin
+question: What is the minimum amount of time your lab can be booked for?
+
+depends:
+  - "on": lot
+    being:
+      - user-research-studios
+
+type: radios
+options:
+  - label: 1 hour
+  - label: 2 hours
+  - label: 3 hours
+  - label: 4 hours
+  - label: 5 hours
+  - label: 6 hours
+  - label: 7 hours
+  - label: 8 hours
+
+validations:
+  - name: answer_required
+    field: labTimeMin
+    message: 'Enter the minimum amount of time that your lab is available.'
