@@ -1,7 +1,7 @@
 name: Problem to be solved
 question: Problem to be solved
 question_advice: >
-  For example: patients can’t access their medical records
+  For example: patients cannot access their medical records
 type: textbox_large
 max_length_in_words: 200
 depends:

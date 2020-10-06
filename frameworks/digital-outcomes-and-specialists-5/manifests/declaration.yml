@@ -19,7 +19,7 @@
     You must truthfully answer ‘yes’ to every question for your application to be considered eligible.
     The Crown Commercial Service may ask for proof after you’ve submitted your application.
 
-    If you can’t answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted.
+    If you cannot answer ‘yes’ to every question in this section, it’s very unlikely that your application will be accepted.
 
   questions:
     - skillsAndResources
@@ -121,7 +121,7 @@
   description: |
     You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
 
-    If you can’t answer ‘yes’ to every question in this section, it is unlikely your application will be accepted.
+    If you cannot answer ‘yes’ to every question in this section, it is unlikely your application will be accepted.
   questions:
     - environmentallyFriendly
     - equalityAndDiversity

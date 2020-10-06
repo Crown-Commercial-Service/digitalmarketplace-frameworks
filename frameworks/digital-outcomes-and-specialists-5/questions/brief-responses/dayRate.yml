@@ -17,6 +17,6 @@ validations:
     message: "Day rate must be in numbers and decimal points only, for example 99.95."
   - name: max_less_than_min
     field: dayRate
-    message: "This can't be more than the maximum day rate you've already provided."
+    message: "This cannot be more than the maximum day rate you've already provided."
 
 empty_message: Set rate
