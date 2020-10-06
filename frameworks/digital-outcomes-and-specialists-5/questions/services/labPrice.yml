@@ -1,4 +1,4 @@
-question: What is the minimum amount of time your lab can be booked for and how much does it cost (excluding VAT)?
+question: How much does it cost (excluding VAT) for the minimum booking time?
 
 depends:
   - "on": lot
@@ -7,15 +7,11 @@ depends:
 
 type: pricing
 fields:
-  hours_for_price: labTimeMin
   minimum_price: labPriceMin
 field_defaults:
   price_unit: Lab
 
 validations:
-  - name: answer_required
-    field: labTimeMin
-    message: 'Enter the minimum amount of time that your lab is available.'
   - name: answer_required
     field: labPriceMin
     message: 'Enter the cost of using your lab.'

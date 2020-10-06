@@ -131,6 +131,7 @@
 - name: Price
   editable: True
   questions:
+    - labTime
     - labPrice
 
 - name: Recruitment approach

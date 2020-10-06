@@ -112,6 +112,7 @@
 - name: Price
   editable: False
   questions:
+    - labTime
     - labPrice
 
 - name: Recruitment approach
