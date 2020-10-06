@@ -1,4 +1,4 @@
-- name: Lab name
+- name: Research studio name
   editable: True
   questions:
     - serviceName
@@ -60,7 +60,7 @@
     - userResearcher
     - webOperations
 
-- name: Lab address
+- name: Research studio address
   editable: True
   questions:
     - labAddressBuilding
@@ -73,7 +73,7 @@
     - labPublicTransport
     - labCarPark
 
-- name: Lab size
+- name: Research studio size
   editable: True
   questions:
     - labSize

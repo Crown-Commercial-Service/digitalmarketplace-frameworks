@@ -9,12 +9,12 @@ type: pricing
 fields:
   minimum_price: labPriceMin
 field_defaults:
-  price_unit: Lab
+  price_unit: research studio
 
 validations:
   - name: answer_required
     field: labPriceMin
-    message: 'Enter the cost of using your lab.'
+    message: 'Enter the cost of using your research studio.'
   - name: not_money_format
     field: labPriceMin
     message: "Minimum price must be a number, without units, eg 99.95"

@@ -1,5 +1,5 @@
 id: labTimeMin
-question: What is the minimum amount of time your lab can be booked for?
+question: What is the minimum amount of time your research studio can be booked for?
 
 depends:
   - "on": lot
@@ -20,4 +20,4 @@ options:
 validations:
   - name: answer_required
     field: labTimeMin
-    message: 'Enter the minimum amount of time that your lab is available.'
+    message: 'Enter the minimum amount of time that your research studio is available.'
