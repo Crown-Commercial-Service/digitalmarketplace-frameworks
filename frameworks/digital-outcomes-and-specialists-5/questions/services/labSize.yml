@@ -1,6 +1,6 @@
-name: How many people can the lab accommodate?
+name: How many people can the research studio accommodate?
 question: >
-  How many people can the lab accommodate?
+  How many people can the research studio accommodate?
 
   This is the total number of people including participants and researchers.
 depends:

@@ -1,5 +1,5 @@
 name: Subcontractors or consortia
-question: "Please confirm whether you will provide Digital Outcomes and Specialists&nbsp;5 services:"
+question: "Can you confirm whether you will provide Digital Outcomes and Specialists&nbsp;5 services:"
 type: radios
 options:
   - label: yourself without the use of third parties (subcontractors)

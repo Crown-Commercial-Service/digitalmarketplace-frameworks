@@ -15,8 +15,8 @@ options:
     label: Apply to provide user research studios
     value: user-research-studios
     description: >
-      User research studios sometimes have multiple labs, or rooms. Labs usually include a device to test a service
-      and a way to observe the session. Provide information on each lab you want buyers to use.
+      User research studios sometimes have multiple labs, or rooms. Research studios usually include a device to test a service
+      and a way to observe the session. Provide information on each research studio you want buyers to use.
   -
     label: Apply to provide user research participant recruitment
     value: user-research-participants

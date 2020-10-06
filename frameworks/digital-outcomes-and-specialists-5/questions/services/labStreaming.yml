@@ -1,4 +1,4 @@
-question: Do you provide remote streaming from the lab?
+question: Do you provide remote streaming from the studio?
 
 depends:
   - "on": lot
