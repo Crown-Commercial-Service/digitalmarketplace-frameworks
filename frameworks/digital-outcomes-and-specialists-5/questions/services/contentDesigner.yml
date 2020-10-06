@@ -11,6 +11,6 @@ questions:
   - contentDesignerLocations
   - contentDesignerDayRate
 
-empty_message: You haven’t added a content designer
+empty_message: You have not added a content designer
 
 hint: Ensure content is as clear and simple as possible to meet user needs.

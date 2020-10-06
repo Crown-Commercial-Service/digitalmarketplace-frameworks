@@ -10,4 +10,4 @@ any_of: capability
 questions:
   - performanceAnalysisTypes
 
-empty_message: You haven’t added any performance analysis and data capabilities
+empty_message: You have not added any performance analysis and data capabilities

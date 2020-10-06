@@ -9,7 +9,7 @@ question_advice: |
   The suppliers have already agreed that:
 
   - their prices must include all incentives, recruitment, and travel and subsistence costs paid to participants
-  - you don’t pay for participants who don’t attend on the day
+  - you do not pay for participants who do not attend on the day
   - they are responsible for paying participants directly
 optional: true
 type: textbox_large

@@ -1,5 +1,5 @@
 question: What is the maximum you charge a day for a designer (excluding VAT and expenses)?
-question_advice: The maximum price will be fixed for the duration of the framework agreement. You won’t be able to charge a higher rate when you apply for opportunities.
+question_advice: The maximum price will be fixed for the duration of the framework agreement. You will not be able to charge a higher rate when you apply for opportunities.
 depends:
   - "on": lot
     being:

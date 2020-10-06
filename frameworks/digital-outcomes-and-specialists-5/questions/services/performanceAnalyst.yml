@@ -11,6 +11,6 @@ questions:
   - performanceAnalystLocations
   - performanceAnalystDayRate
 
-empty_message: You haven’t added a performance analyst
+empty_message: You have not added a performance analyst
 
 hint: Specify, collect and present the key performance data and analysis for a service.

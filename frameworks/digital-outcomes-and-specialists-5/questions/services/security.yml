@@ -10,4 +10,4 @@ any_of: capability
 questions:
   - securityTypes
 
-empty_message: You haven’t added any security capabilities
+empty_message: You have not added any security capabilities

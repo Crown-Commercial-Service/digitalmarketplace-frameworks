@@ -8,7 +8,7 @@
   editable: True
   description: >
     You must be able to truthfully answer ‘yes’ to every question  for your
-    bid to be considered eligible. If you can’t answer ‘yes’ to every question
+    bid to be considered eligible. If you cannot answer ‘yes’ to every question
     in this section, it’s very unlikely that your bid will be accepted.
   questions:
     - helpGovernmentImproveServices
@@ -21,7 +21,7 @@
   editable: True
   description: >
     You must be able to truthfully answer ‘yes’ to every question for your bid
-    to be considered eligible. If you can’t answer ‘yes’ to every question in
+    to be considered eligible. If you cannot answer ‘yes’ to every question in
     this section, it’s very unlikely that your bid will be accepted.
   questions:
     - anonymousRecruitment

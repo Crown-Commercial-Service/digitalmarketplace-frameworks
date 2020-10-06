@@ -11,6 +11,6 @@ questions:
   - securityConsultantLocations
   - securityConsultantDayRate
 
-empty_message: You haven’t added a cyber security consultant
+empty_message: You have not added a cyber security consultant
 
 hint: Minimise the chance of data or information systems security breaches. Ensure information is protected against unauthorised or unintended access. Put systems in place to prevent data destruction or disruption.
