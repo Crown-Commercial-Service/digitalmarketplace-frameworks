@@ -3,7 +3,7 @@ question: Security clearance
 question_advice: |
   Describe any security clearance the individual or team must have when they start work.
 
-  You shouldn’t exclude suppliers if they don’t currently have the security clearance you need.
+  You shouldn’t exclude suppliers if they do not currently have the security clearance you need.
 
   You may need to organise security clearance.
 type: textbox_large
