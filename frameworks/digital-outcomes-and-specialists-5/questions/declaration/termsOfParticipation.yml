@@ -1,6 +1,6 @@
 name: Invitation to apply
 question: >
-  Do you agree to comply with the terms of the <a href="/suppliers/frameworks/digital-outcomes-and-specialists-5#legal-documents" target="_blank" rel="noopener noreferrer">Digital Outcomes and Specialists&nbsp;5 ‘invitation to apply’ (opens in new tab)</a>?
+  Do you agree to comply with the terms of the <a class="govuk-link" href="/suppliers/frameworks/digital-outcomes-and-specialists-5#legal-documents" target="_blank" rel="noopener noreferrer">Digital Outcomes and Specialists&nbsp;5 ‘invitation to apply’ (opens in new tab)</a>?
 type: boolean
 assessment:
   passIfIn:

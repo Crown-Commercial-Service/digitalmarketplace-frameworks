@@ -1,35 +1,29 @@
 coming: |
-  <div class="explanation-list">
-    G-Cloud is opening for applications.<br />
-    You will be able to apply to sell:
-    <ul class="list-bullet">
-      <li>cloud hosting</li>
-      <li>cloud software</li>
-      <li>cloud support</li>
-    </ul>
-  </div>
+  G-Cloud is opening for applications.
+
+  You will be able to apply to sell:
+
+  - cloud hosting
+  - cloud software
+  - cloud support
 
 open: |
- <div class="explanation-list">
-    G-Cloud is open for applications.<br />
-    You can apply to sell:
-    <ul class="list-bullet">
-      <li>cloud hosting</li>
-      <li>cloud software</li>
-      <li>cloud support</li>
-    </ul>
-  </div>
+  G-Cloud is open for applications.
+
+  You can apply to sell:
+
+  - cloud hosting
+  - cloud software
+  - cloud support
 
 pending: &can_not_apply |
-  <div class="explanation-list">
-    G-Cloud is closed for applications.<br />
-    You will be able to apply to sell:
-    <ul class="list-bullet">
-      <li>cloud hosting</li>
-      <li>cloud software</li>
-      <li>cloud support</li>
-    </ul>
-  </div>
+  G-Cloud is closed for applications.
+
+  You will be able to apply to sell:
+
+  - cloud hosting
+  - cloud software
+  - cloud support
 
 standstill: *can_not_apply
 

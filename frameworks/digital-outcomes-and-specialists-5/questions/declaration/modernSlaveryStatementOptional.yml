@@ -10,9 +10,9 @@ question_advice: |
   - have a maximum file size of 5MB
   - meet accessibility standards
 hint: |
-  <a href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/accessible-pdfs" target="_blank" rel="noopener noreferrer">Read the guidance on accessible documents (opens in new tab)</a>.
+  <a class="govuk-link" href="https://www.gov.uk/guidance/how-to-publish-on-gov-uk/accessible-pdfs" target="_blank" rel="noopener noreferrer">Read the guidance on accessible documents (opens in new tab)</a>.
 
-  <a href="https://www.gov.uk/government/publications/transparency-in-supply-chains-a-practical-guide" target="_blank" rel="noopener noreferrer">Read the Home Office guidance about how to write a statement and what information to include (opens in new tab)</a>.
+  <a class="govuk-link" href="https://www.gov.uk/government/publications/transparency-in-supply-chains-a-practical-guide" target="_blank" rel="noopener noreferrer">Read the Home Office guidance about how to write a statement and what information to include (opens in new tab)</a>.
 
 hidden: true
 type: upload

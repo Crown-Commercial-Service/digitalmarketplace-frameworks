@@ -4,7 +4,7 @@
   editable: True
   prefill: False
   description: |
-      You can read about how to apply in the <a href="https://www.gov.uk/guidance/digital-outcomes-and-specialists-suppliers-guide#how-to-apply" target="_blank" rel="noopener noreferrer">Digital Outcomes and Specialists suppliers’ guide (opens in new tab)</a>.
+      You can read about how to apply in the <a class="govuk-link" href="https://www.gov.uk/guidance/digital-outcomes-and-specialists-suppliers-guide#how-to-apply" target="_blank" rel="noopener noreferrer">Digital Outcomes and Specialists suppliers’ guide (opens in new tab)</a>.
   questions:
     - readUnderstoodGuidance
 
@@ -58,7 +58,7 @@
     The term ‘anyone who represents, supervises or has control in your organisation (or partner or parent organisation)’
     includes members of your group of economic operators, their proposed subcontractors, and any directors, partners, or
     any other person who has powers of representation, decision or control. Check that your organisation complies with
-    <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the
+    <a class="govuk-link" href="http://www.legislation.gov.uk/uksi/2015/102/regulation/57/made" target="_blank">Regulation 57(1) of the
     Public Contracts Regulations 2015 (opens in new tab)</a>.
   questions:
     - conspiracy
@@ -81,13 +81,13 @@
     you provide to consider whether or not you will be able to proceed any further with this procurement.
 
     CCS can also exclude you if you are guilty of serious misrepresentation in providing any information referred to in
-    the <a href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank" rel="noopener noreferrer">Public Contracts Regulations 2015 (opens in new tab)</a>:
+    the <a class="govuk-link" href="http://www.legislation.gov.uk/uksi/2015/102/contents/made" target="_blank" rel="noopener noreferrer">Public Contracts Regulations 2015 (opens in new tab)</a>:
 
-      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank" rel="noopener noreferrer">section 23 (opens in new tab)</a>
-      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">section 24 (opens in new tab)</a>
-      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank" rel="noopener noreferrer">section 25 (opens in new tab)</a>
-      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank" rel="noopener noreferrer">section 26 (opens in new tab)</a>
-      - <a href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank" rel="noopener noreferrer">section 27 (opens in new tab)</a>
+      - <a class="govuk-link" href="http://www.legislation.gov.uk/uksi/2015/102/regulation/23/made" target="_blank" rel="noopener noreferrer">section 23 (opens in new tab)</a>
+      - <a class="govuk-link" href="http://www.legislation.gov.uk/uksi/2015/102/regulation/24/made" target="_blank" rel="noopener noreferrer">section 24 (opens in new tab)</a>
+      - <a class="govuk-link" href="http://www.legislation.gov.uk/uksi/2015/102/regulation/25/made" target="_blank" rel="noopener noreferrer">section 25 (opens in new tab)</a>
+      - <a class="govuk-link" href="http://www.legislation.gov.uk/uksi/2015/102/regulation/26/made" target="_blank" rel="noopener noreferrer">section 26 (opens in new tab)</a>
+      - <a class="govuk-link" href="http://www.legislation.gov.uk/uksi/2015/102/regulation/27/made" target="_blank" rel="noopener noreferrer">section 27 (opens in new tab)</a>
 
     CCS can also exclude you if you fail to provide any such information it requests.
 
