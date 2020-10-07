@@ -141,7 +141,7 @@
   name: Application accuracy
   slug: application-accuracy
   editable: True
-  prefill: False
+  prefill: False # These questions ask about this declaration, so can't be prefilled
   description: |
     You must confirm the accuracy of the information in this declaration and in your service descriptions. We might
     ask for proof after you’ve submitted your application.
