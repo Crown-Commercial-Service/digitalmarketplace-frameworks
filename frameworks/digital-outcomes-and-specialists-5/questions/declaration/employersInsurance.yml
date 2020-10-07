@@ -1,4 +1,5 @@
 name: Employer's liability insurance
+id: employersLiabilityInsurance
 question: >
   Does your organisation have, or will it have before the framework is awarded, employer’s liability insurance of at least £5 million?
 hint: |
@@ -8,9 +9,12 @@ hint: |
 type: radios
 options:
   - label: "Yes, your organisation has, or will have in place, employer’s liability insurance of at least £5 million and you will provide certification before the framework is awarded"
+    value: insurance
   - label: "No, your organisation does not have, and will not have in place, employer’s liability insurance of at least £5 million before the framework is awarded"
+    value: no-insurance
   - label: "Not applicable, your organisation does not need employer’s liability insurance because your organisation employs only the owner or close family members"
+    value: not-applicable
 assessment:
   passIfIn:
-    - "Yes, your organisation has, or will have in place, employer’s liability insurance of at least £5 million and you will provide certification before the framework is awarded"
-    - "Not applicable, your organisation does not need employer’s liability insurance because your organisation employs only the owner or close family members"
+    - insurance
+    - not-applicable
