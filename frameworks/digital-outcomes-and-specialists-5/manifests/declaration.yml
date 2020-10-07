@@ -71,7 +71,7 @@
   name: Grounds for discretionary exclusion
   slug: grounds-for-discretionary-exclusion
   editable: True
-  prefill: False
+  prefill: True
   description: |
     You must truthfully answer ‘no’ to every question on this page for your application to be considered eligible. If
     you cannot answer ‘no’, your application may not be accepted.
@@ -110,7 +110,7 @@
     - misleadingInformation
     - mitigatingFactors
     - unspentTaxConvictions
-    - GAAR
+    - incorrectTaxReturns
     - mitigatingFactors2
 
 -
