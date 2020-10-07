@@ -3,14 +3,18 @@ question: "Can you confirm whether you will provide Digital Outcomes and Special
 type: radios
 options:
   - label: yourself without the use of third parties (subcontractors)
+    value: no-subcontractors
   - label: as a prime contractor, using third parties (subcontractors) to provide some services
+    value: prime-contractor-with-subcontractors
   - label: as part of a consortium or special purpose vehicle, using members only to provide all services
+    value: consortium
   - label: as part of a consortium or special purpose vehicle, using third parties (subcontractors) to provide some services
+    value: consortium-with-subcontractors
 hint: Only include subcontractors whose products or services will be integral to the Digital Outcomes and Specialists&nbsp;5 services that you intend to provide.
 followup:
   subcontracting30DayPayments:
-    - as a prime contractor, using third parties (subcontractors) to provide some services
-    - as part of a consortium or special purpose vehicle, using third parties (subcontractors) to provide some services
+    - prime-contractor-with-subcontractors
+    - consortium-with-subcontractors
   subcontractingInvoicesPaid:
-    - as a prime contractor, using third parties (subcontractors) to provide some services
-    - as part of a consortium or special purpose vehicle, using third parties (subcontractors) to provide some services
+    - prime-contractor-with-subcontractors
+    - consortium-with-subcontractors
