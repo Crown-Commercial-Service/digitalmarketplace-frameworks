@@ -12,7 +12,7 @@
   name: Providing suitable services
   slug: providing-suitable-services
   editable: True
-  prefill: False
+  prefill: True
   description: |
     You must answer these questions to confirm that your services are suitable for Digital Outcomes and Specialists&nbsp;5.
 
