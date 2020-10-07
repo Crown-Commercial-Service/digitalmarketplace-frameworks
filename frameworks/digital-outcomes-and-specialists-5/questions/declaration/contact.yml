@@ -1,3 +1,4 @@
 name: Contact name
+id: primaryContact
 question: Who is the contact for the application?
 type: text

@@ -1,3 +1,4 @@
 name: Contact email
+id: primaryContactEmail
 question: What is the contact’s email address?
 type: text
