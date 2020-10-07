@@ -117,7 +117,7 @@
   name: Working with government
   slug: working-with-government
   editable: True
-  prefill: False
+  prefill: True
   description: |
     You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
 
@@ -130,7 +130,7 @@
     - serviceStandard
     - transparentContracting
     - publishContracts
-    - safeguardOfficialInformation
+    - safeguardingOfficialInformation
     - safeguardPersonalData
     - skillsAndCapabilityAssessment
     - continuousProfessionalDevelopment
