@@ -1,6 +1,6 @@
 name: Safeguarding personal data
 question: >
-  Do you agree to protect personal data according to the government guidance on <a href="https://www.gov.uk/data-protection-your-business" target="_blank" rel="noopener noreferrer">data protection and your business (opens in new tab)</a>?
+  Do you agree to protect personal data according to the government guidance on <a class="govuk-link" href="https://www.gov.uk/data-protection-your-business" target="_blank" rel="noopener noreferrer">data protection and your business (opens in new tab)</a>?
 type: boolean
 hint: If you provide access to user research studios, for example, can you confirm that you do not share research videos with third parties.
 assessment:

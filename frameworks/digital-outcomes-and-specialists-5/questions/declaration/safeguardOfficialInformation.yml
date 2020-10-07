@@ -1,6 +1,6 @@
 name: Safeguarding official information
 question: >
-  Do you agree to respect <a href="https://www.gov.uk/government/publications/government-security-classifications" target="_blank" rel="noopener noreferrer">government security classifications (opens in new tab)</a>
+  Do you agree to respect <a class="govuk-link" href="https://www.gov.uk/government/publications/government-security-classifications" target="_blank" rel="noopener noreferrer">government security classifications (opens in new tab)</a>
   and protect official government information, for example by not revealing that government is the client when advertising for participants?
 type: boolean
 assessment:

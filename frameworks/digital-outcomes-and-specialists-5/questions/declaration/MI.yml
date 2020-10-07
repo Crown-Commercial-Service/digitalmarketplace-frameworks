@@ -1,7 +1,7 @@
 name: Providing management information (MI)
 question: >
   Do you confirm that you’re prepared to provide all the monthly Digital Outcomes and Specialists&nbsp;5-related management information (MI)
-  to the Crown Commercial Service as outlined in the <a href="/suppliers/frameworks/digital-outcomes-and-specialists-5#reporting" target="_blank" rel="noopener noreferrer">reporting template (opens in new tab)</a>?
+  to the Crown Commercial Service as outlined in the <a class="govuk-link" href="/suppliers/frameworks/digital-outcomes-and-specialists-5#reporting" target="_blank" rel="noopener noreferrer">reporting template (opens in new tab)</a>?
 type: boolean
 assessment:
   passIfIn:
