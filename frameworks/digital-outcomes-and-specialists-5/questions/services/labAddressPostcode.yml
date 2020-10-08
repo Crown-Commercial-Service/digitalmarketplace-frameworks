@@ -9,7 +9,7 @@ type: text
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: Enter a postcode
   -
     name: under_character_limit
-    message: "Your answer must be no more than than 10 characters."
+    message: Postcode must be 10 characters or fewer

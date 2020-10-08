@@ -12,7 +12,7 @@ depends:
 validations:
   -
     name: answer_required
-    message: 'You need to answer this question.'
+    message: Enter the name of the room
   -
     name: under_character_limit
-    message: "Your studio name must be no more than 100 characters."
+    message: The name of the room must be 100 characters or fewer
