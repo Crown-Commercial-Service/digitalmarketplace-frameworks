@@ -20,7 +20,7 @@ options:
   - label: Front-end web application development
     description: Build and maintain the user interface of a web application based on user needs.
   - label: Game development
-    description: Develop games, eg for education or training.
+    description: Develop games, for example for education or training.
   - label: Geographic information systems (GIS) development
     description: Build and maintain GIS systems using open standards.
   - label: Machine learning
