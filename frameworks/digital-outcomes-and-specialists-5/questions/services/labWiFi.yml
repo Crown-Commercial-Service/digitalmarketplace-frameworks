@@ -9,4 +9,4 @@ type: boolean
 
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: Select yes if you provide wifi

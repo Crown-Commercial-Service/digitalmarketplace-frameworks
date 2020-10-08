@@ -8,4 +8,6 @@ type: boolean
 
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: >
+      Select yes if you are willing to recruit participants based on a list
+      provided to you by the buyer
