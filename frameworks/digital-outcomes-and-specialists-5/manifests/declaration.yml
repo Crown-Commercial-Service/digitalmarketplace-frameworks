@@ -119,7 +119,7 @@
   editable: True
   prefill: True
   description: |
-    You must be able to truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
+    You must truthfully answer ‘yes’ to every question on this page for your application to be considered eligible.
 
     If you cannot answer ‘yes’ to every question in this section, it is unlikely your application will be accepted.
   questions:
