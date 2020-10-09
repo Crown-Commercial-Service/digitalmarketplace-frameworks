@@ -17,4 +17,4 @@ validations:
     message: Enter the amount you will charge for a user researcher
   - name: not_money_format
     field: userResearcherPriceMax
-    message: "Maximum price must be a number, without units, eg 99.95"
+    message: Maximum price must be a number, without units, like 99.95
