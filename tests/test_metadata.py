@@ -10,7 +10,6 @@ def test_copying_services_metadata():
     copying_services_filenames = glob.glob('frameworks/*/metadata/copy_services.yml')
     assert len(copying_services_filenames) > 0
     for copying_services_filename in copying_services_filenames:
-        framework = re.match(r'^frameworks/([^/]+)/.+$', copying_services_filename).group(1)
 
         with open(copying_services_filename) as copying_services_file:
             copying_services_data = yaml.safe_load(copying_services_file.read())
@@ -19,10 +18,10 @@ def test_copying_services_metadata():
             assert os.path.isdir(old_framework_path), f'`{old_framework_path}` is not a valid directory'
 
             names_ids_fields = set()
-            for filename in os.listdir(f'frameworks/{framework}/questions/services'):
+            for filename in os.listdir(f'{old_framework_path}/questions/services'):
                 if filename.startswith('multiq'):
                     continue
-                with open(f'frameworks/{framework}/questions/services/{filename}') as f:
+                with open(f'{old_framework_path}/questions/services/{filename}') as f:
                     contents = yaml.safe_load(f)
                     if contents.get('id'):
                         names_ids_fields.add(contents['id'])
