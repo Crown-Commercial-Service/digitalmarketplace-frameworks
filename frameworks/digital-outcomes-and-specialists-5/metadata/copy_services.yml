@@ -7,4 +7,24 @@ questions_to_exclude:
   - labTechAssistance
   - labViewingArea
   - labWaitingArea
+  - agileCoachPriceMin
+  - businessAnalystPriceMin
+  - communicationsManagerPriceMin
+  - contentDesignerPriceMin
+  - dataArchitectPriceMin
+  - dataEngineerPriceMin
+  - dataScientistPriceMin
+  - deliveryManagerPriceMin
+  - designerPriceMin
+  - developerPriceMin
+  - performanceAnalystPriceMin
+  - portfolioManagerPriceMin
+  - productManagerPriceMin
+  - programmeManagerPriceMin
+  - qualityAssurancePriceMin
+  - securityConsultantPriceMin
+  - serviceManagerPriceMin
+  - technicalArchitectPriceMin
+  - userResearcherPriceMin
+  - webOperationsPriceMin
 source_framework: digital-outcomes-and-specialists-4
