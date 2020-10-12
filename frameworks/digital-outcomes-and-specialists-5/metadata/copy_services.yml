@@ -27,4 +27,11 @@ questions_to_exclude:
   - technicalArchitectPriceMin
   - userResearcherPriceMin
   - webOperationsPriceMin
+  - developerAccessibleApplications
+  - contentDesignerAccessibleApplications
+  - qualityAssuranceAccessibleApplications
+  - technicalArchitectAccessibleApplications
+  - webOperationsAccessibleApplications
+  - serviceManagerAccessibleApplications
+  - designerAccessibleApplications
 source_framework: digital-outcomes-and-specialists-4
