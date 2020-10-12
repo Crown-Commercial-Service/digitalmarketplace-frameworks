@@ -52,6 +52,29 @@ class TestCopyServices:
         if "questions_to_copy" in copy_services:
             assert set(copy_services["questions_to_copy"]).issubset(names_ids_fields)
 
+    def test_keys_that_are_removed_are_excluded(self, framework, copy_services):
+        """Test that questions that have been removed in a framework iteration are not copied
+
+        We want to make sure that any questions that have been removed from one
+        framework iteration to another are included in questions_to_exclude,
+        otherwise the api will complain about unexpected properties when the
+        copied service is submitted.
+        """
+        if "questions_to_exclude" not in copy_services:
+            pytest.skip("this test only works for frameworks with questions_to_exclude")
+
+        source_framework_keys = get_framework_names_ids_fields(
+            copy_services["source_framework"]
+        )
+        new_framework_keys = get_framework_names_ids_fields(framework)
+
+        removed_keys = source_framework_keys - new_framework_keys
+        excluded_keys = set(copy_services["questions_to_exclude"])
+
+        assert removed_keys.issubset(
+            excluded_keys
+        ), f"removed keys {removed_keys - excluded_keys} not in questions_to_exclude"
+
 
 class TestServiceQuestionsToScanForBadWords:
 
