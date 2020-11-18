@@ -2,6 +2,11 @@
 
 Records breaking changes from major version bumps
 
+## 18.0.0
+
+The search mappings G-Cloud 12 and DOS4/5 and the search scheme generator will now
+work with Elasticsearch 7, but will no longer work with Elasticsearch 6.
+
 ## 17.0.0
 
 Removes the customer benefits record email from G-Cloud 11 manifest, as this is no longer used by CCS. This was only
