@@ -94,10 +94,18 @@ def generate_search_mapping(framework_slug, doc_type, file_handle, mapping_type,
     ), 'r') as h_template:
         mapping_json = json.load(h_template, object_pairs_hook=OrderedDict)  # preserve template order for git history
 
-    original_meta = mapping_json['mappings'][mapping_type].get("_meta", {})
+    mappings = mapping_json["mappings"]
+
+    # Elasticsearch 7 removes mapping types by default
+    # https://www.elastic.co/guide/en/elasticsearch/reference/7.10/removal-of-types.html
+    include_type_name = False
+    if mapping_type in mappings:
+        include_type_name = True
+
+    original_meta = mappings[mapping_type].get("_meta", {}) if include_type_name else mappings.get("_meta", {})
 
     # starting our final _meta dict from scratch so we can ensure extra_meta gets the top spot, in ordered output
-    mapping_json['mappings'][mapping_type]['_meta'] = OrderedDict((
+    meta = OrderedDict((
         *((k, v) for k, v in extra_meta.items()),
         # we want entries from original_meta to come *after* entries from extra_meta, but want to extra_meta entries
         # to override original_meta, so ignore original_meta entries which are already in extra_meta
@@ -108,6 +116,11 @@ def generate_search_mapping(framework_slug, doc_type, file_handle, mapping_type,
             get_transformations(framework_slug, doc_type),
         ))),
     ))
+
+    if include_type_name:
+        mappings[mapping_type]["_meta"] = meta
+    else:
+        mappings["_meta"] = meta
 
     json.dump(mapping_json, file_handle, indent=2, separators=(',', ': '))
     print('', file=file_handle)
