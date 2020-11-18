@@ -8,7 +8,6 @@
         "stemming_analyzer": {
           "tokenizer": "standard",
           "filter": [
-            "standard",
             "lowercase",
             "possessive_english_stemmer",
             "light_english_stemmer"
