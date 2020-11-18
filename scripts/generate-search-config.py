@@ -50,6 +50,7 @@ if __name__ == '__main__':
             ('_', 'DO NOT UPDATE BY HAND'),
             ('version', json.load(version_handle)['version']),
             ('generated_from_framework', framework_slug),
+            ('doc_type', doc_type),
             ('generated_by', os.path.abspath(__file__)),
             ('generated_time', datetime.utcnow().isoformat()),
         ))
