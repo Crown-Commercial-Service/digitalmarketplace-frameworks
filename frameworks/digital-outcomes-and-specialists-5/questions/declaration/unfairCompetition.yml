@@ -11,4 +11,4 @@ question: >
 type: boolean
 assessment:
   passIfIn:
-    - False
+    - True
