@@ -8,6 +8,6 @@ limits:
 
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter an email address'
   - name: invalid_format
-    message: "You must enter a valid email address."
+    message: "Enter an email address in the correct format, like name@example.com"

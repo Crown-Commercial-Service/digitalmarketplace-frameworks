@@ -12,7 +12,7 @@ required_value: true
 validations:
   -
     name: not_required_value
-    message: 'To carry on with your application, you need to show you have all the essential skills and experience.'
+    message: 'To carry on with your application, you need to show you have all the essential skills and experience'
   -
     name: answer_required
-    message: 'You must answer ‘yes’ or ‘no’ to this question.'
+    message: 'Select yes if you have all the essential skills and experience'
