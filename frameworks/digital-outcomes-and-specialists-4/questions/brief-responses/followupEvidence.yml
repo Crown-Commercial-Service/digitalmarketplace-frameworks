@@ -6,7 +6,7 @@ hidden: True
 validations:
   -
     name: answer_required
-    message: 'You must provide evidence if you answer ‘yes’ to this question.'
+    message: 'You must provide evidence of {{ item }}'
   -
     name: under_100_words
-    message: 'Your answer must be no more than 100 words.'
+    message: 'Your answer must be 100 words or fewer'

@@ -11,12 +11,12 @@ depends:
       - digital-specialists
 validations:
   - name: answer_required
-    message: 'You need to answer this question.'
+    message: 'Enter a day rate'
   - name: not_money_format
     field: dayRate
-    message: "Day rate must be in numbers and decimal points only, for example 99.95."
+    message: "Day rate must be in numbers and decimal points only, for example 99.95"
   - name: max_less_than_min
     field: dayRate
-    message: "This can't be more than the maximum day rate you've already provided."
+    message: "Day rate cannot be more than the maximum day rate you’ve already provided"
 
 empty_message: Set rate

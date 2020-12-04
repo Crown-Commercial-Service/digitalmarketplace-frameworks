@@ -5,4 +5,4 @@ followup:
     - true
 validations:
   - name: answer_required
-    message: 'You must answer ‘yes’ or ‘no’ to this question.'
+    message: 'Select yes if you have evidence of {{ item }}'
