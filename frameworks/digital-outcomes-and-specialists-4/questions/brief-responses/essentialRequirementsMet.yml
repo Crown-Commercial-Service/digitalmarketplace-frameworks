@@ -1,7 +1,7 @@
 name: Essential skills and experience
 question: Do you have all the essential skills and experience?
 question_advice: >
-  <ul class="list-bullet">
+  <ul class="govuk-list govuk-list--bullet">
     {% for requirement in brief.essentialRequirements %}
       <li>{{ requirement }}</li>
     {% endfor %}
