@@ -1,6 +1,6 @@
 name: Earliest start date
 question: When is the earliest {% if brief.lotSlug == "digital-outcomes" %}the team can start?{% elif brief.lotSlug == "digital-specialists" %}the specialist can start work?{% else %}you can recruit participants?{% endif %}
-hint: "For example, 31 12 2020"
+hint: "Enter a date like 31 12 2020"
 question_advice: >
   The buyer needs
   {%- if brief.lotSlug == "digital-outcomes" %}
