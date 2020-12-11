@@ -2,11 +2,16 @@ name: Day rate
 question: What’s the specialist’s day rate?
 question_advice: |
   {% if "budgetRange" in brief %}
-    <h2 class="govuk-heading-m">Buyer’s maximum day rate:</h2>
-    <p class="govuk-body">{{ brief.budgetRange }}</p>
+
+  ## Buyer’s maximum day rate:
+  
+  {{ brief.budgetRange }}
+
   {% endif %}
-  <h2 class="govuk-heading-m">Your maximum day rate:</h2>
-  <p class="govuk-body">£{{ max_day_rate }}</p>'
+
+  ## Your maximum day rate:
+  
+  £{{ max_day_rate }}
 type: pricing
 fields:
   price: dayRate
