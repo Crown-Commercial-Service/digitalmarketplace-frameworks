@@ -4,6 +4,7 @@ jobs:
   unit_test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         python-version: [3.6, 3.7, 3.8, 3.9]
 
@@ -19,7 +20,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: venv
-          key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/requirements-dev.txt') }}
+          key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/requirements*.txt') }}
 
       - name: Install dependencies
         run: make requirements-dev
