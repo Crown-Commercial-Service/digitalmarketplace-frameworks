@@ -29,3 +29,38 @@ jobs:
 
       - name: Run tests
         run: make test
+
+  functional_test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.6]
+        script:
+          - scripts/generate-assessment-schema.py g-cloud-12
+          - scripts/generate-assessment-schema.py digital-outcomes-and-specialists-5
+          - scripts/generate-search-config.py g-cloud-12 services --output-path=/tmp
+          - scripts/generate-search-config.py digital-outcomes-and-specialists-5 briefs --output-path=/tmp
+          - scripts/generate-validation-schemas.py --output-path=/tmp
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Ubuntu packages
+        run: sudo apt-get install libxml2-dev libxslt1-dev python-dev
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Setup Python cache
+        uses: actions/cache@v2
+        with:
+          path: venv
+          key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/requirements-dev.txt') }}
+
+      - name: Install dependencies
+        run: make requirements-dev
+
+      - name: Test script
+        run: venv/bin/python ${{ matrix.script }}
