@@ -402,6 +402,12 @@ def multiquestion(question):
 
 
 def _dynamic_list(question):
+    # Some dynamic list questions use `{{ item }}` in temlate fields.
+    # This call to filter ensures that `item` is in the template context
+    # (yes, filter() can mutate objects, go figure).
+    # Replacing `item` with something random shouldn't really matter,
+    # because we don't expect any template fields to show up in the schema.
+    question = question.filter({"item": "{{ item }}"}, dynamic=False)
     return {
         question['id']: {
             "type": "array",
