@@ -10,6 +10,7 @@ except ImportError:
 import mock
 import pytest
 from dmcontent import ContentQuestion
+from dmcontent.utils import TemplateField
 from hypothesis import settings, given, assume, HealthCheck, strategies as st
 from schema_generator.validation import (
     SCHEMAS,
@@ -497,6 +498,72 @@ def test_multiquestion():
     assert 'subquestion2' in result.keys()
 
     assert schema_addition == {'required': ['subquestion1', 'subquestion2']}
+
+
+def test_dynamic_list():
+    question = ContentQuestion({
+        "id": "q1",
+        "type": "dynamic_list",
+        "questions": [
+            {
+                "id": "q1a",
+                "name": "Subquestion 1",
+                "question": "This is subquestion 1",
+                "type": "boolean"
+            },
+            {
+                "id": "q1b",
+                "name": "Subquestion 2",
+                "question": "This is subquestion 2",
+                "type": "text"
+            }
+        ]
+    })
+
+    result = multiquestion(question)
+
+    assert set(result["q1"]["items"]["properties"].keys()) \
+        == {"q1a", "q1b"}
+
+    assert result["q1"]["items"]["properties"]["q1a"]["type"] == "boolean"
+    assert result["q1"]["items"]["properties"]["q1b"]["type"] == "string"
+
+
+def test_dynamic_list_with_dynamic_content():
+    question = ContentQuestion({
+        "id": "q",
+        "type": "dynamic_list",
+        "questions": [
+            {
+                "id": "q1",
+                "question": TemplateField(
+                    "This is question 1 for '{{ item }}' " + str(mock.sentinel.template_field)
+                ),
+                "type": "text",
+                "validations": [
+                    {
+                        "name": "answer_required",
+                        "message": TemplateField(
+                            "Answer {{ item }} " + str(mock.sentinel.template_field)
+                        )
+                    },
+                ],
+            }
+        ]
+    })
+
+    result = multiquestion(question)
+
+    assert set(result["q"]["items"]["properties"].keys()) \
+        == {"q1"}
+
+    assert result["q"]["items"]["properties"]["q1"]["type"] == "string"
+
+    # check that template fields don't show up in schema
+    assert (
+        "{{ item }}" not in str(result)
+        and str(mock.sentinel.template_field) not in str(result)
+    ), "a template field is being used in the generated schema"
 
 
 def test_followup():
