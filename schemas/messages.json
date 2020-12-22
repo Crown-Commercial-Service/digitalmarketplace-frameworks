@@ -7,7 +7,8 @@
     {"$ref": "#/definitions/urls"},
     {"$ref": "#/definitions/contract_variation"},
     {"$ref": "#/definitions/advice"},
-    {"$ref": "#/definitions/descriptions"}
+    {"$ref": "#/definitions/descriptions"},
+    {"$ref": "#/definitions/e-signature"}
   ],
   "definitions": {
     "frameworkStates": {
@@ -140,6 +141,12 @@
         "framework": {"type": "string"}
       },
       "required": ["framework"]
+    },
+    "e-signature": {
+      "properties": {
+        "framework_contract_title": {"type": "string"}
+      },
+      "required": ["framework_contract_title"]
     }
   }
 }
