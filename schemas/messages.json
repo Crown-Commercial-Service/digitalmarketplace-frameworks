@@ -137,9 +137,7 @@
     },
     "descriptions": {
       "properties": {
-        "framework": {"type": "string"},
-        "framework_contract_title": {"type": "string"}
-
+        "framework": {"type": "string"}
       },
       "required": ["framework"]
     }
