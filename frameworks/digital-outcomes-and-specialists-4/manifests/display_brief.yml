@@ -59,6 +59,7 @@
     - niceToHaveRequirementsParticipants
 -
   name: How suppliers will be evaluated
+  summary_page_description: "All suppliers will be asked to provide a {% if lotSlug == 'digital-specialists' %}work history{% else %}written proposal{% endif %}."
   questions:
     - numberOfSuppliersOutcomes
     - numberOfSuppliersSpecialists
