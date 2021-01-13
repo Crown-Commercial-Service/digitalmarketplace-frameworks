@@ -2,7 +2,7 @@ name: Latest start date
 question: Latest start date
 question_advice: |
   Say when you need suppliers to start work. When you shortlist, you can exclude suppliers who cannot start by this date.
-hint: 'For example, 31 5 2020'
+hint: 'For example, 31 5 2021'
 type: date
 depends:
   - "on": "lot"
