@@ -18,8 +18,12 @@ question_advice: |
 
   You can reuse examples across different essential or nice-to-have requirements if you need to.
 
+depends:
+  - "on": briefResponse.niceToHaveRequirementsMet
+    being:
+    - True
+
 type: dynamic_list
 dynamic_field: 'brief.niceToHaveRequirements'
 questions:
-  - yesNo
   - followupEvidence

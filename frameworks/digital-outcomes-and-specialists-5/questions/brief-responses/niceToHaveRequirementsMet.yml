@@ -1,0 +1,15 @@
+name: Nice-to-have skills and experience
+question: Do you have any of the nice-to-have skills and experience?
+question_advice: >
+  <ul class="govuk-list govuk-list--bullet">
+    {% for requirement in brief.niceToHaveRequirements %}
+      <li>{{ requirement }}</li>
+    {% endfor %}
+  </ul>
+
+type: boolean
+required_value: true
+validations:
+  -
+    name: answer_required
+    message: 'Select yes if you have any of the nice-to-have skills and experience'
