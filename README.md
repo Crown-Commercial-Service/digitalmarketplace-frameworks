@@ -199,7 +199,7 @@ Releases of this project follow [semantic versioning](http://semver.org/), ie
 > - PATCH version when you make backwards-compatible bug fixes.
 
 To make a new version:
-- run `npm version` to update the version number;
+- run `npm version (major | minor | patch)` to update the version number;
 - (note that npm has been configured **not** to create a new tag when you run this command - see `.npmrc`)
 - if you are making a major change, also update the change log;
 - commit `package.json` and `CHANGELOG.md` if appropriate - for a small PR, this could be in the same commit as other
