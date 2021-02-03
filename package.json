@@ -3,6 +3,5 @@
   "version": "18.1.9",
   "description": "Data files for Digital Marketplace’s procurement frameworks",
   "repository": "git@github.com:alphagov/digitalmarketplace-frameworks",
-  "author": "enquiries@digitalmarketplace.service.gov.uk",
-  "private": true
+  "author": "enquiries@digitalmarketplace.service.gov.uk"
 }
