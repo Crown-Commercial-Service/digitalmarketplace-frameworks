@@ -2,24 +2,22 @@ question: 'Service type'
 type: radios
 options:
   -
-    label: Apply to provide teams for digital outcomes
+    label: Provide teams for digital outcomes
     value: digital-outcomes
     description: >
-      Examples of digital outcomes include the beta of an appointment booking system or the alpha of a billing application.
+      Such as a digital service, strategic delivery programme or an accessibility audit.
   -
-    label: Apply to provide individual digital specialists
+    label: Provide digital specialists
     value: digital-specialists
     description: >
-      Examples of digital specialists include content designers or technical architects.
+      Such as a software engineer or content designer.
   -
-    label: Apply to provide user research studios
+    label: Provide user research studios
     value: user-research-studios
     description: >
-      User research studios sometimes have multiple labs, or rooms. Research studios usually include a device to test a service
-      and a way to observe the session. Provide information on each research studio you want buyers to use.
+      Providing facilities and devices to conduct user research and a way to observe sessions.
   -
-    label: Apply to provide user research participant recruitment
+    label: Provide user research participant recruitment
     value: user-research-participants
     description: >
-      Examples of participant recruitment services include finding and managing research participants from specific
-      user groups.
+      Recruiting and managing participants from specific user groups.
