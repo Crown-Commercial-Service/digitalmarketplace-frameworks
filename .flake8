@@ -9,3 +9,4 @@ max-complexity = 12
 max-line-length = 120
 per-file-ignores =
     scripts/* : E402
+    tasks.py: F401

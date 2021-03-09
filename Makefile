@@ -1,22 +1,21 @@
-SHELL := /bin/bash
-VIRTUALENV_ROOT := $(shell [ -z $$VIRTUAL_ENV ] && echo $$(pwd)/venv || echo $$VIRTUAL_ENV)
 
-virtualenv:
-	[ -z $$VIRTUAL_ENV ] && [ ! -d venv ] && python3 -m venv venv || true
+.DEFAULT_GOAL := bootstrap
 
-requirements-dev: virtualenv requirements-dev.txt
-	${VIRTUALENV_ROOT}/bin/pip install -r requirements-dev.txt
+%:
+	-@[ -z "$$TERM" ] || tput setaf 1  # red
+	@>&2 echo warning: calling '`make`' is being deprecated in this repo, you should use '`invoke` (https://pyinvoke.org)' instead.
+	-@[ -z "$$TERM" ] || tput setaf 9  # default
+	@# pass goals to '`invoke`'
+	invoke $(or $(MAKECMDGOALS), $@)
+	@exit
 
-test: show-environment test-flake8 test-python
+help:
+	invoke --list
 
-test-flake8: virtualenv
-	${VIRTUALENV_ROOT}/bin/flake8 .
-
-test-python: virtualenv
-	${VIRTUALENV_ROOT}/bin/py.test ${PYTEST-ARGS}
-
-show-environment:
-	@echo "Environment variables in use:"
-	@env | grep DM_ || true
-
-.PHONY: virtualenv requirements-for-test test-flake8 test-python show-environment
+.PHONY: bootstrap
+bootstrap:
+	pip install digitalmarketplace-developer-tools
+	@echo done
+	-@[ -z "$$TERM" ] || tput setaf 2  # green
+	@>&2 echo dmdevtools has been installed globally, run developer tasks with '`invoke`'
+	-@[ -z "$$TERM" ] || tput setaf 9  # default

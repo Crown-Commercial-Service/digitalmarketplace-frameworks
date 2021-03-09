@@ -22,11 +22,14 @@ jobs:
           path: venv
           key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/requirements*.txt') }}
 
+      - name: Install developer tools
+        run: make bootstrap
+
       - name: Install dependencies
-        run: make requirements-dev
+        run: invoke requirements-dev
 
       - name: Run tests
-        run: make test
+        run: invoke test
 
   functional_test:
     runs-on: ubuntu-latest
@@ -54,8 +57,11 @@ jobs:
           path: venv
           key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/requirements*.txt') }}
 
+      - name: Install developer tools
+        run: make bootstrap
+
       - name: Install dependencies
-        run: make requirements-dev
+        run: invoke requirements-dev
 
       - name: Test script
         run: venv/bin/python ${{ matrix.script }}
