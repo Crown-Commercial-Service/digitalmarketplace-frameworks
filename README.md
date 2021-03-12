@@ -184,10 +184,16 @@ Running the tests
 The tests check that the YAML files are valid and that they match a schema.
 
 Install dependencies
-`make requirements-dev`
+```
+make bootstrap
+invoke requirements-dev
+```
 
 Run the tests
-`make test`
+
+```
+invoke test
+```
 
 Versioning
 ----------
