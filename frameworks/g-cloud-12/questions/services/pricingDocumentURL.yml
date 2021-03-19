@@ -3,7 +3,7 @@ question: Add your pricing document
 hint: >
   <p class="govuk-body">This document will not be indexed by search on the Digital Marketplace.</p>
   <p class="govuk-body">Your document should:</p>
-  <ul class="govuk-list">
+  <ul class="govuk-list govuk-list--bullet">
     <li>be an Open Document Format (ODF) or PDF/A</li>
     <li>have a maximum file size of 5MB</li>
     <li>meet accessibility standards</li>

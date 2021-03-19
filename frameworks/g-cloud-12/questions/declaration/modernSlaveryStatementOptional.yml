@@ -5,7 +5,7 @@ question: >
   <p class="govuk-body">You can choose to upload a statement.</p>
 
   <p class="govuk-body">Your statement should:</p>
-  <ul class="govuk-list">
+  <ul class="govuk-list govuk-list--bullet">
     <li>be an Open Document Format (ODF) or PDF/A</li>
     <li>have a maximum file size of 5MB</li>
     <li>meet accessibility standards</li>
