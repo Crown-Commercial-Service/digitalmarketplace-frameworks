@@ -1,4 +1,6 @@
 coming: |
+  ### G-Cloud
+
   G-Cloud is opening for applications.
 
   You will be able to apply to sell:
@@ -8,6 +10,8 @@ coming: |
   - cloud support
 
 open: |
+  ### G-Cloud
+
   G-Cloud is open for applications.
 
   You can apply to sell:
@@ -17,7 +21,9 @@ open: |
   - cloud support
 
 pending: &can_not_apply |
-  G-Cloud is closed for applications.
+  ### G-Cloud
+
+  G-Cloud is closed for applications. You can create an account when it is open.
 
   You will be able to apply to sell:
 
