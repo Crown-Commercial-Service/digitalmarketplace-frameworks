@@ -4,8 +4,6 @@
 #
 #    pip-compile requirements-dev.in
 #
-asn1crypto==1.4.0
-    # via cryptography
 attrs==20.3.0
     # via
     #   hypothesis
@@ -19,6 +17,8 @@ botocore==1.20.55
     # via
     #   boto3
     #   s3transfer
+cachelib==0.1.1
+    # via flask-session
 certifi==2020.12.5
     # via requests
 cffi==1.14.5
@@ -29,15 +29,15 @@ click==7.1.2
     # via flask
 contextlib2==0.6.0.post1
     # via digitalmarketplace-utils
-cryptography==2.3.1
+cryptography==3.4.7
     # via digitalmarketplace-utils
 deepmerge==0.2.1
     # via -r requirements-dev.in
 defusedxml==0.7.1
     # via odfpy
-git+https://github.com/alphagov/digitalmarketplace-content-loader.git@7.22.0#egg=digitalmarketplace-content-loader==7.22.0
+digitalmarketplace-content-loader==8.0.0
     # via -r requirements.txt
-git+https://github.com/alphagov/digitalmarketplace-utils.git@52.10.0#egg=digitalmarketplace-utils==52.10.0
+digitalmarketplace-utils==58.0.0
     # via
     #   -r requirements.txt
     #   digitalmarketplace-content-loader
@@ -51,7 +51,7 @@ flask-gzip==0.2
     # via digitalmarketplace-utils
 flask-login==0.5.0
     # via digitalmarketplace-utils
-flask-script==2.0.6
+flask-session==0.3.2
     # via digitalmarketplace-utils
 flask-wtf==0.14.3
     # via digitalmarketplace-utils
@@ -61,7 +61,7 @@ flask==1.0.4
     #   digitalmarketplace-utils
     #   flask-gzip
     #   flask-login
-    #   flask-script
+    #   flask-session
     #   flask-wtf
     #   gds-metrics
 fleep==1.0.1
@@ -75,13 +75,12 @@ govuk-country-register==0.5.0
 hypothesis==6.10.0
     # via -r requirements-dev.in
 idna==2.10
-    # via
-    #   cryptography
-    #   requests
+    # via requests
 importlib-metadata==4.0.1
     # via
     #   flake8
     #   jsonschema
+    #   markdown
     #   pluggy
     #   pytest
 inflection==0.5.1
@@ -104,7 +103,7 @@ jsonschema==3.2.0
     # via -r requirements-dev.in
 mailchimp3==3.0.6
     # via digitalmarketplace-utils
-markdown==2.6.11
+markdown==3.3.4
     # via digitalmarketplace-content-loader
 markupsafe==1.1.1
     # via
@@ -154,6 +153,8 @@ pyyaml==5.4.1
     # via
     #   -r requirements-dev.in
     #   digitalmarketplace-content-loader
+redis==3.5.3
+    # via digitalmarketplace-utils
 requests==2.25.1
     # via
     #   digitalmarketplace-utils
@@ -163,7 +164,6 @@ s3transfer==0.4.1
     # via boto3
 six==1.15.0
     # via
-    #   cryptography
     #   jsonschema
     #   python-dateutil
 sortedcontainers==2.3.0
