@@ -6,8 +6,6 @@
 #
 asn1crypto==1.4.0
     # via cryptography
-atomicwrites==1.4.0
-    # via pytest
 attrs==20.3.0
     # via
     #   hypothesis
@@ -15,9 +13,9 @@ attrs==20.3.0
     #   pytest
 blinker==1.4
     # via gds-metrics
-boto3==1.17.54
+boto3==1.17.55
     # via digitalmarketplace-utils
-botocore==1.20.54
+botocore==1.20.55
     # via
     #   boto3
     #   s3transfer
@@ -33,7 +31,7 @@ contextlib2==0.6.0.post1
     # via digitalmarketplace-utils
 cryptography==2.3.1
     # via digitalmarketplace-utils
-deepmerge==0.1.0
+deepmerge==0.2.1
     # via -r requirements-dev.in
 defusedxml==0.7.1
     # via odfpy
@@ -47,9 +45,7 @@ docopt==0.6.2
     # via
     #   -r requirements.txt
     #   notifications-python-client
-entrypoints==0.3
-    # via flake8
-flake8==3.7.7
+flake8==3.9.1
     # via -r requirements-dev.in
 flask-gzip==0.2
     # via digitalmarketplace-utils
@@ -76,7 +72,7 @@ gds-metrics==0.2.4
     # via digitalmarketplace-utils
 govuk-country-register==0.5.0
     # via digitalmarketplace-utils
-hypothesis==4.48.0
+hypothesis==6.10.0
     # via -r requirements-dev.in
 idna==2.10
     # via
@@ -84,10 +80,14 @@ idna==2.10
     #   requests
 importlib-metadata==4.0.1
     # via
+    #   flake8
+    #   jsonschema
     #   pluggy
     #   pytest
 inflection==0.5.1
     # via digitalmarketplace-content-loader
+iniconfig==1.1.1
+    # via pytest
 itsdangerous==1.1.0
     # via
     #   flask
@@ -100,7 +100,7 @@ jmespath==0.10.0
     # via
     #   boto3
     #   botocore
-jsonschema==3.0.0
+jsonschema==3.2.0
     # via -r requirements-dev.in
 mailchimp3==3.0.6
     # via digitalmarketplace-utils
@@ -112,31 +112,27 @@ markupsafe==1.1.1
     #   wtforms
 mccabe==0.6.1
     # via flake8
-mock==2.0.0
+mock==4.0.3
     # via -r requirements-dev.in
 monotonic==1.6
     # via notifications-python-client
-more-itertools==8.7.0
-    # via pytest
 notifications-python-client==5.7.1
     # via digitalmarketplace-utils
 odfpy==1.4.1
     # via digitalmarketplace-utils
 packaging==20.9
     # via pytest
-pbr==5.5.1
-    # via mock
 pluggy==0.13.1
     # via pytest
 prometheus-client==0.10.1
     # via gds-metrics
 py==1.10.0
     # via pytest
-pycodestyle==2.5.0
+pycodestyle==2.7.0
     # via flake8
 pycparser==2.20
     # via cffi
-pyflakes==2.1.1
+pyflakes==2.3.1
     # via flake8
 pyjwt==2.0.1
     # via notifications-python-client
@@ -144,7 +140,7 @@ pyparsing==2.4.7
     # via packaging
 pyrsistent==0.17.3
     # via jsonschema
-pytest==4.6.3
+pytest==6.2.3
     # via -r requirements-dev.in
 python-dateutil==2.8.1
     # via botocore
@@ -154,7 +150,7 @@ git+https://github.com/madzak/python-json-logger.git@v0.1.11#egg=python-json-log
     #   digitalmarketplace-utils
 pytz==2021.1
     # via digitalmarketplace-utils
-pyyaml==5.4
+pyyaml==5.4.1
     # via
     #   -r requirements-dev.in
     #   digitalmarketplace-content-loader
@@ -163,15 +159,17 @@ requests==2.25.1
     #   digitalmarketplace-utils
     #   mailchimp3
     #   notifications-python-client
-s3transfer==0.4.0
+s3transfer==0.4.1
     # via boto3
 six==1.15.0
     # via
     #   cryptography
     #   jsonschema
-    #   mock
-    #   pytest
     #   python-dateutil
+sortedcontainers==2.3.0
+    # via hypothesis
+toml==0.10.2
+    # via pytest
 typing-extensions==3.7.4.3
     # via importlib-metadata
 unicodecsv==0.14.1
@@ -180,8 +178,6 @@ urllib3==1.26.4
     # via
     #   botocore
     #   requests
-wcwidth==0.2.5
-    # via pytest
 werkzeug==1.0.1
     # via
     #   digitalmarketplace-utils
