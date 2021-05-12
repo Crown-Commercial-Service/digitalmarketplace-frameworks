@@ -1,0 +1,22 @@
+name: Off-payroll (IR35) determination
+question: Confirm if you require a managed service or supply of resource
+id: employmentStatus
+question_advice: |
+  As the buyer, you are the client when buying a supply of resource. As a result, you are responsible for determining if the off-payroll working rules (IR35) apply.
+
+  Is the requirement for a contracted out service (where you outsource all ownership and responsibility for delivery to a supplier) or
+  a supply of resource (where you engage an individual or team of individuals to work with your staff, and exercise operational direction and control)?
+type: radios
+options:
+  - label: "Contracted out service: the off-payroll rules do not apply"
+  - label: "Supply of resource: the off-payroll rules will apply to any workers engaged through a qualifying intermediary, such as their own limited company"
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+      - digital-specialists
+validations:
+  -
+    name: answer_required
+    message: 'Select the employment status of your opportunity'
+empty_message: Select an answer

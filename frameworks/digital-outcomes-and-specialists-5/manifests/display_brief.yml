@@ -2,6 +2,7 @@
   name: Overview
   questions:
     - specialistRole
+    - employmentStatus
     - summary
     - startDate
     - contractLength
