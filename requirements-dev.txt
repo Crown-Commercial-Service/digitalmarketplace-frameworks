@@ -78,12 +78,6 @@ idna==2.10
     # via
     #   cryptography
     #   requests
-importlib-metadata==4.0.1
-    # via
-    #   flake8
-    #   jsonschema
-    #   pluggy
-    #   pytest
 inflection==0.5.1
     # via digitalmarketplace-content-loader
 iniconfig==1.1.1
@@ -170,11 +164,9 @@ sortedcontainers==2.3.0
     # via hypothesis
 toml==0.10.2
     # via pytest
-typing-extensions==3.7.4.3
-    # via importlib-metadata
 unicodecsv==0.14.1
     # via digitalmarketplace-utils
-urllib3==1.26.4
+urllib3==1.26.5
     # via
     #   botocore
     #   requests
@@ -186,8 +178,6 @@ workdays==1.4
     # via digitalmarketplace-utils
 wtforms==2.3.3
     # via flask-wtf
-zipp==3.4.1
-    # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
