@@ -56,6 +56,12 @@
     - budgetRangeOutcomesParticipants
     - budgetRangeSpecialists
     - summary
+-
+  name: Off-payroll working rules (IR35) determination
+  editable: True
+  step: 1
+  questions:
+    - employmentStatus
 
 -
   name: Shortlist and evaluation process
