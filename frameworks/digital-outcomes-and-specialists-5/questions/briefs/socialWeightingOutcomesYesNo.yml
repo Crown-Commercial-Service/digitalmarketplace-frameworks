@@ -1,0 +1,16 @@
+name: Social Value weighting
+question: Do you want to include Social Value in your evaluation weighting?
+
+followup:
+  socialWeighting:
+    - true
+
+type: boolean
+depends:
+  - "on": "lot"
+    being:
+      - digital-outcomes
+
+validations:
+  - name: answer_required
+    message: 'Select yes if you want to include Social Value in your evaluation weighting'
