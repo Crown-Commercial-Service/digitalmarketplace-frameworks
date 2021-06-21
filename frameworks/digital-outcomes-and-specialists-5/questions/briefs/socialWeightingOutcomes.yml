@@ -19,11 +19,9 @@ limits:
   min_value: 10
   max_value: 20
   integer_only: true
-hidden: true
+optional: true
 
 validations:
-  - name: answer_required
-    message: 'Enter a weighting.'
   - name: not_a_number
     message: 'Weighting must be between 10 and 20.'
   - name: total_should_be_100

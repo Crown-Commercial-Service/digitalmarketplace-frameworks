@@ -14,7 +14,6 @@ questions:
   - technicalWeightingOutcomes
   - culturalWeightingOutcomes
   - priceWeightingOutcomes
-  - socialWeightingOutcomesYesNo
-  - socialWeighting
+  - socialWeightingOutcomes
 
 empty_message: Set evaluation weighting
