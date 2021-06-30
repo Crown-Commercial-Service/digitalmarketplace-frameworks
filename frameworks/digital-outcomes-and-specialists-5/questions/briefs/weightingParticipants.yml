@@ -14,5 +14,6 @@ questions:
   - technicalWeightingParticipants
   - culturalWeightingParticipants
   - priceWeightingParticipants
+  - socialWeightingParticipants
 
 empty_message: Set evaluation weighting

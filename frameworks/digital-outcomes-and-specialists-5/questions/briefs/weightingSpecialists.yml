@@ -14,5 +14,6 @@ questions:
   - technicalWeightingSpecialists
   - culturalWeightingSpecialists
   - priceWeightingSpecialists
+  - socialWeightingSpecialists
 
 empty_message: Set evaluation weighting
