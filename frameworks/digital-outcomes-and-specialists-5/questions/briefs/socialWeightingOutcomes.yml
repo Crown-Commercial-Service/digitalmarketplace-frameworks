@@ -20,12 +20,17 @@ unit: "%"
 unit_in_full: "percent"
 unit_position: "after"
 limits:
-  min_value: 10
-  max_value: 20
-  integer_only: true
-optional: true
+  one_of:
+    - min_value: 0
+      max_value: 0
+      integer_only: true
+    - min_value: 10
+      max_value: 20
+      integer_only: true
 
 validations:
+  - name: answer_required
+    message: 'Enter a weighting.'
   - name: not_a_number
     message: 'Weighting must be 0, or between 10 and 20.'
   - name: total_should_be_100

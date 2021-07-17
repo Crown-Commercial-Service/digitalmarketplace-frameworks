@@ -263,7 +263,19 @@
         "format": {"type": "string"},
         "max_value": {"type": "number"},
         "min_value": {"type": "number"},
-        "integer_only": {"type": "boolean"}
+        "integer_only": {"type": "boolean"},
+        "one_of": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "format": {"type": "string"},
+              "max_value": {"type": "number"},
+              "min_value": {"type": "number"},
+              "integer_only": {"type": "boolean"}
+            }
+          }
+        }
       }
     },
     "empty_message": {
