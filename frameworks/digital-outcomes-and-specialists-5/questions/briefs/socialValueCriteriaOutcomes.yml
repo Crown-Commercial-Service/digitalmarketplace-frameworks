@@ -13,11 +13,6 @@ depends:
   - "on": "lot"
     being:
       - digital-outcomes
-  - "on": "socialWeighting"
-    being:
-      min_value: 10
-      max_value: 20
-      type: integer
 
 validations:
   -

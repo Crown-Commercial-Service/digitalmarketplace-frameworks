@@ -474,6 +474,33 @@ def test_number_property_limits(max_value, min_value, integer_only):
     assert actual == expected
 
 
+@given(st.integers(), st.integers(), st.integers(), st.integers(), st.booleans())
+def test_number_property_multiple_limits(max_value_1, min_value_1, max_value_2, min_value_2, integer_only):
+    actual = number_property({'id': 'number-question', 'type': 'number', 'limits': {'one_of': [
+        {'max_value': max_value_1, 'min_value': min_value_1, 'integer_only': integer_only},
+        {'max_value': max_value_2, 'min_value': min_value_2, 'integer_only': integer_only},
+    ]}})
+    expected = {"number-question": {
+        "oneOf": [
+            {
+                "minimum": min_value_1,
+                "type": "integer" if integer_only else "number"
+            },
+            {
+                "minimum": min_value_2,
+                "type": "integer" if integer_only else "number"
+            }
+        ]
+    }}
+    expected['number-question']["oneOf"][0].update(
+        {"maximum": max_value_1} if integer_only else {"exclusiveMaximum": max_value_1}
+    )
+    expected['number-question']["oneOf"][1].update(
+        {"maximum": max_value_2} if integer_only else {"exclusiveMaximum": max_value_2}
+    )
+    assert actual == expected
+
+
 def test_multiquestion():
     question = ContentQuestion({
         "type": "multiquestion",
