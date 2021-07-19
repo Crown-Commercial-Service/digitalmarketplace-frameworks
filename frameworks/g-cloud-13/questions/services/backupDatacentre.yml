@@ -1,0 +1,27 @@
+name: Datacentre setup
+question: What’s your datacentre setup?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+  - label: Multiple datacentres with disaster recovery
+    value: multiple_with_dr
+    filter_label: multiple datacentres with disaster recovery
+  - label: Multiple datacentres
+    value: multiple
+    filter_label: multiple datacentres
+  - label: Single datacentre with multiple copies
+    value: single_with_copies
+    filter_label: single datacentre with multiple copies
+  - label: Single datacentre
+    value: single
+    filter_label: single datacentre
+
+validations:
+  - name: answer_required
+    message: Select a datacentre setup.

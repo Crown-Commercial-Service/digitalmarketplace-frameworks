@@ -1,0 +1,12 @@
+name: Quality assurance and performance testing
+question: Quality assurance and performance testing
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: multiquestion
+questions:
+  - QAAndTesting
+  - QAAndTestingDescription

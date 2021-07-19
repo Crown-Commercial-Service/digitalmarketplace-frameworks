@@ -1,0 +1,17 @@
+name: Planning service works with specific services 
+question: Is your planning service for specific hosting or software services?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  planningServiceCompatibilityList:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if your planning service is for specific hosting or software services.

@@ -1,0 +1,8 @@
+name: Signing and returning the framework agreement
+question: >
+  Do you agree to confirm and sign your framework agreement with an electronic signature within 10 days of it being issued by the Crown Commercial Service?
+
+type: boolean
+assessment:
+  passIfIn:
+    - True

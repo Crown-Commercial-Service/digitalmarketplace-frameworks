@@ -1,0 +1,24 @@
+name: Ongoing support service
+question: Do you support cloud hosting or software services?
+question_advice: >
+  Types of cloud support include:
+
+    - user management
+    - service management
+    - helpdesk support
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  ongoingSupportDescription:
+    - true
+  ongoingSupportServices:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if you support cloud hosting or software services.

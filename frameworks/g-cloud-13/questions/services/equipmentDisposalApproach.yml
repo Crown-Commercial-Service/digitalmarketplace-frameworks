@@ -1,0 +1,26 @@
+name: Equipment disposal approach
+question: How do you dispose of equipment?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience#disposal"
+  target="_blank" rel="noopener noreferrer">2nd cloud security principle: ‘Asset protection and resilience’ (link opens
+  in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+  - label: Complying with a recognised standard, for example CSA CCM v.30, CAS (Sanitisation) or ISO/IEC 27001
+    value: recognised_standard
+  - label: In-house destruction process
+    value: in_house
+  - label: A third-party destruction service
+    value: third_party
+
+validations:
+  - name: answer_required
+    message: Select how you dispose of equipment.

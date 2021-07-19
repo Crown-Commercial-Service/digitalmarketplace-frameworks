@@ -1,0 +1,26 @@
+name: Cloud deployment model
+question: Is the service a public, private, community or hybrid cloud service?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: checkboxes
+options:
+  - label: Public cloud
+    value: public
+    filter_label: public cloud
+  - label: Private cloud
+    value: private
+    filter_label: private cloud
+  - label: Community cloud
+    value: community
+    filter_label: community cloud
+  - label: Hybrid cloud
+    value: hybrid
+    filter_label: hybrid cloud
+
+validations:
+  - name: answer_required
+    message: Select a service type.

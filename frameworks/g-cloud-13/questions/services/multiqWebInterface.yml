@@ -1,0 +1,15 @@
+name: Web interface
+question: Web interface
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - webInterface
+  - webInterfaceUsage
+  - webInterfaceAccessibility
+  - webInterfaceAccessibilityDescription
+  - webInterfaceAccessibilityTesting

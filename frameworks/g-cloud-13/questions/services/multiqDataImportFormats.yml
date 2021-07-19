@@ -1,0 +1,12 @@
+name: Data import formats
+question: Data import formats
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+  - dataImportFormats
+  - dataImportFormatsOther

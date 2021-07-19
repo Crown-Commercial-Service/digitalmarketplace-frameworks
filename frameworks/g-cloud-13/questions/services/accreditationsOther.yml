@@ -1,0 +1,17 @@
+name: Other security certifications
+question: Do you have any other security certifications that cover this service?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  accreditationsOtherList:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if you have any other security certifications.

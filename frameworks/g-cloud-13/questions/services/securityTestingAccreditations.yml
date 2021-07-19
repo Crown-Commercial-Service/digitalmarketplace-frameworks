@@ -1,0 +1,30 @@
+name: Security testing certifications
+question: Which security certifications do your security testers have?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  securityTestingAccreditationsOther:
+    - other
+
+type: checkboxes
+options:
+  - label: GBEST
+    value: gbest
+  - label: CHECK
+    value: check
+  - label: CREST
+    value: crest
+  - label: Tigerscheme
+    value: tigerscheme
+  - label: Cyber Scheme
+    value: cyber_scheme
+  - label: Other
+    value: other
+
+validations:
+  - name: answer_required
+    message: Select a certification.

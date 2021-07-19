@@ -1,0 +1,22 @@
+name: Other API automation tools
+question: List any other automation tools your service’s API uses.
+
+hidden: true
+optional: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+list_item_name: API automation tool
+type: list
+
+validations:
+  - name: answer_required
+    message: Enter an automation tool.
+  - name: under_10_words
+    message: Each API automation tool must be 10 words or fewer.
+  - name: max_items_limit
+    message: You must have 10 or fewer API automation tools.
+  - name: under_character_limit
+    message: Each API automation tool must be 100 characters or fewer.

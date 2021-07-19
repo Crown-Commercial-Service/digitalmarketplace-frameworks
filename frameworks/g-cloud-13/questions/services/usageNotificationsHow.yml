@@ -1,0 +1,23 @@
+name: Usage reporting
+question: How are users notified if usage nears service limits?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+  - label: API
+    value: api
+  - label: Email
+    value: email
+  - label: SMS
+    value: sms
+  - label: Other
+    value: other
+
+validations:
+  - name: answer_required
+    message: Select a notification method.

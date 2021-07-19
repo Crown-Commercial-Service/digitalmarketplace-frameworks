@@ -1,0 +1,17 @@
+name: Modern slavery reporting requirements
+question: Does your organisation comply with the annual reporting requirements of section 54 of The Modern Slavery Act (2015)?
+hint: You must publish a slavery and human trafficking statement to comply with the act.
+
+hidden: true
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if your organisation complies with the Modern Slavery Act reporting requirements.
+
+assessment:
+  passIfIn:
+    - True
+  discretionary: True
+  # actually dependent, but it is not the assessment schema's responsibility to enforce that dependency
+  required: False

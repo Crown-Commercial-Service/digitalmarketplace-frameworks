@@ -1,0 +1,22 @@
+id: scalingType
+name: Scaling type
+question: How does your service scale?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+  - label: Scales automatically
+    value: automatic
+    filter_label: automatic
+  - label: Scales with user intervention
+    value: user_intervention
+    filter_label: manual
+
+validations:
+  - name: answer_required
+    message: Select a scaling method.

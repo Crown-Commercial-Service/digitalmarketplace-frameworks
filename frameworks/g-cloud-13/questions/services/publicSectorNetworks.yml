@@ -1,0 +1,16 @@
+name: Connection to public sector networks
+question: Does your service connect to any public sector networks?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+followup:
+  publicSectorNetworksTypes:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if your service connects to any public sector networks.

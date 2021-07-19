@@ -1,0 +1,22 @@
+id: dataSanitisationType
+name: Data sanitisation type
+question: What type of data sanitisation process do you have?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+  - label: Explicit overwriting of storage before reallocation
+    value: overwriting
+  - label: Deleted data can’t be directly accessed
+    value: no_access
+  - label: Hardware containing data is completely destroyed
+    value: hardware_destroyed
+
+validations:
+  - name: answer_required
+    message: Select a data sanitisation process.

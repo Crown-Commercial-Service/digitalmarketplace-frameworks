@@ -1,0 +1,35 @@
+name: Protecting data at rest
+question: How do you protect data at rest?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience#rest"
+  target="_blank" rel="noopener noreferrer">2nd cloud security principle: ‘Asset protection and resilience’ (link opens
+  in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  protectionOfDataAtRestOther:
+    - other
+
+type: checkboxes
+options:
+  - label: Physical access control, complying with CSA CCM v3.0
+    value: csa_ccm
+  - label: Physical access control, complying with SSAE-16 / ISAE 3402
+    value: ssae_isae
+  - label: Physical access control, complying with another standard
+    value: other_standard
+  - label: Encryption of all physical media
+    value: encrypted_media
+  - label: Scale, obfuscating techniques, or data storage sharding
+    value: scale_obfuscation_sharding
+  - label: Other
+    value: other
+
+validations:
+  - name: answer_required
+    message: Select a data protection method.

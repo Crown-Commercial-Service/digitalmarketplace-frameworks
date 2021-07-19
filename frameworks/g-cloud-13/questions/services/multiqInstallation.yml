@@ -1,0 +1,12 @@
+name: Installation
+question: Installation
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+  - installation
+  - installationCompatibleOperatingSystems

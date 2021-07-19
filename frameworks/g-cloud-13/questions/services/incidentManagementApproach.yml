@@ -1,0 +1,25 @@
+name: Incident management approach
+question: Describe your incident management processes.
+question_advice: >
+    Include:
+
+      - whether you have pre-defined processes for common events
+      - how users report incidents
+      - how you provide incident reports
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 100
+
+validations:
+  - name: answer_required
+    message: Enter description.
+  - name: under_100_words
+    message: Description must be 100 words or fewer.
+  - name: under_character_limit
+    message: Description must be 1000 characters or fewer.

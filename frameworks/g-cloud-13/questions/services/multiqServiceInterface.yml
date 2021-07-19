@@ -1,0 +1,15 @@
+name: Service interface
+question: Service interface
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+  - serviceInterface
+  - serviceInterfaceDescription
+  - serviceInterfaceAccessibility
+  - serviceInterfaceAccessibilityDescription
+  - serviceInterfaceTesting

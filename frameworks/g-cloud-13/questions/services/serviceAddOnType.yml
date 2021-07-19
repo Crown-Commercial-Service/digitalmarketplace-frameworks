@@ -1,0 +1,25 @@
+name: Software add-on or extension
+question: Is your service an add-on or extension to other software services?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  serviceAddOnDetails:
+    - "yes"
+    - yes_but_can_standalone
+
+type: radios
+options:
+  - label: "Yes"
+    value: "yes"
+  - label: Yes, but can also be used as a standalone service
+    value: yes_but_can_standalone
+  - label: "No"
+    value: "no"
+
+validations:
+  - name: answer_required
+    message: Select if your service is an add-on or extension to other software services.

@@ -1,0 +1,13 @@
+id: multiqServiceFeaturesAndBenefits
+question: Service features and benefits
+name: Service features and benefits
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: multiquestion
+questions:
+  - serviceFeaturesSupport
+  - serviceBenefitsSupport

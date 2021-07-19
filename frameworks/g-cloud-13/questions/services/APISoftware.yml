@@ -1,0 +1,21 @@
+name: API
+question: Is there an API for your service?
+filter_label: API
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+followup:
+  APIUsage:
+    - true
+  APIDocumentation:
+    - true
+  APISandbox:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if there is an API for your service.

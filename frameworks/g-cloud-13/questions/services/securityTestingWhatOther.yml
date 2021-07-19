@@ -1,0 +1,21 @@
+name: Other security services
+question: What other kinds of security services do you provide?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: list
+list_item_name: kind of security service
+
+validations:
+  - name: answer_required
+    message: Enter a service.
+  - name: under_10_words
+    message: Each kind of security service must be 10 words or fewer.
+  - name: max_items_limit
+    message: You must have 10 or fewer kinds of security service.
+  - name: under_character_limit
+    message: Each kind of security service must be 100 characters or fewer.

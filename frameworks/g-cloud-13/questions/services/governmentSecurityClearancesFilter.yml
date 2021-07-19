@@ -1,0 +1,30 @@
+id: governmentSecurityClearances
+name: Government security clearance
+question: (filter) minimum security clearance required by the buyer
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: radios
+options:
+  - label: Developed Vetting (DV)
+    value: dv
+  - label: Security Clearance (SC)
+    value: sc
+    derived_from:
+      question: governmentSecurityClearances
+      any_of:
+        - dv
+        - sc
+  - label: Baseline Personnel Security Standard (BPSS)
+    value: bpss
+    derived_from:
+      question: governmentSecurityClearances
+      any_of:
+        - dv
+        - sc
+        - bpss

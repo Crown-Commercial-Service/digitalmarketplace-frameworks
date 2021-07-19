@@ -1,0 +1,24 @@
+name: Knowledge of data storage and processing locations
+question: Do you know where your data is stored and processed?
+question_advice: >
+  Read the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience#physical"
+  target="_blank" rel="noopener noreferrer">cloud security guidance for data storage (link opens
+  in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  dataStorageAndProcessingLocations:
+    - true
+  dataStorageAndProcessingUserControl:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if you know where your data is stored and processed.

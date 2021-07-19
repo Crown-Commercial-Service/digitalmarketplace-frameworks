@@ -1,0 +1,18 @@
+name: ISO 28000:2007 accreditation date
+question: When was the certification accredited?
+hint: eg 31/12/2016
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: text
+
+validations:
+  - name: answer_required
+    message: Enter the accreditation date.
+  - name: under_character_limit
+    message: Your accreditation date must be 50 characters or fewer.

@@ -1,0 +1,18 @@
+name: Certified security testers
+question: Is your security testing performed by certified security testers?
+hint: Security testing includes penetration testing and IT Health Checks.
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  securityTestingAccreditations:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if your security testing is performed by certified security testers.

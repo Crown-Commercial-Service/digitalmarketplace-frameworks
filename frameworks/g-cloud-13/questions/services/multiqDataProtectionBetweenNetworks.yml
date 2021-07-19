@@ -1,0 +1,13 @@
+name: Protection between networks
+question: Protection between networks
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: multiquestion
+questions:
+  - dataProtectionBetweenNetworks
+  - dataProtectionBetweenNetworksOther

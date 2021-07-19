@@ -1,0 +1,21 @@
+name: Free trial available
+question: Do you provide a free trial option for your service?
+filter_label: free trial
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+followup:
+  freeVersionDescription:
+    - True
+  freeVersionLink:
+    - True
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if there is a free trial option for your service.

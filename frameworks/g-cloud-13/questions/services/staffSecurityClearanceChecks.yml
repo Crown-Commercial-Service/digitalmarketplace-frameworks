@@ -1,0 +1,30 @@
+name: Staff security clearance
+question: How do you manage staff security clearance checks?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-6-personnel-security" target="_blank" rel="noopener
+  noreferrer">6th cloud security principle: ‘Personnel security’ (link opens in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: radios
+options:
+  - label: Staff screening performed with conforms to BS7858:2012
+    value: "staff_screening_to_bs7858_2012"
+    filter_label: conforms to BS7858:2012
+  - label: Staff screening performed but doesn’t conform with BS7858:2012
+    value: "staff_screening_not_bs7858_2012"
+    filter_label: other security clearance
+    filter_ignore: true
+  - label: Staff screening not performed
+    value: none
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: Select how you manage staff security clearance checks.

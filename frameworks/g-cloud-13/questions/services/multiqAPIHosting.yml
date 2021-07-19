@@ -1,0 +1,17 @@
+id: multiqAPI
+name: API
+question: API
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - APIHosting
+  - APIUsage
+  - APIAutomationTools
+  - APIAutomationToolsOther
+  - APIDocumentation
+  - APIDocumentationFormats

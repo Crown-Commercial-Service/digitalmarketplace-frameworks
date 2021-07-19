@@ -1,0 +1,19 @@
+name: Backup recovery
+question: How do users recover backups?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+  - label: Users can recover backups themselves, for example through a web interface
+    value: user_recovery
+  - label: Users contact the support team
+    value: support_request
+
+validations:
+  - name: answer_required
+    message: Select a recovery method.

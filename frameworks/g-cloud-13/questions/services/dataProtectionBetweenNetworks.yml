@@ -1,0 +1,40 @@
+name: Data protection between buyer and supplier networks
+question: How do you protect data between the buyer’s network and your network?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-1-data-transit-protection" target="_blank"
+  rel="noopener noreferrer">1st cloud security principle: ’Data-in-transit protection’ (link opens in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  dataProtectionBetweenNetworksOther:
+    - other
+
+type: checkboxes
+options:
+  - label: Private network or public sector network
+    value: private_or_psn
+    filter_label: private network or public sector network
+  - label: TLS (Version 1.2 or above)
+    value: tls
+    filter_label: TLS (version 1.2 or above)
+  - label: IPsec or TLS VPN gateway
+    value: ipsec_or_vpn
+  - label: Bonded fibre optic connections
+    value: bonded_fibre
+    filter_label: bonded fibre optic connections
+  - label: Legacy SSL and TLS (under 1.2)
+    value: legacy_ssl
+    filter_ignore: true
+    filter_label: legacy SSL and TLS (under version 1.2)
+  - label: Other
+    value: other
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: Select a data protection method.

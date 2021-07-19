@@ -1,0 +1,38 @@
+coming: |
+  ### G-Cloud
+
+  G-Cloud is opening for applications.
+
+  You will be able to apply to sell:
+
+  - cloud hosting
+  - cloud software
+  - cloud support
+
+open: |
+  ### G-Cloud
+
+  G-Cloud is open for applications.
+
+  You can apply to sell:
+
+  - cloud hosting
+  - cloud software
+  - cloud support
+
+pending: &can_not_apply |
+  ### G-Cloud
+
+  G-Cloud is closed for applications. You can create an account when it is open.
+
+  You will be able to apply to sell:
+
+  - cloud hosting
+  - cloud software
+  - cloud support
+
+standstill: *can_not_apply
+
+live: *can_not_apply
+
+expired: *can_not_apply

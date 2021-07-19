@@ -1,0 +1,19 @@
+name: Planning service
+question: Do you provide planning services for the implementation of cloud hosting or cloud software?
+question_advice: Planning services include business analysis, solution design and security architecture.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  planningServiceDescription:
+    - true
+  planningServiceCompatibility:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if you provide planning services.

@@ -1,0 +1,16 @@
+name: User authentication needed
+question: Do users need to be authenticated when using your service?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+followup:
+  userAuthentication:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if users need to be authenticated when using your service.

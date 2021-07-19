@@ -1,0 +1,32 @@
+name: API automation tools
+question: Which standard automation tools work with your service’s API?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  APIAutomationToolsOther:
+    - other
+
+type: checkboxes
+options:
+  - label: Ansible
+    value: ansible
+  - label: Chef
+    value: chef
+  - label: OpenStack
+    value: openstack
+  - label: SaltStack
+    value: saltstack
+  - label: Terraform
+    value: terraform
+  - label: Puppet
+    value: puppet
+  - label: Other
+    value: other
+
+validations:
+  - name: answer_required
+    message: Select an automation tool.

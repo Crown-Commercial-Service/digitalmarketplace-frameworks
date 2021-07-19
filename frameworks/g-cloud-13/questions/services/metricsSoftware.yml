@@ -1,0 +1,19 @@
+id: metrics
+name: Service usage metrics
+question: Do you provide service usage metrics?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+followup:
+  metricsDescription:
+    - true
+  metricsHow:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if you provide service usage metrics.

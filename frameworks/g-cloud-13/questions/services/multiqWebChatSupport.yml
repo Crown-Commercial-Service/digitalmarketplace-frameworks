@@ -1,0 +1,17 @@
+name: Web chat support
+question: Web chat support
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: multiquestion
+questions:
+  - webChatSupport
+  - webChatSupportAvailability
+  - webChatSupportAccessibility
+  - webChatSupportAccessibilityDescription
+  - webChatSupportAccessibilityTesting

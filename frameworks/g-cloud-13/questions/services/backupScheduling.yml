@@ -1,0 +1,21 @@
+name: Scheduling backups
+question: How do users schedule backups?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: radios
+options:
+  - label: Users schedule backups through a web interface
+    value: user_defined
+  - label: Users contact the support team to schedule backups
+    value: support_request
+  - label: Supplier controls the whole backup schedule
+    value: supplier_defined
+
+validations:
+  - name: answer_required
+    message: Select how users schedule backups.
