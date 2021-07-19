@@ -1,0 +1,14 @@
+name: Setup and migration
+question: Setup and migration
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: multiquestion
+questions:
+  - setupAndMigrationService
+  - setupAndMigrationServiceDescription
+  - setupAndMigrationServiceSpecific
+  - setupAndMigrationServiceSpecificList

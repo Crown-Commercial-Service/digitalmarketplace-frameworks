@@ -1,0 +1,20 @@
+name: Who accredited the PCI DSS certification
+question: Who accredited you?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: text
+max_length_in_words: 10
+
+validations:
+  - name: answer_required
+    message: Enter the accreditor name.
+  - name: under_10_words
+    message: Accreditor name must be 10 words or fewer.
+  - name: under_character_limit
+    message: Accreditor name must be 100 characters or fewer.

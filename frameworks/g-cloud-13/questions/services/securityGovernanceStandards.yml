@@ -1,0 +1,26 @@
+name: Security governance standards
+question: What security governance standards do you comply with?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  securityGovernanceStandardsOther:
+    - other
+
+type: checkboxes
+options:
+  - label: CSA CCM version 3.0
+    value: csa_ccm
+  - label: ISO/IEC 27001
+    value: iso_iec_27001
+  - label: Other
+    value: other
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: Select a standard.

@@ -1,0 +1,29 @@
+name: Documentation formats
+question: What formats do you provide documentation in?
+question_advice: >
+  Read about the <a href="https://www.gov.uk/government/publications/open-standards-for-government/viewing-government-documents" target="_blank" rel="noopener noreferrer">open standard requirements for government documents (link opens in a new tab)</a>.
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  documentationFormatsOther:
+    - other
+
+type: checkboxes
+options:
+  - label: HTML
+    value: html
+  - label: ODF
+    value: odf
+  - label: PDF
+    value: pdf
+  - label: Other
+    value: other
+
+validations:
+  - name: answer_required
+    message: Select a format.

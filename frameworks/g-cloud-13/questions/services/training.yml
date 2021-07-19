@@ -1,0 +1,18 @@
+name: Training service provided
+question: Do you provide training for cloud software and hosting services?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  trainingDescription:
+    - true
+  trainingServiceSpecific:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if you provide training for cloud software and hosting services.

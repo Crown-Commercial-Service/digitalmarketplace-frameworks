@@ -1,0 +1,20 @@
+name: Other security governance standards
+question: List the other standards your governance standards comply with.
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 50
+
+validations:
+  - name: answer_required
+    message: Enter the other standards your governance standards comply with.
+  - name: under_50_words
+    message: Description must be 50 words or fewer.
+  - name: under_character_limit
+    message: Description must be 500 characters or fewer.

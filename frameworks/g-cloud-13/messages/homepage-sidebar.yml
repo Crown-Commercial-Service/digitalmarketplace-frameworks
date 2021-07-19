@@ -1,0 +1,16 @@
+coming:
+  heading: 'G-Cloud&nbsp;13 will open on 3 March 2525 at 3pm GMT.'
+  messages:
+    - 'Provide cloud hosting, software and support.'
+    - 'You’ll need to create a supplier account to apply.'
+
+open:
+  heading: 'G-Cloud&nbsp;13 is open for applications'
+  messages:
+    - 'You need an account to apply.'
+    - 'The application deadline is 5pm&nbsp;BST, Monday 20 July 2525.'
+
+pending:
+  heading: 'G-Cloud&nbsp;13 is closed for applications'
+  messages:
+    - 'Applications are being reviewed.'

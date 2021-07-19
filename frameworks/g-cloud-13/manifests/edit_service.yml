@@ -1,0 +1,30 @@
+-
+  name: Service attributes
+  editable: False
+  questions:
+    - id
+    - lotName
+
+-
+  name: Service name
+  editable: true
+  questions:
+    - serviceName
+
+-
+  name: About your service
+  editable: true
+  questions:
+    - serviceDescription
+
+-
+  name: Service features and benefits
+  editable: true
+  questions:
+    - multiqServiceFeaturesAndBenefitsHostingAndSoftware
+    - multiqServiceFeaturesAndBenefitsSupport
+
+- name: Documents
+  editable: true
+  questions:
+    - serviceDefinitionDocumentURL

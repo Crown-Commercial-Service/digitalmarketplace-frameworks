@@ -1,0 +1,21 @@
+name: Services are cloud-related (cloud support)
+question: >
+  If you're submitting a cloud support (lot 3) service, does your service both:
+
+    - enable the delivery of cloud services
+    - comply with the <a href="/suppliers/frameworks/g-cloud-13#legal-documents" target="_blank" rel="noopener noreferrer">definition of cloud support in the framework agreement</a>
+
+type: radios
+options:
+  - label: "Yes"
+  - label: "My organisation isn't submitting cloud support (lot 3) services"
+validations:
+  # Used in custom validator for those not submitting on (lot1 and lot2) and (lot3)
+  # See app/main/helpers/validation.py::G12Validator
+  - name: dependent_question_error
+    message: You need to answer Yes to either this question or to question 1
+assessment:
+  required: True
+  passIfIn:
+    - "Yes"
+    - "My organisation isn't submitting cloud support (lot 3) services"

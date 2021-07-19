@@ -1,0 +1,39 @@
+name: Web chat support
+question: Do you provide web chat support?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+followup:
+  webChatSupportAvailability:
+    - "yes"
+    - yes_extra_cost
+  webChatSupportAccessibility:
+    - "yes"
+    - yes_extra_cost
+  webChatSupportAccessibilityTesting:
+    - "yes"
+    - yes_extra_cost
+
+type: radios
+options:
+  - label: "Yes"
+    value: "yes"
+    filter_label: "web chat"
+    derived_from:
+      question: webChatSupport
+      any_of:
+        - yes_extra_cost
+  - label: Yes, at an extra cost
+    value: yes_extra_cost
+    filter_ignore: true
+  - label: "No"
+    value: "no"
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: Select the type of web chat support you provide.

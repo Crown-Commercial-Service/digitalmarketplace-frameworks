@@ -1,0 +1,27 @@
+name: Approach to resilience
+question: Describe how your service is designed to be resilient.
+question_advice: >
+  Include how your datacentre setup is resilient. If you don’t want to make this information public, you can say that
+  it’s available on request.
+
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience#resilience"
+  target="_blank" rel="noopener noreferrer">2nd cloud security principle: ‘Asset protection and resilience’ (link opens
+  in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 200
+
+validations:
+  - name: answer_required
+    message: Enter description.
+  - name: under_200_words
+    message: Description must be 200 words or fewer.
+  - name: under_character_limit
+    message: Description must be 2000 characters or fewer.

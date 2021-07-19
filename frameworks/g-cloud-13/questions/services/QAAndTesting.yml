@@ -1,0 +1,16 @@
+name: Quality assurance and performance testing service
+question: Do you provide quality assurance and performance testing?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  QAAndTestingDescription:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if you provide quality assurance and performance testing.

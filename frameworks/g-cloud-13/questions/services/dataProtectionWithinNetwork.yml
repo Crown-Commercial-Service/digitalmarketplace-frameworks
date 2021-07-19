@@ -1,0 +1,34 @@
+name: Data protection within supplier network
+question: How do you protect data within your network?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-1-data-transit-protection" target="_blank"
+  rel="noopener noreferrer">1st cloud security principle: ’Data-in-transit protection’ (link opens in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  dataProtectionWithinNetworkOther:
+    - other
+
+type: checkboxes
+options:
+  - label: TLS (Version 1.2 or above)
+    value: tls
+    filter_label: TLS (version 1.2 or above)
+  - label: IPsec or TLS VPN gateway
+    value: ipsec_or_vpn
+  - label: Legacy SSL and TLS (under 1.2)
+    value: ssl
+    filter_ignore: true
+    filter_label: legacy SSL and TLS (under version 1.2)
+  - label: Other
+    value: other
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: Select a data protection method.

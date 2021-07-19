@@ -1,0 +1,21 @@
+id: serviceConstraints
+name: Service constraints
+question: Does your service have any constraints that buyers should know about?
+question_advice: Constraints might include planned maintenance arrangements or support being limited to specific hardware configurations.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 100
+
+validations:
+  - name: answer_required
+    message: Enter the service constraints.
+  - name: under_100_words
+    message: Description must be 100 words or fewer.
+  - name: under_character_limit
+    message: Description must be 1000 characters or fewer.

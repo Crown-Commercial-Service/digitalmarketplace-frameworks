@@ -1,0 +1,27 @@
+name: Description of free trial
+question: Describe the free version of your service.
+question_advice: >
+  Include:
+
+    - what’s included
+    - what isn’t included
+    - if there’s a limited time period
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+      - cloud-support
+
+type: textbox_large
+max_length_in_words: 50
+
+validations:
+  - name: answer_required
+    message: Enter description.
+  - name: under_50_words
+    message: Description must be 50 words or fewer.
+  - name: under_character_limit
+    message: Description must be 500 characters or fewer.

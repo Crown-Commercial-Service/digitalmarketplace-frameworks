@@ -1,0 +1,25 @@
+question: Service type
+
+type: radios
+options:
+  - label: Cloud hosting
+    value: cloud-hosting
+    description: |
+      Services that are cloud platform or infrastructure help buyers to:
+
+        - deploy, manage and run software
+        - provide and use processing, storage or network resources
+
+      They used to be known as ‘Platform as a Service’ and ‘Infrastructure as a Service’.
+  - label: Cloud software
+    value: cloud-software
+    description: |
+      Applications that can be accessed over the internet and hosted on the cloud.
+
+      They used to be known as ‘Software as a Service’.
+  - label: Cloud support
+    value: cloud-support
+    description: |
+      Services that help buyers set up and maintain their cloud hosting or software services.
+
+      They used to be known as ‘Specialist Cloud Services’.

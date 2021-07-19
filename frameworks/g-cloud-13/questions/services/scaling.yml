@@ -1,0 +1,16 @@
+name: Scaling available
+question: Does your service scale without the user having to contact your support team?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  scalingType:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if your service scales without the user having to contact your support team.

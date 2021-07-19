@@ -1,0 +1,20 @@
+name: Service interface
+question: Is there a service interface?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+followup:
+  serviceInterfaceDescription:
+    - true
+  serviceInterfaceAccessibility:
+    - true
+  serviceInterfaceTesting:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if there is a service interface.

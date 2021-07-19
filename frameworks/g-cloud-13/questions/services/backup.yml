@@ -1,0 +1,25 @@
+name: Backup and recovery
+question: Does your service provide backup and recovery?
+filter_label: backup and recovery is available
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  backupWhatData:
+    - true
+  backupControls:
+    - true
+  backupDatacentre:
+    - true
+  backupScheduling:
+    - true
+  backupRecovery:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if your service provides backup and recovery.

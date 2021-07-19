@@ -1,0 +1,19 @@
+name: Security governance certified
+question: Is your security governance certified to a standard?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  securityGovernanceStandards:
+    - true
+  securityGovernanceApproach:
+    - false
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if your security governance is certified to a standard.

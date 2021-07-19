@@ -1,0 +1,22 @@
+name: ISO/IEC 27001 certification
+question: Do you have a current ISO/IEC 27001 certification (2005 or 2013) that covers the security of your service?
+filter_label: ISO/IEC 27001 (service security)
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  standardsISOIEC27001Who:
+    - true
+  standardsISOIEC27001When:
+    - true
+  standardsISOIEC27001Exclusions:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if you have a current ISO/IEC 27001 certification.

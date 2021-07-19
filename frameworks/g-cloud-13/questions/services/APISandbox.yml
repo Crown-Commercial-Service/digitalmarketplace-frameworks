@@ -1,0 +1,14 @@
+name: API sandbox or test environment
+question: Is there a sandbox or test environment for your API?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if there is a sandbox or test environment for your API.

@@ -1,0 +1,25 @@
+name: System requirements
+question: What system requirements does your service have?
+question_advice: >
+  Examples of system requirements might be whether buyers have specific software licences or anti-virus technology
+  for virtual machines.
+hint: 10 words for each requirement, 10 requirements maximum.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+list_item_name: system requirement
+type: list
+
+validations:
+  - name: answer_required
+    message: Enter a system requirement.
+  - name: max_items_limit
+    message: You can have no more than 10 system requirements.
+  - name: under_10_words
+    message: Each system requirement must be 10 words or fewer.
+  - name: under_character_limit
+    message: Each system requirement must be 100 characters or fewer.

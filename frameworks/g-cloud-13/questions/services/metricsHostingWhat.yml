@@ -1,0 +1,38 @@
+id: metricsWhat
+name: Metrics types
+question: What infrastructure or application metrics do you provide?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  metricsWhatOther:
+    - other
+
+type: checkboxes
+options:
+  - label: CPU
+    value: cpu
+  - label: Disk
+    value: disk
+    filter_label: disk
+  - label: HTTP request and response status
+    value: http
+  - label: Memory
+    value: memory
+    filter_label: memory
+  - label: Network
+    value: network
+    filter_label: network
+  - label: Number of active instances
+    value: num_instances
+    filter_label: number of active instances
+  - label: Other
+    value: other
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: Select a type of metric.

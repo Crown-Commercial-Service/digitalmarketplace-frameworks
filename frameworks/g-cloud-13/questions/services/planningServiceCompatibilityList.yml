@@ -1,0 +1,21 @@
+name: Hosting or software services the planning service works with
+question: Which hosting or software services is your planning service for?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+
+type: list
+list_item_name: hosting or software service
+
+validations:
+  - name: answer_required
+    message: Enter a service.
+  - name: under_10_words
+    message: Each hosting or software service must be 10 words or fewer.
+  - name: max_items_limit
+    message: You must have 10 or fewer hosting or software services.
+  - name: under_character_limit
+    message: Each hosting or software service must be 100 characters or fewer.

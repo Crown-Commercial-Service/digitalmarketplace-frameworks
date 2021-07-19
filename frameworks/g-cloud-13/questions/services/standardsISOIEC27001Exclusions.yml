@@ -1,0 +1,20 @@
+name: What the ISO/IEC 27001 doesn’t cover
+question: What is not covered by your ISO/IEC 27001 certification?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 200
+
+validations:
+  - name: answer_required
+    message: Enter the parts of your service not covered by ISO/IEC 27001 certification.
+  - name: under_200_words
+    message: Description must be 200 words or fewer.
+  - name: under_character_limit
+    message: Description must be 2000 characters or fewer.

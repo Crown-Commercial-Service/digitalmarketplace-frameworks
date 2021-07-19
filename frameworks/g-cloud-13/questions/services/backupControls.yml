@@ -1,0 +1,20 @@
+name: Backup controls
+question: How do users control what backups are performed?
+question_advice: Include, for example, whether users can back up different things on a different schedule.
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: textbox_large
+max_length_in_words: 100
+
+validations:
+  - name: answer_required
+    message: Enter details of how users can control what backups are performed.
+  - name: under_100_words
+    message: Description must be 100 words or fewer.
+  - name: under_character_limit
+    message: Description must be 1000 characters or fewer.

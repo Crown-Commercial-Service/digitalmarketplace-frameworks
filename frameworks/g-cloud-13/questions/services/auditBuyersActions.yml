@@ -1,0 +1,35 @@
+name: Access to user activity audit information
+question: How do buyers access audit information about the actions their users have taken?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-13-audit-information-users" target="_blank"
+  rel="noopener noreferrer">13th cloud security principle: ‘Audit information for users’ (link opens in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+followup:
+  auditBuyersActionsStorage:
+    - real_time
+    - regular
+    - support_request
+    - supplier_controlled
+
+type: radios
+options:
+  - label: Users have access to real-time audit information
+    value: real_time
+  - label: Users receive audit information on a regular basis
+    value: regular
+  - label: Users contact the support team to get audit information
+    value: support_request
+  - label: You control when users can access audit information
+    value: supplier_controlled
+  - label: No audit information available
+    value: not_available
+
+validations:
+  - name: answer_required
+    message: Select how buyers access audit information about their users.

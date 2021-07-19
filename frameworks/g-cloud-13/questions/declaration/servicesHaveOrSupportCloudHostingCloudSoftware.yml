@@ -1,0 +1,22 @@
+name: Services are cloud-related (cloud hosting and cloud software)
+question: >
+  If you're submitting cloud hosting (lot 1) or cloud software (lot 2) services, do these services have or support all of the following:
+
+    - on-demand self-service - your cloud services must be automatically available without needing interaction between the supplier and the buyer, for example server time or network storage
+    - broad network access - your cloud services must be easily accessible over the network and across a wide range of platforms, for example mobile phones, tablets, laptops and workstations
+    - measured service - your resource use must be monitored, controlled and reported to the buyer, for example storage, processing, bandwidth and number of active user accounts
+
+type: radios
+options:
+  - label: "Yes"
+  - label: "My organisation isn't submitting cloud hosting (lot 1) or cloud software (lot 2) services"
+validations:
+  # Used in custom validator for those not submitting on (lot1 and lot2) and (lot3)
+  # See app/main/helpers/validation.py::G12Validator
+  - name: dependent_question_error
+    message: You need to answer Yes to either this question or to question 2
+assessment:
+  required: True
+  passIfIn:
+    - "Yes"
+    - "My organisation isn't submitting cloud hosting (lot 1) or cloud software (lot 2) services"

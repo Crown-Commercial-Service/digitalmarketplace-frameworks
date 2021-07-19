@@ -1,0 +1,22 @@
+id: metricsWhatOther
+name: Other metrics
+question: What other infrastructure or application metrics do you provide?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: list
+list_item_name: infrastructure or application metric
+
+validations:
+  - name: answer_required
+    message: Enter a metric.
+  - name: under_10_words
+    message: Each infrastructure or application metric must be 10 words or fewer.
+  - name: max_items_limit
+    message: You must have 10 or fewer infrastructure or application metrics.
+  - name: under_character_limit
+    message: Each infrastructure or application metric must be 100 characters or fewer.

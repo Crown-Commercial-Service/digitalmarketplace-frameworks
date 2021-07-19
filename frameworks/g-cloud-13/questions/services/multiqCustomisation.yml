@@ -1,0 +1,12 @@
+name: Customisation
+question: Customisation
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: multiquestion
+questions:
+  - customisationAvailable
+  - customisationDescription

@@ -1,0 +1,29 @@
+name: Datacentre security standards
+question: With which standards does your datacentre security setup comply?
+question_advice: >
+  Read about the government’s <a
+  href="https://www.ncsc.gov.uk/guidance/cloud-security-principle-2-asset-protection-and-resilience#dataCentre"
+  target="_blank" rel="noopener noreferrer">2nd cloud security principle: ‘Asset protection and resilience’ (link opens
+  in a new tab)</a>.
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: radios
+options:
+  - label: Complies with a recognised standard, for example CSA CCM v3.0 or SSAE-16 / ISAE 3402
+    value: recognised_standard
+    filter_label: complies with a recognised standard (for example CSA CCM version 3.0)
+  - label: Supplier-defined controls
+    value: supplier_defined
+    filter_ignore: true
+  - label: Managed by a third party
+    value: third_party
+    filter_ignore: true
+
+validations:
+  - name: answer_required
+    message: Select which standards your datacentre security setup complies with.

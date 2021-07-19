@@ -1,0 +1,22 @@
+name: Any other security certifications
+question: What other security certifications do you have?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+list_item_name: security certification
+type: list
+
+validations:
+  - name: answer_required
+    message: Enter a security certification.
+  - name: under_10_words
+    message: Each security certification must be 10 words or fewer.
+  - name: max_items_limit
+    message: You must have 10 or fewer security certifications.
+  - name: under_character_limit
+    message: Each security certification must be 100 characters or fewer.

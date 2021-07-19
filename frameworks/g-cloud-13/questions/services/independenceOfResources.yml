@@ -1,0 +1,19 @@
+name: Independence of resources
+question: How do you guarantee users aren’t affected by the demand other users are placing on your service?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 100
+
+validations:
+  - name: answer_required
+    message: Enter description.
+  - name: under_100_words
+    message: Description must be 100 words or fewer.
+  - name: under_character_limit
+    message: Description must be 1000 characters or fewer.

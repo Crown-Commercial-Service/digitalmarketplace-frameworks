@@ -1,0 +1,38 @@
+name: Security services type
+question: What kind of security services do you provide?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-support
+followup:
+  securityTestingWhatOther:
+    - other
+  securityTestingAccredited:
+    - security_testing
+  securityTestingCCP:
+    - risk_analysis
+
+type: checkboxes
+options:
+  - label: Security strategy
+    value: security_strategy
+  - label: Security risk management
+    value: security_risk_management
+  - label: Security design
+    value: security_design
+  - label: Cyber security consultancy
+    value: cyber_security_consultancy
+  - label: Security testing
+    value: security_testing
+  - label: Security incident management
+    value: security_incident_management
+  - label: Security audit services
+    value: security_audit_services
+  - label: Other
+    value: other
+
+validations:
+  - name: answer_required
+    message: Select a service type.

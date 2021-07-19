@@ -1,0 +1,28 @@
+id: metricsHow
+name: Reporting types
+question: How do you provide infrastructure or application metrics?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: checkboxes
+options:
+  - label: Through an API
+    value: api
+    filter_label: API access
+  - label: Real-time dashboards
+    value: real_time
+    filter_label: real-time dashboards
+  - label: Regular reports
+    value: regular_reports
+    filter_label: regular reports
+  - label: Reports on request
+    value: on_request
+    filter_label: reports on request
+
+validations:
+  - name: answer_required
+    message: Select a reporting method.

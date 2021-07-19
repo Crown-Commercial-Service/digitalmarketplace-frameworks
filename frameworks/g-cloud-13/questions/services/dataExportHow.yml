@@ -1,0 +1,18 @@
+name: Data export approach
+question: How do users export their data?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 100
+
+validations:
+  - name: answer_required
+    message: Enter details of how users can export their data.
+  - name: under_100_words
+    message: Description must be 100 words or fewer.
+  - name: under_character_limit
+    message: Description must be 1000 characters or fewer.

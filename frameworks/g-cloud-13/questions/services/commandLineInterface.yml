@@ -1,0 +1,18 @@
+name: Command line interface
+question: Is there a command line interface for your service?
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  commandLineOS:
+    - true
+  commandLineUsage:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if there is a command line interface for your service.

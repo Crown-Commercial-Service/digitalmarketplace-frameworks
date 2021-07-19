@@ -1,0 +1,13 @@
+name: Terrorism convictions
+question: >
+  In the last 5 years, has anyone who represents, supervises or has control in your organisation (or a partner or parent organisation) been convicted of any offence listed in:
+
+    - section 41 of the Counter Terrorism Act 2008
+    - schedule 2 of the Counter Terrorism Act 2008 where the court has determined that there is a terrorist connection
+    - any offence under sections 44 to 46 of the Serious Crime Act 2007 which relates to an offence covered by subparagraph (f)
+
+type: boolean
+hint: Answer ‘yes’ if anyone who represents, supervises or has control in your organisation or a partner or parent organisation has been convicted of any of the above.
+assessment:
+  passIfIn:
+    - False

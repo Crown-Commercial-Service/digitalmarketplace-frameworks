@@ -1,0 +1,15 @@
+name: Support available to third parties
+question: Can third parties engaged by the buyer access the support features of your service?
+filter_label: can be used by third parties
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if third parties engaged by the buyer can access the support features of your service.

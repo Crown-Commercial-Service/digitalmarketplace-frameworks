@@ -1,0 +1,26 @@
+name: API documentation formats
+question: How is your API documented?
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+      - cloud-software
+
+type: checkboxes
+options:
+  - label: Open API (also known as Swagger)
+    value: openapi
+  - label: HTML
+    value: html
+  - label: ODF
+    value: odf
+  - label: PDF
+    value: pdf
+  - label: Other
+    value: other
+
+validations:
+  - name: answer_required
+    message: Select a format.

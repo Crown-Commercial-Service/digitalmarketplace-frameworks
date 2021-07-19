@@ -1,0 +1,15 @@
+id: multiqMetrics
+name: Metrics
+question: Metrics
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+
+type: multiquestion
+questions:
+  - metricsHosting
+  - metricsHostingWhat
+  - metricsHostingWhatOther
+  - metricsHostingHow

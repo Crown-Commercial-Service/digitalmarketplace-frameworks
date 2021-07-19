@@ -1,0 +1,19 @@
+name: Differences between the mobile and desktop service
+question: Describe any differences between the mobile and desktop service.
+
+hidden: true
+depends:
+  - "on": lot
+    being:
+      - cloud-software
+
+type: textbox_large
+max_length_in_words: 100
+
+validations:
+  - name: answer_required
+    message: Enter description.
+  - name: under_100_words
+    message: Description must be 100 words or fewer.
+  - name: under_character_limit
+    message: Description must be 1000 characters or fewer.

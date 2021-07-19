@@ -1,0 +1,332 @@
+id: serviceCategories
+name: Service categories
+question: Which categories does your service fit under?
+
+depends:
+- being:
+  - cloud-software
+  'on': lot
+
+type: checkbox_tree
+number_of_items: 20
+options:
+  - label: Accounting and finance
+    options:
+    - label: Accounts payable
+    - label: Accounts receivable
+    - label: Asset management
+    - label: Billing and invoicing
+    - label: Budgeting
+    - label: Contract management
+    - label: Debt collection
+    - label: Enterprise resource planning (ERP)
+    - label: Expense management, expense reporting
+    - label: Farming and farm management
+    - label: Financial compliance
+    - label: Financial management
+    - label: Financial risk management
+    - label: Land management
+    - label: Payment gateway
+    - label: Payroll
+    - label: Portfolio analysis
+    - label: Procurement
+    - label: Purchasing
+    - label: Revenue cycle management
+    - label: Tax management
+    - label: Other accounting and finance services
+  - label: Analytics and business intelligence
+    options:
+    - label: Analytics
+    - label: Business intelligence
+    - label: Data mining, analysis tools and analytics
+    - label: Data visualisation
+    - label: Reporting and dashboards
+  - label: Application security
+    options:
+    - label: Anti-spam and CAPTCHA
+    - label: Audit tools
+    - label: Authentication, identity and access management
+    - label: Encryption
+    - label: Log management
+    - label: Remote access
+    - label: Secure content and threat management
+    - label: Security risk management
+  - label: Collaborative working
+    options:
+    - label: Blogging
+    - label: Booking, scheduling and diary management
+    - label: Calendar
+    - label: Case management
+    - label: Content management system (CMS)
+    - label: Content storage and sharing
+    - label: Email and secure email
+    - label: Enterprise social networking
+    - label: File sending and file sharing
+    - label: Idea management
+    - label: Instant messaging (IM) and chat
+    - label: Meeting management
+    - label: Online forum or community
+    - label: Online meetings
+    - label: Presentations and slides (office productivity)
+    - label: Project collaboration
+    - label: Spreadsheets (office productivity)
+    - label: Task management
+    - label: Webinars
+    - label: Word processing (office productivity)
+    - label: Workflow
+  - label: Creative, design and publishing
+    options:
+    - label: Accessibility checking
+    - label: Blogging
+    - label: Content management system (CMS)
+    - label: Design
+    - label: Diagram and wireframe
+    - label: Digital publishing
+    - label: Online forums
+    - label: Photography and multimedia
+    - label: Presentations and slides (office productivity)
+    - label: Social networking
+    - label: Word processing (office productivity)
+  - label: Customer relationship management (CRM)
+    options:
+    - label: Call centre
+    - label: Constituent engagement
+    - label: Contact management
+    - label: CRM system
+    - label: Customer helpdesk (service desk)
+    - label: Customer service and support
+    - label: Feedback and reviews management
+    - label: Forms and surveys
+    - label: Live chat
+    - label: Partner relationship management (PRM)
+    - label: Virtual agents
+    - label: Other CRM services
+  - label: Electronic document and records management (EDRM)
+    options:
+    - label: Backup, recovery and archival
+    - label: Content management system (CMS)
+    - label: Document management
+    - label: Electronic data interchange (EDI)
+    - label: Electronic signatures
+    - label: File sending and sharing
+    - label: File storage
+    - label: Image management and picture archiving
+  - label: Healthcare
+    options:
+    - label: Assisted living monitoring
+    - label: Chiropractic
+    - label: Clinical decision support
+    - label: Clinical trial management
+    - label: Dental
+    - label: Electronic medical records
+    - label: Healthcare analytics
+    - label: Healthcare management
+    - label: Home healthcare
+    - label: Long-term care
+    - label: Medical billing
+    - label: Medical imaging
+    - label: Medical lab
+    - label: Medical practice
+    - label: Medical scheduling and booking
+    - label: Mental health
+    - label: Optometry
+    - label: Patient case management, care pathway management
+    - label: Pharmacy
+    - label: Pharmacy management
+    - label: Physical therapy
+  - label: Human resources and employee management
+    options:
+    - label: Applicant tracking
+    - label: Benefits administration
+    - label: Culture management
+    - label: Employee scheduling
+    - label: Employee self-service
+    - label: Enterprise social networking
+    - label: Examination (applicant testing)
+    - label: Holiday planning and absence management
+    - label: Payroll
+    - label: Performance management
+    - label: Recruitment
+    - label: Salary
+    - label: Talent (retention management)
+    - label: Time and expense tracking
+    - label: Training
+    - label: Workforce analytics
+    - label: Workforce management
+  - label: Information and communications technology (ICT)
+    options:
+    - label: API connectors and interface engines
+    - label: Application lifecycle management
+    - label: Authentication, identity and access management
+    - label: Backup, recovery and archival
+    - label: Calendar
+    - label: Call accounting
+    - label: Call centre
+    - label: Configuration and patch management
+    - label: Desktop as a Service
+    - label: Electronic data interchange (EDI)
+    - label: Email and secure email
+    - label: Fault management, monitoring and alerting
+    - label: Fax
+    - label: File sending and file sharing
+    - label: File storage
+    - label: Forms and surveys
+    - label: Geographic information systems and mapping
+    - label: Instant messaging (IM) and chat
+    - label: Interactive voice response (IVR)
+    - label: IT asset management
+    - label: Licence management
+    - label: Machine learning and artificial intelligence
+    - label: Mobile device management
+    - label: Natural language and speech processing
+    - label: Network services (DNS)
+    - label: Online meetings
+    - label: Password management
+    - label: Performance management
+    - label: Post (mailing services)
+    - label: Presentations and slides (office productivity)
+    - label: Printing
+    - label: Security
+    - label: SMS
+    - label: Spreadsheets (office productivity)
+    - label: Systems monitoring
+    - label: Telecoms expense management
+    - label: Telephony (including VOIP and SIP connectivity)
+    - label: Unified communications
+    - label: Video conferencing
+    - label: Virtual private network (VPN)
+    - label: Word processing (office productivity)
+    - label: Other information and communications technology (ICT) services
+  - label: Legal and enforcement
+    options:
+    - label: Electronic discovery (legal)
+    - label: Law enforcement
+    - label: Law practice management
+    - label: Legal billing
+    - label: Legal calendar
+    - label: Legal case management
+    - label: Legal document management
+    - label: Trust accounting
+  - label: Marketing
+    options:
+    - label: Advertising
+    - label: Affiliate marketing
+    - label: Behavioural targeting
+    - label: Brand management
+    - label: Campaign management
+    - label: Community management
+    - label: Contextual marketing
+    - label: Display advertising
+    - label: Email marketing
+    - label: Forms and surveys
+    - label: Marketing analytics
+    - label: Marketing automation
+    - label: Marketing data
+    - label: Mobile marketing
+    - label: Online display advertising
+    - label: Personalisation and behavioral targeting
+    - label: Public relations
+    - label: Search marketing
+    - label: Social marketing
+    - label: Social media marketing
+    - label: Social media monitoring
+    - label: Webinars
+    - label: Other marketing services
+  - label: Operations management
+    options:
+    - label: Applications
+    - label: Building information modelling (BIM)
+    - label: Business management
+    - label: Business performance management
+    - label: Business process management (BPM)
+    - label: Business process modelling (BPM)
+    - label: Business transformation and organisational change management
+    - label: Carbon, energy and sustainability management
+    - label: Complex event processing
+    - label: Contract management
+    - label: Digital asset management
+    - label: Digital signatures
+    - label: Enterprise resource planning (ERP)
+    - label: Facility management
+    - label: Field service management
+    - label: Governance, risk management and compliance (GRC)
+    - label: Inventory management
+    - label: Order management
+    - label: Procurement
+    - label: Product lifecycle management
+    - label: Scheduling and appointments
+    - label: Supply chain management
+    - label: Visitor management
+    - label: Workflow
+    - label: Other operations management services
+  - label: Project management and planning
+    options:
+    - label: Agile project management and issue tracking
+    - label: Professional services automation (PSA)
+    - label: Project management
+    - label: Project portfolio management (PPM)
+    - label: Task management
+    - label: Time and expense tracking
+  - label: Sales
+    options:
+    - label: Configure, price and quote (CPQ)
+    - label: eCommerce and shopping cart
+    - label: Payment gateway
+    - label: Recurring billing and subscription management
+    - label: Sales and operations planning
+    - label: Sales intelligence tracking
+    - label: Sales performance management
+    - label: Other sales services
+  - label: Schools, education and libraries
+    options:
+    - label: Academic
+    - label: Alumni management
+    - label: Asynchronous learning
+    - label: Campus management
+    - label: Classroom management
+    - label: eLearning
+    - label: Examination or applicant testing
+    - label: Library automation
+    - label: Library management
+    - label: Online courses
+    - label: Online grading
+    - label: School accounting
+    - label: School administration
+    - label: Student management
+    - label: Synchronous learning
+  - label: Software development tools
+    options:
+    - label: Accessibility
+    - label: Agile project management and issue tracking
+    - label: Bug tracking
+    - label: Build tools
+    - label: Code generation
+    - label: Development tools
+    - label: Form building
+    - label: Integrated development environment (IDE)
+    - label: Mobile development
+    - label: Search
+    - label: Source code management
+    - label: Testing and optimisation
+    - label: Usability
+    - label: Version control
+    - label: Website builder
+  - label: Transport and logistics
+    options:
+    - label: Airport management
+    - label: Aviation maintenance
+    - label: Distribution
+    - label: Fleet management
+    - label: Fleet tracking
+    - label: Freight management
+    - label: Inventory management
+    - label: Marine
+    - label: Shipping
+    - label: Transportation dispatch
+    - label: Trucking solutions
+    - label: Warehouse management
+    - label: Other transport and logistics services
+
+validations:
+  - message: You can’t choose more than 20 categories.
+    name: max_items_limit

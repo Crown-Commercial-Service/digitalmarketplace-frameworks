@@ -1,0 +1,17 @@
+name: Usage notifications
+question: Do you notify users if usage nears service limits?
+filter_label: notifies users if usage nears service limits
+
+depends:
+  - "on": lot
+    being:
+      - cloud-hosting
+followup:
+  usageNotificationsHow:
+    - true
+
+type: boolean
+
+validations:
+  - name: answer_required
+    message: Select yes if you notify users if their usage nears service limits.
