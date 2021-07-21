@@ -15,6 +15,14 @@ depends:
   - "on": "lot"
     being:
       - digital-specialists
+  - "on": "socialWeighting"
+    being:
+      - min_value: 0
+        max_value: 0
+        type: integer
+      - min_value: 10
+        max_value: 20
+        type: integer
 
 validations:
   -
