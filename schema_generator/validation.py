@@ -45,6 +45,7 @@ FRAMEWORKS_AND_LOTS = {
         {'framework_slug': 'g-cloud-10', 'framework_name': "G-Cloud 10", 'lots': G_CLOUD_LOTS},
         {'framework_slug': 'g-cloud-11', 'framework_name': "G-Cloud 11", 'lots': G_CLOUD_LOTS},
         {'framework_slug': 'g-cloud-12', 'framework_name': "G-Cloud 12", 'lots': G_CLOUD_LOTS},
+        {'framework_slug': 'g-cloud-13', 'framework_name': "G-Cloud 13", 'lots': G_CLOUD_LOTS},
     ],
     "digital-outcomes-and-specialists": [
         {
