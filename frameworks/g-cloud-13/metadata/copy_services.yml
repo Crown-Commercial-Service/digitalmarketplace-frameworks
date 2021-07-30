@@ -1,2 +1,3 @@
-questions_to_exclude: []
+questions_to_exclude:
+  - price
 source_framework: g-cloud-12
