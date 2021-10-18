@@ -2,6 +2,14 @@
 
 Records breaking changes from major version bumps
 
+## 19.0.0
+Update to use python 3.9 as python 3.6 is reaching end of life.
+
+Dropping support for:
+- python 3.6
+- python 3.7
+- python 3.8
+
 ## 18.0.0
 
 The search mappings G-Cloud 12 and DOS4/5 and the search scheme generator will now
