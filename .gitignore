@@ -10,3 +10,5 @@ venv*
 
 # Nix stuff
 local.nix
+
+.idea/
