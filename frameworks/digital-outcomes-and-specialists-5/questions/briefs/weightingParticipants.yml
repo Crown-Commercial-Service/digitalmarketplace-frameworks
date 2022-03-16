@@ -13,6 +13,7 @@ depends:
 questions:
   - technicalWeightingParticipants
   - culturalWeightingParticipants
+  - socialWeightingParticipants
   - priceWeightingParticipants
 
 empty_message: Set evaluation weighting

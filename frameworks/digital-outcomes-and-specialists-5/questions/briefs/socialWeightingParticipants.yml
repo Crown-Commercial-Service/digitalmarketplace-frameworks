@@ -1,0 +1,37 @@
+id: socialWeighting
+question: 'Social value'
+question_advice: |
+  Social value is measured against the following ’themes’:
+  - COVID-19 recovery
+  - Tackling economic inequality
+  - Fighting climate change
+  - Equal opportunity
+  - Wellbeing
+
+hint: 'This can be 0%, or between 10% and 20%'
+
+depends:
+  - "on": lot
+    being:
+      - user-research-participants
+
+type: number
+unit: "%"
+unit_in_full: "percent"
+unit_position: "after"
+limits:
+  one_of:
+    - min_value: 0
+      max_value: 0
+      integer_only: true
+    - min_value: 10
+      max_value: 20
+      integer_only: true
+
+validations:
+  - name: answer_required
+    message: 'Enter a weighting.'
+  - name: not_a_number
+    message: 'Weighting must be 0, or between 10 and 20.'
+  - name: total_should_be_100
+    message: 'Total must add up to 100%.'

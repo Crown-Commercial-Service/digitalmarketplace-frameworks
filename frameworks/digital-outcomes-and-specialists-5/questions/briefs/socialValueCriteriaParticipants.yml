@@ -1,0 +1,39 @@
+name: Social value criteria
+id: socialValueCriteria
+question: Social value criteria
+question_advice: |
+
+  ##Guidance about social value criteria
+
+  Some guidance for the buyer to be able to define these
+
+type: list
+number_of_items: 20
+depends:
+  - "on": "lot"
+    being:
+      - user-research-participants
+  - "on": "socialWeighting"
+    being:
+      - min_value: 0
+        max_value: 0
+        type: integer
+      - min_value: 10
+        max_value: 20
+        type: integer
+
+validations:
+  -
+    name: answer_required
+    message: 'Enter at least 1 criteria.'
+  -
+    name: under_30_words
+    message: 'Each criteria must be 30 words or fewer.'
+  -
+    name: max_items_limit
+    message: 'You can add up to 20 criteria.'
+  -
+    name: under_character_limit
+    message: "Each criteria must be 300 characters or fewer."
+
+empty_message: Set social value criteria

@@ -375,13 +375,28 @@ def pricing_property(question):
 
 def number_property(question):
     limits = question.get('limits', {})
-    output = {question['id']: {
-        "minimum": limits.get('min_value') or 0,
-        "type": "integer" if limits.get('integer_only') else "number"
-    }}
-    inclusive_max = bool(limits.get('integer_only'))
-    maximum = limits['max_value'] if limits.get('max_value') is not None else 100
-    output[question['id']].update({"maximum": maximum} if inclusive_max else {"exclusiveMaximum": maximum})
+    if "one_of" in limits:
+        one_of = []
+        for limit in limits["one_of"]:
+            to_append = {
+                "minimum": limit.get('min_value') or 0,
+                "type": "integer" if limit.get('integer_only') else "number"
+            }
+            inclusive_max = bool(limit.get('integer_only'))
+            maximum = limit['max_value'] if limit.get('max_value') is not None else 100
+            to_append.update({"maximum": maximum} if inclusive_max else {"exclusiveMaximum": maximum})
+            one_of.append(to_append)
+        output = {question['id']: {
+            "oneOf": one_of
+        }}
+    else:
+        output = {question['id']: {
+            "minimum": limits.get('min_value') or 0,
+            "type": "integer" if limits.get('integer_only') else "number"
+        }}
+        inclusive_max = bool(limits.get('integer_only'))
+        maximum = limits['max_value'] if limits.get('max_value') is not None else 100
+        output[question['id']].update({"maximum": maximum} if inclusive_max else {"exclusiveMaximum": maximum})
     return output
 
 

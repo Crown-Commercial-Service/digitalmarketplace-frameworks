@@ -58,6 +58,8 @@ Question keys
     * `max_value` integer, sets the maximum value for number questions (default 100)
     * `integer_only` boolean, when `true` makes the number question accept only integer values instead of numbers
     * `format` sets JSON schema 'format' property for text questions (eg `email`, `uri`)
+    * `one_of` allows the setting of multiple limits, for times when a question can have discontinuous valid answers. Each item
+      can contain `min_value`, `max_value`, `integer_only` and `format`.
 * `number_of_items` sets the maximum number of items
     * for list questions, the add button becomes "Add another (N remaining)", and the default is 10
     * for checkboxes and checkbox tree questions, by default any number can be checked, but this sets a maximum number
