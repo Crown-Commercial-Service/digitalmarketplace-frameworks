@@ -1,4 +1,4 @@
 docopt==0.6.2
-python-json-logger==2.0.2
+python-json-logger==2.0.3
 digitalmarketplace-content-loader==9.1.0
 digitalmarketplace-utils==60.8.1
