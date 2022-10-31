@@ -39,7 +39,7 @@ deprecated==1.2.13
     # via redis
 digitalmarketplace-content-loader==9.1.0
     # via -r requirements.txt
-digitalmarketplace-utils==60.8.1
+digitalmarketplace-utils==60.9.0
     # via
     #   -r requirements.txt
     #   digitalmarketplace-content-loader
