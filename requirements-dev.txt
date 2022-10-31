@@ -140,7 +140,7 @@ pytest==6.2.3
     # via -r requirements-dev.in
 python-dateutil==2.8.1
     # via botocore
-python-json-logger==2.0.2
+python-json-logger==2.0.4
     # via
     #   -r requirements.txt
     #   digitalmarketplace-utils
