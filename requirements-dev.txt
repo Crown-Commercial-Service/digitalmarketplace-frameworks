@@ -37,7 +37,7 @@ defusedxml==0.7.1
     # via odfpy
 deprecated==1.2.13
     # via redis
-digitalmarketplace-content-loader==9.1.0
+digitalmarketplace-content-loader==9.2.0
     # via -r requirements.txt
 digitalmarketplace-utils==60.11.0
     # via
