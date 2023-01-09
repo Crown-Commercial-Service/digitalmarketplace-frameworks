@@ -17,7 +17,7 @@ jobs:
 
       - name: Check if version tag already exists
         id: version_tag
-        uses: mukunku/tag-exists-action@f8003af57c02ede2638326be67523df10cf6b10a
+        uses: mukunku/tag-exists-action@9298fbcc409758ba624a0ae16b83df86637cb8ce
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
