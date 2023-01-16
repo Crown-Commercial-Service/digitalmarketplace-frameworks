@@ -68,7 +68,7 @@ flask-wtf==0.14.3
     # via digitalmarketplace-utils
 fleep==1.0.1
     # via digitalmarketplace-utils
-future==0.18.2
+future==0.18.3
     # via notifications-python-client
 gds-metrics==0.2.4
     # via digitalmarketplace-utils
