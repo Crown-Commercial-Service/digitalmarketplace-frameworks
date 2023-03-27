@@ -4,6 +4,8 @@
 #
 #    pip-compile requirements-dev.in
 #
+async-timeout==4.0.2
+    # via redis
 attrs==20.3.0
     # via
     #   hypothesis
@@ -35,8 +37,6 @@ deepmerge==0.2.1
     # via -r requirements-dev.in
 defusedxml==0.7.1
     # via odfpy
-deprecated==1.2.13
-    # via redis
 digitalmarketplace-content-loader==9.2.0
     # via -r requirements.txt
 digitalmarketplace-utils==60.11.0
@@ -115,9 +115,7 @@ notifications-python-client==5.7.1
 odfpy==1.4.1
     # via digitalmarketplace-utils
 packaging==20.9
-    # via
-    #   pytest
-    #   redis
+    # via pytest
 pluggy==0.13.1
     # via pytest
 prometheus-client==0.10.1
@@ -150,7 +148,7 @@ pyyaml==5.4.1
     # via
     #   -r requirements-dev.in
     #   digitalmarketplace-content-loader
-redis==4.1.4
+redis==4.5.3
     # via digitalmarketplace-utils
 requests==2.25.1
     # via
@@ -177,8 +175,6 @@ werkzeug==1.0.1
     # via flask
 workdays==1.4
     # via digitalmarketplace-utils
-wrapt==1.14.0
-    # via deprecated
 wtforms==2.3.3
     # via flask-wtf
 
