@@ -150,7 +150,7 @@ pyyaml==5.4.1
     # via
     #   -r requirements-dev.in
     #   digitalmarketplace-content-loader
-redis==4.1.4
+redis==4.3.6
     # via digitalmarketplace-utils
 requests==2.25.1
     # via
