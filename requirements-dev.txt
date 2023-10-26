@@ -29,7 +29,7 @@ click==7.1.2
     # via flask
 contextlib2==0.6.0.post1
     # via digitalmarketplace-utils
-cryptography==36.0.1
+cryptography==41.0.5
     # via digitalmarketplace-utils
 deepmerge==0.2.1
     # via -r requirements-dev.in
@@ -173,7 +173,7 @@ urllib3==1.26.5
     # via
     #   botocore
     #   requests
-werkzeug==1.0.1
+werkzeug==3.0.1
     # via flask
 workdays==1.4
     # via digitalmarketplace-utils
