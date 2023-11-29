@@ -29,7 +29,7 @@ click==7.1.2
     # via flask
 contextlib2==0.6.0.post1
     # via digitalmarketplace-utils
-cryptography==36.0.1
+cryptography==41.0.6
     # via digitalmarketplace-utils
 deepmerge==0.2.1
     # via -r requirements-dev.in
